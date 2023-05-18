@@ -9,7 +9,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
         }
-        private string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        private string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         private void MainForm_Load(object sender, EventArgs e)
         {
             exploreFlightsButton_Click(sender, e);
@@ -100,6 +100,43 @@ namespace FlightReservationSystem
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(signInPanel);
+            
+        }
+        private void signInPanelButton_Click(object sender, EventArgs e)
+        {
+            string email = usernameSignInTextBox.Text;
+            string password = passwordSignInTextBox.Text;
+
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
+                connection.Open();
+
+                string query = "SELECT Email,Password,Identifier FROM UserTable WHERE Email = @Email AND Password = @Password";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", password);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    if (reader[2].ToString() == "C"){
+                        contentSplitContainer.Panel1.Controls.Add(bookFlightButton);
+                        contentSplitContainer.Panel1.Controls.Remove(signInButton);
+                        contentSplitContainer.Panel1.Controls.Remove(signUpButton);
+                        
+                    }
+                    else{
+                        
+                    }
+                }
+                else{
+                    MessageBox.Show("Log In Failed");
+                }
+
+                reader.Close();
+            }
         }
     }
 }
