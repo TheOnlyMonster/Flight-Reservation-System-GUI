@@ -242,6 +242,7 @@
 
             textBoxFirstName.Location = new Point(150, 70);
             textBoxFirstName.Size = new Size(200, 20);
+            textBoxFirstName.KeyPress += textBoxValidation;
 
             labelLastName.Text = "Last Name:";
             labelLastName.Location = new Point(50, 110);
@@ -249,6 +250,7 @@
 
             textBoxLastName.Location = new Point(150, 110);
             textBoxLastName.Size = new Size(200, 20);
+            textBoxLastName.KeyPress += textBoxValidation;
 
             labelPassword.Text = "Password:";
             labelPassword.Location = new Point(50, 150);
@@ -264,7 +266,6 @@
 
             textBoxPhone.Location = new Point(150, 190);
             textBoxPhone.Size = new Size(200, 20);
-
 
             submitButton.Cursor = Cursors.Hand;
             submitButton.Text = "Sign Up";

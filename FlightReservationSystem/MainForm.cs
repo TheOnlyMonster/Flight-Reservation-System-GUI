@@ -19,9 +19,16 @@ namespace FlightReservationSystem
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(signUpPanel);
+            
         }
-
-
+        
+        private void textBoxValidation(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
         private void submitButton_Click(object sender, EventArgs e)
         {
             
@@ -30,7 +37,7 @@ namespace FlightReservationSystem
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(flightDataGrid);
-            
+            flightDataGrid.Rows.Clear();
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
