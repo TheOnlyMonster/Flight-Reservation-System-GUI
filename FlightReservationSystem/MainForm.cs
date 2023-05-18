@@ -19,7 +19,6 @@ namespace FlightReservationSystem
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(signUpPanel);
-            
         }
         
         private void textBoxValidation(object sender, KeyPressEventArgs e)
