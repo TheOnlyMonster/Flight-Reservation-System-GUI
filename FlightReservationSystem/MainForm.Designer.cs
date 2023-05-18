@@ -214,6 +214,131 @@
             this.signUpButton.UseVisualStyleBackColor = false;
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
+            // signUpPanel
+            // 
+            this.signUpPanel.BackColor = System.Drawing.Color.White;
+            this.signUpPanel.BackgroundImage = global::FlightReservationSystem.Properties.Resources.background2;
+            this.signUpPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.signUpPanel.Controls.Add(this.labelEmail);
+            this.signUpPanel.Controls.Add(this.textBoxEmail);
+            this.signUpPanel.Controls.Add(this.labelFirstName);
+            this.signUpPanel.Controls.Add(this.textBoxFirstName);
+            this.signUpPanel.Controls.Add(this.labelLastName);
+            this.signUpPanel.Controls.Add(this.textBoxLastName);
+            this.signUpPanel.Controls.Add(this.labelPassword);
+            this.signUpPanel.Controls.Add(this.textBoxPassword);
+            this.signUpPanel.Controls.Add(this.labelPhone);
+            this.signUpPanel.Controls.Add(this.textBoxPhone);
+            this.signUpPanel.Controls.Add(this.submitButton);
+            this.signUpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signUpPanel.Location = new System.Drawing.Point(0, 0);
+            this.signUpPanel.Name = "signUpPanel";
+            this.signUpPanel.Size = new System.Drawing.Size(1121, 701);
+            this.signUpPanel.TabIndex = 0;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.BackColor = System.Drawing.Color.Transparent;
+            this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelEmail.Location = new System.Drawing.Point(313, 34);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(100, 23);
+            this.labelEmail.TabIndex = 0;
+            this.labelEmail.Text = "Email:";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(413, 34);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(312, 23);
+            this.textBoxEmail.TabIndex = 1;
+            // 
+            // labelFirstName
+            // 
+            this.labelFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.labelFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelFirstName.Location = new System.Drawing.Point(313, 74);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(100, 23);
+            this.labelFirstName.TabIndex = 2;
+            this.labelFirstName.Text = "First Name:";
+            // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(413, 74);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(312, 23);
+            this.textBoxFirstName.TabIndex = 3;
+            textBoxFirstName.KeyPress += textBoxValidation;
+            // 
+            // labelLastName
+            // 
+            this.labelLastName.BackColor = System.Drawing.Color.Transparent;
+            this.labelLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelLastName.Location = new System.Drawing.Point(313, 114);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(100, 23);
+            this.labelLastName.TabIndex = 4;
+            this.labelLastName.Text = "Last Name:";
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Location = new System.Drawing.Point(413, 114);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(312, 23);
+            this.textBoxLastName.TabIndex = 5;
+            textBoxLastName.KeyPress += textBoxValidation;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPassword.Location = new System.Drawing.Point(313, 154);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(100, 23);
+            this.labelPassword.TabIndex = 6;
+            this.labelPassword.Text = "Password:";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(413, 154);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(312, 23);
+            this.textBoxPassword.TabIndex = 7;
+            // 
+            // labelPhone
+            // 
+            this.labelPhone.BackColor = System.Drawing.Color.Transparent;
+            this.labelPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPhone.Location = new System.Drawing.Point(313, 194);
+            this.labelPhone.Name = "labelPhone";
+            this.labelPhone.Size = new System.Drawing.Size(100, 23);
+            this.labelPhone.TabIndex = 8;
+            this.labelPhone.Text = "Phone:";
+            // 
+            // textBoxPhone
+            // 
+            this.textBoxPhone.Location = new System.Drawing.Point(413, 194);
+            this.textBoxPhone.Name = "textBoxPhone";
+            this.textBoxPhone.Size = new System.Drawing.Size(312, 23);
+            this.textBoxPhone.TabIndex = 9;
+            textBoxPhone.KeyPress += PhoneValidation;
+            // 
+            // submitButton
+            // 
+            this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submitButton.ForeColor = System.Drawing.Color.White;
+            this.submitButton.Location = new System.Drawing.Point(413, 254);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(100, 30);
+            this.submitButton.TabIndex = 10;
+            this.submitButton.Text = "Sign Up";
+            this.submitButton.UseVisualStyleBackColor = false;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            // 
             // flightDataGrid
             // 
             this.flightDataGrid.AllowUserToAddRows = false;
