@@ -41,6 +41,13 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpButton = new System.Windows.Forms.Button();
             this.bookFlightButton = new System.Windows.Forms.Button();
+            this.bookFlightPanel = new System.Windows.Forms.Panel();
+            this.arrivalCountryLabel = new System.Windows.Forms.Label();
+            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptCountryLabel = new System.Windows.Forms.Label();
+            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptDateLabel = new System.Windows.Forms.Label();
+            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.flightDataGrid = new System.Windows.Forms.DataGridView();
             this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,12 +66,12 @@
             this.labelPhone = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
-            this.bookFlightPanel = new System.Windows.Forms.Panel();
             this.signInPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
             this.contentSplitContainer.SuspendLayout();
+            this.bookFlightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).BeginInit();
             this.signUpPanel.SuspendLayout();
             this.SuspendLayout();
@@ -149,12 +156,11 @@
             this.contentSplitContainer.Panel1.Controls.Add(this.exploreFlightsButton);
             this.contentSplitContainer.Panel1.Controls.Add(this.signInButton);
             this.contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
-            this.contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
             this.contentSplitContainer.Panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.bookFlightPanel);
+            
             this.contentSplitContainer.Size = new System.Drawing.Size(1401, 701);
             this.contentSplitContainer.SplitterDistance = 276;
             this.contentSplitContainer.TabIndex = 0;
@@ -232,6 +238,70 @@
             this.bookFlightButton.Text = "Book Flight";
             this.bookFlightButton.UseVisualStyleBackColor = false;
             this.bookFlightButton.Click += new System.EventHandler(this.bookFlightButton_Click);
+            // 
+            // bookFlightPanel
+            // 
+            this.bookFlightPanel.Controls.Add(this.arrivalCountryLabel);
+            this.bookFlightPanel.Controls.Add(this.arrivalCountriesComboBox);
+            this.bookFlightPanel.Controls.Add(this.deptCountryLabel);
+            this.bookFlightPanel.Controls.Add(this.deptCountriesComboBox);
+            this.bookFlightPanel.Controls.Add(this.deptDateLabel);
+            this.bookFlightPanel.Controls.Add(this.deptDateTimePicker);
+            this.bookFlightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookFlightPanel.Location = new System.Drawing.Point(0, 0);
+            this.bookFlightPanel.Name = "bookFlightPanel";
+            this.bookFlightPanel.Size = new System.Drawing.Size(1121, 701);
+            this.bookFlightPanel.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.arrivalCountryLabel.AutoSize = true;
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(578, 25);
+            this.arrivalCountryLabel.Name = "label3";
+            this.arrivalCountryLabel.Size = new System.Drawing.Size(38, 15);
+            this.arrivalCountryLabel.TabIndex = 11;
+            this.arrivalCountryLabel.Text = "Arrival Country";
+            // 
+            // arrivalCountriesComboBox
+            // 
+            this.arrivalCountriesComboBox.FormattingEnabled = true;
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(537, 43);
+            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
+            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.arrivalCountriesComboBox.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.deptCountryLabel.AutoSize = true;
+            this.deptCountryLabel.Location = new System.Drawing.Point(430, 25);
+            this.deptCountryLabel.Name = "label2";
+            this.deptCountryLabel.Size = new System.Drawing.Size(38, 15);
+            this.deptCountryLabel.TabIndex = 9;
+            this.deptCountryLabel.Text = "Department Country";
+            // 
+            // deptCountriesComboBox
+            // 
+            this.deptCountriesComboBox.FormattingEnabled = true;
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(398, 43);
+            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
+            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.deptCountriesComboBox.TabIndex = 8;
+            // 
+            // deptDateLabel
+            // 
+            this.deptDateLabel.AutoSize = true;
+            this.deptDateLabel.Location = new System.Drawing.Point(386, 100);
+            this.deptDateLabel.Name = "deptDateLabel";
+            this.deptDateLabel.Size = new System.Drawing.Size(38, 15);
+            this.deptDateLabel.TabIndex = 7;
+            this.deptDateLabel.Text = "Department Date";
+            // 
+            // deptDateTimePicker
+            // 
+            this.deptDateTimePicker.Location = new System.Drawing.Point(430, 94);
+            this.deptDateTimePicker.Name = "deptDateTimePicker";
+            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.deptDateTimePicker.TabIndex = 6;
             // 
             // flightDataGrid
             // 
@@ -408,13 +478,6 @@
             this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
-            // panel1
-            // 
-            this.bookFlightPanel.Location = new System.Drawing.Point(202, 123);
-            this.bookFlightPanel.Name = "panel1";
-            this.bookFlightPanel.Size = new System.Drawing.Size(200, 100);
-            this.bookFlightPanel.TabIndex = 0;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -430,6 +493,8 @@
             this.contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
             this.contentSplitContainer.ResumeLayout(false);
+            this.bookFlightPanel.ResumeLayout(false);
+            this.bookFlightPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).EndInit();
             this.signUpPanel.ResumeLayout(false);
             this.signUpPanel.PerformLayout();
@@ -471,5 +536,11 @@
         private Button signInPanelButton;
         private Button bookFlightButton;
         private Panel bookFlightPanel;
+        private Label arrivalCountryLabel;
+        private ComboBox arrivalCountriesComboBox;
+        private Label deptCountryLabel;
+        private ComboBox deptCountriesComboBox;
+        private Label deptDateLabel;
+        private DateTimePicker deptDateTimePicker;
     }
 }

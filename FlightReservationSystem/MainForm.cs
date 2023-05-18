@@ -18,7 +18,6 @@ namespace FlightReservationSystem
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(signUpPanel);
-            
         }
         private void textBoxValidation(object sender, KeyPressEventArgs e)
         {
@@ -42,7 +41,9 @@ namespace FlightReservationSystem
             {
                 connection.Open();
                 string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
-                using (SqlCommand command = new SqlCommand(checkingQuery, connection)) {
+
+                using (SqlCommand command = new SqlCommand(checkingQuery, connection))
+                {
                     command.Parameters.AddWithValue("@email", textBoxEmail.Text);
                     int filterKey = Convert.ToInt32(command.ExecuteScalar());
                     if(filterKey == 1){
@@ -79,6 +80,11 @@ namespace FlightReservationSystem
         }
         private void exploreFlightsButton_Click(object sender, EventArgs e)
         {
+            this.flightDataGrid.Dock = DockStyle.Fill;
+            this.flightDataGrid.Location = new Point(0, 0);
+            this.flightDataGrid.Size = new Size(1121, 701);
+
+
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(flightDataGrid);
             flightDataGrid.Rows.Clear();
@@ -124,14 +130,14 @@ namespace FlightReservationSystem
 
                 if (reader.Read())
                 {
+                    MessageBox.Show("Logged In Successfully");
                     if (reader[2].ToString() == "C"){
                         contentSplitContainer.Panel1.Controls.Add(bookFlightButton);
                         contentSplitContainer.Panel1.Controls.Remove(signInButton);
                         contentSplitContainer.Panel1.Controls.Remove(signUpButton);
-                        
                     }
                     else{
-                        
+                        //TODO: Admin Login
                     }
                 }
                 else{
@@ -140,6 +146,16 @@ namespace FlightReservationSystem
 
                 reader.Close();
             }
+        }
+
+        private void bookFlightButton_Click(object sender, EventArgs e)
+        {
+            contentSplitContainer.Panel2.Controls.Clear();
+            contentSplitContainer.Panel2.Controls.Add(bookFlightPanel);
+            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+            this.flightDataGrid.Dock = DockStyle.Bottom;
+            this.flightDataGrid.Size = new Size(1121, 522);
+            this.flightDataGrid.Location = new Point(0, 179);
         }
     }
 }
