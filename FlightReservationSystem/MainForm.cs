@@ -22,7 +22,7 @@ namespace FlightReservationSystem
             Panel signUpPanel = new Panel();
             signUpPanel.Dock = DockStyle.Fill;
             signUpPanel.BackColor = Color.White;
-            signUpPanel.BackgroundImage = Image.FromFile("C:/Users/abdel/source/repos/FlightReservationSystem/FlightReservationSystem/imgs/background2.jpg");
+            signUpPanel.BackgroundImage = Properties.Resources.background2;
             signUpPanel.BackgroundImageLayout = ImageLayout.Stretch;
 
             Label labelEmail = new Label();
