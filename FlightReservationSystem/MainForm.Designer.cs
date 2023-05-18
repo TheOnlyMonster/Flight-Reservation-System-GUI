@@ -33,8 +33,20 @@
             this.button4 = new System.Windows.Forms.Button();
             this.exploreFlightsButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelFirstName = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelPhone = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.signUpButton = new System.Windows.Forms.Button();
+            this.submitButton = new System.Windows.Forms.Button();
             this.flightDataGrid = new System.Windows.Forms.DataGridView();
+            this.signUpPanel = new System.Windows.Forms.Panel();
             this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +78,7 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.flightDataGrid);
+            
             this.contentSplitContainer.Size = new System.Drawing.Size(1401, 701);
             this.contentSplitContainer.SplitterDistance = 276;
             this.contentSplitContainer.TabIndex = 0;
@@ -131,6 +143,7 @@
             // 
             // flightDataGrid
             // 
+            //flightDataGrid.Hide();
             this.flightDataGrid.AllowUserToAddRows = false;
             this.flightDataGrid.AllowUserToDeleteRows = false;
             this.flightDataGrid.AllowUserToResizeColumns = false;
@@ -150,6 +163,24 @@
             this.flightDataGrid.RowTemplate.Height = 25;
             this.flightDataGrid.Size = new System.Drawing.Size(1121, 701);
             this.flightDataGrid.TabIndex = 0;
+            // 
+            // signUpPanel
+            // 
+            this.signUpPanel.Dock = DockStyle.Fill;
+            this.signUpPanel.BackColor = Color.White;
+            this.signUpPanel.BackgroundImage = Properties.Resources.background2;
+            this.signUpPanel.BackgroundImageLayout = ImageLayout.Stretch;
+            this.signUpPanel.Controls.Add(labelEmail);
+            this.signUpPanel.Controls.Add(textBoxEmail);
+            this.signUpPanel.Controls.Add(labelFirstName);
+            this.signUpPanel.Controls.Add(textBoxFirstName);
+            this.signUpPanel.Controls.Add(labelLastName);
+            this.signUpPanel.Controls.Add(textBoxLastName);
+            this.signUpPanel.Controls.Add(labelPassword);
+            this.signUpPanel.Controls.Add(textBoxPassword);
+            this.signUpPanel.Controls.Add(labelPhone);
+            this.signUpPanel.Controls.Add(textBoxPhone);
+            this.signUpPanel.Controls.Add(submitButton);
             // 
             // FlightNo
             // 
@@ -197,6 +228,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).EndInit();
             this.ResumeLayout(false);
 
+
+            labelEmail.Text = "Email:";
+            labelEmail.Location = new Point(50, 30);
+            labelEmail.Font = new Font(labelEmail.Font, FontStyle.Bold);
+
+            textBoxEmail.Location = new Point(150, 30);
+            textBoxEmail.Size = new Size(200, 20);
+
+            labelFirstName.Text = "First Name:";
+            labelFirstName.Location = new Point(50, 70);
+            labelFirstName.Font = new Font(labelFirstName.Font, FontStyle.Bold);
+
+            textBoxFirstName.Location = new Point(150, 70);
+            textBoxFirstName.Size = new Size(200, 20);
+
+            labelLastName.Text = "Last Name:";
+            labelLastName.Location = new Point(50, 110);
+            labelLastName.Font = new Font(labelLastName.Font, FontStyle.Bold);
+
+            textBoxLastName.Location = new Point(150, 110);
+            textBoxLastName.Size = new Size(200, 20);
+
+            labelPassword.Text = "Password:";
+            labelPassword.Location = new Point(50, 150);
+            labelPassword.Font = new Font(labelPassword.Font, FontStyle.Bold);
+
+            textBoxPassword.Location = new Point(150, 150);
+            textBoxPassword.Size = new Size(200, 20);
+            textBoxPassword.PasswordChar = '*';
+
+            labelPhone.Text = "Phone:";
+            labelPhone.Location = new Point(50, 190);
+            labelPhone.Font = new Font(labelPhone.Font, FontStyle.Bold);
+
+            textBoxPhone.Location = new Point(150, 190);
+            textBoxPhone.Size = new Size(200, 20);
+
+
+            submitButton.Cursor = Cursors.Hand;
+            submitButton.Text = "Sign Up";
+            submitButton.Location = new Point(150, 250);
+            submitButton.Size = new Size(100, 30);
+            submitButton.BackColor = Color.FromArgb(0, 123, 255);
+            submitButton.ForeColor = Color.White;
+            submitButton.Font = new Font(submitButton.Font, FontStyle.Bold);
+            submitButton.Click += submitButton_Click;
+
         }
 
         #endregion
@@ -211,5 +289,17 @@
         private DataGridViewTextBoxColumn deptCountry;
         private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn expectedArrivalDate;
+        private Panel signUpPanel;
+        private Label labelEmail;
+        private Label labelFirstName;
+        private Label labelLastName;
+        private Label labelPassword;
+        private Label labelPhone;
+        private TextBox textBoxEmail;
+        private TextBox textBoxFirstName;
+        private TextBox textBoxLastName;
+        private TextBox textBoxPassword;
+        private TextBox textBoxPhone;
+        private Button submitButton;
     }
 }
