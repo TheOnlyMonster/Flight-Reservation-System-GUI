@@ -43,17 +43,13 @@ namespace FlightReservationSystem
                 connection.Open();
                 string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
                 using (SqlCommand command = new SqlCommand(checkingQuery, connection)) {
-                    int filterKey = 0;
                     command.Parameters.AddWithValue("@email", textBoxEmail.Text);
-                    SqlDataReader reader = command.ExecuteReader();
-                    reader.Read();
-                    filterKey = reader.GetInt32(0);
+                    int filterKey = Convert.ToInt32(command.ExecuteScalar());
                     if(filterKey == 1){
                         MessageBox.Show("Email already taken!");
-                        reader.Close();
+                        connection.Close();
                         return;
                     }
-                    reader.Close();
                 }
                 string parentInsertQuery = "INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier) VALUES (@email, @fname, @lname, @password, @identifier); SELECT SCOPE_IDENTITY();";
                 using (SqlCommand parentCmd = new SqlCommand(parentInsertQuery, connection)) {
@@ -67,12 +63,19 @@ namespace FlightReservationSystem
                     using (SqlCommand childCmd = new SqlCommand(childInsertQuery,connection)) {
                         childCmd.Parameters.AddWithValue("@cid", parentID);
                         childCmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
-                        MessageBox.Show(childCmd.ExecuteNonQuery() < 0 ? "Failed":"Success");
+                        int rowsAffected = childCmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data added successfully");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add data");
+}
                     }
                 }
                 connection.Close();
-            }
-            
+            } 
         }
         private void exploreFlightsButton_Click(object sender, EventArgs e)
         {
