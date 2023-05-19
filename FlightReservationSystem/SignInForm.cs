@@ -27,9 +27,9 @@ namespace FlightReservationSystem
             {
                 connection.Open();
 
-                string query = "SELECT * FROM UserTable WHERE Email = @Email AND Password = @Password";
+                string userQuery = "SELECT * FROM UserTable WHERE Email = @Email AND Password = @Password";
 
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand(userQuery, connection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
 
@@ -39,11 +39,28 @@ namespace FlightReservationSystem
                 {
 
                     Customer customer = Customer.Instance;
+                    customer.Id = reader[0].ToString();
                     customer.Email = reader[1].ToString();
                     customer.fname = reader[2].ToString();
                     customer.lname = reader[3].ToString();
                     customer.Password = reader[4].ToString();
                     customer.Identifier = reader[5].ToString();
+                    string customerQuery = "select * FROM CustomerTable WHERE CustomerID = @userID";
+                    SqlCommand comm = new SqlCommand(customerQuery, connection);
+                    comm.Parameters.AddWithValue("@userID", reader[0].ToString());
+                    reader.Close();
+                    SqlDataReader userReader = comm.ExecuteReader();
+                    if (userReader.Read())
+                    {
+                        customer.CardNum = userReader[5].ToString();
+                        customer.City = userReader[3].ToString();
+                        customer.Country = userReader[4].ToString();
+                        customer.Cvv = userReader[6].ToString();
+                        customer.ExpirayDate = userReader[7].ToString();
+                        customer.PassportExpirayDate = userReader[8].ToString();
+
+                    }
+                    userReader.Close();
                     MessageBox.Show("Logged In Successfully");
                     if (customer.Identifier == "C")
                     {
@@ -64,8 +81,9 @@ namespace FlightReservationSystem
                     MessageBox.Show("Log In Failed");
                 }
 
-                reader.Close();
+                connection.Close();
             }
+           
         }
     }
 }

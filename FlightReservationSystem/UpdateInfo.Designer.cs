@@ -99,6 +99,7 @@
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.Size = new Size(192, 27);
             PasswordTextBox.TabIndex = 1;
+            
             // 
             // CVVTextBox
             // 
@@ -106,6 +107,7 @@
             CVVTextBox.Name = "CVVTextBox";
             CVVTextBox.Size = new Size(125, 27);
             CVVTextBox.TabIndex = 2;
+          
             // 
             // ExpirayDateTextBox
             // 
@@ -113,6 +115,7 @@
             ExpirayDateTextBox.Name = "ExpirayDateTextBox";
             ExpirayDateTextBox.Size = new Size(125, 27);
             ExpirayDateTextBox.TabIndex = 3;
+           
             // 
             // CardNumberTextBox
             // 
@@ -120,6 +123,7 @@
             CardNumberTextBox.Name = "CardNumberTextBox";
             CardNumberTextBox.Size = new Size(125, 27);
             CardNumberTextBox.TabIndex = 4;
+            
             // 
             // LastNameTextBox
             // 
@@ -127,6 +131,7 @@
             LastNameTextBox.Name = "LastNameTextBox";
             LastNameTextBox.Size = new Size(154, 27);
             LastNameTextBox.TabIndex = 5;
+           
             // 
             // CountryTextBox
             // 
@@ -134,6 +139,7 @@
             CountryTextBox.Name = "CountryTextBox";
             CountryTextBox.Size = new Size(125, 27);
             CountryTextBox.TabIndex = 6;
+           
             // 
             // CityTextBox
             // 
@@ -141,7 +147,7 @@
             CityTextBox.Name = "CityTextBox";
             CityTextBox.Size = new Size(125, 27);
             CityTextBox.TabIndex = 7;
-            CityTextBox.TextChanged += CityTextBox_TextChanged;
+        
             // 
             // FirstNameTextBox
             // 
@@ -149,7 +155,7 @@
             FirstNameTextBox.Name = "FirstNameTextBox";
             FirstNameTextBox.Size = new Size(154, 27);
             FirstNameTextBox.TabIndex = 8;
-            FirstNameTextBox.TextChanged += FirstNameTextBox_TextChanged;
+            
             // 
             // label1
             // 
@@ -159,7 +165,7 @@
             label1.Size = new Size(80, 20);
             label1.TabIndex = 9;
             label1.Text = "First Name";
-            label1.Click += label1_Click;
+            
             // 
             // label2
             // 
@@ -214,6 +220,7 @@
             label7.Size = new Size(34, 20);
             label7.TabIndex = 15;
             label7.Text = "City";
+         
             // 
             // label8
             // 
@@ -232,6 +239,7 @@
             SaveButton.TabIndex = 17;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // UpdateInfo
             // 
@@ -240,6 +248,7 @@
             ClientSize = new Size(800, 450);
             Name = "UpdateInfo";
             Text = "UpdateInfo";
+            this.Load += new System.EventHandler(this.UpdateInfo_Load);
             contentSplitContainer.Panel1.ResumeLayout(false);
             contentSplitContainer.Panel2.ResumeLayout(false);
             contentSplitContainer.Panel2.PerformLayout();
