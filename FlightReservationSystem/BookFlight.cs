@@ -76,7 +76,7 @@ namespace FlightReservationSystem
             }
         }
 
-        private void flightDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void flightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) {
                 DataGridViewRow selectedRow = flightDataGrid.Rows[e.RowIndex];
@@ -87,5 +87,6 @@ namespace FlightReservationSystem
         {
             bookFlightComboBox_Changed(sender, e);
         }
+
     }
 }
