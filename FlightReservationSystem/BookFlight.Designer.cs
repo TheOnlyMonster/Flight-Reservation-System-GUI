@@ -1,4 +1,6 @@
-﻿namespace FlightReservationSystem
+﻿using System.Windows.Forms;
+
+namespace FlightReservationSystem
 {
     partial class BookFlight
     {
@@ -59,32 +61,30 @@
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.Size = new System.Drawing.Size(958, 533);
-            this.contentSplitContainer.SplitterDistance = 187;
+            this.contentSplitContainer.SplitterDistance = 230;
             // 
             // signInButton
             // 
             this.signInButton.Location = new System.Drawing.Point(0, 120);
-            this.signInButton.Size = new System.Drawing.Size(187, 57);
+            this.signInButton.Size = new System.Drawing.Size(230, 57);
             // 
             // signUpButton
             // 
             this.signUpButton.Location = new System.Drawing.Point(0, 63);
-            this.signUpButton.Size = new System.Drawing.Size(187, 57);
+            this.signUpButton.Size = new System.Drawing.Size(230, 57);
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(0, 470);
-            this.helpButton.Size = new System.Drawing.Size(187, 63);
+            this.helpButton.Size = new System.Drawing.Size(230, 63);
             // 
             // exploreFlightsButton
             // 
             this.exploreFlightsButton.Location = new System.Drawing.Point(0, 177);
-            this.exploreFlightsButton.Size = new System.Drawing.Size(187, 57);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(230, 57);
             // 
             // bookFlightButton
             // 
-            this.bookFlightButton.Size = new System.Drawing.Size(187, 63);
+            this.bookFlightButton.Size = new System.Drawing.Size(230, 63);
             this.bookFlightButton.TabIndex = 4;
             // 
             // panel1
@@ -99,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 533);
+            this.panel1.Size = new System.Drawing.Size(948, 595);
             this.panel1.TabIndex = 0;
             // 
             // flightDataGrid
@@ -118,11 +118,11 @@
             this.arrivalCountry,
             this.expectedArrivalDate});
             this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flightDataGrid.Location = new System.Drawing.Point(0, 103);
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
             this.flightDataGrid.Name = "flightDataGrid";
             this.flightDataGrid.ReadOnly = true;
             this.flightDataGrid.RowTemplate.Height = 25;
-            this.flightDataGrid.Size = new System.Drawing.Size(767, 430);
+            this.flightDataGrid.Size = new System.Drawing.Size(948, 481);
             this.flightDataGrid.TabIndex = 18;
             // 
             // FlightNo
@@ -158,7 +158,7 @@
             // arrivalCountryLabel
             // 
             this.arrivalCountryLabel.AutoSize = true;
-            this.arrivalCountryLabel.Location = new System.Drawing.Point(395, 5);
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(482, 11);
             this.arrivalCountryLabel.Name = "arrivalCountryLabel";
             this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
             this.arrivalCountryLabel.TabIndex = 17;
@@ -168,7 +168,7 @@
             // 
             this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.arrivalCountriesComboBox.FormattingEnabled = true;
-            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(379, 23);
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(466, 29);
             this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.arrivalCountriesComboBox.TabIndex = 16;
@@ -178,7 +178,7 @@
             // deptCountryLabel
             // 
             this.deptCountryLabel.AutoSize = true;
-            this.deptCountryLabel.Location = new System.Drawing.Point(240, 5);
+            this.deptCountryLabel.Location = new System.Drawing.Point(327, 11);
             this.deptCountryLabel.Name = "deptCountryLabel";
             this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
             this.deptCountryLabel.TabIndex = 15;
@@ -188,7 +188,7 @@
             // 
             this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deptCountriesComboBox.FormattingEnabled = true;
-            this.deptCountriesComboBox.Location = new System.Drawing.Point(240, 23);
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(327, 29);
             this.deptCountriesComboBox.Name = "deptCountriesComboBox";
             this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.deptCountriesComboBox.TabIndex = 14;
@@ -198,7 +198,7 @@
             // deptDateLabel
             // 
             this.deptDateLabel.AutoSize = true;
-            this.deptDateLabel.Location = new System.Drawing.Point(190, 57);
+            this.deptDateLabel.Location = new System.Drawing.Point(278, 74);
             this.deptDateLabel.Name = "deptDateLabel";
             this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
             this.deptDateLabel.TabIndex = 13;
@@ -206,7 +206,7 @@
             // 
             // deptDateTimePicker
             // 
-            this.deptDateTimePicker.Location = new System.Drawing.Point(282, 52);
+            this.deptDateTimePicker.Location = new System.Drawing.Point(370, 69);
             this.deptDateTimePicker.Name = "deptDateTimePicker";
             this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
             this.deptDateTimePicker.TabIndex = 12;
@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 533);
+            this.ClientSize = new System.Drawing.Size(1182, 595);
             this.Name = "BookFlight";
             this.Text = "BookFlight";
             this.Load += new System.EventHandler(this.BookFlight_Load);

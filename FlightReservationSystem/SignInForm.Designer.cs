@@ -49,25 +49,23 @@ namespace FlightReservationSystem
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.signInPanel);
-            this.contentSplitContainer.Size = new System.Drawing.Size(800, 450);
-            this.contentSplitContainer.SplitterDistance = 157;
+            this.contentSplitContainer.SplitterDistance = 231;
             // 
             // signInButton
             // 
-            this.signInButton.Size = new System.Drawing.Size(157, 57);
+            this.signInButton.Size = new System.Drawing.Size(231, 57);
             // 
             // signUpButton
             // 
-            this.signUpButton.Size = new System.Drawing.Size(157, 57);
+            this.signUpButton.Size = new System.Drawing.Size(231, 57);
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(0, 387);
-            this.helpButton.Size = new System.Drawing.Size(157, 63);
+            this.helpButton.Size = new System.Drawing.Size(231, 63);
             // 
             // exploreFlightsButton
             // 
-            this.exploreFlightsButton.Size = new System.Drawing.Size(157, 57);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(231, 57);
             // 
             // signInPanel
             // 
@@ -81,7 +79,7 @@ namespace FlightReservationSystem
             this.signInPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.signInPanel.Location = new System.Drawing.Point(0, 0);
             this.signInPanel.Name = "signInPanel";
-            this.signInPanel.Size = new System.Drawing.Size(639, 450);
+            this.signInPanel.Size = new System.Drawing.Size(947, 595);
             this.signInPanel.TabIndex = 0;
             // 
             // usernameSignInLabel
@@ -96,7 +94,7 @@ namespace FlightReservationSystem
             // 
             this.usernameSignInTextBox.Location = new System.Drawing.Point(142, 12);
             this.usernameSignInTextBox.Name = "usernameSignInTextBox";
-            this.usernameSignInTextBox.Size = new System.Drawing.Size(163, 23);
+            this.usernameSignInTextBox.Size = new System.Drawing.Size(218, 23);
             this.usernameSignInTextBox.TabIndex = 1;
             // 
             // passwordSignInLabel
@@ -111,14 +109,14 @@ namespace FlightReservationSystem
             // 
             this.passwordSignInTextBox.Location = new System.Drawing.Point(142, 41);
             this.passwordSignInTextBox.Name = "passwordSignInTextBox";
-            this.passwordSignInTextBox.Size = new System.Drawing.Size(163, 23);
+            this.passwordSignInTextBox.Size = new System.Drawing.Size(218, 23);
             this.passwordSignInTextBox.TabIndex = 3;
             // 
             // signInPanelButton
             // 
             this.signInPanelButton.Location = new System.Drawing.Point(142, 76);
             this.signInPanelButton.Name = "signInPanelButton";
-            this.signInPanelButton.Size = new System.Drawing.Size(75, 23);
+            this.signInPanelButton.Size = new System.Drawing.Size(95, 23);
             this.signInPanelButton.TabIndex = 4;
             this.signInPanelButton.Text = "Submit";
             this.signInPanelButton.Click += new System.EventHandler(this.signInPanelButton_Click);
@@ -127,7 +125,6 @@ namespace FlightReservationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "SignInForm";
             this.Text = "SignInForm";
             this.contentSplitContainer.Panel1.ResumeLayout(false);

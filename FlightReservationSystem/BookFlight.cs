@@ -78,8 +78,10 @@ namespace FlightReservationSystem
             }
         }
 
-        
+        private void flightDataGrid_CellDoubleClick(object sender, EventArgs e)
+        {
 
+        }
         private void BookFlight_Load(object sender, EventArgs e)
         {
             bookFlightComboBox_Changed(sender, e);
