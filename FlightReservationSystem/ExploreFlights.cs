@@ -25,7 +25,7 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
+                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats FROM Flight";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);

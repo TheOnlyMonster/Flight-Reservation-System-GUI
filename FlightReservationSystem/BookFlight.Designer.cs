@@ -63,6 +63,7 @@ namespace FlightReservationSystem
             this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrivalCountryLabel = new System.Windows.Forms.Label();
             this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
             this.deptCountryLabel = new System.Windows.Forms.Label();
@@ -159,6 +160,7 @@ namespace FlightReservationSystem
             this.confirmButton.TabIndex = 38;
             this.confirmButton.Text = "Confirm Booking";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += confirmButton_Click;
             // 
             // seatsNumericUpDown
             // 
@@ -166,6 +168,7 @@ namespace FlightReservationSystem
             this.seatsNumericUpDown.Name = "seatsNumericUpDown";
             this.seatsNumericUpDown.Size = new System.Drawing.Size(120, 23);
             this.seatsNumericUpDown.TabIndex = 37;
+            this.seatsNumericUpDown.ValueChanged += seatsNumericUpDown_UpButton;
             // 
             // label12
             // 
@@ -379,7 +382,8 @@ namespace FlightReservationSystem
             this.deptDate,
             this.deptCountry,
             this.arrivalCountry,
-            this.expectedArrivalDate});
+            this.expectedArrivalDate,
+            this.AvailableSeats});
             this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flightDataGrid.Location = new System.Drawing.Point(0, 99);
             this.flightDataGrid.Name = "flightDataGrid";
@@ -387,7 +391,7 @@ namespace FlightReservationSystem
             this.flightDataGrid.RowTemplate.Height = 25;
             this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
             this.flightDataGrid.TabIndex = 32;
-            this.flightDataGrid.CellDoubleClick += flightDataGrid_CellClick;
+            this.flightDataGrid.CellClick += flightDataGrid_CellClick;
             // 
             // FlightNo
             // 
@@ -423,6 +427,13 @@ namespace FlightReservationSystem
             expectedArrivalDate.MinimumWidth = 6;
             expectedArrivalDate.Name = "expectedArrivalDate";
             expectedArrivalDate.ReadOnly = true;
+            // 
+            // AvailableSeats
+            // 
+            AvailableSeats.HeaderText = "Available Seats";
+            AvailableSeats.MinimumWidth = 6;
+            AvailableSeats.Name = "AvailableSeats";
+            AvailableSeats.ReadOnly = true;
             // 
             // arrivalCountryLabel
             this.arrivalCountryLabel.AutoSize = true;
@@ -515,6 +526,7 @@ namespace FlightReservationSystem
         private DataGridViewTextBoxColumn deptCountry;
         private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn expectedArrivalDate;
+        private DataGridViewTextBoxColumn AvailableSeats;
         private Label arrivalCountryLabel;
         private ComboBox arrivalCountriesComboBox;
         private Label deptCountryLabel;

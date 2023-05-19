@@ -13,7 +13,7 @@ CREATE TABLE CustomerTable (
     PhoneNumber varchar(20) NOT NULL,
     City VARCHAR(15),
     Country VARCHAR(15),
-    CardNum INT,
+    CardNum VARCHAR(16),
     CVV INT,
     ExpiryDate DATE,
     PassportExpirationDate DATE,
@@ -46,13 +46,17 @@ create table AircraftDispatchControl (
     Primary key(AdminID,AircraftID)
 );
 
-create table Flight (
-    FlightNo int primary key identity(1,1),
-    AircraftID int foreign key references Aircraft(AircraftID) not null,
-    deptDate DATETIME NOT NULL,
-    expectedArrival DATETIME NOT NULL,
-    arrivalCountry VARCHAR(50) NOT NULL,
-    deptCountry VARCHAR(50) NOT NULL
+CREATE TABLE Flight (
+    FlightNo INT PRIMARY KEY IDENTITY(1,1),
+    AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) NOT NULL,
+    DeptDate DATETIME NOT NULL,
+    ExpectedArrival DATETIME NOT NULL,
+    ArrivalCountry VARCHAR(50) NOT NULL,
+    DeptCountry VARCHAR(50) NOT NULL,
+    AvailableSeats SMALLINT,
+    Rank1Price DECIMAL(10, 2) NOT NULL,
+    Rank2Price DECIMAL(10, 2) NOT NULL,
+    Rank3Price DECIMAL(10, 2) NOT NULL
 );
 
 create table BookingManagment (
@@ -68,6 +72,7 @@ CREATE TABLE BookingDetails (
     BookingDate DATE NOT NULL,
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,
+    Rank INT NOT NULL,
     CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );

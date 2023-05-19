@@ -72,7 +72,7 @@ namespace FlightReservationSystem
                     }
                     else if(customer.Identifier == "A")
                     {
-                        MainMenu.IsAdminLoggedIn=true;
+                        MainMenu.IsAdminLoggedIn = true;
                         //TODO: Admin Login
                     }
                 }

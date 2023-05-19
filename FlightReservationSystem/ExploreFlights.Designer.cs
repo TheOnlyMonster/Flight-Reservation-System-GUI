@@ -34,6 +34,7 @@
             this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -62,7 +63,8 @@
             this.deptDate,
             this.deptCountry,
             this.arrivalCountry,
-            this.expectedArrivalDate});
+            this.expectedArrivalDate,
+            this.AvailableSeats});
             this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flightDataGrid.Location = new System.Drawing.Point(0, 0);
             this.flightDataGrid.Name = "flightDataGrid";
@@ -101,6 +103,12 @@
             this.expectedArrivalDate.Name = "expectedArrivalDate";
             this.expectedArrivalDate.ReadOnly = true;
             // 
+            // AvailableSeats
+            // 
+            this.AvailableSeats.HeaderText = "Available Seats";
+            this.AvailableSeats.Name = "Available Seats";
+            this.AvailableSeats.ReadOnly = true;
+            // 
             // ExploreFlights
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -126,5 +134,6 @@
         private DataGridViewTextBoxColumn deptCountry;
         private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn expectedArrivalDate;
+        private DataGridViewTextBoxColumn AvailableSeats;
     }
 }

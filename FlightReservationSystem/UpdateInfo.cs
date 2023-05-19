@@ -60,7 +60,7 @@ namespace FlightReservationSystem
                     command.Parameters.AddWithValue("@ExpiryDate", ExpirayDateTextBox.Text);
                     command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
 
-                    `command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
                 }
                 connection.Close();

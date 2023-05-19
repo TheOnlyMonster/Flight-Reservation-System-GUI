@@ -20,11 +20,11 @@ namespace FlightReservationSystem
 
         private void bookFlightComboBox_Changed(object sender, EventArgs e)
         {
-            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight " +
+            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats FROM Flight " +
                     "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             if (this.deptCountriesComboBox.SelectedItem == null || this.arrivalCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
+                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats FROM Flight";
             }
 
             flightDataGrid.Rows.Clear();
@@ -82,7 +82,11 @@ namespace FlightReservationSystem
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow selectedRow = flightDataGrid.Rows[e.RowIndex];
-                MessageBox.Show(selectedRow.Cells["FlightNo"].Value.ToString());
+                this.flightNoTextBox.Text = selectedRow.Cells["FlightNo"].Value.ToString();
+                this.seatsAvailableTextBox.Text = selectedRow.Cells["AvailableSeats"].Value.ToString();
+                this.arrivalCountryTextBox.Text = selectedRow.Cells["arrivalCountry"].Value.ToString();
+                this.arrivalDateTextBox.Text = selectedRow.Cells["expectedArrivalDate"].Value.ToString();
+                this.deptCountryTextBox.Text = selectedRow.Cells["deptCountry"].Value.ToString();
             }
         }
         private void BookFlight_Load(object sender, EventArgs e)
@@ -90,5 +94,16 @@ namespace FlightReservationSystem
             bookFlightComboBox_Changed(sender, e);
         }
 
+        private void seatsNumericUpDown_UpButton(object sender, EventArgs e) {
+            if (seatsNumericUpDown.Value >= 7) {
+                seatsNumericUpDown.Value = 7;  
+            }
+
+        }
+        
+        private void confirmButton_Click(object sender, EventArgs e) {
+            //string query = "INSERT INTO BookingDetails Values(CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice)"
+            //needs changes in the database.
+        }
     }
 }
