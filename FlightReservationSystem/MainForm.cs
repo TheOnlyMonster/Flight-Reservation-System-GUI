@@ -9,7 +9,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
         }
-        private string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        private string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         private void MainForm_Load(object sender, EventArgs e)
         {
             exploreFlightsButton_Click(sender, e);
@@ -31,7 +31,6 @@ namespace FlightReservationSystem
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true;
-
             }
         }
         private void submitButton_Click(object sender, EventArgs e)
@@ -65,11 +64,11 @@ namespace FlightReservationSystem
                             int rowsAffected = childCmd.ExecuteNonQuery();
                             if (rowsAffected > 0)
                             {
-                                MessageBox.Show("Data added successfully");
+                                MessageBox.Show("Data Added Successfully");
                             }
                             else
                             {
-                                MessageBox.Show("Failed to add data");
+                                MessageBox.Show("Failed To Add Data");
                             }   
                         }
                     }
@@ -84,9 +83,6 @@ namespace FlightReservationSystem
         {
             this.flightDataGrid.Dock = DockStyle.Fill;
             this.flightDataGrid.Location = new Point(0, 0);
-            this.flightDataGrid.Size = new Size(1121, 701);
-
-
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(flightDataGrid);
             flightDataGrid.Rows.Clear();
@@ -133,6 +129,7 @@ namespace FlightReservationSystem
                 if (reader.Read())
                 {
                     MessageBox.Show("Logged In Successfully");
+                    this.signInPanel.Hide();
                     if (reader[2].ToString() == "C"){
                         contentSplitContainer.Panel1.Controls.Add(bookFlightButton);
                         contentSplitContainer.Panel1.Controls.Remove(signInButton);
@@ -149,54 +146,42 @@ namespace FlightReservationSystem
                 reader.Close();
             }
         }
-
-        private void deptCountriesComboBox_BindingContextChanged(object sender, EventArgs e) {
-            string commandQuery = $"Select * from Flight where deptCountry = @deptCountry";
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+        private void fillComboBox(string query, ComboBox comboBox)
+        {
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
                 connection.Open();
-                SqlCommand command = new SqlCommand(commandQuery,connection);
-                command.Parameters.AddWithValue("@deptCountry", deptCountriesComboBox.Text);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader sqlDataReader = command.ExecuteReader();
+                while (sqlDataReader.Read())
+                {
+                    comboBox.Items.Add(sqlDataReader.GetString(0));
+                }
                 connection.Close();
             }
-            foreach (DataRow row in dataTable.Rows)
-            {
-                object[] rowData = row.ItemArray;
-                flightDataGrid.Rows.Add(rowData);
-            }
-            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+        }
+        private void deptCountriesComboBox_OnDropDown(object sender, EventArgs e) {
+            deptCountriesComboBox.Items.Clear();
+            fillComboBox($"Select DISTINCT deptCountry from Flight", deptCountriesComboBox);
         }
 
-        private void ArrivalCountriesComboBox_BindingContextChanged(object sender, EventArgs e) {
-            string commandQuery = $"Select * from Flight where arrivalCountry = @arrivalCountry";
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
-                connection.Open();
-                SqlCommand command = new SqlCommand(commandQuery,connection);
-                command.Parameters.AddWithValue("@arrivalCountry", arrivalCountriesComboBox.Text);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
-                connection.Close();
-            }
-            foreach (DataRow row in dataTable.Rows)
-            {
-                object[] rowData = row.ItemArray;
-                flightDataGrid.Rows.Add(rowData);
-            }
-            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+        private void ArrivalCountriesComboBox_OnDropDown(object sender, EventArgs e) {
+            arrivalCountriesComboBox.Items.Clear();
+            fillComboBox($"Select DISTINCT arrivalCountry from Flight", arrivalCountriesComboBox);
         }
 
         private void bookFlightButton_Click(object sender, EventArgs e)
         {
+            flightDataGrid.Rows.Clear();
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(bookFlightPanel);
             this.flightDataGrid.Dock = DockStyle.Bottom;
             this.flightDataGrid.Size = new Size(1121, 522);
             this.flightDataGrid.Location = new Point(0, 179);
+
+
             DataTable dataTable = new DataTable();
-             using (SqlConnection connection = new SqlConnection(databaseConnection))
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
                 string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
@@ -212,5 +197,34 @@ namespace FlightReservationSystem
             }
             this.bookFlightPanel.Controls.Add(this.flightDataGrid);
         }
+
+        private void bookFlightComboBox_Changed(object sender, EventArgs e)
+        {
+            if (this.deptCountriesComboBox.SelectedItem == null || this.arrivalCountriesComboBox.SelectedItem == null) return;
+
+            flightDataGrid.Rows.Clear();
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
+                connection.Open();
+                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight " +
+                    "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
+                command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
+                command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            foreach (DataRow row in dataTable.Rows)
+            {
+                object[] rowData = row.ItemArray;
+                flightDataGrid.Rows.Add(rowData);
+            }
+            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+        }
+
+
     }
 }

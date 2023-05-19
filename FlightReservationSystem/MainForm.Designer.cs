@@ -40,20 +40,6 @@
             this.exploreFlightsButton = new System.Windows.Forms.Button();
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpButton = new System.Windows.Forms.Button();
-            this.bookFlightButton = new System.Windows.Forms.Button();
-            this.bookFlightPanel = new System.Windows.Forms.Panel();
-            this.arrivalCountryLabel = new System.Windows.Forms.Label();
-            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
-            this.deptCountryLabel = new System.Windows.Forms.Label();
-            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
-            this.deptDateLabel = new System.Windows.Forms.Label();
-            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.flightDataGrid = new System.Windows.Forms.DataGridView();
-            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.signUpPanel = new System.Windows.Forms.Panel();
             this.labelEmail = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
@@ -66,14 +52,28 @@
             this.labelPhone = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
+            this.bookFlightPanel = new System.Windows.Forms.Panel();
+            this.arrivalCountryLabel = new System.Windows.Forms.Label();
+            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptCountryLabel = new System.Windows.Forms.Label();
+            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptDateLabel = new System.Windows.Forms.Label();
+            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.bookFlightButton = new System.Windows.Forms.Button();
+            this.flightDataGrid = new System.Windows.Forms.DataGridView();
+            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.signInPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
             this.contentSplitContainer.SuspendLayout();
+            this.signUpPanel.SuspendLayout();
             this.bookFlightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).BeginInit();
-            this.signUpPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // signInPanel
@@ -160,7 +160,7 @@
             // 
             // contentSplitContainer.Panel2
             // 
-            
+            this.contentSplitContainer.Panel2.Controls.Add(this.signUpPanel);
             this.contentSplitContainer.Size = new System.Drawing.Size(1401, 701);
             this.contentSplitContainer.SplitterDistance = 276;
             this.contentSplitContainer.TabIndex = 0;
@@ -186,7 +186,7 @@
             this.exploreFlightsButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.exploreFlightsButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exploreFlightsButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 177);
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
             this.exploreFlightsButton.Name = "exploreFlightsButton";
             this.exploreFlightsButton.Size = new System.Drawing.Size(276, 57);
             this.exploreFlightsButton.TabIndex = 2;
@@ -201,7 +201,7 @@
             this.signInButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.signInButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.signInButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.signInButton.Location = new System.Drawing.Point(0, 120);
+            this.signInButton.Location = new System.Drawing.Point(0, 57);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(276, 57);
             this.signInButton.TabIndex = 1;
@@ -216,147 +216,13 @@
             this.signUpButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.signUpButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.signUpButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.signUpButton.Location = new System.Drawing.Point(0, 63);
+            this.signUpButton.Location = new System.Drawing.Point(0, 0);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(276, 57);
             this.signUpButton.TabIndex = 0;
             this.signUpButton.Text = "Sign Up";
             this.signUpButton.UseVisualStyleBackColor = false;
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
-            // 
-            // bookFlightButton
-            // 
-            this.bookFlightButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookFlightButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookFlightButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bookFlightButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bookFlightButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bookFlightButton.Location = new System.Drawing.Point(0, 0);
-            this.bookFlightButton.Name = "bookFlightButton";
-            this.bookFlightButton.Size = new System.Drawing.Size(276, 63);
-            this.bookFlightButton.TabIndex = 4;
-            this.bookFlightButton.Text = "Book Flight";
-            this.bookFlightButton.UseVisualStyleBackColor = false;
-            this.bookFlightButton.Click += new System.EventHandler(this.bookFlightButton_Click);
-            // 
-            // bookFlightPanel
-            // 
-            this.bookFlightPanel.Controls.Add(this.arrivalCountryLabel);
-            this.bookFlightPanel.Controls.Add(this.arrivalCountriesComboBox);
-            this.bookFlightPanel.Controls.Add(this.deptCountryLabel);
-            this.bookFlightPanel.Controls.Add(this.deptCountriesComboBox);
-            this.bookFlightPanel.Controls.Add(this.deptDateLabel);
-            this.bookFlightPanel.Controls.Add(this.deptDateTimePicker);
-            this.bookFlightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookFlightPanel.Location = new System.Drawing.Point(0, 0);
-            this.bookFlightPanel.Name = "bookFlightPanel";
-            this.bookFlightPanel.Size = new System.Drawing.Size(1121, 701);
-            this.bookFlightPanel.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.arrivalCountryLabel.AutoSize = true;
-            this.arrivalCountryLabel.Location = new System.Drawing.Point(578, 25);
-            this.arrivalCountryLabel.Name = "label3";
-            this.arrivalCountryLabel.Size = new System.Drawing.Size(38, 15);
-            this.arrivalCountryLabel.TabIndex = 11;
-            this.arrivalCountryLabel.Text = "Arrival Country";
-            // 
-            // arrivalCountriesComboBox
-            // 
-            this.arrivalCountriesComboBox.FormattingEnabled = true;
-            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(537, 43);
-            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
-            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
-            this.arrivalCountriesComboBox.TabIndex = 10;
-            this.deptCountriesComboBox.BindingContextChanged += new System.EventHandler(this.ArrivalCountriesComboBox_BindingContextChanged);
-            // 
-            // label2
-            // 
-            this.deptCountryLabel.AutoSize = true;
-            this.deptCountryLabel.Location = new System.Drawing.Point(430, 25);
-            this.deptCountryLabel.Name = "label2";
-            this.deptCountryLabel.Size = new System.Drawing.Size(38, 15);
-            this.deptCountryLabel.TabIndex = 9;
-            this.deptCountryLabel.Text = "Department Country";
-            // 
-            // deptCountriesComboBox
-            // 
-            this.deptCountriesComboBox.FormattingEnabled = true;
-            this.deptCountriesComboBox.Location = new System.Drawing.Point(398, 43);
-            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
-            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
-            this.deptCountriesComboBox.TabIndex = 8;
-            this.deptCountriesComboBox.BindingContextChanged += new System.EventHandler(this.deptCountriesComboBox_BindingContextChanged);
-            // 
-            // deptDateLabel
-            // 
-            this.deptDateLabel.AutoSize = true;
-            this.deptDateLabel.Location = new System.Drawing.Point(386, 100);
-            this.deptDateLabel.Name = "deptDateLabel";
-            this.deptDateLabel.Size = new System.Drawing.Size(38, 15);
-            this.deptDateLabel.TabIndex = 7;
-            this.deptDateLabel.Text = "Department Date";
-            // 
-            // deptDateTimePicker
-            // 
-            this.deptDateTimePicker.Location = new System.Drawing.Point(430, 94);
-            this.deptDateTimePicker.Name = "deptDateTimePicker";
-            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
-            this.deptDateTimePicker.TabIndex = 6;
-            // 
-            // flightDataGrid
-            // 
-            this.flightDataGrid.AllowUserToAddRows = false;
-            this.flightDataGrid.AllowUserToDeleteRows = false;
-            this.flightDataGrid.AllowUserToResizeColumns = false;
-            this.flightDataGrid.AllowUserToResizeRows = false;
-            this.flightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.flightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.flightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FlightNo,
-            this.deptDate,
-            this.deptCountry,
-            this.arrivalCountry,
-            this.expectedArrivalDate});
-            this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flightDataGrid.Location = new System.Drawing.Point(0, 0);
-            this.flightDataGrid.Name = "flightDataGrid";
-            this.flightDataGrid.ReadOnly = true;
-            this.flightDataGrid.RowTemplate.Height = 25;
-            this.flightDataGrid.Size = new System.Drawing.Size(1121, 701);
-            this.flightDataGrid.TabIndex = 0;
-            // 
-            // FlightNo
-            // 
-            this.FlightNo.HeaderText = "Flight Number";
-            this.FlightNo.Name = "FlightNo";
-            this.FlightNo.ReadOnly = true;
-            // 
-            // deptDate
-            // 
-            this.deptDate.HeaderText = "Departure Date";
-            this.deptDate.Name = "deptDate";
-            this.deptDate.ReadOnly = true;
-            // 
-            // deptCountry
-            // 
-            this.deptCountry.HeaderText = "Departure Country";
-            this.deptCountry.Name = "deptCountry";
-            this.deptCountry.ReadOnly = true;
-            // 
-            // arrivalCountry
-            // 
-            this.arrivalCountry.HeaderText = "Arrival Country";
-            this.arrivalCountry.Name = "arrivalCountry";
-            this.arrivalCountry.ReadOnly = true;
-            // 
-            // expectedArrivalDate
-            // 
-            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            this.expectedArrivalDate.Name = "expectedArrivalDate";
-            this.expectedArrivalDate.ReadOnly = true;
             // 
             // signUpPanel
             // 
@@ -413,6 +279,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(312, 23);
             this.textBoxFirstName.TabIndex = 3;
+            this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxValidation);
             // 
             // labelLastName
             // 
@@ -430,6 +297,7 @@
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(312, 23);
             this.textBoxLastName.TabIndex = 5;
+            this.textBoxLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxValidation);
             // 
             // labelPassword
             // 
@@ -465,6 +333,7 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(312, 23);
             this.textBoxPhone.TabIndex = 9;
+            this.textBoxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneValidation);
             // 
             // submitButton
             // 
@@ -480,12 +349,152 @@
             this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
+            // bookFlightPanel
+            // 
+            this.bookFlightPanel.Controls.Add(this.arrivalCountryLabel);
+            this.bookFlightPanel.Controls.Add(this.arrivalCountriesComboBox);
+            this.bookFlightPanel.Controls.Add(this.deptCountryLabel);
+            this.bookFlightPanel.Controls.Add(this.deptCountriesComboBox);
+            this.bookFlightPanel.Controls.Add(this.deptDateLabel);
+            this.bookFlightPanel.Controls.Add(this.deptDateTimePicker);
+            this.bookFlightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookFlightPanel.Location = new System.Drawing.Point(0, 0);
+            this.bookFlightPanel.Name = "bookFlightPanel";
+            this.bookFlightPanel.Size = new System.Drawing.Size(1121, 701);
+            this.bookFlightPanel.TabIndex = 0;
+            // 
+            // arrivalCountryLabel
+            // 
+            this.arrivalCountryLabel.AutoSize = true;
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(553, 25);
+            this.arrivalCountryLabel.Name = "arrivalCountryLabel";
+            this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
+            this.arrivalCountryLabel.TabIndex = 11;
+            this.arrivalCountryLabel.Text = "Arrival Country";
+            // 
+            // arrivalCountriesComboBox
+            // 
+            this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.arrivalCountriesComboBox.FormattingEnabled = true;
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(537, 43);
+            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
+            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.arrivalCountriesComboBox.TabIndex = 10;
+            this.arrivalCountriesComboBox.DropDown += new System.EventHandler(this.ArrivalCountriesComboBox_OnDropDown);
+            this.arrivalCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
+            // 
+            // deptCountryLabel
+            // 
+            this.deptCountryLabel.AutoSize = true;
+            this.deptCountryLabel.Location = new System.Drawing.Point(398, 25);
+            this.deptCountryLabel.Name = "deptCountryLabel";
+            this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
+            this.deptCountryLabel.TabIndex = 9;
+            this.deptCountryLabel.Text = "Departure Country";
+            // 
+            // deptCountriesComboBox
+            // 
+            this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.deptCountriesComboBox.FormattingEnabled = true;
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(398, 43);
+            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
+            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.deptCountriesComboBox.TabIndex = 8;
+            this.deptCountriesComboBox.DropDown += new System.EventHandler(this.deptCountriesComboBox_OnDropDown);
+            this.deptCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
+            // 
+            // deptDateLabel
+            // 
+            this.deptDateLabel.AutoSize = true;
+            this.deptDateLabel.Location = new System.Drawing.Point(338, 99);
+            this.deptDateLabel.Name = "deptDateLabel";
+            this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
+            this.deptDateLabel.TabIndex = 7;
+            this.deptDateLabel.Text = "Departure Date";
+            // 
+            // deptDateTimePicker
+            // 
+            this.deptDateTimePicker.Location = new System.Drawing.Point(430, 94);
+            this.deptDateTimePicker.Name = "deptDateTimePicker";
+            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.deptDateTimePicker.TabIndex = 6;
+            this.deptDateTimePicker.ValueChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
+            // 
+            // bookFlightButton
+            // 
+            this.bookFlightButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookFlightButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bookFlightButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bookFlightButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bookFlightButton.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bookFlightButton.Location = new System.Drawing.Point(0, 0);
+            this.bookFlightButton.Name = "bookFlightButton";
+            this.bookFlightButton.Size = new System.Drawing.Size(276, 63);
+            this.bookFlightButton.TabIndex = 4;
+            this.bookFlightButton.Text = "Book Flight";
+            this.bookFlightButton.UseVisualStyleBackColor = false;
+            this.bookFlightButton.Click += new System.EventHandler(this.bookFlightButton_Click);
+            // 
+            // flightDataGrid
+            // 
+            this.flightDataGrid.AllowUserToAddRows = false;
+            this.flightDataGrid.AllowUserToDeleteRows = false;
+            this.flightDataGrid.AllowUserToResizeColumns = false;
+            this.flightDataGrid.AllowUserToResizeRows = false;
+            this.flightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.flightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.flightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FlightNo,
+            this.deptDate,
+            this.deptCountry,
+            this.arrivalCountry,
+            this.expectedArrivalDate});
+            this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 0);
+            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.ReadOnly = true;
+            this.flightDataGrid.RowTemplate.Height = 25;
+            this.flightDataGrid.Size = new System.Drawing.Size(1121, 701);
+            this.flightDataGrid.TabIndex = 0;
+            // 
+            // FlightNo
+            // 
+            this.FlightNo.HeaderText = "Flight Number";
+            this.FlightNo.Name = "FlightNo";
+            this.FlightNo.ReadOnly = true;
+            // 
+            // deptDate
+            // 
+            this.deptDate.HeaderText = "Departure Date";
+            this.deptDate.Name = "deptDate";
+            this.deptDate.ReadOnly = true;
+            // 
+            // deptCountry
+            // 
+            this.deptCountry.HeaderText = "Departure Country";
+            this.deptCountry.Name = "deptCountry";
+            this.deptCountry.ReadOnly = true;
+            // 
+            // arrivalCountry
+            // 
+            this.arrivalCountry.HeaderText = "Arrival Country";
+            this.arrivalCountry.Name = "arrivalCountry";
+            this.arrivalCountry.ReadOnly = true;
+            // 
+            // expectedArrivalDate
+            // 
+            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
+            this.expectedArrivalDate.Name = "expectedArrivalDate";
+            this.expectedArrivalDate.ReadOnly = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1401, 701);
             this.Controls.Add(this.contentSplitContainer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.Text = "Flight Reservation System";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -495,11 +504,11 @@
             this.contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
             this.contentSplitContainer.ResumeLayout(false);
+            this.signUpPanel.ResumeLayout(false);
+            this.signUpPanel.PerformLayout();
             this.bookFlightPanel.ResumeLayout(false);
             this.bookFlightPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).EndInit();
-            this.signUpPanel.ResumeLayout(false);
-            this.signUpPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
