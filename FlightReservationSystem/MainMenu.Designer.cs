@@ -84,6 +84,7 @@
             this.exploreFlightsButton.TabIndex = 2;
             this.exploreFlightsButton.Text = "Explore Flights";
             this.exploreFlightsButton.UseVisualStyleBackColor = false;
+            this.exploreFlightsButton.Click += new System.EventHandler(this.exploreFlightsButton_Click);
             // 
             // signInButton
             // 

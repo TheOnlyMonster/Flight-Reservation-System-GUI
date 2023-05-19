@@ -28,6 +28,12 @@ namespace FlightReservationSystem
                 this.contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
             }
         }
+        private void exploreFlightsButton_Click(object sender, EventArgs e)
+        {
+            ExploreFlights exploreFlights = new ExploreFlights();
+            exploreFlights.Show();
+            this.Hide();
+        }
         private void bookFlightButton_Click(object sender, EventArgs e)
         {
             BookFlight bookFlight = new BookFlight();
