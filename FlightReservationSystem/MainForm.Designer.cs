@@ -161,7 +161,8 @@
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.signUpPanel);
+            //this.contentSplitContainer.Panel2.Controls.Add(this.flightDataGrid);
+            this.contentSplitContainer.Panel2.Controls.Add(this.bookFlightPanel);
             this.contentSplitContainer.Size = new System.Drawing.Size(1401, 701);
             this.contentSplitContainer.SplitterDistance = 276;
             this.contentSplitContainer.TabIndex = 0;
@@ -489,6 +490,7 @@
             this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
             this.expectedArrivalDate.Name = "expectedArrivalDate";
             this.expectedArrivalDate.ReadOnly = true;
+            contentSplitContainer.Panel2.Controls.Add(bookFlightPanel);
             // 
             // MainForm
             // 

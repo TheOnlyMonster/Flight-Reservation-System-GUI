@@ -33,6 +33,7 @@
             this.exploreFlightsButton = new System.Windows.Forms.Button();
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpButton = new System.Windows.Forms.Button();
+            this.bookFlightButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.SuspendLayout();
@@ -78,7 +79,7 @@
             this.exploreFlightsButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.exploreFlightsButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exploreFlightsButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 177);
             this.exploreFlightsButton.Name = "exploreFlightsButton";
             this.exploreFlightsButton.Size = new System.Drawing.Size(232, 57);
             this.exploreFlightsButton.TabIndex = 2;
@@ -92,7 +93,7 @@
             this.signInButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.signInButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.signInButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.signInButton.Location = new System.Drawing.Point(0, 57);
+            this.signInButton.Location = new System.Drawing.Point(0, 120);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(232, 57);
             this.signInButton.TabIndex = 1;
@@ -107,13 +108,27 @@
             this.signUpButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.signUpButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.signUpButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.signUpButton.Location = new System.Drawing.Point(0, 0);
+            this.signUpButton.Location = new System.Drawing.Point(0, 63);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(232, 57);
             this.signUpButton.TabIndex = 0;
             this.signUpButton.Text = "Sign Up";
             this.signUpButton.UseVisualStyleBackColor = false;
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
+            // 
+            // bookFlightButton
+            // 
+            this.bookFlightButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookFlightButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bookFlightButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bookFlightButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bookFlightButton.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bookFlightButton.Location = new System.Drawing.Point(0, 0);
+            this.bookFlightButton.Name = "bookFlightButton";
+            this.bookFlightButton.Size = new System.Drawing.Size(232, 63);
+            this.bookFlightButton.TabIndex = 3;
+            this.bookFlightButton.Text = "Book Flight";
+            this.bookFlightButton.UseVisualStyleBackColor = false;
             // 
             // MainMenu
             // 
