@@ -56,7 +56,7 @@ namespace FlightReservationSystem
             // 
             // contentSplitContainer.Panel1
             // 
-            this.contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
+            
             // 
             // contentSplitContainer.Panel2
             // 

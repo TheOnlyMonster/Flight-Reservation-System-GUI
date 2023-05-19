@@ -51,8 +51,7 @@
             this.contentSplitContainer.Panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.contentSplitContainer.Panel1.Controls.Add(this.helpButton);
             this.contentSplitContainer.Panel1.Controls.Add(this.exploreFlightsButton);
-            this.contentSplitContainer.Panel1.Controls.Add(this.signInButton);
-            this.contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
+            
             this.contentSplitContainer.Panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.contentSplitContainer.Size = new System.Drawing.Size(1182, 595);
             this.contentSplitContainer.SplitterDistance = 232;
@@ -129,6 +128,7 @@
             this.bookFlightButton.TabIndex = 3;
             this.bookFlightButton.Text = "Book Flight";
             this.bookFlightButton.UseVisualStyleBackColor = false;
+            this.bookFlightButton.Click += new System.EventHandler(this.bookFlightButton_Click);
             // 
             // MainMenu
             // 

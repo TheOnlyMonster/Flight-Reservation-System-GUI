@@ -40,8 +40,9 @@ namespace FlightReservationSystem
                     MessageBox.Show("Logged In Successfully");
                     if (reader[2].ToString() == "C")
                     {
-                        BookFlight bookFlight = new BookFlight();
-                        bookFlight.Show();
+                        MainMenu.IsUserLoggedIn = true;
+                        MainMenu mainMenu = new MainMenu();
+                        mainMenu.Show();
                         this.Hide();
                     }
                     else

@@ -16,8 +16,6 @@ namespace FlightReservationSystem
         public BookFlight()
         {
             InitializeComponent();
-            contentSplitContainer.Panel1.Controls.Remove(this.signUpButton);
-            contentSplitContainer.Panel1.Controls.Remove(this.signInButton);
         }
 
         private void bookFlightComboBox_Changed(object sender, EventArgs e)
