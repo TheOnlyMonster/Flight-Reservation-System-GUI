@@ -26,6 +26,7 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
+        
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
@@ -280,6 +281,7 @@
             this.textBoxFirstName.Size = new System.Drawing.Size(312, 23);
             this.textBoxFirstName.TabIndex = 3;
             this.textBoxFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxValidation);
+
             // 
             // labelLastName
             // 
@@ -333,7 +335,7 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(312, 23);
             this.textBoxPhone.TabIndex = 9;
-            this.textBoxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhoneValidation);
+            
             // 
             // submitButton
             // 
@@ -545,6 +547,8 @@
         private Label passwordSignInLabel;
         private TextBox passwordSignInTextBox;
         private Button signInPanelButton;
+
+
         private Button bookFlightButton;
         private Panel bookFlightPanel;
         private Label arrivalCountryLabel;
