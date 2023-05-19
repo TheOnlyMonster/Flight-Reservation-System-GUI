@@ -14,7 +14,7 @@ namespace FlightReservationSystem
     {
         protected static bool IsUserLoggedIn { get; set; } = false;
 
-        protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        protected string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
         {
             InitializeComponent();

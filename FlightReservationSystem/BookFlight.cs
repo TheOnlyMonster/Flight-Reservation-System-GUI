@@ -76,9 +76,12 @@ namespace FlightReservationSystem
             }
         }
 
-        private void flightDataGrid_CellDoubleClick(object sender, EventArgs e)
+        private void flightDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0) {
+                DataGridViewRow selectedRow = flightDataGrid.Rows[e.RowIndex];
+                MessageBox.Show(selectedRow.Cells["FlightNo"].Value.ToString());
+            }
         }
         private void BookFlight_Load(object sender, EventArgs e)
         {

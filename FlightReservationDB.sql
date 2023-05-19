@@ -29,12 +29,6 @@ create table AdminTable (
     Salary int not null
 );
 
-create table AdminCustomerAssignment (
-    AdminID int foreign key references AdminTable(AdminID), 
-    CustomerID int foreign key references CustomerTable(CustomerID),
-    PRIMARY KEY (AdminID, CustomerID)
-);
-
 CREATE TABLE Aircraft (
     AircraftID INT PRIMARY KEY IDENTITY(1, 1),
     Model VARCHAR(30) NOT NULL,
@@ -68,11 +62,12 @@ create table BookingManagment (
 );
 
 CREATE TABLE BookingDetails (
-    BookingID INT PRIMARY KEY IDENTITY(1, 1),
+    BookingID INT IDENTITY(1, 1),
     CustomerID INT REFERENCES CustomerTable(CustomerID) NOT NULL,
     FlightNo INT REFERENCES Flight(FlightNo) NOT NULL,
     BookingDate DATE NOT NULL,
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,
-    CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0)
+    CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
+    PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );
