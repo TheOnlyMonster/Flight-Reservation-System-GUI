@@ -28,7 +28,7 @@ namespace FlightReservationSystem
                 query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
             }
 
-            //flightDataGrid.Rows.Clear();
+            flightDataGrid.Rows.Clear();
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
@@ -51,8 +51,6 @@ namespace FlightReservationSystem
                 object[] rowData = row.ItemArray;
                 flightDataGrid.Rows.Add(rowData);
             }
-            //this.contentSplitContainer.Panel2.Controls.Add(this.flightDataGrid);
-            //this.bookFlightPanel.Controls.Add(this.flightDataGrid);
         }
         private void deptCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
