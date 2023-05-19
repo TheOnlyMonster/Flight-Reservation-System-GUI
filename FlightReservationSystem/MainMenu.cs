@@ -24,6 +24,8 @@ namespace FlightReservationSystem
             if (IsUserLoggedIn)
             {
                 contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
+                contentSplitContainer.Panel1.Controls.Add(this.UpdateInfo);
+
             }
             else if (IsAdminLoggedIn)
             {
@@ -63,7 +65,9 @@ namespace FlightReservationSystem
 
         private void UpdateInfo_Click(object sender, EventArgs e)
         {
-            
+            UpdateInfo UpdateInfoForm = new UpdateInfo();
+            UpdateInfoForm.Show();
+            this.Hide();
         }
     }
 }

@@ -51,7 +51,7 @@
             // contentSplitContainer.Panel1
             // 
             contentSplitContainer.Panel1.BackColor = SystemColors.InactiveCaption;
-            contentSplitContainer.Panel1.Controls.Add(UpdateInfo);
+         
             contentSplitContainer.Panel1.Controls.Add(helpButton);
             contentSplitContainer.Panel1.Controls.Add(exploreFlightsButton);
             contentSplitContainer.Panel1.ImeMode = ImeMode.NoControl;
