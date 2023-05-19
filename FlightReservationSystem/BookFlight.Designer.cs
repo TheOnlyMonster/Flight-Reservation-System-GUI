@@ -387,7 +387,7 @@ namespace FlightReservationSystem
             this.flightDataGrid.RowTemplate.Height = 25;
             this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
             this.flightDataGrid.TabIndex = 32;
-            this.flightDataGrid.CellDoubleClick += flightDataGrid_CellDoubleClick;
+            this.flightDataGrid.CellDoubleClick += flightDataGrid_CellClick;
             // 
             // FlightNo
             // 
