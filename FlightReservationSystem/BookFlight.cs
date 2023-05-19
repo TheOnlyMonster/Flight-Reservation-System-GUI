@@ -22,7 +22,8 @@ namespace FlightReservationSystem
         {
             string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight " +
                     "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
-            if (this.deptCountriesComboBox.SelectedItem == null || this.arrivalCountriesComboBox.SelectedItem == null) {
+            if (this.deptCountriesComboBox.SelectedItem == null || this.arrivalCountriesComboBox.SelectedItem == null)
+            {
                 query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
             }
 
@@ -31,15 +32,15 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                
+
                 SqlCommand command = new SqlCommand(query, connection);
-                if(this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
+                if (this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
                 {
                     command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
                     command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
                     command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
                 }
-                
+
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
                 connection.Close();
@@ -78,7 +79,8 @@ namespace FlightReservationSystem
 
         private void flightDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) {
+            if (e.RowIndex >= 0)
+            {
                 DataGridViewRow selectedRow = flightDataGrid.Rows[e.RowIndex];
                 MessageBox.Show(selectedRow.Cells["FlightNo"].Value.ToString());
             }
@@ -87,5 +89,6 @@ namespace FlightReservationSystem
         {
             bookFlightComboBox_Changed(sender, e);
         }
+
     }
 }

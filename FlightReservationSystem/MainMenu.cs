@@ -13,6 +13,9 @@ namespace FlightReservationSystem
     public partial class MainMenu : Form
     {
         protected static bool IsUserLoggedIn { get; set; } = false;
+        protected static bool IsAdminLoggedIn { get; set; } = false;
+
+
 
         protected string databaseConnection = "Server = LAPTOP-9HP7VCU2; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
@@ -21,6 +24,10 @@ namespace FlightReservationSystem
             if (IsUserLoggedIn)
             {
                 contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
+            }
+            else if (IsAdminLoggedIn)
+            {
+
             }
             else
             {
@@ -52,6 +59,11 @@ namespace FlightReservationSystem
             SignInForm signInForm = new SignInForm();
             signInForm.Show();
             this.Hide();
+        }
+
+        private void UpdateInfo_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

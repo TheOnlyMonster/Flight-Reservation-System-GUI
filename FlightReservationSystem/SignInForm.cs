@@ -27,7 +27,7 @@ namespace FlightReservationSystem
             {
                 connection.Open();
 
-                string query = "SELECT Email,Password,Identifier FROM UserTable WHERE Email = @Email AND Password = @Password";
+                string query = "SELECT * FROM UserTable WHERE Email = @Email AND Password = @Password";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Email", email);
@@ -37,18 +37,25 @@ namespace FlightReservationSystem
 
                 if (reader.Read())
                 {
+
+                    Customer customer = Customer.Instance;
+                    customer.Email = reader[1].ToString();
+                    customer.fname = reader[2].ToString();
+                    customer.lname = reader[3].ToString();
+                    customer.Password = reader[4].ToString();
+                    customer.Identifier = reader[5].ToString();
                     MessageBox.Show("Logged In Successfully");
-                    if (reader[2].ToString() == "C")
+                    if (customer.Identifier == "C")
                     {
-                        Customer customer = new Customer();
-                        
+
                         MainMenu.IsUserLoggedIn = true;
                         MainMenu mainMenu = new MainMenu();
                         mainMenu.Show();
                         this.Hide();
                     }
-                    else
+                    else if(customer.Identifier == "A")
                     {
+                        MainMenu.IsAdminLoggedIn=true;
                         //TODO: Admin Login
                     }
                 }

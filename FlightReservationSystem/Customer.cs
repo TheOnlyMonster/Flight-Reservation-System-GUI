@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace FlightReservationSystem
 {
     internal class Customer
     {
         private static Customer instance;
-        private string name;
-        private int id;
+        private string Fname;
+        private string Lname;
+        private string password;
+        private string identifier;
         private string city;
         private string country;
-        private string phone;
         private string email;
         private string phoneNumber;
 
@@ -33,5 +31,49 @@ namespace FlightReservationSystem
             }
         }
 
+        public string fname
+        {
+            get { return Fname; }
+            set { Fname = value; }
+        }
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+        public string lname
+        {
+            get { return Lname; }
+            set { Lname = value; }
+        }
+
+        public string City
+        {
+            get { return city; }
+            set { city = value; }
+        }
+
+        public string Country
+        {
+            get { return country; }
+            set { country = value; }
+        }
+        public string Identifier
+        {
+            get { return identifier; }
+            set { identifier = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
+        public string PhoneNumber
+        {
+            get { return phoneNumber; }
+            set { phoneNumber = value; }
+        }
     }
 }
