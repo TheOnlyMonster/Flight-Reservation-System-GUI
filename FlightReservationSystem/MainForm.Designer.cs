@@ -269,6 +269,7 @@
             this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.arrivalCountriesComboBox.TabIndex = 10;
+            this.deptCountriesComboBox.BindingContextChanged += new System.EventHandler(this.ArrivalCountriesComboBox_BindingContextChanged);
             // 
             // label2
             // 
@@ -286,6 +287,7 @@
             this.deptCountriesComboBox.Name = "deptCountriesComboBox";
             this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.deptCountriesComboBox.TabIndex = 8;
+            this.deptCountriesComboBox.BindingContextChanged += new System.EventHandler(this.deptCountriesComboBox_BindingContextChanged);
             // 
             // deptDateLabel
             // 

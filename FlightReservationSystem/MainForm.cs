@@ -9,7 +9,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
         }
-        private string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        private string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         private void MainForm_Load(object sender, EventArgs e)
         {
             exploreFlightsButton_Click(sender, e);
@@ -36,47 +36,49 @@ namespace FlightReservationSystem
         }
         private void submitButton_Click(object sender, EventArgs e)
         {   
-            //TODO: Add Data To The Database
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
-            {
-                connection.Open();
-                string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
-
-                using (SqlCommand command = new SqlCommand(checkingQuery, connection))
+            if (textBoxEmail.Text != "" && textBoxFirstName.Text != "" && textBoxLastName.Text != "" && textBoxPassword.Text != "" && textBoxPhone.Text != "") {
+                using (SqlConnection connection = new SqlConnection(databaseConnection))
                 {
-                    command.Parameters.AddWithValue("@email", textBoxEmail.Text);
-                    int filterKey = Convert.ToInt32(command.ExecuteScalar());
-                    if(filterKey == 1){
-                        MessageBox.Show("Email already taken!");
-                        connection.Close();
-                        return;
-                    }
-                }
-                string parentInsertQuery = "INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier) VALUES (@email, @fname, @lname, @password, @identifier); SELECT SCOPE_IDENTITY();";
-                using (SqlCommand parentCmd = new SqlCommand(parentInsertQuery, connection)) {
-                    parentCmd.Parameters.AddWithValue("@email",textBoxEmail.Text);
-                    parentCmd.Parameters.AddWithValue("@fname",textBoxFirstName.Text);
-                    parentCmd.Parameters.AddWithValue("@lname",textBoxLastName.Text);
-                    parentCmd.Parameters.AddWithValue("@password",textBoxPassword.Text);
-                    parentCmd.Parameters.AddWithValue("@identifier","C");
-                    int parentID = Convert.ToInt32(parentCmd.ExecuteScalar());
-                    string childInsertQuery = "INSERT INTO CustomerTable (CustomerID,PhoneNumber) VALUES (@cid, @phone);";
-                    using (SqlCommand childCmd = new SqlCommand(childInsertQuery,connection)) {
-                        childCmd.Parameters.AddWithValue("@cid", parentID);
-                        childCmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
-                        int rowsAffected = childCmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Data added successfully");
+                    connection.Open();
+                    string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
+                    using (SqlCommand command = new SqlCommand(checkingQuery, connection)) {
+                        command.Parameters.AddWithValue("@email", textBoxEmail.Text);
+                        int filterKey = Convert.ToInt32(command.ExecuteScalar());
+                        if(filterKey == 1){
+                            MessageBox.Show("Email already taken!");
+                            connection.Close();
+                            return;
                         }
-                        else
-                        {
-                            MessageBox.Show("Failed to add data");
-}
                     }
-                }
-                connection.Close();
-            } 
+                    string parentInsertQuery = "INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier) VALUES (@email, @fname, @lname, @password, @identifier); SELECT SCOPE_IDENTITY();";
+                    using (SqlCommand parentCmd = new SqlCommand(parentInsertQuery, connection)) {
+                        parentCmd.Parameters.AddWithValue("@email",textBoxEmail.Text);
+                        parentCmd.Parameters.AddWithValue("@fname",textBoxFirstName.Text);
+                        parentCmd.Parameters.AddWithValue("@lname",textBoxLastName.Text);
+                        parentCmd.Parameters.AddWithValue("@password",textBoxPassword.Text);
+                        parentCmd.Parameters.AddWithValue("@identifier","C");
+                        int parentID = Convert.ToInt32(parentCmd.ExecuteScalar());
+                        string childInsertQuery = "INSERT INTO CustomerTable (CustomerID,PhoneNumber) VALUES (@cid, @phone);";
+                        using (SqlCommand childCmd = new SqlCommand(childInsertQuery,connection)) {
+                            childCmd.Parameters.AddWithValue("@cid", parentID);
+                            childCmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
+                            int rowsAffected = childCmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                MessageBox.Show("Data added successfully");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to add data");
+                            }   
+                        }
+                    }
+                    connection.Close();
+                } 
+            }
+            else {
+                MessageBox.Show("Null values aren't valid!");
+            }
         }
         private void exploreFlightsButton_Click(object sender, EventArgs e)
         {
@@ -148,14 +150,67 @@ namespace FlightReservationSystem
             }
         }
 
+        private void deptCountriesComboBox_BindingContextChanged(object sender, EventArgs e) {
+            string commandQuery = $"Select * from Flight where deptCountry = @deptCountry";
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+                connection.Open();
+                SqlCommand command = new SqlCommand(commandQuery,connection);
+                command.Parameters.AddWithValue("@deptCountry", deptCountriesComboBox.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            foreach (DataRow row in dataTable.Rows)
+            {
+                object[] rowData = row.ItemArray;
+                flightDataGrid.Rows.Add(rowData);
+            }
+            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+        }
+
+        private void ArrivalCountriesComboBox_BindingContextChanged(object sender, EventArgs e) {
+            string commandQuery = $"Select * from Flight where arrivalCountry = @arrivalCountry";
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+                connection.Open();
+                SqlCommand command = new SqlCommand(commandQuery,connection);
+                command.Parameters.AddWithValue("@arrivalCountry", arrivalCountriesComboBox.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            foreach (DataRow row in dataTable.Rows)
+            {
+                object[] rowData = row.ItemArray;
+                flightDataGrid.Rows.Add(rowData);
+            }
+            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
+        }
+
         private void bookFlightButton_Click(object sender, EventArgs e)
         {
             contentSplitContainer.Panel2.Controls.Clear();
             contentSplitContainer.Panel2.Controls.Add(bookFlightPanel);
-            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
             this.flightDataGrid.Dock = DockStyle.Bottom;
             this.flightDataGrid.Size = new Size(1121, 522);
             this.flightDataGrid.Location = new Point(0, 179);
+            DataTable dataTable = new DataTable();
+             using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
+                connection.Open();
+                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival FROM Flight";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            foreach (DataRow row in dataTable.Rows)
+            {
+                object[] rowData = row.ItemArray;
+                flightDataGrid.Rows.Add(rowData);
+            }
+            this.bookFlightPanel.Controls.Add(this.flightDataGrid);
         }
     }
 }
