@@ -94,14 +94,17 @@ namespace FlightReservationSystem
             bookFlightComboBox_Changed(sender, e);
         }
 
-        private void seatsNumericUpDown_UpButton(object sender, EventArgs e) {
-            if (seatsNumericUpDown.Value >= 7) {
-                seatsNumericUpDown.Value = 7;  
+        private void seatsNumericUpDown_UpButton(object sender, EventArgs e)
+        {
+            if (seatsNumericUpDown.Value >= 7)
+            {
+                seatsNumericUpDown.Value = 7;
             }
 
         }
-        
-        private void confirmButton_Click(object sender, EventArgs e) {
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
             //string query = "INSERT INTO BookingDetails Values(CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice)"
             //needs changes in the database.
         }
