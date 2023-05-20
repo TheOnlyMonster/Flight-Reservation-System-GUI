@@ -29,14 +29,20 @@
         protected void InitializeComponent()
         {
             contentSplitContainer = new SplitContainer();
-            UpdateInfo = new Button();
             helpButton = new Button();
             exploreFlightsButton = new Button();
+            UpdateReservation = new Button();
+            UpdateAircraft = new Button();
+            AddAircraft = new Button();
+            AddFlight = new Button();
+            UpdateFlight = new Button();
+            UpdateInfo = new Button();
             signInButton = new Button();
             signUpButton = new Button();
             bookFlightButton = new Button();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
+            contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,22 +51,126 @@
             contentSplitContainer.Dock = DockStyle.Fill;
             contentSplitContainer.IsSplitterFixed = true;
             contentSplitContainer.Location = new Point(0, 0);
-            contentSplitContainer.Margin = new Padding(3, 4, 3, 4);
             contentSplitContainer.Name = "contentSplitContainer";
             // 
             // contentSplitContainer.Panel1
             // 
             contentSplitContainer.Panel1.BackColor = SystemColors.InactiveCaption;
-         
             contentSplitContainer.Panel1.Controls.Add(helpButton);
             contentSplitContainer.Panel1.Controls.Add(exploreFlightsButton);
             contentSplitContainer.Panel1.ImeMode = ImeMode.NoControl;
-            contentSplitContainer.Size = new Size(1351, 793);
-            contentSplitContainer.SplitterDistance = 265;
-            contentSplitContainer.SplitterWidth = 5;
+            // 
+            // contentSplitContainer.Panel2
+            // 
+            
+            contentSplitContainer.Size = new Size(1182, 595);
+            contentSplitContainer.SplitterDistance = 230;
             contentSplitContainer.TabIndex = 0;
             // 
-            // button1
+            // helpButton
+            // 
+            helpButton.BackColor = SystemColors.ButtonHighlight;
+            helpButton.Cursor = Cursors.Hand;
+            helpButton.Dock = DockStyle.Bottom;
+            helpButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            helpButton.ForeColor = SystemColors.HotTrack;
+            helpButton.Location = new Point(0, 532);
+            helpButton.Name = "helpButton";
+            helpButton.Size = new Size(230, 63);
+            helpButton.TabIndex = 3;
+            helpButton.Text = "Help";
+            helpButton.UseVisualStyleBackColor = false;
+            // 
+            // exploreFlightsButton
+            // 
+            exploreFlightsButton.BackColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.Cursor = Cursors.Hand;
+            exploreFlightsButton.Dock = DockStyle.Top;
+            exploreFlightsButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            exploreFlightsButton.ForeColor = SystemColors.HotTrack;
+            exploreFlightsButton.Location = new Point(0, 0);
+            exploreFlightsButton.Name = "exploreFlightsButton";
+            exploreFlightsButton.Size = new Size(230, 57);
+            exploreFlightsButton.TabIndex = 2;
+            exploreFlightsButton.Text = "Explore Flights";
+            exploreFlightsButton.UseVisualStyleBackColor = false;
+            exploreFlightsButton.Click += exploreFlightsButton_Click;
+            //
+
+            // UpdateReservation
+            // 
+            UpdateReservation.BackColor = SystemColors.ButtonHighlight;
+            UpdateReservation.Cursor = Cursors.Hand;
+            UpdateReservation.Dock = DockStyle.Top;
+            UpdateReservation.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            UpdateReservation.ForeColor = SystemColors.HotTrack;
+            UpdateReservation.Location = new Point(0, 285);
+            UpdateReservation.Name = "UpdateReservation";
+            UpdateReservation.Size = new Size(231, 57);
+            UpdateReservation.TabIndex = 8;
+            UpdateReservation.Text = "Update Reservation";
+            UpdateReservation.UseVisualStyleBackColor = false;
+            UpdateReservation.Click += UpdateReservation_Click;
+            // 
+            // UpdateAircraft
+            // 
+            UpdateAircraft.BackColor = SystemColors.ButtonHighlight;
+            UpdateAircraft.Cursor = Cursors.Hand;
+            UpdateAircraft.Dock = DockStyle.Top;
+            UpdateAircraft.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            UpdateAircraft.ForeColor = SystemColors.HotTrack;
+            UpdateAircraft.Location = new Point(0, 228);
+            UpdateAircraft.Name = "UpdateAircraft";
+            UpdateAircraft.Size = new Size(231, 57);
+            UpdateAircraft.TabIndex = 7;
+            UpdateAircraft.Text = "Update Aircarft";
+            UpdateAircraft.UseVisualStyleBackColor = false;
+            UpdateAircraft.Click += UpdateAircraft_Click;
+            // 
+            // AddAircraft
+            // 
+            AddAircraft.BackColor = SystemColors.ButtonHighlight;
+            AddAircraft.Cursor = Cursors.Hand;
+            AddAircraft.Dock = DockStyle.Top;
+            AddAircraft.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            AddAircraft.ForeColor = SystemColors.HotTrack;
+            AddAircraft.Location = new Point(0, 171);
+            AddAircraft.Name = "AddAircraft";
+            AddAircraft.Size = new Size(231, 57);
+            AddAircraft.TabIndex = 6;
+            AddAircraft.Text = "Add Aircraft";
+            AddAircraft.UseVisualStyleBackColor = false;
+            AddAircraft.Click += AddAircraft_Click;
+            // 
+            // AddFlight
+            // 
+            AddFlight.BackColor = SystemColors.ButtonHighlight;
+            AddFlight.Cursor = Cursors.Hand;
+            AddFlight.Dock = DockStyle.Top;
+            AddFlight.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            AddFlight.ForeColor = SystemColors.HotTrack;
+            AddFlight.Location = new Point(0, 114);
+            AddFlight.Name = "AddFlight";
+            AddFlight.Size = new Size(231, 57);
+            AddFlight.TabIndex = 5;
+            AddFlight.Text = "Add Flight";
+            AddFlight.UseVisualStyleBackColor = false;
+            // 
+            // UpdateFlight
+            // 
+            UpdateFlight.BackColor = SystemColors.ButtonHighlight;
+            UpdateFlight.Cursor = Cursors.Hand;
+            UpdateFlight.Dock = DockStyle.Top;
+            UpdateFlight.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            UpdateFlight.ForeColor = SystemColors.HotTrack;
+            UpdateFlight.Location = new Point(0, 57);
+            UpdateFlight.Name = "UpdateFlight";
+            UpdateFlight.Size = new Size(231, 57);
+            UpdateFlight.TabIndex = 4;
+            UpdateFlight.Text = "Update Flight";
+            UpdateFlight.UseVisualStyleBackColor = false;
+            // 
+            // UpdateInfo
             // 
             UpdateInfo.BackColor = SystemColors.ButtonHighlight;
             UpdateInfo.Cursor = Cursors.Hand;
@@ -75,37 +185,6 @@
             UpdateInfo.Text = "Update Info";
             UpdateInfo.UseVisualStyleBackColor = false;
             UpdateInfo.Click += UpdateInfo_Click;
-            // 
-            // helpButton
-            // 
-            helpButton.BackColor = SystemColors.ButtonHighlight;
-            helpButton.Cursor = Cursors.Hand;
-            helpButton.Dock = DockStyle.Bottom;
-            helpButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            helpButton.ForeColor = SystemColors.HotTrack;
-            helpButton.Location = new Point(0, 709);
-            helpButton.Margin = new Padding(3, 4, 3, 4);
-            helpButton.Name = "helpButton";
-            helpButton.Size = new Size(265, 84);
-            helpButton.TabIndex = 3;
-            helpButton.Text = "Help";
-            helpButton.UseVisualStyleBackColor = false;
-            // 
-            // exploreFlightsButton
-            // 
-            exploreFlightsButton.BackColor = SystemColors.ButtonHighlight;
-            exploreFlightsButton.Cursor = Cursors.Hand;
-            exploreFlightsButton.Dock = DockStyle.Top;
-            exploreFlightsButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            exploreFlightsButton.ForeColor = SystemColors.HotTrack;
-            exploreFlightsButton.Location = new Point(0, 0);
-            exploreFlightsButton.Margin = new Padding(3, 4, 3, 4);
-            exploreFlightsButton.Name = "exploreFlightsButton";
-            exploreFlightsButton.Size = new Size(265, 76);
-            exploreFlightsButton.TabIndex = 2;
-            exploreFlightsButton.Text = "Explore Flights";
-            exploreFlightsButton.UseVisualStyleBackColor = false;
-            exploreFlightsButton.Click += exploreFlightsButton_Click;
             // 
             // signInButton
             // 
@@ -154,17 +233,18 @@
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1351, 793);
+            ClientSize = new Size(1182, 595);
             Controls.Add(contentSplitContainer);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "MainMenu";
             Text = "MainMenu";
             contentSplitContainer.Panel1.ResumeLayout(false);
+            contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
             contentSplitContainer.ResumeLayout(false);
+            
             ResumeLayout(false);
         }
 
@@ -175,8 +255,13 @@
         protected Button exploreFlightsButton;
         protected Button bookFlightButton;
         protected Button UpdateInfo;
+
         #endregion
-
-
+        protected Button UpdateAircraft;
+        protected Button AddAircraft;
+        protected Button AddFlight;
+        protected Button UpdateFlight;
+        protected Button UpdateReservation;
+       
     }
 }

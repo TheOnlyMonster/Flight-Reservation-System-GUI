@@ -32,6 +32,12 @@ namespace FlightReservationSystem
         {
             panel1 = new Panel();
             panel3 = new Panel();
+            label15 = new Label();
+            textBox1 = new TextBox();
+            label14 = new Label();
+            ClassPriceTextBox = new TextBox();
+            label13 = new Label();
+            ClassComboBox = new ComboBox();
             confirmButton = new Button();
             seatsNumericUpDown = new NumericUpDown();
             label12 = new Label();
@@ -73,12 +79,6 @@ namespace FlightReservationSystem
             deptCountriesComboBox = new ComboBox();
             deptDateLabel = new Label();
             deptDateTimePicker = new DateTimePicker();
-            ClassComboBox = new ComboBox();
-            label13 = new Label();
-            ClassPriceTextBox = new TextBox();
-            label14 = new Label();
-            textBox1 = new TextBox();
-            label15 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -97,16 +97,7 @@ namespace FlightReservationSystem
             // contentSplitContainer.Panel2
             // 
             contentSplitContainer.Panel2.Controls.Add(panel1);
-            contentSplitContainer.SplitterDistance = 230;
             contentSplitContainer.SplitterWidth = 6;
-            // 
-            // signInButton
-            // 
-            signInButton.Size = new Size(230, 57);
-            // 
-            // signUpButton
-            // 
-            signUpButton.Size = new Size(230, 57);
             // 
             // helpButton
             // 
@@ -117,7 +108,6 @@ namespace FlightReservationSystem
             // exploreFlightsButton
             // 
             exploreFlightsButton.Margin = new Padding(3, 4, 3, 4);
-            exploreFlightsButton.Size = new Size(230, 57);
             // 
             // bookFlightButton
             // 
@@ -170,6 +160,58 @@ namespace FlightReservationSystem
             panel3.Name = "panel3";
             panel3.Size = new Size(379, 580);
             panel3.TabIndex = 1;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(71, 329);
+            label15.Name = "label15";
+            label15.Size = new Size(61, 15);
+            label15.TabIndex = 45;
+            label15.Text = "Total Price";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(138, 321);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(131, 23);
+            textBox1.TabIndex = 44;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(262, 259);
+            label14.Name = "label14";
+            label14.Size = new Size(63, 15);
+            label14.TabIndex = 43;
+            label14.Text = "Class Price";
+            // 
+            // ClassPriceTextBox
+            // 
+            ClassPriceTextBox.Location = new Point(223, 277);
+            ClassPriceTextBox.Name = "ClassPriceTextBox";
+            ClassPriceTextBox.ReadOnly = true;
+            ClassPriceTextBox.Size = new Size(127, 23);
+            ClassPriceTextBox.TabIndex = 42;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(81, 259);
+            label13.Name = "label13";
+            label13.Size = new Size(34, 15);
+            label13.TabIndex = 41;
+            label13.Text = "Class";
+            // 
+            // ClassComboBox
+            // 
+            ClassComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            ClassComboBox.FormattingEnabled = true;
+            ClassComboBox.Location = new Point(35, 277);
+            ClassComboBox.Name = "ClassComboBox";
+            ClassComboBox.Size = new Size(138, 23);
+            ClassComboBox.TabIndex = 40;
             // 
             // confirmButton
             // 
@@ -382,7 +424,7 @@ namespace FlightReservationSystem
             panel2.Controls.Add(deptCountriesComboBox);
             panel2.Controls.Add(deptDateLabel);
             panel2.Controls.Add(deptDateTimePicker);
-            panel2.Location = new Point(3, 12);
+            panel2.Location = new Point(8, 12);
             panel2.Name = "panel2";
             panel2.Size = new Size(557, 580);
             panel2.TabIndex = 0;
@@ -526,58 +568,6 @@ namespace FlightReservationSystem
             deptDateTimePicker.Size = new Size(200, 23);
             deptDateTimePicker.TabIndex = 26;
             deptDateTimePicker.ValueChanged += bookFlightComboBox_Changed;
-            // 
-            // ClassComboBox
-            // 
-            ClassComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            ClassComboBox.FormattingEnabled = true;
-            ClassComboBox.Location = new Point(35, 277);
-            ClassComboBox.Name = "ClassComboBox";
-            ClassComboBox.Size = new Size(138, 23);
-            ClassComboBox.TabIndex = 40;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(81, 259);
-            label13.Name = "label13";
-            label13.Size = new Size(34, 15);
-            label13.TabIndex = 41;
-            label13.Text = "Class";
-            // 
-            // ClassPriceTextBox
-            // 
-            ClassPriceTextBox.Location = new Point(223, 277);
-            ClassPriceTextBox.Name = "ClassPriceTextBox";
-            ClassPriceTextBox.ReadOnly = true;
-            ClassPriceTextBox.Size = new Size(127, 23);
-            ClassPriceTextBox.TabIndex = 42;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(262, 259);
-            label14.Name = "label14";
-            label14.Size = new Size(63, 15);
-            label14.TabIndex = 43;
-            label14.Text = "Class Price";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(138, 321);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(131, 23);
-            textBox1.TabIndex = 44;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(71, 329);
-            label15.Name = "label15";
-            label15.Size = new Size(61, 15);
-            label15.TabIndex = 45;
-            label15.Text = "Total Price";
             // 
             // BookFlight
             // 

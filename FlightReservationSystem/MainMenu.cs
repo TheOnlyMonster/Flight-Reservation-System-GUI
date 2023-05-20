@@ -17,7 +17,7 @@ namespace FlightReservationSystem
 
 
 
-        protected string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        protected string databaseConnection = "Server = LAPTOP-9HP7VCU2; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
         {
             InitializeComponent();
@@ -29,6 +29,12 @@ namespace FlightReservationSystem
             }
             else if (IsAdminLoggedIn)
             {
+                contentSplitContainer.Panel1.Controls.Add(this.UpdateAircraft);
+                contentSplitContainer.Panel1.Controls.Add(this.AddAircraft);
+                contentSplitContainer.Panel1.Controls.Add(this.AddFlight);
+                contentSplitContainer.Panel1.Controls.Add(this.UpdateFlight);
+                contentSplitContainer.Panel1.Controls.Add(this.UpdateReservation);
+
 
             }
             else
@@ -68,6 +74,48 @@ namespace FlightReservationSystem
             UpdateInfo UpdateInfoForm = new UpdateInfo();
             UpdateInfoForm.Show();
             this.Hide();
+        }
+
+
+        private void AddAircraft_Click(object sender, EventArgs e)
+        {
+            AddAirCraft AddAirCraft = new AddAirCraft();
+            AddAirCraft.Show();
+            this.Hide();
+        }
+
+        private void UpdateAircraft_Click(object sender, EventArgs e)
+        {
+            UpdateAirCraft UpdateAirCraft = new UpdateAirCraft();
+            UpdateAirCraft.Show();
+            this.Hide();
+
+        }
+
+
+
+        private void UpdateReservation_Click(object sender, EventArgs e)
+        {
+            UpdateReservation UpdateReservation = new UpdateReservation();
+            UpdateReservation.Show();
+            this.Hide();
+        }
+
+       
+
+        private void AddFlightButton_Click(object sender, EventArgs e)
+        {
+            AddFlight AddFlight = new AddFlight();
+            AddFlight.Show();
+            this.Hide();
+        }
+
+        private void EditFlightButton_Click(object sender, EventArgs e)
+        {
+            UpdateFlight UpdateFlight = new UpdateFlight();
+            UpdateFlight.Show();
+            this.Hide();
+
         }
     }
 }
