@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            label2 = new Label();
+            label1 = new Label();
+            FlighNoTextBox = new TextBox();
+            CustomerIdTextBox = new TextBox();
+            UpdateReservationDataGridView = new DataGridView();
             BookingID = new DataGridViewTextBoxColumn();
             CustomerID = new DataGridViewTextBoxColumn();
             FlightNo = new DataGridViewTextBoxColumn();
@@ -39,17 +43,30 @@
             Ranl = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
+            CustomerIdTextBox2 = new TextBox();
+            TicketPriceTextBox = new TextBox();
+            SeatAssignmentTextBox = new TextBox();
+            BookingDateTextBox = new TextBox();
+            FlightNoTextBox2 = new TextBox();
+            BookingIdTextBox = new TextBox();
+            RankComboBox = new ComboBox();
+            ConfirmButton = new Button();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            StatusComboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UpdateReservationDataGridView).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,28 +101,61 @@
             // 
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(FlighNoTextBox);
+            panel1.Controls.Add(CustomerIdTextBox);
+            panel1.Controls.Add(UpdateReservationDataGridView);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(635, 632);
             panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // label2
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView1.BackgroundColor = SystemColors.ButtonFace;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Ranl, Status });
-            dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
-            dataGridView1.GridColor = SystemColors.ControlDarkDark;
-            dataGridView1.Location = new Point(3, 54);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(632, 603);
-            dataGridView1.TabIndex = 0;
+            label2.AutoSize = true;
+            label2.Location = new Point(297, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(56, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Flight No";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(33, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Customer ID";
+            // 
+            // FlighNoTextBox
+            // 
+            FlighNoTextBox.Location = new Point(359, 21);
+            FlighNoTextBox.Name = "FlighNoTextBox";
+            FlighNoTextBox.Size = new Size(100, 23);
+            FlighNoTextBox.TabIndex = 2;
+            // 
+            // CustomerIdTextBox
+            // 
+            CustomerIdTextBox.Location = new Point(112, 21);
+            CustomerIdTextBox.Name = "CustomerIdTextBox";
+            CustomerIdTextBox.Size = new Size(110, 23);
+            CustomerIdTextBox.TabIndex = 1;
+            
+            // 
+            // UpdateReservationDataGridView
+            // 
+            UpdateReservationDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            UpdateReservationDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            UpdateReservationDataGridView.BackgroundColor = SystemColors.ButtonFace;
+            UpdateReservationDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            UpdateReservationDataGridView.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Ranl, Status });
+            UpdateReservationDataGridView.EditMode = DataGridViewEditMode.EditOnEnter;
+            UpdateReservationDataGridView.GridColor = SystemColors.ControlDarkDark;
+            UpdateReservationDataGridView.Location = new Point(3, 54);
+            UpdateReservationDataGridView.Name = "UpdateReservationDataGridView";
+            UpdateReservationDataGridView.RowTemplate.Height = 25;
+            UpdateReservationDataGridView.Size = new Size(632, 603);
+            UpdateReservationDataGridView.TabIndex = 0;
             // 
             // BookingID
             // 
@@ -157,43 +207,28 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(StatusComboBox);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(ConfirmButton);
+            panel2.Controls.Add(RankComboBox);
+            panel2.Controls.Add(BookingIdTextBox);
+            panel2.Controls.Add(FlightNoTextBox2);
+            panel2.Controls.Add(BookingDateTextBox);
+            panel2.Controls.Add(SeatAssignmentTextBox);
+            panel2.Controls.Add(TicketPriceTextBox);
+            panel2.Controls.Add(CustomerIdTextBox2);
             panel2.Controls.Add(label3);
             panel2.Location = new Point(644, 3);
             panel2.Name = "panel2";
             panel2.Size = new Size(332, 632);
             panel2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(112, 21);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(110, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(359, 21);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(68, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(315, 29);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 4;
-            label2.Text = "label2";
             // 
             // label3
             // 
@@ -204,6 +239,151 @@
             label3.Size = new Size(180, 25);
             label3.TabIndex = 1;
             label3.Text = "Update Reservation";
+            // 
+            // CustomerIdTextBox2
+            // 
+            CustomerIdTextBox2.Location = new Point(41, 111);
+            CustomerIdTextBox2.Name = "CustomerIdTextBox2";
+            CustomerIdTextBox2.ReadOnly = true;
+            CustomerIdTextBox2.Size = new Size(100, 23);
+            CustomerIdTextBox2.TabIndex = 2;
+            // 
+            // TicketPriceTextBox
+            // 
+            TicketPriceTextBox.Location = new Point(198, 256);
+            TicketPriceTextBox.Name = "TicketPriceTextBox";
+            TicketPriceTextBox.Size = new Size(100, 23);
+            TicketPriceTextBox.TabIndex = 3;
+            // 
+            // SeatAssignmentTextBox
+            // 
+            SeatAssignmentTextBox.Location = new Point(41, 256);
+            SeatAssignmentTextBox.Name = "SeatAssignmentTextBox";
+            SeatAssignmentTextBox.Size = new Size(100, 23);
+            SeatAssignmentTextBox.TabIndex = 4;
+            // 
+            // BookingDateTextBox
+            // 
+            BookingDateTextBox.Location = new Point(198, 181);
+            BookingDateTextBox.Name = "BookingDateTextBox";
+            BookingDateTextBox.ReadOnly = true;
+            BookingDateTextBox.Size = new Size(100, 23);
+            BookingDateTextBox.TabIndex = 5;
+            // 
+            // FlightNoTextBox2
+            // 
+            FlightNoTextBox2.Location = new Point(198, 111);
+            FlightNoTextBox2.Name = "FlightNoTextBox2";
+            FlightNoTextBox2.ReadOnly = true;
+            FlightNoTextBox2.Size = new Size(100, 23);
+            FlightNoTextBox2.TabIndex = 6;
+            // 
+            // BookingIdTextBox
+            // 
+            BookingIdTextBox.Location = new Point(41, 181);
+            BookingIdTextBox.Name = "BookingIdTextBox";
+            BookingIdTextBox.ReadOnly = true;
+            BookingIdTextBox.Size = new Size(100, 23);
+            BookingIdTextBox.TabIndex = 7;
+            // 
+            // RankComboBox
+            // 
+            RankComboBox.FormattingEnabled = true;
+            RankComboBox.Items.AddRange(new object[] { "sd", "a", "a" });
+            RankComboBox.Location = new Point(198, 321);
+            RankComboBox.Name = "RankComboBox";
+            RankComboBox.Size = new Size(100, 23);
+            RankComboBox.TabIndex = 8;
+            // 
+            // ConfirmButton
+            // 
+            ConfirmButton.Location = new Point(118, 474);
+            ConfirmButton.Name = "ConfirmButton";
+            ConfirmButton.Size = new Size(113, 23);
+            ConfirmButton.TabIndex = 10;
+            ConfirmButton.Text = "Confirm";
+            ConfirmButton.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(41, 96);
+            label4.Name = "label4";
+            label4.Size = new Size(73, 15);
+            label4.TabIndex = 12;
+            label4.Text = "Customer ID";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(198, 163);
+            label5.Name = "label5";
+            label5.Size = new Size(78, 15);
+            label5.TabIndex = 13;
+            label5.Text = "Booking Date";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(41, 303);
+            label6.Name = "label6";
+            label6.Size = new Size(39, 15);
+            label6.TabIndex = 14;
+            label6.Text = "Status";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(41, 238);
+            label7.Name = "label7";
+            label7.Size = new Size(95, 15);
+            label7.TabIndex = 15;
+            label7.Text = "Seat Assignment";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(198, 303);
+            label8.Name = "label8";
+            label8.Size = new Size(33, 15);
+            label8.TabIndex = 16;
+            label8.Text = "Rank";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(198, 238);
+            label9.Name = "label9";
+            label9.Size = new Size(67, 15);
+            label9.TabIndex = 17;
+            label9.Text = "Ticket Price";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(41, 163);
+            label10.Name = "label10";
+            label10.Size = new Size(65, 15);
+            label10.TabIndex = 18;
+            label10.Text = "Booking ID";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(198, 93);
+            label11.Name = "label11";
+            label11.Size = new Size(56, 15);
+            label11.TabIndex = 19;
+            label11.Text = "Flight No";
+            // 
+            // StatusComboBox
+            // 
+            StatusComboBox.FormattingEnabled = true;
+            StatusComboBox.Items.AddRange(new object[] { "sd", "a", "a" });
+            StatusComboBox.Location = new Point(41, 321);
+            StatusComboBox.Name = "StatusComboBox";
+            StatusComboBox.Size = new Size(100, 23);
+            StatusComboBox.TabIndex = 20;
             // 
             // UpdateReservation
             // 
@@ -218,7 +398,7 @@
             contentSplitContainer.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UpdateReservationDataGridView).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -228,7 +408,7 @@
 
         private Panel panel2;
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView UpdateReservationDataGridView;
         private DataGridViewTextBoxColumn BookingID;
         private DataGridViewTextBoxColumn CustomerID;
         private DataGridViewTextBoxColumn FlightNo;
@@ -240,8 +420,25 @@
         private DataGridViewTextBoxColumn Status;
         private Label label2;
         private Label label1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox FlighNoTextBox;
+        private TextBox CustomerIdTextBox;
         private Label label3;
+        private ComboBox RankComboBox;
+        private TextBox BookingIdTextBox;
+        private TextBox FlightNoTextBox2;
+        private TextBox BookingDateTextBox;
+        private TextBox SeatAssignmentTextBox;
+        private TextBox TicketPriceTextBox;
+        private TextBox CustomerIdTextBox2;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Button ConfirmButton;
+        private ComboBox StatusComboBox;
     }
 }
