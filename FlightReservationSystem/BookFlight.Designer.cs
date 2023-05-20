@@ -30,56 +30,59 @@ namespace FlightReservationSystem
         /// </summary>
         private new void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel3 = new Panel();
-            confirmButton = new Button();
-            seatsNumericUpDown = new NumericUpDown();
-            label12 = new Label();
-            seatsAvailableTextBox = new TextBox();
-            label11 = new Label();
-            cvvCreditCardTextBox = new TextBox();
-            label10 = new Label();
-            creditCardExpiryDateTextBox = new TextBox();
-            label9 = new Label();
-            creditCardTextBox = new TextBox();
-            label8 = new Label();
-            passportDateTimePicker = new DateTimePicker();
-            label4 = new Label();
-            passportNumberTextBox = new TextBox();
-            label3 = new Label();
-            arrivalDateTextBox = new TextBox();
-            label7 = new Label();
-            arrivalCountryTextBox = new TextBox();
-            label6 = new Label();
-            deptCountryTextBox = new TextBox();
-            label5 = new Label();
-            flightNoTextBox = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            panel2 = new Panel();
-            flightDataGrid = new DataGridView();
-            FlightNo = new DataGridViewTextBoxColumn();
-            deptDate = new DataGridViewTextBoxColumn();
-            deptCountry = new DataGridViewTextBoxColumn();
-            arrivalCountry = new DataGridViewTextBoxColumn();
-            expectedArrivalDate = new DataGridViewTextBoxColumn();
-            AvailableSeats = new DataGridViewTextBoxColumn();
-            arrivalCountryLabel = new Label();
-            arrivalCountriesComboBox = new ComboBox();
-            deptCountryLabel = new Label();
-            deptCountriesComboBox = new ComboBox();
-            deptDateLabel = new Label();
-            deptDateTimePicker = new DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)seatsNumericUpDown).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)flightDataGrid).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.confirmButton = new System.Windows.Forms.Button();
+            this.seatsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.seatsAvailableTextBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cvvCreditCardTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.creditCardExpiryDateTextBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.creditCardTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.passportDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.passportNumberTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.arrivalDateTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.arrivalCountryTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.deptCountryTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.flightNoTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.flightDataGrid = new System.Windows.Forms.DataGridView();
+            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountryLabel = new System.Windows.Forms.Label();
+            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptCountryLabel = new System.Windows.Forms.Label();
+            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptDateLabel = new System.Windows.Forms.Label();
+            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seatsNumericUpDown)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).BeginInit();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
@@ -393,24 +396,31 @@ namespace FlightReservationSystem
             // 
             // flightDataGrid
             // 
-            flightDataGrid.AllowUserToAddRows = false;
-            flightDataGrid.AllowUserToDeleteRows = false;
-            flightDataGrid.AllowUserToResizeColumns = false;
-            flightDataGrid.AllowUserToResizeRows = false;
-            flightDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            flightDataGrid.BackgroundColor = SystemColors.Control;
-            flightDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            flightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrivalDate, AvailableSeats });
-            flightDataGrid.Dock = DockStyle.Bottom;
-            flightDataGrid.Location = new Point(0, 132);
-            flightDataGrid.Margin = new Padding(3, 4, 3, 4);
-            flightDataGrid.Name = "flightDataGrid";
-            flightDataGrid.ReadOnly = true;
-            flightDataGrid.RowHeadersWidth = 51;
-            flightDataGrid.RowTemplate.Height = 25;
-            flightDataGrid.Size = new Size(637, 641);
-            flightDataGrid.TabIndex = 32;
-            flightDataGrid.CellClick += flightDataGrid_CellClick;
+            this.flightDataGrid.AllowUserToAddRows = false;
+            this.flightDataGrid.AllowUserToDeleteRows = false;
+            this.flightDataGrid.AllowUserToResizeColumns = false;
+            this.flightDataGrid.AllowUserToResizeRows = false;
+            this.flightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.flightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.flightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FlightNo,
+            this.deptDate,
+            this.deptCountry,
+            this.arrivalCountry,
+            this.expectedArrivalDate,
+            this.AvailableSeats,
+            this.Rank1Price,
+            this.Rank2Price,
+            this.Rank3Price});
+            this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 99);
+            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.ReadOnly = true;
+            this.flightDataGrid.RowTemplate.Height = 25;
+            this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
+            this.flightDataGrid.TabIndex = 32;
+            this.flightDataGrid.CellClick += flightDataGrid_CellClick;
             // 
             // FlightNo
             // 
@@ -453,6 +463,27 @@ namespace FlightReservationSystem
             AvailableSeats.MinimumWidth = 6;
             AvailableSeats.Name = "AvailableSeats";
             AvailableSeats.ReadOnly = true;
+            // 
+            // Rank1Price
+            // 
+            Rank1Price.HeaderText = "Rank A Price";
+            Rank1Price.MinimumWidth = 6;
+            Rank1Price.Name = "Rank1Price";
+            Rank1Price.ReadOnly = true;
+            // 
+            // Rank2Price
+            // 
+            Rank2Price.HeaderText = "Rank B Price";
+            Rank2Price.MinimumWidth = 6;
+            Rank2Price.Name = "Rank2Price";
+            Rank2Price.ReadOnly = true;
+            // 
+            // Rank1Price
+            // 
+            Rank3Price.HeaderText = "Rank C Price";
+            Rank3Price.MinimumWidth = 6;
+            Rank3Price.Name = "Rank3Price";
+            Rank3Price.ReadOnly = true;
             // 
             // arrivalCountryLabel
             // 
@@ -549,6 +580,9 @@ namespace FlightReservationSystem
         private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn expectedArrivalDate;
         private DataGridViewTextBoxColumn AvailableSeats;
+        private DataGridViewTextBoxColumn Rank1Price;
+        private DataGridViewTextBoxColumn Rank2Price;
+        private DataGridViewTextBoxColumn Rank3Price;
         private Label arrivalCountryLabel;
         private ComboBox arrivalCountriesComboBox;
         private Label deptCountryLabel;

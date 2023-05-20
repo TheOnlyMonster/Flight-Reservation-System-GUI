@@ -35,6 +35,9 @@
             this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -64,7 +67,10 @@
             this.deptCountry,
             this.arrivalCountry,
             this.expectedArrivalDate,
-            this.AvailableSeats});
+            this.AvailableSeats,
+            this.Rank1Price,
+            this.Rank2Price,
+            this.Rank3Price});
             this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flightDataGrid.Location = new System.Drawing.Point(0, 0);
             this.flightDataGrid.Name = "flightDataGrid";
@@ -108,6 +114,27 @@
             this.AvailableSeats.HeaderText = "Available Seats";
             this.AvailableSeats.Name = "Available Seats";
             this.AvailableSeats.ReadOnly = true;
+                        // 
+            // Rank1Price
+            // 
+            Rank1Price.HeaderText = "Rank A Price";
+            Rank1Price.MinimumWidth = 6;
+            Rank1Price.Name = "Rank1Price";
+            Rank1Price.ReadOnly = true;
+            // 
+            // Rank2Price
+            // 
+            Rank2Price.HeaderText = "Rank B Price";
+            Rank2Price.MinimumWidth = 6;
+            Rank2Price.Name = "Rank2Price";
+            Rank2Price.ReadOnly = true;
+            // 
+            // Rank1Price
+            // 
+            Rank3Price.HeaderText = "Rank C Price";
+            Rank3Price.MinimumWidth = 6;
+            Rank3Price.Name = "Rank3Price";
+            Rank3Price.ReadOnly = true;
             // 
             // ExploreFlights
             // 
@@ -135,5 +162,8 @@
         private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn expectedArrivalDate;
         private DataGridViewTextBoxColumn AvailableSeats;
+        private DataGridViewTextBoxColumn Rank1Price;
+        private DataGridViewTextBoxColumn Rank2Price;
+        private DataGridViewTextBoxColumn Rank3Price;
     }
 }
