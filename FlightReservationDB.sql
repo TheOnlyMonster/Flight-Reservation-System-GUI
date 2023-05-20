@@ -69,10 +69,12 @@ CREATE TABLE BookingDetails (
     BookingID INT IDENTITY(1, 1),
     CustomerID INT REFERENCES CustomerTable(CustomerID) NOT NULL,
     FlightNo INT REFERENCES Flight(FlightNo) NOT NULL,
-    BookingDate DATE NOT NULL,
+    BookingDate VARCHAR(15) NOT NULL,
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,
-    Rank INT NOT NULL,
+    Rank VARCHAR(15) NOT NULL,
+    Status SMALLINT NOT NULL,
+    CONSTRAINT CHK_Status_Constraint CHECK (Status in (0,1)),
     CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );

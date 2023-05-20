@@ -79,6 +79,12 @@ namespace FlightReservationSystem
             deptCountriesComboBox = new ComboBox();
             deptDateLabel = new Label();
             deptDateTimePicker = new DateTimePicker();
+            ClassComboBox = new ComboBox();
+            label13 = new Label();
+            ClassPriceTextBox = new TextBox();
+            label14 = new Label();
+            TotalPriceTextBox = new TextBox();
+            label15 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -127,7 +133,7 @@ namespace FlightReservationSystem
             // panel3
             // 
             panel3.Controls.Add(label15);
-            panel3.Controls.Add(textBox1);
+            panel3.Controls.Add(TotalPriceTextBox);
             panel3.Controls.Add(label14);
             panel3.Controls.Add(ClassPriceTextBox);
             panel3.Controls.Add(label13);
@@ -311,6 +317,8 @@ namespace FlightReservationSystem
             passportDateTimePicker.Name = "passportDateTimePicker";
             passportDateTimePicker.Size = new Size(207, 23);
             passportDateTimePicker.TabIndex = 27;
+            passportDateTimePicker.Format = DateTimePickerFormat.Custom;
+            passportDateTimePicker.CustomFormat = "yyyy-MM-dd";
             // 
             // label4
             // 
@@ -567,7 +575,62 @@ namespace FlightReservationSystem
             deptDateTimePicker.Name = "deptDateTimePicker";
             deptDateTimePicker.Size = new Size(200, 23);
             deptDateTimePicker.TabIndex = 26;
+            deptDateTimePicker.CustomFormat = "yyyy-MM-dd";
             deptDateTimePicker.ValueChanged += bookFlightComboBox_Changed;
+            
+            // 
+            // ClassComboBox
+            // 
+            ClassComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            ClassComboBox.FormattingEnabled = true;
+            ClassComboBox.Location = new Point(35, 277);
+            ClassComboBox.Name = "ClassComboBox";
+            ClassComboBox.Size = new Size(138, 23);
+            ClassComboBox.TabIndex = 40;
+            ClassComboBox.SelectedValueChanged += ClassComboBox_SelectedValueChanged;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(81, 259);
+            label13.Name = "label13";
+            label13.Size = new Size(34, 15);
+            label13.TabIndex = 41;
+            label13.Text = "Class";
+            // 
+            // ClassPriceTextBox
+            // 
+            ClassPriceTextBox.Location = new Point(223, 277);
+            ClassPriceTextBox.Name = "ClassPriceTextBox";
+            ClassPriceTextBox.ReadOnly = true;
+            ClassPriceTextBox.Size = new Size(127, 23);
+            ClassPriceTextBox.TabIndex = 42;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(262, 259);
+            label14.Name = "label14";
+            label14.Size = new Size(63, 15);
+            label14.TabIndex = 43;
+            label14.Text = "Class Price";
+            // 
+            // TotalPriceTextBox
+            // 
+            TotalPriceTextBox.Location = new Point(138, 321);
+            TotalPriceTextBox.Name = "TotalPriceTextBox";
+            TotalPriceTextBox.ReadOnly = true;
+            TotalPriceTextBox.Size = new Size(131, 23);
+            TotalPriceTextBox.TabIndex = 44;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(71, 329);
+            label15.Name = "label15";
+            label15.Size = new Size(61, 15);
+            label15.TabIndex = 45;
+            label15.Text = "Total Price";
             // 
             // BookFlight
             // 
@@ -617,6 +680,7 @@ namespace FlightReservationSystem
         private TextBox arrivalDateTextBox;
         private Label label7;
         private TextBox arrivalCountryTextBox;
+        private TextBox textBox1;
         private Label label6;
         private TextBox deptCountryTextBox;
         private Label label5;
@@ -642,6 +706,6 @@ namespace FlightReservationSystem
         private Label label14;
         private TextBox ClassPriceTextBox;
         private Label label15;
-        private TextBox textBox1;
+        private TextBox TotalPriceTextBox;
     }
 }

@@ -66,6 +66,8 @@
             deptCountryLabel = new Label();
             arrivalCountryLabel = new Label();
             deptDateLabel = new Label();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            this.Load += UpdateFlight_Load;
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -251,7 +253,7 @@
             AdminFlightDataGrid.RowTemplate.Height = 25;
             AdminFlightDataGrid.Size = new Size(530, 465);
             AdminFlightDataGrid.TabIndex = 33;
-            AdminFlightDataGrid.CellContentClick += AdminFlightDataGrid_CellContentClick;
+            AdminFlightDataGrid.CellClick += AdminFlightDataGrid_CellClick;
             // 
             // FlightNo
             // 
@@ -322,7 +324,7 @@
             DepartureTextBox.Name = "DepartureTextBox";
             DepartureTextBox.Size = new Size(138, 23);
             DepartureTextBox.TabIndex = 46;
-            DepartureTextBox.TextChanged += DepartureTextBox_TextChanged;
+    
             // 
             // FlightNumberTextBox
             // 
@@ -330,7 +332,7 @@
             FlightNumberTextBox.Name = "FlightNumberTextBox";
             FlightNumberTextBox.Size = new Size(135, 23);
             FlightNumberTextBox.TabIndex = 47;
-            FlightNumberTextBox.TextChanged += FlightNumberTextBox_TextChanged;
+    
             // 
             // ArrivalCountryTextBox
             // 
@@ -338,7 +340,7 @@
             ArrivalCountryTextBox.Name = "ArrivalCountryTextBox";
             ArrivalCountryTextBox.Size = new Size(135, 23);
             ArrivalCountryTextBox.TabIndex = 48;
-            ArrivalCountryTextBox.TextChanged += ArrivalCountryTextBox_TextChanged;
+  
             // 
             // ArrivalDateTextBox
             // 
@@ -346,7 +348,7 @@
             ArrivalDateTextBox.Name = "ArrivalDateTextBox";
             ArrivalDateTextBox.Size = new Size(135, 23);
             ArrivalDateTextBox.TabIndex = 49;
-            ArrivalDateTextBox.TextChanged += ArrivalDateTextBox_TextChanged;
+          
             // 
             // SeatsAvailabilityTextBox
             // 
@@ -354,7 +356,7 @@
             SeatsAvailabilityTextBox.Name = "SeatsAvailabilityTextBox";
             SeatsAvailabilityTextBox.Size = new Size(135, 23);
             SeatsAvailabilityTextBox.TabIndex = 50;
-            SeatsAvailabilityTextBox.TextChanged += SeatsAvailabilityTextBox_TextChanged;
+          
             // 
             // confirmButton
             // 
@@ -372,7 +374,7 @@
             RankATextBox.Name = "RankATextBox";
             RankATextBox.Size = new Size(115, 23);
             RankATextBox.TabIndex = 51;
-            RankATextBox.TextChanged += RankATextBox_TextChanged;
+           
             // 
             // textBox7
             // 
@@ -390,7 +392,7 @@
             RankBTextBox.Name = "RankBTextBox";
             RankBTextBox.Size = new Size(115, 23);
             RankBTextBox.TabIndex = 53;
-            RankBTextBox.TextChanged += RankBTextBox_TextChanged;
+           
             // 
             // RankCTextBox
             // 
@@ -398,7 +400,7 @@
             RankCTextBox.Name = "RankCTextBox";
             RankCTextBox.Size = new Size(115, 23);
             RankCTextBox.TabIndex = 54;
-            RankCTextBox.TextChanged += RankCTextBox_TextChanged;
+          
             // 
             // textBox10
             // 
@@ -418,7 +420,9 @@
             deptCountriesComboBox.Name = "deptCountriesComboBox";
             deptCountriesComboBox.Size = new Size(121, 23);
             deptCountriesComboBox.TabIndex = 34;
-            deptCountriesComboBox.SelectedIndexChanged += deptCountriesComboBox_SelectedIndexChanged;
+          
+            deptCountriesComboBox.DropDown += AdminDeptCountriesComboBox_OnDropDown;
+            deptCountriesComboBox.TextChanged += UpdateFlightComboBox_Changed;
             // 
             // comboBox1
             // 
@@ -428,7 +432,9 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 35;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+  
+            comboBox1.DropDown += AdminArrivalCountriesComboBox_OnDropDown;
+            comboBox1.TextChanged += UpdateFlightComboBox_Changed;
             // 
             // deptDateTimePicker
             // 
@@ -436,7 +442,7 @@
             deptDateTimePicker.Name = "deptDateTimePicker";
             deptDateTimePicker.Size = new Size(200, 23);
             deptDateTimePicker.TabIndex = 36;
-            deptDateTimePicker.ValueChanged += deptDateTimePicker_ValueChanged;
+       
             // 
             // deptCountryLabel
             // 

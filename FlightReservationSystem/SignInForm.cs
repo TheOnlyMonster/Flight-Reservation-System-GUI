@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace FlightReservationSystem
 {
@@ -58,13 +59,11 @@ namespace FlightReservationSystem
                         customer.Cvv = userReader[6].ToString();
                         customer.ExpirayDate = userReader[7].ToString();
                         customer.PassportExpirayDate = userReader[8].ToString();
-
                     }
                     userReader.Close();
                     MessageBox.Show("Logged In Successfully");
                     if (customer.Identifier == "C")
                     {
-
                         MainMenu.IsUserLoggedIn = true;
                         MainMenu mainMenu = new MainMenu();
                         mainMenu.Show();
