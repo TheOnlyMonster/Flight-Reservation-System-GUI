@@ -66,5 +66,20 @@ namespace FlightReservationSystem
         {
 
         }
+
+        private void deptCountriesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deptDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
