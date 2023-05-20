@@ -70,6 +70,8 @@ namespace FlightReservationSystem
             this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
             this.deptDateLabel = new System.Windows.Forms.Label();
             this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.nationalityTextBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -99,8 +101,9 @@ namespace FlightReservationSystem
             // 
             // helpButton
             // 
-            helpButton.Margin = new Padding(3, 5, 3, 5);
-            helpButton.Size = new Size(230, 84);
+            this.helpButton.Location = new System.Drawing.Point(0, 511);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.helpButton.Size = new System.Drawing.Size(230, 84);
             // 
             // exploreFlightsButton
             // 
@@ -108,8 +111,8 @@ namespace FlightReservationSystem
             // 
             // bookFlightButton
             // 
-            bookFlightButton.Size = new Size(230, 63);
-            bookFlightButton.TabIndex = 4;
+            this.bookFlightButton.Size = new System.Drawing.Size(230, 63);
+            this.bookFlightButton.TabIndex = 4;
             // 
             // panel1
             // 
@@ -123,6 +126,8 @@ namespace FlightReservationSystem
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.nationalityTextBox);
+            this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.confirmButton);
             this.panel3.Controls.Add(this.seatsNumericUpDown);
             this.panel3.Controls.Add(this.label12);
@@ -160,7 +165,6 @@ namespace FlightReservationSystem
             this.confirmButton.TabIndex = 38;
             this.confirmButton.Text = "Confirm Booking";
             this.confirmButton.UseVisualStyleBackColor = true;
-            this.confirmButton.Click += confirmButton_Click;
             // 
             // seatsNumericUpDown
             // 
@@ -168,7 +172,6 @@ namespace FlightReservationSystem
             this.seatsNumericUpDown.Name = "seatsNumericUpDown";
             this.seatsNumericUpDown.Size = new System.Drawing.Size(120, 23);
             this.seatsNumericUpDown.TabIndex = 37;
-            this.seatsNumericUpDown.ValueChanged += seatsNumericUpDown_UpButton;
             // 
             // label12
             // 
@@ -246,7 +249,7 @@ namespace FlightReservationSystem
             // 
             // passportDateTimePicker
             // 
-            this.passportDateTimePicker.Location = new System.Drawing.Point(135, 329);
+            this.passportDateTimePicker.Location = new System.Drawing.Point(136, 302);
             this.passportDateTimePicker.Name = "passportDateTimePicker";
             this.passportDateTimePicker.Size = new System.Drawing.Size(207, 23);
             this.passportDateTimePicker.TabIndex = 27;
@@ -254,7 +257,7 @@ namespace FlightReservationSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 329);
+            this.label4.Location = new System.Drawing.Point(16, 302);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 15);
             this.label4.TabIndex = 15;
@@ -262,7 +265,7 @@ namespace FlightReservationSystem
             // 
             // passportNumberTextBox
             // 
-            this.passportNumberTextBox.Location = new System.Drawing.Point(135, 300);
+            this.passportNumberTextBox.Location = new System.Drawing.Point(136, 273);
             this.passportNumberTextBox.Name = "passportNumberTextBox";
             this.passportNumberTextBox.Size = new System.Drawing.Size(207, 23);
             this.passportNumberTextBox.TabIndex = 14;
@@ -270,7 +273,7 @@ namespace FlightReservationSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 303);
+            this.label3.Location = new System.Drawing.Point(31, 276);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 15);
             this.label3.TabIndex = 13;
@@ -395,56 +398,57 @@ namespace FlightReservationSystem
             // 
             // FlightNo
             // 
-            FlightNo.HeaderText = "Flight Number";
-            FlightNo.MinimumWidth = 6;
-            FlightNo.Name = "FlightNo";
-            FlightNo.ReadOnly = true;
+            this.FlightNo.HeaderText = "Flight Number";
+            this.FlightNo.MinimumWidth = 6;
+            this.FlightNo.Name = "FlightNo";
+            this.FlightNo.ReadOnly = true;
             // 
             // deptDate
             // 
-            deptDate.HeaderText = "Departure Date";
-            deptDate.MinimumWidth = 6;
-            deptDate.Name = "deptDate";
-            deptDate.ReadOnly = true;
+            this.deptDate.HeaderText = "Departure Date";
+            this.deptDate.MinimumWidth = 6;
+            this.deptDate.Name = "deptDate";
+            this.deptDate.ReadOnly = true;
             // 
             // deptCountry
             // 
-            deptCountry.HeaderText = "Departure Country";
-            deptCountry.MinimumWidth = 6;
-            deptCountry.Name = "deptCountry";
-            deptCountry.ReadOnly = true;
+            this.deptCountry.HeaderText = "Departure Country";
+            this.deptCountry.MinimumWidth = 6;
+            this.deptCountry.Name = "deptCountry";
+            this.deptCountry.ReadOnly = true;
             // 
             // arrivalCountry
             // 
-            arrivalCountry.HeaderText = "Arrival Country";
-            arrivalCountry.MinimumWidth = 6;
-            arrivalCountry.Name = "arrivalCountry";
-            arrivalCountry.ReadOnly = true;
+            this.arrivalCountry.HeaderText = "Arrival Country";
+            this.arrivalCountry.MinimumWidth = 6;
+            this.arrivalCountry.Name = "arrivalCountry";
+            this.arrivalCountry.ReadOnly = true;
             // 
             // expectedArrivalDate
             // 
-            expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            expectedArrivalDate.MinimumWidth = 6;
-            expectedArrivalDate.Name = "expectedArrivalDate";
-            expectedArrivalDate.ReadOnly = true;
+            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
+            this.expectedArrivalDate.MinimumWidth = 6;
+            this.expectedArrivalDate.Name = "expectedArrivalDate";
+            this.expectedArrivalDate.ReadOnly = true;
             // 
             // AvailableSeats
             // 
-            AvailableSeats.HeaderText = "Available Seats";
-            AvailableSeats.MinimumWidth = 6;
-            AvailableSeats.Name = "AvailableSeats";
-            AvailableSeats.ReadOnly = true;
+            this.AvailableSeats.HeaderText = "Available Seats";
+            this.AvailableSeats.MinimumWidth = 6;
+            this.AvailableSeats.Name = "AvailableSeats";
+            this.AvailableSeats.ReadOnly = true;
             // 
             // arrivalCountryLabel
+            // 
             this.arrivalCountryLabel.AutoSize = true;
             this.arrivalCountryLabel.Location = new System.Drawing.Point(172, 16);
             this.arrivalCountryLabel.Name = "arrivalCountryLabel";
             this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
             this.arrivalCountryLabel.TabIndex = 31;
             this.arrivalCountryLabel.Text = "Arrival Country";
-            this.arrivalCountryLabel.Text = "Arrival Country";
             // 
             // arrivalCountriesComboBox
+            // 
             this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.arrivalCountriesComboBox.FormattingEnabled = true;
             this.arrivalCountriesComboBox.Location = new System.Drawing.Point(156, 34);
@@ -453,18 +457,18 @@ namespace FlightReservationSystem
             this.arrivalCountriesComboBox.TabIndex = 30;
             this.arrivalCountriesComboBox.DropDown += new System.EventHandler(this.arrivalCountriesComboBox_OnDropDown);
             this.arrivalCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
-            this.arrivalCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
             // 
             // deptCountryLabel
+            // 
             this.deptCountryLabel.AutoSize = true;
             this.deptCountryLabel.Location = new System.Drawing.Point(24, 16);
             this.deptCountryLabel.Name = "deptCountryLabel";
             this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
             this.deptCountryLabel.TabIndex = 29;
             this.deptCountryLabel.Text = "Departure Country";
-            this.deptCountryLabel.Text = "Departure Country";
             // 
             // deptCountriesComboBox
+            // 
             this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deptCountriesComboBox.FormattingEnabled = true;
             this.deptCountriesComboBox.Location = new System.Drawing.Point(17, 34);
@@ -473,26 +477,42 @@ namespace FlightReservationSystem
             this.deptCountriesComboBox.TabIndex = 28;
             this.deptCountriesComboBox.DropDown += new System.EventHandler(this.deptCountriesComboBox_OnDropDown);
             this.deptCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
-            this.deptCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
             // 
             // deptDateLabel
+            // 
             this.deptDateLabel.AutoSize = true;
             this.deptDateLabel.Location = new System.Drawing.Point(357, 16);
             this.deptDateLabel.Name = "deptDateLabel";
             this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
             this.deptDateLabel.TabIndex = 27;
             this.deptDateLabel.Text = "Departure Date";
-            this.deptDateLabel.Text = "Departure Date";
             // 
             // deptDateTimePicker
+            // 
             this.deptDateTimePicker.Location = new System.Drawing.Point(308, 34);
             this.deptDateTimePicker.Name = "deptDateTimePicker";
             this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
             this.deptDateTimePicker.TabIndex = 26;
             this.deptDateTimePicker.ValueChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
-            this.deptDateTimePicker.ValueChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
+            // 
+            // nationalityTextBox
+            // 
+            this.nationalityTextBox.Location = new System.Drawing.Point(136, 331);
+            this.nationalityTextBox.Name = "nationalityTextBox";
+            this.nationalityTextBox.Size = new System.Drawing.Size(207, 23);
+            this.nationalityTextBox.TabIndex = 40;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(59, 334);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 15);
+            this.label13.TabIndex = 39;
+            this.label13.Text = "Nationality";
             // 
             // BookFlight
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 595);
@@ -511,7 +531,6 @@ namespace FlightReservationSystem
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).EndInit();
             this.ResumeLayout(false);
-
 
         }
 
@@ -557,5 +576,7 @@ namespace FlightReservationSystem
         private Label label4;
         private TextBox passportNumberTextBox;
         private Label label3;
+        private TextBox nationalityTextBox;
+        private Label label13;
     }
 }
