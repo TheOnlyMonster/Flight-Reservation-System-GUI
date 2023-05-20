@@ -155,6 +155,7 @@
             AddFlight.TabIndex = 5;
             AddFlight.Text = "Add Flight";
             AddFlight.UseVisualStyleBackColor = false;
+            AddFlight.Click += AddFlight_Click;
             // 
             // UpdateFlight
             // 
@@ -169,6 +170,7 @@
             UpdateFlight.TabIndex = 4;
             UpdateFlight.Text = "Update Flight";
             UpdateFlight.UseVisualStyleBackColor = false;
+            UpdateFlight.Click += UpdateFlight_Click;       
             // 
             // UpdateInfo
             // 

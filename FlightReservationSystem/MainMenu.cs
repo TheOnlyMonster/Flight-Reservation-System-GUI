@@ -103,14 +103,14 @@ namespace FlightReservationSystem
 
        
 
-        private void AddFlightButton_Click(object sender, EventArgs e)
+        private void AddFlight_Click(object sender, EventArgs e)
         {
             AddFlight AddFlight = new AddFlight();
             AddFlight.Show();
             this.Hide();
         }
 
-        private void EditFlightButton_Click(object sender, EventArgs e)
+        private void UpdateFlight_Click(object sender, EventArgs e)
         {
             UpdateFlight UpdateFlight = new UpdateFlight();
             UpdateFlight.Show();
