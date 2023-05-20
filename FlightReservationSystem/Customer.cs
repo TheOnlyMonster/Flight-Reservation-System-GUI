@@ -20,7 +20,6 @@ namespace FlightReservationSystem
         private string expirayDate;
         private string passportExpirayDate;
         private string id;
-        private string nationality;
 
 
         private Customer()
@@ -109,11 +108,6 @@ namespace FlightReservationSystem
         }
 
         public string PhoneNumber
-        {
-            get { return phoneNumber; }
-            set { phoneNumber = value; }
-        }
-        public string Nationality
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }

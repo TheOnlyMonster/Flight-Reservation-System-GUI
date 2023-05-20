@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,14 +87,6 @@ namespace FlightReservationSystem
                 this.arrivalCountryTextBox.Text = selectedRow.Cells["arrivalCountry"].Value.ToString();
                 this.arrivalDateTextBox.Text = selectedRow.Cells["expectedArrivalDate"].Value.ToString();
                 this.deptCountryTextBox.Text = selectedRow.Cells["deptCountry"].Value.ToString();
-
-                this.passportNumberTextBox.Text = Customer.Instance.PassportNumber;
-                this.passportDateTimePicker.Value = DateTime.ParseExact(Customer.Instance.PassportExpirayDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-
-                this.creditCardTextBox.Text = Customer.Instance.CardNum;
-                this.creditCardExpiryDateTextBox.Text = Customer.Instance.ExpirayDate;
-                this.cvvCreditCardTextBox.Text = Customer.Instance.Cvv;
-                
             }
         }
         private void BookFlight_Load(object sender, EventArgs e)

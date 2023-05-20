@@ -125,7 +125,6 @@ namespace FlightReservationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 595);
             this.Name = "SignInForm";
             this.Text = "SignInForm";
             this.contentSplitContainer.Panel1.ResumeLayout(false);
