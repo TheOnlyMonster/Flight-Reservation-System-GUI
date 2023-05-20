@@ -138,6 +138,7 @@ namespace FlightReservationSystem
                 UpdateFlight_Load(sender,e);    //not working properly!
                 command.ExecuteNonQuery();
                 connection.Close();
+                
             }
         }
     }
