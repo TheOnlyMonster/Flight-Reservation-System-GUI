@@ -102,12 +102,15 @@ namespace FlightReservationSystem
             }
 
         }
-        
-        private void confirmButton_Click(object sender, EventArgs e) {
-            if (string.IsNullOrEmpty(flightNoTextBox.Text) || string.IsNullOrEmpty(seatsAvailableTextBox.Text) || string.IsNullOrEmpty(arrivalCountryTextBox.Text) || string.IsNullOrEmpty(arrivalDateTextBox.Text) || string.IsNullOrEmpty(deptCountryTextBox.Text)) {
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(flightNoTextBox.Text) || string.IsNullOrEmpty(seatsAvailableTextBox.Text) || string.IsNullOrEmpty(arrivalCountryTextBox.Text) || string.IsNullOrEmpty(arrivalDateTextBox.Text) || string.IsNullOrEmpty(deptCountryTextBox.Text))
+            {
                 MessageBox.Show("You must select a Flight first!");
             }
-            else {
+            else
+            {
                 string query = "INSERT INTO BookingDetails Values(CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice)";
 
             }
