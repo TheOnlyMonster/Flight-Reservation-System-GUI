@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             panel3 = new Panel();
+            label8 = new Label();
+            AirCraftIdTextBox = new TextBox();
             ArrivaldateTimePicker = new DateTimePicker();
             label4 = new Label();
-            label3 = new Label();
             DeparturedateTimePicker = new DateTimePicker();
             textBox10 = new TextBox();
             RankCTextBox = new TextBox();
@@ -69,8 +70,6 @@
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
             Rank3Price = new DataGridViewTextBoxColumn();
-            AirCraftIdTextBox = new TextBox();
-            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -121,7 +120,6 @@
             panel3.Controls.Add(AirCraftIdTextBox);
             panel3.Controls.Add(ArrivaldateTimePicker);
             panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
             panel3.Controls.Add(DeparturedateTimePicker);
             panel3.Controls.Add(textBox10);
             panel3.Controls.Add(RankCTextBox);
@@ -147,6 +145,22 @@
             panel3.Size = new Size(352, 551);
             panel3.TabIndex = 2;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(59, 244);
+            label8.Name = "label8";
+            label8.Size = new Size(60, 15);
+            label8.TabIndex = 62;
+            label8.Text = "Aircraft ID";
+            // 
+            // AirCraftIdTextBox
+            // 
+            AirCraftIdTextBox.Location = new Point(20, 262);
+            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
+            AirCraftIdTextBox.Size = new Size(135, 23);
+            AirCraftIdTextBox.TabIndex = 61;
+            // 
             // ArrivaldateTimePicker
             // 
             ArrivaldateTimePicker.Location = new Point(201, 151);
@@ -158,20 +172,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(220, 190);
+            label4.Location = new Point(218, 191);
             label4.Name = "label4";
             label4.Size = new Size(86, 15);
             label4.TabIndex = 59;
             label4.Text = "Departure Date";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(0, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 58;
-            label3.Text = "label3";
             // 
             // DeparturedateTimePicker
             // 
@@ -183,7 +188,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(45, 411);
+            textBox10.Location = new Point(36, 421);
             textBox10.Name = "textBox10";
             textBox10.ReadOnly = true;
             textBox10.Size = new Size(113, 23);
@@ -193,21 +198,21 @@
             // 
             // RankCTextBox
             // 
-            RankCTextBox.Location = new Point(206, 411);
+            RankCTextBox.Location = new Point(197, 421);
             RankCTextBox.Name = "RankCTextBox";
             RankCTextBox.Size = new Size(115, 23);
             RankCTextBox.TabIndex = 54;
             // 
             // RankBTextBox
             // 
-            RankBTextBox.Location = new Point(206, 368);
+            RankBTextBox.Location = new Point(197, 378);
             RankBTextBox.Name = "RankBTextBox";
             RankBTextBox.Size = new Size(115, 23);
             RankBTextBox.TabIndex = 53;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(45, 368);
+            textBox7.Location = new Point(36, 378);
             textBox7.Name = "textBox7";
             textBox7.ReadOnly = true;
             textBox7.Size = new Size(113, 23);
@@ -217,7 +222,7 @@
             // 
             // RankATextBox
             // 
-            RankATextBox.Location = new Point(206, 326);
+            RankATextBox.Location = new Point(197, 336);
             RankATextBox.Name = "RankATextBox";
             RankATextBox.Size = new Size(115, 23);
             RankATextBox.TabIndex = 51;
@@ -256,7 +261,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(218, 299);
+            label14.Location = new Point(209, 309);
             label14.Name = "label14";
             label14.Size = new Size(63, 15);
             label14.TabIndex = 43;
@@ -264,7 +269,7 @@
             // 
             // ClassPriceTextBox
             // 
-            ClassPriceTextBox.Location = new Point(45, 326);
+            ClassPriceTextBox.Location = new Point(36, 336);
             ClassPriceTextBox.Name = "ClassPriceTextBox";
             ClassPriceTextBox.ReadOnly = true;
             ClassPriceTextBox.Size = new Size(113, 23);
@@ -275,7 +280,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(75, 299);
+            label13.Location = new Point(66, 309);
             label13.Name = "label13";
             label13.Size = new Size(34, 15);
             label13.TabIndex = 41;
@@ -283,7 +288,7 @@
             // 
             // confirmButton
             // 
-            confirmButton.Location = new Point(102, 472);
+            confirmButton.Location = new Point(102, 488);
             confirmButton.Name = "confirmButton";
             confirmButton.Size = new Size(142, 23);
             confirmButton.TabIndex = 38;
@@ -500,22 +505,6 @@
             Rank3Price.Name = "Rank3Price";
             Rank3Price.ReadOnly = true;
             // 
-            // AirCraftIdTextBox
-            // 
-            AirCraftIdTextBox.Location = new Point(20, 262);
-            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
-            AirCraftIdTextBox.Size = new Size(135, 23);
-            AirCraftIdTextBox.TabIndex = 61;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(44, 244);
-            label8.Name = "label8";
-            label8.Size = new Size(60, 15);
-            label8.TabIndex = 62;
-            label8.Text = "Aircraft ID";
-            // 
             // UpdateFlight
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -578,7 +567,6 @@
         private Label deptDateLabel;
         private DateTimePicker ArrivaldateTimePicker;
         private Label label4;
-        private Label label3;
         private DateTimePicker DeparturedateTimePicker;
         private Label label8;
         private TextBox AirCraftIdTextBox;

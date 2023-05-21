@@ -76,7 +76,7 @@ namespace FlightReservationSystem
 
                 }
 
-                if (!string.Equals(PasswordTextBox.Text, GetExistingValueFromUser("Password", Customer.Instance.Id, connection))&&!string.IsNullOrEmpty(PasswordTextBox.Text))
+                if (!string.Equals(PasswordTextBox.Text, GetExistingValueFromUser("Password", Customer.Instance.Id, connection)) && !string.IsNullOrEmpty(PasswordTextBox.Text))
                 {
                     userParameters.Add("Password = @Password");
                     Customer.Instance.Password = this.PasswordTextBox.Text;

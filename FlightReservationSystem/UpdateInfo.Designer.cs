@@ -73,25 +73,25 @@
             contentSplitContainer.Panel2.Controls.Add(ExpirayDateTextBox);
             contentSplitContainer.Panel2.Controls.Add(CVVTextBox);
             contentSplitContainer.Panel2.Controls.Add(PasswordTextBox);
-            contentSplitContainer.Size = new Size(800, 450);
-            contentSplitContainer.SplitterDistance = 156;
+            contentSplitContainer.Size = new Size(921, 450);
+            contentSplitContainer.SplitterDistance = 166;
             // 
             // signInButton
             // 
-            signInButton.Size = new Size(156, 57);
+            signInButton.Size = new Size(166, 57);
             // 
             // signUpButton
             // 
-            signUpButton.Size = new Size(156, 57);
+            signUpButton.Size = new Size(166, 57);
             // 
             // helpButton
             // 
             helpButton.Location = new Point(0, 366);
-            helpButton.Size = new Size(156, 84);
+            helpButton.Size = new Size(166, 84);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Size = new Size(156, 76);
+            exploreFlightsButton.Size = new Size(166, 76);
             // 
             // PasswordTextBox
             // 
@@ -99,7 +99,6 @@
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.Size = new Size(192, 27);
             PasswordTextBox.TabIndex = 1;
-            
             // 
             // CVVTextBox
             // 
@@ -107,7 +106,6 @@
             CVVTextBox.Name = "CVVTextBox";
             CVVTextBox.Size = new Size(125, 27);
             CVVTextBox.TabIndex = 2;
-          
             // 
             // ExpirayDateTextBox
             // 
@@ -115,7 +113,6 @@
             ExpirayDateTextBox.Name = "ExpirayDateTextBox";
             ExpirayDateTextBox.Size = new Size(125, 27);
             ExpirayDateTextBox.TabIndex = 3;
-           
             // 
             // CardNumberTextBox
             // 
@@ -123,7 +120,6 @@
             CardNumberTextBox.Name = "CardNumberTextBox";
             CardNumberTextBox.Size = new Size(125, 27);
             CardNumberTextBox.TabIndex = 4;
-            
             // 
             // LastNameTextBox
             // 
@@ -131,7 +127,6 @@
             LastNameTextBox.Name = "LastNameTextBox";
             LastNameTextBox.Size = new Size(154, 27);
             LastNameTextBox.TabIndex = 5;
-           
             // 
             // CountryTextBox
             // 
@@ -139,7 +134,6 @@
             CountryTextBox.Name = "CountryTextBox";
             CountryTextBox.Size = new Size(125, 27);
             CountryTextBox.TabIndex = 6;
-           
             // 
             // CityTextBox
             // 
@@ -147,7 +141,6 @@
             CityTextBox.Name = "CityTextBox";
             CityTextBox.Size = new Size(125, 27);
             CityTextBox.TabIndex = 7;
-        
             // 
             // FirstNameTextBox
             // 
@@ -155,7 +148,6 @@
             FirstNameTextBox.Name = "FirstNameTextBox";
             FirstNameTextBox.Size = new Size(154, 27);
             FirstNameTextBox.TabIndex = 8;
-            
             // 
             // label1
             // 
@@ -165,7 +157,6 @@
             label1.Size = new Size(80, 20);
             label1.TabIndex = 9;
             label1.Text = "First Name";
-            
             // 
             // label2
             // 
@@ -220,7 +211,6 @@
             label7.Size = new Size(34, 20);
             label7.TabIndex = 15;
             label7.Text = "City";
-         
             // 
             // label8
             // 
@@ -248,7 +238,7 @@
             ClientSize = new Size(800, 450);
             Name = "UpdateInfo";
             Text = "UpdateInfo";
-            this.Load += new System.EventHandler(this.UpdateInfo_Load);
+            Load += UpdateInfo_Load;
             contentSplitContainer.Panel1.ResumeLayout(false);
             contentSplitContainer.Panel2.ResumeLayout(false);
             contentSplitContainer.Panel2.PerformLayout();
