@@ -40,7 +40,7 @@
             BookingDate = new DataGridViewTextBoxColumn();
             SeatAssignment = new DataGridViewTextBoxColumn();
             TicketPrice = new DataGridViewTextBoxColumn();
-            Ranl = new DataGridViewTextBoxColumn();
+            Rank = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             StatusComboBox = new ComboBox();
@@ -161,7 +161,7 @@
             UpdateReservationDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             UpdateReservationDataGridView.BackgroundColor = SystemColors.ButtonFace;
             UpdateReservationDataGridView.ColumnHeadersHeight = 29;
-            UpdateReservationDataGridView.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Ranl, Status });
+            UpdateReservationDataGridView.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Rank, Status });
             UpdateReservationDataGridView.EditMode = DataGridViewEditMode.EditOnEnter;
             UpdateReservationDataGridView.GridColor = SystemColors.ControlDarkDark;
             UpdateReservationDataGridView.Location = new Point(3, 72);
@@ -215,12 +215,12 @@
             TicketPrice.Name = "TicketPrice";
             TicketPrice.ReadOnly = true;
             // 
-            // Ranl
+            // Rank
             // 
-            Ranl.HeaderText = "Rank";
-            Ranl.MinimumWidth = 6;
-            Ranl.Name = "Ranl";
-            Ranl.ReadOnly = true;
+            Rank.HeaderText = "Rank";
+            Rank.MinimumWidth = 6;
+            Rank.Name = "Rank";
+            Rank.ReadOnly = true;
             // 
             // Status
             // 
@@ -351,7 +351,7 @@
             // RankComboBox
             // 
             RankComboBox.FormattingEnabled = true;
-            RankComboBox.Items.AddRange(new object[] { "sd", "a", "a" });
+            RankComboBox.Items.AddRange(new object[] { "A Class", "B Class", "C Class"});
             RankComboBox.Location = new Point(226, 428);
             RankComboBox.Margin = new Padding(3, 4, 3, 4);
             RankComboBox.Name = "RankComboBox";
@@ -453,7 +453,7 @@
         private DataGridViewTextBoxColumn SeatAssignment;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn TicketPrice;
-        private DataGridViewTextBoxColumn Ranl;
+        private DataGridViewTextBoxColumn Rank;
         private DataGridViewTextBoxColumn Status;
         private Label label2;
         private Label label1;

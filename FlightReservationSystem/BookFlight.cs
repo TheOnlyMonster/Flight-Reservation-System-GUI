@@ -157,10 +157,10 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
                         command.Parameters.AddWithValue("@BookingDate", DateTime.Now);
-                        command.Parameters.AddWithValue("@SeatAssignment", 2);
+                        command.Parameters.AddWithValue("@SeatAssignment", 3);
                         command.Parameters.AddWithValue("@TicketPrice", Decimal.Parse(this.ClassPriceTextBox.Text));
                         command.Parameters.AddWithValue("@Rank", this.ClassComboBox.Text);
-                        command.Parameters.AddWithValue("@Status", 1);
+                        command.Parameters.AddWithValue("@Status", "Confirmed");
                         for (int i = 0; i < seatsNumericUpDown.Value; i++)
                         {
                             command.ExecuteNonQuery();
