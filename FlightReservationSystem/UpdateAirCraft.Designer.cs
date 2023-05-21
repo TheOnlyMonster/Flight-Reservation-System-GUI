@@ -36,13 +36,6 @@
             label4 = new Label();
             AirCraftIdTextBoxPanel1 = new TextBox();
             AirCraftdataGridView = new DataGridView();
-            AirCraftID = new DataGridViewTextBoxColumn();
-            Model = new DataGridViewTextBoxColumn();
-            ManufactureYear = new DataGridViewTextBoxColumn();
-            AirCraftType = new DataGridViewTextBoxColumn();
-            Manufacturer = new DataGridViewTextBoxColumn();
-            Capacity = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             label2 = new Label();
             button2 = new Button();
@@ -60,6 +53,13 @@
             CapacityTextBox = new TextBox();
             AircraftIdTextBox = new TextBox();
             label3 = new Label();
+            AirCraftID = new DataGridViewTextBoxColumn();
+            Model = new DataGridViewTextBoxColumn();
+            AirCraftType = new DataGridViewTextBoxColumn();
+            Manufacturer = new DataGridViewTextBoxColumn();
+            ManufactureYear = new DataGridViewTextBoxColumn();
+            Capacity = new DataGridViewTextBoxColumn();
+            Status = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -179,55 +179,13 @@
             AirCraftdataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             AirCraftdataGridView.BackgroundColor = SystemColors.Control;
             AirCraftdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, ManufactureYear, AirCraftType, Manufacturer, Capacity, Status });
+            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, AirCraftType, Manufacturer, ManufactureYear, Capacity, Status });
             AirCraftdataGridView.Location = new Point(3, 88);
             AirCraftdataGridView.Name = "AirCraftdataGridView";
             AirCraftdataGridView.RowHeadersWidth = 51;
             AirCraftdataGridView.RowTemplate.Height = 29;
             AirCraftdataGridView.Size = new Size(670, 737);
             AirCraftdataGridView.TabIndex = 0;
-            // 
-            // AirCraftID
-            // 
-            AirCraftID.HeaderText = "Aircraft ID";
-            AirCraftID.MinimumWidth = 6;
-            AirCraftID.Name = "AirCraftID";
-            // 
-            // Model
-            // 
-            Model.HeaderText = "Model";
-            Model.MinimumWidth = 6;
-            Model.Name = "Model";
-            // 
-            // ManufactureYear
-            // 
-            ManufactureYear.HeaderText = "Manufacture Year";
-            ManufactureYear.MinimumWidth = 6;
-            ManufactureYear.Name = "ManufactureYear";
-            // 
-            // AirCraftType
-            // 
-            AirCraftType.HeaderText = "AirCraft Type";
-            AirCraftType.MinimumWidth = 6;
-            AirCraftType.Name = "AirCraftType";
-            // 
-            // Manufacturer
-            // 
-            Manufacturer.HeaderText = "Manufacturer";
-            Manufacturer.MinimumWidth = 6;
-            Manufacturer.Name = "Manufacturer";
-            // 
-            // Capacity
-            // 
-            Capacity.HeaderText = "Capacity";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
-            // 
-            // Status
-            // 
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
             // 
             // panel2
             // 
@@ -385,6 +343,48 @@
             label3.TabIndex = 2;
             label3.Text = "Update AirCraft";
             // 
+            // AirCraftID
+            // 
+            AirCraftID.HeaderText = "Aircraft ID";
+            AirCraftID.MinimumWidth = 6;
+            AirCraftID.Name = "AirCraftID";
+            // 
+            // Model
+            // 
+            Model.HeaderText = "Model";
+            Model.MinimumWidth = 6;
+            Model.Name = "Model";
+            // 
+            // AirCraftType
+            // 
+            AirCraftType.HeaderText = "AirCraft Type";
+            AirCraftType.MinimumWidth = 6;
+            AirCraftType.Name = "AirCraftType";
+            // 
+            // Manufacturer
+            // 
+            Manufacturer.HeaderText = "Manufacturer";
+            Manufacturer.MinimumWidth = 6;
+            Manufacturer.Name = "Manufacturer";
+            // 
+            // ManufactureYear
+            // 
+            ManufactureYear.HeaderText = "Manufacture Year";
+            ManufactureYear.MinimumWidth = 6;
+            ManufactureYear.Name = "ManufactureYear";
+            // 
+            // Capacity
+            // 
+            Capacity.HeaderText = "Capacity";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            // 
+            // Status
+            // 
+            Status.HeaderText = "Status";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            // 
             // UpdateAirCraft
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -411,13 +411,6 @@
         private Panel panel1;
         private Panel panel2;
         private DataGridView AirCraftdataGridView;
-        private DataGridViewTextBoxColumn AirCraftID;
-        private DataGridViewTextBoxColumn Model;
-        private DataGridViewTextBoxColumn ManufactureYear;
-        private DataGridViewTextBoxColumn AirCraftType;
-        private DataGridViewTextBoxColumn Manufacturer;
-        private DataGridViewTextBoxColumn Capacity;
-        private DataGridViewTextBoxColumn Status;
         private Button button2;
         private ComboBox StatusComboBox;
         private Label label9;
@@ -440,5 +433,12 @@
         private TextBox ModelTextBoxPnanel1;
         private Label label4;
         private TextBox AirCraftIdTextBoxPanel1;
+        private DataGridViewTextBoxColumn AirCraftID;
+        private DataGridViewTextBoxColumn Model;
+        private DataGridViewTextBoxColumn AirCraftType;
+        private DataGridViewTextBoxColumn Manufacturer;
+        private DataGridViewTextBoxColumn ManufactureYear;
+        private DataGridViewTextBoxColumn Capacity;
+        private DataGridViewTextBoxColumn Status;
     }
 }

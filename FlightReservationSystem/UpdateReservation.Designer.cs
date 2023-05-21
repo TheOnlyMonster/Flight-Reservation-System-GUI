@@ -160,7 +160,7 @@
             UpdateReservationDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             UpdateReservationDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             UpdateReservationDataGridView.BackgroundColor = SystemColors.ButtonFace;
-            UpdateReservationDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            UpdateReservationDataGridView.ColumnHeadersHeight = 29;
             UpdateReservationDataGridView.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Ranl, Status });
             UpdateReservationDataGridView.EditMode = DataGridViewEditMode.EditOnEnter;
             UpdateReservationDataGridView.GridColor = SystemColors.ControlDarkDark;
