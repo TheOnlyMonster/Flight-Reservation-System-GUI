@@ -13,16 +13,14 @@ namespace FlightReservationSystem
 {
     public partial class UpdateAirCraft : MainMenu
     {
-        private string[] array = {"None","Active", "Inactive", "Maintainance" };
         public UpdateAirCraft()
         {
             InitializeComponent();
         }
+
         private void UpdateAirCraft_Load(object sender, EventArgs e)
         {
             //load the Grid.
-            
-            StatusComboBoxPanel1.DataSource = array;
             AirCraftdataGridView.Rows.Clear();
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(databaseConnection))
@@ -39,7 +37,7 @@ namespace FlightReservationSystem
                 object[] rowData = row.ItemArray;
                 AirCraftdataGridView.Rows.Add(rowData);
             }
-            
+
         }
 
         private void AirCraftIdTextBoxPanel1_TextChanged(object sender, EventArgs e)

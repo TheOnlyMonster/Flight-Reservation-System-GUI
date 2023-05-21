@@ -15,7 +15,7 @@ namespace FlightReservationSystem
 
     public partial class BookFlight : MainMenu
     {
-        private Dictionary<string,double> FlightClasses = new Dictionary<string, double>();
+        private Dictionary<string, double> FlightClasses = new Dictionary<string, double>();
         public BookFlight()
         {
             InitializeComponent();
@@ -83,7 +83,7 @@ namespace FlightReservationSystem
         private void flightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             FlightClasses.Clear();
-            string[] SelectionOptions = {"A Class", "B Class", "C Class" };
+            string[] SelectionOptions = { "A Class", "B Class", "C Class" };
             this.ClassComboBox.DataSource = SelectionOptions;
             if (e.RowIndex >= 0)
             {
@@ -93,20 +93,20 @@ namespace FlightReservationSystem
                 this.arrivalCountryTextBox.Text = selectedRow.Cells["arrivalCountry"].Value.ToString();
                 this.arrivalDateTextBox.Text = selectedRow.Cells["expectedArrivalDate"].Value.ToString();
                 this.deptCountryTextBox.Text = selectedRow.Cells["deptCountry"].Value.ToString();
-                FlightClasses.Add("A Class",Convert.ToDouble(selectedRow.Cells["Rank1Price"].Value));
-                FlightClasses.Add("B Class",Convert.ToDouble(selectedRow.Cells["Rank2Price"].Value));
-                FlightClasses.Add("C Class",Convert.ToDouble(selectedRow.Cells["Rank3Price"].Value));
+                FlightClasses.Add("A Class", Convert.ToDouble(selectedRow.Cells["Rank1Price"].Value));
+                FlightClasses.Add("B Class", Convert.ToDouble(selectedRow.Cells["Rank2Price"].Value));
+                FlightClasses.Add("C Class", Convert.ToDouble(selectedRow.Cells["Rank3Price"].Value));
                 this.ClassPriceTextBox.Text = selectedRow.Cells["Rank1Price"].Value.ToString();
             }
         }
         private void ClassComboBox_SelectedValueChanged(object sender, EventArgs e)
-        {   
+        {
             string selectedClass = ClassComboBox.Text;
             if (FlightClasses.ContainsKey(selectedClass))
             {
                 double price = FlightClasses[selectedClass];
                 ClassPriceTextBox.Text = price.ToString();
-                TotalPriceTextBox.Text = (Convert.ToDouble(seatsNumericUpDown.Value) * FlightClasses[this.ClassComboBox.Text]).ToString(); 
+                TotalPriceTextBox.Text = (Convert.ToDouble(seatsNumericUpDown.Value) * FlightClasses[this.ClassComboBox.Text]).ToString();
             }
             else
             {
@@ -124,8 +124,10 @@ namespace FlightReservationSystem
 
         private void seatsNumericUpDown_UpButton(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(seatsAvailableTextBox.Text) < 7) {
-                if (seatsNumericUpDown.Value >= Convert.ToInt32(seatsAvailableTextBox.Text)) {
+            if (Convert.ToInt32(seatsAvailableTextBox.Text) < 7)
+            {
+                if (seatsNumericUpDown.Value >= Convert.ToInt32(seatsAvailableTextBox.Text))
+                {
                     seatsNumericUpDown.Value = Convert.ToInt32(seatsAvailableTextBox.Text);
                 }
             }
@@ -133,7 +135,7 @@ namespace FlightReservationSystem
             {
                 seatsNumericUpDown.Value = 7;
             }
-            TotalPriceTextBox.Text = (Convert.ToDouble(seatsNumericUpDown.Value) * FlightClasses[this.ClassComboBox.Text]).ToString(); 
+            TotalPriceTextBox.Text = (Convert.ToDouble(seatsNumericUpDown.Value) * FlightClasses[this.ClassComboBox.Text]).ToString();
         }
 
         private void confirmButton_Click(object sender, EventArgs e)
@@ -147,41 +149,45 @@ namespace FlightReservationSystem
                 string ticketQuery = "INSERT INTO BookingDetails (CustomerID, FlightNo, BookingDate,SeatAssignment ,TicketPrice, Rank, Status) Values (@CustomerID, @FlightNo, @BookingDate, @SeatAssignment, @TicketPrice, @Rank, @Status);";
                 string flightUpdateQuery = "Update Flight set AvailableSeats = @AvailableSeats where FlightNo = @FlightNo;";
                 string updatePassportDetails = "Update CustomerTable SET PassportNumber = @PassportNumber, PassportExpirationDate = @PassportExpirationDate, CardNum = @CardNum, CVV = @CVV, ExpiryDate = @ExpiryDate where CustomerID = @CustomerID;";
-                using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+                using (SqlConnection connection = new SqlConnection(databaseConnection))
+                {
                     connection.Open();
-                    using (SqlCommand command = new SqlCommand(ticketQuery, connection)) {
+                    using (SqlCommand command = new SqlCommand(ticketQuery, connection))
+                    {
                         command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
-                        command.Parameters.AddWithValue("@BookingDate",DateTime.Now);
-                        command.Parameters.AddWithValue("@SeatAssignment",2);
-                        command.Parameters.AddWithValue("@TicketPrice",Decimal.Parse(this.ClassPriceTextBox.Text));
-                        command.Parameters.AddWithValue("@Rank",this.ClassComboBox.Text);
-                        command.Parameters.AddWithValue("@Status",1);
-                        for (int i = 0; i < seatsNumericUpDown.Value; i++) {      
+                        command.Parameters.AddWithValue("@BookingDate", DateTime.Now);
+                        command.Parameters.AddWithValue("@SeatAssignment", 2);
+                        command.Parameters.AddWithValue("@TicketPrice", Decimal.Parse(this.ClassPriceTextBox.Text));
+                        command.Parameters.AddWithValue("@Rank", this.ClassComboBox.Text);
+                        command.Parameters.AddWithValue("@Status", 1);
+                        for (int i = 0; i < seatsNumericUpDown.Value; i++)
+                        {
                             command.ExecuteNonQuery();
                         }
                     }
-                    using(SqlCommand command = new SqlCommand(flightUpdateQuery, connection)) {
+                    using (SqlCommand command = new SqlCommand(flightUpdateQuery, connection))
+                    {
                         command.Parameters.AddWithValue("@AvailableSeats", int.Parse(this.seatsAvailableTextBox.Text));
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
                         command.ExecuteNonQuery();
                     }
-                 using (SqlCommand command = new SqlCommand(updatePassportDetails, connection))
-                {
-                    command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
+                    using (SqlCommand command = new SqlCommand(updatePassportDetails, connection))
+                    {
+                        command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
 
-                    // Convert the date to the desired format
+                        // Convert the date to the desired format
 
-                    command.Parameters.AddWithValue("@PassportExpirationDate", this.passportDateTimePicker.Text.ToString());
-                    command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
-                    command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
-                    command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
-                    command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
+                        command.Parameters.AddWithValue("@PassportExpirationDate", this.passportDateTimePicker.Text.ToString());
+                        command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
+                        command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
+                        command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
+                        command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
 
-                    command.ExecuteNonQuery();
-                }
-            
-                        
+                        command.ExecuteNonQuery();
+                    }
+
+
                     Customer.Instance.PassportNumber = this.passportNumberTextBox.Text;
                     Customer.Instance.ExpirayDate = this.creditCardExpiryDateTextBox.Text;
                     Customer.Instance.PassportExpirayDate = this.passportDateTimePicker.Text.ToString();

@@ -46,19 +46,19 @@
             panel2 = new Panel();
             label2 = new Label();
             button2 = new Button();
-            comboBox1 = new ComboBox();
+            StatusComboBox = new ComboBox();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label1 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            ModelTextBox = new TextBox();
+            ManufactureTextBox = new TextBox();
+            AirCraftTextBox = new TextBox();
+            ManufacturerTextBox = new TextBox();
+            CapacityTextBox = new TextBox();
+            AircraftIdTextBox = new TextBox();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
@@ -130,7 +130,9 @@
             // 
             // StatusComboBoxPanel1
             // 
+            StatusComboBoxPanel1.DropDownStyle = ComboBoxStyle.DropDownList;
             StatusComboBoxPanel1.FormattingEnabled = true;
+            StatusComboBoxPanel1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
             StatusComboBoxPanel1.Location = new Point(534, 42);
             StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
             StatusComboBoxPanel1.Size = new Size(125, 28);
@@ -231,19 +233,19 @@
             // 
             panel2.Controls.Add(label2);
             panel2.Controls.Add(button2);
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(StatusComboBox);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label1);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(ModelTextBox);
+            panel2.Controls.Add(ManufactureTextBox);
+            panel2.Controls.Add(AirCraftTextBox);
+            panel2.Controls.Add(ManufacturerTextBox);
+            panel2.Controls.Add(CapacityTextBox);
+            panel2.Controls.Add(AircraftIdTextBox);
             panel2.Controls.Add(label3);
             panel2.Location = new Point(685, 6);
             panel2.Name = "panel2";
@@ -255,9 +257,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(206, 182);
             label2.Name = "label2";
-            label2.Size = new Size(92, 20);
+            label2.Size = new Size(95, 20);
             label2.TabIndex = 20;
-            label2.Text = "AirCraft Year";
+            label2.Text = "AirCraft Type";
             // 
             // button2
             // 
@@ -268,13 +270,13 @@
             button2.Text = "Confirm";
             button2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // StatusComboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(41, 372);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(125, 28);
-            comboBox1.TabIndex = 17;
+            StatusComboBox.FormattingEnabled = true;
+            StatusComboBox.Location = new Point(41, 372);
+            StatusComboBox.Name = "StatusComboBox";
+            StatusComboBox.Size = new Size(125, 28);
+            StatusComboBox.TabIndex = 17;
             // 
             // label9
             // 
@@ -330,48 +332,48 @@
             label1.TabIndex = 9;
             label1.Text = "Manufacturer";
             // 
-            // textBox6
+            // ModelTextBox
             // 
-            textBox6.Location = new Point(204, 119);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
-            textBox6.TabIndex = 8;
+            ModelTextBox.Location = new Point(204, 119);
+            ModelTextBox.Name = "ModelTextBox";
+            ModelTextBox.Size = new Size(125, 27);
+            ModelTextBox.TabIndex = 8;
             // 
-            // textBox5
+            // ManufactureTextBox
             // 
-            textBox5.Location = new Point(41, 205);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 7;
+            ManufactureTextBox.Location = new Point(41, 205);
+            ManufactureTextBox.Name = "ManufactureTextBox";
+            ManufactureTextBox.Size = new Size(125, 27);
+            ManufactureTextBox.TabIndex = 7;
             // 
-            // textBox4
+            // AirCraftTextBox
             // 
-            textBox4.Location = new Point(204, 205);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 6;
+            AirCraftTextBox.Location = new Point(204, 205);
+            AirCraftTextBox.Name = "AirCraftTextBox";
+            AirCraftTextBox.Size = new Size(125, 27);
+            AirCraftTextBox.TabIndex = 6;
             // 
-            // textBox3
+            // ManufacturerTextBox
             // 
-            textBox3.Location = new Point(41, 286);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 5;
+            ManufacturerTextBox.Location = new Point(41, 286);
+            ManufacturerTextBox.Name = "ManufacturerTextBox";
+            ManufacturerTextBox.Size = new Size(125, 27);
+            ManufacturerTextBox.TabIndex = 5;
             // 
-            // textBox2
+            // CapacityTextBox
             // 
-            textBox2.Location = new Point(204, 286);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 4;
+            CapacityTextBox.Location = new Point(204, 286);
+            CapacityTextBox.Name = "CapacityTextBox";
+            CapacityTextBox.Size = new Size(125, 27);
+            CapacityTextBox.TabIndex = 4;
             // 
-            // textBox1
+            // AircraftIdTextBox
             // 
-            textBox1.Location = new Point(41, 119);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 3;
+            AircraftIdTextBox.Location = new Point(41, 119);
+            AircraftIdTextBox.Name = "AircraftIdTextBox";
+            AircraftIdTextBox.ReadOnly = true;
+            AircraftIdTextBox.Size = new Size(125, 27);
+            AircraftIdTextBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -417,19 +419,19 @@
         private DataGridViewTextBoxColumn Capacity;
         private DataGridViewTextBoxColumn Status;
         private Button button2;
-        private ComboBox comboBox1;
+        private ComboBox StatusComboBox;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label1;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox ModelTextBox;
+        private TextBox ManufactureTextBox;
+        private TextBox AirCraftTextBox;
+        private TextBox ManufacturerTextBox;
+        private TextBox CapacityTextBox;
+        private TextBox AircraftIdTextBox;
         private Label label3;
         private Label label2;
         private Label label11;

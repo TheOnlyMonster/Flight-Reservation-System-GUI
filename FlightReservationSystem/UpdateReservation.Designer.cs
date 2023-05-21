@@ -121,7 +121,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(339, 39);
+            label2.Location = new Point(334, 35);
             label2.Name = "label2";
             label2.Size = new Size(70, 20);
             label2.TabIndex = 4;
@@ -130,7 +130,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(38, 39);
+            label1.Location = new Point(31, 35);
             label1.Name = "label1";
             label1.Size = new Size(91, 20);
             label1.TabIndex = 3;
@@ -143,6 +143,7 @@
             FlighNoTextBox.Name = "FlighNoTextBox";
             FlighNoTextBox.Size = new Size(114, 27);
             FlighNoTextBox.TabIndex = 2;
+            FlighNoTextBox.TextChanged += FlighNoTextBox_TextChanged;
             // 
             // CustomerIdTextBox
             // 
@@ -151,9 +152,11 @@
             CustomerIdTextBox.Name = "CustomerIdTextBox";
             CustomerIdTextBox.Size = new Size(125, 27);
             CustomerIdTextBox.TabIndex = 1;
+            CustomerIdTextBox.TextChanged += CustomerIdTextBox_TextChanged;
             // 
             // UpdateReservationDataGridView
             // 
+            UpdateReservationDataGridView.AllowUserToAddRows = false;
             UpdateReservationDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             UpdateReservationDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             UpdateReservationDataGridView.BackgroundColor = SystemColors.ButtonFace;
@@ -423,6 +426,7 @@
             Margin = new Padding(3, 5, 3, 5);
             Name = "UpdateReservation";
             Text = "Form1";
+            Load += UpdateReservation_Load;
             contentSplitContainer.Panel1.ResumeLayout(false);
             contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
