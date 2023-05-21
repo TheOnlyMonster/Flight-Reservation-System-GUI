@@ -257,7 +257,7 @@
             // StatusComboBox
             // 
             StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Items.AddRange(new object[] { "sd", "a", "a" });
+            StatusComboBox.Items.AddRange(new object[] { "Cancelled", "Confirmed" });
             StatusComboBox.Location = new Point(47, 428);
             StatusComboBox.Margin = new Padding(3, 4, 3, 4);
             StatusComboBox.Name = "StatusComboBox";
