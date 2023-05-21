@@ -49,8 +49,8 @@ create table AircraftDispatchControl (
 CREATE TABLE Flight (
     FlightNo INT PRIMARY KEY IDENTITY(1,1),
     AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) NOT NULL,
-    DeptDate DATETIME NOT NULL,
-    ExpectedArrival DATETIME NOT NULL,
+    DeptDate Varchar(50) NOT NULL,
+    ExpectedArrival Varchar(50) NOT NULL,
     ArrivalCountry VARCHAR(50) NOT NULL,
     DeptCountry VARCHAR(50) NOT NULL,
     AvailableSeats SMALLINT,

@@ -146,7 +146,7 @@ namespace FlightReservationSystem
             {
                 string ticketQuery = "INSERT INTO BookingDetails (CustomerID, FlightNo, BookingDate,SeatAssignment ,TicketPrice, Rank, Status) Values (@CustomerID, @FlightNo, @BookingDate, @SeatAssignment, @TicketPrice, @Rank, @Status);";
                 string flightUpdateQuery = "Update Flight set AvailableSeats = @AvailableSeats where FlightNo = @FlightNo;";
-                string updatePassportDetails = "Update CustomerTable SET PassportNumber = @PassportNumber, PassportExpirationDate = Cast(@PassportExpirationDate As DATE), CardNum = @CardNum, CVV = @CVV, ExpiryDate = @ExpiryDate where CustomerID = @CustomerID;";
+                string updatePassportDetails = "Update CustomerTable SET PassportNumber = @PassportNumber, PassportExpirationDate = @PassportExpirationDate, CardNum = @CardNum, CVV = @CVV, ExpiryDate = @ExpiryDate where CustomerID = @CustomerID;";
                 using (SqlConnection connection = new SqlConnection(databaseConnection)) {
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(ticketQuery, connection)) {
@@ -166,16 +166,22 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
                         command.ExecuteNonQuery();
                     }
-                    using (SqlCommand command = new SqlCommand(updatePassportDetails, connection))
-                    {
-                        command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
-                        command.Parameters.AddWithValue("@PassportExpirationDate", this.passportDateTimePicker.Text);
-                        command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
-                        command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
-                        command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
-                        command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
-                        command.ExecuteNonQuery();
-                    }
+                 using (SqlCommand command = new SqlCommand(updatePassportDetails, connection))
+                {
+                    command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
+
+                    // Convert the date to the desired format
+
+                    command.Parameters.AddWithValue("@PassportExpirationDate", this.passportDateTimePicker.Text);
+                    command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
+                    command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
+                    command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
+                    command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
+
+                    command.ExecuteNonQuery();
+                }
+            
+                        
                     Customer.Instance.PassportNumber = this.passportNumberTextBox.Text;
                     Customer.Instance.ExpirayDate = this.creditCardExpiryDateTextBox.Text;
                     Customer.Instance.PassportExpirayDate = this.passportDateTimePicker.Text;

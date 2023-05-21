@@ -317,8 +317,6 @@ namespace FlightReservationSystem
             passportDateTimePicker.Name = "passportDateTimePicker";
             passportDateTimePicker.Size = new Size(207, 23);
             passportDateTimePicker.TabIndex = 27;
-            passportDateTimePicker.Format = DateTimePickerFormat.Custom;
-            passportDateTimePicker.CustomFormat = "yyyy-MM-dd";
             // 
             // label4
             // 
@@ -575,7 +573,6 @@ namespace FlightReservationSystem
             deptDateTimePicker.Name = "deptDateTimePicker";
             deptDateTimePicker.Size = new Size(200, 23);
             deptDateTimePicker.TabIndex = 26;
-            deptDateTimePicker.CustomFormat = "yyyy-MM-dd";
             deptDateTimePicker.ValueChanged += bookFlightComboBox_Changed;
             
             // 
