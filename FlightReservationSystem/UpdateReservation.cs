@@ -38,7 +38,37 @@ namespace FlightReservationSystem
                 object[] rowData = row.ItemArray;
                 UpdateReservationDataGridView.Rows.Add(rowData);
             }
+        }
 
+        private void UpdateReservationDataGridView_CellClick(object sender, DataGridViewCellEventArgs e) {
+            if (e.RowIndex >= 0) {
+                DataGridViewRow selectedRow = UpdateReservationDataGridView.Rows[e.RowIndex];
+                this.CustomerIdTextBox2.Text = selectedRow.Cells["CustomerID"].Value.ToString();
+                this.FlightNoTextBox2.Text = selectedRow.Cells["FlightNo"].Value.ToString();
+                this.BookingIdTextBox.Text = selectedRow.Cells["BookingID"].Value.ToString();
+                this.BookingDateTextBox.Text = selectedRow.Cells["BookingDate"].Value.ToString();
+                this.SeatAssignmentTextBox.Text = selectedRow.Cells["SeatAssignment"].Value.ToString();
+                this.TicketPriceTextBox.Text = selectedRow.Cells["TicketPrice"].Value.ToString();
+                this.StatusComboBox.Text = selectedRow.Cells["Status"].Value.ToString();
+                this.RankComboBox.Text = selectedRow.Cells["Rank"].Value.ToString();
+            }
+        }
+
+        private void ConfirmButton_Click(object sender, EventArgs e) {
+            string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , TicketPrice = @TicketPrice, Rank = @Rank ,Status = @Status where BookingID = @BookingID";
+            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query,connection);
+                command.Parameters.AddWithValue("@SeatAssignment",int.Parse(this.SeatAssignmentTextBox.Text));
+                command.Parameters.AddWithValue("@TicketPrice",Double.Parse(this.TicketPriceTextBox.Text));
+                command.Parameters.AddWithValue("@Rank",this.RankComboBox.Text);
+                command.Parameters.AddWithValue("@Status",this.StatusComboBox.Text);
+                command.Parameters.AddWithValue("BookingID",this.BookingIdTextBox.Text);
+                command.ExecuteNonQuery();
+                UpdateReservation_Load(sender,e);
+                MessageBox.Show("Changes Made Successfully!");
+                connection.Close();
+            }
         }
 
         private void CustomerIdTextBox_TextChanged(object sender, EventArgs e)

@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            AddButton = new Button();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label3 = new Label();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            textBox5 = new TextBox();
+            AirCraftIdTextBox = new TextBox();
+            ArrivalTextBox = new TextBox();
+            SeatsTextBox = new TextBox();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            RankATextBox = new TextBox();
+            RankBTextBox = new TextBox();
+            RankCTextBox = new TextBox();
             label2 = new Label();
             label4 = new Label();
             label10 = new Label();
-            textBox4 = new TextBox();
-            dateTimePicker3 = new DateTimePicker();
-            dateTimePicker4 = new DateTimePicker();
+            DepatureTextBox = new TextBox();
+            DepartureDateTimePicker3 = new DateTimePicker();
+            ExpectedDateTimePicker4 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -60,25 +60,25 @@
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(dateTimePicker4);
-            contentSplitContainer.Panel2.Controls.Add(dateTimePicker3);
-            contentSplitContainer.Panel2.Controls.Add(textBox4);
+            contentSplitContainer.Panel2.Controls.Add(ExpectedDateTimePicker4);
+            contentSplitContainer.Panel2.Controls.Add(DepartureDateTimePicker3);
+            contentSplitContainer.Panel2.Controls.Add(DepatureTextBox);
             contentSplitContainer.Panel2.Controls.Add(label10);
             contentSplitContainer.Panel2.Controls.Add(label4);
             contentSplitContainer.Panel2.Controls.Add(label2);
-            contentSplitContainer.Panel2.Controls.Add(textBox3);
-            contentSplitContainer.Panel2.Controls.Add(textBox2);
-            contentSplitContainer.Panel2.Controls.Add(textBox1);
-            contentSplitContainer.Panel2.Controls.Add(button1);
+            contentSplitContainer.Panel2.Controls.Add(RankCTextBox);
+            contentSplitContainer.Panel2.Controls.Add(RankBTextBox);
+            contentSplitContainer.Panel2.Controls.Add(RankATextBox);
+            contentSplitContainer.Panel2.Controls.Add(AddButton);
             contentSplitContainer.Panel2.Controls.Add(label9);
             contentSplitContainer.Panel2.Controls.Add(label8);
             contentSplitContainer.Panel2.Controls.Add(label7);
             contentSplitContainer.Panel2.Controls.Add(label6);
             contentSplitContainer.Panel2.Controls.Add(label5);
             contentSplitContainer.Panel2.Controls.Add(label3);
-            contentSplitContainer.Panel2.Controls.Add(textBox8);
-            contentSplitContainer.Panel2.Controls.Add(textBox7);
-            contentSplitContainer.Panel2.Controls.Add(textBox5);
+            contentSplitContainer.Panel2.Controls.Add(AirCraftIdTextBox);
+            contentSplitContainer.Panel2.Controls.Add(ArrivalTextBox);
+            contentSplitContainer.Panel2.Controls.Add(SeatsTextBox);
             contentSplitContainer.Panel2.Controls.Add(label1);
             contentSplitContainer.Size = new Size(914, 600);
             contentSplitContainer.SplitterDistance = 178;
@@ -107,14 +107,15 @@
             exploreFlightsButton.Margin = new Padding(3, 5, 3, 5);
             exploreFlightsButton.Size = new Size(178, 76);
             // 
-            // button1
+            // AddButton
             // 
-            button1.Location = new Point(300, 532);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 29);
-            button1.TabIndex = 34;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            AddButton.Location = new Point(300, 532);
+            AddButton.Name = "AddButton";
+            AddButton.Size = new Size(146, 29);
+            AddButton.TabIndex = 34;
+            AddButton.Text = "Add";
+            AddButton.UseVisualStyleBackColor = true;
+            AddButton.Click += AddButton_Click;
             // 
             // label9
             // 
@@ -170,26 +171,26 @@
             label3.TabIndex = 27;
             label3.Text = "Departure Country";
             // 
-            // textBox8
+            // AirCraftIdTextBox
             // 
-            textBox8.Location = new Point(59, 114);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(164, 27);
-            textBox8.TabIndex = 25;
+            AirCraftIdTextBox.Location = new Point(59, 114);
+            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
+            AirCraftIdTextBox.Size = new Size(164, 27);
+            AirCraftIdTextBox.TabIndex = 25;
             // 
-            // textBox7
+            // ArrivalTextBox
             // 
-            textBox7.Location = new Point(523, 201);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(161, 27);
-            textBox7.TabIndex = 24;
+            ArrivalTextBox.Location = new Point(523, 201);
+            ArrivalTextBox.Name = "ArrivalTextBox";
+            ArrivalTextBox.Size = new Size(161, 27);
+            ArrivalTextBox.TabIndex = 24;
             // 
-            // textBox5
+            // SeatsTextBox
             // 
-            textBox5.Location = new Point(523, 290);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(161, 27);
-            textBox5.TabIndex = 22;
+            SeatsTextBox.Location = new Point(523, 290);
+            SeatsTextBox.Name = "SeatsTextBox";
+            SeatsTextBox.Size = new Size(161, 27);
+            SeatsTextBox.TabIndex = 22;
             // 
             // label1
             // 
@@ -200,26 +201,26 @@
             label1.TabIndex = 21;
             label1.Text = "Add Flight\r\n";
             // 
-            // textBox1
+            // RankATextBox
             // 
-            textBox1.Location = new Point(61, 376);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(166, 27);
-            textBox1.TabIndex = 35;
+            RankATextBox.Location = new Point(61, 376);
+            RankATextBox.Name = "RankATextBox";
+            RankATextBox.Size = new Size(166, 27);
+            RankATextBox.TabIndex = 35;
             // 
-            // textBox2
+            // RankBTextBox
             // 
-            textBox2.Location = new Point(523, 376);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(161, 27);
-            textBox2.TabIndex = 36;
+            RankBTextBox.Location = new Point(523, 376);
+            RankBTextBox.Name = "RankBTextBox";
+            RankBTextBox.Size = new Size(161, 27);
+            RankBTextBox.TabIndex = 36;
             // 
-            // textBox3
+            // RankCTextBox
             // 
-            textBox3.Location = new Point(61, 463);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(165, 27);
-            textBox3.TabIndex = 37;
+            RankCTextBox.Location = new Point(61, 463);
+            RankCTextBox.Name = "RankCTextBox";
+            RankCTextBox.Size = new Size(165, 27);
+            RankCTextBox.TabIndex = 37;
             // 
             // label2
             // 
@@ -248,26 +249,26 @@
             label10.TabIndex = 40;
             label10.Text = "Rank A Price";
             // 
-            // textBox4
+            // DepatureTextBox
             // 
-            textBox4.Location = new Point(60, 290);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(166, 27);
-            textBox4.TabIndex = 41;
+            DepatureTextBox.Location = new Point(60, 290);
+            DepatureTextBox.Name = "DepatureTextBox";
+            DepatureTextBox.Size = new Size(166, 27);
+            DepatureTextBox.TabIndex = 41;
             // 
-            // dateTimePicker3
+            // DepartureDateTimePicker3
             // 
-            dateTimePicker3.Location = new Point(523, 114);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(161, 27);
-            dateTimePicker3.TabIndex = 44;
+            DepartureDateTimePicker3.Location = new Point(523, 114);
+            DepartureDateTimePicker3.Name = "DepartureDateTimePicker3";
+            DepartureDateTimePicker3.Size = new Size(161, 27);
+            DepartureDateTimePicker3.TabIndex = 44;
             // 
-            // dateTimePicker4
+            // ExpectedDateTimePicker4
             // 
-            dateTimePicker4.Location = new Point(61, 199);
-            dateTimePicker4.Name = "dateTimePicker4";
-            dateTimePicker4.Size = new Size(166, 27);
-            dateTimePicker4.TabIndex = 45;
+            ExpectedDateTimePicker4.Location = new Point(61, 199);
+            ExpectedDateTimePicker4.Name = "ExpectedDateTimePicker4";
+            ExpectedDateTimePicker4.Size = new Size(166, 27);
+            ExpectedDateTimePicker4.TabIndex = 45;
             // 
             // AddFlight
             // 
@@ -287,25 +288,25 @@
 
         #endregion
 
-        private Button button1;
+        private Button AddButton;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label3;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox5;
+        private TextBox AirCraftIdTextBox;
+        private TextBox ArrivalTextBox;
+        private TextBox SeatsTextBox;
         private Label label1;
         private Label label10;
         private Label label4;
         private Label label2;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private DateTimePicker dateTimePicker3;
-        private TextBox textBox4;
-        private DateTimePicker dateTimePicker4;
+        private TextBox RankCTextBox;
+        private TextBox RankBTextBox;
+        private TextBox RankATextBox;
+        private DateTimePicker DepartureDateTimePicker3;
+        private TextBox DepatureTextBox;
+        private DateTimePicker ExpectedDateTimePicker4;
     }
 }
