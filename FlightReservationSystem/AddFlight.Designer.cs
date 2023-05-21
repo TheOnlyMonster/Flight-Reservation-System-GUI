@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            comboBox1 = new ComboBox();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label3 = new Label();
-            textBox9 = new TextBox();
             textBox8 = new TextBox();
             textBox7 = new TextBox();
-            textBox6 = new TextBox();
             textBox5 = new TextBox();
             label1 = new Label();
             textBox1 = new TextBox();
@@ -48,6 +45,9 @@
             label2 = new Label();
             label4 = new Label();
             label10 = new Label();
+            textBox4 = new TextBox();
+            dateTimePicker3 = new DateTimePicker();
+            dateTimePicker4 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -60,6 +60,9 @@
             // 
             // contentSplitContainer.Panel2
             // 
+            contentSplitContainer.Panel2.Controls.Add(dateTimePicker4);
+            contentSplitContainer.Panel2.Controls.Add(dateTimePicker3);
+            contentSplitContainer.Panel2.Controls.Add(textBox4);
             contentSplitContainer.Panel2.Controls.Add(label10);
             contentSplitContainer.Panel2.Controls.Add(label4);
             contentSplitContainer.Panel2.Controls.Add(label2);
@@ -67,17 +70,14 @@
             contentSplitContainer.Panel2.Controls.Add(textBox2);
             contentSplitContainer.Panel2.Controls.Add(textBox1);
             contentSplitContainer.Panel2.Controls.Add(button1);
-            contentSplitContainer.Panel2.Controls.Add(comboBox1);
             contentSplitContainer.Panel2.Controls.Add(label9);
             contentSplitContainer.Panel2.Controls.Add(label8);
             contentSplitContainer.Panel2.Controls.Add(label7);
             contentSplitContainer.Panel2.Controls.Add(label6);
             contentSplitContainer.Panel2.Controls.Add(label5);
             contentSplitContainer.Panel2.Controls.Add(label3);
-            contentSplitContainer.Panel2.Controls.Add(textBox9);
             contentSplitContainer.Panel2.Controls.Add(textBox8);
             contentSplitContainer.Panel2.Controls.Add(textBox7);
-            contentSplitContainer.Panel2.Controls.Add(textBox6);
             contentSplitContainer.Panel2.Controls.Add(textBox5);
             contentSplitContainer.Panel2.Controls.Add(label1);
             contentSplitContainer.Size = new Size(914, 600);
@@ -116,75 +116,59 @@
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            comboBox1.Location = new Point(60, 290);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(166, 28);
-            comboBox1.TabIndex = 33;
-            // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(523, 91);
             label9.Name = "label9";
-            label9.Size = new Size(97, 20);
+            label9.Size = new Size(112, 20);
             label9.TabIndex = 32;
-            label9.Text = "Manfucaturer";
+            label9.Text = "Departure Date";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(523, 178);
             label8.Name = "label8";
-            label8.Size = new Size(92, 20);
+            label8.Size = new Size(107, 20);
             label8.TabIndex = 31;
-            label8.Text = "AirCraft Year";
+            label8.Text = "Arrival Country";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(60, 91);
             label7.Name = "label7";
-            label7.Size = new Size(52, 20);
+            label7.Size = new Size(79, 20);
             label7.TabIndex = 30;
-            label7.Text = "Model";
+            label7.Text = "AirCraft ID";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(58, 178);
             label6.Name = "label6";
-            label6.Size = new Size(124, 20);
+            label6.Size = new Size(117, 20);
             label6.TabIndex = 29;
-            label6.Text = "Manfucature Year";
+            label6.Text = "Expected Arrival";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(523, 268);
+            label5.Location = new Point(525, 267);
             label5.Name = "label5";
-            label5.Size = new Size(66, 20);
+            label5.Size = new Size(110, 20);
             label5.TabIndex = 28;
-            label5.Text = "Capacity";
+            label5.Text = "Available Seats";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(61, 267);
             label3.Name = "label3";
-            label3.Size = new Size(49, 20);
+            label3.Size = new Size(131, 20);
             label3.TabIndex = 27;
-            label3.Text = "Status";
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(528, 114);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(161, 27);
-            textBox9.TabIndex = 26;
+            label3.Text = "Departure Country";
             // 
             // textBox8
             // 
@@ -200,16 +184,9 @@
             textBox7.Size = new Size(161, 27);
             textBox7.TabIndex = 24;
             // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(59, 201);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(165, 27);
-            textBox6.TabIndex = 23;
-            // 
             // textBox5
             // 
-            textBox5.Location = new Point(523, 291);
+            textBox5.Location = new Point(523, 290);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(161, 27);
             textBox5.TabIndex = 22;
@@ -249,27 +226,48 @@
             label2.AutoSize = true;
             label2.Location = new Point(61, 440);
             label2.Name = "label2";
-            label2.Size = new Size(49, 20);
+            label2.Size = new Size(90, 20);
             label2.TabIndex = 38;
-            label2.Text = "Status";
+            label2.Text = "Rank C Price";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(523, 353);
             label4.Name = "label4";
-            label4.Size = new Size(49, 20);
+            label4.Size = new Size(90, 20);
             label4.TabIndex = 39;
-            label4.Text = "Status";
+            label4.Text = "Rank B Price";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(60, 353);
             label10.Name = "label10";
-            label10.Size = new Size(49, 20);
+            label10.Size = new Size(91, 20);
             label10.TabIndex = 40;
-            label10.Text = "Status";
+            label10.Text = "Rank A Price";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(60, 290);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(166, 27);
+            textBox4.TabIndex = 41;
+            // 
+            // dateTimePicker3
+            // 
+            dateTimePicker3.Location = new Point(523, 114);
+            dateTimePicker3.Name = "dateTimePicker3";
+            dateTimePicker3.Size = new Size(161, 27);
+            dateTimePicker3.TabIndex = 44;
+            // 
+            // dateTimePicker4
+            // 
+            dateTimePicker4.Location = new Point(61, 199);
+            dateTimePicker4.Name = "dateTimePicker4";
+            dateTimePicker4.Size = new Size(166, 27);
+            dateTimePicker4.TabIndex = 45;
             // 
             // AddFlight
             // 
@@ -290,17 +288,14 @@
         #endregion
 
         private Button button1;
-        private ComboBox comboBox1;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label3;
-        private TextBox textBox9;
         private TextBox textBox8;
         private TextBox textBox7;
-        private TextBox textBox6;
         private TextBox textBox5;
         private Label label1;
         private Label label10;
@@ -309,5 +304,8 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
+        private DateTimePicker dateTimePicker3;
+        private TextBox textBox4;
+        private DateTimePicker dateTimePicker4;
     }
 }
