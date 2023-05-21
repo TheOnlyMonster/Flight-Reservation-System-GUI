@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             label1 = new Label();
             textBox5 = new TextBox();
             textBox6 = new TextBox();
@@ -88,12 +86,6 @@
             // exploreFlightsButton
             // 
             exploreFlightsButton.Size = new Size(184, 76);
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // label1
             // 
@@ -219,7 +211,6 @@
             ClientSize = new Size(946, 620);
             Name = "AddAirCraft";
             Text = "AddAirCraft";
-            Controls.SetChildIndex(contentSplitContainer, 0);
             contentSplitContainer.Panel1.ResumeLayout(false);
             contentSplitContainer.Panel2.ResumeLayout(false);
             contentSplitContainer.Panel2.PerformLayout();
@@ -231,7 +222,6 @@
         #endregion
 
         private Label label1;
-        private ContextMenuStrip contextMenuStrip1;
         private Label label9;
         private Label label8;
         private Label label7;
