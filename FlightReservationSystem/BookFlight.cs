@@ -157,18 +157,23 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
                         command.Parameters.AddWithValue("@BookingDate", DateTime.Now);
-                        command.Parameters.AddWithValue("@SeatAssignment", 3);
                         command.Parameters.AddWithValue("@TicketPrice", Decimal.Parse(this.ClassPriceTextBox.Text));
                         command.Parameters.AddWithValue("@Rank", this.ClassComboBox.Text);
                         command.Parameters.AddWithValue("@Status", "Confirmed");
+                        
+                        // Declare the SeatAssignment parameter outside the loop
+                        SqlParameter seatAssignmentParam = command.Parameters.AddWithValue("@SeatAssignment", 0);
+                        
                         for (int i = 0; i < seatsNumericUpDown.Value; i++)
                         {
+                            // Update the value of SeatAssignment parameter inside the loop
+                            seatAssignmentParam.Value = RandomIntGenerator(int.Parse(this.flightNoTextBox.Text));
                             command.ExecuteNonQuery();
                         }
                     }
                     using (SqlCommand command = new SqlCommand(flightUpdateQuery, connection))
                     {
-                        command.Parameters.AddWithValue("@AvailableSeats", int.Parse(this.seatsAvailableTextBox.Text));
+                        command.Parameters.AddWithValue("@AvailableSeats", int.Parse(this.seatsAvailableTextBox.Text) - seatsNumericUpDown.Value);
                         command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
                         command.ExecuteNonQuery();
                     }
@@ -191,8 +196,43 @@ namespace FlightReservationSystem
                         MessageBox.Show("The Flight has been Confirmed!");
                         connection.Close();
                     }
+                    BookFlight_Load(sender,e);
                 }
             }
         }
+        private int RandomIntGenerator(int flightNo)
+        {
+            Random randGenerator = new Random();
+            List<int> assignedSeats = new List<int>();
+            int availableSeats = 0;
+            
+            string query = "SELECT SeatAssignment, AvailableSeats FROM BookingDetails B INNER JOIN Flight F ON B.FlightNo = F.FlightNo WHERE F.FlightNo = @FlightNo;";
+            
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
+                connection.Open();
+                
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@FlightNo", flightNo);
+                    
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            assignedSeats.Add(Convert.ToInt32(reader["SeatAssignment"]));
+                            availableSeats = Convert.ToInt32(reader["AvailableSeats"]);
+                        }
+                    }
+                }
+            }       
+            int randomNum = randGenerator.Next(1, availableSeats); 
+            while (assignedSeats.Contains(randomNum))
+            {
+                randomNum = randGenerator.Next(1, availableSeats);
+            }     
+            return randomNum;
+        }
     }
 }
+
