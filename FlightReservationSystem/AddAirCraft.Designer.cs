@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
+            CapacityTextBox = new TextBox();
+            ManufactureYearTextBox = new TextBox();
+            AirCraftYearTextBox = new TextBox();
+            ModelTextBox = new TextBox();
+            ManfucaturerTextBox = new TextBox();
             label3 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
+            AirCraftComboBox = new ComboBox();
+            AddButton = new Button();
+            AirCraftTextBox = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -53,19 +55,21 @@
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(button1);
-            contentSplitContainer.Panel2.Controls.Add(comboBox1);
+            contentSplitContainer.Panel2.Controls.Add(label2);
+            contentSplitContainer.Panel2.Controls.Add(AirCraftTextBox);
+            contentSplitContainer.Panel2.Controls.Add(AddButton);
+            contentSplitContainer.Panel2.Controls.Add(AirCraftComboBox);
             contentSplitContainer.Panel2.Controls.Add(label9);
             contentSplitContainer.Panel2.Controls.Add(label8);
             contentSplitContainer.Panel2.Controls.Add(label7);
             contentSplitContainer.Panel2.Controls.Add(label6);
             contentSplitContainer.Panel2.Controls.Add(label5);
             contentSplitContainer.Panel2.Controls.Add(label3);
-            contentSplitContainer.Panel2.Controls.Add(textBox9);
-            contentSplitContainer.Panel2.Controls.Add(textBox8);
-            contentSplitContainer.Panel2.Controls.Add(textBox7);
-            contentSplitContainer.Panel2.Controls.Add(textBox6);
-            contentSplitContainer.Panel2.Controls.Add(textBox5);
+            contentSplitContainer.Panel2.Controls.Add(ManfucaturerTextBox);
+            contentSplitContainer.Panel2.Controls.Add(ModelTextBox);
+            contentSplitContainer.Panel2.Controls.Add(AirCraftYearTextBox);
+            contentSplitContainer.Panel2.Controls.Add(ManufactureYearTextBox);
+            contentSplitContainer.Panel2.Controls.Add(CapacityTextBox);
             contentSplitContainer.Panel2.Controls.Add(label1);
             contentSplitContainer.Size = new Size(946, 620);
             contentSplitContainer.SplitterDistance = 184;
@@ -96,40 +100,40 @@
             label1.TabIndex = 0;
             label1.Text = "Add AirCraft";
             // 
-            // textBox5
+            // CapacityTextBox
             // 
-            textBox5.Location = new Point(526, 311);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(161, 27);
-            textBox5.TabIndex = 5;
+            CapacityTextBox.Location = new Point(526, 311);
+            CapacityTextBox.Name = "CapacityTextBox";
+            CapacityTextBox.Size = new Size(161, 27);
+            CapacityTextBox.TabIndex = 5;
             // 
-            // textBox6
+            // ManufactureYearTextBox
             // 
-            textBox6.Location = new Point(58, 204);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(165, 27);
-            textBox6.TabIndex = 6;
+            ManufactureYearTextBox.Location = new Point(58, 204);
+            ManufactureYearTextBox.Name = "ManufactureYearTextBox";
+            ManufactureYearTextBox.Size = new Size(165, 27);
+            ManufactureYearTextBox.TabIndex = 6;
             // 
-            // textBox7
+            // AirCraftYearTextBox
             // 
-            textBox7.Location = new Point(526, 204);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(161, 27);
-            textBox7.TabIndex = 7;
+            AirCraftYearTextBox.Location = new Point(526, 204);
+            AirCraftYearTextBox.Name = "AirCraftYearTextBox";
+            AirCraftYearTextBox.Size = new Size(161, 27);
+            AirCraftYearTextBox.TabIndex = 7;
             // 
-            // textBox8
+            // ModelTextBox
             // 
-            textBox8.Location = new Point(57, 94);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(164, 27);
-            textBox8.TabIndex = 8;
+            ModelTextBox.Location = new Point(57, 94);
+            ModelTextBox.Name = "ModelTextBox";
+            ModelTextBox.Size = new Size(164, 27);
+            ModelTextBox.TabIndex = 8;
             // 
-            // textBox9
+            // ManfucaturerTextBox
             // 
-            textBox9.Location = new Point(526, 94);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(161, 27);
-            textBox9.TabIndex = 9;
+            ManfucaturerTextBox.Location = new Point(526, 94);
+            ManfucaturerTextBox.Name = "ManfucaturerTextBox";
+            ManfucaturerTextBox.Size = new Size(161, 27);
+            ManfucaturerTextBox.TabIndex = 9;
             // 
             // label3
             // 
@@ -186,23 +190,39 @@
             label9.TabIndex = 17;
             label9.Text = "Manfucaturer";
             // 
-            // comboBox1
+            // AirCraftComboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            comboBox1.Location = new Point(57, 310);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(166, 28);
-            comboBox1.TabIndex = 19;
+            AirCraftComboBox.FormattingEnabled = true;
+            AirCraftComboBox.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
+            AirCraftComboBox.Location = new Point(57, 310);
+            AirCraftComboBox.Name = "AirCraftComboBox";
+            AirCraftComboBox.Size = new Size(166, 28);
+            AirCraftComboBox.TabIndex = 19;
             // 
-            // button1
+            // AddButton
             // 
-            button1.Location = new Point(291, 480);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 29);
-            button1.TabIndex = 20;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            AddButton.Location = new Point(291, 480);
+            AddButton.Name = "AddButton";
+            AddButton.Size = new Size(146, 29);
+            AddButton.TabIndex = 20;
+            AddButton.Text = "Add";
+            AddButton.UseVisualStyleBackColor = true;
+            // 
+            // AirCraftTextBox
+            // 
+            AirCraftTextBox.Location = new Point(57, 402);
+            AirCraftTextBox.Name = "AirCraftTextBox";
+            AirCraftTextBox.Size = new Size(166, 27);
+            AirCraftTextBox.TabIndex = 21;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(57, 379);
+            label2.Name = "label2";
+            label2.Size = new Size(95, 20);
+            label2.TabIndex = 22;
+            label2.Text = "AirCraft Type";
             // 
             // AddAirCraft
             // 
@@ -228,12 +248,14 @@
         private Label label6;
         private Label label5;
         private Label label3;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private Button button1;
-        private ComboBox comboBox1;
+        private TextBox ManfucaturerTextBox;
+        private TextBox ModelTextBox;
+        private TextBox AirCraftYearTextBox;
+        private TextBox ManufactureYearTextBox;
+        private TextBox CapacityTextBox;
+        private Button AddButton;
+        private ComboBox AirCraftComboBox;
+        private Label label2;
+        private TextBox AirCraftTextBox;
     }
 }
