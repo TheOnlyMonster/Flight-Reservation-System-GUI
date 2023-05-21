@@ -182,7 +182,7 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
 
                         // Convert the date to the desired format
-                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text,"dddd, MMMM d, yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text,"dd MMMM yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                         command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
                         command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
                         command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);

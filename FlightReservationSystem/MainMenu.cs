@@ -17,7 +17,11 @@ namespace FlightReservationSystem
 
 
 
+<<<<<<< Updated upstream
         protected string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+=======
+        protected string databaseConnection = "Server = LAPTOP-9HP7VCU2; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+>>>>>>> Stashed changes
         public MainMenu()
         {
             InitializeComponent();
@@ -101,7 +105,7 @@ namespace FlightReservationSystem
             this.Hide();
         }
 
-       
+
 
         private void AddFlight_Click(object sender, EventArgs e)
         {

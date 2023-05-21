@@ -42,7 +42,6 @@
             bookFlightButton = new Button();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,6 +50,7 @@
             contentSplitContainer.Dock = DockStyle.Fill;
             contentSplitContainer.IsSplitterFixed = true;
             contentSplitContainer.Location = new Point(0, 0);
+            contentSplitContainer.Margin = new Padding(3, 4, 3, 4);
             contentSplitContainer.Name = "contentSplitContainer";
             // 
             // contentSplitContainer.Panel1
@@ -59,12 +59,9 @@
             contentSplitContainer.Panel1.Controls.Add(helpButton);
             contentSplitContainer.Panel1.Controls.Add(exploreFlightsButton);
             contentSplitContainer.Panel1.ImeMode = ImeMode.NoControl;
-            // 
-            // contentSplitContainer.Panel2
-            // 
-            
-            contentSplitContainer.Size = new Size(1182, 595);
-            contentSplitContainer.SplitterDistance = 230;
+            contentSplitContainer.Size = new Size(1351, 793);
+            contentSplitContainer.SplitterDistance = 262;
+            contentSplitContainer.SplitterWidth = 5;
             contentSplitContainer.TabIndex = 0;
             // 
             // helpButton
@@ -74,9 +71,10 @@
             helpButton.Dock = DockStyle.Bottom;
             helpButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             helpButton.ForeColor = SystemColors.HotTrack;
-            helpButton.Location = new Point(0, 532);
+            helpButton.Location = new Point(0, 709);
+            helpButton.Margin = new Padding(3, 4, 3, 4);
             helpButton.Name = "helpButton";
-            helpButton.Size = new Size(230, 63);
+            helpButton.Size = new Size(262, 84);
             helpButton.TabIndex = 3;
             helpButton.Text = "Help";
             helpButton.UseVisualStyleBackColor = false;
@@ -89,14 +87,14 @@
             exploreFlightsButton.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             exploreFlightsButton.ForeColor = SystemColors.HotTrack;
             exploreFlightsButton.Location = new Point(0, 0);
+            exploreFlightsButton.Margin = new Padding(3, 4, 3, 4);
             exploreFlightsButton.Name = "exploreFlightsButton";
-            exploreFlightsButton.Size = new Size(230, 57);
+            exploreFlightsButton.Size = new Size(262, 76);
             exploreFlightsButton.TabIndex = 2;
             exploreFlightsButton.Text = "Explore Flights";
             exploreFlightsButton.UseVisualStyleBackColor = false;
             exploreFlightsButton.Click += exploreFlightsButton_Click;
-            //
-
+            // 
             // UpdateReservation
             // 
             UpdateReservation.BackColor = SystemColors.ButtonHighlight;
@@ -170,7 +168,7 @@
             UpdateFlight.TabIndex = 4;
             UpdateFlight.Text = "Update Flight";
             UpdateFlight.UseVisualStyleBackColor = false;
-            UpdateFlight.Click += UpdateFlight_Click;       
+            UpdateFlight.Click += UpdateFlight_Click;
             // 
             // UpdateInfo
             // 
@@ -235,18 +233,17 @@
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1182, 595);
+            ClientSize = new Size(1351, 793);
             Controls.Add(contentSplitContainer);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "MainMenu";
             Text = "MainMenu";
             contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
             contentSplitContainer.ResumeLayout(false);
-            
             ResumeLayout(false);
         }
 
@@ -264,6 +261,6 @@
         protected Button AddFlight;
         protected Button UpdateFlight;
         protected Button UpdateReservation;
-       
+
     }
 }
