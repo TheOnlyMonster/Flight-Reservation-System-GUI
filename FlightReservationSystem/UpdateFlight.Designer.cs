@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             panel3 = new Panel();
+            ArrivaldateTimePicker = new DateTimePicker();
+            label4 = new Label();
+            label3 = new Label();
+            DeparturedateTimePicker = new DateTimePicker();
             textBox10 = new TextBox();
             RankCTextBox = new TextBox();
             RankBTextBox = new TextBox();
@@ -65,10 +69,8 @@
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
             Rank3Price = new DataGridViewTextBoxColumn();
-            DeparturedateTimePicker = new DateTimePicker();
-            label3 = new Label();
-            label4 = new Label();
-            ArrivaldateTimePicker = new DateTimePicker();
+            AirCraftIdTextBox = new TextBox();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -80,37 +82,43 @@
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 3, 3, 3);
+            contentSplitContainer.Margin = new Padding(3, 2, 3, 2);
             // 
             // contentSplitContainer.Panel2
             // 
             contentSplitContainer.Panel2.Controls.Add(panel1);
             contentSplitContainer.Panel2.Controls.Add(panel3);
-            contentSplitContainer.Size = new Size(1267, 735);
-            contentSplitContainer.SplitterDistance = 244;
-            contentSplitContainer.SplitterWidth = 6;
+            contentSplitContainer.Size = new Size(1109, 551);
+            contentSplitContainer.SplitterDistance = 213;
+            contentSplitContainer.SplitterWidth = 5;
             // 
             // signInButton
             // 
-            signInButton.Size = new Size(244, 57);
+            signInButton.Location = new Point(0, 43);
+            signInButton.Margin = new Padding(3, 2, 3, 2);
+            signInButton.Size = new Size(213, 43);
             // 
             // signUpButton
             // 
-            signUpButton.Size = new Size(244, 57);
+            signUpButton.Margin = new Padding(3, 2, 3, 2);
+            signUpButton.Size = new Size(213, 43);
             // 
             // helpButton
             // 
-            helpButton.Location = new Point(0, 651);
-            helpButton.Margin = new Padding(3, 3, 3, 3);
-            helpButton.Size = new Size(244, 84);
+            helpButton.Location = new Point(0, 488);
+            helpButton.Margin = new Padding(3, 2, 3, 2);
+            helpButton.Size = new Size(213, 63);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Margin = new Padding(3, 3, 3, 3);
-            exploreFlightsButton.Size = new Size(244, 76);
+            exploreFlightsButton.Location = new Point(0, 86);
+            exploreFlightsButton.Margin = new Padding(3, 2, 3, 2);
+            exploreFlightsButton.Size = new Size(213, 57);
             // 
             // panel3
             // 
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(AirCraftIdTextBox);
             panel3.Controls.Add(ArrivaldateTimePicker);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
@@ -134,109 +142,132 @@
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(616, 0);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(539, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(402, 735);
+            panel3.Size = new Size(352, 551);
             panel3.TabIndex = 2;
+            // 
+            // ArrivaldateTimePicker
+            // 
+            ArrivaldateTimePicker.Location = new Point(201, 151);
+            ArrivaldateTimePicker.Margin = new Padding(3, 2, 3, 2);
+            ArrivaldateTimePicker.Name = "ArrivaldateTimePicker";
+            ArrivaldateTimePicker.Size = new Size(135, 23);
+            ArrivaldateTimePicker.TabIndex = 60;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(220, 190);
+            label4.Name = "label4";
+            label4.Size = new Size(86, 15);
+            label4.TabIndex = 59;
+            label4.Text = "Departure Date";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 58;
+            label3.Text = "label3";
+            // 
+            // DeparturedateTimePicker
+            // 
+            DeparturedateTimePicker.Location = new Point(201, 208);
+            DeparturedateTimePicker.Margin = new Padding(3, 2, 3, 2);
+            DeparturedateTimePicker.Name = "DeparturedateTimePicker";
+            DeparturedateTimePicker.Size = new Size(135, 23);
+            DeparturedateTimePicker.TabIndex = 56;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(32, 480);
-            textBox10.Margin = new Padding(3, 4, 3, 4);
+            textBox10.Location = new Point(45, 411);
             textBox10.Name = "textBox10";
             textBox10.ReadOnly = true;
-            textBox10.Size = new Size(129, 27);
+            textBox10.Size = new Size(113, 23);
             textBox10.TabIndex = 55;
             textBox10.Text = "Rank C";
             textBox10.TextAlign = HorizontalAlignment.Center;
             // 
             // RankCTextBox
             // 
-            RankCTextBox.Location = new Point(216, 480);
-            RankCTextBox.Margin = new Padding(3, 4, 3, 4);
+            RankCTextBox.Location = new Point(206, 411);
             RankCTextBox.Name = "RankCTextBox";
-            RankCTextBox.Size = new Size(131, 27);
+            RankCTextBox.Size = new Size(115, 23);
             RankCTextBox.TabIndex = 54;
             // 
             // RankBTextBox
             // 
-            RankBTextBox.Location = new Point(216, 423);
-            RankBTextBox.Margin = new Padding(3, 4, 3, 4);
+            RankBTextBox.Location = new Point(206, 368);
             RankBTextBox.Name = "RankBTextBox";
-            RankBTextBox.Size = new Size(131, 27);
+            RankBTextBox.Size = new Size(115, 23);
             RankBTextBox.TabIndex = 53;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(32, 423);
-            textBox7.Margin = new Padding(3, 4, 3, 4);
+            textBox7.Location = new Point(45, 368);
             textBox7.Name = "textBox7";
             textBox7.ReadOnly = true;
-            textBox7.Size = new Size(129, 27);
+            textBox7.Size = new Size(113, 23);
             textBox7.TabIndex = 52;
             textBox7.Text = "Rank B";
             textBox7.TextAlign = HorizontalAlignment.Center;
             // 
             // RankATextBox
             // 
-            RankATextBox.Location = new Point(216, 367);
-            RankATextBox.Margin = new Padding(3, 4, 3, 4);
+            RankATextBox.Location = new Point(206, 326);
             RankATextBox.Name = "RankATextBox";
-            RankATextBox.Size = new Size(131, 27);
+            RankATextBox.Size = new Size(115, 23);
             RankATextBox.TabIndex = 51;
             // 
             // SeatsAvailabilityTextBox
             // 
-            SeatsAvailabilityTextBox.Location = new Point(23, 279);
-            SeatsAvailabilityTextBox.Margin = new Padding(3, 4, 3, 4);
+            SeatsAvailabilityTextBox.Location = new Point(20, 209);
             SeatsAvailabilityTextBox.Name = "SeatsAvailabilityTextBox";
-            SeatsAvailabilityTextBox.Size = new Size(154, 27);
+            SeatsAvailabilityTextBox.Size = new Size(135, 23);
             SeatsAvailabilityTextBox.TabIndex = 50;
             // 
             // ArrivalCountryTextBox
             // 
-            ArrivalCountryTextBox.Location = new Point(23, 201);
-            ArrivalCountryTextBox.Margin = new Padding(3, 4, 3, 4);
+            ArrivalCountryTextBox.Location = new Point(20, 151);
             ArrivalCountryTextBox.Name = "ArrivalCountryTextBox";
             ArrivalCountryTextBox.ReadOnly = true;
-            ArrivalCountryTextBox.Size = new Size(154, 27);
+            ArrivalCountryTextBox.Size = new Size(135, 23);
             ArrivalCountryTextBox.TabIndex = 48;
             // 
             // FlightNumberTextBox
             // 
-            FlightNumberTextBox.Location = new Point(230, 127);
-            FlightNumberTextBox.Margin = new Padding(3, 4, 3, 4);
+            FlightNumberTextBox.Location = new Point(201, 95);
             FlightNumberTextBox.Name = "FlightNumberTextBox";
             FlightNumberTextBox.ReadOnly = true;
-            FlightNumberTextBox.Size = new Size(154, 27);
+            FlightNumberTextBox.Size = new Size(135, 23);
             FlightNumberTextBox.TabIndex = 47;
             // 
             // DepartureTextBox
             // 
-            DepartureTextBox.Location = new Point(23, 127);
-            DepartureTextBox.Margin = new Padding(3, 4, 3, 4);
+            DepartureTextBox.Location = new Point(20, 95);
             DepartureTextBox.Name = "DepartureTextBox";
             DepartureTextBox.ReadOnly = true;
-            DepartureTextBox.Size = new Size(157, 27);
+            DepartureTextBox.Size = new Size(138, 23);
             DepartureTextBox.TabIndex = 46;
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(230, 331);
+            label14.Location = new Point(218, 299);
             label14.Name = "label14";
-            label14.Size = new Size(78, 20);
+            label14.Size = new Size(63, 15);
             label14.TabIndex = 43;
             label14.Text = "Class Price";
             // 
             // ClassPriceTextBox
             // 
-            ClassPriceTextBox.Location = new Point(32, 367);
-            ClassPriceTextBox.Margin = new Padding(3, 4, 3, 4);
+            ClassPriceTextBox.Location = new Point(45, 326);
             ClassPriceTextBox.Name = "ClassPriceTextBox";
             ClassPriceTextBox.ReadOnly = true;
-            ClassPriceTextBox.Size = new Size(129, 27);
+            ClassPriceTextBox.Size = new Size(113, 23);
             ClassPriceTextBox.TabIndex = 42;
             ClassPriceTextBox.Text = "Rank A";
             ClassPriceTextBox.TextAlign = HorizontalAlignment.Center;
@@ -244,18 +275,17 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(66, 331);
+            label13.Location = new Point(75, 299);
             label13.Name = "label13";
-            label13.Size = new Size(42, 20);
+            label13.Size = new Size(34, 15);
             label13.TabIndex = 41;
             label13.Text = "Class";
             // 
             // confirmButton
             // 
-            confirmButton.Location = new Point(133, 615);
-            confirmButton.Margin = new Padding(3, 4, 3, 4);
+            confirmButton.Location = new Point(102, 472);
             confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(162, 31);
+            confirmButton.Size = new Size(142, 23);
             confirmButton.TabIndex = 38;
             confirmButton.Text = "Confirm Update";
             confirmButton.UseVisualStyleBackColor = true;
@@ -264,45 +294,45 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(50, 255);
+            label11.Location = new Point(44, 191);
             label11.Name = "label11";
-            label11.Size = new Size(110, 20);
+            label11.Size = new Size(85, 15);
             label11.TabIndex = 34;
             label11.Text = "Seats Available";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(251, 177);
+            label7.Location = new Point(220, 133);
             label7.Name = "label7";
-            label7.Size = new Size(88, 20);
+            label7.Size = new Size(68, 15);
             label7.TabIndex = 11;
             label7.Text = "Arrival Date";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(50, 177);
+            label6.Location = new Point(44, 133);
             label6.Name = "label6";
-            label6.Size = new Size(107, 20);
+            label6.Size = new Size(87, 15);
             label6.TabIndex = 9;
             label6.Text = "Arrival Country";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(41, 93);
+            label5.Location = new Point(36, 70);
             label5.Name = "label5";
-            label5.Size = new Size(131, 20);
+            label5.Size = new Size(105, 15);
             label5.TabIndex = 7;
             label5.Text = "Departure Country";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(251, 93);
+            label2.Location = new Point(220, 70);
             label2.Name = "label2";
-            label2.Size = new Size(104, 20);
+            label2.Size = new Size(84, 15);
             label2.TabIndex = 1;
             label2.Text = "Flight Number";
             // 
@@ -310,9 +340,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(133, 23);
+            label1.Location = new Point(116, 17);
             label1.Name = "label1";
-            label1.Size = new Size(162, 32);
+            label1.Size = new Size(128, 25);
             label1.TabIndex = 0;
             label1.Text = "Update Flight";
             // 
@@ -325,55 +355,52 @@
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(deptCountriesComboBox);
             panel1.Controls.Add(AdminFlightDataGrid);
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(606, 731);
+            panel1.Size = new Size(530, 548);
             panel1.TabIndex = 3;
             // 
             // deptDateLabel
             // 
             deptDateLabel.AutoSize = true;
-            deptDateLabel.Location = new Point(362, 33);
+            deptDateLabel.Location = new Point(317, 25);
             deptDateLabel.Name = "deptDateLabel";
-            deptDateLabel.Size = new Size(112, 20);
+            deptDateLabel.Size = new Size(86, 15);
             deptDateLabel.TabIndex = 39;
             deptDateLabel.Text = "Departure Date";
             // 
             // arrivalCountryLabel
             // 
             arrivalCountryLabel.AutoSize = true;
-            arrivalCountryLabel.Location = new Point(195, 33);
+            arrivalCountryLabel.Location = new Point(171, 25);
             arrivalCountryLabel.Name = "arrivalCountryLabel";
-            arrivalCountryLabel.Size = new Size(107, 20);
+            arrivalCountryLabel.Size = new Size(87, 15);
             arrivalCountryLabel.TabIndex = 38;
             arrivalCountryLabel.Text = "Arrival Country";
             // 
             // deptCountryLabel
             // 
             deptCountryLabel.AutoSize = true;
-            deptCountryLabel.Location = new Point(22, 29);
+            deptCountryLabel.Location = new Point(19, 22);
             deptCountryLabel.Name = "deptCountryLabel";
-            deptCountryLabel.Size = new Size(131, 20);
+            deptCountryLabel.Size = new Size(105, 15);
             deptCountryLabel.TabIndex = 37;
             deptCountryLabel.Text = "Departure Country";
             // 
             // deptDateTimePicker
             // 
-            deptDateTimePicker.Location = new Point(362, 53);
-            deptDateTimePicker.Margin = new Padding(3, 4, 3, 4);
+            deptDateTimePicker.Location = new Point(317, 40);
             deptDateTimePicker.Name = "deptDateTimePicker";
-            deptDateTimePicker.Size = new Size(228, 27);
+            deptDateTimePicker.Size = new Size(200, 23);
             deptDateTimePicker.TabIndex = 36;
             // 
             // comboBox1
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(195, 53);
-            comboBox1.Margin = new Padding(3, 4, 3, 4);
+            comboBox1.Location = new Point(171, 40);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(138, 28);
+            comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 35;
             comboBox1.DropDown += AdminArrivalCountriesComboBox_OnDropDown;
             comboBox1.TextChanged += UpdateFlightComboBox_Changed;
@@ -382,10 +409,9 @@
             // 
             deptCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             deptCountriesComboBox.FormattingEnabled = true;
-            deptCountriesComboBox.Location = new Point(22, 53);
-            deptCountriesComboBox.Margin = new Padding(3, 4, 3, 4);
+            deptCountriesComboBox.Location = new Point(19, 40);
             deptCountriesComboBox.Name = "deptCountriesComboBox";
-            deptCountriesComboBox.Size = new Size(138, 28);
+            deptCountriesComboBox.Size = new Size(121, 23);
             deptCountriesComboBox.TabIndex = 34;
             deptCountriesComboBox.DropDown += AdminDeptCountriesComboBox_OnDropDown;
             deptCountriesComboBox.TextChanged += UpdateFlightComboBox_Changed;
@@ -401,12 +427,13 @@
             AdminFlightDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             AdminFlightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrivalDate, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
             AdminFlightDataGrid.Dock = DockStyle.Bottom;
-            AdminFlightDataGrid.Location = new Point(0, 111);
+            AdminFlightDataGrid.Location = new Point(0, 83);
+            AdminFlightDataGrid.Margin = new Padding(3, 2, 3, 2);
             AdminFlightDataGrid.Name = "AdminFlightDataGrid";
             AdminFlightDataGrid.ReadOnly = true;
             AdminFlightDataGrid.RowHeadersWidth = 51;
             AdminFlightDataGrid.RowTemplate.Height = 25;
-            AdminFlightDataGrid.Size = new Size(606, 620);
+            AdminFlightDataGrid.Size = new Size(530, 465);
             AdminFlightDataGrid.TabIndex = 33;
             AdminFlightDataGrid.CellClick += AdminFlightDataGrid_CellClick;
             // 
@@ -473,44 +500,28 @@
             Rank3Price.Name = "Rank3Price";
             Rank3Price.ReadOnly = true;
             // 
-            // DeparturedateTimePicker
+            // AirCraftIdTextBox
             // 
-            DeparturedateTimePicker.Location = new Point(230, 277);
-            DeparturedateTimePicker.Name = "DeparturedateTimePicker";
-            DeparturedateTimePicker.Size = new Size(154, 27);
-            DeparturedateTimePicker.TabIndex = 56;
+            AirCraftIdTextBox.Location = new Point(20, 262);
+            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
+            AirCraftIdTextBox.Size = new Size(135, 23);
+            AirCraftIdTextBox.TabIndex = 61;
             // 
-            // label3
+            // label8
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(0, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 58;
-            label3.Text = "label3";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(251, 254);
-            label4.Name = "label4";
-            label4.Size = new Size(112, 20);
-            label4.TabIndex = 59;
-            label4.Text = "Departure Date";
-            // 
-            // ArrivaldateTimePicker
-            // 
-            ArrivaldateTimePicker.Location = new Point(230, 201);
-            ArrivaldateTimePicker.Name = "ArrivaldateTimePicker";
-            ArrivaldateTimePicker.Size = new Size(154, 27);
-            ArrivaldateTimePicker.TabIndex = 60;
+            label8.AutoSize = true;
+            label8.Location = new Point(44, 244);
+            label8.Name = "label8";
+            label8.Size = new Size(60, 15);
+            label8.TabIndex = 62;
+            label8.Text = "Aircraft ID";
             // 
             // UpdateFlight
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1267, 735);
-            Margin = new Padding(3, 3, 3, 3);
+            ClientSize = new Size(1109, 551);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UpdateFlight";
             Text = "UpdateFlight";
             Load += UpdateFlight_Load;
@@ -569,5 +580,7 @@
         private Label label4;
         private Label label3;
         private DateTimePicker DeparturedateTimePicker;
+        private Label label8;
+        private TextBox AirCraftIdTextBox;
     }
 }
