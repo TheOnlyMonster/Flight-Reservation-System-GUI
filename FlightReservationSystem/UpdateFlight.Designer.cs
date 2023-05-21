@@ -63,10 +63,10 @@
             AdminFlightDataGrid = new DataGridView();
             FlightNo = new DataGridViewTextBoxColumn();
             AirCraftID = new DataGridViewTextBoxColumn();
-            deptCountry = new DataGridViewTextBoxColumn();
-            arrivalCountry = new DataGridViewTextBoxColumn();
             deptDate = new DataGridViewTextBoxColumn();
             expectedArrivalDate = new DataGridViewTextBoxColumn();
+            arrivalCountry = new DataGridViewTextBoxColumn();
+            deptCountry = new DataGridViewTextBoxColumn();
             AvailableSeats = new DataGridViewTextBoxColumn();
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
@@ -82,34 +82,34 @@
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 3, 3, 3);
+            contentSplitContainer.Margin = new Padding(3);
             // 
             // contentSplitContainer.Panel2
             // 
             contentSplitContainer.Panel2.Controls.Add(panel1);
             contentSplitContainer.Panel2.Controls.Add(panel3);
             contentSplitContainer.Size = new Size(1267, 735);
-            contentSplitContainer.SplitterDistance = 243;
+            contentSplitContainer.SplitterDistance = 242;
             contentSplitContainer.SplitterWidth = 6;
             // 
             // signInButton
             // 
-            signInButton.Size = new Size(243, 57);
+            signInButton.Size = new Size(242, 57);
             // 
             // signUpButton
             // 
-            signUpButton.Size = new Size(243, 57);
+            signUpButton.Size = new Size(242, 57);
             // 
             // helpButton
             // 
             helpButton.Location = new Point(0, 651);
-            helpButton.Margin = new Padding(3, 3, 3, 3);
-            helpButton.Size = new Size(243, 84);
+            helpButton.Margin = new Padding(3);
+            helpButton.Size = new Size(242, 84);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Margin = new Padding(3, 3, 3, 3);
-            exploreFlightsButton.Size = new Size(243, 76);
+            exploreFlightsButton.Margin = new Padding(3);
+            exploreFlightsButton.Size = new Size(242, 76);
             // 
             // panel3
             // 
@@ -442,7 +442,7 @@
             AdminFlightDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             AdminFlightDataGrid.BackgroundColor = SystemColors.Control;
             AdminFlightDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            AdminFlightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, AirCraftID, deptCountry, arrivalCountry, deptDate, expectedArrivalDate, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
+            AdminFlightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, AirCraftID, deptDate, expectedArrivalDate, arrivalCountry, deptCountry, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
             AdminFlightDataGrid.Dock = DockStyle.Bottom;
             AdminFlightDataGrid.Location = new Point(0, 111);
             AdminFlightDataGrid.Name = "AdminFlightDataGrid";
@@ -467,20 +467,6 @@
             AirCraftID.Name = "AirCraftID";
             AirCraftID.ReadOnly = true;
             // 
-            // deptCountry
-            // 
-            deptCountry.HeaderText = "Departure Country";
-            deptCountry.MinimumWidth = 6;
-            deptCountry.Name = "deptCountry";
-            deptCountry.ReadOnly = true;
-            // 
-            // arrivalCountry
-            // 
-            arrivalCountry.HeaderText = "Arrival Country";
-            arrivalCountry.MinimumWidth = 6;
-            arrivalCountry.Name = "arrivalCountry";
-            arrivalCountry.ReadOnly = true;
-            // 
             // deptDate
             // 
             deptDate.HeaderText = "Departure Date";
@@ -494,6 +480,20 @@
             expectedArrivalDate.MinimumWidth = 6;
             expectedArrivalDate.Name = "expectedArrivalDate";
             expectedArrivalDate.ReadOnly = true;
+            // 
+            // arrivalCountry
+            // 
+            arrivalCountry.HeaderText = "Arrival Country";
+            arrivalCountry.MinimumWidth = 6;
+            arrivalCountry.Name = "arrivalCountry";
+            arrivalCountry.ReadOnly = true;
+            // 
+            // deptCountry
+            // 
+            deptCountry.HeaderText = "Departure Country";
+            deptCountry.MinimumWidth = 6;
+            deptCountry.Name = "deptCountry";
+            deptCountry.ReadOnly = true;
             // 
             // AvailableSeats
             // 
@@ -528,7 +528,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1267, 735);
-            Margin = new Padding(3, 3, 3, 3);
+            Margin = new Padding(3);
             Name = "UpdateFlight";
             Text = "UpdateFlight";
             Load += UpdateFlight_Load;
@@ -581,10 +581,10 @@
         private TextBox AirCraftIdTextBox;
         private DataGridViewTextBoxColumn FlightNo;
         private DataGridViewTextBoxColumn AirCraftID;
-        private DataGridViewTextBoxColumn deptCountry;
-        private DataGridViewTextBoxColumn arrivalCountry;
         private DataGridViewTextBoxColumn deptDate;
         private DataGridViewTextBoxColumn expectedArrivalDate;
+        private DataGridViewTextBoxColumn arrivalCountry;
+        private DataGridViewTextBoxColumn deptCountry;
         private DataGridViewTextBoxColumn AvailableSeats;
         private DataGridViewTextBoxColumn Rank1Price;
         private DataGridViewTextBoxColumn Rank2Price;

@@ -55,8 +55,8 @@
             label3 = new Label();
             AirCraftID = new DataGridViewTextBoxColumn();
             Model = new DataGridViewTextBoxColumn();
-            AirCraftType = new DataGridViewTextBoxColumn();
             Manufacturer = new DataGridViewTextBoxColumn();
+            AirCraftType = new DataGridViewTextBoxColumn();
             ManufactureYear = new DataGridViewTextBoxColumn();
             Capacity = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
@@ -179,7 +179,7 @@
             AirCraftdataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             AirCraftdataGridView.BackgroundColor = SystemColors.Control;
             AirCraftdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, AirCraftType, Manufacturer, ManufactureYear, Capacity, Status });
+            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, Manufacturer, AirCraftType, ManufactureYear, Capacity, Status });
             AirCraftdataGridView.Location = new Point(3, 88);
             AirCraftdataGridView.Name = "AirCraftdataGridView";
             AirCraftdataGridView.RowHeadersWidth = 51;
@@ -355,17 +355,17 @@
             Model.MinimumWidth = 6;
             Model.Name = "Model";
             // 
-            // AirCraftType
-            // 
-            AirCraftType.HeaderText = "AirCraft Type";
-            AirCraftType.MinimumWidth = 6;
-            AirCraftType.Name = "AirCraftType";
-            // 
             // Manufacturer
             // 
             Manufacturer.HeaderText = "Manufacturer";
             Manufacturer.MinimumWidth = 6;
             Manufacturer.Name = "Manufacturer";
+            // 
+            // AirCraftType
+            // 
+            AirCraftType.HeaderText = "AirCraft Type";
+            AirCraftType.MinimumWidth = 6;
+            AirCraftType.Name = "AirCraftType";
             // 
             // ManufactureYear
             // 
@@ -435,8 +435,8 @@
         private TextBox AirCraftIdTextBoxPanel1;
         private DataGridViewTextBoxColumn AirCraftID;
         private DataGridViewTextBoxColumn Model;
-        private DataGridViewTextBoxColumn AirCraftType;
         private DataGridViewTextBoxColumn Manufacturer;
+        private DataGridViewTextBoxColumn AirCraftType;
         private DataGridViewTextBoxColumn ManufactureYear;
         private DataGridViewTextBoxColumn Capacity;
         private DataGridViewTextBoxColumn Status;

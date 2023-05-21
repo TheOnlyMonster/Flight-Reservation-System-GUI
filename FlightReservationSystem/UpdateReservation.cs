@@ -27,7 +27,7 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                string query = "SELECT * FROM AirCraft;";
+                string query = "SELECT * FROM BookingDetails;";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
