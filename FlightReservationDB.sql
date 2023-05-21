@@ -15,8 +15,8 @@ CREATE TABLE CustomerTable (
     Country VARCHAR(15),
     CardNum VARCHAR(16),
     CVV INT,
-    ExpiryDate DATE,
-    PassportExpirationDate DATE,
+    ExpiryDate varchar(50),
+    PassportExpirationDate varchar(50),
     Nationality VARCHAR(50),
     CONSTRAINT CHK_CustomerTable_CardNum CHECK (LEN(CardNum) = 16),
     CONSTRAINT CHK_CustomerTable_CVV CHECK (CVV >= 0 AND CVV <= 999),
@@ -36,8 +36,7 @@ CREATE TABLE Aircraft (
     AircraftType VARCHAR(20) NOT NULL,
     ManufactureYear DATE NOT NULL,
     Capacity SMALLINT NOT NULL,
-    Status TINYINT NOT NULL,
-    CONSTRAINT CHK_Aircraft_Status CHECK (Status IN (0, 1, 2))
+    Status VARCHAR(50) NOT NULL,
 );
 
 create table AircraftDispatchControl (
@@ -49,8 +48,8 @@ create table AircraftDispatchControl (
 CREATE TABLE Flight (
     FlightNo INT PRIMARY KEY IDENTITY(1,1),
     AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) NOT NULL,
-    DeptDate Varchar(50) NOT NULL,
-    ExpectedArrival Varchar(50) NOT NULL,
+    DeptDate Date NOT NULL,
+    ExpectedArrival Date NOT NULL,
     ArrivalCountry VARCHAR(50) NOT NULL,
     DeptCountry VARCHAR(50) NOT NULL,
     AvailableSeats SMALLINT,
