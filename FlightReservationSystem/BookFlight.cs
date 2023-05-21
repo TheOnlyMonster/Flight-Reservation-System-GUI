@@ -177,24 +177,20 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
 
                         // Convert the date to the desired format
-
-                        command.Parameters.AddWithValue("@PassportExpirationDate", this.passportDateTimePicker.Text.ToString());
+                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text,"dddd, MMMM d, yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                         command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
                         command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
                         command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
                         command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
 
-                        command.ExecuteNonQuery();
+                        Customer.Instance.PassportNumber = this.passportNumberTextBox.Text;
+                        Customer.Instance.ExpirayDate = this.creditCardExpiryDateTextBox.Text;
+                        Customer.Instance.PassportExpirayDate = this.passportDateTimePicker.Text.ToString();
+                        Customer.Instance.CardNum = this.creditCardTextBox.Text;
+                        Customer.Instance.Cvv = this.cvvCreditCardTextBox.Text;
+                        MessageBox.Show("The Flight has been Confirmed!");
+                        connection.Close();
                     }
-
-
-                    Customer.Instance.PassportNumber = this.passportNumberTextBox.Text;
-                    Customer.Instance.ExpirayDate = this.creditCardExpiryDateTextBox.Text;
-                    Customer.Instance.PassportExpirayDate = this.passportDateTimePicker.Text.ToString();
-                    Customer.Instance.CardNum = this.creditCardTextBox.Text;
-                    Customer.Instance.Cvv = this.cvvCreditCardTextBox.Text;
-                    MessageBox.Show("The Flight has been Confirmed!");
-                    connection.Close();
                 }
             }
         }

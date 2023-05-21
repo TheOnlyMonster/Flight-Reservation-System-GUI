@@ -459,6 +459,7 @@
             FlightNo.MinimumWidth = 6;
             FlightNo.Name = "FlightNo";
             FlightNo.ReadOnly = true;
+
             // 
             // AirCraftID
             // 

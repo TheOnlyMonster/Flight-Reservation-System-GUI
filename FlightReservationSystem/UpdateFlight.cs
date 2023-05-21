@@ -57,7 +57,7 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight where AvailableSeats <> 0";
+                string query = "SELECT * FROM Flight where AvailableSeats <> 0";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
@@ -72,11 +72,11 @@ namespace FlightReservationSystem
 
         private void UpdateFlightComboBox_Changed(object sender, EventArgs e)
         {
-            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+            string query = "SELECT * FROM Flight " +
                     "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND AvailableSeats <> 0";
             if (this.deptCountriesComboBox.SelectedItem == null || this.comboBox1.SelectedItem == null)
             {
-                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats,Rank1Price, Rank2Price, Rank3Price FROM Flight where AvailableSeats <> 0";
+                query = "Select * FROM Flight where AvailableSeats <> 0";
             }
 
             AdminFlightDataGrid.Rows.Clear();
@@ -112,8 +112,10 @@ namespace FlightReservationSystem
             {  //the row that I'm clicking is not the labels Row.
                 DataGridViewRow SelectedRow = AdminFlightDataGrid.Rows[e.RowIndex];
                 this.ArrivalCountryTextBox.Text = SelectedRow.Cells["arrivalCountry"].Value.ToString();
+                this.deptDateTimePicker.Text = SelectedRow.Cells["deptDate"].Value.ToString();
                 this.ArrivaldateTimePicker.Text = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
                 this.FlightNumberTextBox.Text = SelectedRow.Cells["FlightNo"].Value.ToString();
+                this.AirCraftIdTextBox.Text = SelectedRow.Cells["AirCraftID"].Value.ToString();
                 this.RankATextBox.Text = SelectedRow.Cells["Rank1Price"].Value.ToString();
                 this.RankBTextBox.Text = SelectedRow.Cells["Rank2Price"].Value.ToString();
                 this.RankCTextBox.Text = SelectedRow.Cells["Rank3Price"].Value.ToString();
@@ -126,22 +128,23 @@ namespace FlightReservationSystem
         {
             //we need to add Aircraft ID.
 
-            string query = "UPDATE Flight Set ArrivalCountry = @ArrivalCountry, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo";
+            string query = "UPDATE Flight Set DeptDate = @DeptDate, deptArrivalCountry = @deptArrivalCountry, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@ArrivalCountry", ArrivalCountryTextBox.Text);
+                command.Parameters.AddWithValue("@deptArrivalCountry", ArrivalCountryTextBox.Text);
 
-                string expectedArrivalDate = DateTime.ParseExact(ArrivaldateTimePicker.Text, "dd MMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd");
-
+                string expectedArrivalDate = DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd");
                 command.Parameters.AddWithValue("@ExpectedArrival", expectedArrivalDate);
                 command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
                 command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
                 command.Parameters.AddWithValue("@AvailableSeats", int.Parse(SeatsAvailabilityTextBox.Text));
                 command.Parameters.AddWithValue("@FlightNo", FlightNumberTextBox.Text);
-                UpdateFlight_Load(sender, e);    //not working properly!
+                command.Parameters.AddWithValue("@AircraftID", AirCraftIdTextBox.Text);
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDateTimePicker.Text,"dddd, MMMM d, yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                UpdateFlight_Load(sender, e);    
                 command.ExecuteNonQuery();
                 connection.Close();
 

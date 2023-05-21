@@ -16,12 +16,10 @@ CREATE TABLE CustomerTable (
     CardNum VARCHAR(16),
     CVV INT,
     ExpiryDate varchar(50),
-    PassportExpirationDate varchar(50),
+    PassportExpirationDate Date,
     Nationality VARCHAR(50),
     CONSTRAINT CHK_CustomerTable_CardNum CHECK (LEN(CardNum) = 16),
     CONSTRAINT CHK_CustomerTable_CVV CHECK (CVV >= 0 AND CVV <= 999),
-    CONSTRAINT CHK_CustomerTable_ExpiryDate CHECK (ExpiryDate >= GETDATE()),
-    CONSTRAINT CHK_CustomerTable_PassportExpirationDate CHECK (PassportExpirationDate >= GETDATE())
 );
 
 create table AdminTable (

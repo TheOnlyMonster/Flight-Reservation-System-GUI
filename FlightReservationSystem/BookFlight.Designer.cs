@@ -49,7 +49,7 @@ namespace FlightReservationSystem
             label9 = new Label();
             creditCardTextBox = new TextBox();
             label8 = new Label();
-            passportDateTimePicker = new TextBox();
+            passportDateTimePicker = new DateTimePicker();
             label4 = new Label();
             passportNumberTextBox = new TextBox();
             label3 = new Label();
@@ -677,7 +677,7 @@ namespace FlightReservationSystem
         private Label label9;
         private TextBox creditCardTextBox;
         private Label label8;
-        private TextBox passportDateTimePicker;
+        private DateTimePicker passportDateTimePicker;
         private Label label4;
         private TextBox passportNumberTextBox;
         private Label label3;
