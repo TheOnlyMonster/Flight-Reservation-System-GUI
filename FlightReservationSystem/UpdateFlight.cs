@@ -128,27 +128,25 @@ namespace FlightReservationSystem
         {
             //we need to add Aircraft ID.
 
-            string query = "UPDATE Flight Set DeptDate = @DeptDate, deptArrivalCountry = @deptArrivalCountry, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo";
+            string query = "UPDATE Flight Set DeptDate = @DeptDate, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@deptArrivalCountry", ArrivalCountryTextBox.Text);
-
-                string expectedArrivalDate = DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd");
-                command.Parameters.AddWithValue("@ExpectedArrival", expectedArrivalDate);
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
                 command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
                 command.Parameters.AddWithValue("@AvailableSeats", int.Parse(SeatsAvailabilityTextBox.Text));
-                command.Parameters.AddWithValue("@FlightNo", FlightNumberTextBox.Text);
-                command.Parameters.AddWithValue("@AircraftID", AirCraftIdTextBox.Text);
-                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDateTimePicker.Text,"dddd, MMMM d, yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                UpdateFlight_Load(sender, e);    
+                command.Parameters.AddWithValue("@FlightNo", int.Parse(FlightNumberTextBox.Text));
+                command.Parameters.AddWithValue("@AircraftID", int.Parse(AirCraftIdTextBox.Text));
                 command.ExecuteNonQuery();
                 connection.Close();
 
             }
+            UpdateFlight_Load(sender, e);
+
         }
     }
 }
