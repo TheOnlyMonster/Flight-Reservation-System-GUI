@@ -70,8 +70,7 @@ CREATE TABLE BookingDetails (
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,
     Rank VARCHAR(15) NOT NULL,
-    Status SMALLINT NOT NULL,
-    CONSTRAINT CHK_Status_Constraint CHECK (Status in (0,1)),
+    Status VARCHAR(50) NOT NULL,
     CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );

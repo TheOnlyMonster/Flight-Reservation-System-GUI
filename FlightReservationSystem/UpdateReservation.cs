@@ -41,6 +41,24 @@ namespace FlightReservationSystem
 
         }
 
+        private void UpdateReservationDataGridView_CellClick(object sender, DataGridViewCellEventArgs e) {
+            if (e.RowIndex >= 0) {
+                DataGridViewRow selectedRow = UpdateReservationDataGridView.Rows[e.RowIndex];
+                this.CustomerIdTextBox2.Text = selectedRow.Cells["CustomerID"].Value.ToString();
+                this.FlightNoTextBox2.Text = selectedRow.Cells["FlightNo"].Value.ToString();
+                this.BookingIdTextBox.Text = selectedRow.Cells["BookingID"].Value.ToString();
+                this.BookingDate.HeaderText = selectedRow.Cells["BookingDate"].Value.ToString();
+                this.SeatAssignmentTextBox.Text = selectedRow.Cells["SeatAssignment"].Value.ToString();
+                this.TicketPriceTextBox.Text = selectedRow.Cells["TicketPrice"].Value.ToString();
+                this.StatusComboBox.SelectedValue = selectedRow.Cells["Status"].Value.ToString();
+                this.RankComboBox.SelectedValue = selectedRow.Cells[""].Value.ToString();
+            }
+        }
+
+        private void ConfirmButton_Click(object sender, EventArgs e) {
+            string query = "UPDATE BookingDetails SET CustomerID = @CustomerID, FlightNo = @FlightNo, BookingDate = @BookingDate, SeatAssignment = @SeatAssignment , TicketPrice = @TicketPrice, Rank = ";
+        }
+
         private void CustomerIdTextBox_TextChanged(object sender, EventArgs e)
         {
             ApplyFilters();

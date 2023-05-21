@@ -171,6 +171,7 @@
             UpdateReservationDataGridView.RowTemplate.Height = 25;
             UpdateReservationDataGridView.Size = new Size(722, 804);
             UpdateReservationDataGridView.TabIndex = 0;
+            UpdateReservationDataGridView.CellClick += UpdateReservationDataGridView_CellClick;
             // 
             // BookingID
             // 
@@ -257,7 +258,7 @@
             // StatusComboBox
             // 
             StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Items.AddRange(new object[] { "Cancelled", "Confirmed" });
+            StatusComboBox.Items.AddRange(new object[] {"Confirmed","Canceled"});
             StatusComboBox.Location = new Point(47, 428);
             StatusComboBox.Margin = new Padding(3, 4, 3, 4);
             StatusComboBox.Name = "StatusComboBox";
@@ -345,6 +346,7 @@
             ConfirmButton.TabIndex = 10;
             ConfirmButton.Text = "Confirm";
             ConfirmButton.UseVisualStyleBackColor = true;
+            ConfirmButton.Click += ConfirmButton_Click;
             // 
             // RankComboBox
             // 
