@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFlight));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
+            DeleteButton = new Button();
             label8 = new Label();
             AirCraftIdTextBox = new TextBox();
             ArrivaldateTimePicker = new DateTimePicker();
@@ -77,7 +78,6 @@
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
             Rank3Price = new DataGridViewTextBoxColumn();
-            DeleteButton = new Button();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -112,7 +112,7 @@
             signInButton.Location = new Point(0, 57);
             signInButton.ShadowDecoration.BorderRadius = 20;
             signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
             signInButton.Size = new Size(242, 57);
             // 
             // signUpButton
@@ -127,7 +127,7 @@
             signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             signUpButton.ShadowDecoration.BorderRadius = 20;
             signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             signUpButton.Size = new Size(242, 57);
             // 
             // exploreFlightsButton
@@ -144,7 +144,7 @@
             exploreFlightsButton.Margin = new Padding(3);
             exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
             exploreFlightsButton.Size = new Size(242, 76);
             // 
             // helpButton
@@ -161,7 +161,7 @@
             helpButton.Margin = new Padding(3);
             helpButton.ShadowDecoration.BorderRadius = 20;
             helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             helpButton.Size = new Size(242, 84);
             // 
             // SignOutButton
@@ -176,7 +176,7 @@
             SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
             SignOutButton.ShadowDecoration.BorderRadius = 20;
             SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
             // panel3
             // 
@@ -210,6 +210,17 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(402, 735);
             panel3.TabIndex = 2;
+            // 
+            // DeleteButton
+            // 
+            DeleteButton.Location = new Point(239, 651);
+            DeleteButton.Margin = new Padding(3, 4, 3, 4);
+            DeleteButton.Name = "DeleteButton";
+            DeleteButton.Size = new Size(109, 31);
+            DeleteButton.TabIndex = 63;
+            DeleteButton.Text = "Delete";
+            DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // label8
             // 
@@ -590,16 +601,6 @@
             Rank3Price.MinimumWidth = 6;
             Rank3Price.Name = "Rank3Price";
             Rank3Price.ReadOnly = true;
-            // 
-            // DeleteButton
-            // 
-            DeleteButton.Location = new Point(239, 651);
-            DeleteButton.Margin = new Padding(3, 4, 3, 4);
-            DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(109, 31);
-            DeleteButton.TabIndex = 63;
-            DeleteButton.Text = "Delete";
-            DeleteButton.UseVisualStyleBackColor = true;
             // 
             // UpdateFlight
             // 

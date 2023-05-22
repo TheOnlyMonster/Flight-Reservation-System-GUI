@@ -148,5 +148,24 @@ namespace FlightReservationSystem
             UpdateFlight_Load(sender, e);
 
         }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string query = "DELETE FROM Flight WHERE FlightNO = @RecordId;";
+                using (SqlConnection connection = new SqlConnection(databaseConnection))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@RecordId", int.Parse(FlightNumberTextBox.Text));
+                    command.ExecuteNonQuery();
+                    connection.Close();
+
+                }
+                UpdateFlight_Load(sender, e);
+            }
+        }
     }
 }

@@ -251,165 +251,7 @@
             AirCraftdataGridView.RowTemplate.Height = 29;
             AirCraftdataGridView.Size = new Size(670, 737);
             AirCraftdataGridView.TabIndex = 0;
-            AirCraftdataGridView.CellClick += AirCraftdataGridView_CellClick; 
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(confirmButton);
-            panel2.Controls.Add(StatusComboBox);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(ModelTextBox);
-            panel2.Controls.Add(ManufactureTextBox);
-            panel2.Controls.Add(AirCraftTextBox);
-            panel2.Controls.Add(ManufacturerTextBox);
-            panel2.Controls.Add(CapacityTextBox);
-            panel2.Controls.Add(AircraftIdTextBox);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(685, 6);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(360, 826);
-            panel2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(206, 182);
-            label2.Name = "label2";
-            label2.Size = new Size(95, 20);
-            label2.TabIndex = 20;
-            label2.Text = "AirCraft Type";
-            // 
-            // confirmButton
-            // 
-            confirmButton.Location = new Point(131, 550);
-            confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(125, 29);
-            confirmButton.TabIndex = 19;
-            confirmButton.Text = "Confirm";
-            confirmButton.UseVisualStyleBackColor = true;
-            confirmButton.Click += confirmButton_Click;
-            // 
-            // StatusComboBox
-            // 
-            StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Location = new Point(41, 372);
-            StatusComboBox.Name = "StatusComboBox";
-            StatusComboBox.Size = new Size(125, 28);
-            StatusComboBox.TabIndex = 17;
-            StatusComboBox.Items.AddRange(new object[] {"Active","Inactive","Maintainance"});
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(41, 96);
-            label9.Name = "label9";
-            label9.Size = new Size(79, 20);
-            label9.TabIndex = 16;
-            label9.Text = "AirCraft ID";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(204, 96);
-            label8.Name = "label8";
-            label8.Size = new Size(52, 20);
-            label8.TabIndex = 15;
-            label8.Text = "Model";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(41, 182);
-            label7.Name = "label7";
-            label7.Size = new Size(124, 20);
-            label7.TabIndex = 14;
-            label7.Text = "Manufacture Year";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(204, 263);
-            label6.Name = "label6";
-            label6.Size = new Size(66, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Capacity";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(41, 349);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Status";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(41, 263);
-            label1.Name = "label1";
-            label1.Size = new Size(97, 20);
-            label1.TabIndex = 9;
-            label1.Text = "Manufacturer";
-            // 
-            // ModelTextBox
-            // 
-            ModelTextBox.Location = new Point(204, 119);
-            ModelTextBox.Name = "ModelTextBox";
-            ModelTextBox.Size = new Size(125, 27);
-            ModelTextBox.TabIndex = 8;
-            // 
-            // ManufactureTextBox
-            // 
-            ManufactureTextBox.Location = new Point(41, 205);
-            ManufactureTextBox.Name = "ManufactureTextBox";
-            ManufactureTextBox.Size = new Size(125, 27);
-            ManufactureTextBox.TabIndex = 7;
-            // 
-            // AirCraftTextBox
-            // 
-            AirCraftTextBox.Location = new Point(204, 205);
-            AirCraftTextBox.Name = "AirCraftTextBox";
-            AirCraftTextBox.Size = new Size(125, 27);
-            AirCraftTextBox.TabIndex = 6;
-            // 
-            // ManufacturerTextBox
-            // 
-            ManufacturerTextBox.Location = new Point(41, 286);
-            ManufacturerTextBox.Name = "ManufacturerTextBox";
-            ManufacturerTextBox.Size = new Size(125, 27);
-            ManufacturerTextBox.TabIndex = 5;
-            // 
-            // CapacityTextBox
-            // 
-            CapacityTextBox.Location = new Point(204, 286);
-            CapacityTextBox.Name = "CapacityTextBox";
-            CapacityTextBox.Size = new Size(125, 27);
-            CapacityTextBox.TabIndex = 4;
-            // 
-            // AircraftIdTextBox
-            // 
-            AircraftIdTextBox.Location = new Point(41, 119);
-            AircraftIdTextBox.Name = "AircraftIdTextBox";
-            AircraftIdTextBox.ReadOnly = true;
-            AircraftIdTextBox.Size = new Size(125, 27);
-            AircraftIdTextBox.TabIndex = 3;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(95, 38);
-            label3.Name = "label3";
-            label3.Size = new Size(186, 32);
-            label3.TabIndex = 2;
-            label3.Text = "Update AirCraft";
+            AirCraftdataGridView.CellClick += AirCraftdataGridView_CellClick;
             // 
             // AirCraftID
             // 
@@ -494,10 +336,12 @@
             confirmButton.TabIndex = 19;
             confirmButton.Text = "Confirm";
             confirmButton.UseVisualStyleBackColor = true;
+            confirmButton.Click += confirmButton_Click;
             // 
             // StatusComboBox
             // 
             StatusComboBox.FormattingEnabled = true;
+            StatusComboBox.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
             StatusComboBox.Location = new Point(46, 372);
             StatusComboBox.Name = "StatusComboBox";
             StatusComboBox.Size = new Size(125, 28);
@@ -618,6 +462,7 @@
             DeleteButton.TabIndex = 21;
             DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // UpdateAirCraft
             // 

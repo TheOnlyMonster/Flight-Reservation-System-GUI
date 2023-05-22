@@ -96,8 +96,10 @@ namespace FlightReservationSystem
             }
         }
 
-        private void AirCraftdataGridView_CellClick(object sender, DataGridViewCellEventArgs e) {
-            if (e.RowIndex >= 0) {
+        private void AirCraftdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
                 DataGridViewRow selectedRow = AirCraftdataGridView.Rows[e.RowIndex];
                 this.AircraftIdTextBox.Text = selectedRow.Cells["AirCraftID"].Value.ToString();
                 this.ModelTextBox.Text = selectedRow.Cells["Model"].Value.ToString();
@@ -107,25 +109,46 @@ namespace FlightReservationSystem
                 this.StatusComboBox.Text = selectedRow.Cells["Status"].Value.ToString();
                 this.AirCraftTextBox.Text = selectedRow.Cells["AirCraftType"].Value.ToString();
             }
-        } 
+        }
 
-        private void confirmButton_Click(object sender, EventArgs e) {
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
             string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AircraftID = @AircraftID;";
-            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
                 connection.Open();
-                SqlCommand command = new SqlCommand(query,connection);
-                command.Parameters.AddWithValue("@Model",this.ModelTextBox.Text);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Model", this.ModelTextBox.Text);
                 command.Parameters.AddWithValue("@Manufacturer", this.ManufacturerTextBox.Text);
                 command.Parameters.AddWithValue("@AircraftType", this.AirCraftTextBox.Text);
-                command.Parameters.AddWithValue("@ManufactureYear", int.Parse(this.ManufactureTextBox.Text));      
-                command.Parameters.AddWithValue("@Capacity", int.Parse(this.CapacityTextBox.Text));    
-                command.Parameters.AddWithValue("@Status", this.StatusComboBox.Text);    
-                command.Parameters.AddWithValue("@AircraftID", int.Parse(this.AircraftIdTextBox.Text));    
+                command.Parameters.AddWithValue("@ManufactureYear", int.Parse(this.ManufactureTextBox.Text));
+                command.Parameters.AddWithValue("@Capacity", int.Parse(this.CapacityTextBox.Text));
+                command.Parameters.AddWithValue("@Status", this.StatusComboBox.Text);
+                command.Parameters.AddWithValue("@AircraftID", int.Parse(this.AircraftIdTextBox.Text));
                 command.ExecuteNonQuery();
                 connection.Close();
             }
-            UpdateAirCraft_Load(sender,e);
+            UpdateAirCraft_Load(sender, e);
             MessageBox.Show("Changes are Confirmed!");
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                string query ="DELETE FROM Aircraft WHERE AircraftID = @RecordId;";
+                using (SqlConnection connection = new SqlConnection(databaseConnection))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@RecordId", int.Parse(AircraftIdTextBox.Text));
+                    command.ExecuteNonQuery();
+                    connection.Close();
+
+                }
+                UpdateAirCraft_Load(sender, e);
+            }
         }
     }
 }

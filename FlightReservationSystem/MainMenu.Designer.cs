@@ -222,7 +222,7 @@
             this.AddFlight.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.AddFlight.Name = "AddFlight";
             this.AddFlight.UseVisualStyleBackColor = false;
-            this.AddFlight.Click += new System.EventHandler(this.AddAircraft_Click);
+            this.AddFlight.Click += new System.EventHandler(this.AddFlight_Click);
             // 
             // UpdateFlight
             // 
