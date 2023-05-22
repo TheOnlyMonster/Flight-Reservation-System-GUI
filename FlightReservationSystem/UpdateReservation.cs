@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
@@ -20,7 +21,6 @@ namespace FlightReservationSystem
         private void UpdateReservation_Load(object sender, EventArgs e)
         {
             //load the Grid.
-
 
             UpdateReservationDataGridView.Rows.Clear();
             DataTable dataTable = new DataTable();
@@ -55,6 +55,22 @@ namespace FlightReservationSystem
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e) {
+            //validating Price.
+            string price = this.TicketPriceTextBox.Text;
+            if (!ValidatePrice(price)) {
+                MessageBox.Show("Invalid Price, Please enter a valid price.");
+                this.TicketPriceTextBox.Focus();
+                return;
+            }
+            
+            //validating Price.
+            string seat = this.SeatAssignmentTextBox.Text;
+            if (!ValidateSeats(seat)) {
+                MessageBox.Show("Invalid Seat, Please enter a valid Seat.");
+                this.SeatAssignmentTextBox.Focus();
+                return;
+            }
+
             string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , TicketPrice = @TicketPrice, Rank = @Rank ,Status = @Status where BookingID = @BookingID";
             using (SqlConnection connection = new SqlConnection(databaseConnection)) {
                 connection.Open();
@@ -110,6 +126,35 @@ namespace FlightReservationSystem
 
                 row.Visible = showRow;
             }
+        }
+
+        
+        private bool ValidatePhoneNumber(string phoneNumber)
+        {
+            // Regular expression pattern for a numeric phone number with 11 digits
+            string pattern = @"^\d{11}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(phoneNumber);
+            return isValid;
+        }
+
+        
+        private bool ValidatePrice(string price)
+        {
+            //Regular Expression of Validating Price.
+            string pattern = @"^[0-9]+(\.[0-9]+)?$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(price);
+            return isValid;
+        }
+
+        private bool ValidateSeats(string seats)
+        {
+            //Regular Expression of Validating Seats.
+            string pattern = @"^[0-9]+(\.[0-9]+)?$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(seats);
+            return isValid;
         }
     }
 }

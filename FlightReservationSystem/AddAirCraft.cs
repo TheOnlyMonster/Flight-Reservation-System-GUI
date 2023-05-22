@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
@@ -22,7 +23,16 @@ namespace FlightReservationSystem
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            //TODO: Check Regex Amd Validate Input
+            //validating Capacity.
+            string capacity = this.CapacityTextBox.Text;
+            if (!ValidateCapacity(capacity)) {
+                MessageBox.Show("Invalid Seat, Please enter a valid Seat.");
+                this.CapacityTextBox.Focus();
+                return;
+            }
+
+
+            
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
@@ -40,6 +50,15 @@ namespace FlightReservationSystem
                 connection.Close();
             }
 
+        }
+
+        private bool ValidateCapacity(string capacity)
+        {
+            //Regular expression pattern for capacity.
+            string pattern = @"^[0-9]+$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(capacity);
+            return isValid;
         }
 
     }

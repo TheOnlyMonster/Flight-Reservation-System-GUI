@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
@@ -20,7 +21,28 @@ namespace FlightReservationSystem
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            if(textBoxEmail.Text == "" || textBoxFirstName.Text == "" || textBoxLastName.Text == "" || textBoxPassword.Text == "" || textBoxPhone.Text == "")
+            //Email regex validation.
+
+            string email = this.textBoxEmail.Text;
+            if (!ValidateEmail(email))
+            {
+                MessageBox.Show("Invalid email address. Please enter a valid email address.");
+                this.textBoxEmail.Focus();
+                return;
+            }
+
+            //Phone number validation.
+
+            string phoneNumber = this.textBoxPhone.Text;
+            if (!ValidatePhoneNumber(phoneNumber))
+            {
+                MessageBox.Show("Invalid Phone number, Please enter a valid phone number.");
+                this.textBoxPhone.Focus();
+                return;
+            }
+
+
+            if (textBoxEmail.Text == "" || textBoxFirstName.Text == "" || textBoxLastName.Text == "" || textBoxPassword.Text == "" || textBoxPhone.Text == "")
             {
                 MessageBox.Show("Null values aren't valid!");
                 return;
@@ -67,7 +89,25 @@ namespace FlightReservationSystem
                 }
                 connection.Close();
             }
-            
+
         }
+        private bool ValidateEmail(string email)
+        {
+            // Define the regex pattern for email validation
+            string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+            bool isValid = Regex.IsMatch(email, pattern);
+            return isValid;
+        }
+
+        private bool ValidatePhoneNumber(string phoneNumber)
+        {
+            // Regular expression pattern for a numeric phone number with 11 digits
+            string pattern = @"^\d{11}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(phoneNumber);
+            return isValid;
+        }
+
     }
+
 }

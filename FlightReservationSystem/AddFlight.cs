@@ -34,8 +34,6 @@ namespace FlightReservationSystem
             string rankCPrice = RankCTextBox.Text;
             string deptCountry=DepatureTextBox.Text;
 
-          
-
             if (string.IsNullOrEmpty(airCraftId) || string.IsNullOrEmpty(deptDate) || string.IsNullOrEmpty(expectedArrival)
              || string.IsNullOrEmpty(arrivalCountry) || string.IsNullOrEmpty(availableSeats) || string.IsNullOrEmpty(rankAPrice)
              || string.IsNullOrEmpty(rankBPrice) || string.IsNullOrEmpty(rankCPrice) || string.IsNullOrEmpty(deptCountry))
@@ -63,10 +61,7 @@ namespace FlightReservationSystem
                     connection.Close();
                 }
                 MessageBox.Show("Flight Added");
-
             }
-
-
         }
     }
 }
