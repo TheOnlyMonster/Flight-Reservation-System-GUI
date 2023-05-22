@@ -17,11 +17,6 @@ namespace FlightReservationSystem
         protected static bool IsUserLoggedIn { get; set; } = false;
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
-        private const int BorderThickness = 4;
-        private Color gradientColor1 = Color.FromArgb(0, 120, 215);
-        private Color gradientColor2 = Color.FromArgb(0, 80, 143);
-        private Color titleBarColor = Color.FromArgb(46, 134, 222);
-        private Font titleBarFont = new Font("Segoe UI", 12, FontStyle.Bold);
 
         protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
@@ -124,16 +119,6 @@ namespace FlightReservationSystem
 
         }
 
-        private void ApplyHoverTransition(Control control)
-        {
-            guna2Transition.SetDecoration(control, DecorationType.None);
-            guna2Transition.ShowSync(control);
-        }
-
-        private void RemoveHoverTransition(Control control)
-        {
-            guna2Transition.HideSync(control);
-        }
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
