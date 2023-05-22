@@ -232,6 +232,7 @@ namespace FlightReservationSystem
             this.confirmButton.TabIndex = 38;
             this.confirmButton.Text = "Confirm Booking";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += this.confirmButton_Click;
             // 
             // seatsNumericUpDown
             // 
@@ -239,6 +240,7 @@ namespace FlightReservationSystem
             this.seatsNumericUpDown.Name = "seatsNumericUpDown";
             this.seatsNumericUpDown.Size = new System.Drawing.Size(120, 23);
             this.seatsNumericUpDown.TabIndex = 37;
+            this.seatsNumericUpDown.ValueChanged += this.seatsNumericUpDown_UpButton;
             // 
             // label12
             // 
@@ -466,6 +468,8 @@ namespace FlightReservationSystem
             this.flightDataGrid.RowTemplate.Height = 25;
             this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
             this.flightDataGrid.TabIndex = 32;
+            this.Load += BookFlight_Load;
+            this.flightDataGrid.CellClick += this.flightDataGrid_CellClick;
             // 
             // FlightNo
             // 
@@ -547,6 +551,7 @@ namespace FlightReservationSystem
             this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.arrivalCountriesComboBox.TabIndex = 30;
+            this.arrivalCountriesComboBox.DropDown += this.arrivalCountriesComboBox_OnDropDown; 
             // 
             // deptCountryLabel
             // 
@@ -565,6 +570,7 @@ namespace FlightReservationSystem
             this.deptCountriesComboBox.Name = "deptCountriesComboBox";
             this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.deptCountriesComboBox.TabIndex = 28;
+            this.deptCountriesComboBox.DropDown += this.deptCountriesComboBox_OnDropDown;
             // 
             // deptDateLabel
             // 

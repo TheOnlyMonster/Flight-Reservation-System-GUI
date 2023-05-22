@@ -182,7 +182,7 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
 
                         // Convert the date to the desired format
-                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text,"dd MMMM yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text,"dddd, MMMM d, yyyy",CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                         command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
                         command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
                         command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
@@ -206,7 +206,7 @@ namespace FlightReservationSystem
             List<int> assignedSeats = new List<int>();
             int availableSeats = 0;
             
-            string query = "SELECT SeatAssignment, AvailableSeats FROM BookingDetails B INNER JOIN Flight F ON B.FlightNo = F.FlightNo WHERE F.FlightNo = @FlightNo;";
+            string query = "SELECT B.SeatAssignment, F.AvailableSeats FROM BookingDetails B INNER JOIN Flight F ON B.FlightNo = F.FlightNo WHERE F.FlightNo = @FlightNo;";
             
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
@@ -226,10 +226,10 @@ namespace FlightReservationSystem
                     }
                 }
             }       
-            int randomNum = randGenerator.Next(1, availableSeats); 
+            int randomNum = randGenerator.Next(1, availableSeats + 1); 
             while (assignedSeats.Contains(randomNum))
             {
-                randomNum = randGenerator.Next(1, availableSeats);
+                randomNum = randGenerator.Next(1, availableSeats + 1);
             }     
             return randomNum;
         }
