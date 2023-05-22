@@ -293,7 +293,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.contentSplitContainer);
-            this.guna2Transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.BottomMirror);
+            this.guna2Transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
             this.Name = "MainMenu";
@@ -315,9 +315,9 @@
         protected Button UpdateFlight;
         protected Button UpdateReservation;
         protected Guna.UI2.WinForms.Guna2Button signInButton;
-        private Guna.UI2.WinForms.Guna2Transition guna2Transition;
         protected Guna.UI2.WinForms.Guna2Button signUpButton;
         protected Guna.UI2.WinForms.Guna2Button exploreFlightsButton;
         protected Guna.UI2.WinForms.Guna2Button helpButton;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition;
     }
 }

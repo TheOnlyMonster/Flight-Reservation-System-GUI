@@ -32,9 +32,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -45,13 +42,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.signUpPanel = new System.Windows.Forms.Panel();
-            this.submitButton = new Guna.UI2.WinForms.Guna2Button();
             this.textBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.submitButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -145,39 +145,6 @@
             this.signUpPanel.Name = "signUpPanel";
             this.signUpPanel.Size = new System.Drawing.Size(903, 600);
             this.signUpPanel.TabIndex = 0;
-            // 
-            // submitButton
-            // 
-            this.submitButton.Animated = true;
-            this.submitButton.BackColor = System.Drawing.Color.Transparent;
-            this.submitButton.BorderColor = System.Drawing.Color.Transparent;
-            this.submitButton.BorderRadius = 20;
-            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.submitButton.CustomizableEdges = customizableEdges11;
-            this.submitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.submitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.submitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.submitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.submitButton.FillColor = System.Drawing.Color.Transparent;
-            this.submitButton.FocusedColor = System.Drawing.Color.Transparent;
-            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.submitButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.submitButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.submitButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.submitButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.submitButton.Image = ((System.Drawing.Image)(resources.GetObject("submitButton.Image")));
-            this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.submitButton.Location = new System.Drawing.Point(360, 450);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.Padding = new System.Windows.Forms.Padding(5);
-            this.submitButton.PressedColor = System.Drawing.Color.White;
-            this.submitButton.ShadowDecoration.BorderRadius = 20;
-            this.submitButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.submitButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.submitButton.Size = new System.Drawing.Size(144, 37);
-            this.submitButton.TabIndex = 13;
-            this.submitButton.Text = "Submit";
-            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // textBoxEmail
             // 
@@ -293,6 +260,39 @@
             this.textBoxPhone.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.textBoxPhone.Size = new System.Drawing.Size(200, 36);
             this.textBoxPhone.TabIndex = 16;
+            // 
+            // submitButton
+            // 
+            this.submitButton.Animated = true;
+            this.submitButton.BackColor = System.Drawing.Color.Transparent;
+            this.submitButton.BorderColor = System.Drawing.Color.Transparent;
+            this.submitButton.BorderRadius = 20;
+            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submitButton.CustomizableEdges = customizableEdges11;
+            this.submitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.submitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.submitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.submitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.submitButton.FillColor = System.Drawing.Color.Transparent;
+            this.submitButton.FocusedColor = System.Drawing.Color.Transparent;
+            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.submitButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.submitButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.submitButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.submitButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
+            this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.submitButton.Location = new System.Drawing.Point(360, 450);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Padding = new System.Windows.Forms.Padding(5);
+            this.submitButton.PressedColor = System.Drawing.Color.White;
+            this.submitButton.ShadowDecoration.BorderRadius = 20;
+            this.submitButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.submitButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.submitButton.Size = new System.Drawing.Size(144, 37);
+            this.submitButton.TabIndex = 13;
+            this.submitButton.Text = "Submit";
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // SignUpForm
             // 

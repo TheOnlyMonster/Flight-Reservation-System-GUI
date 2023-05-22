@@ -30,40 +30,84 @@ namespace FlightReservationSystem
         /// </summary>
         private new void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookFlight));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.TotalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.TotalPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.ClassPriceTextBox = new System.Windows.Forms.TextBox();
+            this.ClassPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.ClassComboBox = new System.Windows.Forms.ComboBox();
-            this.confirmButton = new System.Windows.Forms.Button();
-            this.seatsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.ClassComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.confirmButton = new Guna.UI2.WinForms.Guna2Button();
+            this.seatsNumericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.seatsAvailableTextBox = new System.Windows.Forms.TextBox();
+            this.seatsAvailableTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.cvvCreditCardTextBox = new System.Windows.Forms.TextBox();
+            this.cvvCreditCardTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.creditCardExpiryDateTextBox = new System.Windows.Forms.TextBox();
+            this.creditCardExpiryDateTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.creditCardTextBox = new System.Windows.Forms.TextBox();
+            this.creditCardTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.passportDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.passportDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.passportNumberTextBox = new System.Windows.Forms.TextBox();
+            this.passportNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.arrivalDateTextBox = new System.Windows.Forms.TextBox();
+            this.arrivalDateTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.arrivalCountryTextBox = new System.Windows.Forms.TextBox();
+            this.arrivalCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.deptCountryTextBox = new System.Windows.Forms.TextBox();
+            this.deptCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.flightNoTextBox = new System.Windows.Forms.TextBox();
+            this.flightNoTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flightDataGrid = new System.Windows.Forms.DataGridView();
+            this.flightDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,11 +118,11 @@ namespace FlightReservationSystem
             this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrivalCountryLabel = new System.Windows.Forms.Label();
-            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.arrivalCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.deptCountryLabel = new System.Windows.Forms.Label();
-            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.deptDateLabel = new System.Windows.Forms.Label();
-            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.deptDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
@@ -98,32 +142,79 @@ namespace FlightReservationSystem
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.SplitterDistance = 262;
+            this.contentSplitContainer.Size = new System.Drawing.Size(1671, 710);
+            this.contentSplitContainer.SplitterDistance = 384;
             this.contentSplitContainer.SplitterWidth = 5;
-            // 
-            // signInButton
-            // 
-            this.signInButton.Size = new System.Drawing.Size(262, 57);
-            // 
-            // signUpButton
-            // 
-            this.signUpButton.Size = new System.Drawing.Size(262, 57);
-            // 
-            // helpButton
-            // 
-            this.helpButton.Location = new System.Drawing.Point(0, 511);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.helpButton.Size = new System.Drawing.Size(262, 84);
-            // 
-            // exploreFlightsButton
-            // 
-            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exploreFlightsButton.Size = new System.Drawing.Size(262, 57);
             // 
             // bookFlightButton
             // 
             this.bookFlightButton.Size = new System.Drawing.Size(230, 63);
             this.bookFlightButton.TabIndex = 4;
+            // 
+            // signInButton
+            // 
+            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.signInButton.Location = new System.Drawing.Point(0, 57);
+            this.signInButton.ShadowDecoration.BorderRadius = 20;
+            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges37;
+            this.signInButton.Size = new System.Drawing.Size(384, 57);
+            // 
+            // signUpButton
+            // 
+            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.signUpButton.ShadowDecoration.BorderRadius = 20;
+            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            this.signUpButton.Size = new System.Drawing.Size(384, 57);
+            // 
+            // exploreFlightsButton
+            // 
+            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges39;
+            this.exploreFlightsButton.Size = new System.Drawing.Size(384, 57);
+            // 
+            // helpButton
+            // 
+            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.helpButton.Location = new System.Drawing.Point(0, 648);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.helpButton.ShadowDecoration.BorderRadius = 20;
+            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            this.helpButton.Size = new System.Drawing.Size(384, 62);
             // 
             // panel1
             // 
@@ -132,7 +223,7 @@ namespace FlightReservationSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(915, 595);
+            this.panel1.Size = new System.Drawing.Size(1282, 710);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -167,15 +258,15 @@ namespace FlightReservationSystem
             this.panel3.Controls.Add(this.flightNoTextBox);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(566, 12);
+            this.panel3.Location = new System.Drawing.Point(899, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 580);
+            this.panel3.Size = new System.Drawing.Size(381, 706);
             this.panel3.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(71, 329);
+            this.label15.Location = new System.Drawing.Point(61, 355);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 15);
             this.label15.TabIndex = 45;
@@ -183,16 +274,30 @@ namespace FlightReservationSystem
             // 
             // TotalPriceTextBox
             // 
-            this.TotalPriceTextBox.Location = new System.Drawing.Point(138, 321);
+            this.TotalPriceTextBox.BorderRadius = 20;
+            this.TotalPriceTextBox.CustomizableEdges = customizableEdges1;
+            this.TotalPriceTextBox.DefaultText = "";
+            this.TotalPriceTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TotalPriceTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TotalPriceTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TotalPriceTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TotalPriceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TotalPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TotalPriceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TotalPriceTextBox.Location = new System.Drawing.Point(133, 347);
             this.TotalPriceTextBox.Name = "TotalPriceTextBox";
+            this.TotalPriceTextBox.PasswordChar = '\0';
+            this.TotalPriceTextBox.PlaceholderText = "";
             this.TotalPriceTextBox.ReadOnly = true;
-            this.TotalPriceTextBox.Size = new System.Drawing.Size(131, 23);
-            this.TotalPriceTextBox.TabIndex = 44;
+            this.TotalPriceTextBox.SelectedText = "";
+            this.TotalPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.TotalPriceTextBox.Size = new System.Drawing.Size(221, 29);
+            this.TotalPriceTextBox.TabIndex = 54;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(262, 259);
+            this.label14.Location = new System.Drawing.Point(256, 259);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 15);
             this.label14.TabIndex = 43;
@@ -200,11 +305,25 @@ namespace FlightReservationSystem
             // 
             // ClassPriceTextBox
             // 
-            this.ClassPriceTextBox.Location = new System.Drawing.Point(223, 277);
+            this.ClassPriceTextBox.BorderRadius = 20;
+            this.ClassPriceTextBox.CustomizableEdges = customizableEdges3;
+            this.ClassPriceTextBox.DefaultText = "";
+            this.ClassPriceTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ClassPriceTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ClassPriceTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ClassPriceTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ClassPriceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ClassPriceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassPriceTextBox.Location = new System.Drawing.Point(217, 277);
             this.ClassPriceTextBox.Name = "ClassPriceTextBox";
+            this.ClassPriceTextBox.PasswordChar = '\0';
+            this.ClassPriceTextBox.PlaceholderText = "";
             this.ClassPriceTextBox.ReadOnly = true;
-            this.ClassPriceTextBox.Size = new System.Drawing.Size(127, 23);
-            this.ClassPriceTextBox.TabIndex = 42;
+            this.ClassPriceTextBox.SelectedText = "";
+            this.ClassPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.ClassPriceTextBox.Size = new System.Drawing.Size(140, 36);
+            this.ClassPriceTextBox.TabIndex = 53;
             // 
             // label13
             // 
@@ -217,35 +336,78 @@ namespace FlightReservationSystem
             // 
             // ClassComboBox
             // 
+            this.ClassComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.ClassComboBox.BorderRadius = 20;
+            this.ClassComboBox.CustomizableEdges = customizableEdges5;
+            this.ClassComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ClassComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClassComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ClassComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ClassComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ClassComboBox.FormattingEnabled = true;
-            this.ClassComboBox.Location = new System.Drawing.Point(35, 277);
+            this.ClassComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClassComboBox.ItemHeight = 30;
+            this.ClassComboBox.Location = new System.Drawing.Point(32, 277);
             this.ClassComboBox.Name = "ClassComboBox";
-            this.ClassComboBox.Size = new System.Drawing.Size(138, 23);
-            this.ClassComboBox.TabIndex = 40;
+            this.ClassComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.ClassComboBox.Size = new System.Drawing.Size(141, 36);
+            this.ClassComboBox.TabIndex = 52;
+            this.ClassComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ClassComboBox.SelectedValueChanged += new System.EventHandler(this.ClassComboBox_SelectedValueChanged);
             // 
             // confirmButton
             // 
-            this.confirmButton.Location = new System.Drawing.Point(185, 534);
+            this.confirmButton.Animated = true;
+            this.confirmButton.BackColor = System.Drawing.Color.Transparent;
+            this.confirmButton.BorderColor = System.Drawing.Color.Transparent;
+            this.confirmButton.BorderRadius = 20;
+            this.confirmButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmButton.CustomizableEdges = customizableEdges7;
+            this.confirmButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirmButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirmButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirmButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirmButton.FillColor = System.Drawing.Color.Transparent;
+            this.confirmButton.FocusedColor = System.Drawing.Color.Transparent;
+            this.confirmButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.confirmButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.confirmButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.confirmButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.confirmButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.confirmButton.Image = ((System.Drawing.Image)(resources.GetObject("confirmButton.Image")));
+            this.confirmButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.confirmButton.Location = new System.Drawing.Point(166, 580);
             this.confirmButton.Name = "confirmButton";
-            this.confirmButton.Size = new System.Drawing.Size(101, 23);
-            this.confirmButton.TabIndex = 38;
-            this.confirmButton.Text = "Confirm Booking";
-            this.confirmButton.UseVisualStyleBackColor = true;
-            this.confirmButton.Click += this.confirmButton_Click;
+            this.confirmButton.Padding = new System.Windows.Forms.Padding(5);
+            this.confirmButton.PressedColor = System.Drawing.Color.White;
+            this.confirmButton.ShadowDecoration.BorderRadius = 20;
+            this.confirmButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.confirmButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.confirmButton.Size = new System.Drawing.Size(144, 37);
+            this.confirmButton.TabIndex = 60;
+            this.confirmButton.Text = "Submit";
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
             // seatsNumericUpDown
             // 
-            this.seatsNumericUpDown.Location = new System.Drawing.Point(223, 221);
+            this.seatsNumericUpDown.BackColor = System.Drawing.Color.Transparent;
+            this.seatsNumericUpDown.BorderRadius = 20;
+            this.seatsNumericUpDown.CustomizableEdges = customizableEdges9;
+            this.seatsNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.seatsNumericUpDown.Location = new System.Drawing.Point(216, 221);
             this.seatsNumericUpDown.Name = "seatsNumericUpDown";
-            this.seatsNumericUpDown.Size = new System.Drawing.Size(120, 23);
-            this.seatsNumericUpDown.TabIndex = 37;
-            this.seatsNumericUpDown.ValueChanged += this.seatsNumericUpDown_UpButton;
+            this.seatsNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.seatsNumericUpDown.Size = new System.Drawing.Size(141, 29);
+            this.seatsNumericUpDown.TabIndex = 51;
+            this.seatsNumericUpDown.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.seatsNumericUpDown.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.seatsNumericUpDown.ValueChanged += new System.EventHandler(this.seatsNumericUpDown_UpButton);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(244, 202);
+            this.label12.Location = new System.Drawing.Point(246, 203);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 15);
             this.label12.TabIndex = 36;
@@ -253,11 +415,25 @@ namespace FlightReservationSystem
             // 
             // seatsAvailableTextBox
             // 
+            this.seatsAvailableTextBox.BorderRadius = 20;
+            this.seatsAvailableTextBox.CustomizableEdges = customizableEdges11;
+            this.seatsAvailableTextBox.DefaultText = "";
+            this.seatsAvailableTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.seatsAvailableTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.seatsAvailableTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.seatsAvailableTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.seatsAvailableTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.seatsAvailableTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.seatsAvailableTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.seatsAvailableTextBox.Location = new System.Drawing.Point(32, 220);
             this.seatsAvailableTextBox.Name = "seatsAvailableTextBox";
+            this.seatsAvailableTextBox.PasswordChar = '\0';
+            this.seatsAvailableTextBox.PlaceholderText = "";
             this.seatsAvailableTextBox.ReadOnly = true;
-            this.seatsAvailableTextBox.Size = new System.Drawing.Size(141, 23);
-            this.seatsAvailableTextBox.TabIndex = 35;
+            this.seatsAvailableTextBox.SelectedText = "";
+            this.seatsAvailableTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.seatsAvailableTextBox.Size = new System.Drawing.Size(141, 29);
+            this.seatsAvailableTextBox.TabIndex = 50;
             // 
             // label11
             // 
@@ -270,15 +446,29 @@ namespace FlightReservationSystem
             // 
             // cvvCreditCardTextBox
             // 
-            this.cvvCreditCardTextBox.Location = new System.Drawing.Point(137, 493);
+            this.cvvCreditCardTextBox.BorderRadius = 20;
+            this.cvvCreditCardTextBox.CustomizableEdges = customizableEdges13;
+            this.cvvCreditCardTextBox.DefaultText = "";
+            this.cvvCreditCardTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.cvvCreditCardTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.cvvCreditCardTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cvvCreditCardTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.cvvCreditCardTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cvvCreditCardTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cvvCreditCardTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cvvCreditCardTextBox.Location = new System.Drawing.Point(135, 530);
             this.cvvCreditCardTextBox.Name = "cvvCreditCardTextBox";
-            this.cvvCreditCardTextBox.Size = new System.Drawing.Size(207, 23);
-            this.cvvCreditCardTextBox.TabIndex = 33;
+            this.cvvCreditCardTextBox.PasswordChar = '\0';
+            this.cvvCreditCardTextBox.PlaceholderText = "";
+            this.cvvCreditCardTextBox.SelectedText = "";
+            this.cvvCreditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.cvvCreditCardTextBox.Size = new System.Drawing.Size(219, 29);
+            this.cvvCreditCardTextBox.TabIndex = 59;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(96, 496);
+            this.label10.Location = new System.Drawing.Point(93, 535);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 15);
             this.label10.TabIndex = 32;
@@ -286,15 +476,29 @@ namespace FlightReservationSystem
             // 
             // creditCardExpiryDateTextBox
             // 
-            this.creditCardExpiryDateTextBox.Location = new System.Drawing.Point(137, 464);
+            this.creditCardExpiryDateTextBox.BorderRadius = 20;
+            this.creditCardExpiryDateTextBox.CustomizableEdges = customizableEdges15;
+            this.creditCardExpiryDateTextBox.DefaultText = "";
+            this.creditCardExpiryDateTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.creditCardExpiryDateTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.creditCardExpiryDateTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.creditCardExpiryDateTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.creditCardExpiryDateTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.creditCardExpiryDateTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.creditCardExpiryDateTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.creditCardExpiryDateTextBox.Location = new System.Drawing.Point(135, 495);
             this.creditCardExpiryDateTextBox.Name = "creditCardExpiryDateTextBox";
-            this.creditCardExpiryDateTextBox.Size = new System.Drawing.Size(207, 23);
-            this.creditCardExpiryDateTextBox.TabIndex = 31;
+            this.creditCardExpiryDateTextBox.PasswordChar = '\0';
+            this.creditCardExpiryDateTextBox.PlaceholderText = "";
+            this.creditCardExpiryDateTextBox.SelectedText = "";
+            this.creditCardExpiryDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.creditCardExpiryDateTextBox.Size = new System.Drawing.Size(219, 29);
+            this.creditCardExpiryDateTextBox.TabIndex = 58;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(59, 467);
+            this.label9.Location = new System.Drawing.Point(61, 502);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 15);
             this.label9.TabIndex = 30;
@@ -302,15 +506,29 @@ namespace FlightReservationSystem
             // 
             // creditCardTextBox
             // 
-            this.creditCardTextBox.Location = new System.Drawing.Point(136, 435);
+            this.creditCardTextBox.BorderRadius = 20;
+            this.creditCardTextBox.CustomizableEdges = customizableEdges17;
+            this.creditCardTextBox.DefaultText = "";
+            this.creditCardTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.creditCardTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.creditCardTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.creditCardTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.creditCardTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.creditCardTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.creditCardTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.creditCardTextBox.Location = new System.Drawing.Point(135, 460);
             this.creditCardTextBox.Name = "creditCardTextBox";
-            this.creditCardTextBox.Size = new System.Drawing.Size(207, 23);
-            this.creditCardTextBox.TabIndex = 29;
+            this.creditCardTextBox.PasswordChar = '\0';
+            this.creditCardTextBox.PlaceholderText = "";
+            this.creditCardTextBox.SelectedText = "";
+            this.creditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.creditCardTextBox.Size = new System.Drawing.Size(219, 29);
+            this.creditCardTextBox.TabIndex = 57;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 440);
+            this.label8.Location = new System.Drawing.Point(15, 466);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 15);
             this.label8.TabIndex = 28;
@@ -318,15 +536,27 @@ namespace FlightReservationSystem
             // 
             // passportDateTimePicker
             // 
-            this.passportDateTimePicker.Location = new System.Drawing.Point(136, 395);
+            this.passportDateTimePicker.BorderRadius = 20;
+            this.passportDateTimePicker.Checked = true;
+            this.passportDateTimePicker.CustomizableEdges = customizableEdges19;
+            this.passportDateTimePicker.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.passportDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.passportDateTimePicker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.passportDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.passportDateTimePicker.Location = new System.Drawing.Point(136, 418);
+            this.passportDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.passportDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.passportDateTimePicker.Name = "passportDateTimePicker";
-            this.passportDateTimePicker.Size = new System.Drawing.Size(207, 23);
-            this.passportDateTimePicker.TabIndex = 27;
+            this.passportDateTimePicker.Padding = new System.Windows.Forms.Padding(5);
+            this.passportDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.passportDateTimePicker.Size = new System.Drawing.Size(218, 36);
+            this.passportDateTimePicker.TabIndex = 56;
+            this.passportDateTimePicker.Value = new System.DateTime(2023, 5, 22, 17, 13, 9, 814);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 399);
+            this.label4.Location = new System.Drawing.Point(14, 428);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 15);
             this.label4.TabIndex = 15;
@@ -334,15 +564,29 @@ namespace FlightReservationSystem
             // 
             // passportNumberTextBox
             // 
-            this.passportNumberTextBox.Location = new System.Drawing.Point(136, 366);
+            this.passportNumberTextBox.BorderRadius = 20;
+            this.passportNumberTextBox.CustomizableEdges = customizableEdges21;
+            this.passportNumberTextBox.DefaultText = "";
+            this.passportNumberTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passportNumberTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passportNumberTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passportNumberTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passportNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passportNumberTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.passportNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passportNumberTextBox.Location = new System.Drawing.Point(133, 383);
             this.passportNumberTextBox.Name = "passportNumberTextBox";
-            this.passportNumberTextBox.Size = new System.Drawing.Size(207, 23);
-            this.passportNumberTextBox.TabIndex = 14;
+            this.passportNumberTextBox.PasswordChar = '\0';
+            this.passportNumberTextBox.PlaceholderText = "";
+            this.passportNumberTextBox.SelectedText = "";
+            this.passportNumberTextBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.passportNumberTextBox.Size = new System.Drawing.Size(221, 29);
+            this.passportNumberTextBox.TabIndex = 55;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 369);
+            this.label3.Location = new System.Drawing.Point(27, 390);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 15);
             this.label3.TabIndex = 13;
@@ -350,11 +594,25 @@ namespace FlightReservationSystem
             // 
             // arrivalDateTextBox
             // 
-            this.arrivalDateTextBox.Location = new System.Drawing.Point(217, 162);
+            this.arrivalDateTextBox.BorderRadius = 20;
+            this.arrivalDateTextBox.CustomizableEdges = customizableEdges23;
+            this.arrivalDateTextBox.DefaultText = "";
+            this.arrivalDateTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.arrivalDateTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.arrivalDateTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.arrivalDateTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.arrivalDateTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.arrivalDateTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.arrivalDateTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.arrivalDateTextBox.Location = new System.Drawing.Point(216, 162);
             this.arrivalDateTextBox.Name = "arrivalDateTextBox";
+            this.arrivalDateTextBox.PasswordChar = '\0';
+            this.arrivalDateTextBox.PlaceholderText = "";
             this.arrivalDateTextBox.ReadOnly = true;
-            this.arrivalDateTextBox.Size = new System.Drawing.Size(141, 23);
-            this.arrivalDateTextBox.TabIndex = 12;
+            this.arrivalDateTextBox.SelectedText = "";
+            this.arrivalDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.arrivalDateTextBox.Size = new System.Drawing.Size(141, 29);
+            this.arrivalDateTextBox.TabIndex = 49;
             // 
             // label7
             // 
@@ -367,11 +625,25 @@ namespace FlightReservationSystem
             // 
             // arrivalCountryTextBox
             // 
+            this.arrivalCountryTextBox.BorderRadius = 20;
+            this.arrivalCountryTextBox.CustomizableEdges = customizableEdges25;
+            this.arrivalCountryTextBox.DefaultText = "";
+            this.arrivalCountryTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.arrivalCountryTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.arrivalCountryTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.arrivalCountryTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.arrivalCountryTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.arrivalCountryTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.arrivalCountryTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.arrivalCountryTextBox.Location = new System.Drawing.Point(32, 162);
             this.arrivalCountryTextBox.Name = "arrivalCountryTextBox";
+            this.arrivalCountryTextBox.PasswordChar = '\0';
+            this.arrivalCountryTextBox.PlaceholderText = "";
             this.arrivalCountryTextBox.ReadOnly = true;
-            this.arrivalCountryTextBox.Size = new System.Drawing.Size(141, 23);
-            this.arrivalCountryTextBox.TabIndex = 10;
+            this.arrivalCountryTextBox.SelectedText = "";
+            this.arrivalCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.arrivalCountryTextBox.Size = new System.Drawing.Size(141, 29);
+            this.arrivalCountryTextBox.TabIndex = 48;
             // 
             // label6
             // 
@@ -384,11 +656,25 @@ namespace FlightReservationSystem
             // 
             // deptCountryTextBox
             // 
+            this.deptCountryTextBox.BorderRadius = 20;
+            this.deptCountryTextBox.CustomizableEdges = customizableEdges27;
+            this.deptCountryTextBox.DefaultText = "";
+            this.deptCountryTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.deptCountryTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.deptCountryTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.deptCountryTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.deptCountryTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.deptCountryTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deptCountryTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.deptCountryTextBox.Location = new System.Drawing.Point(32, 99);
             this.deptCountryTextBox.Name = "deptCountryTextBox";
+            this.deptCountryTextBox.PasswordChar = '\0';
+            this.deptCountryTextBox.PlaceholderText = "";
             this.deptCountryTextBox.ReadOnly = true;
-            this.deptCountryTextBox.Size = new System.Drawing.Size(141, 23);
-            this.deptCountryTextBox.TabIndex = 8;
+            this.deptCountryTextBox.SelectedText = "";
+            this.deptCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.deptCountryTextBox.Size = new System.Drawing.Size(141, 29);
+            this.deptCountryTextBox.TabIndex = 46;
             // 
             // label5
             // 
@@ -401,11 +687,25 @@ namespace FlightReservationSystem
             // 
             // flightNoTextBox
             // 
+            this.flightNoTextBox.BorderRadius = 20;
+            this.flightNoTextBox.CustomizableEdges = customizableEdges29;
+            this.flightNoTextBox.DefaultText = "";
+            this.flightNoTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.flightNoTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.flightNoTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.flightNoTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.flightNoTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.flightNoTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.flightNoTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.flightNoTextBox.Location = new System.Drawing.Point(217, 99);
             this.flightNoTextBox.Name = "flightNoTextBox";
+            this.flightNoTextBox.PasswordChar = '\0';
+            this.flightNoTextBox.PlaceholderText = "";
             this.flightNoTextBox.ReadOnly = true;
-            this.flightNoTextBox.Size = new System.Drawing.Size(141, 23);
-            this.flightNoTextBox.TabIndex = 2;
+            this.flightNoTextBox.SelectedText = "";
+            this.flightNoTextBox.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            this.flightNoTextBox.Size = new System.Drawing.Size(140, 29);
+            this.flightNoTextBox.TabIndex = 47;
             // 
             // label2
             // 
@@ -420,11 +720,12 @@ namespace FlightReservationSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(120, 17);
+            this.label1.Location = new System.Drawing.Point(123, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Booking Flight";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -435,9 +736,9 @@ namespace FlightReservationSystem
             this.panel2.Controls.Add(this.deptCountriesComboBox);
             this.panel2.Controls.Add(this.deptDateLabel);
             this.panel2.Controls.Add(this.deptDateTimePicker);
-            this.panel2.Location = new System.Drawing.Point(8, 12);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(557, 580);
+            this.panel2.Size = new System.Drawing.Size(896, 712);
             this.panel2.TabIndex = 0;
             // 
             // flightDataGrid
@@ -446,9 +747,18 @@ namespace FlightReservationSystem
             this.flightDataGrid.AllowUserToDeleteRows = false;
             this.flightDataGrid.AllowUserToResizeColumns = false;
             this.flightDataGrid.AllowUserToResizeRows = false;
-            this.flightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.flightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.flightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.flightDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.flightDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.flightDataGrid.ColumnHeadersHeight = 40;
             this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FlightNo,
             this.deptDate,
@@ -459,57 +769,83 @@ namespace FlightReservationSystem
             this.Rank1Price,
             this.Rank2Price,
             this.Rank3Price});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.flightDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flightDataGrid.Location = new System.Drawing.Point(0, 99);
-            this.flightDataGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flightDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 96);
+            this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
+            this.flightDataGrid.MultiSelect = false;
             this.flightDataGrid.Name = "flightDataGrid";
             this.flightDataGrid.ReadOnly = true;
-            this.flightDataGrid.RowHeadersWidth = 51;
+            this.flightDataGrid.RowHeadersVisible = false;
+            this.flightDataGrid.RowHeadersWidth = 50;
             this.flightDataGrid.RowTemplate.Height = 25;
-            this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
+            this.flightDataGrid.Size = new System.Drawing.Size(896, 616);
             this.flightDataGrid.TabIndex = 32;
-            this.Load += BookFlight_Load;
-            this.flightDataGrid.CellClick += this.flightDataGrid_CellClick;
+            this.flightDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.flightDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            this.flightDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.flightDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.Height = 40;
+            this.flightDataGrid.ThemeStyle.ReadOnly = true;
+            this.flightDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            this.flightDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.flightDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.flightDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.flightDataGrid.ThemeStyle.RowsStyle.Height = 25;
+            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.flightDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDataGrid_CellClick);
             // 
             // FlightNo
             // 
             this.FlightNo.HeaderText = "Flight Number";
-            this.FlightNo.MinimumWidth = 6;
             this.FlightNo.Name = "FlightNo";
             this.FlightNo.ReadOnly = true;
             // 
             // deptDate
             // 
             this.deptDate.HeaderText = "Departure Date";
-            this.deptDate.MinimumWidth = 6;
             this.deptDate.Name = "deptDate";
             this.deptDate.ReadOnly = true;
             // 
             // deptCountry
             // 
             this.deptCountry.HeaderText = "Departure Country";
-            this.deptCountry.MinimumWidth = 6;
             this.deptCountry.Name = "deptCountry";
             this.deptCountry.ReadOnly = true;
             // 
             // arrivalCountry
             // 
             this.arrivalCountry.HeaderText = "Arrival Country";
-            this.arrivalCountry.MinimumWidth = 6;
             this.arrivalCountry.Name = "arrivalCountry";
             this.arrivalCountry.ReadOnly = true;
             // 
             // expectedArrivalDate
             // 
             this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            this.expectedArrivalDate.MinimumWidth = 6;
             this.expectedArrivalDate.Name = "expectedArrivalDate";
             this.expectedArrivalDate.ReadOnly = true;
             // 
             // AvailableSeats
             // 
             this.AvailableSeats.HeaderText = "Available Seats";
-            this.AvailableSeats.MinimumWidth = 6;
             this.AvailableSeats.Name = "AvailableSeats";
             this.AvailableSeats.ReadOnly = true;
             // 
@@ -537,7 +873,7 @@ namespace FlightReservationSystem
             // arrivalCountryLabel
             // 
             this.arrivalCountryLabel.AutoSize = true;
-            this.arrivalCountryLabel.Location = new System.Drawing.Point(172, 16);
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(396, 19);
             this.arrivalCountryLabel.Name = "arrivalCountryLabel";
             this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
             this.arrivalCountryLabel.TabIndex = 31;
@@ -545,18 +881,31 @@ namespace FlightReservationSystem
             // 
             // arrivalCountriesComboBox
             // 
+            this.arrivalCountriesComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.arrivalCountriesComboBox.BorderRadius = 20;
+            this.arrivalCountriesComboBox.CustomizableEdges = customizableEdges31;
+            this.arrivalCountriesComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.arrivalCountriesComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.arrivalCountriesComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.arrivalCountriesComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.arrivalCountriesComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.arrivalCountriesComboBox.FormattingEnabled = true;
-            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(156, 34);
+            this.arrivalCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.arrivalCountriesComboBox.ItemHeight = 30;
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(366, 44);
             this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
-            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
-            this.arrivalCountriesComboBox.TabIndex = 30;
-            this.arrivalCountriesComboBox.DropDown += this.arrivalCountriesComboBox_OnDropDown; 
+            this.arrivalCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(141, 36);
+            this.arrivalCountriesComboBox.TabIndex = 34;
+            this.arrivalCountriesComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.arrivalCountriesComboBox.DropDown += new System.EventHandler(this.arrivalCountriesComboBox_OnDropDown);
+            this.arrivalCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
             // 
             // deptCountryLabel
             // 
             this.deptCountryLabel.AutoSize = true;
-            this.deptCountryLabel.Location = new System.Drawing.Point(24, 16);
+            this.deptCountryLabel.Location = new System.Drawing.Point(192, 18);
             this.deptCountryLabel.Name = "deptCountryLabel";
             this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
             this.deptCountryLabel.TabIndex = 29;
@@ -564,18 +913,31 @@ namespace FlightReservationSystem
             // 
             // deptCountriesComboBox
             // 
+            this.deptCountriesComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.deptCountriesComboBox.BorderRadius = 20;
+            this.deptCountriesComboBox.CustomizableEdges = customizableEdges33;
+            this.deptCountriesComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.deptCountriesComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.deptCountriesComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.deptCountriesComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deptCountriesComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.deptCountriesComboBox.FormattingEnabled = true;
-            this.deptCountriesComboBox.Location = new System.Drawing.Point(17, 34);
+            this.deptCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.deptCountriesComboBox.ItemHeight = 30;
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(175, 43);
             this.deptCountriesComboBox.Name = "deptCountriesComboBox";
-            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
-            this.deptCountriesComboBox.TabIndex = 28;
-            this.deptCountriesComboBox.DropDown += this.deptCountriesComboBox_OnDropDown;
+            this.deptCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            this.deptCountriesComboBox.Size = new System.Drawing.Size(133, 36);
+            this.deptCountriesComboBox.TabIndex = 33;
+            this.deptCountriesComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.deptCountriesComboBox.DropDown += new System.EventHandler(this.deptCountriesComboBox_OnDropDown);
+            this.deptCountriesComboBox.TextChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
             // 
             // deptDateLabel
             // 
             this.deptDateLabel.AutoSize = true;
-            this.deptDateLabel.Location = new System.Drawing.Point(357, 16);
+            this.deptDateLabel.Location = new System.Drawing.Point(607, 18);
             this.deptDateLabel.Name = "deptDateLabel";
             this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
             this.deptDateLabel.TabIndex = 27;
@@ -583,10 +945,23 @@ namespace FlightReservationSystem
             // 
             // deptDateTimePicker
             // 
-            this.deptDateTimePicker.Location = new System.Drawing.Point(308, 34);
+            this.deptDateTimePicker.BorderRadius = 20;
+            this.deptDateTimePicker.Checked = true;
+            this.deptDateTimePicker.CustomizableEdges = customizableEdges35;
+            this.deptDateTimePicker.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.deptDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deptDateTimePicker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deptDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.deptDateTimePicker.Location = new System.Drawing.Point(561, 44);
+            this.deptDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.deptDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.deptDateTimePicker.Name = "deptDateTimePicker";
-            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
-            this.deptDateTimePicker.TabIndex = 26;
+            this.deptDateTimePicker.Padding = new System.Windows.Forms.Padding(5);
+            this.deptDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            this.deptDateTimePicker.Size = new System.Drawing.Size(190, 36);
+            this.deptDateTimePicker.TabIndex = 38;
+            this.deptDateTimePicker.Value = new System.DateTime(2023, 5, 22, 17, 13, 9, 814);
+            this.deptDateTimePicker.ValueChanged += new System.EventHandler(this.bookFlightComboBox_Changed);
             // 
             // textBox1
             // 
@@ -600,10 +975,11 @@ namespace FlightReservationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 595);
+            this.ClientSize = new System.Drawing.Size(1671, 710);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BookFlight";
             this.Text = "BookFlight";
+            this.Load += new System.EventHandler(this.BookFlight_Load);
             this.contentSplitContainer.Panel1.ResumeLayout(false);
             this.contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
@@ -624,7 +1000,26 @@ namespace FlightReservationSystem
         private Panel panel1;
         private Panel panel3;
         private Panel panel2;
-        private DataGridView flightDataGrid;
+        private Label arrivalCountryLabel;
+        private Label deptCountryLabel;
+        private Label deptDateLabel;
+        private Label label1;
+        private Label label7;
+        private TextBox textBox1;
+        private Label label6;
+        private Label label5;
+        private Label label2;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label4;
+        private Label label3;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Guna.UI2.WinForms.Guna2DataGridView flightDataGrid;
         private DataGridViewTextBoxColumn FlightNo;
         private DataGridViewTextBoxColumn deptDate;
         private DataGridViewTextBoxColumn deptCountry;
@@ -634,42 +1029,23 @@ namespace FlightReservationSystem
         private DataGridViewTextBoxColumn Rank1Price;
         private DataGridViewTextBoxColumn Rank2Price;
         private DataGridViewTextBoxColumn Rank3Price;
-        private Label arrivalCountryLabel;
-        private ComboBox arrivalCountriesComboBox;
-        private Label deptCountryLabel;
-        private ComboBox deptCountriesComboBox;
-        private Label deptDateLabel;
-        private DateTimePicker deptDateTimePicker;
-        private Label label1;
-        private TextBox arrivalDateTextBox;
-        private Label label7;
-        private TextBox arrivalCountryTextBox;
-        private TextBox textBox1;
-        private Label label6;
-        private TextBox deptCountryTextBox;
-        private Label label5;
-        private TextBox flightNoTextBox;
-        private Label label2;
-        private Button confirmButton;
-        private NumericUpDown seatsNumericUpDown;
-        private Label label12;
-        private TextBox seatsAvailableTextBox;
-        private Label label11;
-        private TextBox cvvCreditCardTextBox;
-        private Label label10;
-        private TextBox creditCardExpiryDateTextBox;
-        private Label label9;
-        private TextBox creditCardTextBox;
-        private Label label8;
-        private DateTimePicker passportDateTimePicker;
-        private Label label4;
-        private TextBox passportNumberTextBox;
-        private Label label3;
-        private Label label13;
-        private ComboBox ClassComboBox;
-        private Label label14;
-        private TextBox ClassPriceTextBox;
-        private Label label15;
-        private TextBox TotalPriceTextBox;
+        private Guna.UI2.WinForms.Guna2ComboBox arrivalCountriesComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox deptCountriesComboBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker deptDateTimePicker;
+        private Guna.UI2.WinForms.Guna2TextBox deptCountryTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox flightNoTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox arrivalCountryTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox arrivalDateTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox seatsAvailableTextBox;
+        private Guna.UI2.WinForms.Guna2NumericUpDown seatsNumericUpDown;
+        private Guna.UI2.WinForms.Guna2ComboBox ClassComboBox;
+        private Guna.UI2.WinForms.Guna2TextBox ClassPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TotalPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox passportNumberTextBox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker passportDateTimePicker;
+        private Guna.UI2.WinForms.Guna2TextBox cvvCreditCardTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox creditCardExpiryDateTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox creditCardTextBox;
+        protected Guna.UI2.WinForms.Guna2Button confirmButton;
     }
 }
