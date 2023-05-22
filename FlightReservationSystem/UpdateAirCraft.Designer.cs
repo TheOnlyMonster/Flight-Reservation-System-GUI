@@ -202,6 +202,7 @@
             this.StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
             this.StatusComboBoxPanel1.Size = new System.Drawing.Size(110, 23);
             this.StatusComboBoxPanel1.TabIndex = 20;
+            this.StatusComboBoxPanel1.SelectedIndexChanged += new System.EventHandler(this.StatusComboBoxPanel1_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -219,6 +220,7 @@
             this.ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
             this.ModelTextBoxPnanel1.Size = new System.Drawing.Size(110, 23);
             this.ModelTextBoxPnanel1.TabIndex = 18;
+            this.ModelTextBoxPnanel1.TextChanged += new System.EventHandler(this.AirCraftIdTextBoxPanel1_TextChanged);
             // 
             // label4
             // 
@@ -236,6 +238,7 @@
             this.AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
             this.AirCraftIdTextBoxPanel1.Size = new System.Drawing.Size(110, 23);
             this.AirCraftIdTextBoxPanel1.TabIndex = 4;
+            this.AirCraftIdTextBoxPanel1.TextChanged += new System.EventHandler(this.AirCraftIdTextBoxPanel1_TextChanged);
             // 
             // AirCraftdataGridView
             // 
@@ -258,6 +261,7 @@
             this.AirCraftdataGridView.RowTemplate.Height = 29;
             this.AirCraftdataGridView.Size = new System.Drawing.Size(848, 682);
             this.AirCraftdataGridView.TabIndex = 0;
+            this.AirCraftdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AirCraftdataGridView_CellClick);
             // 
             // AirCraftID
             // 
@@ -335,6 +339,7 @@
             this.DeleteButton.TabIndex = 21;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // label2
             // 
@@ -354,6 +359,7 @@
             this.confirmButton.TabIndex = 19;
             this.confirmButton.Text = "Confirm";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
             // StatusComboBox
             // 
@@ -489,6 +495,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UpdateAirCraft";
             this.Text = "UpdateAircCraft";
+            this.Load += new System.EventHandler(this.UpdateAirCraft_Load);
             this.contentSplitContainer.Panel1.ResumeLayout(false);
             this.contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();

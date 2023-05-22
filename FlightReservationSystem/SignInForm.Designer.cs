@@ -198,7 +198,7 @@ namespace FlightReservationSystem
             this.passwordSignInTextBox.Size = new System.Drawing.Size(200, 36);
             this.passwordSignInTextBox.TabIndex = 6;
             // 
-            // signInPanelButton
+            // AddButton
             // 
             this.signInPanelButton.Animated = true;
             this.signInPanelButton.BackColor = System.Drawing.Color.Transparent;
@@ -220,7 +220,7 @@ namespace FlightReservationSystem
             this.signInPanelButton.Image = global::FlightReservationSystem.Properties.Resources.FlightWhite;
             this.signInPanelButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.signInPanelButton.Location = new System.Drawing.Point(532, 402);
-            this.signInPanelButton.Name = "signInPanelButton";
+            this.signInPanelButton.Name = "AddButton";
             this.signInPanelButton.Padding = new System.Windows.Forms.Padding(5);
             this.signInPanelButton.PressedColor = System.Drawing.Color.White;
             this.signInPanelButton.ShadowDecoration.BorderRadius = 20;

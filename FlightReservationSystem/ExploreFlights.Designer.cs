@@ -195,7 +195,7 @@
             this.FlightNo.Name = "FlightNo";
             this.FlightNo.ReadOnly = true;
             // 
-            // flightDataGrid
+            // AdminFlightDataGrid
             // 
             this.flightDataGrid.AllowUserToAddRows = false;
             this.flightDataGrid.AllowUserToDeleteRows = false;
@@ -236,7 +236,7 @@
             this.flightDataGrid.Location = new System.Drawing.Point(0, 0);
             this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
             this.flightDataGrid.MultiSelect = false;
-            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.Name = "AdminFlightDataGrid";
             this.flightDataGrid.ReadOnly = true;
             this.flightDataGrid.RowHeadersVisible = false;
             this.flightDataGrid.RowHeadersWidth = 50;
