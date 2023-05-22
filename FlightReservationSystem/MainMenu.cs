@@ -31,6 +31,7 @@ namespace FlightReservationSystem
             {
                 contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateInfo);
+                contentSplitContainer.Panel1.Controls.Add(SignOutButton);
 
             }
             else if (IsAdminLoggedIn)
@@ -40,6 +41,7 @@ namespace FlightReservationSystem
                 contentSplitContainer.Panel1.Controls.Add(this.AddFlight);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateFlight);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateReservation);
+                contentSplitContainer.Panel1.Controls.Add(SignOutButton);
             }
             else
             {
@@ -132,20 +134,15 @@ namespace FlightReservationSystem
         {
             guna2Transition.HideSync(control);
         }
-        private void signUpButton_MouseEnter(object sender, EventArgs e)
-        {
-        }
 
-        private void signUpButton_MouseLeave(object sender, EventArgs e)
+        private void SignOutButton_Click(object sender, EventArgs e)
         {
-        }
-        private void guna2Button1_MouseEnter(object sender, EventArgs e)
-        {
-            
-        }
+            IsUserLoggedIn = false;
+            IsAdminLoggedIn = false;
+            this.Close();
+            MainMenu MainMenu = new MainMenu();
 
-        private void guna2Button1_MouseLeave(object sender, EventArgs e)
-        {
+            MainMenu.Show();
         }
     }
 }

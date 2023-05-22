@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFlight));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
             label8 = new Label();
             AirCraftIdTextBox = new TextBox();
@@ -71,6 +77,7 @@
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
             Rank3Price = new DataGridViewTextBoxColumn();
+            DeleteButton = new Button();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -94,25 +101,86 @@
             // 
             // signInButton
             // 
+            signInButton.DialogResult = DialogResult.None;
+            signInButton.DisabledState.BorderColor = Color.DarkGray;
+            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            signInButton.Location = new Point(0, 57);
+            signInButton.ShadowDecoration.BorderRadius = 20;
+            signInButton.ShadowDecoration.Color = Color.Transparent;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             signInButton.Size = new Size(242, 57);
             // 
             // signUpButton
             // 
+            signUpButton.DialogResult = DialogResult.None;
+            signUpButton.DisabledState.BorderColor = Color.DarkGray;
+            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            signUpButton.ShadowDecoration.BorderRadius = 20;
+            signUpButton.ShadowDecoration.Color = Color.Transparent;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
             signUpButton.Size = new Size(242, 57);
-            // 
-            // helpButton
-            // 
-            helpButton.Location = new Point(0, 651);
-            helpButton.Margin = new Padding(3);
-            helpButton.Size = new Size(242, 84);
             // 
             // exploreFlightsButton
             // 
+            exploreFlightsButton.DialogResult = DialogResult.None;
+            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            exploreFlightsButton.Location = new Point(0, 114);
             exploreFlightsButton.Margin = new Padding(3);
+            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
             exploreFlightsButton.Size = new Size(242, 76);
+            // 
+            // helpButton
+            // 
+            helpButton.DialogResult = DialogResult.None;
+            helpButton.DisabledState.BorderColor = Color.DarkGray;
+            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            helpButton.Location = new Point(0, 651);
+            helpButton.Margin = new Padding(3);
+            helpButton.ShadowDecoration.BorderRadius = 20;
+            helpButton.ShadowDecoration.Color = Color.Transparent;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            helpButton.Size = new Size(242, 84);
+            // 
+            // SignOutButton
+            // 
+            SignOutButton.DialogResult = DialogResult.None;
+            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            SignOutButton.ShadowDecoration.BorderRadius = 20;
+            SignOutButton.ShadowDecoration.Color = Color.Transparent;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
             // 
             // panel3
             // 
+            panel3.Controls.Add(DeleteButton);
             panel3.Controls.Add(label8);
             panel3.Controls.Add(AirCraftIdTextBox);
             panel3.Controls.Add(ArrivaldateTimePicker);
@@ -295,12 +363,12 @@
             // 
             // confirmButton
             // 
-            confirmButton.Location = new Point(117, 651);
+            confirmButton.Location = new Point(61, 651);
             confirmButton.Margin = new Padding(3, 4, 3, 4);
             confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(162, 31);
+            confirmButton.Size = new Size(109, 31);
             confirmButton.TabIndex = 38;
-            confirmButton.Text = "Confirm Update";
+            confirmButton.Text = "Confirm";
             confirmButton.UseVisualStyleBackColor = true;
             confirmButton.Click += confirmButton_Click;
             // 
@@ -459,7 +527,6 @@
             FlightNo.MinimumWidth = 6;
             FlightNo.Name = "FlightNo";
             FlightNo.ReadOnly = true;
-
             // 
             // AirCraftID
             // 
@@ -523,6 +590,16 @@
             Rank3Price.MinimumWidth = 6;
             Rank3Price.Name = "Rank3Price";
             Rank3Price.ReadOnly = true;
+            // 
+            // DeleteButton
+            // 
+            DeleteButton.Location = new Point(239, 651);
+            DeleteButton.Margin = new Padding(3, 4, 3, 4);
+            DeleteButton.Name = "DeleteButton";
+            DeleteButton.Size = new Size(109, 31);
+            DeleteButton.TabIndex = 63;
+            DeleteButton.Text = "Delete";
+            DeleteButton.UseVisualStyleBackColor = true;
             // 
             // UpdateFlight
             // 
@@ -590,5 +667,6 @@
         private DataGridViewTextBoxColumn Rank1Price;
         private DataGridViewTextBoxColumn Rank2Price;
         private DataGridViewTextBoxColumn Rank3Price;
+        private Button DeleteButton;
     }
 }
