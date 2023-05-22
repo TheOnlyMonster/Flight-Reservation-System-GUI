@@ -186,7 +186,7 @@
             this.textBoxEmail.Size = new System.Drawing.Size(200, 36);
             this.textBoxEmail.TabIndex = 11;
             // 
-            // textBoxFirstName
+            // AirCraftComboBox
             // 
             this.textBoxFirstName.BackColor = System.Drawing.Color.Transparent;
             this.textBoxFirstName.BorderRadius = 20;
@@ -200,7 +200,7 @@
             this.textBoxFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxFirstName.Location = new System.Drawing.Point(458, 161);
-            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Name = "AirCraftComboBox";
             this.textBoxFirstName.PasswordChar = '\0';
             this.textBoxFirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxFirstName.PlaceholderText = "Enter Your First Name";
@@ -209,7 +209,7 @@
             this.textBoxFirstName.Size = new System.Drawing.Size(200, 36);
             this.textBoxFirstName.TabIndex = 14;
             // 
-            // textBoxLastName
+            // LastNameTextBox
             // 
             this.textBoxLastName.BackColor = System.Drawing.Color.Transparent;
             this.textBoxLastName.BorderRadius = 20;
@@ -223,7 +223,7 @@
             this.textBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxLastName.Location = new System.Drawing.Point(458, 228);
-            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Name = "LastNameTextBox";
             this.textBoxLastName.PasswordChar = '\0';
             this.textBoxLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxLastName.PlaceholderText = "Enter Your Last Name";
@@ -278,7 +278,7 @@
             this.textBoxPhone.Size = new System.Drawing.Size(200, 36);
             this.textBoxPhone.TabIndex = 16;
             // 
-            // submitButton
+            // SaveButton
             // 
             this.submitButton.Animated = true;
             this.submitButton.BackColor = System.Drawing.Color.Transparent;
@@ -300,7 +300,7 @@
             this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
             this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.submitButton.Location = new System.Drawing.Point(483, 508);
-            this.submitButton.Name = "submitButton";
+            this.submitButton.Name = "SaveButton";
             this.submitButton.Padding = new System.Windows.Forms.Padding(5);
             this.submitButton.PressedColor = System.Drawing.Color.White;
             this.submitButton.ShadowDecoration.BorderRadius = 20;

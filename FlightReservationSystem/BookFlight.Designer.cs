@@ -348,7 +348,7 @@ namespace FlightReservationSystem
             this.label13.TabIndex = 41;
             this.label13.Text = "Class";
             // 
-            // ClassComboBox
+            // AirCraftComboBox
             // 
             this.ClassComboBox.BackColor = System.Drawing.Color.Transparent;
             this.ClassComboBox.BorderRadius = 20;
@@ -363,7 +363,7 @@ namespace FlightReservationSystem
             this.ClassComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClassComboBox.ItemHeight = 30;
             this.ClassComboBox.Location = new System.Drawing.Point(32, 277);
-            this.ClassComboBox.Name = "ClassComboBox";
+            this.ClassComboBox.Name = "AirCraftComboBox";
             this.ClassComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.ClassComboBox.Size = new System.Drawing.Size(141, 36);
             this.ClassComboBox.TabIndex = 52;
