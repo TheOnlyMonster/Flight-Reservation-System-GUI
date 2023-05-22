@@ -32,20 +32,21 @@ CREATE TABLE Aircraft (
     Model VARCHAR(30) NOT NULL,
     Manufacturer VARCHAR(20) NOT NULL,
     AircraftType VARCHAR(20) NOT NULL,
-    ManufactureYear DATE NOT NULL,
+    ManufactureYear Int NOT NULL,
     Capacity SMALLINT NOT NULL,
     Status VARCHAR(50) NOT NULL,
+    CONSTRAINT CHK_MANUFACTUREYEAR_CONSTRAINT CHECK (ManufactureYear >= 1000 AND ManufactureYear <= 9999)
 );
 
 create table AircraftDispatchControl (
     AdminID int foreign key references AdminTable(AdminID) NOT NULL,
-    AircraftID int foreign key references Aircraft(AircraftID) NOT NULL
+    AircraftID int foreign key references Aircraft(AircraftID) ON DELETE SET NULL NOT NULL,
     Primary key(AdminID,AircraftID)
 );
 
 CREATE TABLE Flight (
     FlightNo INT PRIMARY KEY IDENTITY(1,1),
-    AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) NOT NULL,
+    AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) ON DELETE SET NULL NOT NULL,
     DeptDate Date NOT NULL,
     ExpectedArrival Date NOT NULL,
     ArrivalCountry VARCHAR(50) NOT NULL,
@@ -58,14 +59,14 @@ CREATE TABLE Flight (
 
 create table BookingManagment (
     AdminID int foreign key references AdminTable(AdminID) NOT NULL,
-    FlightNo int foreign key references Flight(FlightNo) NOT NULL,
+    FlightNo int foreign key references Flight(FlightNo) ON DELETE SET NULL NOT NULL,
     PRIMARY KEY (AdminID, FlightNo)
 );
 
 CREATE TABLE BookingDetails (
     BookingID INT IDENTITY(1, 1),
     CustomerID INT REFERENCES CustomerTable(CustomerID) NOT NULL,
-    FlightNo INT REFERENCES Flight(FlightNo) NOT NULL,
+    FlightNo INT REFERENCES Flight(FlightNo) ON DELETE SET NULL NOT NULL,
     BookingDate VARCHAR(15) NOT NULL,
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,

@@ -18,7 +18,8 @@ namespace FlightReservationSystem
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
 
-        protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+
+        protected string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
         {
             InitializeComponent();
@@ -118,7 +119,6 @@ namespace FlightReservationSystem
             this.Hide();
 
         }
-
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {

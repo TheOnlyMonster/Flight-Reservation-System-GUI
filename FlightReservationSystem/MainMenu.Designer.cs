@@ -126,6 +126,7 @@
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.exploreFlightsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.exploreFlightsButton.Click += new System.EventHandler(this.exploreFlightsButton_Click);
             // 
             // signInButton
             // 
@@ -191,6 +192,7 @@
             this.UpdateReservation.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UpdateReservation.Name = "UpdateReservation";
             this.UpdateReservation.UseVisualStyleBackColor = false;
+            this.UpdateReservation.Click += new System.EventHandler(this.UpdateReservation_Click);
             // 
             // UpdateAircraft
             // 
@@ -200,6 +202,7 @@
             this.UpdateAircraft.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UpdateAircraft.Name = "UpdateAircraft";
             this.UpdateAircraft.UseVisualStyleBackColor = false;
+            this.UpdateAircraft.Click += new System.EventHandler(this.UpdateAircraft_Click);
             // 
             // AddAircraft
             // 
@@ -209,6 +212,7 @@
             this.AddAircraft.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.AddAircraft.Name = "AddAircraft";
             this.AddAircraft.UseVisualStyleBackColor = false;
+            this.AddAircraft.Click += new System.EventHandler(this.AddAircraft_Click);
             // 
             // AddFlight
             // 
@@ -218,6 +222,7 @@
             this.AddFlight.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.AddFlight.Name = "AddFlight";
             this.AddFlight.UseVisualStyleBackColor = false;
+            this.AddFlight.Click += new System.EventHandler(this.AddAircraft_Click);
             // 
             // UpdateFlight
             // 
@@ -227,6 +232,7 @@
             this.UpdateFlight.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UpdateFlight.Name = "UpdateFlight";
             this.UpdateFlight.UseVisualStyleBackColor = false;
+            this.UpdateFlight.Click += new System.EventHandler(UpdateFlight_Click);
             // 
             // UpdateInfo
             // 
@@ -236,6 +242,7 @@
             this.UpdateInfo.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UpdateInfo.Name = "UpdateInfo";
             this.UpdateInfo.UseVisualStyleBackColor = false;
+            this.UpdateInfo.Click += new System.EventHandler(this.UpdateInfo_Click);
             // 
             // bookFlightButton
             // 
@@ -245,6 +252,7 @@
             this.bookFlightButton.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.bookFlightButton.Name = "bookFlightButton";
             this.bookFlightButton.UseVisualStyleBackColor = false;
+            this.bookFlightButton.Click += new System.EventHandler(this.bookFlightButton_Click);
             // 
             // SignOutButton
             // 
