@@ -25,20 +25,21 @@ namespace FlightReservationSystem
         {
             //validating Capacity.
             string capacity = this.CapacityTextBox.Text;
-            if (!ValidateCapacity(capacity)) {
+            if (!ValidateCapacity(capacity))
+            {
                 MessageBox.Show("Invalid Seat, Please enter a valid Seat.");
                 this.CapacityTextBox.Focus();
                 return;
             }
 
 
-            
+
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
                 string query = "INSERT INTO Aircraft VALUES(@Model,@Manufacturer,@AircraftType,@ManufactureYear,@Capacity,@Status)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Model",ModelTextBox.Text);
+                command.Parameters.AddWithValue("@Model", AirCraftTextBox.Text);
                 command.Parameters.AddWithValue("@Manufacturer", ManfucaturerTextBox.Text);
                 command.Parameters.AddWithValue("@AircraftType", AirCraftTextBox.Text);
                 command.Parameters.AddWithValue("@ManufactureYear", DateTime.ParseExact(manuYearDateTimePicker.Text, "yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));

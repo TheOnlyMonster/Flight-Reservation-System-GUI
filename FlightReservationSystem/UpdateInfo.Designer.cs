@@ -28,314 +28,478 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateInfo));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.CVVTextBox = new System.Windows.Forms.TextBox();
-            this.ExpirayDateTextBox = new System.Windows.Forms.TextBox();
-            this.CardNumberTextBox = new System.Windows.Forms.TextBox();
-            this.LastNameTextBox = new System.Windows.Forms.TextBox();
-            this.CountryTextBox = new System.Windows.Forms.TextBox();
-            this.CityTextBox = new System.Windows.Forms.TextBox();
-            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.SaveButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
-            this.contentSplitContainer.Panel1.SuspendLayout();
-            this.contentSplitContainer.Panel2.SuspendLayout();
-            this.contentSplitContainer.SuspendLayout();
-            this.SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateInfo));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            FirstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            LastNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            CityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            CountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            CardNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            ExpirayDateTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            CVVTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            SaveButton = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
+            contentSplitContainer.Panel1.SuspendLayout();
+            contentSplitContainer.Panel2.SuspendLayout();
+            contentSplitContainer.SuspendLayout();
+            SuspendLayout();
             // 
             // contentSplitContainer
             // 
+            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.SaveButton);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label8);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label7);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label6);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label5);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label4);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label3);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label2);
-            this.contentSplitContainer.Panel2.Controls.Add(this.label1);
-            this.contentSplitContainer.Panel2.Controls.Add(this.FirstNameTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.CityTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.CountryTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.LastNameTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.CardNumberTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.ExpirayDateTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.CVVTextBox);
-            this.contentSplitContainer.Panel2.Controls.Add(this.PasswordTextBox);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
-            this.contentSplitContainer.SplitterDistance = 285;
+            contentSplitContainer.Panel2.Controls.Add(SaveButton);
+            contentSplitContainer.Panel2.Controls.Add(label8);
+            contentSplitContainer.Panel2.Controls.Add(label7);
+            contentSplitContainer.Panel2.Controls.Add(label6);
+            contentSplitContainer.Panel2.Controls.Add(label5);
+            contentSplitContainer.Panel2.Controls.Add(label4);
+            contentSplitContainer.Panel2.Controls.Add(label3);
+            contentSplitContainer.Panel2.Controls.Add(label2);
+            contentSplitContainer.Panel2.Controls.Add(label1);
+            contentSplitContainer.Panel2.Controls.Add(FirstNameTextBox);
+            contentSplitContainer.Panel2.Controls.Add(CityTextBox);
+            contentSplitContainer.Panel2.Controls.Add(CountryTextBox);
+            contentSplitContainer.Panel2.Controls.Add(LastNameTextBox);
+            contentSplitContainer.Panel2.Controls.Add(CardNumberTextBox);
+            contentSplitContainer.Panel2.Controls.Add(ExpirayDateTextBox);
+            contentSplitContainer.Panel2.Controls.Add(CVVTextBox);
+            contentSplitContainer.Panel2.Controls.Add(PasswordTextBox);
+            contentSplitContainer.Size = new Size(1688, 1008);
+            contentSplitContainer.SplitterDistance = 325;
+            contentSplitContainer.SplitterWidth = 6;
             // 
             // signInButton
             // 
-            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.signInButton.Location = new System.Drawing.Point(0, 43);
-            this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.signInButton.ShadowDecoration.BorderRadius = 20;
-            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            this.signInButton.Size = new System.Drawing.Size(285, 43);
+            signInButton.DialogResult = DialogResult.None;
+            signInButton.DisabledState.BorderColor = Color.DarkGray;
+            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            signInButton.Location = new Point(0, 57);
+            signInButton.ShadowDecoration.BorderRadius = 20;
+            signInButton.ShadowDecoration.Color = Color.Transparent;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            signInButton.Size = new Size(325, 57);
             // 
             // signUpButton
             // 
-            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.signUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.signUpButton.ShadowDecoration.BorderRadius = 20;
-            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.signUpButton.Size = new System.Drawing.Size(285, 43);
+            signUpButton.DialogResult = DialogResult.None;
+            signUpButton.DisabledState.BorderColor = Color.DarkGray;
+            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            signUpButton.ShadowDecoration.BorderRadius = 20;
+            signUpButton.ShadowDecoration.Color = Color.Transparent;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            signUpButton.Size = new Size(325, 57);
             // 
             // exploreFlightsButton
             // 
-            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 86);
-            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
+            exploreFlightsButton.DialogResult = DialogResult.None;
+            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            exploreFlightsButton.Location = new Point(0, 114);
+            exploreFlightsButton.Margin = new Padding(3);
+            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            exploreFlightsButton.Size = new Size(325, 76);
             // 
             // helpButton
             // 
-            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.helpButton.Location = new System.Drawing.Point(0, 693);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.helpButton.ShadowDecoration.BorderRadius = 20;
-            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            helpButton.DialogResult = DialogResult.None;
+            helpButton.DisabledState.BorderColor = Color.DarkGray;
+            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            helpButton.Location = new Point(0, 924);
+            helpButton.Margin = new Padding(3);
+            helpButton.ShadowDecoration.BorderRadius = 20;
+            helpButton.ShadowDecoration.Color = Color.Transparent;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            helpButton.Size = new Size(325, 84);
             // 
             // SignOutButton
             // 
-            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
-            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(487, 516);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(168, 23);
-            this.PasswordTextBox.TabIndex = 1;
-            // 
-            // CVVTextBox
-            // 
-            this.CVVTextBox.Location = new System.Drawing.Point(516, 456);
-            this.CVVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CVVTextBox.Name = "CVVTextBox";
-            this.CVVTextBox.Size = new System.Drawing.Size(110, 23);
-            this.CVVTextBox.TabIndex = 2;
-            // 
-            // ExpirayDateTextBox
-            // 
-            this.ExpirayDateTextBox.Location = new System.Drawing.Point(516, 403);
-            this.ExpirayDateTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ExpirayDateTextBox.Name = "ExpirayDateTextBox";
-            this.ExpirayDateTextBox.Size = new System.Drawing.Size(110, 23);
-            this.ExpirayDateTextBox.TabIndex = 3;
-            // 
-            // CardNumberTextBox
-            // 
-            this.CardNumberTextBox.Location = new System.Drawing.Point(516, 351);
-            this.CardNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CardNumberTextBox.Name = "CardNumberTextBox";
-            this.CardNumberTextBox.Size = new System.Drawing.Size(110, 23);
-            this.CardNumberTextBox.TabIndex = 4;
-            // 
-            // LastNameTextBox
-            // 
-            this.LastNameTextBox.Location = new System.Drawing.Point(502, 187);
-            this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(135, 23);
-            this.LastNameTextBox.TabIndex = 5;
-            // 
-            // CountryTextBox
-            // 
-            this.CountryTextBox.Location = new System.Drawing.Point(516, 291);
-            this.CountryTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CountryTextBox.Name = "CountryTextBox";
-            this.CountryTextBox.Size = new System.Drawing.Size(110, 23);
-            this.CountryTextBox.TabIndex = 6;
-            // 
-            // CityTextBox
-            // 
-            this.CityTextBox.Location = new System.Drawing.Point(516, 248);
-            this.CityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CityTextBox.Name = "CityTextBox";
-            this.CityTextBox.Size = new System.Drawing.Size(110, 23);
-            this.CityTextBox.TabIndex = 7;
-            // 
-            // FirstNameTextBox
-            // 
-            this.FirstNameTextBox.Location = new System.Drawing.Point(502, 144);
-            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FirstNameTextBox.Name = "FirstNameTextBox";
-            this.FirstNameTextBox.Size = new System.Drawing.Size(135, 23);
-            this.FirstNameTextBox.TabIndex = 8;
+            SignOutButton.DialogResult = DialogResult.None;
+            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            SignOutButton.ShadowDecoration.BorderRadius = 20;
+            SignOutButton.ShadowDecoration.Color = Color.Transparent;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges23;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(502, 127);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 15);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "First Name";
+            label1.AutoSize = true;
+            label1.Location = new Point(546, 130);
+            label1.Name = "label1";
+            label1.Size = new Size(80, 20);
+            label1.TabIndex = 9;
+            label1.Text = "First Name";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(487, 499);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 15);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Password";
+            label2.AutoSize = true;
+            label2.Location = new Point(574, 706);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 20);
+            label2.TabIndex = 10;
+            label2.Text = "Password";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(554, 439);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "CVV";
+            label3.AutoSize = true;
+            label3.Location = new Point(590, 630);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 20);
+            label3.TabIndex = 11;
+            label3.Text = "CVV";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(533, 386);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 15);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Expiray Date";
+            label4.AutoSize = true;
+            label4.Location = new Point(576, 554);
+            label4.Name = "label4";
+            label4.Size = new Size(93, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Expiray Date";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(527, 334);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Card Number";
+            label5.AutoSize = true;
+            label5.Location = new Point(571, 468);
+            label5.Name = "label5";
+            label5.Size = new Size(98, 20);
+            label5.TabIndex = 13;
+            label5.Text = "Card Number";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(516, 275);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 15);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Country";
+            label6.AutoSize = true;
+            label6.Location = new Point(564, 388);
+            label6.Name = "label6";
+            label6.Size = new Size(60, 20);
+            label6.TabIndex = 14;
+            label6.Text = "Country";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(516, 233);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 15);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "City";
+            label7.AutoSize = true;
+            label7.Location = new Point(590, 311);
+            label7.Name = "label7";
+            label7.Size = new Size(34, 20);
+            label7.TabIndex = 15;
+            label7.Text = "City";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(502, 171);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 15);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Last Name";
+            label8.AutoSize = true;
+            label8.Location = new Point(574, 228);
+            label8.Name = "label8";
+            label8.Size = new Size(79, 20);
+            label8.TabIndex = 16;
+            label8.Text = "Last Name";
+            // 
+            // FirstNameTextBox
+            // 
+            FirstNameTextBox.BackColor = Color.Transparent;
+            FirstNameTextBox.BorderRadius = 20;
+            FirstNameTextBox.CustomizableEdges = customizableEdges3;
+            FirstNameTextBox.DefaultText = "";
+            FirstNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            FirstNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            FirstNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            FirstNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            FirstNameTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            FirstNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            FirstNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            FirstNameTextBox.Location = new Point(496, 154);
+            FirstNameTextBox.Margin = new Padding(3, 4, 3, 4);
+            FirstNameTextBox.Name = "FirstNameTextBox";
+            FirstNameTextBox.PasswordChar = '\0';
+            FirstNameTextBox.PlaceholderForeColor = Color.Gray;
+            FirstNameTextBox.PlaceholderText = "Enter Your First Name";
+            FirstNameTextBox.SelectedText = "";
+            FirstNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            FirstNameTextBox.Size = new Size(229, 48);
+            FirstNameTextBox.TabIndex = 18;
+            // 
+            // LastNameTextBox
+            // 
+            LastNameTextBox.BackColor = Color.Transparent;
+            LastNameTextBox.BorderRadius = 20;
+            LastNameTextBox.CustomizableEdges = customizableEdges9;
+            LastNameTextBox.DefaultText = "";
+            LastNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            LastNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            LastNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            LastNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            LastNameTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            LastNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            LastNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            LastNameTextBox.Location = new Point(538, 259);
+            LastNameTextBox.Margin = new Padding(3, 4, 3, 4);
+            LastNameTextBox.Name = "LastNameTextBox";
+            LastNameTextBox.PasswordChar = '\0';
+            LastNameTextBox.PlaceholderForeColor = Color.Gray;
+            LastNameTextBox.PlaceholderText = "Enter Your Last Name";
+            LastNameTextBox.SelectedText = "";
+            LastNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            LastNameTextBox.Size = new Size(229, 48);
+            LastNameTextBox.TabIndex = 19;
+            // 
+            // CityTextBox
+            // 
+            CityTextBox.BackColor = Color.Transparent;
+            CityTextBox.BorderRadius = 20;
+            CityTextBox.CustomizableEdges = customizableEdges5;
+            CityTextBox.DefaultText = "";
+            CityTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            CityTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            CityTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            CityTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            CityTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            CityTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CityTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            CityTextBox.Location = new Point(516, 336);
+            CityTextBox.Margin = new Padding(3, 4, 3, 4);
+            CityTextBox.Name = "CityTextBox";
+            CityTextBox.PasswordChar = '\0';
+            CityTextBox.PlaceholderForeColor = Color.Gray;
+            CityTextBox.PlaceholderText = "Enter Your City";
+            CityTextBox.SelectedText = "";
+            CityTextBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            CityTextBox.Size = new Size(229, 48);
+            CityTextBox.TabIndex = 20;
+            // 
+            // CountryTextBox
+            // 
+            CountryTextBox.BackColor = Color.Transparent;
+            CountryTextBox.BorderRadius = 20;
+            CountryTextBox.CustomizableEdges = customizableEdges7;
+            CountryTextBox.DefaultText = "";
+            CountryTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            CountryTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            CountryTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            CountryTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            CountryTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            CountryTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CountryTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            CountryTextBox.Location = new Point(516, 412);
+            CountryTextBox.Margin = new Padding(3, 4, 3, 4);
+            CountryTextBox.Name = "CountryTextBox";
+            CountryTextBox.PasswordChar = '\0';
+            CountryTextBox.PlaceholderForeColor = Color.Gray;
+            CountryTextBox.PlaceholderText = "Enter Your  Country";
+            CountryTextBox.SelectedText = "";
+            CountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            CountryTextBox.Size = new Size(229, 48);
+            CountryTextBox.TabIndex = 21;
+            // 
+            // CardNumberTextBox
+            // 
+            CardNumberTextBox.BackColor = Color.Transparent;
+            CardNumberTextBox.BorderRadius = 20;
+            CardNumberTextBox.CustomizableEdges = customizableEdges11;
+            CardNumberTextBox.DefaultText = "";
+            CardNumberTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            CardNumberTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            CardNumberTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            CardNumberTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            CardNumberTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            CardNumberTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CardNumberTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            CardNumberTextBox.Location = new Point(516, 492);
+            CardNumberTextBox.Margin = new Padding(3, 4, 3, 4);
+            CardNumberTextBox.Name = "CardNumberTextBox";
+            CardNumberTextBox.PasswordChar = '\0';
+            CardNumberTextBox.PlaceholderForeColor = Color.Gray;
+            CardNumberTextBox.PlaceholderText = "Enter Your Card Number";
+            CardNumberTextBox.SelectedText = "";
+            CardNumberTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            CardNumberTextBox.Size = new Size(229, 48);
+            CardNumberTextBox.TabIndex = 22;
+            // 
+            // ExpirayDateTextBox
+            // 
+            ExpirayDateTextBox.BackColor = Color.Transparent;
+            ExpirayDateTextBox.BorderRadius = 20;
+            ExpirayDateTextBox.CustomizableEdges = customizableEdges13;
+            ExpirayDateTextBox.DefaultText = "";
+            ExpirayDateTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            ExpirayDateTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            ExpirayDateTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            ExpirayDateTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            ExpirayDateTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            ExpirayDateTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ExpirayDateTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            ExpirayDateTextBox.Location = new Point(516, 578);
+            ExpirayDateTextBox.Margin = new Padding(3, 4, 3, 4);
+            ExpirayDateTextBox.Name = "ExpirayDateTextBox";
+            ExpirayDateTextBox.PasswordChar = '\0';
+            ExpirayDateTextBox.PlaceholderForeColor = Color.Gray;
+            ExpirayDateTextBox.PlaceholderText = "Enter Expiray Date";
+            ExpirayDateTextBox.SelectedText = "";
+            ExpirayDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            ExpirayDateTextBox.Size = new Size(229, 48);
+            ExpirayDateTextBox.TabIndex = 23;
+            // 
+            // PasswordTextBox
+            // 
+            PasswordTextBox.BackColor = Color.Transparent;
+            PasswordTextBox.BorderRadius = 20;
+            PasswordTextBox.CustomizableEdges = customizableEdges17;
+            PasswordTextBox.DefaultText = "";
+            PasswordTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            PasswordTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            PasswordTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            PasswordTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            PasswordTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            PasswordTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            PasswordTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            PasswordTextBox.Location = new Point(516, 730);
+            PasswordTextBox.Margin = new Padding(3, 4, 3, 4);
+            PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.PasswordChar = '\0';
+            PasswordTextBox.PlaceholderForeColor = Color.Gray;
+            PasswordTextBox.PlaceholderText = "Enter Your Password";
+            PasswordTextBox.SelectedText = "";
+            PasswordTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            PasswordTextBox.Size = new Size(229, 48);
+            PasswordTextBox.TabIndex = 24;
+            // 
+            // CVVTextBox
+            // 
+            CVVTextBox.BackColor = Color.Transparent;
+            CVVTextBox.BorderRadius = 20;
+            CVVTextBox.CustomizableEdges = customizableEdges15;
+            CVVTextBox.DefaultText = "";
+            CVVTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            CVVTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            CVVTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            CVVTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            CVVTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            CVVTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CVVTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            CVVTextBox.Location = new Point(516, 654);
+            CVVTextBox.Margin = new Padding(3, 4, 3, 4);
+            CVVTextBox.Name = "CVVTextBox";
+            CVVTextBox.PasswordChar = '\0';
+            CVVTextBox.PlaceholderForeColor = Color.Gray;
+            CVVTextBox.PlaceholderText = "Enter CVV";
+            CVVTextBox.SelectedText = "";
+            CVVTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            CVVTextBox.Size = new Size(229, 48);
+            CVVTextBox.TabIndex = 25;
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(533, 576);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(82, 22);
-            this.SaveButton.TabIndex = 17;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Animated = true;
+            SaveButton.BackColor = Color.Transparent;
+            SaveButton.BorderColor = Color.Transparent;
+            SaveButton.BorderRadius = 20;
+            SaveButton.Cursor = Cursors.Hand;
+            SaveButton.CustomizableEdges = customizableEdges1;
+            SaveButton.DisabledState.BorderColor = Color.DarkGray;
+            SaveButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            SaveButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            SaveButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            SaveButton.FillColor = Color.Transparent;
+            SaveButton.FocusedColor = Color.Transparent;
+            SaveButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            SaveButton.ForeColor = SystemColors.ControlText;
+            SaveButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            SaveButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            SaveButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            SaveButton.Image = Properties.Resources.FlightBlack;
+            SaveButton.ImageAlign = HorizontalAlignment.Left;
+            SaveButton.Location = new Point(538, 786);
+            SaveButton.Margin = new Padding(3, 4, 3, 4);
+            SaveButton.Name = "SaveButton";
+            SaveButton.Padding = new Padding(6, 7, 6, 7);
+            SaveButton.PressedColor = Color.White;
+            SaveButton.ShadowDecoration.BorderRadius = 20;
+            SaveButton.ShadowDecoration.Color = Color.Transparent;
+            SaveButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            SaveButton.Size = new Size(165, 49);
+            SaveButton.TabIndex = 26;
+            SaveButton.Text = "Submit";
             // 
             // UpdateInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1477, 756);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "UpdateInfo";
-            this.Text = "UpdateInfo";
-            this.contentSplitContainer.Panel1.ResumeLayout(false);
-            this.contentSplitContainer.Panel2.ResumeLayout(false);
-            this.contentSplitContainer.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
-            this.contentSplitContainer.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1688, 1008);
+            Margin = new Padding(3);
+            Name = "UpdateInfo";
+            Text = "UpdateInfo";
+            contentSplitContainer.Panel1.ResumeLayout(false);
+            contentSplitContainer.Panel2.ResumeLayout(false);
+            contentSplitContainer.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
+            contentSplitContainer.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private TextBox FirstNameTextBox;
-        private TextBox CityTextBox;
-        private TextBox CountryTextBox;
-        private TextBox LastNameTextBox;
-        private TextBox CardNumberTextBox;
-        private TextBox ExpirayDateTextBox;
-        private TextBox CVVTextBox;
-        private TextBox PasswordTextBox;
+
+
+
+
         private Label label8;
         private Label label7;
         private Label label6;
@@ -344,6 +508,14 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button SaveButton;
+        private Guna.UI2.WinForms.Guna2TextBox FirstNameTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox LastNameTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CityTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CountryTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CardNumberTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox ExpirayDateTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CVVTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox;
+        protected Guna.UI2.WinForms.Guna2Button SaveButton;
     }
 }
