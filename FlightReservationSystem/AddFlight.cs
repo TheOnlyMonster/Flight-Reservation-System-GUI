@@ -28,7 +28,7 @@ namespace FlightReservationSystem
             string deptDate = DepartureDateTimePicker3.Text;
             string expectedArrival = ExpectedDateTimePicker4.Text;
             string arrivalCountry = ArrivalTextBox.Text;
-            string availableSeats = SeatsTextBox.Text;
+            string availableSeats = SeatsNumericUpDown.Text;
             string rankAPrice = RankATextBox.Text;
             string rankBPrice = RankBTextBox.Text;
             string rankCPrice = RankCTextBox.Text;
@@ -48,8 +48,8 @@ namespace FlightReservationSystem
                     connection.Open();
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@AircraftID", int.Parse(airCraftId));
-                    command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDate, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                    command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(expectedArrival, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                    command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDate, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                    command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(expectedArrival, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                     command.Parameters.AddWithValue("@ArrivalCountry", arrivalCountry);
                     command.Parameters.AddWithValue("@DeptCountry", deptCountry);
                     command.Parameters.AddWithValue("@AvailableSeats", int.Parse(availableSeats));
