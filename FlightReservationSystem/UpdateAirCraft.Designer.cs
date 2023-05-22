@@ -34,454 +34,472 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            label11 = new Label();
-            StatusComboBoxPanel1 = new ComboBox();
-            label10 = new Label();
-            ModelTextBoxPnanel1 = new TextBox();
-            label4 = new Label();
-            AirCraftIdTextBoxPanel1 = new TextBox();
-            AirCraftdataGridView = new DataGridView();
-            AirCraftID = new DataGridViewTextBoxColumn();
-            Model = new DataGridViewTextBoxColumn();
-            Manufacturer = new DataGridViewTextBoxColumn();
-            AirCraftType = new DataGridViewTextBoxColumn();
-            ManufactureYear = new DataGridViewTextBoxColumn();
-            Capacity = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            label2 = new Label();
-            confirmButton = new Button();
-            StatusComboBox = new ComboBox();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label1 = new Label();
-            ModelTextBox = new TextBox();
-            ManufactureTextBox = new TextBox();
-            AirCraftTextBox = new TextBox();
-            ManufacturerTextBox = new TextBox();
-            CapacityTextBox = new TextBox();
-            AircraftIdTextBox = new TextBox();
-            label3 = new Label();
-            DeleteButton = new Button();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.StatusComboBoxPanel1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ModelTextBoxPnanel1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.AirCraftIdTextBoxPanel1 = new System.Windows.Forms.TextBox();
+            this.AirCraftdataGridView = new System.Windows.Forms.DataGridView();
+            this.AirCraftID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AirCraftType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ManufactureYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Capacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.confirmButton = new System.Windows.Forms.Button();
+            this.StatusComboBox = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ModelTextBox = new System.Windows.Forms.TextBox();
+            this.ManufactureTextBox = new System.Windows.Forms.TextBox();
+            this.AirCraftTextBox = new System.Windows.Forms.TextBox();
+            this.ManufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.CapacityTextBox = new System.Windows.Forms.TextBox();
+            this.AircraftIdTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirCraftdataGridView)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
+            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(panel2);
-            contentSplitContainer.Panel2.Controls.Add(panel1);
-            contentSplitContainer.Size = new Size(1307, 679);
-            contentSplitContainer.SplitterDistance = 253;
-            contentSplitContainer.SplitterWidth = 6;
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel2);
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
             // 
             // signInButton
             // 
-            signInButton.DialogResult = DialogResult.None;
-            signInButton.DisabledState.BorderColor = Color.DarkGray;
-            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            signInButton.Location = new Point(0, 76);
-            signInButton.Margin = new Padding(3, 4, 3, 4);
-            signInButton.ShadowDecoration.BorderRadius = 20;
-            signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            signInButton.Size = new Size(253, 76);
+            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.signInButton.Location = new System.Drawing.Point(0, 57);
+            this.signInButton.ShadowDecoration.BorderRadius = 20;
+            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            this.signInButton.Size = new System.Drawing.Size(285, 57);
             // 
             // signUpButton
             // 
-            signUpButton.DialogResult = DialogResult.None;
-            signUpButton.DisabledState.BorderColor = Color.DarkGray;
-            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            signUpButton.Margin = new Padding(3, 4, 3, 4);
-            signUpButton.ShadowDecoration.BorderRadius = 20;
-            signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            signUpButton.Size = new Size(253, 76);
+            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.signUpButton.ShadowDecoration.BorderRadius = 20;
+            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.signUpButton.Size = new System.Drawing.Size(285, 57);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.DialogResult = DialogResult.None;
-            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            exploreFlightsButton.Location = new Point(0, 152);
-            exploreFlightsButton.Margin = new Padding(3, 5, 3, 5);
-            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            exploreFlightsButton.Size = new Size(253, 76);
+            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
             // 
             // helpButton
             // 
-            helpButton.DialogResult = DialogResult.None;
-            helpButton.DisabledState.BorderColor = Color.DarkGray;
-            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
-            helpButton.Location = new Point(0, 595);
-            helpButton.Margin = new Padding(3, 5, 3, 5);
-            helpButton.ShadowDecoration.BorderRadius = 20;
-            helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            helpButton.Size = new Size(253, 84);
+            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.helpButton.Location = new System.Drawing.Point(0, 693);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.helpButton.ShadowDecoration.BorderRadius = 20;
+            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.helpButton.Size = new System.Drawing.Size(285, 63);
             // 
             // SignOutButton
             // 
-            SignOutButton.DialogResult = DialogResult.None;
-            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
-            SignOutButton.ShadowDecoration.BorderRadius = 20;
-            SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(StatusComboBoxPanel1);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(ModelTextBoxPnanel1);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(AirCraftIdTextBoxPanel1);
-            panel1.Controls.Add(AirCraftdataGridView);
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(676, 828);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.StatusComboBoxPanel1);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.ModelTextBoxPnanel1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.AirCraftIdTextBoxPanel1);
+            this.panel1.Controls.Add(this.AirCraftdataGridView);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(854, 750);
+            this.panel1.TabIndex = 0;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(479, 47);
-            label11.Name = "label11";
-            label11.Size = new Size(49, 20);
-            label11.TabIndex = 21;
-            label11.Text = "Status";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(516, 35);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 15);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Status";
             // 
             // StatusComboBoxPanel1
             // 
-            StatusComboBoxPanel1.DropDownStyle = ComboBoxStyle.DropDownList;
-            StatusComboBoxPanel1.FormattingEnabled = true;
-            StatusComboBoxPanel1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBoxPanel1.Location = new Point(534, 42);
-            StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
-            StatusComboBoxPanel1.Size = new Size(125, 28);
-            StatusComboBoxPanel1.TabIndex = 20;
-            StatusComboBoxPanel1.SelectedIndexChanged += StatusComboBoxPanel1_SelectedIndexChanged;
+            this.StatusComboBoxPanel1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StatusComboBoxPanel1.FormattingEnabled = true;
+            this.StatusComboBoxPanel1.Items.AddRange(new object[] {
+            "Active",
+            "Inactive",
+            "Maintainance"});
+            this.StatusComboBoxPanel1.Location = new System.Drawing.Point(564, 32);
+            this.StatusComboBoxPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
+            this.StatusComboBoxPanel1.Size = new System.Drawing.Size(110, 23);
+            this.StatusComboBoxPanel1.TabIndex = 20;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(270, 47);
-            label10.Name = "label10";
-            label10.Size = new Size(52, 20);
-            label10.TabIndex = 19;
-            label10.Text = "Model";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(333, 35);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 15);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Model";
             // 
             // ModelTextBoxPnanel1
             // 
-            ModelTextBoxPnanel1.Location = new Point(328, 40);
-            ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
-            ModelTextBoxPnanel1.Size = new Size(125, 27);
-            ModelTextBoxPnanel1.TabIndex = 18;
-            ModelTextBoxPnanel1.TextChanged += ModelTextBoxPnanel1_TextChanged;
+            this.ModelTextBoxPnanel1.Location = new System.Drawing.Point(384, 30);
+            this.ModelTextBoxPnanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
+            this.ModelTextBoxPnanel1.Size = new System.Drawing.Size(110, 23);
+            this.ModelTextBoxPnanel1.TabIndex = 18;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(23, 47);
-            label4.Name = "label4";
-            label4.Size = new Size(79, 20);
-            label4.TabIndex = 17;
-            label4.Text = "AirCraft ID";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(117, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 15);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "AirCraft ID";
             // 
             // AirCraftIdTextBoxPanel1
             // 
-            AirCraftIdTextBoxPanel1.Location = new Point(108, 40);
-            AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
-            AirCraftIdTextBoxPanel1.Size = new Size(125, 27);
-            AirCraftIdTextBoxPanel1.TabIndex = 4;
-            AirCraftIdTextBoxPanel1.TextChanged += AirCraftIdTextBoxPanel1_TextChanged;
+            this.AirCraftIdTextBoxPanel1.Location = new System.Drawing.Point(191, 30);
+            this.AirCraftIdTextBoxPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
+            this.AirCraftIdTextBoxPanel1.Size = new System.Drawing.Size(110, 23);
+            this.AirCraftIdTextBoxPanel1.TabIndex = 4;
             // 
             // AirCraftdataGridView
             // 
-            AirCraftdataGridView.AllowUserToAddRows = false;
-            AirCraftdataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            AirCraftdataGridView.BackgroundColor = SystemColors.Control;
-            AirCraftdataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, Manufacturer, AirCraftType, ManufactureYear, Capacity, Status });
-            AirCraftdataGridView.Location = new Point(3, 88);
-            AirCraftdataGridView.Name = "AirCraftdataGridView";
-            AirCraftdataGridView.RowHeadersWidth = 51;
-            AirCraftdataGridView.RowTemplate.Height = 29;
-            AirCraftdataGridView.Size = new Size(670, 737);
-            AirCraftdataGridView.TabIndex = 0;
-            AirCraftdataGridView.CellClick += AirCraftdataGridView_CellClick;
+            this.AirCraftdataGridView.AllowUserToAddRows = false;
+            this.AirCraftdataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AirCraftdataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.AirCraftdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AirCraftdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AirCraftID,
+            this.Model,
+            this.Manufacturer,
+            this.AirCraftType,
+            this.ManufactureYear,
+            this.Capacity,
+            this.Status});
+            this.AirCraftdataGridView.Location = new System.Drawing.Point(3, 66);
+            this.AirCraftdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftdataGridView.Name = "AirCraftdataGridView";
+            this.AirCraftdataGridView.RowHeadersWidth = 51;
+            this.AirCraftdataGridView.RowTemplate.Height = 29;
+            this.AirCraftdataGridView.Size = new System.Drawing.Size(848, 682);
+            this.AirCraftdataGridView.TabIndex = 0;
             // 
             // AirCraftID
             // 
-            AirCraftID.HeaderText = "Aircraft ID";
-            AirCraftID.MinimumWidth = 6;
-            AirCraftID.Name = "AirCraftID";
+            this.AirCraftID.HeaderText = "Aircraft ID";
+            this.AirCraftID.MinimumWidth = 6;
+            this.AirCraftID.Name = "AirCraftID";
             // 
             // Model
             // 
-            Model.HeaderText = "Model";
-            Model.MinimumWidth = 6;
-            Model.Name = "Model";
+            this.Model.HeaderText = "Model";
+            this.Model.MinimumWidth = 6;
+            this.Model.Name = "Model";
             // 
             // Manufacturer
             // 
-            Manufacturer.HeaderText = "Manufacturer";
-            Manufacturer.MinimumWidth = 6;
-            Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.HeaderText = "Manufacturer";
+            this.Manufacturer.MinimumWidth = 6;
+            this.Manufacturer.Name = "Manufacturer";
             // 
             // AirCraftType
             // 
-            AirCraftType.HeaderText = "AirCraft Type";
-            AirCraftType.MinimumWidth = 6;
-            AirCraftType.Name = "AirCraftType";
+            this.AirCraftType.HeaderText = "AirCraft Type";
+            this.AirCraftType.MinimumWidth = 6;
+            this.AirCraftType.Name = "AirCraftType";
             // 
             // ManufactureYear
             // 
-            ManufactureYear.HeaderText = "Manufacture Year";
-            ManufactureYear.MinimumWidth = 6;
-            ManufactureYear.Name = "ManufactureYear";
+            this.ManufactureYear.HeaderText = "Manufacture Year";
+            this.ManufactureYear.MinimumWidth = 6;
+            this.ManufactureYear.Name = "ManufactureYear";
             // 
             // Capacity
             // 
-            Capacity.HeaderText = "Capacity";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
+            this.Capacity.HeaderText = "Capacity";
+            this.Capacity.MinimumWidth = 6;
+            this.Capacity.Name = "Capacity";
             // 
             // Status
             // 
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
             // 
             // panel2
             // 
-            panel2.Controls.Add(DeleteButton);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(confirmButton);
-            panel2.Controls.Add(StatusComboBox);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(ModelTextBox);
-            panel2.Controls.Add(ManufactureTextBox);
-            panel2.Controls.Add(AirCraftTextBox);
-            panel2.Controls.Add(ManufacturerTextBox);
-            panel2.Controls.Add(CapacityTextBox);
-            panel2.Controls.Add(AircraftIdTextBox);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(685, 6);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(360, 826);
-            panel2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(211, 182);
-            label2.Name = "label2";
-            label2.Size = new Size(95, 20);
-            label2.TabIndex = 20;
-            label2.Text = "AirCraft Type";
-            // 
-            // confirmButton
-            // 
-            confirmButton.Location = new Point(46, 551);
-            confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(125, 29);
-            confirmButton.TabIndex = 19;
-            confirmButton.Text = "Confirm";
-            confirmButton.UseVisualStyleBackColor = true;
-            confirmButton.Click += confirmButton_Click;
-            // 
-            // StatusComboBox
-            // 
-            StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBox.Location = new Point(46, 372);
-            StatusComboBox.Name = "StatusComboBox";
-            StatusComboBox.Size = new Size(125, 28);
-            StatusComboBox.TabIndex = 17;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(46, 96);
-            label9.Name = "label9";
-            label9.Size = new Size(79, 20);
-            label9.TabIndex = 16;
-            label9.Text = "AirCraft ID";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(209, 96);
-            label8.Name = "label8";
-            label8.Size = new Size(52, 20);
-            label8.TabIndex = 15;
-            label8.Text = "Model";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(46, 182);
-            label7.Name = "label7";
-            label7.Size = new Size(124, 20);
-            label7.TabIndex = 14;
-            label7.Text = "Manufacture Year";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(209, 263);
-            label6.Name = "label6";
-            label6.Size = new Size(66, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Capacity";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(46, 349);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Status";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(46, 263);
-            label1.Name = "label1";
-            label1.Size = new Size(97, 20);
-            label1.TabIndex = 9;
-            label1.Text = "Manufacturer";
-            // 
-            // ModelTextBox
-            // 
-            ModelTextBox.Location = new Point(209, 119);
-            ModelTextBox.Name = "ModelTextBox";
-            ModelTextBox.Size = new Size(125, 27);
-            ModelTextBox.TabIndex = 8;
-            // 
-            // ManufactureTextBox
-            // 
-            ManufactureTextBox.Location = new Point(46, 205);
-            ManufactureTextBox.Name = "ManufactureTextBox";
-            ManufactureTextBox.Size = new Size(125, 27);
-            ManufactureTextBox.TabIndex = 7;
-            // 
-            // AirCraftTextBox
-            // 
-            AirCraftTextBox.Location = new Point(209, 205);
-            AirCraftTextBox.Name = "AirCraftTextBox";
-            AirCraftTextBox.Size = new Size(125, 27);
-            AirCraftTextBox.TabIndex = 6;
-            // 
-            // ManufacturerTextBox
-            // 
-            ManufacturerTextBox.Location = new Point(46, 286);
-            ManufacturerTextBox.Name = "ManufacturerTextBox";
-            ManufacturerTextBox.Size = new Size(125, 27);
-            ManufacturerTextBox.TabIndex = 5;
-            // 
-            // CapacityTextBox
-            // 
-            CapacityTextBox.Location = new Point(209, 286);
-            CapacityTextBox.Name = "CapacityTextBox";
-            CapacityTextBox.Size = new Size(125, 27);
-            CapacityTextBox.TabIndex = 4;
-            // 
-            // AircraftIdTextBox
-            // 
-            AircraftIdTextBox.Location = new Point(46, 119);
-            AircraftIdTextBox.Name = "AircraftIdTextBox";
-            AircraftIdTextBox.ReadOnly = true;
-            AircraftIdTextBox.Size = new Size(125, 27);
-            AircraftIdTextBox.TabIndex = 3;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(100, 38);
-            label3.Name = "label3";
-            label3.Size = new Size(186, 32);
-            label3.TabIndex = 2;
-            label3.Text = "Update AirCraft";
+            this.panel2.Controls.Add(this.DeleteButton);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.confirmButton);
+            this.panel2.Controls.Add(this.StatusComboBox);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.ModelTextBox);
+            this.panel2.Controls.Add(this.ManufactureTextBox);
+            this.panel2.Controls.Add(this.AirCraftTextBox);
+            this.panel2.Controls.Add(this.ManufacturerTextBox);
+            this.panel2.Controls.Add(this.CapacityTextBox);
+            this.panel2.Controls.Add(this.AircraftIdTextBox);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(863, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(322, 751);
+            this.panel2.TabIndex = 1;
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(209, 551);
-            DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(125, 29);
-            DeleteButton.TabIndex = 21;
-            DeleteButton.Text = "Delete";
-            DeleteButton.UseVisualStyleBackColor = true;
-            DeleteButton.Click += DeleteButton_Click;
+            this.DeleteButton.Location = new System.Drawing.Point(171, 461);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(109, 22);
+            this.DeleteButton.TabIndex = 21;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(173, 241);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 15);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "AirCraft Type";
+            // 
+            // confirmButton
+            // 
+            this.confirmButton.Location = new System.Drawing.Point(28, 461);
+            this.confirmButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confirmButton.Name = "confirmButton";
+            this.confirmButton.Size = new System.Drawing.Size(109, 22);
+            this.confirmButton.TabIndex = 19;
+            this.confirmButton.Text = "Confirm";
+            this.confirmButton.UseVisualStyleBackColor = true;
+            // 
+            // StatusComboBox
+            // 
+            this.StatusComboBox.FormattingEnabled = true;
+            this.StatusComboBox.Items.AddRange(new object[] {
+            "Active",
+            "Inactive",
+            "Maintainance"});
+            this.StatusComboBox.Location = new System.Drawing.Point(28, 384);
+            this.StatusComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StatusComboBox.Name = "StatusComboBox";
+            this.StatusComboBox.Size = new System.Drawing.Size(110, 23);
+            this.StatusComboBox.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(28, 177);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 15);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "AirCraft ID";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(171, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 15);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Model";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(28, 241);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Manufacture Year";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(171, 302);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 15);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Capacity";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 367);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Status";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 302);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Manufacturer";
+            // 
+            // ModelTextBox
+            // 
+            this.ModelTextBox.Location = new System.Drawing.Point(171, 194);
+            this.ModelTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ModelTextBox.Name = "ModelTextBox";
+            this.ModelTextBox.Size = new System.Drawing.Size(110, 23);
+            this.ModelTextBox.TabIndex = 8;
+            // 
+            // ManufactureTextBox
+            // 
+            this.ManufactureTextBox.Location = new System.Drawing.Point(28, 259);
+            this.ManufactureTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ManufactureTextBox.Name = "ManufactureTextBox";
+            this.ManufactureTextBox.Size = new System.Drawing.Size(110, 23);
+            this.ManufactureTextBox.TabIndex = 7;
+            // 
+            // AirCraftTextBox
+            // 
+            this.AirCraftTextBox.Location = new System.Drawing.Point(171, 259);
+            this.AirCraftTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftTextBox.Name = "AirCraftTextBox";
+            this.AirCraftTextBox.Size = new System.Drawing.Size(110, 23);
+            this.AirCraftTextBox.TabIndex = 6;
+            // 
+            // ManufacturerTextBox
+            // 
+            this.ManufacturerTextBox.Location = new System.Drawing.Point(28, 319);
+            this.ManufacturerTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
+            this.ManufacturerTextBox.Size = new System.Drawing.Size(110, 23);
+            this.ManufacturerTextBox.TabIndex = 5;
+            // 
+            // CapacityTextBox
+            // 
+            this.CapacityTextBox.Location = new System.Drawing.Point(171, 319);
+            this.CapacityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CapacityTextBox.Name = "CapacityTextBox";
+            this.CapacityTextBox.Size = new System.Drawing.Size(110, 23);
+            this.CapacityTextBox.TabIndex = 4;
+            // 
+            // AircraftIdTextBox
+            // 
+            this.AircraftIdTextBox.Location = new System.Drawing.Point(28, 194);
+            this.AircraftIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AircraftIdTextBox.Name = "AircraftIdTextBox";
+            this.AircraftIdTextBox.ReadOnly = true;
+            this.AircraftIdTextBox.Size = new System.Drawing.Size(110, 23);
+            this.AircraftIdTextBox.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(88, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Update AirCraft";
             // 
             // UpdateAirCraft
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1307, 679);
-            Name = "UpdateAirCraft";
-            Text = "UpdateAircCraft";
-            Load += UpdateAirCraft_Load;
-            contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
-            contentSplitContainer.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1477, 756);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "UpdateAirCraft";
+            this.Text = "UpdateAircCraft";
+            this.contentSplitContainer.Panel1.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
+            this.contentSplitContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirCraftdataGridView)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -68,6 +68,7 @@
             this.contentSplitContainer.Panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.contentSplitContainer.Panel1.Controls.Add(this.helpButton);
             this.contentSplitContainer.Panel1.Controls.Add(this.exploreFlightsButton);
+
             // 
             // contentSplitContainer.Panel2
             // 
@@ -232,7 +233,7 @@
             this.UpdateFlight.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UpdateFlight.Name = "UpdateFlight";
             this.UpdateFlight.UseVisualStyleBackColor = false;
-            this.UpdateFlight.Click += new System.EventHandler(UpdateFlight_Click);
+            this.UpdateFlight.Click += new System.EventHandler(this.UpdateFlight_Click);
             // 
             // UpdateInfo
             // 

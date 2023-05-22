@@ -288,10 +288,10 @@
 </value>
   </data>
   <data name="helpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 645</value>
+    <value>0, 693</value>
   </data>
   <data name="helpButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 63</value>
+    <value>284, 63</value>
   </data>
   <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -527,11 +527,15 @@
         AICy2SEAACjZgr/7/869ziJut37qAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="exploreFlightsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 100</value>
-  </data>
   <data name="exploreFlightsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 50</value>
+    <value>284, 50</value>
+  </data>
+  <data name="contentSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1477, 756</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="contentSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>284</value>
   </data>
   <data name="resource.Image2" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1104,13 +1108,6 @@
   <data name="signUpButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>283, 50</value>
   </data>
-  <data name="contentSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1469, 708</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="contentSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
-    <value>283</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="SignOutButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -1360,6 +1357,6 @@
     <value>Sign Out</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1469, 708</value>
+    <value>1477, 756</value>
   </data>
 </root>

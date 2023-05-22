@@ -32,6 +32,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -65,7 +66,8 @@
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.signUpPanel);
-            this.contentSplitContainer.SplitterDistance = 231;
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
             // 
             // signInButton
             // 
@@ -81,7 +83,7 @@
             this.signInButton.ShadowDecoration.BorderRadius = 20;
             this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            this.signInButton.Size = new System.Drawing.Size(231, 57);
+            this.signInButton.Size = new System.Drawing.Size(285, 57);
             // 
             // signUpButton
             // 
@@ -96,7 +98,7 @@
             this.signUpButton.ShadowDecoration.BorderRadius = 20;
             this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.signUpButton.Size = new System.Drawing.Size(231, 57);
+            this.signUpButton.Size = new System.Drawing.Size(285, 57);
             // 
             // exploreFlightsButton
             // 
@@ -112,7 +114,7 @@
             this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(231, 57);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
             // 
             // helpButton
             // 
@@ -124,10 +126,25 @@
             this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.helpButton.Location = new System.Drawing.Point(0, 693);
             this.helpButton.ShadowDecoration.BorderRadius = 20;
             this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.helpButton.Size = new System.Drawing.Size(231, 63);
+            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
             // 
             // signUpPanel
             // 
@@ -143,7 +160,7 @@
             this.signUpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.signUpPanel.Location = new System.Drawing.Point(0, 0);
             this.signUpPanel.Name = "signUpPanel";
-            this.signUpPanel.Size = new System.Drawing.Size(903, 600);
+            this.signUpPanel.Size = new System.Drawing.Size(1188, 756);
             this.signUpPanel.TabIndex = 0;
             // 
             // textBoxEmail
@@ -159,7 +176,7 @@
             this.textBoxEmail.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(335, 307);
+            this.textBoxEmail.Location = new System.Drawing.Point(458, 365);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.PasswordChar = '\0';
             this.textBoxEmail.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -182,7 +199,7 @@
             this.textBoxFirstName.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBoxFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxFirstName.Location = new System.Drawing.Point(335, 103);
+            this.textBoxFirstName.Location = new System.Drawing.Point(458, 161);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.PasswordChar = '\0';
             this.textBoxFirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -205,7 +222,7 @@
             this.textBoxLastName.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxLastName.Location = new System.Drawing.Point(335, 170);
+            this.textBoxLastName.Location = new System.Drawing.Point(458, 228);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.PasswordChar = '\0';
             this.textBoxLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -228,7 +245,7 @@
             this.textBoxPassword.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(335, 375);
+            this.textBoxPassword.Location = new System.Drawing.Point(458, 433);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '\0';
             this.textBoxPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -251,7 +268,7 @@
             this.textBoxPhone.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.textBoxPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxPhone.Location = new System.Drawing.Point(335, 237);
+            this.textBoxPhone.Location = new System.Drawing.Point(458, 295);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.PasswordChar = '\0';
             this.textBoxPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -282,7 +299,7 @@
             this.submitButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
             this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.submitButton.Location = new System.Drawing.Point(360, 450);
+            this.submitButton.Location = new System.Drawing.Point(483, 508);
             this.submitButton.Name = "submitButton";
             this.submitButton.Padding = new System.Windows.Forms.Padding(5);
             this.submitButton.PressedColor = System.Drawing.Color.White;
@@ -298,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 600);
+            this.ClientSize = new System.Drawing.Size(1477, 756);
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
             this.contentSplitContainer.Panel1.ResumeLayout(false);

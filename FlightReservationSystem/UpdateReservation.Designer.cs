@@ -28,417 +28,473 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label2 = new Label();
-            label1 = new Label();
-            FlighNoTextBox = new TextBox();
-            CustomerIdTextBox = new TextBox();
-            UpdateReservationDataGridView = new DataGridView();
-            BookingID = new DataGridViewTextBoxColumn();
-            CustomerID = new DataGridViewTextBoxColumn();
-            FlightNo = new DataGridViewTextBoxColumn();
-            BookingDate = new DataGridViewTextBoxColumn();
-            SeatAssignment = new DataGridViewTextBoxColumn();
-            TicketPrice = new DataGridViewTextBoxColumn();
-            Rank = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            StatusComboBox = new ComboBox();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            ConfirmButton = new Button();
-            RankComboBox = new ComboBox();
-            BookingIdTextBox = new TextBox();
-            FlightNoTextBox2 = new TextBox();
-            BookingDateTextBox = new TextBox();
-            SeatAssignmentTextBox = new TextBox();
-            TicketPriceTextBox = new TextBox();
-            CustomerIdTextBox2 = new TextBox();
-            label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)UpdateReservationDataGridView).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateReservation));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.FlighNoTextBox = new System.Windows.Forms.TextBox();
+            this.CustomerIdTextBox = new System.Windows.Forms.TextBox();
+            this.UpdateReservationDataGridView = new System.Windows.Forms.DataGridView();
+            this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookingDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SeatAssignment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TicketPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.StatusComboBox = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ConfirmButton = new System.Windows.Forms.Button();
+            this.RankComboBox = new System.Windows.Forms.ComboBox();
+            this.BookingIdTextBox = new System.Windows.Forms.TextBox();
+            this.FlightNoTextBox2 = new System.Windows.Forms.TextBox();
+            this.BookingDateTextBox = new System.Windows.Forms.TextBox();
+            this.SeatAssignmentTextBox = new System.Windows.Forms.TextBox();
+            this.TicketPriceTextBox = new System.Windows.Forms.TextBox();
+            this.CustomerIdTextBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpdateReservationDataGridView)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
+            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(panel2);
-            contentSplitContainer.Panel2.Controls.Add(panel1);
-            contentSplitContainer.Size = new Size(1393, 847);
-            contentSplitContainer.SplitterDistance = 269;
-            contentSplitContainer.SplitterWidth = 6;
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel2);
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
             // 
             // signInButton
             // 
-            signInButton.Location = new Point(0, 76);
-            signInButton.Margin = new Padding(3, 4, 3, 4);
-            signInButton.Size = new Size(269, 76);
+            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.signInButton.Location = new System.Drawing.Point(0, 57);
+            this.signInButton.ShadowDecoration.BorderRadius = 20;
+            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            this.signInButton.Size = new System.Drawing.Size(285, 57);
             // 
             // signUpButton
             // 
-            signUpButton.Margin = new Padding(3, 4, 3, 4);
-            signUpButton.Size = new Size(269, 76);
-            // 
-            // helpButton
-            // 
-            helpButton.Location = new Point(0, 763);
-            helpButton.Margin = new Padding(3, 5, 3, 5);
-            helpButton.Size = new Size(269, 84);
+            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.signUpButton.ShadowDecoration.BorderRadius = 20;
+            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.signUpButton.Size = new System.Drawing.Size(285, 57);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Location = new Point(0, 152);
-            exploreFlightsButton.Margin = new Padding(3, 5, 3, 5);
-            exploreFlightsButton.Size = new Size(269, 76);
+            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
+            // 
+            // helpButton
+            // 
+            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.helpButton.Location = new System.Drawing.Point(0, 693);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.helpButton.ShadowDecoration.BorderRadius = 20;
+            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(FlighNoTextBox);
-            panel1.Controls.Add(CustomerIdTextBox);
-            panel1.Controls.Add(UpdateReservationDataGridView);
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(726, 843);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.FlighNoTextBox);
+            this.panel1.Controls.Add(this.CustomerIdTextBox);
+            this.panel1.Controls.Add(this.UpdateReservationDataGridView);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(844, 750);
+            this.panel1.TabIndex = 0;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(334, 35);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 20);
-            label2.TabIndex = 4;
-            label2.Text = "Flight No";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(450, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Flight No";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(31, 35);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 20);
-            label1.TabIndex = 3;
-            label1.Text = "Customer ID";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(185, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Customer ID";
             // 
             // FlighNoTextBox
             // 
-            FlighNoTextBox.Location = new Point(410, 28);
-            FlighNoTextBox.Margin = new Padding(3, 4, 3, 4);
-            FlighNoTextBox.Name = "FlighNoTextBox";
-            FlighNoTextBox.Size = new Size(114, 27);
-            FlighNoTextBox.TabIndex = 2;
-            FlighNoTextBox.TextChanged += FlighNoTextBox_TextChanged;
+            this.FlighNoTextBox.Location = new System.Drawing.Point(517, 14);
+            this.FlighNoTextBox.Name = "FlighNoTextBox";
+            this.FlighNoTextBox.Size = new System.Drawing.Size(100, 23);
+            this.FlighNoTextBox.TabIndex = 2;
             // 
             // CustomerIdTextBox
             // 
-            CustomerIdTextBox.Location = new Point(128, 28);
-            CustomerIdTextBox.Margin = new Padding(3, 4, 3, 4);
-            CustomerIdTextBox.Name = "CustomerIdTextBox";
-            CustomerIdTextBox.Size = new Size(125, 27);
-            CustomerIdTextBox.TabIndex = 1;
-            CustomerIdTextBox.TextChanged += CustomerIdTextBox_TextChanged;
+            this.CustomerIdTextBox.Location = new System.Drawing.Point(270, 14);
+            this.CustomerIdTextBox.Name = "CustomerIdTextBox";
+            this.CustomerIdTextBox.Size = new System.Drawing.Size(110, 23);
+            this.CustomerIdTextBox.TabIndex = 1;
             // 
             // UpdateReservationDataGridView
             // 
-            UpdateReservationDataGridView.AllowUserToAddRows = false;
-            UpdateReservationDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            UpdateReservationDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            UpdateReservationDataGridView.BackgroundColor = SystemColors.ButtonFace;
-            UpdateReservationDataGridView.ColumnHeadersHeight = 29;
-            UpdateReservationDataGridView.Columns.AddRange(new DataGridViewColumn[] { BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Rank, Status });
-            UpdateReservationDataGridView.EditMode = DataGridViewEditMode.EditOnEnter;
-            UpdateReservationDataGridView.GridColor = SystemColors.ControlDarkDark;
-            UpdateReservationDataGridView.Location = new Point(3, 72);
-            UpdateReservationDataGridView.Margin = new Padding(3, 4, 3, 4);
-            UpdateReservationDataGridView.Name = "UpdateReservationDataGridView";
-            UpdateReservationDataGridView.RowHeadersWidth = 51;
-            UpdateReservationDataGridView.RowTemplate.Height = 25;
-            UpdateReservationDataGridView.Size = new Size(722, 804);
-            UpdateReservationDataGridView.TabIndex = 0;
-            UpdateReservationDataGridView.CellClick += UpdateReservationDataGridView_CellClick;
+            this.UpdateReservationDataGridView.AllowUserToAddRows = false;
+            this.UpdateReservationDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.UpdateReservationDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.UpdateReservationDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.UpdateReservationDataGridView.ColumnHeadersHeight = 29;
+            this.UpdateReservationDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BookingID,
+            this.CustomerID,
+            this.FlightNo,
+            this.BookingDate,
+            this.SeatAssignment,
+            this.TicketPrice,
+            this.Rank,
+            this.Status});
+            this.UpdateReservationDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.UpdateReservationDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.UpdateReservationDataGridView.Location = new System.Drawing.Point(3, 54);
+            this.UpdateReservationDataGridView.Name = "UpdateReservationDataGridView";
+            this.UpdateReservationDataGridView.RowHeadersWidth = 51;
+            this.UpdateReservationDataGridView.RowTemplate.Height = 25;
+            this.UpdateReservationDataGridView.Size = new System.Drawing.Size(838, 693);
+            this.UpdateReservationDataGridView.TabIndex = 0;
             // 
             // BookingID
             // 
-            BookingID.HeaderText = "BookingID";
-            BookingID.MinimumWidth = 6;
-            BookingID.Name = "BookingID";
-            BookingID.ReadOnly = true;
+            this.BookingID.HeaderText = "BookingID";
+            this.BookingID.MinimumWidth = 6;
+            this.BookingID.Name = "BookingID";
+            this.BookingID.ReadOnly = true;
             // 
             // CustomerID
             // 
-            CustomerID.HeaderText = "CustomerID";
-            CustomerID.MinimumWidth = 6;
-            CustomerID.Name = "CustomerID";
-            CustomerID.ReadOnly = true;
+            this.CustomerID.HeaderText = "CustomerID";
+            this.CustomerID.MinimumWidth = 6;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.ReadOnly = true;
             // 
             // FlightNo
             // 
-            FlightNo.HeaderText = "FlightNo";
-            FlightNo.MinimumWidth = 6;
-            FlightNo.Name = "FlightNo";
-            FlightNo.ReadOnly = true;
+            this.FlightNo.HeaderText = "FlightNo";
+            this.FlightNo.MinimumWidth = 6;
+            this.FlightNo.Name = "FlightNo";
+            this.FlightNo.ReadOnly = true;
             // 
             // BookingDate
             // 
-            BookingDate.HeaderText = "BookingDate";
-            BookingDate.MinimumWidth = 6;
-            BookingDate.Name = "BookingDate";
-            BookingDate.ReadOnly = true;
+            this.BookingDate.HeaderText = "BookingDate";
+            this.BookingDate.MinimumWidth = 6;
+            this.BookingDate.Name = "BookingDate";
+            this.BookingDate.ReadOnly = true;
             // 
             // SeatAssignment
             // 
-            SeatAssignment.HeaderText = "SeatAssignment";
-            SeatAssignment.MinimumWidth = 6;
-            SeatAssignment.Name = "SeatAssignment";
-            SeatAssignment.ReadOnly = true;
+            this.SeatAssignment.HeaderText = "SeatAssignment";
+            this.SeatAssignment.MinimumWidth = 6;
+            this.SeatAssignment.Name = "SeatAssignment";
+            this.SeatAssignment.ReadOnly = true;
             // 
             // TicketPrice
             // 
-            TicketPrice.HeaderText = "TicketPrice";
-            TicketPrice.MinimumWidth = 6;
-            TicketPrice.Name = "TicketPrice";
-            TicketPrice.ReadOnly = true;
+            this.TicketPrice.HeaderText = "TicketPrice";
+            this.TicketPrice.MinimumWidth = 6;
+            this.TicketPrice.Name = "TicketPrice";
+            this.TicketPrice.ReadOnly = true;
             // 
             // Rank
             // 
-            Rank.HeaderText = "Rank";
-            Rank.MinimumWidth = 6;
-            Rank.Name = "Rank";
-            Rank.ReadOnly = true;
+            this.Rank.HeaderText = "Rank";
+            this.Rank.MinimumWidth = 6;
+            this.Rank.Name = "Rank";
+            this.Rank.ReadOnly = true;
             // 
             // Status
             // 
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // panel2
             // 
-            panel2.Controls.Add(StatusComboBox);
-            panel2.Controls.Add(label11);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(ConfirmButton);
-            panel2.Controls.Add(RankComboBox);
-            panel2.Controls.Add(BookingIdTextBox);
-            panel2.Controls.Add(FlightNoTextBox2);
-            panel2.Controls.Add(BookingDateTextBox);
-            panel2.Controls.Add(SeatAssignmentTextBox);
-            panel2.Controls.Add(TicketPriceTextBox);
-            panel2.Controls.Add(CustomerIdTextBox2);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(736, 4);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(379, 843);
-            panel2.TabIndex = 1;
+            this.panel2.Controls.Add(this.StatusComboBox);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.ConfirmButton);
+            this.panel2.Controls.Add(this.RankComboBox);
+            this.panel2.Controls.Add(this.BookingIdTextBox);
+            this.panel2.Controls.Add(this.FlightNoTextBox2);
+            this.panel2.Controls.Add(this.BookingDateTextBox);
+            this.panel2.Controls.Add(this.SeatAssignmentTextBox);
+            this.panel2.Controls.Add(this.TicketPriceTextBox);
+            this.panel2.Controls.Add(this.CustomerIdTextBox2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(853, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(332, 750);
+            this.panel2.TabIndex = 1;
             // 
             // StatusComboBox
             // 
-            StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Items.AddRange(new object[] {"Confirmed","Canceled"});
-            StatusComboBox.Location = new Point(47, 428);
-            StatusComboBox.Margin = new Padding(3, 4, 3, 4);
-            StatusComboBox.Name = "StatusComboBox";
-            StatusComboBox.Size = new Size(114, 28);
-            StatusComboBox.TabIndex = 20;
+            this.StatusComboBox.FormattingEnabled = true;
+            this.StatusComboBox.Items.AddRange(new object[] {
+            "Confirmed",
+            "Canceled"});
+            this.StatusComboBox.Location = new System.Drawing.Point(42, 443);
+            this.StatusComboBox.Name = "StatusComboBox";
+            this.StatusComboBox.Size = new System.Drawing.Size(100, 23);
+            this.StatusComboBox.TabIndex = 20;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(226, 124);
-            label11.Name = "label11";
-            label11.Size = new Size(70, 20);
-            label11.TabIndex = 19;
-            label11.Text = "Flight No";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(199, 215);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 15);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Flight No";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(47, 217);
-            label10.Name = "label10";
-            label10.Size = new Size(83, 20);
-            label10.TabIndex = 18;
-            label10.Text = "Booking ID";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(42, 285);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 15);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Booking ID";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(226, 317);
-            label9.Name = "label9";
-            label9.Size = new Size(84, 20);
-            label9.TabIndex = 17;
-            label9.Text = "Ticket Price";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(199, 360);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 15);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Ticket Price";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(226, 404);
-            label8.Name = "label8";
-            label8.Size = new Size(41, 20);
-            label8.TabIndex = 16;
-            label8.Text = "Rank";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(199, 425);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 15);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Rank";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(47, 317);
-            label7.Name = "label7";
-            label7.Size = new Size(119, 20);
-            label7.TabIndex = 15;
-            label7.Text = "Seat Assignment";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(42, 360);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 15);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Seat Assignment";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(47, 404);
-            label6.Name = "label6";
-            label6.Size = new Size(49, 20);
-            label6.TabIndex = 14;
-            label6.Text = "Status";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(42, 425);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Status";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(226, 217);
-            label5.Name = "label5";
-            label5.Size = new Size(100, 20);
-            label5.TabIndex = 13;
-            label5.Text = "Booking Date";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(199, 285);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Booking Date";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(47, 128);
-            label4.Name = "label4";
-            label4.Size = new Size(91, 20);
-            label4.TabIndex = 12;
-            label4.Text = "Customer ID";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(42, 218);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Customer ID";
             // 
             // ConfirmButton
             // 
-            ConfirmButton.Location = new Point(135, 632);
-            ConfirmButton.Margin = new Padding(3, 4, 3, 4);
-            ConfirmButton.Name = "ConfirmButton";
-            ConfirmButton.Size = new Size(132, 31);
-            ConfirmButton.TabIndex = 10;
-            ConfirmButton.Text = "Confirm";
-            ConfirmButton.UseVisualStyleBackColor = true;
-            ConfirmButton.Click += ConfirmButton_Click;
+            this.ConfirmButton.Location = new System.Drawing.Point(114, 546);
+            this.ConfirmButton.Name = "ConfirmButton";
+            this.ConfirmButton.Size = new System.Drawing.Size(116, 23);
+            this.ConfirmButton.TabIndex = 10;
+            this.ConfirmButton.Text = "Confirm";
+            this.ConfirmButton.UseVisualStyleBackColor = true;
             // 
             // RankComboBox
             // 
-            RankComboBox.FormattingEnabled = true;
-            RankComboBox.Items.AddRange(new object[] { "A Class", "B Class", "C Class"});
-            RankComboBox.Location = new Point(226, 428);
-            RankComboBox.Margin = new Padding(3, 4, 3, 4);
-            RankComboBox.Name = "RankComboBox";
-            RankComboBox.Size = new Size(114, 28);
-            RankComboBox.TabIndex = 8;
+            this.RankComboBox.FormattingEnabled = true;
+            this.RankComboBox.Items.AddRange(new object[] {
+            "A Class",
+            "B Class",
+            "C Class"});
+            this.RankComboBox.Location = new System.Drawing.Point(199, 443);
+            this.RankComboBox.Name = "RankComboBox";
+            this.RankComboBox.Size = new System.Drawing.Size(100, 23);
+            this.RankComboBox.TabIndex = 8;
             // 
             // BookingIdTextBox
             // 
-            BookingIdTextBox.Location = new Point(47, 241);
-            BookingIdTextBox.Margin = new Padding(3, 4, 3, 4);
-            BookingIdTextBox.Name = "BookingIdTextBox";
-            BookingIdTextBox.ReadOnly = true;
-            BookingIdTextBox.Size = new Size(114, 27);
-            BookingIdTextBox.TabIndex = 7;
+            this.BookingIdTextBox.Location = new System.Drawing.Point(42, 303);
+            this.BookingIdTextBox.Name = "BookingIdTextBox";
+            this.BookingIdTextBox.ReadOnly = true;
+            this.BookingIdTextBox.Size = new System.Drawing.Size(100, 23);
+            this.BookingIdTextBox.TabIndex = 7;
             // 
             // FlightNoTextBox2
             // 
-            FlightNoTextBox2.Location = new Point(226, 148);
-            FlightNoTextBox2.Margin = new Padding(3, 4, 3, 4);
-            FlightNoTextBox2.Name = "FlightNoTextBox2";
-            FlightNoTextBox2.ReadOnly = true;
-            FlightNoTextBox2.Size = new Size(114, 27);
-            FlightNoTextBox2.TabIndex = 6;
+            this.FlightNoTextBox2.Location = new System.Drawing.Point(199, 233);
+            this.FlightNoTextBox2.Name = "FlightNoTextBox2";
+            this.FlightNoTextBox2.ReadOnly = true;
+            this.FlightNoTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.FlightNoTextBox2.TabIndex = 6;
             // 
             // BookingDateTextBox
             // 
-            BookingDateTextBox.Location = new Point(226, 241);
-            BookingDateTextBox.Margin = new Padding(3, 4, 3, 4);
-            BookingDateTextBox.Name = "BookingDateTextBox";
-            BookingDateTextBox.ReadOnly = true;
-            BookingDateTextBox.Size = new Size(114, 27);
-            BookingDateTextBox.TabIndex = 5;
+            this.BookingDateTextBox.Location = new System.Drawing.Point(199, 303);
+            this.BookingDateTextBox.Name = "BookingDateTextBox";
+            this.BookingDateTextBox.ReadOnly = true;
+            this.BookingDateTextBox.Size = new System.Drawing.Size(100, 23);
+            this.BookingDateTextBox.TabIndex = 5;
             // 
             // SeatAssignmentTextBox
             // 
-            SeatAssignmentTextBox.Location = new Point(47, 341);
-            SeatAssignmentTextBox.Margin = new Padding(3, 4, 3, 4);
-            SeatAssignmentTextBox.Name = "SeatAssignmentTextBox";
-            SeatAssignmentTextBox.Size = new Size(114, 27);
-            SeatAssignmentTextBox.TabIndex = 4;
+            this.SeatAssignmentTextBox.Location = new System.Drawing.Point(42, 378);
+            this.SeatAssignmentTextBox.Name = "SeatAssignmentTextBox";
+            this.SeatAssignmentTextBox.Size = new System.Drawing.Size(100, 23);
+            this.SeatAssignmentTextBox.TabIndex = 4;
             // 
             // TicketPriceTextBox
             // 
-            TicketPriceTextBox.Location = new Point(226, 341);
-            TicketPriceTextBox.Margin = new Padding(3, 4, 3, 4);
-            TicketPriceTextBox.Name = "TicketPriceTextBox";
-            TicketPriceTextBox.Size = new Size(114, 27);
-            TicketPriceTextBox.TabIndex = 3;
+            this.TicketPriceTextBox.Location = new System.Drawing.Point(199, 378);
+            this.TicketPriceTextBox.Name = "TicketPriceTextBox";
+            this.TicketPriceTextBox.Size = new System.Drawing.Size(100, 23);
+            this.TicketPriceTextBox.TabIndex = 3;
             // 
             // CustomerIdTextBox2
             // 
-            CustomerIdTextBox2.Location = new Point(47, 148);
-            CustomerIdTextBox2.Margin = new Padding(3, 4, 3, 4);
-            CustomerIdTextBox2.Name = "CustomerIdTextBox2";
-            CustomerIdTextBox2.ReadOnly = true;
-            CustomerIdTextBox2.Size = new Size(114, 27);
-            CustomerIdTextBox2.TabIndex = 2;
+            this.CustomerIdTextBox2.Location = new System.Drawing.Point(42, 233);
+            this.CustomerIdTextBox2.Name = "CustomerIdTextBox2";
+            this.CustomerIdTextBox2.ReadOnly = true;
+            this.CustomerIdTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.CustomerIdTextBox2.TabIndex = 2;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(99, 39);
-            label3.Name = "label3";
-            label3.Size = new Size(229, 32);
-            label3.TabIndex = 1;
-            label3.Text = "Update Reservation";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(87, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Update Reservation";
             // 
             // UpdateReservation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1393, 847);
-            Margin = new Padding(3, 5, 3, 5);
-            Name = "UpdateReservation";
-            Text = "Form1";
-            Load += UpdateReservation_Load;
-            contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
-            contentSplitContainer.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)UpdateReservationDataGridView).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1477, 756);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "UpdateReservation";
+            this.Text = "Form1";
+            this.contentSplitContainer.Panel1.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
+            this.contentSplitContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpdateReservationDataGridView)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -34,6 +34,7 @@ namespace FlightReservationSystem
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -137,14 +138,12 @@ namespace FlightReservationSystem
             // 
             // contentSplitContainer
             // 
-            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             // 
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1671, 710);
-            this.contentSplitContainer.SplitterDistance = 384;
-            this.contentSplitContainer.SplitterWidth = 5;
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
             // 
             // bookFlightButton
             // 
@@ -165,7 +164,7 @@ namespace FlightReservationSystem
             this.signInButton.ShadowDecoration.BorderRadius = 20;
             this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges37;
-            this.signInButton.Size = new System.Drawing.Size(384, 57);
+            this.signInButton.Size = new System.Drawing.Size(285, 57);
             // 
             // signUpButton
             // 
@@ -180,7 +179,7 @@ namespace FlightReservationSystem
             this.signUpButton.ShadowDecoration.BorderRadius = 20;
             this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            this.signUpButton.Size = new System.Drawing.Size(384, 57);
+            this.signUpButton.Size = new System.Drawing.Size(285, 57);
             // 
             // exploreFlightsButton
             // 
@@ -197,7 +196,7 @@ namespace FlightReservationSystem
             this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges39;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(384, 57);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
             // 
             // helpButton
             // 
@@ -209,12 +208,26 @@ namespace FlightReservationSystem
             this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.helpButton.Location = new System.Drawing.Point(0, 648);
+            this.helpButton.Location = new System.Drawing.Point(0, 694);
             this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.helpButton.ShadowDecoration.BorderRadius = 20;
             this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            this.helpButton.Size = new System.Drawing.Size(384, 62);
+            this.helpButton.Size = new System.Drawing.Size(285, 62);
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges41;
             // 
             // panel1
             // 
@@ -223,7 +236,7 @@ namespace FlightReservationSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 710);
+            this.panel1.Size = new System.Drawing.Size(1188, 756);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -258,9 +271,10 @@ namespace FlightReservationSystem
             this.panel3.Controls.Add(this.flightNoTextBox);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(899, 3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(807, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(381, 706);
+            this.panel3.Size = new System.Drawing.Size(381, 756);
             this.panel3.TabIndex = 1;
             // 
             // label15
@@ -736,9 +750,10 @@ namespace FlightReservationSystem
             this.panel2.Controls.Add(this.deptCountriesComboBox);
             this.panel2.Controls.Add(this.deptDateLabel);
             this.panel2.Controls.Add(this.deptDateTimePicker);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 712);
+            this.panel2.Size = new System.Drawing.Size(805, 756);
             this.panel2.TabIndex = 0;
             // 
             // flightDataGrid
@@ -777,9 +792,8 @@ namespace FlightReservationSystem
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.flightDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flightDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
-            this.flightDataGrid.Location = new System.Drawing.Point(0, 96);
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
             this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
             this.flightDataGrid.MultiSelect = false;
             this.flightDataGrid.Name = "flightDataGrid";
@@ -787,7 +801,7 @@ namespace FlightReservationSystem
             this.flightDataGrid.RowHeadersVisible = false;
             this.flightDataGrid.RowHeadersWidth = 50;
             this.flightDataGrid.RowTemplate.Height = 25;
-            this.flightDataGrid.Size = new System.Drawing.Size(896, 616);
+            this.flightDataGrid.Size = new System.Drawing.Size(804, 642);
             this.flightDataGrid.TabIndex = 32;
             this.flightDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
@@ -873,7 +887,7 @@ namespace FlightReservationSystem
             // arrivalCountryLabel
             // 
             this.arrivalCountryLabel.AutoSize = true;
-            this.arrivalCountryLabel.Location = new System.Drawing.Point(396, 19);
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(328, 22);
             this.arrivalCountryLabel.Name = "arrivalCountryLabel";
             this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
             this.arrivalCountryLabel.TabIndex = 31;
@@ -893,7 +907,7 @@ namespace FlightReservationSystem
             this.arrivalCountriesComboBox.FormattingEnabled = true;
             this.arrivalCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.arrivalCountriesComboBox.ItemHeight = 30;
-            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(366, 44);
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(298, 47);
             this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
             this.arrivalCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges32;
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(141, 36);
@@ -905,7 +919,7 @@ namespace FlightReservationSystem
             // deptCountryLabel
             // 
             this.deptCountryLabel.AutoSize = true;
-            this.deptCountryLabel.Location = new System.Drawing.Point(192, 18);
+            this.deptCountryLabel.Location = new System.Drawing.Point(124, 21);
             this.deptCountryLabel.Name = "deptCountryLabel";
             this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
             this.deptCountryLabel.TabIndex = 29;
@@ -925,7 +939,7 @@ namespace FlightReservationSystem
             this.deptCountriesComboBox.FormattingEnabled = true;
             this.deptCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.deptCountriesComboBox.ItemHeight = 30;
-            this.deptCountriesComboBox.Location = new System.Drawing.Point(175, 43);
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(107, 46);
             this.deptCountriesComboBox.Name = "deptCountriesComboBox";
             this.deptCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges34;
             this.deptCountriesComboBox.Size = new System.Drawing.Size(133, 36);
@@ -937,7 +951,7 @@ namespace FlightReservationSystem
             // deptDateLabel
             // 
             this.deptDateLabel.AutoSize = true;
-            this.deptDateLabel.Location = new System.Drawing.Point(607, 18);
+            this.deptDateLabel.Location = new System.Drawing.Point(539, 21);
             this.deptDateLabel.Name = "deptDateLabel";
             this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
             this.deptDateLabel.TabIndex = 27;
@@ -952,7 +966,7 @@ namespace FlightReservationSystem
             this.deptDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.deptDateTimePicker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.deptDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.deptDateTimePicker.Location = new System.Drawing.Point(561, 44);
+            this.deptDateTimePicker.Location = new System.Drawing.Point(493, 47);
             this.deptDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.deptDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.deptDateTimePicker.Name = "deptDateTimePicker";
@@ -975,7 +989,7 @@ namespace FlightReservationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1671, 710);
+            this.ClientSize = new System.Drawing.Size(1477, 756);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BookFlight";
             this.Text = "BookFlight";

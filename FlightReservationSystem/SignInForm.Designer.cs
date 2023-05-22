@@ -34,6 +34,7 @@ namespace FlightReservationSystem
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -58,7 +59,8 @@ namespace FlightReservationSystem
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.signInPanel);
-            this.contentSplitContainer.SplitterDistance = 231;
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
             // 
             // signInButton
             // 
@@ -74,7 +76,7 @@ namespace FlightReservationSystem
             this.signInButton.ShadowDecoration.BorderRadius = 20;
             this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            this.signInButton.Size = new System.Drawing.Size(231, 57);
+            this.signInButton.Size = new System.Drawing.Size(285, 57);
             // 
             // signUpButton
             // 
@@ -89,7 +91,7 @@ namespace FlightReservationSystem
             this.signUpButton.ShadowDecoration.BorderRadius = 20;
             this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.signUpButton.Size = new System.Drawing.Size(231, 57);
+            this.signUpButton.Size = new System.Drawing.Size(285, 57);
             // 
             // exploreFlightsButton
             // 
@@ -105,7 +107,7 @@ namespace FlightReservationSystem
             this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(231, 57);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
             // 
             // helpButton
             // 
@@ -117,10 +119,25 @@ namespace FlightReservationSystem
             this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.helpButton.Location = new System.Drawing.Point(0, 693);
             this.helpButton.ShadowDecoration.BorderRadius = 20;
             this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.helpButton.Size = new System.Drawing.Size(231, 63);
+            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges11;
             // 
             // signInPanel
             // 
@@ -132,7 +149,7 @@ namespace FlightReservationSystem
             this.signInPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.signInPanel.Location = new System.Drawing.Point(0, 0);
             this.signInPanel.Name = "signInPanel";
-            this.signInPanel.Size = new System.Drawing.Size(903, 600);
+            this.signInPanel.Size = new System.Drawing.Size(1188, 756);
             this.signInPanel.TabIndex = 0;
             // 
             // usernameSignInTextBox
@@ -148,7 +165,7 @@ namespace FlightReservationSystem
             this.usernameSignInTextBox.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.usernameSignInTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.usernameSignInTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameSignInTextBox.Location = new System.Drawing.Point(336, 201);
+            this.usernameSignInTextBox.Location = new System.Drawing.Point(505, 291);
             this.usernameSignInTextBox.Name = "usernameSignInTextBox";
             this.usernameSignInTextBox.PasswordChar = '\0';
             this.usernameSignInTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -171,7 +188,7 @@ namespace FlightReservationSystem
             this.passwordSignInTextBox.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.passwordSignInTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passwordSignInTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordSignInTextBox.Location = new System.Drawing.Point(336, 255);
+            this.passwordSignInTextBox.Location = new System.Drawing.Point(505, 345);
             this.passwordSignInTextBox.Name = "passwordSignInTextBox";
             this.passwordSignInTextBox.PasswordChar = '\0';
             this.passwordSignInTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
@@ -202,7 +219,7 @@ namespace FlightReservationSystem
             this.signInPanelButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.signInPanelButton.Image = global::FlightReservationSystem.Properties.Resources.FlightWhite;
             this.signInPanelButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.signInPanelButton.Location = new System.Drawing.Point(363, 312);
+            this.signInPanelButton.Location = new System.Drawing.Point(532, 402);
             this.signInPanelButton.Name = "signInPanelButton";
             this.signInPanelButton.Padding = new System.Windows.Forms.Padding(5);
             this.signInPanelButton.PressedColor = System.Drawing.Color.White;
@@ -218,7 +235,7 @@ namespace FlightReservationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 600);
+            this.ClientSize = new System.Drawing.Size(1477, 756);
             this.Name = "SignInForm";
             this.Text = "SignInForm";
             this.contentSplitContainer.Panel1.ResumeLayout(false);
