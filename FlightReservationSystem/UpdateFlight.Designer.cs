@@ -29,587 +29,596 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFlight));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.DeleteButton = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.AirCraftIdTextBox = new System.Windows.Forms.TextBox();
-            this.ArrivaldateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.DeparturedateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.RankCTextBox = new System.Windows.Forms.TextBox();
-            this.RankBTextBox = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.RankATextBox = new System.Windows.Forms.TextBox();
-            this.SeatsAvailabilityTextBox = new System.Windows.Forms.TextBox();
-            this.ArrivalCountryTextBox = new System.Windows.Forms.TextBox();
-            this.FlightNumberTextBox = new System.Windows.Forms.TextBox();
-            this.DepartureTextBox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.ClassPriceTextBox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.confirmButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.deptDateLabel = new System.Windows.Forms.Label();
-            this.arrivalCountryLabel = new System.Windows.Forms.Label();
-            this.deptCountryLabel = new System.Windows.Forms.Label();
-            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
-            this.AdminFlightDataGrid = new System.Windows.Forms.DataGridView();
-            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AirCraftID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
-            this.contentSplitContainer.Panel1.SuspendLayout();
-            this.contentSplitContainer.Panel2.SuspendLayout();
-            this.contentSplitContainer.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminFlightDataGrid)).BeginInit();
-            this.SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            panel3 = new Panel();
+            DeleteButton = new Button();
+            label8 = new Label();
+            AirCraftIdTextBox = new TextBox();
+            ArrivaldateTimePicker = new DateTimePicker();
+            label4 = new Label();
+            DeparturedateTimePicker = new DateTimePicker();
+            textBox10 = new TextBox();
+            RankCTextBox = new TextBox();
+            RankBTextBox = new TextBox();
+            textBox7 = new TextBox();
+            RankATextBox = new TextBox();
+            SeatsAvailabilityTextBox = new TextBox();
+            ArrivalCountryTextBox = new TextBox();
+            FlightNumberTextBox = new TextBox();
+            DepartureTextBox = new TextBox();
+            label14 = new Label();
+            ClassPriceTextBox = new TextBox();
+            label13 = new Label();
+            confirmButton = new Button();
+            label11 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            panel1 = new Panel();
+            deptDateLabel = new Label();
+            arrivalCountryLabel = new Label();
+            deptCountryLabel = new Label();
+            deptDateTimePicker = new DateTimePicker();
+            comboBox1 = new ComboBox();
+            deptCountriesComboBox = new ComboBox();
+            AdminFlightDataGrid = new DataGridView();
+            FlightNo = new DataGridViewTextBoxColumn();
+            AirCraftID = new DataGridViewTextBoxColumn();
+            deptDate = new DataGridViewTextBoxColumn();
+            expectedArrivalDate = new DataGridViewTextBoxColumn();
+            arrivalCountry = new DataGridViewTextBoxColumn();
+            deptCountry = new DataGridViewTextBoxColumn();
+            AvailableSeats = new DataGridViewTextBoxColumn();
+            Rank1Price = new DataGridViewTextBoxColumn();
+            Rank2Price = new DataGridViewTextBoxColumn();
+            Rank3Price = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
+            contentSplitContainer.Panel1.SuspendLayout();
+            contentSplitContainer.Panel2.SuspendLayout();
+            contentSplitContainer.SuspendLayout();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)AdminFlightDataGrid).BeginInit();
+            SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            contentSplitContainer.Margin = new Padding(3, 3, 3, 3);
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.Panel2.Controls.Add(this.panel3);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
-            this.contentSplitContainer.SplitterDistance = 285;
+            contentSplitContainer.Panel2.Controls.Add(panel1);
+            contentSplitContainer.Panel2.Controls.Add(panel3);
+            contentSplitContainer.Size = new Size(1688, 1008);
+            contentSplitContainer.SplitterDistance = 325;
+            contentSplitContainer.SplitterWidth = 6;
             // 
             // signInButton
             // 
-            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.signInButton.Location = new System.Drawing.Point(0, 43);
-            this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.signInButton.ShadowDecoration.BorderRadius = 20;
-            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            this.signInButton.Size = new System.Drawing.Size(285, 43);
+            signInButton.DialogResult = DialogResult.None;
+            signInButton.DisabledState.BorderColor = Color.DarkGray;
+            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            signInButton.Location = new Point(0, 57);
+            signInButton.ShadowDecoration.BorderRadius = 20;
+            signInButton.ShadowDecoration.Color = Color.Transparent;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            signInButton.Size = new Size(325, 57);
             // 
             // signUpButton
             // 
-            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.signUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.signUpButton.ShadowDecoration.BorderRadius = 20;
-            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.signUpButton.Size = new System.Drawing.Size(285, 43);
+            signUpButton.DialogResult = DialogResult.None;
+            signUpButton.DisabledState.BorderColor = Color.DarkGray;
+            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            signUpButton.ShadowDecoration.BorderRadius = 20;
+            signUpButton.ShadowDecoration.Color = Color.Transparent;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            signUpButton.Size = new Size(325, 57);
             // 
             // exploreFlightsButton
             // 
-            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 86);
-            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
+            exploreFlightsButton.DialogResult = DialogResult.None;
+            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            exploreFlightsButton.Location = new Point(0, 114);
+            exploreFlightsButton.Margin = new Padding(3, 3, 3, 3);
+            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            exploreFlightsButton.Size = new Size(325, 76);
             // 
             // helpButton
             // 
-            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.helpButton.Location = new System.Drawing.Point(0, 693);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.helpButton.ShadowDecoration.BorderRadius = 20;
-            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            helpButton.DialogResult = DialogResult.None;
+            helpButton.DisabledState.BorderColor = Color.DarkGray;
+            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            helpButton.Location = new Point(0, 924);
+            helpButton.Margin = new Padding(3, 3, 3, 3);
+            helpButton.ShadowDecoration.BorderRadius = 20;
+            helpButton.ShadowDecoration.Color = Color.Transparent;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            helpButton.Size = new Size(325, 84);
             // 
             // SignOutButton
             // 
-            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
-            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            SignOutButton.DialogResult = DialogResult.None;
+            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            SignOutButton.ShadowDecoration.BorderRadius = 20;
+            SignOutButton.ShadowDecoration.Color = Color.Transparent;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.DeleteButton);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.AirCraftIdTextBox);
-            this.panel3.Controls.Add(this.ArrivaldateTimePicker);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.DeparturedateTimePicker);
-            this.panel3.Controls.Add(this.textBox10);
-            this.panel3.Controls.Add(this.RankCTextBox);
-            this.panel3.Controls.Add(this.RankBTextBox);
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.RankATextBox);
-            this.panel3.Controls.Add(this.SeatsAvailabilityTextBox);
-            this.panel3.Controls.Add(this.ArrivalCountryTextBox);
-            this.panel3.Controls.Add(this.FlightNumberTextBox);
-            this.panel3.Controls.Add(this.DepartureTextBox);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.ClassPriceTextBox);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.confirmButton);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(833, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(352, 750);
-            this.panel3.TabIndex = 2;
+            panel3.Controls.Add(DeleteButton);
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(AirCraftIdTextBox);
+            panel3.Controls.Add(ArrivaldateTimePicker);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(DeparturedateTimePicker);
+            panel3.Controls.Add(textBox10);
+            panel3.Controls.Add(RankCTextBox);
+            panel3.Controls.Add(RankBTextBox);
+            panel3.Controls.Add(textBox7);
+            panel3.Controls.Add(RankATextBox);
+            panel3.Controls.Add(SeatsAvailabilityTextBox);
+            panel3.Controls.Add(ArrivalCountryTextBox);
+            panel3.Controls.Add(FlightNumberTextBox);
+            panel3.Controls.Add(DepartureTextBox);
+            panel3.Controls.Add(label14);
+            panel3.Controls.Add(ClassPriceTextBox);
+            panel3.Controls.Add(label13);
+            panel3.Controls.Add(confirmButton);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label6);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(label1);
+            panel3.Location = new Point(952, 4);
+            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(402, 1000);
+            panel3.TabIndex = 2;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(218, 597);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(95, 23);
-            this.DeleteButton.TabIndex = 63;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Location = new Point(249, 796);
+            DeleteButton.Margin = new Padding(3, 4, 3, 4);
+            DeleteButton.Name = "DeleteButton";
+            DeleteButton.Size = new Size(109, 31);
+            DeleteButton.TabIndex = 63;
+            DeleteButton.Text = "Delete";
+            DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 334);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 15);
-            this.label8.TabIndex = 62;
-            this.label8.Text = "Aircraft ID";
+            label8.AutoSize = true;
+            label8.Location = new Point(69, 445);
+            label8.Name = "label8";
+            label8.Size = new Size(77, 20);
+            label8.TabIndex = 62;
+            label8.Text = "Aircraft ID";
             // 
             // AirCraftIdTextBox
             // 
-            this.AirCraftIdTextBox.Location = new System.Drawing.Point(21, 352);
-            this.AirCraftIdTextBox.Name = "AirCraftIdTextBox";
-            this.AirCraftIdTextBox.Size = new System.Drawing.Size(135, 23);
-            this.AirCraftIdTextBox.TabIndex = 61;
+            AirCraftIdTextBox.Location = new Point(24, 469);
+            AirCraftIdTextBox.Margin = new Padding(3, 4, 3, 4);
+            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
+            AirCraftIdTextBox.Size = new Size(154, 27);
+            AirCraftIdTextBox.TabIndex = 61;
             // 
             // ArrivaldateTimePicker
             // 
-            this.ArrivaldateTimePicker.Location = new System.Drawing.Point(202, 235);
-            this.ArrivaldateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ArrivaldateTimePicker.Name = "ArrivaldateTimePicker";
-            this.ArrivaldateTimePicker.Size = new System.Drawing.Size(135, 23);
-            this.ArrivaldateTimePicker.TabIndex = 60;
+            ArrivaldateTimePicker.Location = new Point(231, 313);
+            ArrivaldateTimePicker.Name = "ArrivaldateTimePicker";
+            ArrivaldateTimePicker.Size = new Size(154, 27);
+            ArrivaldateTimePicker.TabIndex = 60;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(219, 275);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
-            this.label4.TabIndex = 59;
-            this.label4.Text = "Departure Date";
+            label4.AutoSize = true;
+            label4.Location = new Point(250, 367);
+            label4.Name = "label4";
+            label4.Size = new Size(112, 20);
+            label4.TabIndex = 59;
+            label4.Text = "Departure Date";
             // 
             // DeparturedateTimePicker
             // 
-            this.DeparturedateTimePicker.Location = new System.Drawing.Point(202, 292);
-            this.DeparturedateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DeparturedateTimePicker.Name = "DeparturedateTimePicker";
-            this.DeparturedateTimePicker.Size = new System.Drawing.Size(135, 23);
-            this.DeparturedateTimePicker.TabIndex = 56;
+            DeparturedateTimePicker.Location = new Point(231, 389);
+            DeparturedateTimePicker.Name = "DeparturedateTimePicker";
+            DeparturedateTimePicker.Size = new Size(154, 27);
+            DeparturedateTimePicker.TabIndex = 56;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(45, 530);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(113, 23);
-            this.textBox10.TabIndex = 55;
-            this.textBox10.Text = "Rank C";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox10.Location = new Point(51, 707);
+            textBox10.Margin = new Padding(3, 4, 3, 4);
+            textBox10.Name = "textBox10";
+            textBox10.ReadOnly = true;
+            textBox10.Size = new Size(129, 27);
+            textBox10.TabIndex = 55;
+            textBox10.Text = "Rank C";
+            textBox10.TextAlign = HorizontalAlignment.Center;
             // 
             // RankCTextBox
             // 
-            this.RankCTextBox.Location = new System.Drawing.Point(206, 530);
-            this.RankCTextBox.Name = "RankCTextBox";
-            this.RankCTextBox.Size = new System.Drawing.Size(115, 23);
-            this.RankCTextBox.TabIndex = 54;
+            RankCTextBox.Location = new Point(235, 707);
+            RankCTextBox.Margin = new Padding(3, 4, 3, 4);
+            RankCTextBox.Name = "RankCTextBox";
+            RankCTextBox.Size = new Size(131, 27);
+            RankCTextBox.TabIndex = 54;
             // 
             // RankBTextBox
             // 
-            this.RankBTextBox.Location = new System.Drawing.Point(206, 487);
-            this.RankBTextBox.Name = "RankBTextBox";
-            this.RankBTextBox.Size = new System.Drawing.Size(115, 23);
-            this.RankBTextBox.TabIndex = 53;
+            RankBTextBox.Location = new Point(235, 649);
+            RankBTextBox.Margin = new Padding(3, 4, 3, 4);
+            RankBTextBox.Name = "RankBTextBox";
+            RankBTextBox.Size = new Size(131, 27);
+            RankBTextBox.TabIndex = 53;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(45, 487);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(113, 23);
-            this.textBox7.TabIndex = 52;
-            this.textBox7.Text = "Rank B";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox7.Location = new Point(51, 649);
+            textBox7.Margin = new Padding(3, 4, 3, 4);
+            textBox7.Name = "textBox7";
+            textBox7.ReadOnly = true;
+            textBox7.Size = new Size(129, 27);
+            textBox7.TabIndex = 52;
+            textBox7.Text = "Rank B";
+            textBox7.TextAlign = HorizontalAlignment.Center;
             // 
             // RankATextBox
             // 
-            this.RankATextBox.Location = new System.Drawing.Point(206, 445);
-            this.RankATextBox.Name = "RankATextBox";
-            this.RankATextBox.Size = new System.Drawing.Size(115, 23);
-            this.RankATextBox.TabIndex = 51;
+            RankATextBox.Location = new Point(235, 593);
+            RankATextBox.Margin = new Padding(3, 4, 3, 4);
+            RankATextBox.Name = "RankATextBox";
+            RankATextBox.Size = new Size(131, 27);
+            RankATextBox.TabIndex = 51;
             // 
             // SeatsAvailabilityTextBox
             // 
-            this.SeatsAvailabilityTextBox.Location = new System.Drawing.Point(21, 293);
-            this.SeatsAvailabilityTextBox.Name = "SeatsAvailabilityTextBox";
-            this.SeatsAvailabilityTextBox.Size = new System.Drawing.Size(135, 23);
-            this.SeatsAvailabilityTextBox.TabIndex = 50;
+            SeatsAvailabilityTextBox.Location = new Point(24, 391);
+            SeatsAvailabilityTextBox.Margin = new Padding(3, 4, 3, 4);
+            SeatsAvailabilityTextBox.Name = "SeatsAvailabilityTextBox";
+            SeatsAvailabilityTextBox.Size = new Size(154, 27);
+            SeatsAvailabilityTextBox.TabIndex = 50;
             // 
             // ArrivalCountryTextBox
             // 
-            this.ArrivalCountryTextBox.Location = new System.Drawing.Point(21, 235);
-            this.ArrivalCountryTextBox.Name = "ArrivalCountryTextBox";
-            this.ArrivalCountryTextBox.ReadOnly = true;
-            this.ArrivalCountryTextBox.Size = new System.Drawing.Size(135, 23);
-            this.ArrivalCountryTextBox.TabIndex = 48;
+            ArrivalCountryTextBox.Location = new Point(24, 313);
+            ArrivalCountryTextBox.Margin = new Padding(3, 4, 3, 4);
+            ArrivalCountryTextBox.Name = "ArrivalCountryTextBox";
+            ArrivalCountryTextBox.ReadOnly = true;
+            ArrivalCountryTextBox.Size = new Size(154, 27);
+            ArrivalCountryTextBox.TabIndex = 48;
             // 
             // FlightNumberTextBox
             // 
-            this.FlightNumberTextBox.Location = new System.Drawing.Point(202, 179);
-            this.FlightNumberTextBox.Name = "FlightNumberTextBox";
-            this.FlightNumberTextBox.ReadOnly = true;
-            this.FlightNumberTextBox.Size = new System.Drawing.Size(135, 23);
-            this.FlightNumberTextBox.TabIndex = 47;
+            FlightNumberTextBox.Location = new Point(231, 239);
+            FlightNumberTextBox.Margin = new Padding(3, 4, 3, 4);
+            FlightNumberTextBox.Name = "FlightNumberTextBox";
+            FlightNumberTextBox.ReadOnly = true;
+            FlightNumberTextBox.Size = new Size(154, 27);
+            FlightNumberTextBox.TabIndex = 47;
             // 
             // DepartureTextBox
             // 
-            this.DepartureTextBox.Location = new System.Drawing.Point(21, 179);
-            this.DepartureTextBox.Name = "DepartureTextBox";
-            this.DepartureTextBox.ReadOnly = true;
-            this.DepartureTextBox.Size = new System.Drawing.Size(138, 23);
-            this.DepartureTextBox.TabIndex = 46;
+            DepartureTextBox.Location = new Point(24, 239);
+            DepartureTextBox.Margin = new Padding(3, 4, 3, 4);
+            DepartureTextBox.Name = "DepartureTextBox";
+            DepartureTextBox.ReadOnly = true;
+            DepartureTextBox.Size = new Size(157, 27);
+            DepartureTextBox.TabIndex = 46;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(218, 418);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 15);
-            this.label14.TabIndex = 43;
-            this.label14.Text = "Class Price";
+            label14.AutoSize = true;
+            label14.Location = new Point(249, 557);
+            label14.Name = "label14";
+            label14.Size = new Size(78, 20);
+            label14.TabIndex = 43;
+            label14.Text = "Class Price";
             // 
             // ClassPriceTextBox
             // 
-            this.ClassPriceTextBox.Location = new System.Drawing.Point(45, 445);
-            this.ClassPriceTextBox.Name = "ClassPriceTextBox";
-            this.ClassPriceTextBox.ReadOnly = true;
-            this.ClassPriceTextBox.Size = new System.Drawing.Size(113, 23);
-            this.ClassPriceTextBox.TabIndex = 42;
-            this.ClassPriceTextBox.Text = "Rank A";
-            this.ClassPriceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            ClassPriceTextBox.Location = new Point(51, 593);
+            ClassPriceTextBox.Margin = new Padding(3, 4, 3, 4);
+            ClassPriceTextBox.Name = "ClassPriceTextBox";
+            ClassPriceTextBox.ReadOnly = true;
+            ClassPriceTextBox.Size = new Size(129, 27);
+            ClassPriceTextBox.TabIndex = 42;
+            ClassPriceTextBox.Text = "Rank A";
+            ClassPriceTextBox.TextAlign = HorizontalAlignment.Center;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(75, 418);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 15);
-            this.label13.TabIndex = 41;
-            this.label13.Text = "Class";
+            label13.AutoSize = true;
+            label13.Location = new Point(86, 557);
+            label13.Name = "label13";
+            label13.Size = new Size(42, 20);
+            label13.TabIndex = 41;
+            label13.Text = "Class";
             // 
             // confirmButton
             // 
-            this.confirmButton.Location = new System.Drawing.Point(62, 597);
-            this.confirmButton.Name = "confirmButton";
-            this.confirmButton.Size = new System.Drawing.Size(95, 23);
-            this.confirmButton.TabIndex = 38;
-            this.confirmButton.Text = "Confirm";
-            this.confirmButton.UseVisualStyleBackColor = true;
+            confirmButton.Location = new Point(71, 796);
+            confirmButton.Margin = new Padding(3, 4, 3, 4);
+            confirmButton.Name = "confirmButton";
+            confirmButton.Size = new Size(109, 31);
+            confirmButton.TabIndex = 38;
+            confirmButton.Text = "Confirm";
+            confirmButton.UseVisualStyleBackColor = true;
+            confirmButton.Click += confirmButton_Click;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(45, 275);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 15);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Seats Available";
+            label11.AutoSize = true;
+            label11.Location = new Point(51, 367);
+            label11.Name = "label11";
+            label11.Size = new Size(110, 20);
+            label11.TabIndex = 34;
+            label11.Text = "Seats Available";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(221, 217);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Arrival Date";
+            label7.AutoSize = true;
+            label7.Location = new Point(253, 289);
+            label7.Name = "label7";
+            label7.Size = new Size(88, 20);
+            label7.TabIndex = 11;
+            label7.Text = "Arrival Date";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 217);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Arrival Country";
+            label6.AutoSize = true;
+            label6.Location = new Point(51, 289);
+            label6.Name = "label6";
+            label6.Size = new Size(107, 20);
+            label6.TabIndex = 9;
+            label6.Text = "Arrival Country";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 15);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Departure Country";
+            label5.AutoSize = true;
+            label5.Location = new Point(42, 205);
+            label5.Name = "label5";
+            label5.Size = new Size(131, 20);
+            label5.TabIndex = 7;
+            label5.Text = "Departure Country";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(221, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Flight Number";
+            label2.AutoSize = true;
+            label2.Location = new Point(253, 205);
+            label2.Name = "label2";
+            label2.Size = new Size(104, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Flight Number";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(116, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Update Flight";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(133, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(162, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Update Flight";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.deptDateLabel);
-            this.panel1.Controls.Add(this.arrivalCountryLabel);
-            this.panel1.Controls.Add(this.deptCountryLabel);
-            this.panel1.Controls.Add(this.deptDateTimePicker);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.deptCountriesComboBox);
-            this.panel1.Controls.Add(this.AdminFlightDataGrid);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(831, 747);
-            this.panel1.TabIndex = 3;
+            panel1.Controls.Add(deptDateLabel);
+            panel1.Controls.Add(arrivalCountryLabel);
+            panel1.Controls.Add(deptCountryLabel);
+            panel1.Controls.Add(deptDateTimePicker);
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(deptCountriesComboBox);
+            panel1.Controls.Add(AdminFlightDataGrid);
+            panel1.Location = new Point(3, 4);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(950, 996);
+            panel1.TabIndex = 3;
             // 
             // deptDateLabel
             // 
-            this.deptDateLabel.AutoSize = true;
-            this.deptDateLabel.Location = new System.Drawing.Point(451, 25);
-            this.deptDateLabel.Name = "deptDateLabel";
-            this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
-            this.deptDateLabel.TabIndex = 39;
-            this.deptDateLabel.Text = "Departure Date";
+            deptDateLabel.AutoSize = true;
+            deptDateLabel.Location = new Point(515, 33);
+            deptDateLabel.Name = "deptDateLabel";
+            deptDateLabel.Size = new Size(112, 20);
+            deptDateLabel.TabIndex = 39;
+            deptDateLabel.Text = "Departure Date";
             // 
             // arrivalCountryLabel
             // 
-            this.arrivalCountryLabel.AutoSize = true;
-            this.arrivalCountryLabel.Location = new System.Drawing.Point(305, 25);
-            this.arrivalCountryLabel.Name = "arrivalCountryLabel";
-            this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
-            this.arrivalCountryLabel.TabIndex = 38;
-            this.arrivalCountryLabel.Text = "Arrival Country";
+            arrivalCountryLabel.AutoSize = true;
+            arrivalCountryLabel.Location = new Point(349, 33);
+            arrivalCountryLabel.Name = "arrivalCountryLabel";
+            arrivalCountryLabel.Size = new Size(107, 20);
+            arrivalCountryLabel.TabIndex = 38;
+            arrivalCountryLabel.Text = "Arrival Country";
             // 
             // deptCountryLabel
             // 
-            this.deptCountryLabel.AutoSize = true;
-            this.deptCountryLabel.Location = new System.Drawing.Point(153, 22);
-            this.deptCountryLabel.Name = "deptCountryLabel";
-            this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
-            this.deptCountryLabel.TabIndex = 37;
-            this.deptCountryLabel.Text = "Departure Country";
+            deptCountryLabel.AutoSize = true;
+            deptCountryLabel.Location = new Point(175, 29);
+            deptCountryLabel.Name = "deptCountryLabel";
+            deptCountryLabel.Size = new Size(131, 20);
+            deptCountryLabel.TabIndex = 37;
+            deptCountryLabel.Text = "Departure Country";
             // 
             // deptDateTimePicker
             // 
-            this.deptDateTimePicker.Location = new System.Drawing.Point(451, 40);
-            this.deptDateTimePicker.Name = "deptDateTimePicker";
-            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
-            this.deptDateTimePicker.TabIndex = 36;
+            deptDateTimePicker.Location = new Point(515, 53);
+            deptDateTimePicker.Margin = new Padding(3, 4, 3, 4);
+            deptDateTimePicker.Name = "deptDateTimePicker";
+            deptDateTimePicker.Size = new Size(228, 27);
+            deptDateTimePicker.TabIndex = 36;
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(305, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 35;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(349, 53);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(138, 28);
+            comboBox1.TabIndex = 35;
+            comboBox1.DropDown += AdminArrivalCountriesComboBox_OnDropDown;
             // 
             // deptCountriesComboBox
             // 
-            this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.deptCountriesComboBox.FormattingEnabled = true;
-            this.deptCountriesComboBox.Location = new System.Drawing.Point(153, 40);
-            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
-            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
-            this.deptCountriesComboBox.TabIndex = 34;
+            deptCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptCountriesComboBox.FormattingEnabled = true;
+            deptCountriesComboBox.Location = new Point(175, 53);
+            deptCountriesComboBox.Margin = new Padding(3, 4, 3, 4);
+            deptCountriesComboBox.Name = "deptCountriesComboBox";
+            deptCountriesComboBox.Size = new Size(138, 28);
+            deptCountriesComboBox.TabIndex = 34;
+            deptCountriesComboBox.DropDown += AdminDeptCountriesComboBox_OnDropDown;
             // 
             // AdminFlightDataGrid
             // 
-            this.AdminFlightDataGrid.AllowUserToAddRows = false;
-            this.AdminFlightDataGrid.AllowUserToDeleteRows = false;
-            this.AdminFlightDataGrid.AllowUserToResizeColumns = false;
-            this.AdminFlightDataGrid.AllowUserToResizeRows = false;
-            this.AdminFlightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AdminFlightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.AdminFlightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AdminFlightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FlightNo,
-            this.AirCraftID,
-            this.deptDate,
-            this.expectedArrivalDate,
-            this.arrivalCountry,
-            this.deptCountry,
-            this.AvailableSeats,
-            this.Rank1Price,
-            this.Rank2Price,
-            this.Rank3Price});
-            this.AdminFlightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.AdminFlightDataGrid.Location = new System.Drawing.Point(0, 83);
-            this.AdminFlightDataGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AdminFlightDataGrid.Name = "AdminFlightDataGrid";
-            this.AdminFlightDataGrid.ReadOnly = true;
-            this.AdminFlightDataGrid.RowHeadersWidth = 51;
-            this.AdminFlightDataGrid.RowTemplate.Height = 25;
-            this.AdminFlightDataGrid.Size = new System.Drawing.Size(831, 664);
-            this.AdminFlightDataGrid.TabIndex = 33;
+            AdminFlightDataGrid.AllowUserToAddRows = false;
+            AdminFlightDataGrid.AllowUserToDeleteRows = false;
+            AdminFlightDataGrid.AllowUserToResizeColumns = false;
+            AdminFlightDataGrid.AllowUserToResizeRows = false;
+            AdminFlightDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            AdminFlightDataGrid.BackgroundColor = SystemColors.Control;
+            AdminFlightDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            AdminFlightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, AirCraftID, deptDate, expectedArrivalDate, arrivalCountry, deptCountry, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
+            AdminFlightDataGrid.Dock = DockStyle.Bottom;
+            AdminFlightDataGrid.Location = new Point(0, 111);
+            AdminFlightDataGrid.Name = "AdminFlightDataGrid";
+            AdminFlightDataGrid.ReadOnly = true;
+            AdminFlightDataGrid.RowHeadersWidth = 51;
+            AdminFlightDataGrid.RowTemplate.Height = 25;
+            AdminFlightDataGrid.Size = new Size(950, 885);
+            AdminFlightDataGrid.TabIndex = 33;
+            AdminFlightDataGrid.CellClick += AdminFlightDataGrid_CellClick;
             // 
             // FlightNo
             // 
-            this.FlightNo.HeaderText = "Flight Number";
-            this.FlightNo.MinimumWidth = 6;
-            this.FlightNo.Name = "FlightNo";
-            this.FlightNo.ReadOnly = true;
+            FlightNo.HeaderText = "Flight Number";
+            FlightNo.MinimumWidth = 6;
+            FlightNo.Name = "FlightNo";
+            FlightNo.ReadOnly = true;
             // 
             // AirCraftID
             // 
-            this.AirCraftID.HeaderText = "Aircraft ID";
-            this.AirCraftID.MinimumWidth = 6;
-            this.AirCraftID.Name = "AirCraftID";
-            this.AirCraftID.ReadOnly = true;
+            AirCraftID.HeaderText = "Aircraft ID";
+            AirCraftID.MinimumWidth = 6;
+            AirCraftID.Name = "AirCraftID";
+            AirCraftID.ReadOnly = true;
             // 
             // deptDate
             // 
-            this.deptDate.HeaderText = "Departure Date";
-            this.deptDate.MinimumWidth = 6;
-            this.deptDate.Name = "deptDate";
-            this.deptDate.ReadOnly = true;
+            deptDate.HeaderText = "Departure Date";
+            deptDate.MinimumWidth = 6;
+            deptDate.Name = "deptDate";
+            deptDate.ReadOnly = true;
             // 
             // expectedArrivalDate
             // 
-            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            this.expectedArrivalDate.MinimumWidth = 6;
-            this.expectedArrivalDate.Name = "expectedArrivalDate";
-            this.expectedArrivalDate.ReadOnly = true;
+            expectedArrivalDate.HeaderText = "Expected Arrival Date";
+            expectedArrivalDate.MinimumWidth = 6;
+            expectedArrivalDate.Name = "expectedArrivalDate";
+            expectedArrivalDate.ReadOnly = true;
             // 
             // arrivalCountry
             // 
-            this.arrivalCountry.HeaderText = "Arrival Country";
-            this.arrivalCountry.MinimumWidth = 6;
-            this.arrivalCountry.Name = "arrivalCountry";
-            this.arrivalCountry.ReadOnly = true;
+            arrivalCountry.HeaderText = "Arrival Country";
+            arrivalCountry.MinimumWidth = 6;
+            arrivalCountry.Name = "arrivalCountry";
+            arrivalCountry.ReadOnly = true;
             // 
             // deptCountry
             // 
-            this.deptCountry.HeaderText = "Departure Country";
-            this.deptCountry.MinimumWidth = 6;
-            this.deptCountry.Name = "deptCountry";
-            this.deptCountry.ReadOnly = true;
+            deptCountry.HeaderText = "Departure Country";
+            deptCountry.MinimumWidth = 6;
+            deptCountry.Name = "deptCountry";
+            deptCountry.ReadOnly = true;
             // 
             // AvailableSeats
             // 
-            this.AvailableSeats.HeaderText = "Available Seats";
-            this.AvailableSeats.MinimumWidth = 6;
-            this.AvailableSeats.Name = "AvailableSeats";
-            this.AvailableSeats.ReadOnly = true;
+            AvailableSeats.HeaderText = "Available Seats";
+            AvailableSeats.MinimumWidth = 6;
+            AvailableSeats.Name = "AvailableSeats";
+            AvailableSeats.ReadOnly = true;
             // 
             // Rank1Price
             // 
-            this.Rank1Price.HeaderText = "Rank A Price";
-            this.Rank1Price.MinimumWidth = 6;
-            this.Rank1Price.Name = "Rank1Price";
-            this.Rank1Price.ReadOnly = true;
+            Rank1Price.HeaderText = "Rank A Price";
+            Rank1Price.MinimumWidth = 6;
+            Rank1Price.Name = "Rank1Price";
+            Rank1Price.ReadOnly = true;
             // 
             // Rank2Price
             // 
-            this.Rank2Price.HeaderText = "Rank B Price";
-            this.Rank2Price.MinimumWidth = 6;
-            this.Rank2Price.Name = "Rank2Price";
-            this.Rank2Price.ReadOnly = true;
+            Rank2Price.HeaderText = "Rank B Price";
+            Rank2Price.MinimumWidth = 6;
+            Rank2Price.Name = "Rank2Price";
+            Rank2Price.ReadOnly = true;
             // 
             // Rank3Price
             // 
-            this.Rank3Price.HeaderText = "Rank C Price";
-            this.Rank3Price.MinimumWidth = 6;
-            this.Rank3Price.Name = "Rank3Price";
-            this.Rank3Price.ReadOnly = true;
+            Rank3Price.HeaderText = "Rank C Price";
+            Rank3Price.MinimumWidth = 6;
+            Rank3Price.Name = "Rank3Price";
+            Rank3Price.ReadOnly = true;
             // 
             // UpdateFlight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1477, 756);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "UpdateFlight";
-            this.Text = "UpdateFlight";
-            this.contentSplitContainer.Panel1.ResumeLayout(false);
-            this.contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
-            this.contentSplitContainer.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminFlightDataGrid)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1688, 1008);
+            Margin = new Padding(3, 3, 3, 3);
+            Name = "UpdateFlight";
+            Text = "UpdateFlight";
+            Load += UpdateFlight_Load;
+            contentSplitContainer.Panel1.ResumeLayout(false);
+            contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
+            contentSplitContainer.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)AdminFlightDataGrid).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
