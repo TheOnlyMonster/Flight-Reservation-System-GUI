@@ -30,609 +30,587 @@ namespace FlightReservationSystem
         /// </summary>
         private new void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel3 = new Panel();
-            label15 = new Label();
-            TotalPriceTextBox = new TextBox();
-            label14 = new Label();
-            ClassPriceTextBox = new TextBox();
-            label13 = new Label();
-            ClassComboBox = new ComboBox();
-            confirmButton = new Button();
-            seatsNumericUpDown = new NumericUpDown();
-            label12 = new Label();
-            seatsAvailableTextBox = new TextBox();
-            label11 = new Label();
-            cvvCreditCardTextBox = new TextBox();
-            label10 = new Label();
-            creditCardExpiryDateTextBox = new TextBox();
-            label9 = new Label();
-            creditCardTextBox = new TextBox();
-            label8 = new Label();
-            passportDateTimePicker = new DateTimePicker();
-            label4 = new Label();
-            passportNumberTextBox = new TextBox();
-            label3 = new Label();
-            arrivalDateTextBox = new TextBox();
-            label7 = new Label();
-            arrivalCountryTextBox = new TextBox();
-            label6 = new Label();
-            deptCountryTextBox = new TextBox();
-            label5 = new Label();
-            flightNoTextBox = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            panel2 = new Panel();
-            flightDataGrid = new DataGridView();
-            FlightNo = new DataGridViewTextBoxColumn();
-            deptDate = new DataGridViewTextBoxColumn();
-            deptCountry = new DataGridViewTextBoxColumn();
-            arrivalCountry = new DataGridViewTextBoxColumn();
-            expectedArrivalDate = new DataGridViewTextBoxColumn();
-            AvailableSeats = new DataGridViewTextBoxColumn();
-            Rank1Price = new DataGridViewTextBoxColumn();
-            Rank2Price = new DataGridViewTextBoxColumn();
-            Rank3Price = new DataGridViewTextBoxColumn();
-            arrivalCountryLabel = new Label();
-            arrivalCountriesComboBox = new ComboBox();
-            deptCountryLabel = new Label();
-            deptCountriesComboBox = new ComboBox();
-            deptDateLabel = new Label();
-            deptDateTimePicker = new DateTimePicker();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)seatsNumericUpDown).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)flightDataGrid).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.TotalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ClassPriceTextBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ClassComboBox = new System.Windows.Forms.ComboBox();
+            this.confirmButton = new System.Windows.Forms.Button();
+            this.seatsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.seatsAvailableTextBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cvvCreditCardTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.creditCardExpiryDateTextBox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.creditCardTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.passportDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.passportNumberTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.arrivalDateTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.arrivalCountryTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.deptCountryTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.flightNoTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.flightDataGrid = new System.Windows.Forms.DataGridView();
+            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountryLabel = new System.Windows.Forms.Label();
+            this.arrivalCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptCountryLabel = new System.Windows.Forms.Label();
+            this.deptCountriesComboBox = new System.Windows.Forms.ComboBox();
+            this.deptDateLabel = new System.Windows.Forms.Label();
+            this.deptDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seatsNumericUpDown)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).BeginInit();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
+            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(panel1);
-            contentSplitContainer.SplitterDistance = 262;
-            contentSplitContainer.SplitterWidth = 6;
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
+            this.contentSplitContainer.SplitterDistance = 262;
+            this.contentSplitContainer.SplitterWidth = 5;
             // 
             // signInButton
             // 
-            signInButton.Location = new Point(0, 76);
-            signInButton.Margin = new Padding(3, 4, 3, 4);
-            signInButton.Size = new Size(262, 76);
+            this.signInButton.Size = new System.Drawing.Size(262, 57);
             // 
             // signUpButton
             // 
-            signUpButton.Margin = new Padding(3, 4, 3, 4);
-            signUpButton.Size = new Size(262, 76);
+            this.signUpButton.Size = new System.Drawing.Size(262, 57);
             // 
             // helpButton
             // 
-            helpButton.Location = new Point(0, 681);
-            helpButton.Margin = new Padding(3, 7, 3, 7);
-            helpButton.Size = new Size(262, 112);
+            this.helpButton.Location = new System.Drawing.Point(0, 511);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.helpButton.Size = new System.Drawing.Size(262, 84);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Location = new Point(0, 152);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(262, 57);
             // 
             // bookFlightButton
             // 
-            bookFlightButton.Size = new Size(230, 63);
-            bookFlightButton.TabIndex = 4;
+            this.bookFlightButton.Size = new System.Drawing.Size(230, 63);
+            this.bookFlightButton.TabIndex = 4;
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1083, 793);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(915, 595);
+            this.panel1.TabIndex = 0;
             // 
             // panel3
             // 
-            panel3.Controls.Add(label15);
-            panel3.Controls.Add(TotalPriceTextBox);
-            panel3.Controls.Add(label14);
-            panel3.Controls.Add(ClassPriceTextBox);
-            panel3.Controls.Add(label13);
-            panel3.Controls.Add(ClassComboBox);
-            panel3.Controls.Add(confirmButton);
-            panel3.Controls.Add(seatsNumericUpDown);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(seatsAvailableTextBox);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(cvvCreditCardTextBox);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(creditCardExpiryDateTextBox);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(creditCardTextBox);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(passportDateTimePicker);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(passportNumberTextBox);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(arrivalDateTextBox);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(arrivalCountryTextBox);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(deptCountryTextBox);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(flightNoTextBox);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(647, 16);
-            panel3.Margin = new Padding(3, 4, 3, 4);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(433, 773);
-            panel3.TabIndex = 1;
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.TotalPriceTextBox);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.ClassPriceTextBox);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.ClassComboBox);
+            this.panel3.Controls.Add(this.confirmButton);
+            this.panel3.Controls.Add(this.seatsNumericUpDown);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.seatsAvailableTextBox);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.cvvCreditCardTextBox);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.creditCardExpiryDateTextBox);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.creditCardTextBox);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.passportDateTimePicker);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.passportNumberTextBox);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.arrivalDateTextBox);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.arrivalCountryTextBox);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.deptCountryTextBox);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.flightNoTextBox);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(566, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(379, 580);
+            this.panel3.TabIndex = 1;
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(81, 439);
-            label15.Name = "label15";
-            label15.Size = new Size(78, 20);
-            label15.TabIndex = 45;
-            label15.Text = "Total Price";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(71, 329);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(61, 15);
+            this.label15.TabIndex = 45;
+            this.label15.Text = "Total Price";
             // 
             // TotalPriceTextBox
             // 
-            TotalPriceTextBox.Location = new Point(158, 428);
-            TotalPriceTextBox.Margin = new Padding(3, 4, 3, 4);
-            TotalPriceTextBox.Name = "TotalPriceTextBox";
-            TotalPriceTextBox.ReadOnly = true;
-            TotalPriceTextBox.Size = new Size(149, 27);
-            TotalPriceTextBox.TabIndex = 44;
+            this.TotalPriceTextBox.Location = new System.Drawing.Point(138, 321);
+            this.TotalPriceTextBox.Name = "TotalPriceTextBox";
+            this.TotalPriceTextBox.ReadOnly = true;
+            this.TotalPriceTextBox.Size = new System.Drawing.Size(131, 23);
+            this.TotalPriceTextBox.TabIndex = 44;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(299, 345);
-            label14.Name = "label14";
-            label14.Size = new Size(78, 20);
-            label14.TabIndex = 43;
-            label14.Text = "Class Price";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(262, 259);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 15);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Class Price";
             // 
             // ClassPriceTextBox
             // 
-            ClassPriceTextBox.Location = new Point(255, 369);
-            ClassPriceTextBox.Margin = new Padding(3, 4, 3, 4);
-            ClassPriceTextBox.Name = "ClassPriceTextBox";
-            ClassPriceTextBox.ReadOnly = true;
-            ClassPriceTextBox.Size = new Size(145, 27);
-            ClassPriceTextBox.TabIndex = 42;
+            this.ClassPriceTextBox.Location = new System.Drawing.Point(223, 277);
+            this.ClassPriceTextBox.Name = "ClassPriceTextBox";
+            this.ClassPriceTextBox.ReadOnly = true;
+            this.ClassPriceTextBox.Size = new System.Drawing.Size(127, 23);
+            this.ClassPriceTextBox.TabIndex = 42;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(93, 345);
-            label13.Name = "label13";
-            label13.Size = new Size(42, 20);
-            label13.TabIndex = 41;
-            label13.Text = "Class";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(81, 259);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 15);
+            this.label13.TabIndex = 41;
+            this.label13.Text = "Class";
             // 
             // ClassComboBox
             // 
-            ClassComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            ClassComboBox.FormattingEnabled = true;
-            ClassComboBox.Location = new Point(40, 369);
-            ClassComboBox.Margin = new Padding(3, 4, 3, 4);
-            ClassComboBox.Name = "ClassComboBox";
-            ClassComboBox.Size = new Size(157, 28);
-            ClassComboBox.TabIndex = 40;
-            ClassComboBox.SelectedValueChanged += ClassComboBox_SelectedValueChanged;
+            this.ClassComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClassComboBox.FormattingEnabled = true;
+            this.ClassComboBox.Location = new System.Drawing.Point(35, 277);
+            this.ClassComboBox.Name = "ClassComboBox";
+            this.ClassComboBox.Size = new System.Drawing.Size(138, 23);
+            this.ClassComboBox.TabIndex = 40;
             // 
             // confirmButton
             // 
-            confirmButton.Location = new Point(211, 712);
-            confirmButton.Margin = new Padding(3, 4, 3, 4);
-            confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(115, 31);
-            confirmButton.TabIndex = 38;
-            confirmButton.Text = "Confirm Booking";
-            confirmButton.UseVisualStyleBackColor = true;
-            confirmButton.Click += confirmButton_Click;
+            this.confirmButton.Location = new System.Drawing.Point(185, 534);
+            this.confirmButton.Name = "confirmButton";
+            this.confirmButton.Size = new System.Drawing.Size(101, 23);
+            this.confirmButton.TabIndex = 38;
+            this.confirmButton.Text = "Confirm Booking";
+            this.confirmButton.UseVisualStyleBackColor = true;
             // 
             // seatsNumericUpDown
             // 
-            seatsNumericUpDown.Location = new Point(255, 295);
-            seatsNumericUpDown.Margin = new Padding(3, 4, 3, 4);
-            seatsNumericUpDown.Name = "seatsNumericUpDown";
-            seatsNumericUpDown.Size = new Size(137, 27);
-            seatsNumericUpDown.TabIndex = 37;
-            seatsNumericUpDown.ValueChanged += seatsNumericUpDown_UpButton;
+            this.seatsNumericUpDown.Location = new System.Drawing.Point(223, 221);
+            this.seatsNumericUpDown.Name = "seatsNumericUpDown";
+            this.seatsNumericUpDown.Size = new System.Drawing.Size(120, 23);
+            this.seatsNumericUpDown.TabIndex = 37;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(279, 269);
-            label12.Name = "label12";
-            label12.Size = new Size(102, 20);
-            label12.TabIndex = 36;
-            label12.Text = "Seats To Book";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(244, 202);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(79, 15);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "Seats To Book";
             // 
             // seatsAvailableTextBox
             // 
-            seatsAvailableTextBox.Location = new Point(37, 293);
-            seatsAvailableTextBox.Margin = new Padding(3, 4, 3, 4);
-            seatsAvailableTextBox.Name = "seatsAvailableTextBox";
-            seatsAvailableTextBox.ReadOnly = true;
-            seatsAvailableTextBox.Size = new Size(161, 27);
-            seatsAvailableTextBox.TabIndex = 35;
+            this.seatsAvailableTextBox.Location = new System.Drawing.Point(32, 220);
+            this.seatsAvailableTextBox.Name = "seatsAvailableTextBox";
+            this.seatsAvailableTextBox.ReadOnly = true;
+            this.seatsAvailableTextBox.Size = new System.Drawing.Size(141, 23);
+            this.seatsAvailableTextBox.TabIndex = 35;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(67, 269);
-            label11.Name = "label11";
-            label11.Size = new Size(110, 20);
-            label11.TabIndex = 34;
-            label11.Text = "Seats Available";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(59, 202);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 15);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Seats Available";
             // 
             // cvvCreditCardTextBox
             // 
-            cvvCreditCardTextBox.Location = new Point(157, 657);
-            cvvCreditCardTextBox.Margin = new Padding(3, 4, 3, 4);
-            cvvCreditCardTextBox.Name = "cvvCreditCardTextBox";
-            cvvCreditCardTextBox.Size = new Size(236, 27);
-            cvvCreditCardTextBox.TabIndex = 33;
+            this.cvvCreditCardTextBox.Location = new System.Drawing.Point(137, 493);
+            this.cvvCreditCardTextBox.Name = "cvvCreditCardTextBox";
+            this.cvvCreditCardTextBox.Size = new System.Drawing.Size(207, 23);
+            this.cvvCreditCardTextBox.TabIndex = 33;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(110, 661);
-            label10.Name = "label10";
-            label10.Size = new Size(36, 20);
-            label10.TabIndex = 32;
-            label10.Text = "CVV";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(96, 496);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 15);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "CVV";
             // 
             // creditCardExpiryDateTextBox
             // 
-            creditCardExpiryDateTextBox.Location = new Point(157, 619);
-            creditCardExpiryDateTextBox.Margin = new Padding(3, 4, 3, 4);
-            creditCardExpiryDateTextBox.Name = "creditCardExpiryDateTextBox";
-            creditCardExpiryDateTextBox.Size = new Size(236, 27);
-            creditCardExpiryDateTextBox.TabIndex = 31;
+            this.creditCardExpiryDateTextBox.Location = new System.Drawing.Point(137, 464);
+            this.creditCardExpiryDateTextBox.Name = "creditCardExpiryDateTextBox";
+            this.creditCardExpiryDateTextBox.Size = new System.Drawing.Size(207, 23);
+            this.creditCardExpiryDateTextBox.TabIndex = 31;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(67, 623);
-            label9.Name = "label9";
-            label9.Size = new Size(85, 20);
-            label9.TabIndex = 30;
-            label9.Text = "Expiry Date";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(59, 467);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 15);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Expiry Date";
             // 
             // creditCardTextBox
             // 
-            creditCardTextBox.Location = new Point(155, 580);
-            creditCardTextBox.Margin = new Padding(3, 4, 3, 4);
-            creditCardTextBox.Name = "creditCardTextBox";
-            creditCardTextBox.Size = new Size(236, 27);
-            creditCardTextBox.TabIndex = 29;
+            this.creditCardTextBox.Location = new System.Drawing.Point(136, 435);
+            this.creditCardTextBox.Name = "creditCardTextBox";
+            this.creditCardTextBox.Size = new System.Drawing.Size(207, 23);
+            this.creditCardTextBox.TabIndex = 29;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(10, 587);
-            label8.Name = "label8";
-            label8.Size = new Size(142, 20);
-            label8.TabIndex = 28;
-            label8.Text = "Credit Card Number";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 440);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 15);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Credit Card Number";
             // 
             // passportDateTimePicker
             // 
-            passportDateTimePicker.Location = new Point(155, 527);
-            passportDateTimePicker.Margin = new Padding(3, 4, 3, 4);
-            passportDateTimePicker.Name = "passportDateTimePicker";
-            passportDateTimePicker.Size = new Size(236, 27);
-            passportDateTimePicker.TabIndex = 27;
+            this.passportDateTimePicker.Location = new System.Drawing.Point(136, 395);
+            this.passportDateTimePicker.Name = "passportDateTimePicker";
+            this.passportDateTimePicker.Size = new System.Drawing.Size(207, 23);
+            this.passportDateTimePicker.TabIndex = 27;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 532);
-            label4.Name = "label4";
-            label4.Size = new Size(144, 20);
-            label4.TabIndex = 15;
-            label4.Text = "Passport Expiry Date";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 399);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Passport Expiry Date";
             // 
             // passportNumberTextBox
             // 
-            passportNumberTextBox.Location = new Point(155, 488);
-            passportNumberTextBox.Margin = new Padding(3, 4, 3, 4);
-            passportNumberTextBox.Name = "passportNumberTextBox";
-            passportNumberTextBox.Size = new Size(236, 27);
-            passportNumberTextBox.TabIndex = 14;
+            this.passportNumberTextBox.Location = new System.Drawing.Point(136, 366);
+            this.passportNumberTextBox.Name = "passportNumberTextBox";
+            this.passportNumberTextBox.Size = new System.Drawing.Size(207, 23);
+            this.passportNumberTextBox.TabIndex = 14;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(35, 492);
-            label3.Name = "label3";
-            label3.Size = new Size(122, 20);
-            label3.TabIndex = 13;
-            label3.Text = "Passport Number";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 369);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 15);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Passport Number";
             // 
             // arrivalDateTextBox
             // 
-            arrivalDateTextBox.Location = new Point(248, 216);
-            arrivalDateTextBox.Margin = new Padding(3, 4, 3, 4);
-            arrivalDateTextBox.Name = "arrivalDateTextBox";
-            arrivalDateTextBox.ReadOnly = true;
-            arrivalDateTextBox.Size = new Size(161, 27);
-            arrivalDateTextBox.TabIndex = 12;
+            this.arrivalDateTextBox.Location = new System.Drawing.Point(217, 162);
+            this.arrivalDateTextBox.Name = "arrivalDateTextBox";
+            this.arrivalDateTextBox.ReadOnly = true;
+            this.arrivalDateTextBox.Size = new System.Drawing.Size(141, 23);
+            this.arrivalDateTextBox.TabIndex = 12;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(287, 192);
-            label7.Name = "label7";
-            label7.Size = new Size(88, 20);
-            label7.TabIndex = 11;
-            label7.Text = "Arrival Date";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(251, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 15);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Arrival Date";
             // 
             // arrivalCountryTextBox
             // 
-            arrivalCountryTextBox.Location = new Point(37, 216);
-            arrivalCountryTextBox.Margin = new Padding(3, 4, 3, 4);
-            arrivalCountryTextBox.Name = "arrivalCountryTextBox";
-            arrivalCountryTextBox.ReadOnly = true;
-            arrivalCountryTextBox.Size = new Size(161, 27);
-            arrivalCountryTextBox.TabIndex = 10;
+            this.arrivalCountryTextBox.Location = new System.Drawing.Point(32, 162);
+            this.arrivalCountryTextBox.Name = "arrivalCountryTextBox";
+            this.arrivalCountryTextBox.ReadOnly = true;
+            this.arrivalCountryTextBox.Size = new System.Drawing.Size(141, 23);
+            this.arrivalCountryTextBox.TabIndex = 10;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(67, 192);
-            label6.Name = "label6";
-            label6.Size = new Size(107, 20);
-            label6.TabIndex = 9;
-            label6.Text = "Arrival Country";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(59, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 15);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Arrival Country";
             // 
             // deptCountryTextBox
             // 
-            deptCountryTextBox.Location = new Point(37, 132);
-            deptCountryTextBox.Margin = new Padding(3, 4, 3, 4);
-            deptCountryTextBox.Name = "deptCountryTextBox";
-            deptCountryTextBox.ReadOnly = true;
-            deptCountryTextBox.Size = new Size(161, 27);
-            deptCountryTextBox.TabIndex = 8;
+            this.deptCountryTextBox.Location = new System.Drawing.Point(32, 99);
+            this.deptCountryTextBox.Name = "deptCountryTextBox";
+            this.deptCountryTextBox.ReadOnly = true;
+            this.deptCountryTextBox.Size = new System.Drawing.Size(141, 23);
+            this.deptCountryTextBox.TabIndex = 8;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(58, 108);
-            label5.Name = "label5";
-            label5.Size = new Size(131, 20);
-            label5.TabIndex = 7;
-            label5.Text = "Departure Country";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(51, 81);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 15);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Departure Country";
             // 
             // flightNoTextBox
             // 
-            flightNoTextBox.Location = new Point(248, 132);
-            flightNoTextBox.Margin = new Padding(3, 4, 3, 4);
-            flightNoTextBox.Name = "flightNoTextBox";
-            flightNoTextBox.ReadOnly = true;
-            flightNoTextBox.Size = new Size(161, 27);
-            flightNoTextBox.TabIndex = 2;
+            this.flightNoTextBox.Location = new System.Drawing.Point(217, 99);
+            this.flightNoTextBox.Name = "flightNoTextBox";
+            this.flightNoTextBox.ReadOnly = true;
+            this.flightNoTextBox.Size = new System.Drawing.Size(141, 23);
+            this.flightNoTextBox.TabIndex = 2;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(275, 108);
-            label2.Name = "label2";
-            label2.Size = new Size(104, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Flight Number";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(241, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Flight Number";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(137, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(172, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Booking Flight";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(120, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Booking Flight";
             // 
             // panel2
             // 
-            panel2.Controls.Add(flightDataGrid);
-            panel2.Controls.Add(arrivalCountryLabel);
-            panel2.Controls.Add(arrivalCountriesComboBox);
-            panel2.Controls.Add(deptCountryLabel);
-            panel2.Controls.Add(deptCountriesComboBox);
-            panel2.Controls.Add(deptDateLabel);
-            panel2.Controls.Add(deptDateTimePicker);
-            panel2.Location = new Point(9, 16);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(637, 773);
-            panel2.TabIndex = 0;
+            this.panel2.Controls.Add(this.flightDataGrid);
+            this.panel2.Controls.Add(this.arrivalCountryLabel);
+            this.panel2.Controls.Add(this.arrivalCountriesComboBox);
+            this.panel2.Controls.Add(this.deptCountryLabel);
+            this.panel2.Controls.Add(this.deptCountriesComboBox);
+            this.panel2.Controls.Add(this.deptDateLabel);
+            this.panel2.Controls.Add(this.deptDateTimePicker);
+            this.panel2.Location = new System.Drawing.Point(8, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(557, 580);
+            this.panel2.TabIndex = 0;
             // 
             // flightDataGrid
             // 
-            flightDataGrid.AllowUserToAddRows = false;
-            flightDataGrid.AllowUserToDeleteRows = false;
-            flightDataGrid.AllowUserToResizeColumns = false;
-            flightDataGrid.AllowUserToResizeRows = false;
-            flightDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            flightDataGrid.BackgroundColor = SystemColors.Control;
-            flightDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            flightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrivalDate, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
-            flightDataGrid.Dock = DockStyle.Bottom;
-            flightDataGrid.Location = new Point(0, 132);
-            flightDataGrid.Name = "flightDataGrid";
-            flightDataGrid.ReadOnly = true;
-            flightDataGrid.RowHeadersWidth = 51;
-            flightDataGrid.RowTemplate.Height = 25;
-            flightDataGrid.Size = new Size(637, 641);
-            flightDataGrid.TabIndex = 32;
-            flightDataGrid.CellClick += flightDataGrid_CellClick;
+            this.flightDataGrid.AllowUserToAddRows = false;
+            this.flightDataGrid.AllowUserToDeleteRows = false;
+            this.flightDataGrid.AllowUserToResizeColumns = false;
+            this.flightDataGrid.AllowUserToResizeRows = false;
+            this.flightDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.flightDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.flightDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FlightNo,
+            this.deptDate,
+            this.deptCountry,
+            this.arrivalCountry,
+            this.expectedArrivalDate,
+            this.AvailableSeats,
+            this.Rank1Price,
+            this.Rank2Price,
+            this.Rank3Price});
+            this.flightDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 99);
+            this.flightDataGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.ReadOnly = true;
+            this.flightDataGrid.RowHeadersWidth = 51;
+            this.flightDataGrid.RowTemplate.Height = 25;
+            this.flightDataGrid.Size = new System.Drawing.Size(557, 481);
+            this.flightDataGrid.TabIndex = 32;
             // 
             // FlightNo
             // 
-            FlightNo.HeaderText = "Flight Number";
-            FlightNo.MinimumWidth = 6;
-            FlightNo.Name = "FlightNo";
-            FlightNo.ReadOnly = true;
+            this.FlightNo.HeaderText = "Flight Number";
+            this.FlightNo.MinimumWidth = 6;
+            this.FlightNo.Name = "FlightNo";
+            this.FlightNo.ReadOnly = true;
             // 
             // deptDate
             // 
-            deptDate.HeaderText = "Departure Date";
-            deptDate.MinimumWidth = 6;
-            deptDate.Name = "deptDate";
-            deptDate.ReadOnly = true;
+            this.deptDate.HeaderText = "Departure Date";
+            this.deptDate.MinimumWidth = 6;
+            this.deptDate.Name = "deptDate";
+            this.deptDate.ReadOnly = true;
             // 
             // deptCountry
             // 
-            deptCountry.HeaderText = "Departure Country";
-            deptCountry.MinimumWidth = 6;
-            deptCountry.Name = "deptCountry";
-            deptCountry.ReadOnly = true;
+            this.deptCountry.HeaderText = "Departure Country";
+            this.deptCountry.MinimumWidth = 6;
+            this.deptCountry.Name = "deptCountry";
+            this.deptCountry.ReadOnly = true;
             // 
             // arrivalCountry
             // 
-            arrivalCountry.HeaderText = "Arrival Country";
-            arrivalCountry.MinimumWidth = 6;
-            arrivalCountry.Name = "arrivalCountry";
-            arrivalCountry.ReadOnly = true;
+            this.arrivalCountry.HeaderText = "Arrival Country";
+            this.arrivalCountry.MinimumWidth = 6;
+            this.arrivalCountry.Name = "arrivalCountry";
+            this.arrivalCountry.ReadOnly = true;
             // 
             // expectedArrivalDate
             // 
-            expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            expectedArrivalDate.MinimumWidth = 6;
-            expectedArrivalDate.Name = "expectedArrivalDate";
-            expectedArrivalDate.ReadOnly = true;
+            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
+            this.expectedArrivalDate.MinimumWidth = 6;
+            this.expectedArrivalDate.Name = "expectedArrivalDate";
+            this.expectedArrivalDate.ReadOnly = true;
             // 
             // AvailableSeats
             // 
-            AvailableSeats.HeaderText = "Available Seats";
-            AvailableSeats.MinimumWidth = 6;
-            AvailableSeats.Name = "AvailableSeats";
-            AvailableSeats.ReadOnly = true;
+            this.AvailableSeats.HeaderText = "Available Seats";
+            this.AvailableSeats.MinimumWidth = 6;
+            this.AvailableSeats.Name = "AvailableSeats";
+            this.AvailableSeats.ReadOnly = true;
             // 
             // Rank1Price
             // 
-            Rank1Price.HeaderText = "Rank A Price";
-            Rank1Price.MinimumWidth = 6;
-            Rank1Price.Name = "Rank1Price";
-            Rank1Price.ReadOnly = true;
+            this.Rank1Price.HeaderText = "Rank A Price";
+            this.Rank1Price.MinimumWidth = 6;
+            this.Rank1Price.Name = "Rank1Price";
+            this.Rank1Price.ReadOnly = true;
             // 
             // Rank2Price
             // 
-            Rank2Price.HeaderText = "Rank B Price";
-            Rank2Price.MinimumWidth = 6;
-            Rank2Price.Name = "Rank2Price";
-            Rank2Price.ReadOnly = true;
+            this.Rank2Price.HeaderText = "Rank B Price";
+            this.Rank2Price.MinimumWidth = 6;
+            this.Rank2Price.Name = "Rank2Price";
+            this.Rank2Price.ReadOnly = true;
             // 
             // Rank3Price
             // 
-            Rank3Price.HeaderText = "Rank C Price";
-            Rank3Price.MinimumWidth = 6;
-            Rank3Price.Name = "Rank3Price";
-            Rank3Price.ReadOnly = true;
+            this.Rank3Price.HeaderText = "Rank C Price";
+            this.Rank3Price.MinimumWidth = 6;
+            this.Rank3Price.Name = "Rank3Price";
+            this.Rank3Price.ReadOnly = true;
             // 
             // arrivalCountryLabel
             // 
-            arrivalCountryLabel.AutoSize = true;
-            arrivalCountryLabel.Location = new Point(197, 21);
-            arrivalCountryLabel.Name = "arrivalCountryLabel";
-            arrivalCountryLabel.Size = new Size(107, 20);
-            arrivalCountryLabel.TabIndex = 31;
-            arrivalCountryLabel.Text = "Arrival Country";
+            this.arrivalCountryLabel.AutoSize = true;
+            this.arrivalCountryLabel.Location = new System.Drawing.Point(172, 16);
+            this.arrivalCountryLabel.Name = "arrivalCountryLabel";
+            this.arrivalCountryLabel.Size = new System.Drawing.Size(87, 15);
+            this.arrivalCountryLabel.TabIndex = 31;
+            this.arrivalCountryLabel.Text = "Arrival Country";
             // 
             // arrivalCountriesComboBox
             // 
-            arrivalCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            arrivalCountriesComboBox.FormattingEnabled = true;
-            arrivalCountriesComboBox.Location = new Point(178, 45);
-            arrivalCountriesComboBox.Margin = new Padding(3, 4, 3, 4);
-            arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
-            arrivalCountriesComboBox.Size = new Size(138, 28);
-            arrivalCountriesComboBox.TabIndex = 30;
-            arrivalCountriesComboBox.DropDown += arrivalCountriesComboBox_OnDropDown;
-            arrivalCountriesComboBox.TextChanged += bookFlightComboBox_Changed;
+            this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.arrivalCountriesComboBox.FormattingEnabled = true;
+            this.arrivalCountriesComboBox.Location = new System.Drawing.Point(156, 34);
+            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
+            this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.arrivalCountriesComboBox.TabIndex = 30;
             // 
             // deptCountryLabel
             // 
-            deptCountryLabel.AutoSize = true;
-            deptCountryLabel.Location = new Point(27, 21);
-            deptCountryLabel.Name = "deptCountryLabel";
-            deptCountryLabel.Size = new Size(131, 20);
-            deptCountryLabel.TabIndex = 29;
-            deptCountryLabel.Text = "Departure Country";
+            this.deptCountryLabel.AutoSize = true;
+            this.deptCountryLabel.Location = new System.Drawing.Point(24, 16);
+            this.deptCountryLabel.Name = "deptCountryLabel";
+            this.deptCountryLabel.Size = new System.Drawing.Size(105, 15);
+            this.deptCountryLabel.TabIndex = 29;
+            this.deptCountryLabel.Text = "Departure Country";
             // 
             // deptCountriesComboBox
             // 
-            deptCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            deptCountriesComboBox.FormattingEnabled = true;
-            deptCountriesComboBox.Location = new Point(19, 45);
-            deptCountriesComboBox.Margin = new Padding(3, 4, 3, 4);
-            deptCountriesComboBox.Name = "deptCountriesComboBox";
-            deptCountriesComboBox.Size = new Size(138, 28);
-            deptCountriesComboBox.TabIndex = 28;
-            deptCountriesComboBox.DropDown += deptCountriesComboBox_OnDropDown;
-            deptCountriesComboBox.TextChanged += bookFlightComboBox_Changed;
+            this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.deptCountriesComboBox.FormattingEnabled = true;
+            this.deptCountriesComboBox.Location = new System.Drawing.Point(17, 34);
+            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
+            this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.deptCountriesComboBox.TabIndex = 28;
             // 
             // deptDateLabel
             // 
-            deptDateLabel.AutoSize = true;
-            deptDateLabel.Location = new Point(408, 21);
-            deptDateLabel.Name = "deptDateLabel";
-            deptDateLabel.Size = new Size(112, 20);
-            deptDateLabel.TabIndex = 27;
-            deptDateLabel.Text = "Departure Date";
+            this.deptDateLabel.AutoSize = true;
+            this.deptDateLabel.Location = new System.Drawing.Point(357, 16);
+            this.deptDateLabel.Name = "deptDateLabel";
+            this.deptDateLabel.Size = new System.Drawing.Size(86, 15);
+            this.deptDateLabel.TabIndex = 27;
+            this.deptDateLabel.Text = "Departure Date";
             // 
             // deptDateTimePicker
             // 
-            deptDateTimePicker.Location = new Point(352, 45);
-            deptDateTimePicker.Margin = new Padding(3, 4, 3, 4);
-            deptDateTimePicker.Name = "deptDateTimePicker";
-            deptDateTimePicker.Size = new Size(228, 27);
-            deptDateTimePicker.TabIndex = 26;
-            deptDateTimePicker.ValueChanged += bookFlightComboBox_Changed;
+            this.deptDateTimePicker.Location = new System.Drawing.Point(308, 34);
+            this.deptDateTimePicker.Name = "deptDateTimePicker";
+            this.deptDateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.deptDateTimePicker.TabIndex = 26;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(138, 321);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(131, 27);
-            textBox1.TabIndex = 44;
+            this.textBox1.Location = new System.Drawing.Point(138, 321);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(131, 23);
+            this.textBox1.TabIndex = 44;
             // 
             // BookFlight
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1351, 793);
-            Margin = new Padding(3, 5, 3, 5);
-            Name = "BookFlight";
-            Text = "BookFlight";
-            Load += BookFlight_Load;
-            contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
-            contentSplitContainer.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)seatsNumericUpDown).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)flightDataGrid).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1182, 595);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "BookFlight";
+            this.Text = "BookFlight";
+            this.contentSplitContainer.Panel1.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
+            this.contentSplitContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seatsNumericUpDown)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flightDataGrid)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

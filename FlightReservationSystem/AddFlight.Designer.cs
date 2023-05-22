@@ -28,262 +28,268 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AddButton = new Button();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label3 = new Label();
-            AirCraftIdTextBox = new TextBox();
-            ArrivalTextBox = new TextBox();
-            SeatsTextBox = new TextBox();
-            label1 = new Label();
-            RankATextBox = new TextBox();
-            RankBTextBox = new TextBox();
-            RankCTextBox = new TextBox();
-            label2 = new Label();
-            label4 = new Label();
-            label10 = new Label();
-            DepatureTextBox = new TextBox();
-            DepartureDateTimePicker3 = new DateTimePicker();
-            ExpectedDateTimePicker4 = new DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            SuspendLayout();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.AirCraftIdTextBox = new System.Windows.Forms.TextBox();
+            this.ArrivalTextBox = new System.Windows.Forms.TextBox();
+            this.SeatsTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.RankATextBox = new System.Windows.Forms.TextBox();
+            this.RankBTextBox = new System.Windows.Forms.TextBox();
+            this.RankCTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.DepatureTextBox = new System.Windows.Forms.TextBox();
+            this.DepartureDateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.ExpectedDateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
+            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(ExpectedDateTimePicker4);
-            contentSplitContainer.Panel2.Controls.Add(DepartureDateTimePicker3);
-            contentSplitContainer.Panel2.Controls.Add(DepatureTextBox);
-            contentSplitContainer.Panel2.Controls.Add(label10);
-            contentSplitContainer.Panel2.Controls.Add(label4);
-            contentSplitContainer.Panel2.Controls.Add(label2);
-            contentSplitContainer.Panel2.Controls.Add(RankCTextBox);
-            contentSplitContainer.Panel2.Controls.Add(RankBTextBox);
-            contentSplitContainer.Panel2.Controls.Add(RankATextBox);
-            contentSplitContainer.Panel2.Controls.Add(AddButton);
-            contentSplitContainer.Panel2.Controls.Add(label9);
-            contentSplitContainer.Panel2.Controls.Add(label8);
-            contentSplitContainer.Panel2.Controls.Add(label7);
-            contentSplitContainer.Panel2.Controls.Add(label6);
-            contentSplitContainer.Panel2.Controls.Add(label5);
-            contentSplitContainer.Panel2.Controls.Add(label3);
-            contentSplitContainer.Panel2.Controls.Add(AirCraftIdTextBox);
-            contentSplitContainer.Panel2.Controls.Add(ArrivalTextBox);
-            contentSplitContainer.Panel2.Controls.Add(SeatsTextBox);
-            contentSplitContainer.Panel2.Controls.Add(label1);
-            contentSplitContainer.Size = new Size(914, 600);
-            contentSplitContainer.SplitterDistance = 178;
-            contentSplitContainer.SplitterWidth = 6;
+            this.contentSplitContainer.Panel2.Controls.Add(this.ExpectedDateTimePicker4);
+            this.contentSplitContainer.Panel2.Controls.Add(this.DepartureDateTimePicker3);
+            this.contentSplitContainer.Panel2.Controls.Add(this.DepatureTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label10);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label4);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label2);
+            this.contentSplitContainer.Panel2.Controls.Add(this.RankCTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.RankBTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.RankATextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.AddButton);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label9);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label8);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label7);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label6);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label5);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label3);
+            this.contentSplitContainer.Panel2.Controls.Add(this.AirCraftIdTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.ArrivalTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.SeatsTextBox);
+            this.contentSplitContainer.Panel2.Controls.Add(this.label1);
+            this.contentSplitContainer.Size = new System.Drawing.Size(800, 450);
+            this.contentSplitContainer.SplitterDistance = 155;
+            this.contentSplitContainer.SplitterWidth = 5;
             // 
             // signInButton
             // 
-            signInButton.Location = new Point(0, 76);
-            signInButton.Margin = new Padding(3, 4, 3, 4);
-            signInButton.Size = new Size(178, 76);
+            this.signInButton.Size = new System.Drawing.Size(155, 57);
             // 
             // signUpButton
             // 
-            signUpButton.Margin = new Padding(3, 4, 3, 4);
-            signUpButton.Size = new Size(178, 76);
+            this.signUpButton.Size = new System.Drawing.Size(155, 57);
             // 
             // helpButton
             // 
-            helpButton.Location = new Point(0, 516);
-            helpButton.Margin = new Padding(3, 5, 3, 5);
-            helpButton.Size = new Size(178, 84);
+            this.helpButton.Location = new System.Drawing.Point(0, 387);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.helpButton.Size = new System.Drawing.Size(155, 63);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.Location = new Point(0, 152);
-            exploreFlightsButton.Margin = new Padding(3, 5, 3, 5);
-            exploreFlightsButton.Size = new Size(178, 76);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.exploreFlightsButton.Size = new System.Drawing.Size(155, 57);
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(300, 532);
-            AddButton.Name = "AddButton";
-            AddButton.Size = new Size(146, 29);
-            AddButton.TabIndex = 34;
-            AddButton.Text = "Add";
-            AddButton.UseVisualStyleBackColor = true;
-            AddButton.Click += AddButton_Click;
+            this.AddButton.Location = new System.Drawing.Point(262, 399);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(128, 22);
+            this.AddButton.TabIndex = 34;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(523, 91);
-            label9.Name = "label9";
-            label9.Size = new Size(112, 20);
-            label9.TabIndex = 32;
-            label9.Text = "Departure Date";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(458, 68);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 15);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Departure Date";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(523, 178);
-            label8.Name = "label8";
-            label8.Size = new Size(107, 20);
-            label8.TabIndex = 31;
-            label8.Text = "Arrival Country";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(458, 134);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 15);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Arrival Country";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(60, 91);
-            label7.Name = "label7";
-            label7.Size = new Size(79, 20);
-            label7.TabIndex = 30;
-            label7.Text = "AirCraft ID";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(52, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 15);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "AirCraft ID";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(58, 178);
-            label6.Name = "label6";
-            label6.Size = new Size(117, 20);
-            label6.TabIndex = 29;
-            label6.Text = "Expected Arrival";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(51, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 15);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Expected Arrival";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(525, 267);
-            label5.Name = "label5";
-            label5.Size = new Size(110, 20);
-            label5.TabIndex = 28;
-            label5.Text = "Available Seats";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(459, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 15);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Available Seats";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(61, 267);
-            label3.Name = "label3";
-            label3.Size = new Size(131, 20);
-            label3.TabIndex = 27;
-            label3.Text = "Departure Country";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(53, 200);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 15);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Departure Country";
             // 
             // AirCraftIdTextBox
             // 
-            AirCraftIdTextBox.Location = new Point(59, 114);
-            AirCraftIdTextBox.Name = "AirCraftIdTextBox";
-            AirCraftIdTextBox.Size = new Size(164, 27);
-            AirCraftIdTextBox.TabIndex = 25;
+            this.AirCraftIdTextBox.Location = new System.Drawing.Point(52, 86);
+            this.AirCraftIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftIdTextBox.Name = "AirCraftIdTextBox";
+            this.AirCraftIdTextBox.Size = new System.Drawing.Size(144, 23);
+            this.AirCraftIdTextBox.TabIndex = 25;
             // 
             // ArrivalTextBox
             // 
-            ArrivalTextBox.Location = new Point(523, 201);
-            ArrivalTextBox.Name = "ArrivalTextBox";
-            ArrivalTextBox.Size = new Size(161, 27);
-            ArrivalTextBox.TabIndex = 24;
+            this.ArrivalTextBox.Location = new System.Drawing.Point(458, 151);
+            this.ArrivalTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ArrivalTextBox.Name = "ArrivalTextBox";
+            this.ArrivalTextBox.Size = new System.Drawing.Size(141, 23);
+            this.ArrivalTextBox.TabIndex = 24;
             // 
             // SeatsTextBox
             // 
-            SeatsTextBox.Location = new Point(523, 290);
-            SeatsTextBox.Name = "SeatsTextBox";
-            SeatsTextBox.Size = new Size(161, 27);
-            SeatsTextBox.TabIndex = 22;
+            this.SeatsTextBox.Location = new System.Drawing.Point(458, 218);
+            this.SeatsTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SeatsTextBox.Name = "SeatsTextBox";
+            this.SeatsTextBox.Size = new System.Drawing.Size(141, 23);
+            this.SeatsTextBox.TabIndex = 22;
             // 
             // label1
             // 
-            label1.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(271, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(175, 43);
-            label1.TabIndex = 21;
-            label1.Text = "Add Flight\r\n";
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(237, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 32);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Add Flight\r\n";
             // 
             // RankATextBox
             // 
-            RankATextBox.Location = new Point(61, 376);
-            RankATextBox.Name = "RankATextBox";
-            RankATextBox.Size = new Size(166, 27);
-            RankATextBox.TabIndex = 35;
+            this.RankATextBox.Location = new System.Drawing.Point(53, 282);
+            this.RankATextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RankATextBox.Name = "RankATextBox";
+            this.RankATextBox.Size = new System.Drawing.Size(146, 23);
+            this.RankATextBox.TabIndex = 35;
             // 
             // RankBTextBox
             // 
-            RankBTextBox.Location = new Point(523, 376);
-            RankBTextBox.Name = "RankBTextBox";
-            RankBTextBox.Size = new Size(161, 27);
-            RankBTextBox.TabIndex = 36;
+            this.RankBTextBox.Location = new System.Drawing.Point(458, 282);
+            this.RankBTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RankBTextBox.Name = "RankBTextBox";
+            this.RankBTextBox.Size = new System.Drawing.Size(141, 23);
+            this.RankBTextBox.TabIndex = 36;
             // 
             // RankCTextBox
             // 
-            RankCTextBox.Location = new Point(61, 463);
-            RankCTextBox.Name = "RankCTextBox";
-            RankCTextBox.Size = new Size(165, 27);
-            RankCTextBox.TabIndex = 37;
+            this.RankCTextBox.Location = new System.Drawing.Point(53, 347);
+            this.RankCTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RankCTextBox.Name = "RankCTextBox";
+            this.RankCTextBox.Size = new System.Drawing.Size(145, 23);
+            this.RankCTextBox.TabIndex = 37;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(61, 440);
-            label2.Name = "label2";
-            label2.Size = new Size(90, 20);
-            label2.TabIndex = 38;
-            label2.Text = "Rank C Price";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 330);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Rank C Price";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(523, 353);
-            label4.Name = "label4";
-            label4.Size = new Size(90, 20);
-            label4.TabIndex = 39;
-            label4.Text = "Rank B Price";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(458, 265);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 15);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Rank B Price";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(60, 353);
-            label10.Name = "label10";
-            label10.Size = new Size(91, 20);
-            label10.TabIndex = 40;
-            label10.Text = "Rank A Price";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(52, 265);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 15);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Rank A Price";
             // 
             // DepatureTextBox
             // 
-            DepatureTextBox.Location = new Point(60, 290);
-            DepatureTextBox.Name = "DepatureTextBox";
-            DepatureTextBox.Size = new Size(166, 27);
-            DepatureTextBox.TabIndex = 41;
+            this.DepatureTextBox.Location = new System.Drawing.Point(52, 218);
+            this.DepatureTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DepatureTextBox.Name = "DepatureTextBox";
+            this.DepatureTextBox.Size = new System.Drawing.Size(146, 23);
+            this.DepatureTextBox.TabIndex = 41;
             // 
             // DepartureDateTimePicker3
             // 
-            DepartureDateTimePicker3.Location = new Point(523, 114);
-            DepartureDateTimePicker3.Name = "DepartureDateTimePicker3";
-            DepartureDateTimePicker3.Size = new Size(161, 27);
-            DepartureDateTimePicker3.TabIndex = 44;
+            this.DepartureDateTimePicker3.Location = new System.Drawing.Point(458, 86);
+            this.DepartureDateTimePicker3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DepartureDateTimePicker3.Name = "DepartureDateTimePicker3";
+            this.DepartureDateTimePicker3.Size = new System.Drawing.Size(141, 23);
+            this.DepartureDateTimePicker3.TabIndex = 44;
             // 
             // ExpectedDateTimePicker4
             // 
-            ExpectedDateTimePicker4.Location = new Point(61, 199);
-            ExpectedDateTimePicker4.Name = "ExpectedDateTimePicker4";
-            ExpectedDateTimePicker4.Size = new Size(166, 27);
-            ExpectedDateTimePicker4.TabIndex = 45;
+            this.ExpectedDateTimePicker4.Location = new System.Drawing.Point(53, 149);
+            this.ExpectedDateTimePicker4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ExpectedDateTimePicker4.Name = "ExpectedDateTimePicker4";
+            this.ExpectedDateTimePicker4.Size = new System.Drawing.Size(146, 23);
+            this.ExpectedDateTimePicker4.TabIndex = 45;
             // 
             // AddFlight
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Margin = new Padding(3, 5, 3, 5);
-            Name = "AddFlight";
-            Text = "AddFlight";
-            contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
-            contentSplitContainer.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
-            contentSplitContainer.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "AddFlight";
+            this.Text = "AddFlight";
+            this.contentSplitContainer.Panel1.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
+            this.contentSplitContainer.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

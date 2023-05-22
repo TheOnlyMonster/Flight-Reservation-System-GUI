@@ -73,9 +73,39 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap download {
+        internal static System.Drawing.Bitmap background21 {
             get {
-                object obj = ResourceManager.GetObject("download", resourceCulture);
+                object obj = ResourceManager.GetObject("background21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlightWhite {
+            get {
+                object obj = ResourceManager.GetObject("FlightWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlightWhite1 {
+            get {
+                object obj = ResourceManager.GetObject("FlightWhite1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpWhite {
+            get {
+                object obj = ResourceManager.GetObject("HelpWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +126,16 @@ namespace FlightReservationSystem.Properties {
         internal static System.Drawing.Bitmap signInBackground {
             get {
                 object obj = ResourceManager.GetObject("signInBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignInIconBlue {
+            get {
+                object obj = ResourceManager.GetObject("SignInIconBlue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

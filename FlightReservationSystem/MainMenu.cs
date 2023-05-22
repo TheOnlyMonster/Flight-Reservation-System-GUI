@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.AnimatorNS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,7 @@ namespace FlightReservationSystem
 
 
 
-        protected string databaseConnection = "Server = LAPTOP-9HP7VCU2; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
         {
             InitializeComponent();
@@ -34,8 +35,6 @@ namespace FlightReservationSystem
                 contentSplitContainer.Panel1.Controls.Add(this.AddFlight);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateFlight);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateReservation);
-
-
             }
             else
             {
@@ -116,6 +115,32 @@ namespace FlightReservationSystem
             UpdateFlight.Show();
             this.Hide();
 
+        }
+
+        private void ApplyHoverTransition(Control control)
+        {
+            guna2Transition.SetDecoration(control, DecorationType.None);
+            guna2Transition.ShowSync(control);
+        }
+
+        private void RemoveHoverTransition(Control control)
+        {
+            guna2Transition.HideSync(control);
+        }
+        private void signUpButton_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void signUpButton_MouseLeave(object sender, EventArgs e)
+        {
+        }
+        private void guna2Button1_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2Button1_MouseLeave(object sender, EventArgs e)
+        {
         }
     }
 }
