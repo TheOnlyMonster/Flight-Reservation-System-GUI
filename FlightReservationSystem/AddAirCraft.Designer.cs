@@ -372,10 +372,10 @@
             "Active",
             "Inactive",
             "Maintainance"});
-            this.AirCraftComboBox.Location = new System.Drawing.Point(662, 418);
+            this.AirCraftComboBox.Location = new System.Drawing.Point(656, 418);
             this.AirCraftComboBox.Name = "AirCraftComboBox";
             this.AirCraftComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.AirCraftComboBox.Size = new System.Drawing.Size(190, 36);
+            this.AirCraftComboBox.Size = new System.Drawing.Size(200, 36);
             this.AirCraftComboBox.TabIndex = 53;
             this.AirCraftComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

@@ -114,6 +114,10 @@ namespace FlightReservationSystem
             return isValid;
         }
 
+        private void passwordShow_CheckedChanged(object sender, EventArgs e)
+        {
+            this.textBoxPassword.UseSystemPasswordChar = !textBoxPassword.UseSystemPasswordChar;
+        }
     }
 
 }

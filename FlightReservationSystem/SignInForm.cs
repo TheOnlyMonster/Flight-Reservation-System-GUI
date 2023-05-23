@@ -86,5 +86,10 @@ namespace FlightReservationSystem
             }
            
         }
+
+        private void showPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            this.passwordSignInTextBox.UseSystemPasswordChar = !passwordSignInTextBox.UseSystemPasswordChar;
+        }
     }
 }
