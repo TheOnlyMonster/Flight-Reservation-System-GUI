@@ -9,6 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Data.SqlClient;
+
 
 namespace FlightReservationSystem
 {
@@ -18,7 +21,7 @@ namespace FlightReservationSystem
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
 
-        protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        protected string databaseConnection = "Server = DESKTOP-A566IIT\\YASSINTAREK; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
         public MainMenu()
         {
             InitializeComponent();
@@ -131,8 +134,33 @@ namespace FlightReservationSystem
         }
 
         private void generateReport_Click(object sender, EventArgs e)
-        {
+        {   
+            DataTable dataTable = new DataTable();
+            string query = "SELECT f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate, COUNT(B.CustomerID) AS Reservations, Count(TicketPrice) As TotalPrice FROM Flight f LEFT JOIN BookingDetails B ON f.FlightNo = B.FlightNo GROUP BY f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate;";
+            using(SqlConnection connection = new SqlConnection(databaseConnection)) {
+                connection.Open();
+                SqlCommand command= new SqlCommand(query,connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            
+            string filePath = "file.csv";
+            GenerateCSVFile(dataTable, filePath);
+            MessageBox.Show("CSV file generated successfully.");
+        }
 
+        private void GenerateCSVFile(DataTable dataTable, string filePath)
+        {
+            StringBuilder sb = new StringBuilder();
+            IEnumerable<string> columnNames = dataTable.Columns.Cast<DataColumn>().Select(column => column.ColumnName);
+            sb.AppendLine(string.Join(",", columnNames));
+            foreach (DataRow row in dataTable.Rows)
+            {
+                IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
+                sb.AppendLine(string.Join(",", fields));
+            }
+            File.WriteAllText(filePath, sb.ToString());
         }
 
         private void helpButton_Click(object sender, EventArgs e)
