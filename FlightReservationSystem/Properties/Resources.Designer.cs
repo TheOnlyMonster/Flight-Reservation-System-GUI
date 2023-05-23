@@ -103,6 +103,16 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FlightBlack1 {
+            get {
+                object obj = ResourceManager.GetObject("FlightBlack1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FlightWhite {
             get {
                 object obj = ResourceManager.GetObject("FlightWhite", resourceCulture);
@@ -116,6 +126,16 @@ namespace FlightReservationSystem.Properties {
         internal static System.Drawing.Bitmap FlightWhite1 {
             get {
                 object obj = ResourceManager.GetObject("FlightWhite1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FlightWhite2 {
+            get {
+                object obj = ResourceManager.GetObject("FlightWhite2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,16 +22,65 @@ namespace FlightReservationSystem
             errorProvider = new ErrorProvider();
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
+        private void updateFlightComboBox_Changed(object sender, EventArgs e)
+        {
+            string query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
+            if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem == null)
+            {
+                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                    "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
+            }
+            else if (this.deptCountriesComboBox.SelectedItem == null)
+            {
+                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                    "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND arrivalCountry = @arrivalCountry";
+            }
+            else if (this.arrivalCountriesComboBox.SelectedItem == null)
+            {
+                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                    "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND deptCountry = @deptCountry";
+            }
+            AdminFlightDataGrid.Rows.Clear();
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
+                {
+                    command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
+                    command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
+                }
+                else if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem != null)
+                {
+                    command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
+                }
+                else if (this.arrivalCountriesComboBox.SelectedItem == null && this.deptCountriesComboBox.SelectedItem != null)
+                {
+                    command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
+                }
+                command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+                connection.Close();
+            }
+            foreach (DataRow row in dataTable.Rows)
+            {
+                object[] rowData = row.ItemArray;
+                AdminFlightDataGrid.Rows.Add(rowData);
+            }
+        }
 
         private void AdminDeptCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
             deptCountriesComboBox.Items.Clear();
-            fillComboBox($"Select DISTINCT deptCountry from Flight where AvailableSeats <> 0", deptCountriesComboBox);
+            fillComboBox($"Select DISTINCT deptCountry from Flight", deptCountriesComboBox);
         }
         private void AdminArrivalCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
-            comboBox1.Items.Clear();
-            fillComboBox($"Select DISTINCT arrivalCountry from Flight where AvailableSeats <> 0", comboBox1);
+            arrivalCountriesComboBox.Items.Clear();
+            fillComboBox($"Select DISTINCT arrivalCountry from Flight", arrivalCountriesComboBox);
         }
 
         private void fillComboBox(string query, ComboBox comboBox)
@@ -61,7 +110,7 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                string query = "SELECT * FROM Flight where AvailableSeats <> 0";
+                string query = "SELECT FlightNo, AircraftID, deptCountry,arrivalCountry, deptDate, expectedArrival,  AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
@@ -74,39 +123,6 @@ namespace FlightReservationSystem
             }
         }
 
-        private void UpdateFlightComboBox_Changed(object sender, EventArgs e)
-        {
-            string query = "SELECT * FROM Flight " +
-                    "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND AvailableSeats <> 0";
-            if (this.deptCountriesComboBox.SelectedItem == null || this.comboBox1.SelectedItem == null)
-            {
-                query = "Select * FROM Flight where AvailableSeats <> 0";
-            }
-
-            AdminFlightDataGrid.Rows.Clear();
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
-            {
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(query, connection);
-                if (this.deptCountriesComboBox.SelectedItem != null && this.comboBox1.SelectedItem != null)
-                {
-                    command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
-                    command.Parameters.AddWithValue("@arrivalCountry", this.comboBox1.SelectedItem.ToString());
-                    command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
-                }
-
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
-                connection.Close();
-            }
-            foreach (DataRow row in dataTable.Rows)
-            {
-                object[] rowData = row.ItemArray;
-                AdminFlightDataGrid.Rows.Add(rowData);
-            }
-        }
 
         private void AdminFlightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -172,8 +188,14 @@ namespace FlightReservationSystem
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+
+
+                //Differs From One Computer To Another. Previous was dd MMMM yyyy 
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                
+                
+                
                 command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
                 command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));

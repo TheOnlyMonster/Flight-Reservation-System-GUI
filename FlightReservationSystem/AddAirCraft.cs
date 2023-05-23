@@ -16,24 +16,13 @@ namespace FlightReservationSystem
 {
     public partial class AddAirCraft : MainMenu
     {
-        ErrorProvider errorProvider;
         public AddAirCraft()
         {
             InitializeComponent();
-            errorProvider = new ErrorProvider();   
-            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
-
         private void AddButton_Click(object sender, EventArgs e)
         {
-            //validating Capacity.
-            string capacity = this.CapacityTextBox.Text;
-            if (!ValidateCapacity(capacity))
-            {
-                errorProvider.SetError(CapacityTextBox, "Invalid Card number. Please enter a valid Card number.");
-                this.CapacityTextBox.Focus();
-                return;
-            }
+
 
             
             using (SqlConnection connection = new SqlConnection(databaseConnection))
@@ -43,25 +32,15 @@ namespace FlightReservationSystem
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Model", AirCraftTextBox.Text);
                 command.Parameters.AddWithValue("@Manufacturer", ManfucaturerTextBox.Text);
-                command.Parameters.AddWithValue("@AircraftType", AirCraftTextBox.Text);
-                command.Parameters.AddWithValue("@ManufactureYear", DateTime.ParseExact(manuYearDateTimePicker.Text, "yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@AircraftType", AircraftTypeTextBox.Text);
+                command.Parameters.AddWithValue("@ManufactureYear", int.Parse(manuYearDateTimePicker.Text));
                 command.Parameters.AddWithValue("@Capacity", int.Parse(CapacityTextBox.Text));
                 command.Parameters.AddWithValue("@Status", AirCraftComboBox.Text);
-                //string expectedArrivalDate = DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd");
-                //SqlDataAdapter adapter = new SqlDataAdapter(command);
                 command.ExecuteNonQuery();
                 connection.Close();
             }
+            MessageBox.Show("Aircraft Added Successfully!");
 
-        }
-
-        private bool ValidateCapacity(string capacity)
-        {
-            //Regular expression pattern for capacity.
-            string pattern = @"^[0-9]+$";
-            Regex regex = new Regex(pattern);
-            bool isValid = regex.IsMatch(capacity);
-            return isValid;
         }
 
     }

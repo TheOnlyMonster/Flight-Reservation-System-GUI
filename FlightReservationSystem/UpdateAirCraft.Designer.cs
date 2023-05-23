@@ -75,96 +75,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.AirCraftdataGridView)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // contentSplitContainer
-            // 
-            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            //
             // 
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.panel2);
             this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
-            this.contentSplitContainer.SplitterDistance = 285;
-            // 
-            // signInButton
-            // 
-            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.signInButton.Location = new System.Drawing.Point(0, 57);
-            this.signInButton.ShadowDecoration.BorderRadius = 20;
-            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            this.signInButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // signUpButton
-            // 
-            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.signUpButton.ShadowDecoration.BorderRadius = 20;
-            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.signUpButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // exploreFlightsButton
-            // 
-            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
-            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // helpButton
-            // 
-            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.helpButton.Location = new System.Drawing.Point(0, 693);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.helpButton.ShadowDecoration.BorderRadius = 20;
-            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.helpButton.Size = new System.Drawing.Size(285, 63);
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
-            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
             // panel1
             // 
@@ -483,9 +399,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(88, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 25);
+            this.label3.Size = new System.Drawing.Size(144, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Update AirCraft";
+            this.label3.Text = "Update Aircraft";
             // 
             // UpdateAirCraft
             // 

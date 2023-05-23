@@ -66,15 +66,15 @@ namespace FlightReservationSystem
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -108,6 +108,16 @@ namespace FlightReservationSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flightDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arrivalCountryLabel = new System.Windows.Forms.Label();
             this.arrivalCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.deptCountryLabel = new System.Windows.Forms.Label();
@@ -115,16 +125,6 @@ namespace FlightReservationSystem
             this.deptDateLabel = new System.Windows.Forms.Label();
             this.deptDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Rank3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank2Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank1Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AvailableSeats = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expectedArrivalDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arrivalCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.flightDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -142,92 +142,6 @@ namespace FlightReservationSystem
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
-            this.contentSplitContainer.SplitterDistance = 285;
-            // 
-            // bookFlightButton
-            // 
-            this.bookFlightButton.Size = new System.Drawing.Size(230, 63);
-            this.bookFlightButton.TabIndex = 4;
-            // 
-            // signInButton
-            // 
-            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.signInButton.Location = new System.Drawing.Point(0, 57);
-            this.signInButton.ShadowDecoration.BorderRadius = 20;
-            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges37;
-            this.signInButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // signUpButton
-            // 
-            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.signUpButton.ShadowDecoration.BorderRadius = 20;
-            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            this.signUpButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // exploreFlightsButton
-            // 
-            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 114);
-            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges39;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 57);
-            // 
-            // helpButton
-            // 
-            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.helpButton.Location = new System.Drawing.Point(0, 694);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.helpButton.ShadowDecoration.BorderRadius = 20;
-            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            this.helpButton.Size = new System.Drawing.Size(285, 62);
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
-            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges41;
             // 
             // panel1
             // 
@@ -311,7 +225,7 @@ namespace FlightReservationSystem
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(256, 259);
+            this.label14.Location = new System.Drawing.Point(256, 298);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 15);
             this.label14.TabIndex = 43;
@@ -329,7 +243,7 @@ namespace FlightReservationSystem
             this.ClassPriceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ClassPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClassPriceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ClassPriceTextBox.Location = new System.Drawing.Point(217, 277);
+            this.ClassPriceTextBox.Location = new System.Drawing.Point(217, 316);
             this.ClassPriceTextBox.Name = "ClassPriceTextBox";
             this.ClassPriceTextBox.PasswordChar = '\0';
             this.ClassPriceTextBox.PlaceholderText = "";
@@ -342,13 +256,13 @@ namespace FlightReservationSystem
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(81, 259);
+            this.label13.Location = new System.Drawing.Point(81, 298);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 41;
             this.label13.Text = "Class";
             // 
-            // AirCraftComboBox
+            // ClassComboBox
             // 
             this.ClassComboBox.BackColor = System.Drawing.Color.Transparent;
             this.ClassComboBox.BorderRadius = 20;
@@ -362,8 +276,8 @@ namespace FlightReservationSystem
             this.ClassComboBox.FormattingEnabled = true;
             this.ClassComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClassComboBox.ItemHeight = 30;
-            this.ClassComboBox.Location = new System.Drawing.Point(32, 277);
-            this.ClassComboBox.Name = "AirCraftComboBox";
+            this.ClassComboBox.Location = new System.Drawing.Point(32, 316);
+            this.ClassComboBox.Name = "ClassComboBox";
             this.ClassComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.ClassComboBox.Size = new System.Drawing.Size(141, 36);
             this.ClassComboBox.TabIndex = 52;
@@ -389,7 +303,6 @@ namespace FlightReservationSystem
             this.confirmButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.confirmButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.confirmButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.confirmButton.Image = ((System.Drawing.Image)(resources.GetObject("confirmButton.Image")));
             this.confirmButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.confirmButton.Location = new System.Drawing.Point(175, 659);
             this.confirmButton.Name = "confirmButton";
@@ -409,7 +322,7 @@ namespace FlightReservationSystem
             this.seatsNumericUpDown.BorderRadius = 20;
             this.seatsNumericUpDown.CustomizableEdges = customizableEdges9;
             this.seatsNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.seatsNumericUpDown.Location = new System.Drawing.Point(216, 221);
+            this.seatsNumericUpDown.Location = new System.Drawing.Point(216, 260);
             this.seatsNumericUpDown.Name = "seatsNumericUpDown";
             this.seatsNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.seatsNumericUpDown.Size = new System.Drawing.Size(141, 29);
@@ -421,7 +334,7 @@ namespace FlightReservationSystem
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(246, 203);
+            this.label12.Location = new System.Drawing.Point(246, 242);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 15);
             this.label12.TabIndex = 36;
@@ -439,7 +352,7 @@ namespace FlightReservationSystem
             this.seatsAvailableTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.seatsAvailableTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.seatsAvailableTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.seatsAvailableTextBox.Location = new System.Drawing.Point(32, 220);
+            this.seatsAvailableTextBox.Location = new System.Drawing.Point(32, 259);
             this.seatsAvailableTextBox.Name = "seatsAvailableTextBox";
             this.seatsAvailableTextBox.PasswordChar = '\0';
             this.seatsAvailableTextBox.PlaceholderText = "";
@@ -452,7 +365,7 @@ namespace FlightReservationSystem
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(59, 202);
+            this.label11.Location = new System.Drawing.Point(59, 241);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 15);
             this.label11.TabIndex = 34;
@@ -618,7 +531,7 @@ namespace FlightReservationSystem
             this.arrivalDateTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.arrivalDateTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.arrivalDateTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.arrivalDateTextBox.Location = new System.Drawing.Point(216, 162);
+            this.arrivalDateTextBox.Location = new System.Drawing.Point(216, 201);
             this.arrivalDateTextBox.Name = "arrivalDateTextBox";
             this.arrivalDateTextBox.PasswordChar = '\0';
             this.arrivalDateTextBox.PlaceholderText = "";
@@ -631,7 +544,7 @@ namespace FlightReservationSystem
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(251, 144);
+            this.label7.Location = new System.Drawing.Point(251, 183);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 15);
             this.label7.TabIndex = 11;
@@ -649,7 +562,7 @@ namespace FlightReservationSystem
             this.arrivalCountryTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.arrivalCountryTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.arrivalCountryTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.arrivalCountryTextBox.Location = new System.Drawing.Point(32, 162);
+            this.arrivalCountryTextBox.Location = new System.Drawing.Point(32, 201);
             this.arrivalCountryTextBox.Name = "arrivalCountryTextBox";
             this.arrivalCountryTextBox.PasswordChar = '\0';
             this.arrivalCountryTextBox.PlaceholderText = "";
@@ -662,7 +575,7 @@ namespace FlightReservationSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 144);
+            this.label6.Location = new System.Drawing.Point(59, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 9;
@@ -680,7 +593,7 @@ namespace FlightReservationSystem
             this.deptCountryTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.deptCountryTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.deptCountryTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.deptCountryTextBox.Location = new System.Drawing.Point(32, 99);
+            this.deptCountryTextBox.Location = new System.Drawing.Point(32, 138);
             this.deptCountryTextBox.Name = "deptCountryTextBox";
             this.deptCountryTextBox.PasswordChar = '\0';
             this.deptCountryTextBox.PlaceholderText = "";
@@ -693,7 +606,7 @@ namespace FlightReservationSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 81);
+            this.label5.Location = new System.Drawing.Point(51, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 15);
             this.label5.TabIndex = 7;
@@ -711,7 +624,7 @@ namespace FlightReservationSystem
             this.flightNoTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.flightNoTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.flightNoTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.flightNoTextBox.Location = new System.Drawing.Point(217, 99);
+            this.flightNoTextBox.Location = new System.Drawing.Point(217, 138);
             this.flightNoTextBox.Name = "flightNoTextBox";
             this.flightNoTextBox.PasswordChar = '\0';
             this.flightNoTextBox.PlaceholderText = "";
@@ -724,7 +637,7 @@ namespace FlightReservationSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 81);
+            this.label2.Location = new System.Drawing.Point(241, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 1;
@@ -755,6 +668,134 @@ namespace FlightReservationSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(805, 756);
             this.panel2.TabIndex = 0;
+            // 
+            // flightDataGrid
+            // 
+            this.flightDataGrid.AllowUserToAddRows = false;
+            this.flightDataGrid.AllowUserToDeleteRows = false;
+            this.flightDataGrid.AllowUserToResizeColumns = false;
+            this.flightDataGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.flightDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.flightDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.flightDataGrid.ColumnHeadersHeight = 40;
+            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FlightNo,
+            this.deptDate,
+            this.deptCountry,
+            this.arrivalCountry,
+            this.expectedArrivalDate,
+            this.AvailableSeats,
+            this.Rank1Price,
+            this.Rank2Price,
+            this.Rank3Price});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.flightDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.flightDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
+            this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
+            this.flightDataGrid.MultiSelect = false;
+            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.ReadOnly = true;
+            this.flightDataGrid.RowHeadersVisible = false;
+            this.flightDataGrid.RowHeadersWidth = 50;
+            this.flightDataGrid.RowTemplate.Height = 25;
+            this.flightDataGrid.Size = new System.Drawing.Size(804, 642);
+            this.flightDataGrid.TabIndex = 32;
+            this.flightDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.flightDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.flightDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.flightDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            this.flightDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.flightDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.flightDataGrid.ThemeStyle.HeaderStyle.Height = 40;
+            this.flightDataGrid.ThemeStyle.ReadOnly = true;
+            this.flightDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            this.flightDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.flightDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.flightDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.flightDataGrid.ThemeStyle.RowsStyle.Height = 25;
+            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.flightDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDataGrid_CellClick);
+            // 
+            // FlightNo
+            // 
+            this.FlightNo.HeaderText = "Flight Number";
+            this.FlightNo.Name = "FlightNo";
+            this.FlightNo.ReadOnly = true;
+            // 
+            // deptDate
+            // 
+            this.deptDate.HeaderText = "Departure Date";
+            this.deptDate.Name = "deptDate";
+            this.deptDate.ReadOnly = true;
+            // 
+            // deptCountry
+            // 
+            this.deptCountry.HeaderText = "Departure Country";
+            this.deptCountry.Name = "deptCountry";
+            this.deptCountry.ReadOnly = true;
+            // 
+            // arrivalCountry
+            // 
+            this.arrivalCountry.HeaderText = "Arrival Country";
+            this.arrivalCountry.Name = "arrivalCountry";
+            this.arrivalCountry.ReadOnly = true;
+            // 
+            // expectedArrivalDate
+            // 
+            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
+            this.expectedArrivalDate.Name = "expectedArrivalDate";
+            this.expectedArrivalDate.ReadOnly = true;
+            // 
+            // AvailableSeats
+            // 
+            this.AvailableSeats.HeaderText = "Available Seats";
+            this.AvailableSeats.Name = "AvailableSeats";
+            this.AvailableSeats.ReadOnly = true;
+            // 
+            // Rank1Price
+            // 
+            this.Rank1Price.HeaderText = "Rank A Price";
+            this.Rank1Price.MinimumWidth = 6;
+            this.Rank1Price.Name = "Rank1Price";
+            this.Rank1Price.ReadOnly = true;
+            // 
+            // Rank2Price
+            // 
+            this.Rank2Price.HeaderText = "Rank B Price";
+            this.Rank2Price.MinimumWidth = 6;
+            this.Rank2Price.Name = "Rank2Price";
+            this.Rank2Price.ReadOnly = true;
+            // 
+            // Rank3Price
+            // 
+            this.Rank3Price.HeaderText = "Rank C Price";
+            this.Rank3Price.MinimumWidth = 6;
+            this.Rank3Price.Name = "Rank3Price";
+            this.Rank3Price.ReadOnly = true;
             // 
             // arrivalCountryLabel
             // 
@@ -856,134 +897,6 @@ namespace FlightReservationSystem
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(131, 23);
             this.textBox1.TabIndex = 44;
-            // 
-            // Rank3Price
-            // 
-            this.Rank3Price.HeaderText = "Rank C Price";
-            this.Rank3Price.MinimumWidth = 6;
-            this.Rank3Price.Name = "Rank3Price";
-            this.Rank3Price.ReadOnly = true;
-            // 
-            // Rank2Price
-            // 
-            this.Rank2Price.HeaderText = "Rank B Price";
-            this.Rank2Price.MinimumWidth = 6;
-            this.Rank2Price.Name = "Rank2Price";
-            this.Rank2Price.ReadOnly = true;
-            // 
-            // Rank1Price
-            // 
-            this.Rank1Price.HeaderText = "Rank A Price";
-            this.Rank1Price.MinimumWidth = 6;
-            this.Rank1Price.Name = "Rank1Price";
-            this.Rank1Price.ReadOnly = true;
-            // 
-            // AvailableSeats
-            // 
-            this.AvailableSeats.HeaderText = "Available Seats";
-            this.AvailableSeats.Name = "AvailableSeats";
-            this.AvailableSeats.ReadOnly = true;
-            // 
-            // expectedArrivalDate
-            // 
-            this.expectedArrivalDate.HeaderText = "Expected Arrival Date";
-            this.expectedArrivalDate.Name = "expectedArrivalDate";
-            this.expectedArrivalDate.ReadOnly = true;
-            // 
-            // arrivalCountry
-            // 
-            this.arrivalCountry.HeaderText = "Arrival Country";
-            this.arrivalCountry.Name = "arrivalCountry";
-            this.arrivalCountry.ReadOnly = true;
-            // 
-            // deptCountry
-            // 
-            this.deptCountry.HeaderText = "Departure Country";
-            this.deptCountry.Name = "deptCountry";
-            this.deptCountry.ReadOnly = true;
-            // 
-            // deptDate
-            // 
-            this.deptDate.HeaderText = "Departure Date";
-            this.deptDate.Name = "deptDate";
-            this.deptDate.ReadOnly = true;
-            // 
-            // FlightNo
-            // 
-            this.FlightNo.HeaderText = "Flight Number";
-            this.FlightNo.Name = "FlightNo";
-            this.FlightNo.ReadOnly = true;
-            // 
-            // flightDataGrid
-            // 
-            this.flightDataGrid.AllowUserToAddRows = false;
-            this.flightDataGrid.AllowUserToDeleteRows = false;
-            this.flightDataGrid.AllowUserToResizeColumns = false;
-            this.flightDataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
-            this.flightDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.flightDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.flightDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.flightDataGrid.ColumnHeadersHeight = 40;
-            this.flightDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FlightNo,
-            this.deptDate,
-            this.deptCountry,
-            this.arrivalCountry,
-            this.expectedArrivalDate,
-            this.AvailableSeats,
-            this.Rank1Price,
-            this.Rank2Price,
-            this.Rank3Price});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.flightDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.flightDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
-            this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
-            this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
-            this.flightDataGrid.MultiSelect = false;
-            this.flightDataGrid.Name = "flightDataGrid";
-            this.flightDataGrid.ReadOnly = true;
-            this.flightDataGrid.RowHeadersVisible = false;
-            this.flightDataGrid.RowHeadersWidth = 50;
-            this.flightDataGrid.RowTemplate.Height = 25;
-            this.flightDataGrid.Size = new System.Drawing.Size(804, 642);
-            this.flightDataGrid.TabIndex = 32;
-            this.flightDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
-            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.flightDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.flightDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.flightDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
-            this.flightDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
-            this.flightDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.flightDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.flightDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.flightDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.flightDataGrid.ThemeStyle.HeaderStyle.Height = 40;
-            this.flightDataGrid.ThemeStyle.ReadOnly = true;
-            this.flightDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
-            this.flightDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.flightDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.flightDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.flightDataGrid.ThemeStyle.RowsStyle.Height = 25;
-            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
-            this.flightDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.flightDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.flightDataGrid_CellClick);
             // 
             // BookFlight
             // 
