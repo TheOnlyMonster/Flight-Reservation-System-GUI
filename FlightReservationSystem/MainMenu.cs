@@ -134,5 +134,12 @@ namespace FlightReservationSystem
         {
 
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            Help help = new Help();
+            help.Show();
+            this.Hide();
+        }
     }
 }

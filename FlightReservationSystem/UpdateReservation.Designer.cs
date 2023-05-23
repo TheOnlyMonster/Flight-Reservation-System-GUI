@@ -28,10 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateReservation));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateReservation));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -41,34 +60,16 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.FlighNoTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CustomerIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.UpdateReservationDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.FlighNoTextBox = new System.Windows.Forms.TextBox();
-            this.CustomerIdTextBox = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.StatusComboBox = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ConfirmButton = new System.Windows.Forms.Button();
-            this.RankComboBox = new System.Windows.Forms.ComboBox();
-            this.BookingIdTextBox = new System.Windows.Forms.TextBox();
-            this.FlightNoTextBox2 = new System.Windows.Forms.TextBox();
-            this.BookingDateTextBox = new System.Windows.Forms.TextBox();
-            this.SeatAssignmentTextBox = new System.Windows.Forms.TextBox();
-            this.TicketPriceTextBox = new System.Windows.Forms.TextBox();
-            this.CustomerIdTextBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FlightNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,6 +78,19 @@
             this.TicketPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.StatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ConfirmButton = new Guna.UI2.WinForms.Guna2Button();
+            this.RankComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.BookingIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FlightNoTextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BookingDateTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SeatAssignmentTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TicketPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CustomerIdTextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.Panel2.SuspendLayout();
@@ -105,10 +119,10 @@
             this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.signInButton.ShadowDecoration.BorderRadius = 20;
             this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges23;
             this.signInButton.Size = new System.Drawing.Size(285, 50);
             // 
             // signUpButton
@@ -120,10 +134,10 @@
             this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.signUpButton.ShadowDecoration.BorderRadius = 20;
             this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges24;
             this.signUpButton.Size = new System.Drawing.Size(285, 50);
             // 
             // exploreFlightsButton
@@ -135,10 +149,10 @@
             this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges25;
             this.exploreFlightsButton.Size = new System.Drawing.Size(285, 50);
             // 
             // helpButton
@@ -150,11 +164,11 @@
             this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.helpButton.Location = new System.Drawing.Point(0, 693);
             this.helpButton.ShadowDecoration.BorderRadius = 20;
             this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
             this.helpButton.Size = new System.Drawing.Size(285, 63);
             // 
             // SignOutButton
@@ -166,10 +180,10 @@
             this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.SignOutButton.ShadowDecoration.BorderRadius = 20;
             this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges27;
             // 
             // UpdateAircraft
             // 
@@ -180,10 +194,10 @@
             this.UpdateAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.UpdateAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.UpdateAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.UpdateAircraft.ShadowDecoration.BorderRadius = 20;
             this.UpdateAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges28;
             // 
             // UpdateFlight
             // 
@@ -194,10 +208,10 @@
             this.UpdateFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.UpdateFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             this.UpdateFlight.ShadowDecoration.BorderRadius = 20;
             this.UpdateFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges29;
             // 
             // UpdateInfo
             // 
@@ -208,10 +222,10 @@
             this.UpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateInfo.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.UpdateInfo.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             this.UpdateInfo.ShadowDecoration.BorderRadius = 20;
             this.UpdateInfo.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges30;
             // 
             // AddAircraft
             // 
@@ -222,10 +236,10 @@
             this.AddAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.AddAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.AddAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             this.AddAircraft.ShadowDecoration.BorderRadius = 20;
             this.AddAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            this.AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges31;
             // 
             // AddFlight
             // 
@@ -236,10 +250,10 @@
             this.AddFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.AddFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
             this.AddFlight.ShadowDecoration.BorderRadius = 20;
             this.AddFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges32;
             // 
             // bookFlightButton
             // 
@@ -250,10 +264,10 @@
             this.bookFlightButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.bookFlightButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bookFlightButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
             this.bookFlightButton.ShadowDecoration.BorderRadius = 20;
             this.bookFlightButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges33;
             // 
             // generateReport
             // 
@@ -264,15 +278,13 @@
             this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
             this.generateReport.ShadowDecoration.BorderRadius = 20;
             this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges34;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.FlighNoTextBox);
             this.panel1.Controls.Add(this.CustomerIdTextBox);
             this.panel1.Controls.Add(this.UpdateReservationDataGridView);
@@ -280,6 +292,50 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(844, 750);
             this.panel1.TabIndex = 0;
+            // 
+            // FlighNoTextBox
+            // 
+            this.FlighNoTextBox.BorderRadius = 20;
+            this.FlighNoTextBox.CustomizableEdges = customizableEdges19;
+            this.FlighNoTextBox.DefaultText = "";
+            this.FlighNoTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FlighNoTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FlighNoTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FlighNoTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FlighNoTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FlighNoTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FlighNoTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FlighNoTextBox.Location = new System.Drawing.Point(461, 14);
+            this.FlighNoTextBox.Name = "FlighNoTextBox";
+            this.FlighNoTextBox.PasswordChar = '\0';
+            this.FlighNoTextBox.PlaceholderText = "Flight No";
+            this.FlighNoTextBox.SelectedText = "";
+            this.FlighNoTextBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.FlighNoTextBox.Size = new System.Drawing.Size(128, 33);
+            this.FlighNoTextBox.TabIndex = 2;
+            this.FlighNoTextBox.TextChanged += new System.EventHandler(this.FlighNoTextBox_TextChanged);
+            // 
+            // CustomerIdTextBox
+            // 
+            this.CustomerIdTextBox.BorderRadius = 20;
+            this.CustomerIdTextBox.CustomizableEdges = customizableEdges21;
+            this.CustomerIdTextBox.DefaultText = "";
+            this.CustomerIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CustomerIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CustomerIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerIdTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomerIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerIdTextBox.Location = new System.Drawing.Point(289, 14);
+            this.CustomerIdTextBox.Name = "CustomerIdTextBox";
+            this.CustomerIdTextBox.PasswordChar = '\0';
+            this.CustomerIdTextBox.PlaceholderText = "Customer ID";
+            this.CustomerIdTextBox.SelectedText = "";
+            this.CustomerIdTextBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.CustomerIdTextBox.Size = new System.Drawing.Size(141, 33);
+            this.CustomerIdTextBox.TabIndex = 47;
+            this.CustomerIdTextBox.TextChanged += new System.EventHandler(this.CustomerIdTextBox_TextChanged);
             // 
             // UpdateReservationDataGridView
             // 
@@ -317,7 +373,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.UpdateReservationDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.UpdateReservationDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
-            this.UpdateReservationDataGridView.Location = new System.Drawing.Point(0, 47);
+            this.UpdateReservationDataGridView.Location = new System.Drawing.Point(0, 63);
             this.UpdateReservationDataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.UpdateReservationDataGridView.MultiSelect = false;
             this.UpdateReservationDataGridView.Name = "UpdateReservationDataGridView";
@@ -325,7 +381,7 @@
             this.UpdateReservationDataGridView.RowHeadersVisible = false;
             this.UpdateReservationDataGridView.RowHeadersWidth = 50;
             this.UpdateReservationDataGridView.RowTemplate.Height = 25;
-            this.UpdateReservationDataGridView.Size = new System.Drawing.Size(844, 703);
+            this.UpdateReservationDataGridView.Size = new System.Drawing.Size(847, 687);
             this.UpdateReservationDataGridView.TabIndex = 33;
             this.UpdateReservationDataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             this.UpdateReservationDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
@@ -350,226 +406,6 @@
             this.UpdateReservationDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
             this.UpdateReservationDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.UpdateReservationDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UpdateReservationDataGridView_CellClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(450, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Flight No";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Customer ID";
-            // 
-            // FlighNoTextBox
-            // 
-            this.FlighNoTextBox.Location = new System.Drawing.Point(517, 14);
-            this.FlighNoTextBox.Name = "FlighNoTextBox";
-            this.FlighNoTextBox.Size = new System.Drawing.Size(100, 23);
-            this.FlighNoTextBox.TabIndex = 2;
-            this.FlighNoTextBox.TextChanged += new System.EventHandler(this.FlighNoTextBox_TextChanged);
-            // 
-            // CustomerIdTextBox
-            // 
-            this.CustomerIdTextBox.Location = new System.Drawing.Point(270, 14);
-            this.CustomerIdTextBox.Name = "CustomerIdTextBox";
-            this.CustomerIdTextBox.Size = new System.Drawing.Size(110, 23);
-            this.CustomerIdTextBox.TabIndex = 1;
-            this.CustomerIdTextBox.TextChanged += new System.EventHandler(this.CustomerIdTextBox_TextChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.StatusComboBox);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.ConfirmButton);
-            this.panel2.Controls.Add(this.RankComboBox);
-            this.panel2.Controls.Add(this.BookingIdTextBox);
-            this.panel2.Controls.Add(this.FlightNoTextBox2);
-            this.panel2.Controls.Add(this.BookingDateTextBox);
-            this.panel2.Controls.Add(this.SeatAssignmentTextBox);
-            this.panel2.Controls.Add(this.TicketPriceTextBox);
-            this.panel2.Controls.Add(this.CustomerIdTextBox2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(853, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(332, 750);
-            this.panel2.TabIndex = 1;
-            // 
-            // StatusComboBox
-            // 
-            this.StatusComboBox.FormattingEnabled = true;
-            this.StatusComboBox.Items.AddRange(new object[] {
-            "Confirmed",
-            "Canceled"});
-            this.StatusComboBox.Location = new System.Drawing.Point(42, 443);
-            this.StatusComboBox.Name = "StatusComboBox";
-            this.StatusComboBox.Size = new System.Drawing.Size(100, 23);
-            this.StatusComboBox.TabIndex = 20;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(199, 215);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 15);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Flight No";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(42, 285);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 15);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Booking ID";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(199, 360);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 15);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Ticket Price";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(199, 425);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 15);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Rank";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 360);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 15);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Seat Assignment";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(42, 425);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 15);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Status";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(199, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Booking Date";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 15);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Customer ID";
-            // 
-            // ConfirmButton
-            // 
-            this.ConfirmButton.Location = new System.Drawing.Point(114, 546);
-            this.ConfirmButton.Name = "ConfirmButton";
-            this.ConfirmButton.Size = new System.Drawing.Size(116, 23);
-            this.ConfirmButton.TabIndex = 10;
-            this.ConfirmButton.Text = "Confirm";
-            this.ConfirmButton.UseVisualStyleBackColor = true;
-            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
-            // 
-            // RankComboBox
-            // 
-            this.RankComboBox.FormattingEnabled = true;
-            this.RankComboBox.Items.AddRange(new object[] {
-            "A Class",
-            "B Class",
-            "C Class"});
-            this.RankComboBox.Location = new System.Drawing.Point(199, 443);
-            this.RankComboBox.Name = "RankComboBox";
-            this.RankComboBox.Size = new System.Drawing.Size(100, 23);
-            this.RankComboBox.TabIndex = 8;
-            // 
-            // BookingIdTextBox
-            // 
-            this.BookingIdTextBox.Location = new System.Drawing.Point(42, 303);
-            this.BookingIdTextBox.Name = "BookingIdTextBox";
-            this.BookingIdTextBox.ReadOnly = true;
-            this.BookingIdTextBox.Size = new System.Drawing.Size(100, 23);
-            this.BookingIdTextBox.TabIndex = 7;
-            // 
-            // FlightNoTextBox2
-            // 
-            this.FlightNoTextBox2.Location = new System.Drawing.Point(199, 233);
-            this.FlightNoTextBox2.Name = "FlightNoTextBox2";
-            this.FlightNoTextBox2.ReadOnly = true;
-            this.FlightNoTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.FlightNoTextBox2.TabIndex = 6;
-            // 
-            // BookingDateTextBox
-            // 
-            this.BookingDateTextBox.Location = new System.Drawing.Point(199, 303);
-            this.BookingDateTextBox.Name = "BookingDateTextBox";
-            this.BookingDateTextBox.ReadOnly = true;
-            this.BookingDateTextBox.Size = new System.Drawing.Size(100, 23);
-            this.BookingDateTextBox.TabIndex = 5;
-            // 
-            // SeatAssignmentTextBox
-            // 
-            this.SeatAssignmentTextBox.Location = new System.Drawing.Point(42, 378);
-            this.SeatAssignmentTextBox.Name = "SeatAssignmentTextBox";
-            this.SeatAssignmentTextBox.Size = new System.Drawing.Size(100, 23);
-            this.SeatAssignmentTextBox.TabIndex = 4;
-            // 
-            // TicketPriceTextBox
-            // 
-            this.TicketPriceTextBox.Location = new System.Drawing.Point(199, 378);
-            this.TicketPriceTextBox.Name = "TicketPriceTextBox";
-            this.TicketPriceTextBox.Size = new System.Drawing.Size(100, 23);
-            this.TicketPriceTextBox.TabIndex = 3;
-            // 
-            // CustomerIdTextBox2
-            // 
-            this.CustomerIdTextBox2.Location = new System.Drawing.Point(42, 233);
-            this.CustomerIdTextBox2.Name = "CustomerIdTextBox2";
-            this.CustomerIdTextBox2.ReadOnly = true;
-            this.CustomerIdTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.CustomerIdTextBox2.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(87, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Update Reservation";
             // 
             // BookingID
             // 
@@ -621,6 +457,267 @@
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.StatusComboBox);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.ConfirmButton);
+            this.panel2.Controls.Add(this.RankComboBox);
+            this.panel2.Controls.Add(this.BookingIdTextBox);
+            this.panel2.Controls.Add(this.FlightNoTextBox2);
+            this.panel2.Controls.Add(this.BookingDateTextBox);
+            this.panel2.Controls.Add(this.SeatAssignmentTextBox);
+            this.panel2.Controls.Add(this.TicketPriceTextBox);
+            this.panel2.Controls.Add(this.CustomerIdTextBox2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(853, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(332, 750);
+            this.panel2.TabIndex = 1;
+            // 
+            // StatusComboBox
+            // 
+            this.StatusComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.StatusComboBox.BorderRadius = 20;
+            this.StatusComboBox.CustomizableEdges = customizableEdges1;
+            this.StatusComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.StatusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StatusComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.StatusComboBox.FormattingEnabled = true;
+            this.StatusComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.StatusComboBox.ItemHeight = 30;
+            this.StatusComboBox.Items.AddRange(new object[] {
+            "Confirmed",
+            "Canceled"});
+            this.StatusComboBox.Location = new System.Drawing.Point(42, 421);
+            this.StatusComboBox.Name = "StatusComboBox";
+            this.StatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.StatusComboBox.Size = new System.Drawing.Size(117, 36);
+            this.StatusComboBox.TabIndex = 55;
+            this.StatusComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(218, 403);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 15);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Rank";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(70, 403);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Status";
+            // 
+            // ConfirmButton
+            // 
+            this.ConfirmButton.Animated = true;
+            this.ConfirmButton.BackColor = System.Drawing.Color.Transparent;
+            this.ConfirmButton.BorderColor = System.Drawing.Color.Transparent;
+            this.ConfirmButton.BorderRadius = 20;
+            this.ConfirmButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ConfirmButton.CustomizableEdges = customizableEdges3;
+            this.ConfirmButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ConfirmButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ConfirmButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ConfirmButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ConfirmButton.FillColor = System.Drawing.Color.Transparent;
+            this.ConfirmButton.FocusedColor = System.Drawing.Color.Transparent;
+            this.ConfirmButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ConfirmButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ConfirmButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ConfirmButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ConfirmButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.ConfirmButton.Image = ((System.Drawing.Image)(resources.GetObject("ConfirmButton.Image")));
+            this.ConfirmButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ConfirmButton.Location = new System.Drawing.Point(101, 500);
+            this.ConfirmButton.Name = "ConfirmButton";
+            this.ConfirmButton.Padding = new System.Windows.Forms.Padding(5);
+            this.ConfirmButton.PressedColor = System.Drawing.Color.White;
+            this.ConfirmButton.ShadowDecoration.BorderRadius = 20;
+            this.ConfirmButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.ConfirmButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.ConfirmButton.Size = new System.Drawing.Size(150, 37);
+            this.ConfirmButton.TabIndex = 61;
+            this.ConfirmButton.Text = "Submit";
+            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
+            // 
+            // RankComboBox
+            // 
+            this.RankComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.RankComboBox.BorderRadius = 20;
+            this.RankComboBox.CustomizableEdges = customizableEdges5;
+            this.RankComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RankComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RankComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RankComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RankComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RankComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.RankComboBox.FormattingEnabled = true;
+            this.RankComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.RankComboBox.ItemHeight = 30;
+            this.RankComboBox.Items.AddRange(new object[] {
+            "A Class",
+            "B Class",
+            "C Class"});
+            this.RankComboBox.Location = new System.Drawing.Point(171, 421);
+            this.RankComboBox.Name = "RankComboBox";
+            this.RankComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.RankComboBox.Size = new System.Drawing.Size(128, 36);
+            this.RankComboBox.TabIndex = 56;
+            this.RankComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BookingIdTextBox
+            // 
+            this.BookingIdTextBox.BorderRadius = 20;
+            this.BookingIdTextBox.CustomizableEdges = customizableEdges7;
+            this.BookingIdTextBox.DefaultText = "";
+            this.BookingIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.BookingIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.BookingIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BookingIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BookingIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BookingIdTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BookingIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BookingIdTextBox.Location = new System.Drawing.Point(42, 296);
+            this.BookingIdTextBox.Name = "BookingIdTextBox";
+            this.BookingIdTextBox.PasswordChar = '\0';
+            this.BookingIdTextBox.PlaceholderText = "Booking ID";
+            this.BookingIdTextBox.ReadOnly = true;
+            this.BookingIdTextBox.SelectedText = "";
+            this.BookingIdTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.BookingIdTextBox.Size = new System.Drawing.Size(112, 33);
+            this.BookingIdTextBox.TabIndex = 50;
+            // 
+            // FlightNoTextBox2
+            // 
+            this.FlightNoTextBox2.BorderRadius = 20;
+            this.FlightNoTextBox2.CustomizableEdges = customizableEdges9;
+            this.FlightNoTextBox2.DefaultText = "";
+            this.FlightNoTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FlightNoTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FlightNoTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FlightNoTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FlightNoTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FlightNoTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FlightNoTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FlightNoTextBox2.Location = new System.Drawing.Point(171, 246);
+            this.FlightNoTextBox2.Name = "FlightNoTextBox2";
+            this.FlightNoTextBox2.PasswordChar = '\0';
+            this.FlightNoTextBox2.PlaceholderText = "Flight No";
+            this.FlightNoTextBox2.ReadOnly = true;
+            this.FlightNoTextBox2.SelectedText = "";
+            this.FlightNoTextBox2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.FlightNoTextBox2.Size = new System.Drawing.Size(128, 33);
+            this.FlightNoTextBox2.TabIndex = 49;
+            // 
+            // BookingDateTextBox
+            // 
+            this.BookingDateTextBox.BorderRadius = 20;
+            this.BookingDateTextBox.CustomizableEdges = customizableEdges11;
+            this.BookingDateTextBox.DefaultText = "";
+            this.BookingDateTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.BookingDateTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.BookingDateTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BookingDateTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.BookingDateTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BookingDateTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BookingDateTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BookingDateTextBox.Location = new System.Drawing.Point(171, 296);
+            this.BookingDateTextBox.Name = "BookingDateTextBox";
+            this.BookingDateTextBox.PasswordChar = '\0';
+            this.BookingDateTextBox.PlaceholderText = "Booking Date";
+            this.BookingDateTextBox.ReadOnly = true;
+            this.BookingDateTextBox.SelectedText = "";
+            this.BookingDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.BookingDateTextBox.Size = new System.Drawing.Size(128, 33);
+            this.BookingDateTextBox.TabIndex = 51;
+            // 
+            // SeatAssignmentTextBox
+            // 
+            this.SeatAssignmentTextBox.BorderRadius = 20;
+            this.SeatAssignmentTextBox.CustomizableEdges = customizableEdges13;
+            this.SeatAssignmentTextBox.DefaultText = "";
+            this.SeatAssignmentTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SeatAssignmentTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SeatAssignmentTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SeatAssignmentTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SeatAssignmentTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SeatAssignmentTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SeatAssignmentTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SeatAssignmentTextBox.Location = new System.Drawing.Point(42, 350);
+            this.SeatAssignmentTextBox.Name = "SeatAssignmentTextBox";
+            this.SeatAssignmentTextBox.PasswordChar = '\0';
+            this.SeatAssignmentTextBox.PlaceholderText = "Seat Assignment";
+            this.SeatAssignmentTextBox.ReadOnly = true;
+            this.SeatAssignmentTextBox.SelectedText = "";
+            this.SeatAssignmentTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.SeatAssignmentTextBox.Size = new System.Drawing.Size(117, 33);
+            this.SeatAssignmentTextBox.TabIndex = 52;
+            // 
+            // TicketPriceTextBox
+            // 
+            this.TicketPriceTextBox.BorderRadius = 20;
+            this.TicketPriceTextBox.CustomizableEdges = customizableEdges15;
+            this.TicketPriceTextBox.DefaultText = "";
+            this.TicketPriceTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TicketPriceTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TicketPriceTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TicketPriceTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TicketPriceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TicketPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TicketPriceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TicketPriceTextBox.Location = new System.Drawing.Point(171, 350);
+            this.TicketPriceTextBox.Name = "TicketPriceTextBox";
+            this.TicketPriceTextBox.PasswordChar = '\0';
+            this.TicketPriceTextBox.PlaceholderText = "Ticket Price";
+            this.TicketPriceTextBox.ReadOnly = true;
+            this.TicketPriceTextBox.SelectedText = "";
+            this.TicketPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.TicketPriceTextBox.Size = new System.Drawing.Size(128, 33);
+            this.TicketPriceTextBox.TabIndex = 53;
+            // 
+            // CustomerIdTextBox2
+            // 
+            this.CustomerIdTextBox2.BorderRadius = 20;
+            this.CustomerIdTextBox2.CustomizableEdges = customizableEdges17;
+            this.CustomerIdTextBox2.DefaultText = "";
+            this.CustomerIdTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CustomerIdTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CustomerIdTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerIdTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerIdTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerIdTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CustomerIdTextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerIdTextBox2.Location = new System.Drawing.Point(42, 246);
+            this.CustomerIdTextBox2.Name = "CustomerIdTextBox2";
+            this.CustomerIdTextBox2.PasswordChar = '\0';
+            this.CustomerIdTextBox2.PlaceholderText = "Customer ID";
+            this.CustomerIdTextBox2.ReadOnly = true;
+            this.CustomerIdTextBox2.SelectedText = "";
+            this.CustomerIdTextBox2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.CustomerIdTextBox2.Size = new System.Drawing.Size(112, 33);
+            this.CustomerIdTextBox2.TabIndex = 48;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(74, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Update Reservation";
+            // 
             // UpdateReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -635,7 +732,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
             this.contentSplitContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpdateReservationDataGridView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -647,28 +743,9 @@
 
         private Panel panel2;
         private Panel panel1;
-        private Label label2;
-        private Label label1;
-        private TextBox FlighNoTextBox;
-        private TextBox CustomerIdTextBox;
         private Label label3;
-        private ComboBox RankComboBox;
-        private TextBox BookingIdTextBox;
-        private TextBox FlightNoTextBox2;
-        private TextBox BookingDateTextBox;
-        private TextBox SeatAssignmentTextBox;
-        private TextBox TicketPriceTextBox;
-        private TextBox CustomerIdTextBox2;
-        private Label label11;
-        private Label label10;
-        private Label label9;
         private Label label8;
-        private Label label7;
         private Label label6;
-        private Label label5;
-        private Label label4;
-        private Button ConfirmButton;
-        private ComboBox StatusComboBox;
         private Guna.UI2.WinForms.Guna2DataGridView UpdateReservationDataGridView;
         private DataGridViewTextBoxColumn BookingID;
         private DataGridViewTextBoxColumn CustomerID;
@@ -678,5 +755,16 @@
         private DataGridViewTextBoxColumn TicketPrice;
         private DataGridViewTextBoxColumn Rank;
         private DataGridViewTextBoxColumn Status;
+        private Guna.UI2.WinForms.Guna2TextBox FlighNoTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CustomerIdTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox CustomerIdTextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox TicketPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox SeatAssignmentTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox BookingDateTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox BookingIdTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox FlightNoTextBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox RankComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox StatusComboBox;
+        protected Guna.UI2.WinForms.Guna2Button ConfirmButton;
     }
 }

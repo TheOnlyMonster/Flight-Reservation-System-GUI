@@ -56,9 +56,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.contentSplitContainer = new System.Windows.Forms.SplitContainer();
-            this.generateReport = new Guna.UI2.WinForms.Guna2Button();
             this.helpButton = new Guna.UI2.WinForms.Guna2Button();
             this.exploreFlightsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.generateReport = new Guna.UI2.WinForms.Guna2Button();
             this.bookFlightButton = new Guna.UI2.WinForms.Guna2Button();
             this.signInButton = new Guna.UI2.WinForms.Guna2Button();
             this.signUpButton = new Guna.UI2.WinForms.Guna2Button();
@@ -90,34 +90,6 @@
             // 
             resources.ApplyResources(this.contentSplitContainer.Panel2, "contentSplitContainer.Panel2");
             // 
-            // generateReport
-            // 
-            resources.ApplyResources(this.generateReport, "generateReport");
-            this.generateReport.Animated = true;
-            this.generateReport.BackColor = System.Drawing.Color.Transparent;
-            this.generateReport.BorderColor = System.Drawing.Color.Transparent;
-            this.generateReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.generateReport.CustomizableEdges = customizableEdges1;
-            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.generateReport.FillColor = System.Drawing.Color.Transparent;
-            this.generateReport.FocusedColor = System.Drawing.Color.Transparent;
-            this.generateReport.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.generateReport.Image = ((System.Drawing.Image)(resources.GetObject("generateReport.Image")));
-            this.generateReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.generateReport.Name = "generateReport";
-            this.generateReport.PressedColor = System.Drawing.Color.White;
-            this.generateReport.ShadowDecoration.BorderRadius = 20;
-            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.generateReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.generateReport.Click += new System.EventHandler(this.generateReport_Click);
-            // 
             // helpButton
             // 
             resources.ApplyResources(this.helpButton, "helpButton");
@@ -125,7 +97,7 @@
             this.helpButton.BackColor = System.Drawing.Color.Transparent;
             this.helpButton.BorderColor = System.Drawing.Color.Transparent;
             this.helpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.helpButton.CustomizableEdges = customizableEdges3;
+            this.helpButton.CustomizableEdges = customizableEdges1;
             this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -135,15 +107,16 @@
             this.helpButton.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.helpButton.Image = global::FlightReservationSystem.Properties.Resources.HelpWhite;
             this.helpButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.helpButton.Name = "helpButton";
             this.helpButton.PressedColor = System.Drawing.Color.White;
             this.helpButton.ShadowDecoration.BorderRadius = 20;
             this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.helpButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // exploreFlightsButton
             // 
@@ -152,7 +125,7 @@
             this.exploreFlightsButton.BackColor = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.BorderColor = System.Drawing.Color.Transparent;
             this.exploreFlightsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exploreFlightsButton.CustomizableEdges = customizableEdges5;
+            this.exploreFlightsButton.CustomizableEdges = customizableEdges3;
             this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -162,16 +135,44 @@
             this.exploreFlightsButton.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.exploreFlightsButton.Image = ((System.Drawing.Image)(resources.GetObject("exploreFlightsButton.Image")));
             this.exploreFlightsButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.exploreFlightsButton.Name = "exploreFlightsButton";
             this.exploreFlightsButton.PressedColor = System.Drawing.Color.White;
             this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.exploreFlightsButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.exploreFlightsButton.Click += new System.EventHandler(this.exploreFlightsButton_Click);
+            // 
+            // generateReport
+            // 
+            resources.ApplyResources(this.generateReport, "generateReport");
+            this.generateReport.Animated = true;
+            this.generateReport.BackColor = System.Drawing.Color.Transparent;
+            this.generateReport.BorderColor = System.Drawing.Color.Transparent;
+            this.generateReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.generateReport.CustomizableEdges = customizableEdges5;
+            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.generateReport.FillColor = System.Drawing.Color.Transparent;
+            this.generateReport.FocusedColor = System.Drawing.Color.Transparent;
+            this.generateReport.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.generateReport.Image = ((System.Drawing.Image)(resources.GetObject("generateReport.Image")));
+            this.generateReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.generateReport.Name = "generateReport";
+            this.generateReport.PressedColor = System.Drawing.Color.White;
+            this.generateReport.ShadowDecoration.BorderRadius = 20;
+            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.generateReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.generateReport.Click += new System.EventHandler(this.generateReport_Click);
             // 
             // bookFlightButton
             // 
