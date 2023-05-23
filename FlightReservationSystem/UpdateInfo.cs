@@ -10,14 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
     public partial class UpdateInfo : MainMenu
     {
+        private ErrorProvider errorProvider;
         public UpdateInfo()
         {
             InitializeComponent();
+
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void UpdateInfo_Load(object sender, EventArgs e)
@@ -53,6 +58,31 @@ namespace FlightReservationSystem
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            string cardNumber = this.CardNumberTextBox.Text;
+            if (!ValidateCardNumber(cardNumber))
+            {
+                errorProvider.SetError(CardNumberTextBox, "Invalid Card number. Please enter a valid Card number.");
+                this.CardNumberTextBox.Focus();
+                return;
+            }
+
+            string expiryDate = this.ExpirayDateTextBox.Text;
+            if (!ValidateExpiryDate(expiryDate))
+            {
+                errorProvider.SetError(ExpirayDateTextBox, "Invalid Expiry Date address. Please enter a valid Expiry Date.");
+                this.ExpirayDateTextBox.Focus();
+                return;
+            }
+
+            string cvv = this.CVVTextBox.Text;
+            if (!ValidateCVV(cvv))
+            {
+                 errorProvider.SetError(CVVTextBox, "Invalid CVV address. Please enter a valid CVV.");
+                this.CVVTextBox.Focus();
+                return;
+            }
+
+
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
@@ -145,7 +175,37 @@ namespace FlightReservationSystem
                 }
 
                 connection.Close();
+                MessageBox.Show("Changes are Confirmed!");
             }
         }
+        private bool ValidateCardNumber(string cardNumber)
+        {
+            // Regular expression pattern for Card Number.
+            string pattern = @"^(?:\d[ -]*?){16}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(cardNumber);
+            return isValid;
+        }
+
+        
+        private bool ValidateExpiryDate(string expiryDate)
+        {
+            // Regular expression pattern for Expiry Date.
+            string pattern = @"^(0[1-9]|1[0-2])\/(\d{2})$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(expiryDate);
+            return isValid;
+        }
+
+        private bool ValidateCVV(string cvv)
+        {
+            // Regular expression pattern for CVV.
+            string pattern = @"^\d{3}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(cvv);
+            return isValid;
+        }
+
+
     }
 }

@@ -12,11 +12,15 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
+    
     public partial class UpdateReservation : MainMenu
     {
+        private ErrorProvider errorProvider;
         public UpdateReservation()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
         private void UpdateReservation_Load(object sender, EventArgs e)
         {
@@ -58,15 +62,15 @@ namespace FlightReservationSystem
             //validating Price.
             string price = this.TicketPriceTextBox.Text;
             if (!ValidatePrice(price)) {
-                MessageBox.Show("Invalid Price, Please enter a valid price.");
+                errorProvider.SetError(SeatAssignmentTextBox, "Invalid Price, Please enter a valid price.");
                 this.TicketPriceTextBox.Focus();
                 return;
             }
             
-            //validating Price.
+            //validating seat.
             string seat = this.SeatAssignmentTextBox.Text;
             if (!ValidateSeats(seat)) {
-                MessageBox.Show("Invalid Seat, Please enter a valid Seat.");
+                errorProvider.SetError(SeatAssignmentTextBox, "Invalid Seat, Please enter a valid Seat.");
                 this.SeatAssignmentTextBox.Focus();
                 return;
             }
@@ -151,7 +155,7 @@ namespace FlightReservationSystem
         private bool ValidateSeats(string seats)
         {
             //Regular Expression of Validating Seats.
-            string pattern = @"^[0-9]+(\.[0-9]+)?$";
+            string pattern = @"^[0-9]+$";
             Regex regex = new Regex(pattern);
             bool isValid = regex.IsMatch(seats);
             return isValid;

@@ -16,9 +16,12 @@ namespace FlightReservationSystem
 {
     public partial class AddAirCraft : MainMenu
     {
+        ErrorProvider errorProvider;
         public AddAirCraft()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();   
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void AddButton_Click(object sender, EventArgs e)
@@ -27,13 +30,12 @@ namespace FlightReservationSystem
             string capacity = this.CapacityTextBox.Text;
             if (!ValidateCapacity(capacity))
             {
-                MessageBox.Show("Invalid Seat, Please enter a valid Seat.");
+                errorProvider.SetError(CapacityTextBox, "Invalid Card number. Please enter a valid Card number.");
                 this.CapacityTextBox.Focus();
                 return;
             }
 
-
-
+            
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();

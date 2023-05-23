@@ -9,14 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
     public partial class UpdateFlight : MainMenu
     {
+        private ErrorProvider errorProvider;
         public UpdateFlight()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void AdminDeptCountriesComboBox_OnDropDown(object sender, EventArgs e)
@@ -126,7 +130,42 @@ namespace FlightReservationSystem
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            //we need to add Aircraft ID.
+            string seatsAvailable = this.SeatsAvailabilityTextBox.Text;
+            if (!ValidateIntegers(seatsAvailable)) {
+                errorProvider.SetError(SeatsAvailabilityTextBox, "Invalid seat, Please enter a valid seat.");
+                this.SeatsAvailabilityTextBox.Focus();
+                return;
+            }
+            
+            string airCraftId = this.AirCraftIdTextBox.Text;
+            if (!ValidateIntegers(airCraftId)) {
+                errorProvider.SetError(AirCraftIdTextBox, "Invalid aircraftID, Please enter a valid aircraftID.");
+                this.AirCraftIdTextBox.Focus();
+                return;
+            }
+
+            string rankAPrice = this.RankATextBox.Text;
+            if (!ValidateDouble(rankAPrice)) {
+                errorProvider.SetError(RankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
+                this.RankATextBox.Focus();
+                return;
+            }
+
+            string rankBPrice = this.RankBTextBox.Text;
+            if (!ValidateDouble(rankAPrice)) {
+                errorProvider.SetError(RankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
+                this.RankBTextBox.Focus();
+                return;
+            }
+
+            string rankCPrice = this.RankCTextBox.Text;
+            if (!ValidateDouble(rankAPrice)) {
+                errorProvider.SetError(RankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
+                this.RankCTextBox.Focus();
+                return;
+            }
+
+
 
             string query = "UPDATE Flight Set DeptDate = @DeptDate, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
@@ -166,6 +205,24 @@ namespace FlightReservationSystem
                 }
                 UpdateFlight_Load(sender, e);
             }
+        }
+        
+        private bool ValidateIntegers(string integer)
+        {
+            //Regular Expression of Validating Price.
+            string pattern = @"^[0-9]+$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(integer);
+            return isValid;
+        }
+
+        private bool ValidateDouble(string doubleType)
+        {
+            //Regular Expression of Validating Seats.
+            string pattern = @"^[0-9]+(\.[0-9]+)?$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(doubleType);
+            return isValid;
         }
     }
 }

@@ -12,11 +12,15 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
+    
     public partial class SignUpForm : MainMenu
     {
+        private ErrorProvider errorProvider;
         public SignUpForm()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -26,20 +30,22 @@ namespace FlightReservationSystem
             string email = this.textBoxEmail.Text;
             if (!ValidateEmail(email))
             {
-                MessageBox.Show("Invalid email address. Please enter a valid email address.");
+                errorProvider.SetError(textBoxEmail, "Invalid Card number. Please enter a valid Card number.");
                 this.textBoxEmail.Focus();
                 return;
             }
+
 
             //Phone number validation.
 
             string phoneNumber = this.textBoxPhone.Text;
             if (!ValidatePhoneNumber(phoneNumber))
             {
-                MessageBox.Show("Invalid Phone number, Please enter a valid phone number.");
+                errorProvider.SetError(textBoxPhone, "Invalid Phone number. Please enter a valid Phone number.");
                 this.textBoxPhone.Focus();
                 return;
             }
+
 
 
             if (textBoxEmail.Text == "" || textBoxFirstName.Text == "" || textBoxLastName.Text == "" || textBoxPassword.Text == "" || textBoxPhone.Text == "")

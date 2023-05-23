@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
@@ -16,9 +17,12 @@ namespace FlightReservationSystem
     public partial class BookFlight : MainMenu
     {
         private Dictionary<string, double> FlightClasses = new Dictionary<string, double>();
+        private ErrorProvider errorProvider;
         public BookFlight()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void bookFlightComboBox_Changed(object sender, EventArgs e)
@@ -155,6 +159,32 @@ namespace FlightReservationSystem
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
+            string cardNumber = this.creditCardTextBox.Text;
+            if (!ValidateCardNumber(cardNumber))
+            {
+                errorProvider.SetError(creditCardTextBox, "Invalid Card number. Please enter a valid Card number.");
+                this.creditCardTextBox.Focus();
+                return;
+            }
+
+            string expiryDate = this.creditCardExpiryDateTextBox.Text;
+            if (!ValidateExpiryDate(expiryDate))
+            {
+                errorProvider.SetError(creditCardExpiryDateTextBox, "Invalid Expiry Date address. Please enter a valid Expiry Date.");
+                this.creditCardExpiryDateTextBox.Focus();
+                return;
+            }
+
+            string cvv = this.cvvCreditCardTextBox.Text;
+            if (!ValidateCVV(cvv))
+            {
+                 errorProvider.SetError(cvvCreditCardTextBox, "Invalid CVV address. Please enter a valid CVV.");
+                this.cvvCreditCardTextBox.Focus();
+                return;
+            }
+
+
+
             if (string.IsNullOrEmpty(flightNoTextBox.Text) || string.IsNullOrEmpty(seatsAvailableTextBox.Text) || string.IsNullOrEmpty(arrivalCountryTextBox.Text) || string.IsNullOrEmpty(arrivalDateTextBox.Text) || string.IsNullOrEmpty(deptCountryTextBox.Text))
             {
                 MessageBox.Show("You must select a Flight first!");
@@ -209,6 +239,7 @@ namespace FlightReservationSystem
                         Customer.Instance.CardNum = this.creditCardTextBox.Text;
                         Customer.Instance.Cvv = this.cvvCreditCardTextBox.Text;
                         MessageBox.Show("The Flight has been Confirmed!");
+                        errorProvider.Clear();
                         connection.Close();
                     }
                     BookFlight_Load(sender,e);
@@ -248,6 +279,35 @@ namespace FlightReservationSystem
             }     
             return randomNum;
         }
+        
+        private bool ValidateCardNumber(string cardNumber)
+        {
+            // Regular expression pattern for Card Number.
+            string pattern = @"^(?:\d[ -]*?){16}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(cardNumber);
+            return isValid;
+        }
+
+        
+        private bool ValidateExpiryDate(string expiryDate)
+        {
+            // Regular expression pattern for Expiry Date.
+            string pattern = @"^(0[1-9]|1[0-2])\/(\d{2})$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(expiryDate);
+            return isValid;
+        }
+
+        private bool ValidateCVV(string cvv)
+        {
+            // Regular expression pattern for CVV.
+            string pattern = @"^\d{3}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(cvv);
+            return isValid;
+        }
+
 
     }
 }

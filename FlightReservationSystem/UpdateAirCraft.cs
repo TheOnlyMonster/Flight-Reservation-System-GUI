@@ -8,14 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
+    
     public partial class UpdateAirCraft : MainMenu
     {
+        private ErrorProvider errorProvider;
         public UpdateAirCraft()
         {
             InitializeComponent();
+            errorProvider = new ErrorProvider();
+            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
         private void UpdateAirCraft_Load(object sender, EventArgs e)
@@ -113,6 +118,24 @@ namespace FlightReservationSystem
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
+            string capacity = this.CapacityTextBox.Text;
+            if (!ValidateCapacity(capacity))
+            {
+                errorProvider.SetError(CapacityTextBox, "Invalid capacity. Please enter a valid capacity.");
+                this.CapacityTextBox.Focus();
+                return;
+            }
+
+            string manufactureYear = this.ManufactureTextBox.Text;
+            if (!ValidateManufactureYear(manufactureYear))
+            {
+                errorProvider.SetError(ManufactureTextBox, "Invalid manufacture year. Please enter a valid manufacture year.");
+                this.ManufactureTextBox.Focus();
+                return;
+            }
+
+            
+
             string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AircraftID = @AircraftID;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
@@ -149,6 +172,23 @@ namespace FlightReservationSystem
                 }
                 UpdateAirCraft_Load(sender, e);
             }
+        }
+
+        private bool ValidateCapacity(string capacity)
+        {
+            //Regular expression pattern for capacity.
+            string pattern = @"^[0-9]+$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(capacity);
+            return isValid;
+        }
+        private bool ValidateManufactureYear(string capacity)
+        {
+            //Regular expression pattern for Manufacture Year.
+            string pattern = @"^(19|20)\d{2}$";
+            Regex regex = new Regex(pattern);
+            bool isValid = regex.IsMatch(capacity);
+            return isValid;
         }
     }
 }
