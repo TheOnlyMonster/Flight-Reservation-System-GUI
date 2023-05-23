@@ -28,6 +28,7 @@ namespace FlightReservationSystem
             if (IsUserLoggedIn)
             {
                 contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
+                this.contentSplitContainer.Panel1.Controls.Add(this.customerReservations);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateInfo);
                 contentSplitContainer.Panel1.Controls.Add(SignOutButton);
 
@@ -170,5 +171,11 @@ namespace FlightReservationSystem
             this.Hide();
         }
 
+        private void customerReservations_Click(object sender, EventArgs e)
+        {
+            CustomerReservations reservations = new CustomerReservations();
+            reservations.Show();
+            this.Hide();
+        }
     }
 }
