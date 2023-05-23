@@ -37,6 +37,7 @@ namespace FlightReservationSystem
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateFlight);
                 contentSplitContainer.Panel1.Controls.Add(this.UpdateReservation);
                 contentSplitContainer.Panel1.Controls.Add(SignOutButton);
+                this.contentSplitContainer.Panel1.Controls.Add(this.generateReport);
             }
             else
             {
@@ -127,6 +128,11 @@ namespace FlightReservationSystem
             MainMenu MainMenu = new MainMenu();
 
             MainMenu.Show();
+        }
+
+        private void generateReport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

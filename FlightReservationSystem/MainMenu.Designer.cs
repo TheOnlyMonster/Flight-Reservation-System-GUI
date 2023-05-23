@@ -29,6 +29,8 @@
         protected void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -53,9 +55,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.contentSplitContainer = new System.Windows.Forms.SplitContainer();
+            this.generateReport = new Guna.UI2.WinForms.Guna2Button();
             this.helpButton = new Guna.UI2.WinForms.Guna2Button();
             this.exploreFlightsButton = new Guna.UI2.WinForms.Guna2Button();
             this.bookFlightButton = new Guna.UI2.WinForms.Guna2Button();
@@ -68,7 +69,6 @@
             this.AddAircraft = new Guna.UI2.WinForms.Guna2Button();
             this.AddFlight = new Guna.UI2.WinForms.Guna2Button();
             this.SignOutButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
             this.contentSplitContainer.Panel1.SuspendLayout();
             this.contentSplitContainer.SuspendLayout();
@@ -83,13 +83,40 @@
             // 
             resources.ApplyResources(this.contentSplitContainer.Panel1, "contentSplitContainer.Panel1");
             this.contentSplitContainer.Panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.contentSplitContainer.Panel1.Controls.Add(this.guna2Button1);
             this.contentSplitContainer.Panel1.Controls.Add(this.helpButton);
             this.contentSplitContainer.Panel1.Controls.Add(this.exploreFlightsButton);
             // 
             // contentSplitContainer.Panel2
             // 
             resources.ApplyResources(this.contentSplitContainer.Panel2, "contentSplitContainer.Panel2");
+            // 
+            // generateReport
+            // 
+            resources.ApplyResources(this.generateReport, "generateReport");
+            this.generateReport.Animated = true;
+            this.generateReport.BackColor = System.Drawing.Color.Transparent;
+            this.generateReport.BorderColor = System.Drawing.Color.Transparent;
+            this.generateReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.generateReport.CustomizableEdges = customizableEdges1;
+            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.generateReport.FillColor = System.Drawing.Color.Transparent;
+            this.generateReport.FocusedColor = System.Drawing.Color.Transparent;
+            this.generateReport.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.generateReport.Image = ((System.Drawing.Image)(resources.GetObject("generateReport.Image")));
+            this.generateReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.generateReport.Name = "generateReport";
+            this.generateReport.PressedColor = System.Drawing.Color.White;
+            this.generateReport.ShadowDecoration.BorderRadius = 20;
+            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.generateReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.generateReport.Click += new System.EventHandler(this.generateReport_Click);
             // 
             // helpButton
             // 
@@ -426,33 +453,6 @@
             this.SignOutButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
-            // guna2Button1
-            // 
-            resources.ApplyResources(this.guna2Button1, "guna2Button1");
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomizableEdges = customizableEdges1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.FocusedColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2Button1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.White;
-            this.guna2Button1.ShadowDecoration.BorderRadius = 20;
-            this.guna2Button1.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -483,6 +483,6 @@
         protected Guna.UI2.WinForms.Guna2Button AddAircraft;
         protected Guna.UI2.WinForms.Guna2Button AddFlight;
         protected Guna.UI2.WinForms.Guna2Button bookFlightButton;
-        protected Guna.UI2.WinForms.Guna2Button guna2Button1;
+        protected Guna.UI2.WinForms.Guna2Button generateReport;
     }
 }

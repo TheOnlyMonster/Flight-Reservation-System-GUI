@@ -669,7 +669,7 @@ namespace FlightReservationSystem
             this.panel2.Size = new System.Drawing.Size(805, 756);
             this.panel2.TabIndex = 0;
             // 
-            // flightDataGrid
+            // UpdateReservationDataGridView
             // 
             this.flightDataGrid.AllowUserToAddRows = false;
             this.flightDataGrid.AllowUserToDeleteRows = false;
@@ -709,7 +709,7 @@ namespace FlightReservationSystem
             this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
             this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
             this.flightDataGrid.MultiSelect = false;
-            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.Name = "UpdateReservationDataGridView";
             this.flightDataGrid.ReadOnly = true;
             this.flightDataGrid.RowHeadersVisible = false;
             this.flightDataGrid.RowHeadersWidth = 50;
