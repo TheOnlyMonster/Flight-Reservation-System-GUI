@@ -34,6 +34,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -63,6 +70,9 @@
             this.contentSplitContainer.SuspendLayout();
             this.SuspendLayout();
             // 
+            // contentSplitContainer
+            // 
+            // 
             // contentSplitContainer.Panel2
             // 
             this.contentSplitContainer.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contentSplitContainer.Panel2.BackgroundImage")));
@@ -75,13 +85,188 @@
             this.contentSplitContainer.Panel2.Controls.Add(this.ManfucaturerTextBox);
             this.contentSplitContainer.Panel2.Controls.Add(this.CapacityTextBox);
             this.contentSplitContainer.Panel2.Controls.Add(this.label1);
-
+            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
+            this.contentSplitContainer.SplitterDistance = 285;
+            // 
+            // signInButton
+            // 
+            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.signInButton.ShadowDecoration.BorderRadius = 20;
+            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            this.signInButton.Size = new System.Drawing.Size(285, 50);
+            // 
+            // signUpButton
+            // 
+            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.signUpButton.ShadowDecoration.BorderRadius = 20;
+            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.signUpButton.Size = new System.Drawing.Size(285, 50);
+            // 
+            // exploreFlightsButton
+            // 
+            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 50);
+            // 
+            // helpButton
+            // 
+            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.helpButton.Location = new System.Drawing.Point(0, 693);
+            this.helpButton.ShadowDecoration.BorderRadius = 20;
+            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            // 
+            // UpdateAircraft
+            // 
+            this.UpdateAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.UpdateAircraft.ShadowDecoration.BorderRadius = 20;
+            this.UpdateAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            // 
+            // UpdateFlight
+            // 
+            this.UpdateFlight.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.UpdateFlight.ShadowDecoration.BorderRadius = 20;
+            this.UpdateFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            // 
+            // UpdateReservation
+            // 
+            this.UpdateReservation.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateReservation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateReservation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateReservation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateReservation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateReservation.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateReservation.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateReservation.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.UpdateReservation.ShadowDecoration.BorderRadius = 20;
+            this.UpdateReservation.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            // 
+            // UpdateInfo
+            // 
+            this.UpdateInfo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateInfo.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateInfo.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.UpdateInfo.ShadowDecoration.BorderRadius = 20;
+            this.UpdateInfo.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            // 
+            // AddFlight
+            // 
+            this.AddFlight.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            this.AddFlight.ShadowDecoration.BorderRadius = 20;
+            this.AddFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            // 
+            // bookFlightButton
+            // 
+            this.bookFlightButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bookFlightButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bookFlightButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bookFlightButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bookFlightButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bookFlightButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookFlightButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            this.bookFlightButton.ShadowDecoration.BorderRadius = 20;
+            this.bookFlightButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            // 
+            // generateReport
+            // 
+            this.generateReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
+            this.generateReport.ShadowDecoration.BorderRadius = 20;
+            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges26;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(484, 150);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(498, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 32);
             this.label1.TabIndex = 0;
@@ -92,9 +277,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(621, 425);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(726, 395);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Status";
             // 
@@ -185,7 +372,7 @@
             "Active",
             "Inactive",
             "Maintainance"});
-            this.AirCraftComboBox.Location = new System.Drawing.Point(666, 415);
+            this.AirCraftComboBox.Location = new System.Drawing.Point(662, 418);
             this.AirCraftComboBox.Name = "AirCraftComboBox";
             this.AirCraftComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.AirCraftComboBox.Size = new System.Drawing.Size(190, 36);
@@ -253,11 +440,11 @@
             this.AddButton.FillColor = System.Drawing.Color.Transparent;
             this.AddButton.FocusedColor = System.Drawing.Color.Transparent;
             this.AddButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.AddButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.AddButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.AddButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack1;
+            this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.AddButton.Location = new System.Drawing.Point(516, 502);
             this.AddButton.Name = "AddButton";

@@ -44,12 +44,12 @@ namespace FlightReservationSystem
             }
             else
             {
-                string query = "INSERT INTO Flight  VALUES (@AircraftID , @DeptDate, @ExpectedArrival, @ArrivalCountry , @DeptCountry ,  @AvailableSeats , @Rank1Price , @Rank2Price , @Rank3Price);";
+                string query = "INSERT INTO Flight  VALUES (@AirCraftID , @DeptDate, @ExpectedArrival, @ArrivalCountry , @DeptCountry ,  @AvailableSeats , @Rank1Price , @Rank2Price , @Rank3Price);";
                 using (SqlConnection connection = new SqlConnection(databaseConnection))
                 {
                     connection.Open();
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@AircraftID", int.Parse(airCraftId));
+                    command.Parameters.AddWithValue("@AirCraftID", int.Parse(airCraftId));
                     command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDate, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                     command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(expectedArrival, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                     command.Parameters.AddWithValue("@ArrivalCountry", arrivalCountry);

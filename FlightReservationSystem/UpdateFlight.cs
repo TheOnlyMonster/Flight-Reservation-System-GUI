@@ -24,21 +24,21 @@ namespace FlightReservationSystem
         }
         private void updateFlightComboBox_Changed(object sender, EventArgs e)
         {
-            string query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+            string query = "SELECT FlightNo, AirCraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
                 "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                query = "SELECT FlightNo, AirCraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
                     "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             }
             else if (this.deptCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                query = "SELECT FlightNo, AirCraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
                     "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND arrivalCountry = @arrivalCountry";
             }
             else if (this.arrivalCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, AircraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
+                query = "SELECT FlightNo, AirCraftID, deptCountry, arrivalCountry, deptDate, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
                     "WHERE CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND deptCountry = @deptCountry";
             }
             AdminFlightDataGrid.Rows.Clear();
@@ -110,7 +110,7 @@ namespace FlightReservationSystem
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                string query = "SELECT FlightNo, AircraftID, deptCountry,arrivalCountry, deptDate, expectedArrival,  AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight";
+                string query = "SELECT FlightNo, AirCraftID, deptCountry,arrivalCountry, deptDate, expectedArrival,  AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(dataTable);
@@ -183,7 +183,7 @@ namespace FlightReservationSystem
 
 
 
-            string query = "UPDATE Flight Set DeptDate = @DeptDate, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
+            string query = "UPDATE Flight Set DeptDate = @DeptDate, AirCraftID = @AirCraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
@@ -201,7 +201,7 @@ namespace FlightReservationSystem
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
                 command.Parameters.AddWithValue("@AvailableSeats", int.Parse(SeatsAvailabilityTextBox.Text));
                 command.Parameters.AddWithValue("@FlightNo", int.Parse(FlightNumberTextBox.Text));
-                command.Parameters.AddWithValue("@AircraftID", int.Parse(AirCraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@AirCraftID", int.Parse(AirCraftIdTextBox.Text));
                 command.ExecuteNonQuery();
                 connection.Close();
 

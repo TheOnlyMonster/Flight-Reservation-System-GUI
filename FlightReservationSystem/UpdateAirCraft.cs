@@ -136,7 +136,7 @@ namespace FlightReservationSystem
 
             
 
-            string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AircraftID = @AircraftID;";
+            string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AirCraftID = @AirCraftID;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
@@ -147,7 +147,7 @@ namespace FlightReservationSystem
                 command.Parameters.AddWithValue("@ManufactureYear", int.Parse(this.ManufactureTextBox.Text));
                 command.Parameters.AddWithValue("@Capacity", int.Parse(this.CapacityTextBox.Text));
                 command.Parameters.AddWithValue("@Status", this.StatusComboBox.Text);
-                command.Parameters.AddWithValue("@AircraftID", int.Parse(this.AircraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@AirCraftID", int.Parse(this.AircraftIdTextBox.Text));
                 command.ExecuteNonQuery();
                 connection.Close();
             }
@@ -160,7 +160,7 @@ namespace FlightReservationSystem
             DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                string query ="DELETE FROM Aircraft WHERE AircraftID = @RecordId;";
+                string query ="DELETE FROM Aircraft WHERE AirCraftID = @RecordId;";
                 using (SqlConnection connection = new SqlConnection(databaseConnection))
                 {
                     connection.Open();

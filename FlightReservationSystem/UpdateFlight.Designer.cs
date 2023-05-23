@@ -389,23 +389,23 @@
             this.deptDateTimePicker.TabIndex = 36;
             this.deptDateTimePicker.ValueChanged += new System.EventHandler(this.updateFlightComboBox_Changed);
             // 
-            // arrivalCountriesComboBox
+            // StatusComboBox
             // 
             this.arrivalCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.arrivalCountriesComboBox.FormattingEnabled = true;
             this.arrivalCountriesComboBox.Location = new System.Drawing.Point(305, 40);
-            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
+            this.arrivalCountriesComboBox.Name = "StatusComboBox";
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.arrivalCountriesComboBox.TabIndex = 35;
             this.arrivalCountriesComboBox.DropDown += new System.EventHandler(this.AdminArrivalCountriesComboBox_OnDropDown);
             this.arrivalCountriesComboBox.TextChanged += new System.EventHandler(this.updateFlightComboBox_Changed);
             // 
-            // deptCountriesComboBox
+            // StatusComboBoxPanel1
             // 
             this.deptCountriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deptCountriesComboBox.FormattingEnabled = true;
             this.deptCountriesComboBox.Location = new System.Drawing.Point(153, 40);
-            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
+            this.deptCountriesComboBox.Name = "StatusComboBoxPanel1";
             this.deptCountriesComboBox.Size = new System.Drawing.Size(121, 23);
             this.deptCountriesComboBox.TabIndex = 34;
             this.deptCountriesComboBox.DropDown += new System.EventHandler(this.AdminDeptCountriesComboBox_OnDropDown);

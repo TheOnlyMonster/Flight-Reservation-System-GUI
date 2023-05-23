@@ -779,7 +779,7 @@ namespace FlightReservationSystem
             this.label6.TabIndex = 9;
             this.label6.Text = "Arrival Country";
             // 
-            // deptCountryTextBox
+            // AirCraftIdTextBoxPanel1
             // 
             this.deptCountryTextBox.BorderRadius = 20;
             this.deptCountryTextBox.CustomizableEdges = customizableEdges27;
@@ -792,7 +792,7 @@ namespace FlightReservationSystem
             this.deptCountryTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.deptCountryTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.deptCountryTextBox.Location = new System.Drawing.Point(32, 138);
-            this.deptCountryTextBox.Name = "deptCountryTextBox";
+            this.deptCountryTextBox.Name = "AirCraftIdTextBoxPanel1";
             this.deptCountryTextBox.PasswordChar = '\0';
             this.deptCountryTextBox.PlaceholderText = "";
             this.deptCountryTextBox.ReadOnly = true;
@@ -867,7 +867,7 @@ namespace FlightReservationSystem
             this.panel2.Size = new System.Drawing.Size(805, 756);
             this.panel2.TabIndex = 0;
             // 
-            // flightDataGrid
+            // AirCraftdataGridView
             // 
             this.flightDataGrid.AllowUserToAddRows = false;
             this.flightDataGrid.AllowUserToDeleteRows = false;
@@ -907,7 +907,7 @@ namespace FlightReservationSystem
             this.flightDataGrid.Location = new System.Drawing.Point(0, 114);
             this.flightDataGrid.Margin = new System.Windows.Forms.Padding(0);
             this.flightDataGrid.MultiSelect = false;
-            this.flightDataGrid.Name = "flightDataGrid";
+            this.flightDataGrid.Name = "AirCraftdataGridView";
             this.flightDataGrid.ReadOnly = true;
             this.flightDataGrid.RowHeadersVisible = false;
             this.flightDataGrid.RowHeadersWidth = 50;
@@ -1004,7 +1004,7 @@ namespace FlightReservationSystem
             this.arrivalCountryLabel.TabIndex = 31;
             this.arrivalCountryLabel.Text = "Arrival Country";
             // 
-            // arrivalCountriesComboBox
+            // StatusComboBox
             // 
             this.arrivalCountriesComboBox.BackColor = System.Drawing.Color.Transparent;
             this.arrivalCountriesComboBox.BorderRadius = 20;
@@ -1019,7 +1019,7 @@ namespace FlightReservationSystem
             this.arrivalCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.arrivalCountriesComboBox.ItemHeight = 30;
             this.arrivalCountriesComboBox.Location = new System.Drawing.Point(298, 47);
-            this.arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
+            this.arrivalCountriesComboBox.Name = "StatusComboBox";
             this.arrivalCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges32;
             this.arrivalCountriesComboBox.Size = new System.Drawing.Size(141, 36);
             this.arrivalCountriesComboBox.TabIndex = 34;
@@ -1036,7 +1036,7 @@ namespace FlightReservationSystem
             this.deptCountryLabel.TabIndex = 29;
             this.deptCountryLabel.Text = "Departure Country";
             // 
-            // deptCountriesComboBox
+            // StatusComboBoxPanel1
             // 
             this.deptCountriesComboBox.BackColor = System.Drawing.Color.Transparent;
             this.deptCountriesComboBox.BorderRadius = 20;
@@ -1051,7 +1051,7 @@ namespace FlightReservationSystem
             this.deptCountriesComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.deptCountriesComboBox.ItemHeight = 30;
             this.deptCountriesComboBox.Location = new System.Drawing.Point(102, 47);
-            this.deptCountriesComboBox.Name = "deptCountriesComboBox";
+            this.deptCountriesComboBox.Name = "StatusComboBoxPanel1";
             this.deptCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges34;
             this.deptCountriesComboBox.Size = new System.Drawing.Size(133, 36);
             this.deptCountriesComboBox.TabIndex = 33;
