@@ -135,10 +135,10 @@ namespace FlightReservationSystem
         private void BookFlight_Load(object sender, EventArgs e)
         {
             bookFlightComboBox_Changed(sender, e);
-            this.passportNumberTextBox.Text = Customer.Instance.PassportNumber;
+            
             this.creditCardExpiryDateTextBox.Text = Customer.Instance.ExpirayDate;
             this.creditCardTextBox.Text = Customer.Instance.CardNum;
-            this.cvvCreditCardTextBox.Text = Customer.Instance.Cvv;
+            
         }
 
         private void seatsNumericUpDown_UpButton(object sender, EventArgs e)

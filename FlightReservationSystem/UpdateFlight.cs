@@ -191,8 +191,8 @@ namespace FlightReservationSystem
 
 
                 //Differs From One Computer To Another. Previous was dd MMMM yyyy 
-                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 
                 
                 
