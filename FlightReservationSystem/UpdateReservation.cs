@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
-    
+
     public partial class UpdateReservation : MainMenu
     {
         private ErrorProvider errorProvider;
@@ -44,8 +44,10 @@ namespace FlightReservationSystem
             }
         }
 
-        private void UpdateReservationDataGridView_CellClick(object sender, DataGridViewCellEventArgs e) {
-            if (e.RowIndex >= 0) {
+        private void UpdateReservationDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
                 DataGridViewRow selectedRow = UpdateReservationDataGridView.Rows[e.RowIndex];
                 this.CustomerIdTextBox2.Text = selectedRow.Cells["CustomerID"].Value.ToString();
                 this.FlightNoTextBox2.Text = selectedRow.Cells["FlightNo"].Value.ToString();
@@ -58,34 +60,38 @@ namespace FlightReservationSystem
             }
         }
 
-        private void ConfirmButton_Click(object sender, EventArgs e) {
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
             //validating Price.
             string price = this.TicketPriceTextBox.Text;
-            if (!ValidatePrice(price)) {
+            if (!ValidatePrice(price))
+            {
                 errorProvider.SetError(SeatAssignmentTextBox, "Invalid Price, Please enter a valid price.");
                 this.TicketPriceTextBox.Focus();
                 return;
             }
-            
+
             //validating seat.
             string seat = this.SeatAssignmentTextBox.Text;
-            if (!ValidateSeats(seat)) {
+            if (!ValidateSeats(seat))
+            {
                 errorProvider.SetError(SeatAssignmentTextBox, "Invalid Seat, Please enter a valid Seat.");
                 this.SeatAssignmentTextBox.Focus();
                 return;
             }
 
             string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , TicketPrice = @TicketPrice, Rank = @Rank ,Status = @Status where BookingID = @BookingID";
-            using (SqlConnection connection = new SqlConnection(databaseConnection)) {
+            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            {
                 connection.Open();
-                SqlCommand command = new SqlCommand(query,connection);
-                command.Parameters.AddWithValue("@SeatAssignment",int.Parse(this.SeatAssignmentTextBox.Text));
-                command.Parameters.AddWithValue("@TicketPrice",Double.Parse(this.TicketPriceTextBox.Text));
-                command.Parameters.AddWithValue("@Rank",this.RankComboBox.Text);
-                command.Parameters.AddWithValue("@Status",this.StatusComboBox.Text);
-                command.Parameters.AddWithValue("BookingID",this.BookingIdTextBox.Text);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@SeatAssignment", int.Parse(this.SeatAssignmentTextBox.Text));
+                command.Parameters.AddWithValue("@TicketPrice", Double.Parse(this.TicketPriceTextBox.Text));
+                command.Parameters.AddWithValue("@Rank", this.RankComboBox.Text);
+                command.Parameters.AddWithValue("@Status", this.StatusComboBox.Text);
+                command.Parameters.AddWithValue("BookingID", this.BookingIdTextBox.Text);
                 command.ExecuteNonQuery();
-                UpdateReservation_Load(sender,e);
+                UpdateReservation_Load(sender, e);
                 MessageBox.Show("Changes Made Successfully!");
                 connection.Close();
             }
@@ -132,7 +138,7 @@ namespace FlightReservationSystem
             }
         }
 
-        
+
         private bool ValidatePhoneNumber(string phoneNumber)
         {
             // Regular expression pattern for a numeric phone number with 11 digits
@@ -142,7 +148,7 @@ namespace FlightReservationSystem
             return isValid;
         }
 
-        
+
         private bool ValidatePrice(string price)
         {
             //Regular Expression of Validating Price.

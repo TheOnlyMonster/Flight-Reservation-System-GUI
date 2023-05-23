@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
-    
+
     public partial class UpdateAirCraft : MainMenu
     {
         private ErrorProvider errorProvider;
@@ -134,7 +134,7 @@ namespace FlightReservationSystem
                 return;
             }
 
-            
+
 
             string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AirCraftID = @AirCraftID;";
             using (SqlConnection connection = new SqlConnection(databaseConnection))
@@ -160,7 +160,7 @@ namespace FlightReservationSystem
             DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                string query ="DELETE FROM Aircraft WHERE AirCraftID = @RecordId;";
+                string query = "DELETE FROM Aircraft WHERE AirCraftID = @RecordId;";
                 using (SqlConnection connection = new SqlConnection(databaseConnection))
                 {
                     connection.Open();

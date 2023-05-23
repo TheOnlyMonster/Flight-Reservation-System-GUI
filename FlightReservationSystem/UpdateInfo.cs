@@ -176,6 +176,9 @@ namespace FlightReservationSystem
 
                 connection.Close();
                 MessageBox.Show("Changes are Confirmed!");
+                errorProvider.Clear();
+                UpdateInfo_Load(sender,e);
+
             }
         }
         private bool ValidateCardNumber(string cardNumber)

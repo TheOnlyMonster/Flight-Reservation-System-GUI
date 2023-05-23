@@ -206,7 +206,9 @@ namespace FlightReservationSystem
                 connection.Close();
 
             }
+           
             UpdateFlight_Load(sender, e);
+            MessageBox.Show("Changes Has Been Confirmed");
 
         }
 

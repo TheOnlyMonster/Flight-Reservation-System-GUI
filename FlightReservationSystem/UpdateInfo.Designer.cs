@@ -580,13 +580,14 @@
             SaveButton.Size = new Size(159, 49);
             SaveButton.TabIndex = 26;
             SaveButton.Text = "Submit";
+            SaveButton.Click += SaveButton_Click;
             // 
             // UpdateInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1688, 1008);
-            Margin = new Padding(3, 3, 3, 3);
+            Margin = new Padding(3);
             Name = "UpdateInfo";
             Text = "UpdateInfo";
             Load += UpdateInfo_Load;
