@@ -112,7 +112,7 @@ namespace FlightReservationSystem
             {  //the row that I'm clicking is not the labels Row.
                 DataGridViewRow SelectedRow = AdminFlightDataGrid.Rows[e.RowIndex];
                 this.ArrivalCountryTextBox.Text = SelectedRow.Cells["arrivalCountry"].Value.ToString();
-                this.deptDateTimePicker.Text = SelectedRow.Cells["deptDate"].Value.ToString();
+                this.DeparturedateTimePicker.Text = SelectedRow.Cells["deptDate"].Value.ToString();
                 this.ArrivaldateTimePicker.Text = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
                 this.FlightNumberTextBox.Text = SelectedRow.Cells["FlightNo"].Value.ToString();
                 this.AirCraftIdTextBox.Text = SelectedRow.Cells["AirCraftID"].Value.ToString();
@@ -133,7 +133,7 @@ namespace FlightReservationSystem
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dd MMMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
                 command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));

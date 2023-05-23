@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFlight));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
+            DeparturedateTimePicker = new DateTimePicker();
             DeleteButton = new Button();
             label8 = new Label();
             AirCraftIdTextBox = new TextBox();
             ArrivaldateTimePicker = new DateTimePicker();
             label4 = new Label();
-            DeparturedateTimePicker = new DateTimePicker();
             textBox10 = new TextBox();
             RankCTextBox = new TextBox();
             RankBTextBox = new TextBox();
@@ -89,7 +89,7 @@
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 3, 3, 3);
+            contentSplitContainer.Margin = new Padding(3);
             // 
             // contentSplitContainer.Panel2
             // 
@@ -112,7 +112,7 @@
             signInButton.Location = new Point(0, 57);
             signInButton.ShadowDecoration.BorderRadius = 20;
             signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
             signInButton.Size = new Size(325, 57);
             // 
             // signUpButton
@@ -127,7 +127,7 @@
             signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             signUpButton.ShadowDecoration.BorderRadius = 20;
             signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             signUpButton.Size = new Size(325, 57);
             // 
             // exploreFlightsButton
@@ -141,10 +141,10 @@
             exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
             exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
             exploreFlightsButton.Location = new Point(0, 114);
-            exploreFlightsButton.Margin = new Padding(3, 3, 3, 3);
+            exploreFlightsButton.Margin = new Padding(3);
             exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
             exploreFlightsButton.Size = new Size(325, 76);
             // 
             // helpButton
@@ -158,10 +158,10 @@
             helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
             helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
             helpButton.Location = new Point(0, 924);
-            helpButton.Margin = new Padding(3, 3, 3, 3);
+            helpButton.Margin = new Padding(3);
             helpButton.ShadowDecoration.BorderRadius = 20;
             helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             helpButton.Size = new Size(325, 84);
             // 
             // SignOutButton
@@ -176,16 +176,16 @@
             SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
             SignOutButton.ShadowDecoration.BorderRadius = 20;
             SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
             // panel3
             // 
+            panel3.Controls.Add(DeparturedateTimePicker);
             panel3.Controls.Add(DeleteButton);
             panel3.Controls.Add(label8);
             panel3.Controls.Add(AirCraftIdTextBox);
             panel3.Controls.Add(ArrivaldateTimePicker);
             panel3.Controls.Add(label4);
-            panel3.Controls.Add(DeparturedateTimePicker);
             panel3.Controls.Add(textBox10);
             panel3.Controls.Add(RankCTextBox);
             panel3.Controls.Add(RankBTextBox);
@@ -210,6 +210,13 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(402, 1000);
             panel3.TabIndex = 2;
+            // 
+            // DeparturedateTimePicker
+            // 
+            DeparturedateTimePicker.Location = new Point(231, 391);
+            DeparturedateTimePicker.Name = "DeparturedateTimePicker";
+            DeparturedateTimePicker.Size = new Size(154, 27);
+            DeparturedateTimePicker.TabIndex = 64;
             // 
             // DeleteButton
             // 
@@ -254,13 +261,6 @@
             label4.Size = new Size(112, 20);
             label4.TabIndex = 59;
             label4.Text = "Departure Date";
-            // 
-            // DeparturedateTimePicker
-            // 
-            DeparturedateTimePicker.Location = new Point(231, 389);
-            DeparturedateTimePicker.Name = "DeparturedateTimePicker";
-            DeparturedateTimePicker.Size = new Size(154, 27);
-            DeparturedateTimePicker.TabIndex = 56;
             // 
             // textBox10
             // 
@@ -605,7 +605,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1688, 1008);
-            Margin = new Padding(3, 3, 3, 3);
+            Margin = new Padding(3);
             Name = "UpdateFlight";
             Text = "UpdateFlight";
             Load += UpdateFlight_Load;
