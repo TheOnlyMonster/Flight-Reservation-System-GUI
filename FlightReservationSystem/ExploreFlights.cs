@@ -11,31 +11,23 @@ using System.Windows.Forms;
 
 namespace FlightReservationSystem
 {
-    public partial class ExploreFlights : MainMenu
+    public partial class ExploreFlights : MainMenu,IProcessDataGrid
     {
         public ExploreFlights()
         {
             InitializeComponent();
+            this.dataManager = new DataManager(databaseConnection, this);
+        }
+
+        public void ProccessDataGrid(SqlCommand command)
+        {
+            
         }
 
         private void ExploreFlights_Load(object sender, EventArgs e)
         {
-            flightDataGrid.Rows.Clear();
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
-            {
-                connection.Open();
-                string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight where AvailableSeats <> 0";
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
-                connection.Close();
-            }
-            foreach (DataRow row in dataTable.Rows)
-            {
-                object[] rowData = row.ItemArray;
-                flightDataGrid.Rows.Add(rowData);
-            }
+            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight where AvailableSeats <> 0";
+            this.dataManager.UpdateDataGrid(flightDataGrid, query);
         }
     }
 }

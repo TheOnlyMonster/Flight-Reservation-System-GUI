@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 namespace FlightReservationSystem
 {
 
-    public partial class BookFlight : MainMenu
+    public partial class BookFlight : MainMenu,IProcessDataGrid
     {
         private Dictionary<string, double> FlightClasses = new Dictionary<string, double>();
         private ErrorProvider errorProvider;
@@ -23,81 +23,56 @@ namespace FlightReservationSystem
             InitializeComponent();
             errorProvider = new ErrorProvider();
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            dataManager = new DataManager(databaseConnection,this);
         }
 
         private void bookFlightComboBox_Changed(object sender, EventArgs e)
         {
-            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight " +
-                    "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND AvailableSeats <> 0";
+            string query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats, Rank1Price, Rank2Price, Rank3Price FROM Flight ";
             if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats,Rank1Price, Rank2Price, Rank3Price FROM Flight where " +
-                    "AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
+                query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             }else if(this.deptCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats,Rank1Price, Rank2Price, Rank3Price FROM Flight where AvailableSeats <> 0 " +
-                    "AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND arrivalCountry = @arrivalCountry";
+                query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND arrivalCountry = @arrivalCountry";
             }
             else if(this.arrivalCountriesComboBox.SelectedItem == null)
             {
-                query = "SELECT FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrival, AvailableSeats,Rank1Price, Rank2Price, Rank3Price FROM Flight where" +
-                    " AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND deptCountry = @deptCountry";
+                query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND deptCountry = @deptCountry";
             }
-            flightDataGrid.Rows.Clear();
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            else
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                if (this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
-                {
-                    command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
-                    command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());   
-                }
-                else if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem != null)
-                {
-                    command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
-                }
-                else if (this.arrivalCountriesComboBox.SelectedItem == null && this.deptCountriesComboBox.SelectedItem != null)
-                {
-                    command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
-                }
-                command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
-                connection.Close();
+                query += "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND AvailableSeats <> 0";
             }
-            foreach (DataRow row in dataTable.Rows)
+            dataManager.UpdateDataGrid(flightDataGrid, query);
+
+        }
+        public void ProccessDataGrid(SqlCommand command)
+        {
+            if (this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
             {
-                object[] rowData = row.ItemArray;
-                flightDataGrid.Rows.Add(rowData);
+                command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
+                command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
             }
+            else if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem != null)
+            {
+                command.Parameters.AddWithValue("@arrivalCountry", this.arrivalCountriesComboBox.SelectedItem.ToString());
+            }
+            else if (this.arrivalCountriesComboBox.SelectedItem == null && this.deptCountriesComboBox.SelectedItem != null)
+            {
+                command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
+            }
+            command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
         }
         private void deptCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
-            deptCountriesComboBox.Items.Clear();
             fillComboBox($"Select DISTINCT deptCountry from Flight where AvailableSeats <> 0", deptCountriesComboBox);
         }
         private void arrivalCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
-            arrivalCountriesComboBox.Items.Clear();
             fillComboBox($"Select DISTINCT arrivalCountry from Flight where AvailableSeats <> 0", arrivalCountriesComboBox);
         }
 
-        private void fillComboBox(string query, ComboBox comboBox)
-        {
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataReader sqlDataReader = command.ExecuteReader();
-                while (sqlDataReader.Read())
-                {
-                    comboBox.Items.Add(sqlDataReader.GetString(0));
-                }
-                connection.Close();
-            }
-        }
 
         private void flightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -135,7 +110,6 @@ namespace FlightReservationSystem
         private void BookFlight_Load(object sender, EventArgs e)
         {
             bookFlightComboBox_Changed(sender, e);
-            
             this.creditCardExpiryDateTextBox.Text = Customer.Instance.ExpirayDate;
             this.creditCardTextBox.Text = Customer.Instance.CardNum;
             
@@ -228,7 +202,7 @@ namespace FlightReservationSystem
 
                         // Convert the date to the desired format
                         //
-                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text, "dd MMM yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                        command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                         command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
                         command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
                         command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
@@ -309,7 +283,7 @@ namespace FlightReservationSystem
             return isValid;
         }
 
-
+        
     }
 }
 

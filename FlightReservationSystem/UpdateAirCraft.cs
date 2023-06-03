@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 namespace FlightReservationSystem
 {
 
-    public partial class UpdateAirCraft : MainMenu
+    public partial class UpdateAirCraft : MainMenu,IProcessDataGrid
     {
         private ErrorProvider errorProvider;
         public UpdateAirCraft()
@@ -21,27 +21,13 @@ namespace FlightReservationSystem
             InitializeComponent();
             errorProvider = new ErrorProvider();
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            this.dataManager = new DataManager(databaseConnection, this);
         }
 
         private void UpdateAirCraft_Load(object sender, EventArgs e)
         {
-            //load the Grid.
-            AirCraftdataGridView.Rows.Clear();
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
-            {
-                connection.Open();
-                string query = "SELECT * FROM AirCraft;";
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(dataTable);
-                connection.Close();
-            }
-            foreach (DataRow row in dataTable.Rows)
-            {
-                object[] rowData = row.ItemArray;
-                AirCraftdataGridView.Rows.Add(rowData);
-            }
+            string query = "SELECT * FROM AirCraft;";
+            this.dataManager.UpdateDataGrid(AirCraftdataGridView, query);
 
         }
 
@@ -189,6 +175,11 @@ namespace FlightReservationSystem
             Regex regex = new Regex(pattern);
             bool isValid = regex.IsMatch(capacity);
             return isValid;
+        }
+
+        public void ProccessDataGrid(SqlCommand command)
+        {
+            
         }
     }
 }

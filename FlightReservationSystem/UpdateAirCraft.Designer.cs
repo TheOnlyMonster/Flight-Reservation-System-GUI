@@ -47,9 +47,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAirCraft));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -69,782 +69,807 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            label11 = new Label();
-            StatusComboBoxPanel1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            ModelTextBoxPnanel1 = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftIdTextBoxPanel1 = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftdataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            AirCraftID = new DataGridViewTextBoxColumn();
-            Model = new DataGridViewTextBoxColumn();
-            Manufacturer = new DataGridViewTextBoxColumn();
-            AirCraftType = new DataGridViewTextBoxColumn();
-            ManufactureYear = new DataGridViewTextBoxColumn();
-            Capacity = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            DeleteButton = new Guna.UI2.WinForms.Guna2Button();
-            confirmButton = new Guna.UI2.WinForms.Guna2Button();
-            StatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            label5 = new Label();
-            ModelTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            ManufactureTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            ManufacturerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            CapacityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            AircraftIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            label4 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
-            contentSplitContainer.Panel1.SuspendLayout();
-            contentSplitContainer.Panel2.SuspendLayout();
-            contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.StatusComboBoxPanel1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ModelTextBoxPnanel1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AirCraftIdTextBoxPanel1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AirCraftdataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.AirCraftID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AirCraftType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ManufactureYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Capacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            this.confirmButton = new Guna.UI2.WinForms.Guna2Button();
+            this.StatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ModelTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ManufactureTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AirCraftTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ManufacturerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CapacityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.AircraftIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
+            this.contentSplitContainer.Panel1.SuspendLayout();
+            this.contentSplitContainer.Panel2.SuspendLayout();
+            this.contentSplitContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirCraftdataGridView)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // contentSplitContainer
             // 
-            contentSplitContainer.Margin = new Padding(3, 5, 3, 5);
+            this.contentSplitContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(panel2);
-            contentSplitContainer.Panel2.Controls.Add(panel1);
-            contentSplitContainer.Size = new Size(1688, 1008);
-            contentSplitContainer.SplitterDistance = 325;
-            contentSplitContainer.SplitterWidth = 6;
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel2);
+            this.contentSplitContainer.Panel2.Controls.Add(this.panel1);
+            this.contentSplitContainer.Size = new System.Drawing.Size(1405, 753);
+            this.contentSplitContainer.SplitterDistance = 214;
             // 
             // signInButton
             // 
-            signInButton.DialogResult = DialogResult.None;
-            signInButton.DisabledState.BorderColor = Color.DarkGray;
-            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            signInButton.Location = new Point(0, 67);
-            signInButton.Margin = new Padding(3, 4, 3, 4);
-            signInButton.ShadowDecoration.BorderRadius = 20;
-            signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            signInButton.Size = new Size(325, 67);
+            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.signInButton.Location = new System.Drawing.Point(0, 38);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signInButton.ShadowDecoration.BorderRadius = 20;
+            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            this.signInButton.Size = new System.Drawing.Size(214, 38);
             // 
             // signUpButton
             // 
-            signUpButton.DialogResult = DialogResult.None;
-            signUpButton.DisabledState.BorderColor = Color.DarkGray;
-            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
-            signUpButton.Margin = new Padding(3, 4, 3, 4);
-            signUpButton.ShadowDecoration.BorderRadius = 20;
-            signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            signUpButton.Size = new Size(325, 67);
+            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signUpButton.ShadowDecoration.BorderRadius = 20;
+            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.signUpButton.Size = new System.Drawing.Size(214, 38);
             // 
             // exploreFlightsButton
             // 
-            exploreFlightsButton.DialogResult = DialogResult.None;
-            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
-            exploreFlightsButton.Location = new Point(0, 134);
-            exploreFlightsButton.Margin = new Padding(3, 5, 3, 5);
-            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            exploreFlightsButton.Size = new Size(325, 67);
+            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.exploreFlightsButton.Location = new System.Drawing.Point(0, 76);
+            this.exploreFlightsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            this.exploreFlightsButton.Size = new System.Drawing.Size(214, 38);
             // 
             // helpButton
             // 
-            helpButton.DialogResult = DialogResult.None;
-            helpButton.DisabledState.BorderColor = Color.DarkGray;
-            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
-            helpButton.Location = new Point(0, 924);
-            helpButton.Margin = new Padding(3, 5, 3, 5);
-            helpButton.ShadowDecoration.BorderRadius = 20;
-            helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            helpButton.Size = new Size(325, 84);
+            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.helpButton.Location = new System.Drawing.Point(0, 706);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.helpButton.ShadowDecoration.BorderRadius = 20;
+            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.helpButton.Size = new System.Drawing.Size(214, 47);
             // 
             // SignOutButton
             // 
-            SignOutButton.DialogResult = DialogResult.None;
-            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image6");
-            SignOutButton.ShadowDecoration.BorderRadius = 20;
-            SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
+            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges29;
             // 
             // UpdateFlight
             // 
-            UpdateFlight.DialogResult = DialogResult.None;
-            UpdateFlight.DisabledState.BorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image7");
-            UpdateFlight.ShadowDecoration.BorderRadius = 20;
-            UpdateFlight.ShadowDecoration.Color = Color.Transparent;
-            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            this.UpdateFlight.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            this.UpdateFlight.ShadowDecoration.BorderRadius = 20;
+            this.UpdateFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges30;
             // 
             // UpdateReservation
             // 
-            UpdateReservation.DialogResult = DialogResult.None;
-            UpdateReservation.DisabledState.BorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateReservation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateReservation.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateReservation.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image8");
-            UpdateReservation.ShadowDecoration.BorderRadius = 20;
-            UpdateReservation.ShadowDecoration.Color = Color.Transparent;
-            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            this.UpdateReservation.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateReservation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateReservation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateReservation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateReservation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateReservation.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateReservation.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateReservation.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            this.UpdateReservation.ShadowDecoration.BorderRadius = 20;
+            this.UpdateReservation.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges31;
             // 
             // UpdateInfo
             // 
-            UpdateInfo.DialogResult = DialogResult.None;
-            UpdateInfo.DisabledState.BorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateInfo.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateInfo.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image9");
-            UpdateInfo.ShadowDecoration.BorderRadius = 20;
-            UpdateInfo.ShadowDecoration.Color = Color.Transparent;
-            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            this.UpdateInfo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.UpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.UpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.UpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.UpdateInfo.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UpdateInfo.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            this.UpdateInfo.ShadowDecoration.BorderRadius = 20;
+            this.UpdateInfo.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges32;
             // 
             // AddAircraft
             // 
-            AddAircraft.DialogResult = DialogResult.None;
-            AddAircraft.DisabledState.BorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image10");
-            AddAircraft.ShadowDecoration.BorderRadius = 20;
-            AddAircraft.ShadowDecoration.Color = Color.Transparent;
-            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            this.AddAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.AddAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            this.AddAircraft.ShadowDecoration.BorderRadius = 20;
+            this.AddAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges33;
             // 
             // AddFlight
             // 
-            AddFlight.DialogResult = DialogResult.None;
-            AddFlight.DisabledState.BorderColor = Color.DarkGray;
-            AddFlight.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddFlight.HoverState.Image = (Image)resources.GetObject("resource.Image11");
-            AddFlight.ShadowDecoration.BorderRadius = 20;
-            AddFlight.ShadowDecoration.Color = Color.Transparent;
-            AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            this.AddFlight.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            this.AddFlight.ShadowDecoration.BorderRadius = 20;
+            this.AddFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges34;
             // 
             // bookFlightButton
             // 
-            bookFlightButton.DialogResult = DialogResult.None;
-            bookFlightButton.DisabledState.BorderColor = Color.DarkGray;
-            bookFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            bookFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            bookFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
-            bookFlightButton.ShadowDecoration.BorderRadius = 20;
-            bookFlightButton.ShadowDecoration.Color = Color.Transparent;
-            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            this.bookFlightButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bookFlightButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bookFlightButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bookFlightButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bookFlightButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bookFlightButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bookFlightButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
+            this.bookFlightButton.ShadowDecoration.BorderRadius = 20;
+            this.bookFlightButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges35;
             // 
             // generateReport
             // 
-            generateReport.DialogResult = DialogResult.None;
-            generateReport.DisabledState.BorderColor = Color.DarkGray;
-            generateReport.DisabledState.CustomBorderColor = Color.DarkGray;
-            generateReport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            generateReport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            generateReport.HoverState.FillColor = SystemColors.ButtonHighlight;
-            generateReport.HoverState.ForeColor = SystemColors.MenuHighlight;
-            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image13");
-            generateReport.ShadowDecoration.BorderRadius = 20;
-            generateReport.ShadowDecoration.Color = Color.Transparent;
-            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            this.generateReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
+            this.generateReport.ShadowDecoration.BorderRadius = 20;
+            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges36;
             // 
             // customerReservations
             // 
-            customerReservations.DialogResult = DialogResult.None;
-            customerReservations.DisabledState.BorderColor = Color.DarkGray;
-            customerReservations.DisabledState.CustomBorderColor = Color.DarkGray;
-            customerReservations.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            customerReservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            customerReservations.HoverState.FillColor = SystemColors.ButtonHighlight;
-            customerReservations.HoverState.ForeColor = SystemColors.MenuHighlight;
-            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image14");
-            customerReservations.ShadowDecoration.BorderRadius = 20;
-            customerReservations.ShadowDecoration.Color = Color.Transparent;
-            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges37;
+            this.customerReservations.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.customerReservations.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.customerReservations.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.customerReservations.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.customerReservations.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.customerReservations.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.customerReservations.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.customerReservations.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
+            this.customerReservations.ShadowDecoration.BorderRadius = 20;
+            this.customerReservations.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges37;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(StatusComboBoxPanel1);
-            panel1.Controls.Add(ModelTextBoxPnanel1);
-            panel1.Controls.Add(AirCraftIdTextBoxPanel1);
-            panel1.Controls.Add(AirCraftdataGridView);
-            panel1.Location = new Point(3, 4);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(976, 1000);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.StatusComboBoxPanel1);
+            this.panel1.Controls.Add(this.ModelTextBoxPnanel1);
+            this.panel1.Controls.Add(this.AirCraftIdTextBoxPanel1);
+            this.panel1.Controls.Add(this.AirCraftdataGridView);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(854, 750);
+            this.panel1.TabIndex = 0;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(673, 13);
-            label11.Name = "label11";
-            label11.Size = new Size(49, 20);
-            label11.TabIndex = 21;
-            label11.Text = "Status";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(589, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 15);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Status";
             // 
             // StatusComboBoxPanel1
             // 
-            StatusComboBoxPanel1.BackColor = Color.Transparent;
-            StatusComboBoxPanel1.BorderRadius = 20;
-            StatusComboBoxPanel1.CustomizableEdges = customizableEdges19;
-            StatusComboBoxPanel1.DrawMode = DrawMode.OwnerDrawFixed;
-            StatusComboBoxPanel1.DropDownStyle = ComboBoxStyle.DropDownList;
-            StatusComboBoxPanel1.FocusedColor = Color.FromArgb(94, 148, 255);
-            StatusComboBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            StatusComboBoxPanel1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            StatusComboBoxPanel1.ForeColor = Color.FromArgb(68, 88, 112);
-            StatusComboBoxPanel1.FormattingEnabled = true;
-            StatusComboBoxPanel1.HoverState.BorderColor = SystemColors.MenuHighlight;
-            StatusComboBoxPanel1.ItemHeight = 30;
-            StatusComboBoxPanel1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBoxPanel1.Location = new Point(616, 36);
-            StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
-            StatusComboBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            StatusComboBoxPanel1.Size = new Size(161, 36);
-            StatusComboBoxPanel1.TabIndex = 20;
-            StatusComboBoxPanel1.TextAlign = HorizontalAlignment.Center;
-            StatusComboBoxPanel1.SelectedIndexChanged += StatusComboBoxPanel1_SelectedIndexChanged;
+            this.StatusComboBoxPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.StatusComboBoxPanel1.BorderRadius = 20;
+            this.StatusComboBoxPanel1.CustomizableEdges = customizableEdges19;
+            this.StatusComboBoxPanel1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.StatusComboBoxPanel1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StatusComboBoxPanel1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBoxPanel1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBoxPanel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusComboBoxPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.StatusComboBoxPanel1.FormattingEnabled = true;
+            this.StatusComboBoxPanel1.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.StatusComboBoxPanel1.ItemHeight = 30;
+            this.StatusComboBoxPanel1.Items.AddRange(new object[] {
+            "Active",
+            "Inactive",
+            "Maintainance"});
+            this.StatusComboBoxPanel1.Location = new System.Drawing.Point(539, 27);
+            this.StatusComboBoxPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
+            this.StatusComboBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.StatusComboBoxPanel1.Size = new System.Drawing.Size(141, 36);
+            this.StatusComboBoxPanel1.TabIndex = 20;
+            this.StatusComboBoxPanel1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StatusComboBoxPanel1.SelectedIndexChanged += new System.EventHandler(this.StatusComboBoxPanel1_SelectedIndexChanged);
             // 
             // ModelTextBoxPnanel1
             // 
-            ModelTextBoxPnanel1.BorderRadius = 20;
-            ModelTextBoxPnanel1.CustomizableEdges = customizableEdges21;
-            ModelTextBoxPnanel1.DefaultText = "";
-            ModelTextBoxPnanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ModelTextBoxPnanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ModelTextBoxPnanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBoxPnanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBoxPnanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBoxPnanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ModelTextBoxPnanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBoxPnanel1.Location = new Point(425, 36);
-            ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
-            ModelTextBoxPnanel1.PasswordChar = '\0';
-            ModelTextBoxPnanel1.PlaceholderText = "Model";
-            ModelTextBoxPnanel1.SelectedText = "";
-            ModelTextBoxPnanel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            ModelTextBoxPnanel1.Size = new Size(155, 48);
-            ModelTextBoxPnanel1.TabIndex = 18;
-            ModelTextBoxPnanel1.TextChanged += ModelTextBoxPnanel1_TextChanged;
+            this.ModelTextBoxPnanel1.BorderRadius = 20;
+            this.ModelTextBoxPnanel1.CustomizableEdges = customizableEdges21;
+            this.ModelTextBoxPnanel1.DefaultText = "";
+            this.ModelTextBoxPnanel1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ModelTextBoxPnanel1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ModelTextBoxPnanel1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ModelTextBoxPnanel1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ModelTextBoxPnanel1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ModelTextBoxPnanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ModelTextBoxPnanel1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ModelTextBoxPnanel1.Location = new System.Drawing.Point(372, 27);
+            this.ModelTextBoxPnanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
+            this.ModelTextBoxPnanel1.PasswordChar = '\0';
+            this.ModelTextBoxPnanel1.PlaceholderText = "Model";
+            this.ModelTextBoxPnanel1.SelectedText = "";
+            this.ModelTextBoxPnanel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.ModelTextBoxPnanel1.Size = new System.Drawing.Size(136, 36);
+            this.ModelTextBoxPnanel1.TabIndex = 18;
+            this.ModelTextBoxPnanel1.TextChanged += new System.EventHandler(this.ModelTextBoxPnanel1_TextChanged);
             // 
             // AirCraftIdTextBoxPanel1
             // 
-            AirCraftIdTextBoxPanel1.BorderRadius = 20;
-            AirCraftIdTextBoxPanel1.CustomizableEdges = customizableEdges23;
-            AirCraftIdTextBoxPanel1.DefaultText = "";
-            AirCraftIdTextBoxPanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AirCraftIdTextBoxPanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AirCraftIdTextBoxPanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftIdTextBoxPanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftIdTextBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftIdTextBoxPanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftIdTextBoxPanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftIdTextBoxPanel1.Location = new Point(229, 36);
-            AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
-            AirCraftIdTextBoxPanel1.PasswordChar = '\0';
-            AirCraftIdTextBoxPanel1.PlaceholderText = "Aircraft ID";
-            AirCraftIdTextBoxPanel1.SelectedText = "";
-            AirCraftIdTextBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            AirCraftIdTextBoxPanel1.Size = new Size(161, 48);
-            AirCraftIdTextBoxPanel1.TabIndex = 47;
-            AirCraftIdTextBoxPanel1.TextChanged += AirCraftIdTextBoxPanel1_TextChanged;
+            this.AirCraftIdTextBoxPanel1.BorderRadius = 20;
+            this.AirCraftIdTextBoxPanel1.CustomizableEdges = customizableEdges23;
+            this.AirCraftIdTextBoxPanel1.DefaultText = "";
+            this.AirCraftIdTextBoxPanel1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AirCraftIdTextBoxPanel1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AirCraftIdTextBoxPanel1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AirCraftIdTextBoxPanel1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AirCraftIdTextBoxPanel1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AirCraftIdTextBoxPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AirCraftIdTextBoxPanel1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AirCraftIdTextBoxPanel1.Location = new System.Drawing.Point(200, 27);
+            this.AirCraftIdTextBoxPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
+            this.AirCraftIdTextBoxPanel1.PasswordChar = '\0';
+            this.AirCraftIdTextBoxPanel1.PlaceholderText = "Aircraft ID";
+            this.AirCraftIdTextBoxPanel1.SelectedText = "";
+            this.AirCraftIdTextBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.AirCraftIdTextBoxPanel1.Size = new System.Drawing.Size(141, 36);
+            this.AirCraftIdTextBoxPanel1.TabIndex = 47;
+            this.AirCraftIdTextBoxPanel1.TextChanged += new System.EventHandler(this.AirCraftIdTextBoxPanel1_TextChanged);
             // 
             // AirCraftdataGridView
             // 
-            AirCraftdataGridView.AllowUserToAddRows = false;
-            AirCraftdataGridView.AllowUserToDeleteRows = false;
-            AirCraftdataGridView.AllowUserToResizeColumns = false;
-            AirCraftdataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(189, 223, 251);
-            AirCraftdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            AirCraftdataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 150, 242);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            AirCraftdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            AirCraftdataGridView.ColumnHeadersHeight = 40;
-            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, Manufacturer, AirCraftType, ManufactureYear, Capacity, Status });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(211, 233, 252);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(107, 185, 246);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            AirCraftdataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            AirCraftdataGridView.GridColor = Color.FromArgb(187, 222, 251);
-            AirCraftdataGridView.Location = new Point(-5, 97);
-            AirCraftdataGridView.Margin = new Padding(0);
-            AirCraftdataGridView.MultiSelect = false;
-            AirCraftdataGridView.Name = "AirCraftdataGridView";
-            AirCraftdataGridView.ReadOnly = true;
-            AirCraftdataGridView.RowHeadersVisible = false;
-            AirCraftdataGridView.RowHeadersWidth = 50;
-            AirCraftdataGridView.RowTemplate.Height = 25;
-            AirCraftdataGridView.Size = new Size(981, 903);
-            AirCraftdataGridView.TabIndex = 33;
-            AirCraftdataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(189, 223, 251);
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.BackColor = Color.White;
-            AirCraftdataGridView.ThemeStyle.GridColor = Color.FromArgb(187, 222, 251);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(33, 150, 242);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            AirCraftdataGridView.ThemeStyle.ReadOnly = true;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(211, 233, 252);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.Height = 25;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(107, 185, 246);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
-            AirCraftdataGridView.CellClick += AirCraftdataGridView_CellClick;
+            this.AirCraftdataGridView.AllowUserToAddRows = false;
+            this.AirCraftdataGridView.AllowUserToDeleteRows = false;
+            this.AirCraftdataGridView.AllowUserToResizeColumns = false;
+            this.AirCraftdataGridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.AirCraftdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AirCraftdataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AirCraftdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AirCraftdataGridView.ColumnHeadersHeight = 40;
+            this.AirCraftdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AirCraftID,
+            this.Model,
+            this.Manufacturer,
+            this.AirCraftType,
+            this.ManufactureYear,
+            this.Capacity,
+            this.Status});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AirCraftdataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AirCraftdataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.AirCraftdataGridView.Location = new System.Drawing.Point(-4, 73);
+            this.AirCraftdataGridView.Margin = new System.Windows.Forms.Padding(0);
+            this.AirCraftdataGridView.MultiSelect = false;
+            this.AirCraftdataGridView.Name = "AirCraftdataGridView";
+            this.AirCraftdataGridView.ReadOnly = true;
+            this.AirCraftdataGridView.RowHeadersVisible = false;
+            this.AirCraftdataGridView.RowHeadersWidth = 50;
+            this.AirCraftdataGridView.RowTemplate.Height = 25;
+            this.AirCraftdataGridView.Size = new System.Drawing.Size(858, 677);
+            this.AirCraftdataGridView.TabIndex = 33;
+            this.AirCraftdataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            this.AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.AirCraftdataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.AirCraftdataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.AirCraftdataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            this.AirCraftdataGridView.ThemeStyle.ReadOnly = true;
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.Height = 25;
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            this.AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AirCraftdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AirCraftdataGridView_CellClick);
             // 
             // AirCraftID
             // 
-            AirCraftID.HeaderText = "AirCraftID";
-            AirCraftID.MinimumWidth = 6;
-            AirCraftID.Name = "AirCraftID";
-            AirCraftID.ReadOnly = true;
+            this.AirCraftID.HeaderText = "AirCraftID";
+            this.AirCraftID.MinimumWidth = 6;
+            this.AirCraftID.Name = "AirCraftID";
+            this.AirCraftID.ReadOnly = true;
             // 
             // Model
             // 
-            Model.HeaderText = "Model";
-            Model.MinimumWidth = 6;
-            Model.Name = "Model";
-            Model.ReadOnly = true;
+            this.Model.HeaderText = "Model";
+            this.Model.MinimumWidth = 6;
+            this.Model.Name = "Model";
+            this.Model.ReadOnly = true;
             // 
             // Manufacturer
             // 
-            Manufacturer.HeaderText = "Manufacturer";
-            Manufacturer.MinimumWidth = 6;
-            Manufacturer.Name = "Manufacturer";
-            Manufacturer.ReadOnly = true;
+            this.Manufacturer.HeaderText = "Manufacturer";
+            this.Manufacturer.MinimumWidth = 6;
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.ReadOnly = true;
             // 
             // AirCraftType
             // 
-            AirCraftType.HeaderText = "AirCraftType";
-            AirCraftType.MinimumWidth = 6;
-            AirCraftType.Name = "AirCraftType";
-            AirCraftType.ReadOnly = true;
+            this.AirCraftType.HeaderText = "AirCraftType";
+            this.AirCraftType.MinimumWidth = 6;
+            this.AirCraftType.Name = "AirCraftType";
+            this.AirCraftType.ReadOnly = true;
             // 
             // ManufactureYear
             // 
-            ManufactureYear.HeaderText = "ManufactureYear";
-            ManufactureYear.MinimumWidth = 6;
-            ManufactureYear.Name = "ManufactureYear";
-            ManufactureYear.ReadOnly = true;
+            this.ManufactureYear.HeaderText = "ManufactureYear";
+            this.ManufactureYear.MinimumWidth = 6;
+            this.ManufactureYear.Name = "ManufactureYear";
+            this.ManufactureYear.ReadOnly = true;
             // 
             // Capacity
             // 
-            Capacity.HeaderText = "Capacity";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
-            Capacity.ReadOnly = true;
+            this.Capacity.HeaderText = "Capacity";
+            this.Capacity.MinimumWidth = 6;
+            this.Capacity.Name = "Capacity";
+            this.Capacity.ReadOnly = true;
             // 
             // Status
             // 
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // panel2
             // 
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(DeleteButton);
-            panel2.Controls.Add(confirmButton);
-            panel2.Controls.Add(StatusComboBox);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(ModelTextBox);
-            panel2.Controls.Add(ManufactureTextBox);
-            panel2.Controls.Add(AirCraftTextBox);
-            panel2.Controls.Add(ManufacturerTextBox);
-            panel2.Controls.Add(CapacityTextBox);
-            panel2.Controls.Add(AircraftIdTextBox);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(986, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(368, 1001);
-            panel2.TabIndex = 1;
-            // 
-            // DeleteButton
-            // 
-            DeleteButton.Animated = true;
-            DeleteButton.BackColor = Color.Transparent;
-            DeleteButton.BorderColor = Color.Transparent;
-            DeleteButton.BorderRadius = 20;
-            DeleteButton.Cursor = Cursors.Hand;
-            DeleteButton.CustomizableEdges = customizableEdges1;
-            DeleteButton.DisabledState.BorderColor = Color.DarkGray;
-            DeleteButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            DeleteButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            DeleteButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            DeleteButton.FillColor = Color.Transparent;
-            DeleteButton.FocusedColor = Color.Transparent;
-            DeleteButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteButton.ForeColor = SystemColors.ControlText;
-            DeleteButton.HoverState.FillColor = Color.Red;
-            DeleteButton.HoverState.ForeColor = Color.White;
-            DeleteButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            DeleteButton.Image = (Image)resources.GetObject("DeleteButton.Image");
-            DeleteButton.ImageAlign = HorizontalAlignment.Left;
-            DeleteButton.Location = new Point(103, 667);
-            DeleteButton.Name = "DeleteButton";
-            DeleteButton.Padding = new Padding(6, 7, 6, 7);
-            DeleteButton.PressedColor = Color.White;
-            DeleteButton.ShadowDecoration.BorderRadius = 20;
-            DeleteButton.ShadowDecoration.Color = Color.Transparent;
-            DeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            DeleteButton.Size = new Size(207, 49);
-            DeleteButton.TabIndex = 62;
-            DeleteButton.Text = "Delete Aircraft";
-            DeleteButton.Click += DeleteButton_Click;
-            // 
-            // confirmButton
-            // 
-            confirmButton.Animated = true;
-            confirmButton.BackColor = Color.Transparent;
-            confirmButton.BorderColor = Color.Transparent;
-            confirmButton.BorderRadius = 20;
-            confirmButton.Cursor = Cursors.Hand;
-            confirmButton.CustomizableEdges = customizableEdges3;
-            confirmButton.DisabledState.BorderColor = Color.DarkGray;
-            confirmButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            confirmButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            confirmButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            confirmButton.FillColor = Color.Transparent;
-            confirmButton.FocusedColor = Color.Transparent;
-            confirmButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            confirmButton.ForeColor = SystemColors.ControlText;
-            confirmButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            confirmButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            confirmButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            confirmButton.Image = (Image)resources.GetObject("confirmButton.Image");
-            confirmButton.ImageAlign = HorizontalAlignment.Left;
-            confirmButton.Location = new Point(128, 613);
-            confirmButton.Name = "confirmButton";
-            confirmButton.Padding = new Padding(6, 7, 6, 7);
-            confirmButton.PressedColor = Color.White;
-            confirmButton.ShadowDecoration.BorderRadius = 20;
-            confirmButton.ShadowDecoration.Color = Color.Transparent;
-            confirmButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            confirmButton.Size = new Size(161, 49);
-            confirmButton.TabIndex = 61;
-            confirmButton.Text = "Submit";
-            confirmButton.Click += confirmButton_Click;
-            // 
-            // StatusComboBox
-            // 
-            StatusComboBox.BackColor = Color.Transparent;
-            StatusComboBox.BorderRadius = 20;
-            StatusComboBox.CustomizableEdges = customizableEdges5;
-            StatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            StatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            StatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            StatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            StatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            StatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            StatusComboBox.ItemHeight = 30;
-            StatusComboBox.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBox.Location = new Point(111, 517);
-            StatusComboBox.Name = "StatusComboBox";
-            StatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            StatusComboBox.Size = new Size(161, 36);
-            StatusComboBox.TabIndex = 54;
-            StatusComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(161, 494);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Status";
-            // 
-            // ModelTextBox
-            // 
-            ModelTextBox.BorderRadius = 20;
-            ModelTextBox.CustomizableEdges = customizableEdges7;
-            ModelTextBox.DefaultText = "";
-            ModelTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ModelTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ModelTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ModelTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBox.Location = new Point(198, 265);
-            ModelTextBox.Name = "ModelTextBox";
-            ModelTextBox.PasswordChar = '\0';
-            ModelTextBox.PlaceholderText = "Model";
-            ModelTextBox.SelectedText = "";
-            ModelTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            ModelTextBox.Size = new Size(161, 39);
-            ModelTextBox.TabIndex = 49;
-            // 
-            // ManufactureTextBox
-            // 
-            ManufactureTextBox.BorderRadius = 20;
-            ManufactureTextBox.CustomizableEdges = customizableEdges9;
-            ManufactureTextBox.DefaultText = "";
-            ManufactureTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ManufactureTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ManufactureTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ManufactureTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ManufactureTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufactureTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ManufactureTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufactureTextBox.Location = new Point(16, 338);
-            ManufactureTextBox.Name = "ManufactureTextBox";
-            ManufactureTextBox.PasswordChar = '\0';
-            ManufactureTextBox.PlaceholderText = "Manufucture Year";
-            ManufactureTextBox.SelectedText = "";
-            ManufactureTextBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            ManufactureTextBox.Size = new Size(161, 39);
-            ManufactureTextBox.TabIndex = 50;
-            // 
-            // AirCraftTextBox
-            // 
-            AirCraftTextBox.BorderRadius = 20;
-            AirCraftTextBox.CustomizableEdges = customizableEdges11;
-            AirCraftTextBox.DefaultText = "";
-            AirCraftTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AirCraftTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AirCraftTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftTextBox.Location = new Point(198, 338);
-            AirCraftTextBox.Name = "AirCraftTextBox";
-            AirCraftTextBox.PasswordChar = '\0';
-            AirCraftTextBox.PlaceholderText = "Aircraft Type";
-            AirCraftTextBox.SelectedText = "";
-            AirCraftTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            AirCraftTextBox.Size = new Size(161, 39);
-            AirCraftTextBox.TabIndex = 51;
-            // 
-            // ManufacturerTextBox
-            // 
-            ManufacturerTextBox.BorderRadius = 20;
-            ManufacturerTextBox.CustomizableEdges = customizableEdges13;
-            ManufacturerTextBox.DefaultText = "";
-            ManufacturerTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ManufacturerTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ManufacturerTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ManufacturerTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ManufacturerTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufacturerTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ManufacturerTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufacturerTextBox.Location = new Point(16, 418);
-            ManufacturerTextBox.Name = "ManufacturerTextBox";
-            ManufacturerTextBox.PasswordChar = '\0';
-            ManufacturerTextBox.PlaceholderText = "Manufacturer";
-            ManufacturerTextBox.SelectedText = "";
-            ManufacturerTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            ManufacturerTextBox.Size = new Size(161, 39);
-            ManufacturerTextBox.TabIndex = 52;
-            // 
-            // CapacityTextBox
-            // 
-            CapacityTextBox.BorderRadius = 20;
-            CapacityTextBox.CustomizableEdges = customizableEdges15;
-            CapacityTextBox.DefaultText = "";
-            CapacityTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            CapacityTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            CapacityTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            CapacityTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            CapacityTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            CapacityTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CapacityTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            CapacityTextBox.Location = new Point(198, 418);
-            CapacityTextBox.Name = "CapacityTextBox";
-            CapacityTextBox.PasswordChar = '\0';
-            CapacityTextBox.PlaceholderText = "Capacity";
-            CapacityTextBox.SelectedText = "";
-            CapacityTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            CapacityTextBox.Size = new Size(161, 39);
-            CapacityTextBox.TabIndex = 53;
-            // 
-            // AircraftIdTextBox
-            // 
-            AircraftIdTextBox.BorderRadius = 20;
-            AircraftIdTextBox.CustomizableEdges = customizableEdges17;
-            AircraftIdTextBox.DefaultText = "";
-            AircraftIdTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AircraftIdTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AircraftIdTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AircraftIdTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AircraftIdTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AircraftIdTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AircraftIdTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AircraftIdTextBox.Location = new Point(16, 265);
-            AircraftIdTextBox.Name = "AircraftIdTextBox";
-            AircraftIdTextBox.PasswordChar = '\0';
-            AircraftIdTextBox.PlaceholderText = "Aircraft ID";
-            AircraftIdTextBox.ReadOnly = true;
-            AircraftIdTextBox.SelectedText = "";
-            AircraftIdTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            AircraftIdTextBox.Size = new Size(161, 39);
-            AircraftIdTextBox.TabIndex = 48;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(106, 163);
-            label3.Name = "label3";
-            label3.Size = new Size(182, 32);
-            label3.TabIndex = 2;
-            label3.Text = "Update Aircraft";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(51, 242);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 20);
-            label2.TabIndex = 64;
-            label2.Text = "Aircraft ID";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(244, 395);
-            label4.Name = "label4";
-            label4.Size = new Size(66, 20);
-            label4.TabIndex = 65;
-            label4.Text = "Capacity";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(232, 315);
-            label6.Name = "label6";
-            label6.Size = new Size(93, 20);
-            label6.TabIndex = 66;
-            label6.Text = "Aircraft Type";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(244, 242);
-            label7.Name = "label7";
-            label7.Size = new Size(52, 20);
-            label7.TabIndex = 67;
-            label7.Text = "Model";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(51, 395);
-            label8.Name = "label8";
-            label8.Size = new Size(97, 20);
-            label8.TabIndex = 68;
-            label8.Text = "Manufacturer";
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.DeleteButton);
+            this.panel2.Controls.Add(this.confirmButton);
+            this.panel2.Controls.Add(this.StatusComboBox);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.ModelTextBox);
+            this.panel2.Controls.Add(this.ManufactureTextBox);
+            this.panel2.Controls.Add(this.AirCraftTextBox);
+            this.panel2.Controls.Add(this.ManufacturerTextBox);
+            this.panel2.Controls.Add(this.CapacityTextBox);
+            this.panel2.Controls.Add(this.AircraftIdTextBox);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(863, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(322, 751);
+            this.panel2.TabIndex = 1;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(34, 315);
-            label9.Name = "label9";
-            label9.Size = new Size(124, 20);
-            label9.TabIndex = 69;
-            label9.Text = "Manufucture Year";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(30, 236);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(101, 15);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "Manufucture Year";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(45, 296);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 15);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "Manufacturer";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(214, 182);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 15);
+            this.label7.TabIndex = 67;
+            this.label7.Text = "Model";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(203, 236);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 15);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "Aircraft Type";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(214, 296);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 15);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "Capacity";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(45, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 15);
+            this.label2.TabIndex = 64;
+            this.label2.Text = "Aircraft ID";
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Animated = true;
+            this.DeleteButton.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteButton.BorderColor = System.Drawing.Color.Transparent;
+            this.DeleteButton.BorderRadius = 20;
+            this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteButton.CustomizableEdges = customizableEdges1;
+            this.DeleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DeleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DeleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DeleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DeleteButton.FillColor = System.Drawing.Color.Transparent;
+            this.DeleteButton.FocusedColor = System.Drawing.Color.Transparent;
+            this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeleteButton.HoverState.FillColor = System.Drawing.Color.Red;
+            this.DeleteButton.HoverState.ForeColor = System.Drawing.Color.White;
+            this.DeleteButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
+            this.DeleteButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DeleteButton.Location = new System.Drawing.Point(90, 500);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Padding = new System.Windows.Forms.Padding(5);
+            this.DeleteButton.PressedColor = System.Drawing.Color.White;
+            this.DeleteButton.ShadowDecoration.BorderRadius = 20;
+            this.DeleteButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.DeleteButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.DeleteButton.Size = new System.Drawing.Size(181, 37);
+            this.DeleteButton.TabIndex = 62;
+            this.DeleteButton.Text = "Delete Aircraft";
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // confirmButton
+            // 
+            this.confirmButton.Animated = true;
+            this.confirmButton.BackColor = System.Drawing.Color.Transparent;
+            this.confirmButton.BorderColor = System.Drawing.Color.Transparent;
+            this.confirmButton.BorderRadius = 20;
+            this.confirmButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmButton.CustomizableEdges = customizableEdges3;
+            this.confirmButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirmButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirmButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirmButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirmButton.FillColor = System.Drawing.Color.Transparent;
+            this.confirmButton.FocusedColor = System.Drawing.Color.Transparent;
+            this.confirmButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.confirmButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.confirmButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.confirmButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.confirmButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.confirmButton.Image = ((System.Drawing.Image)(resources.GetObject("confirmButton.Image")));
+            this.confirmButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.confirmButton.Location = new System.Drawing.Point(112, 460);
+            this.confirmButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.confirmButton.Name = "confirmButton";
+            this.confirmButton.Padding = new System.Windows.Forms.Padding(5);
+            this.confirmButton.PressedColor = System.Drawing.Color.White;
+            this.confirmButton.ShadowDecoration.BorderRadius = 20;
+            this.confirmButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.confirmButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.confirmButton.Size = new System.Drawing.Size(141, 37);
+            this.confirmButton.TabIndex = 61;
+            this.confirmButton.Text = "Submit";
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
+            // 
+            // StatusComboBox
+            // 
+            this.StatusComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.StatusComboBox.BorderRadius = 20;
+            this.StatusComboBox.CustomizableEdges = customizableEdges5;
+            this.StatusComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.StatusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StatusComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.StatusComboBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.StatusComboBox.FormattingEnabled = true;
+            this.StatusComboBox.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.StatusComboBox.ItemHeight = 30;
+            this.StatusComboBox.Items.AddRange(new object[] {
+            "Active",
+            "Inactive",
+            "Maintainance"});
+            this.StatusComboBox.Location = new System.Drawing.Point(97, 388);
+            this.StatusComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StatusComboBox.Name = "StatusComboBox";
+            this.StatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.StatusComboBox.Size = new System.Drawing.Size(141, 36);
+            this.StatusComboBox.TabIndex = 54;
+            this.StatusComboBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(141, 370);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Status";
+            // 
+            // ModelTextBox
+            // 
+            this.ModelTextBox.BorderRadius = 20;
+            this.ModelTextBox.CustomizableEdges = customizableEdges7;
+            this.ModelTextBox.DefaultText = "";
+            this.ModelTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ModelTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ModelTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ModelTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ModelTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ModelTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ModelTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ModelTextBox.Location = new System.Drawing.Point(173, 199);
+            this.ModelTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ModelTextBox.Name = "ModelTextBox";
+            this.ModelTextBox.PasswordChar = '\0';
+            this.ModelTextBox.PlaceholderText = "Model";
+            this.ModelTextBox.SelectedText = "";
+            this.ModelTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.ModelTextBox.Size = new System.Drawing.Size(141, 29);
+            this.ModelTextBox.TabIndex = 49;
+            // 
+            // ManufactureTextBox
+            // 
+            this.ManufactureTextBox.BorderRadius = 20;
+            this.ManufactureTextBox.CustomizableEdges = customizableEdges9;
+            this.ManufactureTextBox.DefaultText = "";
+            this.ManufactureTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ManufactureTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ManufactureTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ManufactureTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ManufactureTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ManufactureTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ManufactureTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ManufactureTextBox.Location = new System.Drawing.Point(14, 254);
+            this.ManufactureTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ManufactureTextBox.Name = "ManufactureTextBox";
+            this.ManufactureTextBox.PasswordChar = '\0';
+            this.ManufactureTextBox.PlaceholderText = "Manufucture Year";
+            this.ManufactureTextBox.SelectedText = "";
+            this.ManufactureTextBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            this.ManufactureTextBox.Size = new System.Drawing.Size(141, 29);
+            this.ManufactureTextBox.TabIndex = 50;
+            // 
+            // AirCraftTextBox
+            // 
+            this.AirCraftTextBox.BorderRadius = 20;
+            this.AirCraftTextBox.CustomizableEdges = customizableEdges11;
+            this.AirCraftTextBox.DefaultText = "";
+            this.AirCraftTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AirCraftTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AirCraftTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AirCraftTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AirCraftTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AirCraftTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AirCraftTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AirCraftTextBox.Location = new System.Drawing.Point(173, 254);
+            this.AirCraftTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AirCraftTextBox.Name = "AirCraftTextBox";
+            this.AirCraftTextBox.PasswordChar = '\0';
+            this.AirCraftTextBox.PlaceholderText = "Aircraft Type";
+            this.AirCraftTextBox.SelectedText = "";
+            this.AirCraftTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            this.AirCraftTextBox.Size = new System.Drawing.Size(141, 29);
+            this.AirCraftTextBox.TabIndex = 51;
+            // 
+            // ManufacturerTextBox
+            // 
+            this.ManufacturerTextBox.BorderRadius = 20;
+            this.ManufacturerTextBox.CustomizableEdges = customizableEdges13;
+            this.ManufacturerTextBox.DefaultText = "";
+            this.ManufacturerTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ManufacturerTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ManufacturerTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ManufacturerTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ManufacturerTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ManufacturerTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ManufacturerTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ManufacturerTextBox.Location = new System.Drawing.Point(14, 314);
+            this.ManufacturerTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
+            this.ManufacturerTextBox.PasswordChar = '\0';
+            this.ManufacturerTextBox.PlaceholderText = "Manufacturer";
+            this.ManufacturerTextBox.SelectedText = "";
+            this.ManufacturerTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.ManufacturerTextBox.Size = new System.Drawing.Size(141, 29);
+            this.ManufacturerTextBox.TabIndex = 52;
+            // 
+            // CapacityTextBox
+            // 
+            this.CapacityTextBox.BorderRadius = 20;
+            this.CapacityTextBox.CustomizableEdges = customizableEdges15;
+            this.CapacityTextBox.DefaultText = "";
+            this.CapacityTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CapacityTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CapacityTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CapacityTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CapacityTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CapacityTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CapacityTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CapacityTextBox.Location = new System.Drawing.Point(173, 314);
+            this.CapacityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CapacityTextBox.Name = "CapacityTextBox";
+            this.CapacityTextBox.PasswordChar = '\0';
+            this.CapacityTextBox.PlaceholderText = "Capacity";
+            this.CapacityTextBox.SelectedText = "";
+            this.CapacityTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.CapacityTextBox.Size = new System.Drawing.Size(141, 29);
+            this.CapacityTextBox.TabIndex = 53;
+            // 
+            // AircraftIdTextBox
+            // 
+            this.AircraftIdTextBox.BorderRadius = 20;
+            this.AircraftIdTextBox.CustomizableEdges = customizableEdges17;
+            this.AircraftIdTextBox.DefaultText = "";
+            this.AircraftIdTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.AircraftIdTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.AircraftIdTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AircraftIdTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.AircraftIdTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AircraftIdTextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AircraftIdTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.AircraftIdTextBox.Location = new System.Drawing.Point(14, 199);
+            this.AircraftIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AircraftIdTextBox.Name = "AircraftIdTextBox";
+            this.AircraftIdTextBox.PasswordChar = '\0';
+            this.AircraftIdTextBox.PlaceholderText = "Aircraft ID";
+            this.AircraftIdTextBox.ReadOnly = true;
+            this.AircraftIdTextBox.SelectedText = "";
+            this.AircraftIdTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.AircraftIdTextBox.Size = new System.Drawing.Size(141, 29);
+            this.AircraftIdTextBox.TabIndex = 48;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(93, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Update Aircraft";
             // 
             // UpdateAirCraft
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1688, 1008);
-            Margin = new Padding(3);
-            Name = "UpdateAirCraft";
-            Text = "UpdateAircCraft";
-            Load += UpdateAirCraft_Load;
-            contentSplitContainer.Panel1.ResumeLayout(false);
-            contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
-            contentSplitContainer.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1405, 753);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "UpdateAirCraft";
+            this.Text = "UpdateAircCraft";
+            this.Load += new System.EventHandler(this.UpdateAirCraft_Load);
+            this.contentSplitContainer.Panel1.ResumeLayout(false);
+            this.contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
+            this.contentSplitContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirCraftdataGridView)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
