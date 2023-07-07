@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace FlightReservationSystem
 {
-    public partial class CustomerReservations : MainMenu,IProcessDataGrid
+    public partial class CustomerReservations : MainMenu, IProcessDataGrid
     {
         public CustomerReservations()
         {
             InitializeComponent();
-            this.dataManager = new DataManager(databaseConnection, this);
+            this.dataManager = new(databaseConnection, this);
         }
 
-        public void ProccessDataGrid(SqlCommand command)
+        public void SetDataGridCommandParams(SqlCommand command)
         {
             command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
         }

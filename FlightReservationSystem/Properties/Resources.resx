@@ -118,40 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="flatAirplaneBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\flatAirplaneBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_seat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Seats\black-seat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FlightWhite1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\Flight\FlightWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\background2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FlightWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\Flight\FlightWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\background2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blue_seat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Seats\blue-seat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlightBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgs\Flight\FlightBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="signInBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\signInBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FlightBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Flight\FlightBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FlightBlack1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\Flight\FlightBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FlightWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Flight\FlightWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SignInIconBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\SignIn\SignInIconBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GenerateReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Generate Report\GenerateReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenerateReportBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Generate Report\GenerateReportBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenerateReportWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Generate Report\GenerateReportWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Help\HelpBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HelpWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgs\Help\HelpWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menubackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\menubackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SignInIconBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\SignIn\SignInIconBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FlightWhite2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgs\Flight\FlightWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SignInIconWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\SignIn\SignInIconWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignOutIconBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\SignOut\SignOutIconBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignOutIconWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\SignOut\SignOutIconWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignUpBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Sign Up\SignUpBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignUpWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Sign Up\SignUpWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateInfoBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\UpdateInfo\UpdateInfoBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateInfoWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\UpdateInfo\UpdateInfoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateReservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Update Reservation\UpdateReservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateReservationBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Update Reservation\UpdateReservationBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateReservationWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Update Reservation\UpdateReservationWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white_seat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgs\Seats\white-seat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

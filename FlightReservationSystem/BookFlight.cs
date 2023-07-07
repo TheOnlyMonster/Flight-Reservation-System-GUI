@@ -14,16 +14,17 @@ using System.Text.RegularExpressions;
 namespace FlightReservationSystem
 {
 
-    public partial class BookFlight : MainMenu,IProcessDataGrid
+    public partial class BookFlight : MainMenu, IProcessDataGrid
     {
         private Dictionary<string, double> FlightClasses = new Dictionary<string, double>();
+
         private ErrorProvider errorProvider;
         public BookFlight()
         {
             InitializeComponent();
             errorProvider = new ErrorProvider();
             errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
-            dataManager = new DataManager(databaseConnection,this);
+            dataManager = new(databaseConnection, this);
         }
 
         private void bookFlightComboBox_Changed(object sender, EventArgs e)
@@ -32,11 +33,12 @@ namespace FlightReservationSystem
             if (this.deptCountriesComboBox.SelectedItem == null && this.arrivalCountriesComboBox.SelectedItem == null)
             {
                 query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
-            }else if(this.deptCountriesComboBox.SelectedItem == null)
+            }
+            else if (this.deptCountriesComboBox.SelectedItem == null)
             {
                 query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND arrivalCountry = @arrivalCountry";
             }
-            else if(this.arrivalCountriesComboBox.SelectedItem == null)
+            else if (this.arrivalCountriesComboBox.SelectedItem == null)
             {
                 query += "WHERE AvailableSeats <> 0 AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND deptCountry = @deptCountry";
             }
@@ -47,7 +49,7 @@ namespace FlightReservationSystem
             dataManager.UpdateDataGrid(flightDataGrid, query);
 
         }
-        public void ProccessDataGrid(SqlCommand command)
+        public void SetDataGridCommandParams(SqlCommand command)
         {
             if (this.deptCountriesComboBox.SelectedItem != null && this.arrivalCountriesComboBox.SelectedItem != null)
             {
@@ -72,8 +74,6 @@ namespace FlightReservationSystem
         {
             fillComboBox($"Select DISTINCT arrivalCountry from Flight where AvailableSeats <> 0", arrivalCountriesComboBox);
         }
-
-
         private void flightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             FlightClasses.Clear();
@@ -110,11 +110,8 @@ namespace FlightReservationSystem
         private void BookFlight_Load(object sender, EventArgs e)
         {
             bookFlightComboBox_Changed(sender, e);
-            this.creditCardExpiryDateTextBox.Text = Customer.Instance.ExpirayDate;
-            this.creditCardTextBox.Text = Customer.Instance.CardNum;
-            
-        }
 
+        }
         private void seatsNumericUpDown_UpButton(object sender, EventArgs e)
         {
             if (Convert.ToInt32(seatsAvailableTextBox.Text) < 7)
@@ -152,7 +149,7 @@ namespace FlightReservationSystem
             string cvv = this.cvvCreditCardTextBox.Text;
             if (!ValidateCVV(cvv))
             {
-                 errorProvider.SetError(cvvCreditCardTextBox, "Invalid CVV address. Please enter a valid CVV.");
+                errorProvider.SetError(cvvCreditCardTextBox, "Invalid CVV address. Please enter a valid CVV.");
                 this.cvvCreditCardTextBox.Focus();
                 return;
             }
@@ -179,10 +176,10 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@TicketPrice", Decimal.Parse(this.ClassPriceTextBox.Text));
                         command.Parameters.AddWithValue("@Rank", this.ClassComboBox.Text);
                         command.Parameters.AddWithValue("@Status", "Confirmed");
-                        
+
                         // Declare the SeatAssignment parameter outside the loop
                         SqlParameter seatAssignmentParam = command.Parameters.AddWithValue("@SeatAssignment", 0);
-                        
+
                         for (int i = 0; i < seatsNumericUpDown.Value; i++)
                         {
                             // Update the value of SeatAssignment parameter inside the loop
@@ -207,17 +204,11 @@ namespace FlightReservationSystem
                         command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
                         command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
                         command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
-
-                        Customer.Instance.PassportNumber = this.passportNumberTextBox.Text;
-                        Customer.Instance.ExpirayDate = this.creditCardExpiryDateTextBox.Text;
-                        Customer.Instance.PassportExpirayDate = this.passportDateTimePicker.Text.ToString();
-                        Customer.Instance.CardNum = this.creditCardTextBox.Text;
-                        Customer.Instance.Cvv = this.cvvCreditCardTextBox.Text;
                         MessageBox.Show("The Flight has been Confirmed!");
                         errorProvider.Clear();
                         connection.Close();
                     }
-                    BookFlight_Load(sender,e);
+                    BookFlight_Load(sender, e);
                 }
             }
         }
@@ -226,17 +217,17 @@ namespace FlightReservationSystem
             Random randGenerator = new Random();
             List<int> assignedSeats = new List<int>();
             int availableSeats = 0;
-            
+
             string query = "SELECT B.SeatAssignment, F.AvailableSeats FROM BookingDetails B INNER JOIN Flight F ON B.FlightNo = F.FlightNo WHERE F.FlightNo = @FlightNo;";
-            
+
             using (SqlConnection connection = new SqlConnection(databaseConnection))
             {
                 connection.Open();
-                
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@FlightNo", flightNo);
-                    
+
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -246,15 +237,15 @@ namespace FlightReservationSystem
                         }
                     }
                 }
-            }       
-            int randomNum = randGenerator.Next(1, availableSeats + 1); 
+            }
+            int randomNum = randGenerator.Next(1, availableSeats + 1);
             while (assignedSeats.Contains(randomNum))
             {
                 randomNum = randGenerator.Next(1, availableSeats + 1);
-            }     
+            }
             return randomNum;
         }
-        
+
         private bool ValidateCardNumber(string cardNumber)
         {
             // Regular expression pattern for Card Number.
@@ -264,7 +255,7 @@ namespace FlightReservationSystem
             return isValid;
         }
 
-        
+
         private bool ValidateExpiryDate(string expiryDate)
         {
             // Regular expression pattern for Expiry Date.
@@ -283,7 +274,7 @@ namespace FlightReservationSystem
             return isValid;
         }
 
-        
+
     }
 }
 

@@ -372,7 +372,7 @@ namespace FlightReservationSystem
             this.AddButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.AddButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.AddButton.Image = global::FlightReservationSystem.Properties.Resources.FlightWhite;
+            //this.AddButton.Image = global::FlightReservationSystem.Properties.Resources.FlightWhite;
             this.AddButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.AddButton.Location = new System.Drawing.Point(521, 552);
             this.AddButton.Name = "AddButton";

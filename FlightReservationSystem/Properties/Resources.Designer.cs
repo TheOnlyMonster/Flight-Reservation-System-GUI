@@ -63,9 +63,9 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background2 {
+        internal static System.Drawing.Bitmap black_seat {
             get {
-                object obj = ResourceManager.GetObject("background2", resourceCulture);
+                object obj = ResourceManager.GetObject("black_seat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,19 +73,9 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background21 {
+        internal static System.Drawing.Bitmap blue_seat {
             get {
-                object obj = ResourceManager.GetObject("background21", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap flatAirplaneBackground {
-            get {
-                object obj = ResourceManager.GetObject("flatAirplaneBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("blue_seat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +93,9 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FlightBlack1 {
+        internal static System.Drawing.Bitmap FlightBlue {
             get {
-                object obj = ResourceManager.GetObject("FlightBlack1", resourceCulture);
+                object obj = ResourceManager.GetObject("FlightBlue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FlightWhite1 {
+        internal static System.Drawing.Bitmap GenerateReport {
             get {
-                object obj = ResourceManager.GetObject("FlightWhite1", resourceCulture);
+                object obj = ResourceManager.GetObject("GenerateReport", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,29 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FlightWhite2 {
+        internal static System.Drawing.Bitmap GenerateReportBlue {
             get {
-                object obj = ResourceManager.GetObject("FlightWhite2", resourceCulture);
+                object obj = ResourceManager.GetObject("GenerateReportBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GenerateReportWhite {
+            get {
+                object obj = ResourceManager.GetObject("GenerateReportWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpBlue {
+            get {
+                object obj = ResourceManager.GetObject("HelpBlue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,29 +163,119 @@ namespace FlightReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menubackground {
-            get {
-                object obj = ResourceManager.GetObject("menubackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap signInBackground {
-            get {
-                object obj = ResourceManager.GetObject("signInBackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SignInIconBlue {
             get {
                 object obj = ResourceManager.GetObject("SignInIconBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignInIconWhite {
+            get {
+                object obj = ResourceManager.GetObject("SignInIconWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignOutIconBlue {
+            get {
+                object obj = ResourceManager.GetObject("SignOutIconBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignOutIconWhite {
+            get {
+                object obj = ResourceManager.GetObject("SignOutIconWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignUpBlue {
+            get {
+                object obj = ResourceManager.GetObject("SignUpBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignUpWhite {
+            get {
+                object obj = ResourceManager.GetObject("SignUpWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateInfoBlue {
+            get {
+                object obj = ResourceManager.GetObject("UpdateInfoBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateInfoWhite {
+            get {
+                object obj = ResourceManager.GetObject("UpdateInfoWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateReservation {
+            get {
+                object obj = ResourceManager.GetObject("UpdateReservation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateReservationBlue {
+            get {
+                object obj = ResourceManager.GetObject("UpdateReservationBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdateReservationWhite {
+            get {
+                object obj = ResourceManager.GetObject("UpdateReservationWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_seat {
+            get {
+                object obj = ResourceManager.GetObject("white_seat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

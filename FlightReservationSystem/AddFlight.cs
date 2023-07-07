@@ -16,54 +16,44 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
-    public partial class AddFlight : MainMenu
+    public partial class AddFlight : MainMenu, IProcessQuery
     {
         public AddFlight()
         {
             InitializeComponent();
+            dataManager = new(databaseConnection, this);
 
+        }
+
+        public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
+        {
+            if(queryType == QueryType.Insert)
+            {
+                command.Parameters.AddWithValue("@AirCraftID", int.Parse(AirCraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DepartureDateTimePicker3.Text, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ExpectedDateTimePicker4.Text, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ArrivalCountry", ArrivalTextBox.Text);
+                command.Parameters.AddWithValue("@DeptCountry", DepatureTextBox.Text);
+                command.Parameters.AddWithValue("@AvailableSeats", int.Parse(SeatsNumericUpDown.Text));
+                command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
+                command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
+                command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
+            } 
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            string airCraftId = AirCraftIdTextBox.Text;
-            string deptDate = DepartureDateTimePicker3.Text;
-            string expectedArrival = ExpectedDateTimePicker4.Text;
-            string arrivalCountry = ArrivalTextBox.Text;
-            string availableSeats = SeatsNumericUpDown.Text;
-            string rankAPrice = RankATextBox.Text;
-            string rankBPrice = RankBTextBox.Text;
-            string rankCPrice = RankCTextBox.Text;
-            string deptCountry=DepatureTextBox.Text;
 
-            if (string.IsNullOrEmpty(airCraftId) || string.IsNullOrEmpty(deptDate) || string.IsNullOrEmpty(expectedArrival)
-             || string.IsNullOrEmpty(arrivalCountry) || string.IsNullOrEmpty(availableSeats) || string.IsNullOrEmpty(rankAPrice)
-             || string.IsNullOrEmpty(rankBPrice) || string.IsNullOrEmpty(rankCPrice) || string.IsNullOrEmpty(deptCountry))
+            if (string.IsNullOrEmpty(AirCraftIdTextBox.Text) || string.IsNullOrEmpty(DepartureDateTimePicker3.Text) || string.IsNullOrEmpty(ExpectedDateTimePicker4.Text)
+             || string.IsNullOrEmpty(ArrivalTextBox.Text) || string.IsNullOrEmpty(SeatsNumericUpDown.Text) || string.IsNullOrEmpty(RankATextBox.Text)
+             || string.IsNullOrEmpty(RankBTextBox.Text) || string.IsNullOrEmpty(RankCTextBox.Text) || string.IsNullOrEmpty(DepatureTextBox.Text))
             {
                 MessageBox.Show("Please fill in all the required fields.", "Incomplete Form", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
-            {
-                string query = "INSERT INTO Flight  VALUES (@AirCraftID , @DeptDate, @ExpectedArrival, @ArrivalCountry , @DeptCountry ,  @AvailableSeats , @Rank1Price , @Rank2Price , @Rank3Price);";
-                using (SqlConnection connection = new SqlConnection(databaseConnection))
-                {
-                    connection.Open();
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@AirCraftID", int.Parse(airCraftId));
-                    command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDate, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                    command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(expectedArrival, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                    command.Parameters.AddWithValue("@ArrivalCountry", arrivalCountry);
-                    command.Parameters.AddWithValue("@DeptCountry", deptCountry);
-                    command.Parameters.AddWithValue("@AvailableSeats", int.Parse(availableSeats));
-                    command.Parameters.AddWithValue("@Rank1Price", Double.Parse(rankAPrice));
-                    command.Parameters.AddWithValue("@Rank2Price", Double.Parse(rankBPrice));
-                    command.Parameters.AddWithValue("@Rank3Price", Double.Parse(rankCPrice));
-
-                    command.ExecuteNonQuery();
-                    connection.Close();
-                }
-                MessageBox.Show("Flight Added");
-            }
+            string query = "INSERT INTO Flight  VALUES (@AirCraftID , @DeptDate, @ExpectedArrival, @ArrivalCountry , @DeptCountry ,  @AvailableSeats , @Rank1Price , @Rank2Price , @Rank3Price);";
+            dataManager.ExcuteDataQuery(query);
+            MessageBox.Show("Flight Added");
         }
     }
 }

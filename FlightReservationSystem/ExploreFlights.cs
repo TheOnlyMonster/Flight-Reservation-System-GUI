@@ -11,17 +11,12 @@ using System.Windows.Forms;
 
 namespace FlightReservationSystem
 {
-    public partial class ExploreFlights : MainMenu,IProcessDataGrid
+    public partial class ExploreFlights : MainMenu
     {
         public ExploreFlights()
         {
             InitializeComponent();
-            this.dataManager = new DataManager(databaseConnection, this);
-        }
-
-        public void ProccessDataGrid(SqlCommand command)
-        {
-            
+            this.dataManager = new(databaseConnection);
         }
 
         private void ExploreFlights_Load(object sender, EventArgs e)

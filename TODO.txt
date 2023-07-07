@@ -1,0 +1,2 @@
+1- Remove City, Country, CardNum, CVV, Expiry Date, PassportExpirationDate From CustomerTable
+2- Add First Name, Last Name, Passport Number, Passport Expiration Date Columns To BookingDetails

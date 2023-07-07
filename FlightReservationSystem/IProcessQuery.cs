@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlightReservationSystem
 {
-    public interface IProcessDataGrid
+    public interface IProcessQuery
     {
-        void SetDataGridCommandParams(SqlCommand command);
+        void SetQueryCommandParams(SqlCommand command, QueryType queryType);
     }
 }

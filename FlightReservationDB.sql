@@ -31,9 +31,12 @@ CREATE TABLE Aircraft (
     Model VARCHAR(30) NOT NULL,
     Manufacturer VARCHAR(20) NOT NULL,
     AircraftType VARCHAR(20) NOT NULL,
-    ManufactureYear Int NOT NULL,
+    ManufactureYear INT NOT NULL,
     Capacity SMALLINT NOT NULL,
     Status VARCHAR(50) NOT NULL,
+    RankASeats SMALLINT NOT NULL,
+    RankBSeats SMALLINT NOT NULL,
+    RankCSeats SMALLINT NOT NULL,
     CONSTRAINT CHK_MANUFACTUREYEAR_CONSTRAINT CHECK (ManufactureYear >= 1000 AND ManufactureYear <= 9999)
 );
 

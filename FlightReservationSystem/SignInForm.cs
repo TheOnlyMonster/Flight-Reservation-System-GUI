@@ -17,6 +17,7 @@ namespace FlightReservationSystem
         public SignInForm()
         {
             InitializeComponent();
+            this.ChangeButton(this.signInButton);
         }
 
         private void signInPanelButton_Click(object sender, EventArgs e)
@@ -53,29 +54,22 @@ namespace FlightReservationSystem
                     SqlDataReader userReader = comm.ExecuteReader();
                     if (userReader.Read())
                     {
-                        customer.CardNum = userReader[5].ToString();
-                        customer.City = userReader[3].ToString();
-                        customer.Country = userReader[4].ToString();
-                        customer.Cvv = userReader[6].ToString();
-                        customer.ExpirayDate = userReader[7].ToString();
-                        customer.PassportExpirayDate = userReader[8].ToString();
+                        customer.PhoneNumber = userReader[2].ToString();
                     }
                     userReader.Close();
                     MessageBox.Show("Logged In Successfully");
                     if (customer.Identifier == "C")
                     {
                         MainMenu.IsUserLoggedIn = true;
-                        MainMenu mainMenu = new MainMenu();
-                        mainMenu.Show();
-                        this.Hide();
+                        
                     }
                     else if(customer.Identifier == "A")
                     {
                         MainMenu.IsAdminLoggedIn = true;
-                        MainMenu mainMenu = new MainMenu();
-                        mainMenu.Show();
-                        this.Hide();
                     }
+                    MainMenu mainMenu = new MainMenu();
+                    mainMenu.Show();
+                    this.Hide();
                 }
                 else
                 {

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Data.SqlClient;
-
+using Guna.UI2.WinForms;
 
 namespace FlightReservationSystem
 {
@@ -19,7 +19,6 @@ namespace FlightReservationSystem
     {
         protected static bool IsUserLoggedIn { get; set; } = false;
         protected static bool IsAdminLoggedIn { get; set; } = false;
-
 
         protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
 
@@ -54,22 +53,26 @@ namespace FlightReservationSystem
         protected void fillComboBox(string query, ComboBox comboBox)
         {
             comboBox.Items.Clear();
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            using SqlConnection connection = new(databaseConnection);
+            connection.Open();
+            SqlCommand command = new(query, connection);
+            SqlDataReader sqlDataReader = command.ExecuteReader();
+            while (sqlDataReader.Read())
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-                SqlDataReader sqlDataReader = command.ExecuteReader();
-                while (sqlDataReader.Read())
-                {
-                    comboBox.Items.Add(sqlDataReader.GetString(0));
-                }
-                connection.Close();
+                comboBox.Items.Add(sqlDataReader.GetString(0));
             }
+            connection.Close();
         }
         private void openForm(MainMenu form)
         {
             form.Show();
             this.Hide();
+        }
+        protected void ChangeButton(Guna2Button button)
+        {
+            button.FillColor = button.HoverState.FillColor;
+            button.Image = button.HoverState.Image;
+            button.ForeColor = button.HoverState.ForeColor;
         }
         private void exploreFlightsButton_Click(object sender, EventArgs e)
         {
@@ -123,22 +126,23 @@ namespace FlightReservationSystem
             IsUserLoggedIn = false;
             IsAdminLoggedIn = false;
             this.Close();
-            MainMenu MainMenu = new MainMenu();
+            MainMenu MainMenu = new();
             MainMenu.Show();
         }
 
         private void generateReport_Click(object sender, EventArgs e)
-        {   
-            DataTable dataTable = new DataTable();
+        {
+            DataTable dataTable = new();
             string query = "SELECT f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate, COUNT(B.CustomerID) AS Reservations, Count(TicketPrice) As TotalPrice FROM Flight f LEFT JOIN BookingDetails B ON f.FlightNo = B.FlightNo GROUP BY f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate;";
-            using(SqlConnection connection = new SqlConnection(databaseConnection)) {
+            using (SqlConnection connection = new(databaseConnection))
+            {
                 connection.Open();
-                SqlCommand command= new SqlCommand(query,connection);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                SqlCommand command = new(query, connection);
+                SqlDataAdapter adapter = new(command);
                 adapter.Fill(dataTable);
                 connection.Close();
             }
-            
+
             string filePath = "file.csv";
             GenerateCSVFile(dataTable, filePath);
             MessageBox.Show("CSV file generated successfully.");
@@ -146,7 +150,7 @@ namespace FlightReservationSystem
 
         private void GenerateCSVFile(DataTable dataTable, string filePath)
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             IEnumerable<string> columnNames = dataTable.Columns.Cast<DataColumn>().Select(column => column.ColumnName);
             sb.AppendLine(string.Join(",", columnNames));
             foreach (DataRow row in dataTable.Rows)

@@ -14,33 +14,32 @@ using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
-    public partial class AddAirCraft : MainMenu
+    public partial class AddAirCraft : MainMenu, IProcessQuery
     {
         public AddAirCraft()
         {
             InitializeComponent();
+            dataManager = new(databaseConnection, this);
         }
-        private void AddButton_Click(object sender, EventArgs e)
+
+        public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
         {
-
-
-            
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            if(queryType == QueryType.Insert)
             {
-                connection.Open();
-                string query = "INSERT INTO Aircraft VALUES(@Model,@Manufacturer,@AircraftType,@ManufactureYear,@Capacity,@Status)";
-                SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Model", AirCraftTextBox.Text);
                 command.Parameters.AddWithValue("@Manufacturer", ManfucaturerTextBox.Text);
                 command.Parameters.AddWithValue("@AircraftType", AircraftTypeTextBox.Text);
                 command.Parameters.AddWithValue("@ManufactureYear", int.Parse(manuYearDateTimePicker.Text));
                 command.Parameters.AddWithValue("@Capacity", int.Parse(CapacityTextBox.Text));
                 command.Parameters.AddWithValue("@Status", AirCraftComboBox.Text);
-                command.ExecuteNonQuery();
-                connection.Close();
             }
-            MessageBox.Show("Aircraft Added Successfully!");
+        }
 
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            string query = "INSERT INTO Aircraft VALUES(@Model,@Manufacturer,@AircraftType,@ManufactureYear,@Capacity,@Status)";
+            dataManager.ExcuteDataQuery(query);        
+            MessageBox.Show("Aircraft Added Successfully!");
         }
 
     }

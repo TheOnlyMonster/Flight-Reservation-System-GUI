@@ -442,7 +442,7 @@
             this.submitButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.submitButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.submitButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
+            //this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
             this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.submitButton.Location = new System.Drawing.Point(150, 504);
             this.submitButton.Name = "submitButton";

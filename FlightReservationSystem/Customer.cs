@@ -10,15 +10,8 @@ namespace FlightReservationSystem
         private string Lname;
         private string password;
         private string identifier;
-        private string city;
-        private string country;
         private string email;
         private string phoneNumber;
-        private string passportNumber;
-        private string cardNum;
-        private string cvv;
-        private string expirayDate;
-        private string passportExpirayDate;
         private string id;
 
 
@@ -48,31 +41,7 @@ namespace FlightReservationSystem
             get { return id; }
             set { id = value; }
         }
-        public string PassportNumber
-        {
-            get { return passportNumber; }
-            set { passportNumber = value; }
-        }
-        public string ExpirayDate
-        {
-            get { return expirayDate; }
-            set { expirayDate = value; }
-        }
-        public string PassportExpirayDate
-        {
-            get { return passportExpirayDate; }
-            set { passportExpirayDate = value; }
-        }
-        public string CardNum
-        {
-            get { return cardNum; }
-            set { cardNum = value; }
-        }
-        public string Cvv
-        {
-            get { return cvv; }
-            set { cvv = value; }
-        }
+
         public string Password
         {
             get { return password; }
@@ -84,17 +53,6 @@ namespace FlightReservationSystem
             set { Lname = value; }
         }
 
-        public string City
-        {
-            get { return city; }
-            set { city = value; }
-        }
-
-        public string Country
-        {
-            get { return country; }
-            set { country = value; }
-        }
         public string Identifier
         {
             get { return identifier; }

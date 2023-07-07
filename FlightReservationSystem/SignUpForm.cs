@@ -97,6 +97,7 @@ namespace FlightReservationSystem
             }
 
         }
+        
         private bool ValidateEmail(string email)
         {
             // Define the regex pattern for email validation
