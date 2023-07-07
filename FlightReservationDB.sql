@@ -11,14 +11,6 @@ CREATE TABLE CustomerTable (
     CustomerID INT PRIMARY KEY REFERENCES UserTable(UserID),
     PassportNumber VARCHAR(20),
     PhoneNumber varchar(20) NOT NULL,
-    City VARCHAR(15),
-    Country VARCHAR(15),
-    CardNum VARCHAR(16),
-    CVV INT,
-    ExpiryDate varchar(50),
-    PassportExpirationDate Date,
-    CONSTRAINT CHK_CustomerTable_CardNum CHECK (LEN(CardNum) = 16),
-    CONSTRAINT CHK_CustomerTable_CVV CHECK (CVV >= 0 AND CVV <= 999),
 );
 
 create table AdminTable (
@@ -70,10 +62,15 @@ CREATE TABLE BookingDetails (
     CustomerID INT REFERENCES CustomerTable(CustomerID) NOT NULL,
     FlightNo INT REFERENCES Flight(FlightNo) ON DELETE cascade,
     BookingDate VARCHAR(15) NOT NULL,
+    FirstName VARCHAR(15) NOT NULL,
+    LastName VARCHAR(15) NOT NULL,
+    PassportNumber VARCHAR(15) NOT NULL,
+    PassportEXPDate VARCHAR(15) NOT NULL,
     SeatAssignment INT NOT NULL,
     TicketPrice DECIMAL(10, 2) NOT NULL,
     Rank VARCHAR(15) NOT NULL,
     Status VARCHAR(50) NOT NULL,
     CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
+    CONSTRAINT CHK_BookingDetails_PassportNumber CHECK (DATALENGTH(PassportNumber) >= 14),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );
