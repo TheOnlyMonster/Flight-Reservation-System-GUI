@@ -74,3 +74,63 @@ CREATE TABLE BookingDetails (
     CONSTRAINT CHK_BookingDetails_PassportNumber CHECK (DATALENGTH(PassportNumber) >= 14),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );
+
+-- Insert sample records into UserTable
+INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier)
+VALUES
+    ('john@example.com', 'John', 'Smith', 'password1', 'A'),
+    ('mary@example.com', 'Mary', 'Johnson', 'password2', 'A'),
+    ('david@example.com', 'David', 'Brown', 'password3', 'A'),
+    ('emily@example.com', 'Emily', 'Davis', 'password4', 'C'),
+    ('michael@example.com', 'Michael', 'Wilson', 'password5', 'C'),
+    ('sarah@example.com', 'Sarah', 'Anderson', 'password6', 'C'),
+    ('jason@example.com', 'Jason', 'Taylor', 'password7', 'C'),
+    ('laura@example.com', 'Laura', 'Thomas', 'password8', 'C'),
+    ('andrew@example.com', 'Andrew', 'Clark', 'password9', 'C'),
+    ('jennifer@example.com', 'Jennifer', 'Lee', 'password10', 'C');
+
+-- Insert sample records into CustomerTable
+INSERT INTO CustomerTable (CustomerID, PassportNumber, PhoneNumber)
+VALUES
+    (4, 'GH901234', '+5556667778'),
+    (5, 'IJ567890', '+9998887776'),
+    (6, 'KL234567', '+3332221110'),
+    (7, 'MN890123', '+4445556662'),
+    (8, 'OP456789', '+7778889994'),
+    (9, 'QR012345', '+1234567890'),
+    (10, 'ST678901', '+2223334446');
+
+-- Insert sample records into AdminTable
+INSERT INTO AdminTable (AdminID, Salary)
+VALUES
+    (1, 5000),
+    (2, 6000),
+    (3, 5500);
+
+	-- Insert sample records into Aircraft table
+INSERT INTO Aircraft (Model, Manufacturer, AircraftType, ManufactureYear, Capacity, Status, RankASeats, RankBSeats, RankCSeats)
+VALUES
+    ('Boeing 747', 'Boeing', 'Commercial', 2020, 300, 'Active', 50, 100, 150),
+    ('Airbus A320', 'Airbus', 'Commercial', 2018, 200, 'Active', 40, 80, 80),
+    ('Cessna 172', 'Cessna', 'Private', 2015, 4, 'Active', 2, 0, 2),
+    ('Embraer E190', 'Embraer', 'Commercial', 2019, 120, 'Active', 20, 50, 50),
+    ('Bombardier Challenger 350', 'Bombardier', 'Private', 2017, 10, 'Active', 8, 0, 2),
+    ('Boeing 777', 'Boeing', 'Commercial', 2016, 400, 'Active', 80, 150, 170),
+    ('Gulfstream G650', 'Gulfstream', 'Private', 2021, 12, 'Active', 10, 0, 2),
+    ('Airbus A380', 'Airbus', 'Commercial', 2014, 500, 'Active', 100, 200, 200),
+    ('Cessna Citation X', 'Cessna', 'Private', 2019, 8, 'Active', 6, 0, 2),
+    ('Bombardier Global 6000', 'Bombardier', 'Private', 2018, 16, 'Active', 12, 0, 4);
+
+-- Insert sample records into Flight table
+INSERT INTO Flight (AircraftID, DeptDate, ExpectedArrival, ArrivalCountry, DeptCountry, AvailableSeats, Rank1Price, Rank2Price, Rank3Price)
+VALUES
+    (1, '2023-07-10', '2023-07-11', 'USA', 'UK', 150, 500.00, 300.00, 200.00),
+    (2, '2023-07-12', '2023-07-13', 'France', 'Germany', 100, 400.00, 250.00, 150.00),
+    (3, '2023-07-15', '2023-07-16', 'Spain', 'Italy', 200, 450.00, 280.00, 180.00),
+    (4, '2023-07-18', '2023-07-19', 'Canada', 'Mexico', 120, 550.00, 350.00, 220.00),
+    (5, '2023-07-20', '2023-07-21', 'Japan', 'China', 180, 600.00, 400.00, 250.00),
+    (6, '2023-07-23', '2023-07-24', 'Australia', 'New Zealand', 90, 380.00, 220.00, 150.00),
+    (7, '2023-07-25', '2023-07-26', 'Brazil', 'Argentina', 140, 420.00, 260.00, 160.00),
+    (8, '2023-07-28', '2023-07-29', 'India', 'Sri Lanka', 170, 470.00, 300.00, 190.00),
+    (9, '2023-07-31', '2023-08-01', 'Russia', 'Turkey', 110, 520.00, 330.00, 210.00),
+    (10, '2023-08-03', '2023-08-04', 'Egypt', 'Greece', 200, 400.00, 250.00, 150.00);
