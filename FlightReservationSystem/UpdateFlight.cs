@@ -48,6 +48,21 @@ namespace FlightReservationSystem
         private void UpdateFlight_Load(object sender, EventArgs e)
         {
             updateFlightComboBox_Changed(sender, e);
+            List<int> Hours = new();
+            for(int i = 1; i <= 12; i++) {
+                Hours.Add(i);
+            }
+            List<int> Minutes = new();
+            for(int i = 1; i <= 60; i++) {
+                Minutes.Add(i);
+            }
+            string[] MiddayStatus = {"AM","PM"};
+            this.deptHourComboBox.DataSource = Hours;
+            this.arrivalHourComboBox.DataSource = Hours;
+            this.deptMinutesComboBox.DataSource = Minutes;
+            this.arrivalMinutesComboBox.DataSource = Minutes;
+            this.deptMiddayStatusComboBox.DataSource = MiddayStatus;
+            this.arrivalMiddayStatusComboBox.DataSource = MiddayStatus;
         }
 
         private void AdminFlightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -68,20 +83,30 @@ namespace FlightReservationSystem
                 this.seatsAvailableTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
                 string? currentDepartureDate = SelectedRow.Cells["deptDate"].Value.ToString();
                 string? currentArrivalDate = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
+                
+                //spliting the date format to tokens.
                 string[] currentDepartureDateTokens = currentDepartureDate.Split(' ');
                 string[] currentArrivalDateTokens = currentArrivalDate.Split(' ');
+
+                //setting the depatrment Date and arrival date to the first token from each string.
                 this.deptDatePanel2TimePicker.Text = currentDepartureDateTokens[0];
                 this.arrivalDateTimePicker.Text = currentArrivalDateTokens[0];
+
+                //spliting the time token to two tokens the hours and minutes.
                 string[] deptTime = currentDepartureDateTokens[1].Split(':');
+                string[] arrivalTime = currentArrivalDateTokens[1].Split(':');
+
+                //assigning the hours  and minutes to both the dept and arrival.
                 this.deptHourComboBox.Text = deptTime[0];
                 this.deptMinutesComboBox.Text = deptTime[1];
-                string[] arrivalTime = currentArrivalDateTokens[1].Split(':');
                 this.arrivalHourComboBox.Text = arrivalTime[0];
                 this.arrivalMinutesComboBox.Text = arrivalTime[1];
+
+                // assigning the midday status to both the dept and arrival.
                 this.deptMiddayStatusComboBox.Text = currentDepartureDateTokens[2];
                 this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens[2];
                 for (int i = 0; i < 3; i++) {
-                    MessageBox.Show(currentArrivalDateTokens[i]);
+                    MessageBox.Show(currentDepartureDateTokens[i]);
                 }
             }
         }
