@@ -48,21 +48,23 @@ namespace FlightReservationSystem
         private void UpdateFlight_Load(object sender, EventArgs e)
         {
             updateFlightComboBox_Changed(sender, e);
-            List<int> Hours = new();
-            for(int i = 1; i <= 12; i++) {
-                Hours.Add(i);
+            List<string> Hours = new();
+            for (int i = 1; i <= 12; i++)
+            {
+                Hours.Add(i.ToString());
             }
-            List<int> Minutes = new();
-            for(int i = 1; i <= 60; i++) {
-                Minutes.Add(i);
+            List<string> Minutes = new();
+            for (int i = 1; i <= 60; i++)
+            {
+                Minutes.Add(i.ToString());
             }
-            string[] MiddayStatus = {"AM","PM"};
-            this.deptHourComboBox.DataSource = Hours;
-            this.arrivalHourComboBox.DataSource = Hours;
-            this.deptMinutesComboBox.DataSource = Minutes;
-            this.arrivalMinutesComboBox.DataSource = Minutes;
-            this.deptMiddayStatusComboBox.DataSource = MiddayStatus;
-            this.arrivalMiddayStatusComboBox.DataSource = MiddayStatus;
+            string[] MiddayStatus = { "AM", "PM" };
+            this.deptHourComboBox.DataSource = Hours.ToArray();
+            this.arrivalHourComboBox.DataSource = Hours.ToArray();
+            this.deptMinutesComboBox.DataSource = Minutes.ToArray();
+            this.arrivalMinutesComboBox.DataSource = Minutes.ToArray();
+            this.deptMiddayStatusComboBox.DataSource = MiddayStatus.ToArray();
+            this.arrivalMiddayStatusComboBox.DataSource = MiddayStatus.ToArray();
         }
 
         private void AdminFlightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -83,11 +85,18 @@ namespace FlightReservationSystem
                 this.seatsAvailableTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
                 string? currentDepartureDate = SelectedRow.Cells["deptDate"].Value.ToString();
                 string? currentArrivalDate = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
-                
+
                 //spliting the date format to tokens.
                 string[] currentDepartureDateTokens = currentDepartureDate.Split(' ');
                 string[] currentArrivalDateTokens = currentArrivalDate.Split(' ');
 
+                //foreach(string token in currentDepartureDateTokens)
+                //{
+                //    MessageBox.Show(token);
+                //}
+                //foreach(string token in currentArrivalDateTokens) { MessageBox.Show(token); }
+                //MessageBox.Show(currentDepartureDateTokens.ToString());
+                //MessageBox.Show(currentArrivalDateTokens.ToString());
                 //setting the depatrment Date and arrival date to the first token from each string.
                 this.deptDatePanel2TimePicker.Text = currentDepartureDateTokens[0];
                 this.arrivalDateTimePicker.Text = currentArrivalDateTokens[0];
@@ -104,16 +113,14 @@ namespace FlightReservationSystem
 
                 // assigning the midday status to both the dept and arrival.
                 this.deptMiddayStatusComboBox.Text = currentDepartureDateTokens[2];
-                this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens[2];
-                for (int i = 0; i < 3; i++) {
-                    MessageBox.Show(currentDepartureDateTokens[i]);
-                }
+                //this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens[2];
+                
             }
         }
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            
+
             if (!DataAuthenticator.Instance.ValidateDouble(rankATextBox.Text))
             {
                 SetAuthenticatorError("Invalid Rank Price. Please enter valid rank pricea and try again!", rankATextBox);

@@ -406,10 +406,10 @@ namespace FlightReservationSystem
             arrivalMiddayStatusComboBox.FormattingEnabled = true;
             arrivalMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             arrivalMiddayStatusComboBox.ItemHeight = 30;
-            arrivalMiddayStatusComboBox.Location = new Point(296, 302);
+            arrivalMiddayStatusComboBox.Location = new Point(233, 359);
             arrivalMiddayStatusComboBox.Name = "arrivalMiddayStatusComboBox";
             arrivalMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            arrivalMiddayStatusComboBox.Size = new Size(48, 36);
+            arrivalMiddayStatusComboBox.Size = new Size(86, 36);
             arrivalMiddayStatusComboBox.TabIndex = 88;
             arrivalMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
             // 
@@ -427,10 +427,10 @@ namespace FlightReservationSystem
             arrivalMinutesComboBox.FormattingEnabled = true;
             arrivalMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             arrivalMinutesComboBox.ItemHeight = 30;
-            arrivalMinutesComboBox.Location = new Point(242, 302);
+            arrivalMinutesComboBox.Location = new Point(128, 359);
             arrivalMinutesComboBox.Name = "arrivalMinutesComboBox";
             arrivalMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            arrivalMinutesComboBox.Size = new Size(48, 36);
+            arrivalMinutesComboBox.Size = new Size(99, 36);
             arrivalMinutesComboBox.TabIndex = 87;
             arrivalMinutesComboBox.TextAlign = HorizontalAlignment.Center;
             // 
@@ -448,17 +448,17 @@ namespace FlightReservationSystem
             arrivalHourComboBox.FormattingEnabled = true;
             arrivalHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             arrivalHourComboBox.ItemHeight = 30;
-            arrivalHourComboBox.Location = new Point(184, 302);
+            arrivalHourComboBox.Location = new Point(28, 359);
             arrivalHourComboBox.Name = "arrivalHourComboBox";
             arrivalHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            arrivalHourComboBox.Size = new Size(52, 36);
+            arrivalHourComboBox.Size = new Size(94, 36);
             arrivalHourComboBox.TabIndex = 86;
             arrivalHourComboBox.TextAlign = HorizontalAlignment.Center;
             // 
             // arrivalMinutesLabel
             // 
             arrivalMinutesLabel.AutoSize = true;
-            arrivalMinutesLabel.Location = new Point(252, 284);
+            arrivalMinutesLabel.Location = new Point(158, 341);
             arrivalMinutesLabel.Name = "arrivalMinutesLabel";
             arrivalMinutesLabel.Size = new Size(29, 15);
             arrivalMinutesLabel.TabIndex = 85;
@@ -467,7 +467,7 @@ namespace FlightReservationSystem
             // arrivalHoursLabel
             // 
             arrivalHoursLabel.AutoSize = true;
-            arrivalHoursLabel.Location = new Point(197, 284);
+            arrivalHoursLabel.Location = new Point(63, 341);
             arrivalHoursLabel.Name = "arrivalHoursLabel";
             arrivalHoursLabel.Size = new Size(25, 15);
             arrivalHoursLabel.TabIndex = 84;
@@ -487,10 +487,10 @@ namespace FlightReservationSystem
             deptMiddayStatusComboBox.FormattingEnabled = true;
             deptMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             deptMiddayStatusComboBox.ItemHeight = 30;
-            deptMiddayStatusComboBox.Location = new Point(298, 232);
+            deptMiddayStatusComboBox.Location = new Point(233, 301);
             deptMiddayStatusComboBox.Name = "deptMiddayStatusComboBox";
             deptMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            deptMiddayStatusComboBox.Size = new Size(48, 36);
+            deptMiddayStatusComboBox.Size = new Size(86, 36);
             deptMiddayStatusComboBox.TabIndex = 83;
             deptMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
             // 
@@ -508,10 +508,10 @@ namespace FlightReservationSystem
             deptMinutesComboBox.FormattingEnabled = true;
             deptMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             deptMinutesComboBox.ItemHeight = 30;
-            deptMinutesComboBox.Location = new Point(244, 232);
+            deptMinutesComboBox.Location = new Point(127, 302);
             deptMinutesComboBox.Name = "deptMinutesComboBox";
             deptMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            deptMinutesComboBox.Size = new Size(48, 36);
+            deptMinutesComboBox.Size = new Size(100, 36);
             deptMinutesComboBox.TabIndex = 82;
             deptMinutesComboBox.TextAlign = HorizontalAlignment.Center;
             // 
@@ -529,17 +529,17 @@ namespace FlightReservationSystem
             deptHourComboBox.FormattingEnabled = true;
             deptHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             deptHourComboBox.ItemHeight = 30;
-            deptHourComboBox.Location = new Point(186, 232);
+            deptHourComboBox.Location = new Point(28, 301);
             deptHourComboBox.Name = "deptHourComboBox";
             deptHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            deptHourComboBox.Size = new Size(52, 36);
+            deptHourComboBox.Size = new Size(94, 36);
             deptHourComboBox.TabIndex = 81;
             deptHourComboBox.TextAlign = HorizontalAlignment.Center;
             // 
             // deptMinutesLabel
             // 
             deptMinutesLabel.AutoSize = true;
-            deptMinutesLabel.Location = new Point(254, 214);
+            deptMinutesLabel.Location = new Point(158, 288);
             deptMinutesLabel.Name = "deptMinutesLabel";
             deptMinutesLabel.Size = new Size(29, 15);
             deptMinutesLabel.TabIndex = 79;
@@ -548,7 +548,7 @@ namespace FlightReservationSystem
             // deptHoursLabel
             // 
             deptHoursLabel.AutoSize = true;
-            deptHoursLabel.Location = new Point(199, 214);
+            deptHoursLabel.Location = new Point(63, 284);
             deptHoursLabel.Name = "deptHoursLabel";
             deptHoursLabel.Size = new Size(25, 15);
             deptHoursLabel.TabIndex = 78;
@@ -563,14 +563,14 @@ namespace FlightReservationSystem
             deptDatePanel2TimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             deptDatePanel2TimePicker.ForeColor = SystemColors.ButtonHighlight;
             deptDatePanel2TimePicker.Format = DateTimePickerFormat.Long;
-            deptDatePanel2TimePicker.Location = new Point(7, 236);
+            deptDatePanel2TimePicker.Location = new Point(114, 210);
             deptDatePanel2TimePicker.Margin = new Padding(3, 2, 3, 2);
             deptDatePanel2TimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             deptDatePanel2TimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             deptDatePanel2TimePicker.Name = "deptDatePanel2TimePicker";
             deptDatePanel2TimePicker.Padding = new Padding(5);
             deptDatePanel2TimePicker.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            deptDatePanel2TimePicker.Size = new Size(173, 32);
+            deptDatePanel2TimePicker.Size = new Size(217, 32);
             deptDatePanel2TimePicker.TabIndex = 75;
             deptDatePanel2TimePicker.Value = new DateTime(2023, 5, 22, 17, 13, 9, 814);
             // 
@@ -595,7 +595,7 @@ namespace FlightReservationSystem
             deleteFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
             deleteFlightButton.Image = (Image)resources.GetObject("deleteFlightButton.Image");
             deleteFlightButton.ImageAlign = HorizontalAlignment.Left;
-            deleteFlightButton.Location = new Point(93, 631);
+            deleteFlightButton.Location = new Point(94, 687);
             deleteFlightButton.Margin = new Padding(3, 2, 3, 2);
             deleteFlightButton.Name = "deleteFlightButton";
             deleteFlightButton.Padding = new Padding(5);
@@ -611,7 +611,7 @@ namespace FlightReservationSystem
             // aircraftIDLabel
             // 
             aircraftIDLabel.AutoSize = true;
-            aircraftIDLabel.Location = new Point(219, 358);
+            aircraftIDLabel.Location = new Point(220, 414);
             aircraftIDLabel.Name = "aircraftIDLabel";
             aircraftIDLabel.Size = new Size(60, 15);
             aircraftIDLabel.TabIndex = 62;
@@ -630,7 +630,7 @@ namespace FlightReservationSystem
             aircraftIDTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             aircraftIDTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             aircraftIDTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            aircraftIDTextBox.Location = new Point(180, 376);
+            aircraftIDTextBox.Location = new Point(181, 432);
             aircraftIDTextBox.Name = "aircraftIDTextBox";
             aircraftIDTextBox.PasswordChar = '\0';
             aircraftIDTextBox.PlaceholderText = "";
@@ -649,21 +649,21 @@ namespace FlightReservationSystem
             arrivalDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             arrivalDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
             arrivalDateTimePicker.Format = DateTimePickerFormat.Long;
-            arrivalDateTimePicker.Location = new Point(5, 302);
+            arrivalDateTimePicker.Location = new Point(116, 254);
             arrivalDateTimePicker.Margin = new Padding(3, 2, 3, 2);
             arrivalDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             arrivalDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             arrivalDateTimePicker.Name = "arrivalDateTimePicker";
             arrivalDateTimePicker.Padding = new Padding(5);
             arrivalDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            arrivalDateTimePicker.Size = new Size(175, 33);
+            arrivalDateTimePicker.Size = new Size(215, 33);
             arrivalDateTimePicker.TabIndex = 74;
             arrivalDateTimePicker.Value = new DateTime(2023, 5, 22, 17, 13, 9, 814);
             // 
             // deptDatePanel2Label
             // 
             deptDatePanel2Label.AutoSize = true;
-            deptDatePanel2Label.Location = new Point(51, 214);
+            deptDatePanel2Label.Location = new Point(22, 218);
             deptDatePanel2Label.Name = "deptDatePanel2Label";
             deptDatePanel2Label.Size = new Size(86, 15);
             deptDatePanel2Label.TabIndex = 59;
@@ -671,7 +671,7 @@ namespace FlightReservationSystem
             // 
             // rankCLabel
             // 
-            rankCLabel.Location = new Point(45, 538);
+            rankCLabel.Location = new Point(46, 594);
             rankCLabel.Name = "rankCLabel";
             rankCLabel.ReadOnly = true;
             rankCLabel.Size = new Size(113, 23);
@@ -691,7 +691,7 @@ namespace FlightReservationSystem
             rankCTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             rankCTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             rankCTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            rankCTextBox.Location = new Point(178, 536);
+            rankCTextBox.Location = new Point(179, 592);
             rankCTextBox.Name = "rankCTextBox";
             rankCTextBox.PasswordChar = '\0';
             rankCTextBox.PlaceholderText = "";
@@ -712,7 +712,7 @@ namespace FlightReservationSystem
             rankBTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             rankBTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             rankBTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            rankBTextBox.Location = new Point(180, 494);
+            rankBTextBox.Location = new Point(181, 550);
             rankBTextBox.Name = "rankBTextBox";
             rankBTextBox.PasswordChar = '\0';
             rankBTextBox.PlaceholderText = "";
@@ -723,7 +723,7 @@ namespace FlightReservationSystem
             // 
             // rankBLabel
             // 
-            rankBLabel.Location = new Point(45, 496);
+            rankBLabel.Location = new Point(46, 552);
             rankBLabel.Name = "rankBLabel";
             rankBLabel.ReadOnly = true;
             rankBLabel.Size = new Size(113, 23);
@@ -743,7 +743,7 @@ namespace FlightReservationSystem
             rankATextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             rankATextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             rankATextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            rankATextBox.Location = new Point(180, 452);
+            rankATextBox.Location = new Point(181, 508);
             rankATextBox.Name = "rankATextBox";
             rankATextBox.PasswordChar = '\0';
             rankATextBox.PlaceholderText = "";
@@ -765,7 +765,7 @@ namespace FlightReservationSystem
             seatsAvailableTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             seatsAvailableTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             seatsAvailableTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            seatsAvailableTextBox.Location = new Point(21, 376);
+            seatsAvailableTextBox.Location = new Point(22, 432);
             seatsAvailableTextBox.Name = "seatsAvailableTextBox";
             seatsAvailableTextBox.PasswordChar = '\0';
             seatsAvailableTextBox.PlaceholderText = "";
@@ -847,7 +847,7 @@ namespace FlightReservationSystem
             // rankPriceLabel
             // 
             rankPriceLabel.AutoSize = true;
-            rankPriceLabel.Location = new Point(218, 425);
+            rankPriceLabel.Location = new Point(219, 481);
             rankPriceLabel.Name = "rankPriceLabel";
             rankPriceLabel.Size = new Size(63, 15);
             rankPriceLabel.TabIndex = 43;
@@ -855,7 +855,7 @@ namespace FlightReservationSystem
             // 
             // rankALabel
             // 
-            rankALabel.Location = new Point(45, 454);
+            rankALabel.Location = new Point(46, 510);
             rankALabel.Name = "rankALabel";
             rankALabel.ReadOnly = true;
             rankALabel.Size = new Size(113, 23);
@@ -866,7 +866,7 @@ namespace FlightReservationSystem
             // rankLabel
             // 
             rankLabel.AutoSize = true;
-            rankLabel.Location = new Point(86, 425);
+            rankLabel.Location = new Point(87, 481);
             rankLabel.Name = "rankLabel";
             rankLabel.Size = new Size(33, 15);
             rankLabel.TabIndex = 41;
@@ -893,7 +893,7 @@ namespace FlightReservationSystem
             confirmButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             confirmButton.Image = (Image)resources.GetObject("confirmButton.Image");
             confirmButton.ImageAlign = HorizontalAlignment.Left;
-            confirmButton.Location = new Point(115, 590);
+            confirmButton.Location = new Point(116, 646);
             confirmButton.Margin = new Padding(3, 2, 3, 2);
             confirmButton.Name = "confirmButton";
             confirmButton.Padding = new Padding(5);
@@ -909,7 +909,7 @@ namespace FlightReservationSystem
             // seatsAvailableLabel
             // 
             seatsAvailableLabel.AutoSize = true;
-            seatsAvailableLabel.Location = new Point(45, 358);
+            seatsAvailableLabel.Location = new Point(46, 414);
             seatsAvailableLabel.Name = "seatsAvailableLabel";
             seatsAvailableLabel.Size = new Size(85, 15);
             seatsAvailableLabel.TabIndex = 34;
@@ -918,7 +918,7 @@ namespace FlightReservationSystem
             // arrivalDateLabel
             // 
             arrivalDateLabel.AutoSize = true;
-            arrivalDateLabel.Location = new Point(58, 284);
+            arrivalDateLabel.Location = new Point(30, 254);
             arrivalDateLabel.Name = "arrivalDateLabel";
             arrivalDateLabel.Size = new Size(68, 15);
             arrivalDateLabel.TabIndex = 11;
