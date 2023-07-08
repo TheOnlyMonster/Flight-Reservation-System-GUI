@@ -6,15 +6,10 @@ namespace FlightReservationSystem
 {
     public partial class UpdateFlight : MainMenu, IProcessQuery, IProcessDataGrid
     {
-        private ErrorProvider errorProvider;
 
         public UpdateFlight()
         {
             InitializeComponent();
-            errorProvider = new ErrorProvider
-            {
-                BlinkStyle = ErrorBlinkStyle.NeverBlink
-            };
             this.dataManager = new(databaseConnection, this, this);
         }
 
@@ -76,40 +71,26 @@ namespace FlightReservationSystem
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            string seatsAvailable = this.seatsAvailableTextBox.Text;
-            if (!ValidateIntegers(seatsAvailable))
-            {
-                errorProvider.SetError(seatsAvailableTextBox, "Invalid seat, Please enter a valid seat.");
-                this.seatsAvailableTextBox.Focus();
-                return;
-            }
-
-            string airCraftId = this.aircraftIDTextBox.Text;
-            if (!ValidateIntegers(airCraftId))
-            {
-                errorProvider.SetError(aircraftIDTextBox, "Invalid aircraftID, Please enter a valid aircraftID.");
-                this.aircraftIDTextBox.Focus();
-                return;
-            }
-
             string rankAPrice = this.rankATextBox.Text;
+            
             if (!ValidateDouble(rankAPrice))
             {
-                errorProvider.SetError(rankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
+                SetAuthenticatorError("Invalid", rankATextBox);
+                //errorProvider.SetError(rankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
                 this.rankATextBox.Focus();
                 return;
             }
 
             if (!ValidateDouble(rankAPrice))
             {
-                errorProvider.SetError(rankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
+                //errorProvider.SetError(rankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
                 this.rankBTextBox.Focus();
                 return;
             }
 
             if (!ValidateDouble(rankAPrice))
             {
-                errorProvider.SetError(rankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
+                //errorProvider.SetError(rankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
                 this.rankCTextBox.Focus();
                 return;
             }
@@ -128,15 +109,6 @@ namespace FlightReservationSystem
                 dataManager.ExcuteDataQuery(query);
                 UpdateFlight_Load(sender, e);
             }
-        }
-
-        private bool ValidateIntegers(string integer)
-        {
-            //Regular Expression of Validating Price.
-            string pattern = @"^[0-9]+$";
-            Regex regex = new(pattern);
-            bool isValid = regex.IsMatch(integer);
-            return isValid;
         }
 
         private bool ValidateDouble(string doubleType)

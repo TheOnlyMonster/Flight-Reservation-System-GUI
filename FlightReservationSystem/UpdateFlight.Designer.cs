@@ -43,6 +43,18 @@ namespace FlightReservationSystem
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -77,38 +89,36 @@ namespace FlightReservationSystem
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
-            deptDatePanel2TimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            deleteFlightButton = new Guna.UI2.WinForms.Guna2Button();
+            arrivalMiddayStatusComboBox = new Guna2ComboBox();
+            arrivalMinutesComboBox = new Guna2ComboBox();
+            arrivalHourComboBox = new Guna2ComboBox();
+            arrivalMinutesLabel = new Label();
+            arrivalHoursLabel = new Label();
+            deptMiddayStatusComboBox = new Guna2ComboBox();
+            deptMinutesComboBox = new Guna2ComboBox();
+            deptHourComboBox = new Guna2ComboBox();
+            deptMinutesLabel = new Label();
+            deptHoursLabel = new Label();
+            deptDatePanel2TimePicker = new Guna2DateTimePicker();
+            deleteFlightButton = new Guna2Button();
             aircraftIDLabel = new Label();
-            aircraftIDTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            arrivalDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            aircraftIDTextBox = new Guna2TextBox();
+            arrivalDateTimePicker = new Guna2DateTimePicker();
             deptDatePanel2Label = new Label();
             rankCLabel = new TextBox();
-            rankCTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            rankBTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankCTextBox = new Guna2TextBox();
+            rankBTextBox = new Guna2TextBox();
             rankBLabel = new TextBox();
-            rankATextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            seatsAvailableTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            arrivalCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            flightNoTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            deptCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankATextBox = new Guna2TextBox();
+            seatsAvailableTextBox = new Guna2TextBox();
+            arrivalCountryTextBox = new Guna2TextBox();
+            flightNoTextBox = new Guna2TextBox();
+            deptCountryTextBox = new Guna2TextBox();
             rankPriceLabel = new Label();
             rankALabel = new TextBox();
             rankLabel = new Label();
-            confirmButton = new Guna.UI2.WinForms.Guna2Button();
+            confirmButton = new Guna2Button();
             seatsAvailableLabel = new Label();
             arrivalDateLabel = new Label();
             arrivalCountryPanel2Label = new Label();
@@ -119,10 +129,10 @@ namespace FlightReservationSystem
             deptDatePanel1Label = new Label();
             arrivalCountryPanel1Label = new Label();
             deptCountryPanel1Label = new Label();
-            deptDatePanel1TimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            arrivalCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deptCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            flightDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            deptDatePanel1TimePicker = new Guna2DateTimePicker();
+            arrivalCountriesComboBox = new Guna2ComboBox();
+            deptCountriesComboBox = new Guna2ComboBox();
+            flightDataGrid = new Guna2DataGridView();
             FlightNo = new DataGridViewTextBoxColumn();
             AirCraftID = new DataGridViewTextBoxColumn();
             deptCountry = new DataGridViewTextBoxColumn();
@@ -133,16 +143,6 @@ namespace FlightReservationSystem
             Rank1Price = new DataGridViewTextBoxColumn();
             Rank2Price = new DataGridViewTextBoxColumn();
             Rank3Price = new DataGridViewTextBoxColumn();
-            this.deptHoursLabel = new Label();
-            this.deptMinutesLabel = new Label();
-            this.deptHourComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deptMinutesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.deptMiddayStatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            arrivalMiddayStatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            arrivalMinutesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            arrivalHourComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            arrivalMinutesLabel = new Label();
-            arrivalHoursLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
@@ -356,11 +356,11 @@ namespace FlightReservationSystem
             panel3.Controls.Add(arrivalHourComboBox);
             panel3.Controls.Add(arrivalMinutesLabel);
             panel3.Controls.Add(arrivalHoursLabel);
-            panel3.Controls.Add(this.deptMiddayStatusComboBox);
+            panel3.Controls.Add(deptMiddayStatusComboBox);
             panel3.Controls.Add(deptMinutesComboBox);
-            panel3.Controls.Add(this.deptHourComboBox);
-            panel3.Controls.Add(this.deptMinutesLabel);
-            panel3.Controls.Add(this.deptHoursLabel);
+            panel3.Controls.Add(deptHourComboBox);
+            panel3.Controls.Add(deptMinutesLabel);
+            panel3.Controls.Add(deptHoursLabel);
             panel3.Controls.Add(deptDatePanel2TimePicker);
             panel3.Controls.Add(deleteFlightButton);
             panel3.Controls.Add(aircraftIDLabel);
@@ -391,6 +391,168 @@ namespace FlightReservationSystem
             panel3.Name = "panel3";
             panel3.Size = new Size(352, 725);
             panel3.TabIndex = 2;
+            // 
+            // arrivalMiddayStatusComboBox
+            // 
+            arrivalMiddayStatusComboBox.BackColor = Color.Transparent;
+            arrivalMiddayStatusComboBox.BorderRadius = 20;
+            arrivalMiddayStatusComboBox.CustomizableEdges = customizableEdges7;
+            arrivalMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalMiddayStatusComboBox.FormattingEnabled = true;
+            arrivalMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalMiddayStatusComboBox.ItemHeight = 30;
+            arrivalMiddayStatusComboBox.Location = new Point(296, 302);
+            arrivalMiddayStatusComboBox.Name = "arrivalMiddayStatusComboBox";
+            arrivalMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            arrivalMiddayStatusComboBox.Size = new Size(48, 36);
+            arrivalMiddayStatusComboBox.TabIndex = 88;
+            arrivalMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // arrivalMinutesComboBox
+            // 
+            arrivalMinutesComboBox.BackColor = Color.Transparent;
+            arrivalMinutesComboBox.BorderRadius = 20;
+            arrivalMinutesComboBox.CustomizableEdges = customizableEdges9;
+            arrivalMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalMinutesComboBox.FormattingEnabled = true;
+            arrivalMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalMinutesComboBox.ItemHeight = 30;
+            arrivalMinutesComboBox.Location = new Point(242, 302);
+            arrivalMinutesComboBox.Name = "arrivalMinutesComboBox";
+            arrivalMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            arrivalMinutesComboBox.Size = new Size(48, 36);
+            arrivalMinutesComboBox.TabIndex = 87;
+            arrivalMinutesComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // arrivalHourComboBox
+            // 
+            arrivalHourComboBox.BackColor = Color.Transparent;
+            arrivalHourComboBox.BorderRadius = 20;
+            arrivalHourComboBox.CustomizableEdges = customizableEdges11;
+            arrivalHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalHourComboBox.FormattingEnabled = true;
+            arrivalHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalHourComboBox.ItemHeight = 30;
+            arrivalHourComboBox.Location = new Point(184, 302);
+            arrivalHourComboBox.Name = "arrivalHourComboBox";
+            arrivalHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            arrivalHourComboBox.Size = new Size(52, 36);
+            arrivalHourComboBox.TabIndex = 86;
+            arrivalHourComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // arrivalMinutesLabel
+            // 
+            arrivalMinutesLabel.AutoSize = true;
+            arrivalMinutesLabel.Location = new Point(252, 284);
+            arrivalMinutesLabel.Name = "arrivalMinutesLabel";
+            arrivalMinutesLabel.Size = new Size(29, 15);
+            arrivalMinutesLabel.TabIndex = 85;
+            arrivalMinutesLabel.Text = "MM";
+            // 
+            // arrivalHoursLabel
+            // 
+            arrivalHoursLabel.AutoSize = true;
+            arrivalHoursLabel.Location = new Point(197, 284);
+            arrivalHoursLabel.Name = "arrivalHoursLabel";
+            arrivalHoursLabel.Size = new Size(25, 15);
+            arrivalHoursLabel.TabIndex = 84;
+            arrivalHoursLabel.Text = "HH";
+            // 
+            // deptMiddayStatusComboBox
+            // 
+            deptMiddayStatusComboBox.BackColor = Color.Transparent;
+            deptMiddayStatusComboBox.BorderRadius = 20;
+            deptMiddayStatusComboBox.CustomizableEdges = customizableEdges13;
+            deptMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptMiddayStatusComboBox.FormattingEnabled = true;
+            deptMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptMiddayStatusComboBox.ItemHeight = 30;
+            deptMiddayStatusComboBox.Location = new Point(298, 232);
+            deptMiddayStatusComboBox.Name = "deptMiddayStatusComboBox";
+            deptMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            deptMiddayStatusComboBox.Size = new Size(48, 36);
+            deptMiddayStatusComboBox.TabIndex = 83;
+            deptMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // deptMinutesComboBox
+            // 
+            deptMinutesComboBox.BackColor = Color.Transparent;
+            deptMinutesComboBox.BorderRadius = 20;
+            deptMinutesComboBox.CustomizableEdges = customizableEdges15;
+            deptMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptMinutesComboBox.FormattingEnabled = true;
+            deptMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptMinutesComboBox.ItemHeight = 30;
+            deptMinutesComboBox.Location = new Point(244, 232);
+            deptMinutesComboBox.Name = "deptMinutesComboBox";
+            deptMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            deptMinutesComboBox.Size = new Size(48, 36);
+            deptMinutesComboBox.TabIndex = 82;
+            deptMinutesComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // deptHourComboBox
+            // 
+            deptHourComboBox.BackColor = Color.Transparent;
+            deptHourComboBox.BorderRadius = 20;
+            deptHourComboBox.CustomizableEdges = customizableEdges17;
+            deptHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptHourComboBox.FormattingEnabled = true;
+            deptHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptHourComboBox.ItemHeight = 30;
+            deptHourComboBox.Location = new Point(186, 232);
+            deptHourComboBox.Name = "deptHourComboBox";
+            deptHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            deptHourComboBox.Size = new Size(52, 36);
+            deptHourComboBox.TabIndex = 81;
+            deptHourComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // deptMinutesLabel
+            // 
+            deptMinutesLabel.AutoSize = true;
+            deptMinutesLabel.Location = new Point(254, 214);
+            deptMinutesLabel.Name = "deptMinutesLabel";
+            deptMinutesLabel.Size = new Size(29, 15);
+            deptMinutesLabel.TabIndex = 79;
+            deptMinutesLabel.Text = "MM";
+            // 
+            // deptHoursLabel
+            // 
+            deptHoursLabel.AutoSize = true;
+            deptHoursLabel.Location = new Point(199, 214);
+            deptHoursLabel.Name = "deptHoursLabel";
+            deptHoursLabel.Size = new Size(25, 15);
+            deptHoursLabel.TabIndex = 78;
+            deptHoursLabel.Text = "HH";
             // 
             // deptDatePanel2TimePicker
             // 
@@ -443,7 +605,7 @@ namespace FlightReservationSystem
             deleteFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges22;
             deleteFlightButton.Size = new Size(181, 37);
             deleteFlightButton.TabIndex = 77;
-            deleteFlightButton.Text = "Delete Aircraft";
+            deleteFlightButton.Text = "Delete Flight";
             deleteFlightButton.Click += DeleteButton_Click;
             // 
             // aircraftIDLabel
@@ -1038,168 +1200,6 @@ namespace FlightReservationSystem
             Rank3Price.Name = "Rank3Price";
             Rank3Price.ReadOnly = true;
             // 
-            // deptHoursLabel
-            // 
-            this.deptHoursLabel.AutoSize = true;
-            this.deptHoursLabel.Location = new Point(199, 214);
-            this.deptHoursLabel.Name = "deptHoursLabel";
-            this.deptHoursLabel.Size = new Size(25, 15);
-            this.deptHoursLabel.TabIndex = 78;
-            this.deptHoursLabel.Text = "HH";
-            // 
-            // deptMinutesLabel
-            // 
-            this.deptMinutesLabel.AutoSize = true;
-            this.deptMinutesLabel.Location = new Point(254, 214);
-            this.deptMinutesLabel.Name = "deptMinutesLabel";
-            this.deptMinutesLabel.Size = new Size(29, 15);
-            this.deptMinutesLabel.TabIndex = 79;
-            this.deptMinutesLabel.Text = "MM";
-            // 
-            // deptHourComboBox
-            // 
-            this.deptHourComboBox.BackColor = Color.Transparent;
-            this.deptHourComboBox.BorderRadius = 20;
-            this.deptHourComboBox.CustomizableEdges = customizableEdges17;
-            this.deptHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            this.deptHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.deptHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            this.deptHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            this.deptHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            this.deptHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            this.deptHourComboBox.FormattingEnabled = true;
-            this.deptHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            this.deptHourComboBox.ItemHeight = 30;
-            this.deptHourComboBox.Location = new Point(186, 232);
-            this.deptHourComboBox.Name = "deptHourComboBox";
-            this.deptHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.deptHourComboBox.Size = new Size(52, 36);
-            this.deptHourComboBox.TabIndex = 81;
-            this.deptHourComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // deptMinutesComboBox
-            // 
-            deptMinutesComboBox.BackColor = Color.Transparent;
-            deptMinutesComboBox.BorderRadius = 20;
-            deptMinutesComboBox.CustomizableEdges = customizableEdges15;
-            deptMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            deptMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            deptMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            deptMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            deptMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            deptMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            deptMinutesComboBox.FormattingEnabled = true;
-            deptMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            deptMinutesComboBox.ItemHeight = 30;
-            deptMinutesComboBox.Location = new Point(244, 232);
-            deptMinutesComboBox.Name = "deptMinutesComboBox";
-            deptMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            deptMinutesComboBox.Size = new Size(48, 36);
-            deptMinutesComboBox.TabIndex = 82;
-            deptMinutesComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // deptMiddayStatusComboBox
-            // 
-            this.deptMiddayStatusComboBox.BackColor = Color.Transparent;
-            this.deptMiddayStatusComboBox.BorderRadius = 20;
-            this.deptMiddayStatusComboBox.CustomizableEdges = customizableEdges13;
-            this.deptMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            this.deptMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.deptMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            this.deptMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            this.deptMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            this.deptMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            this.deptMiddayStatusComboBox.FormattingEnabled = true;
-            this.deptMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            this.deptMiddayStatusComboBox.ItemHeight = 30;
-            this.deptMiddayStatusComboBox.Location = new Point(298, 232);
-            this.deptMiddayStatusComboBox.Name = "deptMiddayStatusComboBox";
-            this.deptMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.deptMiddayStatusComboBox.Size = new Size(48, 36);
-            this.deptMiddayStatusComboBox.TabIndex = 83;
-            this.deptMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // arrivalMiddayStatusComboBox
-            // 
-            arrivalMiddayStatusComboBox.BackColor = Color.Transparent;
-            arrivalMiddayStatusComboBox.BorderRadius = 20;
-            arrivalMiddayStatusComboBox.CustomizableEdges = customizableEdges7;
-            arrivalMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            arrivalMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            arrivalMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            arrivalMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            arrivalMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            arrivalMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            arrivalMiddayStatusComboBox.FormattingEnabled = true;
-            arrivalMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            arrivalMiddayStatusComboBox.ItemHeight = 30;
-            arrivalMiddayStatusComboBox.Location = new Point(296, 302);
-            arrivalMiddayStatusComboBox.Name = "arrivalMiddayStatusComboBox";
-            arrivalMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            arrivalMiddayStatusComboBox.Size = new Size(48, 36);
-            arrivalMiddayStatusComboBox.TabIndex = 88;
-            arrivalMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // arrivalMinutesComboBox
-            // 
-            arrivalMinutesComboBox.BackColor = Color.Transparent;
-            arrivalMinutesComboBox.BorderRadius = 20;
-            arrivalMinutesComboBox.CustomizableEdges = customizableEdges9;
-            arrivalMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            arrivalMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            arrivalMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            arrivalMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            arrivalMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            arrivalMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            arrivalMinutesComboBox.FormattingEnabled = true;
-            arrivalMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            arrivalMinutesComboBox.ItemHeight = 30;
-            arrivalMinutesComboBox.Location = new Point(242, 302);
-            arrivalMinutesComboBox.Name = "arrivalMinutesComboBox";
-            arrivalMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            arrivalMinutesComboBox.Size = new Size(48, 36);
-            arrivalMinutesComboBox.TabIndex = 87;
-            arrivalMinutesComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // arrivalHourComboBox
-            // 
-            arrivalHourComboBox.BackColor = Color.Transparent;
-            arrivalHourComboBox.BorderRadius = 20;
-            arrivalHourComboBox.CustomizableEdges = customizableEdges11;
-            arrivalHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            arrivalHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            arrivalHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            arrivalHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            arrivalHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            arrivalHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            arrivalHourComboBox.FormattingEnabled = true;
-            arrivalHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            arrivalHourComboBox.ItemHeight = 30;
-            arrivalHourComboBox.Location = new Point(184, 302);
-            arrivalHourComboBox.Name = "arrivalHourComboBox";
-            arrivalHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            arrivalHourComboBox.Size = new Size(52, 36);
-            arrivalHourComboBox.TabIndex = 86;
-            arrivalHourComboBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // arrivalMinutesLabel
-            // 
-            arrivalMinutesLabel.AutoSize = true;
-            arrivalMinutesLabel.Location = new Point(252, 284);
-            arrivalMinutesLabel.Name = "arrivalMinutesLabel";
-            arrivalMinutesLabel.Size = new Size(29, 15);
-            arrivalMinutesLabel.TabIndex = 85;
-            arrivalMinutesLabel.Text = "MM";
-            // 
-            // arrivalHoursLabel
-            // 
-            arrivalHoursLabel.AutoSize = true;
-            arrivalHoursLabel.Location = new Point(197, 284);
-            arrivalHoursLabel.Name = "arrivalHoursLabel";
-            arrivalHoursLabel.Size = new Size(25, 15);
-            arrivalHoursLabel.TabIndex = 84;
-            arrivalHoursLabel.Text = "HH";
-            // 
             // UpdateFlight
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1241,7 +1241,7 @@ namespace FlightReservationSystem
         private Label deptDatePanel1Label;
         private Label deptDatePanel2Label;
         private Label aircraftIDLabel;
-        private Guna.UI2.WinForms.Guna2DataGridView flightDataGrid;
+        private Guna2DataGridView flightDataGrid;
         private DataGridViewTextBoxColumn FlightNo;
         private DataGridViewTextBoxColumn AirCraftID;
         private DataGridViewTextBoxColumn deptCountry;
@@ -1253,32 +1253,32 @@ namespace FlightReservationSystem
         private DataGridViewTextBoxColumn Rank2Price;
         private DataGridViewTextBoxColumn Rank3Price;
         private Label deptHoursLabel;
-        private Guna.UI2.WinForms.Guna2ComboBox arrivalCountriesComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox deptCountriesComboBox;
-        private Guna.UI2.WinForms.Guna2DateTimePicker deptDatePanel1TimePicker;
-        private Guna.UI2.WinForms.Guna2TextBox rankBTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox rankCTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox deptCountryTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox flightNoTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox arrivalCountryTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox seatsAvailableTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox aircraftIDTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox rankATextBox;
-        private Guna.UI2.WinForms.Guna2DateTimePicker deptDatePanel2TimePicker;
-        private Guna.UI2.WinForms.Guna2DateTimePicker arrivalDateTimePicker;
-        protected Guna.UI2.WinForms.Guna2Button deleteFlightButton;
-        protected Guna.UI2.WinForms.Guna2Button confirmButton;
+        private Guna2ComboBox arrivalCountriesComboBox;
+        private Guna2ComboBox deptCountriesComboBox;
+        private Guna2DateTimePicker deptDatePanel1TimePicker;
+        private Guna2TextBox rankBTextBox;
+        private Guna2TextBox rankCTextBox;
+        private Guna2TextBox deptCountryTextBox;
+        private Guna2TextBox flightNoTextBox;
+        private Guna2TextBox arrivalCountryTextBox;
+        private Guna2TextBox seatsAvailableTextBox;
+        private Guna2TextBox aircraftIDTextBox;
+        private Guna2TextBox rankATextBox;
+        private Guna2DateTimePicker deptDatePanel2TimePicker;
+        private Guna2DateTimePicker arrivalDateTimePicker;
+        protected Guna2Button deleteFlightButton;
+        protected Guna2Button confirmButton;
         private Label middayStatusLabel;
         private Label label2;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna2ComboBox guna2ComboBox3;
         private Label deptMinutesLabel;
         private Guna2ComboBox deptHourComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox deptMinutesComboBox;
+        private Guna2ComboBox deptMinutesComboBox;
         private Guna2ComboBox deptMiddayStatusComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox arrivalMiddayStatusComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox arrivalMinutesComboBox;
-        private Guna.UI2.WinForms.Guna2ComboBox arrivalHourComboBox;
+        private Guna2ComboBox arrivalMiddayStatusComboBox;
+        private Guna2ComboBox arrivalMinutesComboBox;
+        private Guna2ComboBox arrivalHourComboBox;
         private Label arrivalMinutesLabel;
         private Label arrivalHoursLabel;
     }
