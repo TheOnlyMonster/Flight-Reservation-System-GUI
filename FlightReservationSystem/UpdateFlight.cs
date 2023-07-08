@@ -32,7 +32,7 @@ namespace FlightReservationSystem
             {
                 query += "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             }
-            dataManager.UpdateDataGrid(flightDataGrid, query);
+            dataManager?.UpdateDataGrid(flightDataGrid, query);
         }
 
         private void AdminDeptCountriesComboBox_OnDropDown(object sender, EventArgs e)
@@ -66,6 +66,23 @@ namespace FlightReservationSystem
                 this.rankCTextBox.Text = SelectedRow.Cells["Rank3Price"].Value.ToString();
                 this.deptCountryTextBox.Text = SelectedRow.Cells["deptCountry"].Value.ToString();
                 this.seatsAvailableTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
+                string? currentDepartureDate = SelectedRow.Cells["deptDate"].Value.ToString();
+                string? currentArrivalDate = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
+                string[] currentDepartureDateTokens = currentDepartureDate.Split(' ');
+                string[] currentArrivalDateTokens = currentArrivalDate.Split(' ');
+                this.deptDatePanel2TimePicker.Text = currentDepartureDateTokens[0];
+                this.arrivalDateTimePicker.Text = currentArrivalDateTokens[0];
+                string[] deptTime = currentDepartureDateTokens[1].Split(':');
+                this.deptHourComboBox.Text = deptTime[0];
+                this.deptMinutesComboBox.Text = deptTime[1];
+                string[] arrivalTime = currentArrivalDateTokens[1].Split(':');
+                this.arrivalHourComboBox.Text = arrivalTime[0];
+                this.arrivalMinutesComboBox.Text = arrivalTime[1];
+                this.deptMiddayStatusComboBox.Text = currentDepartureDateTokens[2];
+                this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens[2];
+                for (int i = 0; i < 3; i++) {
+                    MessageBox.Show(currentArrivalDateTokens[i]);
+                }
             }
         }
 
@@ -73,29 +90,25 @@ namespace FlightReservationSystem
         {
             string rankAPrice = this.rankATextBox.Text;
             
-            if (!ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
             {
                 SetAuthenticatorError("Invalid", rankATextBox);
-                //errorProvider.SetError(rankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
-                this.rankATextBox.Focus();
                 return;
             }
 
-            if (!ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
             {
-                //errorProvider.SetError(rankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
-                this.rankBTextBox.Focus();
+                SetAuthenticatorError("Invalid", rankBTextBox);
                 return;
             }
 
-            if (!ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
             {
-                //errorProvider.SetError(rankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
-                this.rankCTextBox.Focus();
+                SetAuthenticatorError("Invalid", rankCTextBox);
                 return;
             }
             string query = "UPDATE Flight Set DeptDate = @DeptDate, AirCraftID = @AirCraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
-            dataManager.ExcuteDataQuery(query);
+            dataManager?.ExcuteDataQuery(query);
             UpdateFlight_Load(sender, e);
             MessageBox.Show("Changes Has Been Confirmed");
         }
@@ -106,18 +119,9 @@ namespace FlightReservationSystem
             if (result == DialogResult.Yes)
             {
                 string query = "DELETE FROM Flight WHERE FlightNO = @RecordId;";
-                dataManager.ExcuteDataQuery(query);
+                dataManager?.ExcuteDataQuery(query);
                 UpdateFlight_Load(sender, e);
             }
-        }
-
-        private bool ValidateDouble(string doubleType)
-        {
-            //Regular Expression of Validating Seats.
-            string pattern = @"^[0-9]+(\.[0-9]+)?$";
-            Regex regex = new(pattern);
-            bool isValid = regex.IsMatch(doubleType);
-            return isValid;
         }
 
         public void SetDataGridCommandParams(SqlCommand command)

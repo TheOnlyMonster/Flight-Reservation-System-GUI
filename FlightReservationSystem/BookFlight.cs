@@ -13,7 +13,6 @@ namespace FlightReservationSystem
             InitializeComponent();
             dataManager = new(databaseConnection, this);
             flightRanks = new();
-            dataAuthenticator = new();
             commands = new();
             tempBookedSeats = new();
             ChangeButton(bookFlightButton);
@@ -134,17 +133,17 @@ namespace FlightReservationSystem
                 SetAuthenticatorError("Please select flight and try again!", flightNoTextBox);
                 return;
             }
-            if (!dataAuthenticator.ValidateCardNumber(creditCardTextBox.Text))
+            if (!DataAuthenticator.Instance.ValidateCardNumber(creditCardTextBox.Text))
             {
                 SetAuthenticatorError("Invalid Card Number. Please enter valid card number and try again!", creditCardTextBox);
                 return;
             }
-            if (!dataAuthenticator.ValidateCardExpiryDate(creditCardExpiryDateTextBox.Text))
+            if (!DataAuthenticator.Instance.ValidateCardExpiryDate(creditCardExpiryDateTextBox.Text))
             {
                 SetAuthenticatorError("Invalid Card Expiry Date. Please enter valid card expiry date and try again!", creditCardExpiryDateTextBox);
                 return;
             }
-            if (!dataAuthenticator.ValidateCardCVV(cvvCreditCardTextBox.Text))
+            if (!DataAuthenticator.Instance.ValidateCardCVV(cvvCreditCardTextBox.Text))
             {
                 SetAuthenticatorError("Invalid Card CVV. Please enter valid card cvv and try again!", cvvCreditCardTextBox);
                 return;
@@ -313,12 +312,12 @@ namespace FlightReservationSystem
                 SetAuthenticatorError("Please choose seat and try again!", seatAssignmentTextBox);
                 return;
             }
-            if (string.IsNullOrEmpty(passportNumberTextBox.Text) || !dataAuthenticator.ValidatePassportNumber(passportNumberTextBox.Text))
+            if (string.IsNullOrEmpty(passportNumberTextBox.Text) || !DataAuthenticator.Instance.ValidatePassportNumber(passportNumberTextBox.Text))
             {
                 SetAuthenticatorError("Invalid Passport Number. Please enter a valid passport number and try again!", passportNumberTextBox);
                 return;
             }
-            if (string.IsNullOrEmpty(firstNameTextBox.Text) || !dataAuthenticator.ValidateName(firstNameTextBox.Text) || string.IsNullOrEmpty(lastNameTextBox.Text) || !dataAuthenticator.ValidateName(lastNameTextBox.Text))
+            if (string.IsNullOrEmpty(firstNameTextBox.Text) || !DataAuthenticator.Instance.ValidateName(firstNameTextBox.Text) || string.IsNullOrEmpty(lastNameTextBox.Text) || !DataAuthenticator.Instance.ValidateName(lastNameTextBox.Text))
             {
                 SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", firstNameTextBox);
                 SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", lastNameTextBox);

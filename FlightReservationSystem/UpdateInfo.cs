@@ -8,7 +8,6 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             dataManager = new(databaseConnection, this);
-            dataAuthenticator = new();
             ChangeButton(UpdateInfo);
         }
 
@@ -29,12 +28,12 @@ namespace FlightReservationSystem
                 MessageBox.Show("Please fill all fields and try again!");
                 return;
             }
-            if (!dataAuthenticator.ValidatePhoneNumber(this.textBoxPhone.Text))
+            if (!DataAuthenticator.Instance.ValidatePhoneNumber(this.textBoxPhone.Text))
             {
                 SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
                 return;
             }
-            if (!dataAuthenticator.ValidateName(this.textBoxFirstName.Text) || !dataAuthenticator.ValidateName(this.textBoxLastName.Text))
+            if (!DataAuthenticator.Instance.ValidateName(this.textBoxFirstName.Text) || !DataAuthenticator.Instance.ValidateName(this.textBoxLastName.Text))
             {
                 SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
                 SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
