@@ -10,7 +10,6 @@ namespace FlightReservationSystem
             dataManager = new(databaseConnection, this);
             dataAuthenticator = new();
             ChangeButton(UpdateInfo);
-
         }
 
         private void UpdateInfo_Load(object sender, EventArgs e)

@@ -37,7 +37,7 @@ namespace FlightReservationSystem
             {
                 query += "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE)";
             }
-            dataManager.UpdateDataGrid(AdminFlightDataGrid, query);
+            dataManager.UpdateDataGrid(flightDataGrid, query);
         }
 
         private void AdminDeptCountriesComboBox_OnDropDown(object sender, EventArgs e)
@@ -60,57 +60,57 @@ namespace FlightReservationSystem
 
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow SelectedRow = AdminFlightDataGrid.Rows[e.RowIndex];
-                this.ArrivalCountryTextBox.Text = SelectedRow.Cells["arrivalCountry"].Value.ToString();
-                this.DeparturedateTimePicker.Text = SelectedRow.Cells["deptDate"].Value.ToString();
-                this.ArrivaldateTimePicker.Text = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
-                this.FlightNumberTextBox.Text = SelectedRow.Cells["FlightNo"].Value.ToString();
-                this.AirCraftIdTextBox.Text = SelectedRow.Cells["AirCraftID"].Value.ToString();
-                this.RankATextBox.Text = SelectedRow.Cells["Rank1Price"].Value.ToString();
-                this.RankBTextBox.Text = SelectedRow.Cells["Rank2Price"].Value.ToString();
-                this.RankCTextBox.Text = SelectedRow.Cells["Rank3Price"].Value.ToString();
-                this.DepartureTextBox.Text = SelectedRow.Cells["deptCountry"].Value.ToString();
-                this.SeatsAvailabilityTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
+                DataGridViewRow SelectedRow = flightDataGrid.Rows[e.RowIndex];
+                this.arrivalCountryTextBox.Text = SelectedRow.Cells["arrivalCountry"].Value.ToString();
+                this.deptDatePanel2TimePicker.Text = SelectedRow.Cells["deptDate"].Value.ToString();
+                this.arrivalDateTimePicker.Text = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
+                this.flightNoTextBox.Text = SelectedRow.Cells["FlightNo"].Value.ToString();
+                this.aircraftIDTextBox.Text = SelectedRow.Cells["AirCraftID"].Value.ToString();
+                this.rankATextBox.Text = SelectedRow.Cells["Rank1Price"].Value.ToString();
+                this.rankBTextBox.Text = SelectedRow.Cells["Rank2Price"].Value.ToString();
+                this.rankCTextBox.Text = SelectedRow.Cells["Rank3Price"].Value.ToString();
+                this.deptCountryTextBox.Text = SelectedRow.Cells["deptCountry"].Value.ToString();
+                this.seatsAvailableTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
             }
         }
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            string seatsAvailable = this.SeatsAvailabilityTextBox.Text;
+            string seatsAvailable = this.seatsAvailableTextBox.Text;
             if (!ValidateIntegers(seatsAvailable))
             {
-                errorProvider.SetError(SeatsAvailabilityTextBox, "Invalid seat, Please enter a valid seat.");
-                this.SeatsAvailabilityTextBox.Focus();
+                errorProvider.SetError(seatsAvailableTextBox, "Invalid seat, Please enter a valid seat.");
+                this.seatsAvailableTextBox.Focus();
                 return;
             }
 
-            string airCraftId = this.AirCraftIdTextBox.Text;
+            string airCraftId = this.aircraftIDTextBox.Text;
             if (!ValidateIntegers(airCraftId))
             {
-                errorProvider.SetError(AirCraftIdTextBox, "Invalid aircraftID, Please enter a valid aircraftID.");
-                this.AirCraftIdTextBox.Focus();
+                errorProvider.SetError(aircraftIDTextBox, "Invalid aircraftID, Please enter a valid aircraftID.");
+                this.aircraftIDTextBox.Focus();
                 return;
             }
 
-            string rankAPrice = this.RankATextBox.Text;
+            string rankAPrice = this.rankATextBox.Text;
             if (!ValidateDouble(rankAPrice))
             {
-                errorProvider.SetError(RankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
-                this.RankATextBox.Focus();
-                return;
-            }
-
-            if (!ValidateDouble(rankAPrice))
-            {
-                errorProvider.SetError(RankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
-                this.RankBTextBox.Focus();
+                errorProvider.SetError(rankATextBox, "Invalid Rank A Price, Please enter a valid Rank A Price.");
+                this.rankATextBox.Focus();
                 return;
             }
 
             if (!ValidateDouble(rankAPrice))
             {
-                errorProvider.SetError(RankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
-                this.RankCTextBox.Focus();
+                errorProvider.SetError(rankBTextBox, "Invalid Rank B Price, Please enter a valid Rank B Price.");
+                this.rankBTextBox.Focus();
+                return;
+            }
+
+            if (!ValidateDouble(rankAPrice))
+            {
+                errorProvider.SetError(rankCTextBox, "Invalid Rank C Price, Please enter a valid Rank C Price.");
+                this.rankCTextBox.Focus();
                 return;
             }
             string query = "UPDATE Flight Set DeptDate = @DeptDate, AirCraftID = @AirCraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
@@ -163,7 +163,7 @@ namespace FlightReservationSystem
             {
                 command.Parameters.AddWithValue("@deptCountry", this.deptCountriesComboBox.SelectedItem.ToString());
             }
-            command.Parameters.AddWithValue("@deptDate", this.deptDateTimePicker.Value);
+            command.Parameters.AddWithValue("@deptDate", this.deptDatePanel1TimePicker.Value);
         }
 
         public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
@@ -171,18 +171,18 @@ namespace FlightReservationSystem
             if (queryType == QueryType.Update)
             {
                 //Differs From One Computer To Another. Previous was dd MMMM yyyy 
-                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DeparturedateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ArrivaldateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-                command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
-                command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
-                command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
-                command.Parameters.AddWithValue("@AvailableSeats", int.Parse(SeatsAvailabilityTextBox.Text));
-                command.Parameters.AddWithValue("@FlightNo", int.Parse(FlightNumberTextBox.Text));
-                command.Parameters.AddWithValue("@AirCraftID", int.Parse(AirCraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(deptDatePanel2TimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(arrivalDateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@Rank1Price", Double.Parse(rankATextBox.Text));
+                command.Parameters.AddWithValue("@Rank2Price", Double.Parse(rankBTextBox.Text));
+                command.Parameters.AddWithValue("@Rank3Price", Double.Parse(rankCTextBox.Text));
+                command.Parameters.AddWithValue("@AvailableSeats", int.Parse(seatsAvailableTextBox.Text));
+                command.Parameters.AddWithValue("@FlightNo", int.Parse(flightNoTextBox.Text));
+                command.Parameters.AddWithValue("@AirCraftID", int.Parse(aircraftIDTextBox.Text));
             }
             else if (queryType == QueryType.Delete)
             {
-                command.Parameters.AddWithValue("@RecordId", int.Parse(FlightNumberTextBox.Text));
+                command.Parameters.AddWithValue("@RecordId", int.Parse(flightNoTextBox.Text));
             }
         }
     }
