@@ -70,11 +70,29 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
-            label11 = new Label();
-            StatusComboBoxPanel1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            ModelTextBoxPnanel1 = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftIdTextBoxPanel1 = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftdataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            statusPanel1Label = new Label();
+            statusComboBoxPanel1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            modelTextBoxPanel1 = new Guna.UI2.WinForms.Guna2TextBox();
+            aircraftIDTextBoxPanel1 = new Guna.UI2.WinForms.Guna2TextBox();
+            aircraftDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            panel2 = new Panel();
+            manufactureYearLabel = new Label();
+            manufactureLabel = new Label();
+            label7 = new Label();
+            aircrafTypePanel2Label = new Label();
+            capacityLabel = new Label();
+            aircraftIDLabel = new Label();
+            DeleteButton = new Guna.UI2.WinForms.Guna2Button();
+            confirmButton = new Guna.UI2.WinForms.Guna2Button();
+            statusComboBoxPanel2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            statusPanel2Label = new Label();
+            modelTextBoxPanel2 = new Guna.UI2.WinForms.Guna2TextBox();
+            manufactureTextBoxPanel2 = new Guna.UI2.WinForms.Guna2TextBox();
+            aircrafTypeTextBoxPanel2 = new Guna.UI2.WinForms.Guna2TextBox();
+            manufactureTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            capacityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            aircraftIDTextBoxPanel2 = new Guna.UI2.WinForms.Guna2TextBox();
+            updateAircraftLabel = new Label();
             AirCraftID = new DataGridViewTextBoxColumn();
             Model = new DataGridViewTextBoxColumn();
             Manufacturer = new DataGridViewTextBoxColumn();
@@ -82,30 +100,12 @@
             ManufactureYear = new DataGridViewTextBoxColumn();
             Capacity = new DataGridViewTextBoxColumn();
             Status = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label4 = new Label();
-            label2 = new Label();
-            DeleteButton = new Guna.UI2.WinForms.Guna2Button();
-            confirmButton = new Guna.UI2.WinForms.Guna2Button();
-            StatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            label5 = new Label();
-            ModelTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            ManufactureTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            AirCraftTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            ManufacturerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            CapacityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            AircraftIdTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)aircraftDataGridView).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -315,104 +315,104 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(StatusComboBoxPanel1);
-            panel1.Controls.Add(ModelTextBoxPnanel1);
-            panel1.Controls.Add(AirCraftIdTextBoxPanel1);
-            panel1.Controls.Add(AirCraftdataGridView);
+            panel1.Controls.Add(statusPanel1Label);
+            panel1.Controls.Add(statusComboBoxPanel1);
+            panel1.Controls.Add(modelTextBoxPanel1);
+            panel1.Controls.Add(aircraftIDTextBoxPanel1);
+            panel1.Controls.Add(aircraftDataGridView);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(854, 750);
             panel1.TabIndex = 0;
             // 
-            // label11
+            // statusPanel1Label
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(589, 10);
-            label11.Name = "label11";
-            label11.Size = new Size(39, 15);
-            label11.TabIndex = 21;
-            label11.Text = "Status";
+            statusPanel1Label.AutoSize = true;
+            statusPanel1Label.Location = new Point(589, 10);
+            statusPanel1Label.Name = "statusPanel1Label";
+            statusPanel1Label.Size = new Size(39, 15);
+            statusPanel1Label.TabIndex = 21;
+            statusPanel1Label.Text = "Status";
             // 
-            // StatusComboBoxPanel1
+            // statusComboBoxPanel1
             // 
-            StatusComboBoxPanel1.BackColor = Color.Transparent;
-            StatusComboBoxPanel1.BorderRadius = 20;
-            StatusComboBoxPanel1.CustomizableEdges = customizableEdges19;
-            StatusComboBoxPanel1.DrawMode = DrawMode.OwnerDrawFixed;
-            StatusComboBoxPanel1.DropDownStyle = ComboBoxStyle.DropDownList;
-            StatusComboBoxPanel1.FocusedColor = Color.FromArgb(94, 148, 255);
-            StatusComboBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            StatusComboBoxPanel1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            StatusComboBoxPanel1.ForeColor = Color.FromArgb(68, 88, 112);
-            StatusComboBoxPanel1.FormattingEnabled = true;
-            StatusComboBoxPanel1.HoverState.BorderColor = SystemColors.MenuHighlight;
-            StatusComboBoxPanel1.ItemHeight = 30;
-            StatusComboBoxPanel1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBoxPanel1.Location = new Point(539, 27);
-            StatusComboBoxPanel1.Margin = new Padding(3, 2, 3, 2);
-            StatusComboBoxPanel1.Name = "StatusComboBoxPanel1";
-            StatusComboBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            StatusComboBoxPanel1.Size = new Size(141, 36);
-            StatusComboBoxPanel1.TabIndex = 20;
-            StatusComboBoxPanel1.TextAlign = HorizontalAlignment.Center;
-            StatusComboBoxPanel1.TextChanged += SearchTextChanged;
+            statusComboBoxPanel1.BackColor = Color.Transparent;
+            statusComboBoxPanel1.BorderRadius = 20;
+            statusComboBoxPanel1.CustomizableEdges = customizableEdges19;
+            statusComboBoxPanel1.DrawMode = DrawMode.OwnerDrawFixed;
+            statusComboBoxPanel1.DropDownStyle = ComboBoxStyle.DropDownList;
+            statusComboBoxPanel1.FocusedColor = Color.FromArgb(94, 148, 255);
+            statusComboBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            statusComboBoxPanel1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            statusComboBoxPanel1.ForeColor = Color.FromArgb(68, 88, 112);
+            statusComboBoxPanel1.FormattingEnabled = true;
+            statusComboBoxPanel1.HoverState.BorderColor = SystemColors.MenuHighlight;
+            statusComboBoxPanel1.ItemHeight = 30;
+            statusComboBoxPanel1.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
+            statusComboBoxPanel1.Location = new Point(539, 27);
+            statusComboBoxPanel1.Margin = new Padding(3, 2, 3, 2);
+            statusComboBoxPanel1.Name = "statusComboBoxPanel1";
+            statusComboBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            statusComboBoxPanel1.Size = new Size(141, 36);
+            statusComboBoxPanel1.TabIndex = 20;
+            statusComboBoxPanel1.TextAlign = HorizontalAlignment.Center;
+            statusComboBoxPanel1.TextChanged += SearchTextChanged;
             // 
-            // ModelTextBoxPnanel1
+            // modelTextBoxPanel1
             // 
-            ModelTextBoxPnanel1.BorderRadius = 20;
-            ModelTextBoxPnanel1.CustomizableEdges = customizableEdges21;
-            ModelTextBoxPnanel1.DefaultText = "";
-            ModelTextBoxPnanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ModelTextBoxPnanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ModelTextBoxPnanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBoxPnanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBoxPnanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBoxPnanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ModelTextBoxPnanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBoxPnanel1.Location = new Point(372, 27);
-            ModelTextBoxPnanel1.Margin = new Padding(3, 2, 3, 2);
-            ModelTextBoxPnanel1.Name = "ModelTextBoxPnanel1";
-            ModelTextBoxPnanel1.PasswordChar = '\0';
-            ModelTextBoxPnanel1.PlaceholderText = "Model";
-            ModelTextBoxPnanel1.SelectedText = "";
-            ModelTextBoxPnanel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            ModelTextBoxPnanel1.Size = new Size(136, 36);
-            ModelTextBoxPnanel1.TabIndex = 18;
-            ModelTextBoxPnanel1.TextChanged += SearchTextChanged;
+            modelTextBoxPanel1.BorderRadius = 20;
+            modelTextBoxPanel1.CustomizableEdges = customizableEdges21;
+            modelTextBoxPanel1.DefaultText = "";
+            modelTextBoxPanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            modelTextBoxPanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            modelTextBoxPanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBoxPanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            modelTextBoxPanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            modelTextBoxPanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            modelTextBoxPanel1.Location = new Point(372, 27);
+            modelTextBoxPanel1.Margin = new Padding(3, 2, 3, 2);
+            modelTextBoxPanel1.Name = "modelTextBoxPanel1";
+            modelTextBoxPanel1.PasswordChar = '\0';
+            modelTextBoxPanel1.PlaceholderText = "Model";
+            modelTextBoxPanel1.SelectedText = "";
+            modelTextBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            modelTextBoxPanel1.Size = new Size(136, 36);
+            modelTextBoxPanel1.TabIndex = 18;
+            modelTextBoxPanel1.TextChanged += SearchTextChanged;
             // 
-            // AirCraftIdTextBoxPanel1
+            // aircraftIDTextBoxPanel1
             // 
-            AirCraftIdTextBoxPanel1.BorderRadius = 20;
-            AirCraftIdTextBoxPanel1.CustomizableEdges = customizableEdges23;
-            AirCraftIdTextBoxPanel1.DefaultText = "";
-            AirCraftIdTextBoxPanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AirCraftIdTextBoxPanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AirCraftIdTextBoxPanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftIdTextBoxPanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftIdTextBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftIdTextBoxPanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftIdTextBoxPanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftIdTextBoxPanel1.Location = new Point(200, 27);
-            AirCraftIdTextBoxPanel1.Margin = new Padding(3, 2, 3, 2);
-            AirCraftIdTextBoxPanel1.Name = "AirCraftIdTextBoxPanel1";
-            AirCraftIdTextBoxPanel1.PasswordChar = '\0';
-            AirCraftIdTextBoxPanel1.PlaceholderText = "Aircraft ID";
-            AirCraftIdTextBoxPanel1.SelectedText = "";
-            AirCraftIdTextBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            AirCraftIdTextBoxPanel1.Size = new Size(141, 36);
-            AirCraftIdTextBoxPanel1.TabIndex = 47;
-            AirCraftIdTextBoxPanel1.TextChanged += SearchTextChanged;
+            aircraftIDTextBoxPanel1.BorderRadius = 20;
+            aircraftIDTextBoxPanel1.CustomizableEdges = customizableEdges23;
+            aircraftIDTextBoxPanel1.DefaultText = "";
+            aircraftIDTextBoxPanel1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            aircraftIDTextBoxPanel1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            aircraftIDTextBoxPanel1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            aircraftIDTextBoxPanel1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            aircraftIDTextBoxPanel1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircraftIDTextBoxPanel1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            aircraftIDTextBoxPanel1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircraftIDTextBoxPanel1.Location = new Point(200, 27);
+            aircraftIDTextBoxPanel1.Margin = new Padding(3, 2, 3, 2);
+            aircraftIDTextBoxPanel1.Name = "aircraftIDTextBoxPanel1";
+            aircraftIDTextBoxPanel1.PasswordChar = '\0';
+            aircraftIDTextBoxPanel1.PlaceholderText = "Aircraft ID";
+            aircraftIDTextBoxPanel1.SelectedText = "";
+            aircraftIDTextBoxPanel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            aircraftIDTextBoxPanel1.Size = new Size(141, 36);
+            aircraftIDTextBoxPanel1.TabIndex = 47;
+            aircraftIDTextBoxPanel1.TextChanged += SearchTextChanged;
             // 
-            // AirCraftdataGridView
+            // aircraftDataGridView
             // 
-            AirCraftdataGridView.AllowUserToAddRows = false;
-            AirCraftdataGridView.AllowUserToDeleteRows = false;
-            AirCraftdataGridView.AllowUserToResizeColumns = false;
-            AirCraftdataGridView.AllowUserToResizeRows = false;
+            aircraftDataGridView.AllowUserToAddRows = false;
+            aircraftDataGridView.AllowUserToDeleteRows = false;
+            aircraftDataGridView.AllowUserToResizeColumns = false;
+            aircraftDataGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(189, 223, 251);
-            AirCraftdataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            AirCraftdataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            aircraftDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            aircraftDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 150, 242);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
@@ -420,9 +420,9 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            AirCraftdataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            AirCraftdataGridView.ColumnHeadersHeight = 40;
-            AirCraftdataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, Manufacturer, AirCraftType, ManufactureYear, Capacity, Status });
+            aircraftDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            aircraftDataGridView.ColumnHeadersHeight = 40;
+            aircraftDataGridView.Columns.AddRange(new DataGridViewColumn[] { AirCraftID, Model, Manufacturer, AirCraftType, ManufactureYear, Capacity, Status });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(211, 233, 252);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -430,169 +430,120 @@
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(107, 185, 246);
             dataGridViewCellStyle3.SelectionForeColor = Color.Black;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            AirCraftdataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            AirCraftdataGridView.GridColor = Color.FromArgb(187, 222, 251);
-            AirCraftdataGridView.Location = new Point(-4, 73);
-            AirCraftdataGridView.Margin = new Padding(0);
-            AirCraftdataGridView.MultiSelect = false;
-            AirCraftdataGridView.Name = "AirCraftdataGridView";
-            AirCraftdataGridView.ReadOnly = true;
-            AirCraftdataGridView.RowHeadersVisible = false;
-            AirCraftdataGridView.RowHeadersWidth = 50;
-            AirCraftdataGridView.RowTemplate.Height = 25;
-            AirCraftdataGridView.Size = new Size(858, 677);
-            AirCraftdataGridView.TabIndex = 33;
-            AirCraftdataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(189, 223, 251);
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            AirCraftdataGridView.ThemeStyle.BackColor = Color.White;
-            AirCraftdataGridView.ThemeStyle.GridColor = Color.FromArgb(187, 222, 251);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(33, 150, 242);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            AirCraftdataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            AirCraftdataGridView.ThemeStyle.ReadOnly = true;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(211, 233, 252);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.Height = 25;
-            AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(107, 185, 246);
-            AirCraftdataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
-            AirCraftdataGridView.CellClick += AirCraftdataGridView_CellClick;
-            // 
-            // AirCraftID
-            // 
-            AirCraftID.HeaderText = "AirCraftID";
-            AirCraftID.MinimumWidth = 6;
-            AirCraftID.Name = "AirCraftID";
-            AirCraftID.ReadOnly = true;
-            // 
-            // Model
-            // 
-            Model.HeaderText = "Model";
-            Model.MinimumWidth = 6;
-            Model.Name = "Model";
-            Model.ReadOnly = true;
-            // 
-            // Manufacturer
-            // 
-            Manufacturer.HeaderText = "Manufacturer";
-            Manufacturer.MinimumWidth = 6;
-            Manufacturer.Name = "Manufacturer";
-            Manufacturer.ReadOnly = true;
-            // 
-            // AirCraftType
-            // 
-            AirCraftType.HeaderText = "AirCraftType";
-            AirCraftType.MinimumWidth = 6;
-            AirCraftType.Name = "AirCraftType";
-            AirCraftType.ReadOnly = true;
-            // 
-            // ManufactureYear
-            // 
-            ManufactureYear.HeaderText = "ManufactureYear";
-            ManufactureYear.MinimumWidth = 6;
-            ManufactureYear.Name = "ManufactureYear";
-            ManufactureYear.ReadOnly = true;
-            // 
-            // Capacity
-            // 
-            Capacity.HeaderText = "Capacity";
-            Capacity.MinimumWidth = 6;
-            Capacity.Name = "Capacity";
-            Capacity.ReadOnly = true;
-            // 
-            // Status
-            // 
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
+            aircraftDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            aircraftDataGridView.GridColor = Color.FromArgb(187, 222, 251);
+            aircraftDataGridView.Location = new Point(-4, 73);
+            aircraftDataGridView.Margin = new Padding(0);
+            aircraftDataGridView.MultiSelect = false;
+            aircraftDataGridView.Name = "aircraftDataGridView";
+            aircraftDataGridView.ReadOnly = true;
+            aircraftDataGridView.RowHeadersVisible = false;
+            aircraftDataGridView.RowHeadersWidth = 50;
+            aircraftDataGridView.RowTemplate.Height = 25;
+            aircraftDataGridView.Size = new Size(861, 677);
+            aircraftDataGridView.TabIndex = 33;
+            aircraftDataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            aircraftDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(189, 223, 251);
+            aircraftDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            aircraftDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            aircraftDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            aircraftDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            aircraftDataGridView.ThemeStyle.BackColor = Color.White;
+            aircraftDataGridView.ThemeStyle.GridColor = Color.FromArgb(187, 222, 251);
+            aircraftDataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(33, 150, 242);
+            aircraftDataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
+            aircraftDataGridView.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            aircraftDataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            aircraftDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            aircraftDataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            aircraftDataGridView.ThemeStyle.ReadOnly = true;
+            aircraftDataGridView.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(211, 233, 252);
+            aircraftDataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            aircraftDataGridView.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            aircraftDataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            aircraftDataGridView.ThemeStyle.RowsStyle.Height = 25;
+            aircraftDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(107, 185, 246);
+            aircraftDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            aircraftDataGridView.CellClick += AirCraftdataGridView_CellClick;
             // 
             // panel2
             // 
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
+            panel2.Controls.Add(manufactureYearLabel);
+            panel2.Controls.Add(manufactureLabel);
             panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(aircrafTypePanel2Label);
+            panel2.Controls.Add(capacityLabel);
+            panel2.Controls.Add(aircraftIDLabel);
             panel2.Controls.Add(DeleteButton);
             panel2.Controls.Add(confirmButton);
-            panel2.Controls.Add(StatusComboBox);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(ModelTextBox);
-            panel2.Controls.Add(ManufactureTextBox);
-            panel2.Controls.Add(AirCraftTextBox);
-            panel2.Controls.Add(ManufacturerTextBox);
-            panel2.Controls.Add(CapacityTextBox);
-            panel2.Controls.Add(AircraftIdTextBox);
-            panel2.Controls.Add(label3);
+            panel2.Controls.Add(statusComboBoxPanel2);
+            panel2.Controls.Add(statusPanel2Label);
+            panel2.Controls.Add(modelTextBoxPanel2);
+            panel2.Controls.Add(manufactureTextBoxPanel2);
+            panel2.Controls.Add(aircrafTypeTextBoxPanel2);
+            panel2.Controls.Add(manufactureTextBox);
+            panel2.Controls.Add(capacityTextBox);
+            panel2.Controls.Add(aircraftIDTextBoxPanel2);
+            panel2.Controls.Add(updateAircraftLabel);
             panel2.Location = new Point(863, 3);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(322, 751);
             panel2.TabIndex = 1;
             // 
-            // label9
+            // manufactureYearLabel
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(30, 236);
-            label9.Name = "label9";
-            label9.Size = new Size(101, 15);
-            label9.TabIndex = 69;
-            label9.Text = "Manufucture Year";
+            manufactureYearLabel.AutoSize = true;
+            manufactureYearLabel.Location = new Point(33, 236);
+            manufactureYearLabel.Name = "manufactureYearLabel";
+            manufactureYearLabel.Size = new Size(100, 15);
+            manufactureYearLabel.TabIndex = 69;
+            manufactureYearLabel.Text = "Manufacture Year";
             // 
-            // label8
+            // manufactureLabel
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(45, 296);
-            label8.Name = "label8";
-            label8.Size = new Size(79, 15);
-            label8.TabIndex = 68;
-            label8.Text = "Manufacturer";
+            manufactureLabel.AutoSize = true;
+            manufactureLabel.Location = new Point(45, 296);
+            manufactureLabel.Name = "manufactureLabel";
+            manufactureLabel.Size = new Size(79, 15);
+            manufactureLabel.TabIndex = 68;
+            manufactureLabel.Text = "Manufacturer";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(214, 182);
+            label7.Location = new Point(219, 182);
             label7.Name = "label7";
             label7.Size = new Size(41, 15);
             label7.TabIndex = 67;
             label7.Text = "Model";
             // 
-            // label6
+            // aircrafTypePanel2Label
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(203, 236);
-            label6.Name = "label6";
-            label6.Size = new Size(73, 15);
-            label6.TabIndex = 66;
-            label6.Text = "Aircraft Type";
+            aircrafTypePanel2Label.AutoSize = true;
+            aircrafTypePanel2Label.Location = new Point(204, 236);
+            aircrafTypePanel2Label.Name = "aircrafTypePanel2Label";
+            aircrafTypePanel2Label.Size = new Size(73, 15);
+            aircrafTypePanel2Label.TabIndex = 66;
+            aircrafTypePanel2Label.Text = "Aircraft Type";
             // 
-            // label4
+            // capacityLabel
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(214, 296);
-            label4.Name = "label4";
-            label4.Size = new Size(53, 15);
-            label4.TabIndex = 65;
-            label4.Text = "Capacity";
+            capacityLabel.AutoSize = true;
+            capacityLabel.Location = new Point(214, 296);
+            capacityLabel.Name = "capacityLabel";
+            capacityLabel.Size = new Size(53, 15);
+            capacityLabel.TabIndex = 65;
+            capacityLabel.Text = "Capacity";
             // 
-            // label2
+            // aircraftIDLabel
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(45, 182);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 15);
-            label2.TabIndex = 64;
-            label2.Text = "Aircraft ID";
+            aircraftIDLabel.AutoSize = true;
+            aircraftIDLabel.Location = new Point(50, 182);
+            aircraftIDLabel.Name = "aircraftIDLabel";
+            aircraftIDLabel.Size = new Size(60, 15);
+            aircraftIDLabel.TabIndex = 64;
+            aircraftIDLabel.Text = "Aircraft ID";
             // 
             // DeleteButton
             // 
@@ -662,180 +613,232 @@
             confirmButton.Text = "Submit";
             confirmButton.Click += confirmButton_Click;
             // 
-            // StatusComboBox
+            // statusComboBoxPanel2
             // 
-            StatusComboBox.BackColor = Color.Transparent;
-            StatusComboBox.BorderRadius = 20;
-            StatusComboBox.CustomizableEdges = customizableEdges5;
-            StatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            StatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            StatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            StatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            StatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            StatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            StatusComboBox.ItemHeight = 30;
-            StatusComboBox.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
-            StatusComboBox.Location = new Point(97, 388);
-            StatusComboBox.Margin = new Padding(3, 2, 3, 2);
-            StatusComboBox.Name = "StatusComboBox";
-            StatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            StatusComboBox.Size = new Size(141, 36);
-            StatusComboBox.TabIndex = 54;
-            StatusComboBox.TextAlign = HorizontalAlignment.Center;
+            statusComboBoxPanel2.BackColor = Color.Transparent;
+            statusComboBoxPanel2.BorderRadius = 20;
+            statusComboBoxPanel2.CustomizableEdges = customizableEdges5;
+            statusComboBoxPanel2.DrawMode = DrawMode.OwnerDrawFixed;
+            statusComboBoxPanel2.DropDownStyle = ComboBoxStyle.DropDownList;
+            statusComboBoxPanel2.FocusedColor = Color.FromArgb(94, 148, 255);
+            statusComboBoxPanel2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            statusComboBoxPanel2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            statusComboBoxPanel2.ForeColor = Color.FromArgb(68, 88, 112);
+            statusComboBoxPanel2.FormattingEnabled = true;
+            statusComboBoxPanel2.HoverState.BorderColor = SystemColors.MenuHighlight;
+            statusComboBoxPanel2.ItemHeight = 30;
+            statusComboBoxPanel2.Items.AddRange(new object[] { "Active", "Inactive", "Maintainance" });
+            statusComboBoxPanel2.Location = new Point(97, 372);
+            statusComboBoxPanel2.Margin = new Padding(3, 2, 3, 2);
+            statusComboBoxPanel2.Name = "statusComboBoxPanel2";
+            statusComboBoxPanel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            statusComboBoxPanel2.Size = new Size(141, 36);
+            statusComboBoxPanel2.TabIndex = 54;
+            statusComboBoxPanel2.TextAlign = HorizontalAlignment.Center;
             // 
-            // label5
+            // statusPanel2Label
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(141, 370);
-            label5.Name = "label5";
-            label5.Size = new Size(39, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Status";
+            statusPanel2Label.AutoSize = true;
+            statusPanel2Label.Location = new Point(145, 354);
+            statusPanel2Label.Name = "statusPanel2Label";
+            statusPanel2Label.Size = new Size(39, 15);
+            statusPanel2Label.TabIndex = 12;
+            statusPanel2Label.Text = "Status";
             // 
-            // ModelTextBox
+            // modelTextBoxPanel2
             // 
-            ModelTextBox.BorderRadius = 20;
-            ModelTextBox.CustomizableEdges = customizableEdges7;
-            ModelTextBox.DefaultText = "";
-            ModelTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ModelTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ModelTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ModelTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ModelTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ModelTextBox.Location = new Point(173, 199);
-            ModelTextBox.Margin = new Padding(3, 2, 3, 2);
-            ModelTextBox.Name = "ModelTextBox";
-            ModelTextBox.PasswordChar = '\0';
-            ModelTextBox.PlaceholderText = "Model";
-            ModelTextBox.SelectedText = "";
-            ModelTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            ModelTextBox.Size = new Size(141, 29);
-            ModelTextBox.TabIndex = 49;
+            modelTextBoxPanel2.BorderRadius = 20;
+            modelTextBoxPanel2.CustomizableEdges = customizableEdges7;
+            modelTextBoxPanel2.DefaultText = "";
+            modelTextBoxPanel2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            modelTextBoxPanel2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            modelTextBoxPanel2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBoxPanel2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBoxPanel2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            modelTextBoxPanel2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            modelTextBoxPanel2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            modelTextBoxPanel2.Location = new Point(173, 199);
+            modelTextBoxPanel2.Margin = new Padding(3, 2, 3, 2);
+            modelTextBoxPanel2.Name = "modelTextBoxPanel2";
+            modelTextBoxPanel2.PasswordChar = '\0';
+            modelTextBoxPanel2.PlaceholderText = "";
+            modelTextBoxPanel2.SelectedText = "";
+            modelTextBoxPanel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            modelTextBoxPanel2.Size = new Size(141, 29);
+            modelTextBoxPanel2.TabIndex = 49;
             // 
-            // ManufactureTextBox
+            // manufactureTextBoxPanel2
             // 
-            ManufactureTextBox.BorderRadius = 20;
-            ManufactureTextBox.CustomizableEdges = customizableEdges9;
-            ManufactureTextBox.DefaultText = "";
-            ManufactureTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ManufactureTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ManufactureTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ManufactureTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ManufactureTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufactureTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ManufactureTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufactureTextBox.Location = new Point(14, 254);
-            ManufactureTextBox.Margin = new Padding(3, 2, 3, 2);
-            ManufactureTextBox.Name = "ManufactureTextBox";
-            ManufactureTextBox.PasswordChar = '\0';
-            ManufactureTextBox.PlaceholderText = "Manufucture Year";
-            ManufactureTextBox.SelectedText = "";
-            ManufactureTextBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            ManufactureTextBox.Size = new Size(141, 29);
-            ManufactureTextBox.TabIndex = 50;
+            manufactureTextBoxPanel2.BorderRadius = 20;
+            manufactureTextBoxPanel2.CustomizableEdges = customizableEdges9;
+            manufactureTextBoxPanel2.DefaultText = "";
+            manufactureTextBoxPanel2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            manufactureTextBoxPanel2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            manufactureTextBoxPanel2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            manufactureTextBoxPanel2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            manufactureTextBoxPanel2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            manufactureTextBoxPanel2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            manufactureTextBoxPanel2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            manufactureTextBoxPanel2.Location = new Point(14, 254);
+            manufactureTextBoxPanel2.Margin = new Padding(3, 2, 3, 2);
+            manufactureTextBoxPanel2.Name = "manufactureTextBoxPanel2";
+            manufactureTextBoxPanel2.PasswordChar = '\0';
+            manufactureTextBoxPanel2.PlaceholderText = "";
+            manufactureTextBoxPanel2.SelectedText = "";
+            manufactureTextBoxPanel2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            manufactureTextBoxPanel2.Size = new Size(141, 29);
+            manufactureTextBoxPanel2.TabIndex = 50;
             // 
-            // AirCraftTextBox
+            // aircrafTypeTextBoxPanel2
             // 
-            AirCraftTextBox.BorderRadius = 20;
-            AirCraftTextBox.CustomizableEdges = customizableEdges11;
-            AirCraftTextBox.DefaultText = "";
-            AirCraftTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AirCraftTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AirCraftTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AirCraftTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AirCraftTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AirCraftTextBox.Location = new Point(173, 254);
-            AirCraftTextBox.Margin = new Padding(3, 2, 3, 2);
-            AirCraftTextBox.Name = "AirCraftTextBox";
-            AirCraftTextBox.PasswordChar = '\0';
-            AirCraftTextBox.PlaceholderText = "Aircraft Type";
-            AirCraftTextBox.SelectedText = "";
-            AirCraftTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            AirCraftTextBox.Size = new Size(141, 29);
-            AirCraftTextBox.TabIndex = 51;
+            aircrafTypeTextBoxPanel2.BorderRadius = 20;
+            aircrafTypeTextBoxPanel2.CustomizableEdges = customizableEdges11;
+            aircrafTypeTextBoxPanel2.DefaultText = "";
+            aircrafTypeTextBoxPanel2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            aircrafTypeTextBoxPanel2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            aircrafTypeTextBoxPanel2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            aircrafTypeTextBoxPanel2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            aircrafTypeTextBoxPanel2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircrafTypeTextBoxPanel2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            aircrafTypeTextBoxPanel2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircrafTypeTextBoxPanel2.Location = new Point(173, 254);
+            aircrafTypeTextBoxPanel2.Margin = new Padding(3, 2, 3, 2);
+            aircrafTypeTextBoxPanel2.Name = "aircrafTypeTextBoxPanel2";
+            aircrafTypeTextBoxPanel2.PasswordChar = '\0';
+            aircrafTypeTextBoxPanel2.PlaceholderText = "";
+            aircrafTypeTextBoxPanel2.SelectedText = "";
+            aircrafTypeTextBoxPanel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            aircrafTypeTextBoxPanel2.Size = new Size(141, 29);
+            aircrafTypeTextBoxPanel2.TabIndex = 51;
             // 
-            // ManufacturerTextBox
+            // manufactureTextBox
             // 
-            ManufacturerTextBox.BorderRadius = 20;
-            ManufacturerTextBox.CustomizableEdges = customizableEdges13;
-            ManufacturerTextBox.DefaultText = "";
-            ManufacturerTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ManufacturerTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ManufacturerTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ManufacturerTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ManufacturerTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufacturerTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ManufacturerTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ManufacturerTextBox.Location = new Point(14, 314);
-            ManufacturerTextBox.Margin = new Padding(3, 2, 3, 2);
-            ManufacturerTextBox.Name = "ManufacturerTextBox";
-            ManufacturerTextBox.PasswordChar = '\0';
-            ManufacturerTextBox.PlaceholderText = "Manufacturer";
-            ManufacturerTextBox.SelectedText = "";
-            ManufacturerTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            ManufacturerTextBox.Size = new Size(141, 29);
-            ManufacturerTextBox.TabIndex = 52;
+            manufactureTextBox.BorderRadius = 20;
+            manufactureTextBox.CustomizableEdges = customizableEdges13;
+            manufactureTextBox.DefaultText = "";
+            manufactureTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            manufactureTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            manufactureTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            manufactureTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            manufactureTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            manufactureTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            manufactureTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            manufactureTextBox.Location = new Point(14, 314);
+            manufactureTextBox.Margin = new Padding(3, 2, 3, 2);
+            manufactureTextBox.Name = "manufactureTextBox";
+            manufactureTextBox.PasswordChar = '\0';
+            manufactureTextBox.PlaceholderText = "";
+            manufactureTextBox.SelectedText = "";
+            manufactureTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            manufactureTextBox.Size = new Size(141, 29);
+            manufactureTextBox.TabIndex = 52;
             // 
-            // CapacityTextBox
+            // capacityTextBox
             // 
-            CapacityTextBox.BorderRadius = 20;
-            CapacityTextBox.CustomizableEdges = customizableEdges15;
-            CapacityTextBox.DefaultText = "";
-            CapacityTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            CapacityTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            CapacityTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            CapacityTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            CapacityTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            CapacityTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CapacityTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            CapacityTextBox.Location = new Point(173, 314);
-            CapacityTextBox.Margin = new Padding(3, 2, 3, 2);
-            CapacityTextBox.Name = "CapacityTextBox";
-            CapacityTextBox.PasswordChar = '\0';
-            CapacityTextBox.PlaceholderText = "Capacity";
-            CapacityTextBox.SelectedText = "";
-            CapacityTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            CapacityTextBox.Size = new Size(141, 29);
-            CapacityTextBox.TabIndex = 53;
+            capacityTextBox.BorderRadius = 20;
+            capacityTextBox.CustomizableEdges = customizableEdges15;
+            capacityTextBox.DefaultText = "";
+            capacityTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            capacityTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            capacityTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            capacityTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            capacityTextBox.FillColor = Color.WhiteSmoke;
+            capacityTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            capacityTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            capacityTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            capacityTextBox.Location = new Point(173, 314);
+            capacityTextBox.Margin = new Padding(3, 2, 3, 2);
+            capacityTextBox.Name = "capacityTextBox";
+            capacityTextBox.PasswordChar = '\0';
+            capacityTextBox.PlaceholderText = "";
+            capacityTextBox.ReadOnly = true;
+            capacityTextBox.SelectedText = "";
+            capacityTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            capacityTextBox.Size = new Size(141, 29);
+            capacityTextBox.TabIndex = 53;
             // 
-            // AircraftIdTextBox
+            // aircraftIDTextBoxPanel2
             // 
-            AircraftIdTextBox.BorderRadius = 20;
-            AircraftIdTextBox.CustomizableEdges = customizableEdges17;
-            AircraftIdTextBox.DefaultText = "";
-            AircraftIdTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            AircraftIdTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            AircraftIdTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            AircraftIdTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            AircraftIdTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            AircraftIdTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AircraftIdTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            AircraftIdTextBox.Location = new Point(14, 199);
-            AircraftIdTextBox.Margin = new Padding(3, 2, 3, 2);
-            AircraftIdTextBox.Name = "AircraftIdTextBox";
-            AircraftIdTextBox.PasswordChar = '\0';
-            AircraftIdTextBox.PlaceholderText = "Aircraft ID";
-            AircraftIdTextBox.ReadOnly = true;
-            AircraftIdTextBox.SelectedText = "";
-            AircraftIdTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            AircraftIdTextBox.Size = new Size(141, 29);
-            AircraftIdTextBox.TabIndex = 48;
+            aircraftIDTextBoxPanel2.BorderRadius = 20;
+            aircraftIDTextBoxPanel2.CustomizableEdges = customizableEdges17;
+            aircraftIDTextBoxPanel2.DefaultText = "";
+            aircraftIDTextBoxPanel2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            aircraftIDTextBoxPanel2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            aircraftIDTextBoxPanel2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            aircraftIDTextBoxPanel2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            aircraftIDTextBoxPanel2.FillColor = Color.WhiteSmoke;
+            aircraftIDTextBoxPanel2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircraftIDTextBoxPanel2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            aircraftIDTextBoxPanel2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircraftIDTextBoxPanel2.Location = new Point(14, 199);
+            aircraftIDTextBoxPanel2.Margin = new Padding(3, 2, 3, 2);
+            aircraftIDTextBoxPanel2.Name = "aircraftIDTextBoxPanel2";
+            aircraftIDTextBoxPanel2.PasswordChar = '\0';
+            aircraftIDTextBoxPanel2.PlaceholderText = "";
+            aircraftIDTextBoxPanel2.ReadOnly = true;
+            aircraftIDTextBoxPanel2.SelectedText = "";
+            aircraftIDTextBoxPanel2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            aircraftIDTextBoxPanel2.Size = new Size(141, 29);
+            aircraftIDTextBoxPanel2.TabIndex = 48;
             // 
-            // label3
+            // updateAircraftLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(93, 122);
-            label3.Name = "label3";
-            label3.Size = new Size(144, 25);
-            label3.TabIndex = 2;
-            label3.Text = "Update Aircraft";
+            updateAircraftLabel.AutoSize = true;
+            updateAircraftLabel.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            updateAircraftLabel.Location = new Point(93, 122);
+            updateAircraftLabel.Name = "updateAircraftLabel";
+            updateAircraftLabel.Size = new Size(144, 25);
+            updateAircraftLabel.TabIndex = 2;
+            updateAircraftLabel.Text = "Update Aircraft";
+            // 
+            // AirCraftID
+            // 
+            AirCraftID.HeaderText = "Aircraft ID";
+            AirCraftID.MinimumWidth = 6;
+            AirCraftID.Name = "AirCraftID";
+            AirCraftID.ReadOnly = true;
+            // 
+            // Model
+            // 
+            Model.HeaderText = "Model";
+            Model.MinimumWidth = 6;
+            Model.Name = "Model";
+            Model.ReadOnly = true;
+            // 
+            // Manufacturer
+            // 
+            Manufacturer.HeaderText = "Manufacturer";
+            Manufacturer.MinimumWidth = 6;
+            Manufacturer.Name = "Manufacturer";
+            Manufacturer.ReadOnly = true;
+            // 
+            // AirCraftType
+            // 
+            AirCraftType.HeaderText = "Aircraft Type";
+            AirCraftType.MinimumWidth = 6;
+            AirCraftType.Name = "AirCraftType";
+            AirCraftType.ReadOnly = true;
+            // 
+            // ManufactureYear
+            // 
+            ManufactureYear.HeaderText = "Manufacture Year";
+            ManufactureYear.MinimumWidth = 6;
+            ManufactureYear.Name = "ManufactureYear";
+            ManufactureYear.ReadOnly = true;
+            // 
+            // Capacity
+            // 
+            Capacity.HeaderText = "Capacity";
+            Capacity.MinimumWidth = 6;
+            Capacity.Name = "Capacity";
+            Capacity.ReadOnly = true;
+            // 
+            // Status
+            // 
+            Status.HeaderText = "Status";
+            Status.MinimumWidth = 6;
+            Status.Name = "Status";
+            Status.ReadOnly = true;
             // 
             // UpdateAirCraft
             // 
@@ -852,7 +855,7 @@
             contentSplitContainer.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)AirCraftdataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)aircraftDataGridView).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -862,10 +865,28 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Label label5;
-        private Label label3;
-        private Label label11;
-        private Guna.UI2.WinForms.Guna2DataGridView AirCraftdataGridView;
+        private Label statusPanel2Label;
+        private Label updateAircraftLabel;
+        private Label statusPanel1Label;
+        private Guna.UI2.WinForms.Guna2DataGridView aircraftDataGridView;
+        private Guna.UI2.WinForms.Guna2TextBox modelTextBoxPanel1;
+        private Guna.UI2.WinForms.Guna2TextBox aircraftIDTextBoxPanel1;
+        private Guna.UI2.WinForms.Guna2ComboBox statusComboBoxPanel1;
+        private Guna.UI2.WinForms.Guna2TextBox capacityTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox manufactureTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox aircrafTypeTextBoxPanel2;
+        private Guna.UI2.WinForms.Guna2TextBox manufactureTextBoxPanel2;
+        private Guna.UI2.WinForms.Guna2TextBox modelTextBoxPanel2;
+        private Guna.UI2.WinForms.Guna2TextBox aircraftIDTextBoxPanel2;
+        private Guna.UI2.WinForms.Guna2ComboBox statusComboBoxPanel2;
+        protected Guna.UI2.WinForms.Guna2Button confirmButton;
+        protected Guna.UI2.WinForms.Guna2Button DeleteButton;
+        private Label manufactureYearLabel;
+        private Label manufactureLabel;
+        private Label label7;
+        private Label aircrafTypePanel2Label;
+        private Label capacityLabel;
+        private Label aircraftIDLabel;
         private DataGridViewTextBoxColumn AirCraftID;
         private DataGridViewTextBoxColumn Model;
         private DataGridViewTextBoxColumn Manufacturer;
@@ -873,23 +894,5 @@
         private DataGridViewTextBoxColumn ManufactureYear;
         private DataGridViewTextBoxColumn Capacity;
         private DataGridViewTextBoxColumn Status;
-        private Guna.UI2.WinForms.Guna2TextBox ModelTextBoxPnanel1;
-        private Guna.UI2.WinForms.Guna2TextBox AirCraftIdTextBoxPanel1;
-        private Guna.UI2.WinForms.Guna2ComboBox StatusComboBoxPanel1;
-        private Guna.UI2.WinForms.Guna2TextBox CapacityTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox ManufacturerTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox AirCraftTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox ManufactureTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox ModelTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox AircraftIdTextBox;
-        private Guna.UI2.WinForms.Guna2ComboBox StatusComboBox;
-        protected Guna.UI2.WinForms.Guna2Button confirmButton;
-        protected Guna.UI2.WinForms.Guna2Button DeleteButton;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label4;
-        private Label label2;
     }
 }

@@ -88,26 +88,25 @@ namespace FlightReservationSystem
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            string rankAPrice = this.rankATextBox.Text;
             
-            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankATextBox.Text))
             {
-                SetAuthenticatorError("Invalid", rankATextBox);
+                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank pricea and try again!", rankATextBox);
                 return;
             }
 
-            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankBTextBox.Text))
             {
-                SetAuthenticatorError("Invalid", rankBTextBox);
+                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank pricea and try again!", rankBTextBox);
                 return;
             }
 
-            if (!DataAuthenticator.Instance.ValidateDouble(rankAPrice))
+            if (!DataAuthenticator.Instance.ValidateDouble(rankCTextBox.Text))
             {
-                SetAuthenticatorError("Invalid", rankCTextBox);
+                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank pricea and try again!", rankCTextBox);
                 return;
             }
-            string query = "UPDATE Flight Set DeptDate = @DeptDate, AirCraftID = @AirCraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
+            string query = "UPDATE Flight Set DeptDate = @DeptDate, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
             dataManager?.ExcuteDataQuery(query);
             UpdateFlight_Load(sender, e);
             MessageBox.Show("Changes Has Been Confirmed");
@@ -154,7 +153,7 @@ namespace FlightReservationSystem
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(rankCTextBox.Text));
                 command.Parameters.AddWithValue("@AvailableSeats", int.Parse(seatsAvailableTextBox.Text));
                 command.Parameters.AddWithValue("@FlightNo", int.Parse(flightNoTextBox.Text));
-                command.Parameters.AddWithValue("@AirCraftID", int.Parse(aircraftIDTextBox.Text));
+                command.Parameters.AddWithValue("@AircraftID", int.Parse(aircraftIDTextBox.Text));
             }
             else if (queryType == QueryType.Delete)
             {

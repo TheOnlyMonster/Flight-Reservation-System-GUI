@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
@@ -15,78 +6,57 @@ namespace FlightReservationSystem
 
     public partial class UpdateAirCraft : MainMenu, IProcessQuery
     {
-        private ErrorProvider errorProvider;
-
         public UpdateAirCraft()
         {
             InitializeComponent();
-            errorProvider = new()
-            {
-                BlinkStyle = ErrorBlinkStyle.NeverBlink
-            };
             this.dataManager = new(databaseConnection, this);
         }
 
         private void UpdateAirCraft_Load(object sender, EventArgs e)
         {
             string query = "SELECT * FROM AirCraft;";
-            this.dataManager.UpdateDataGrid(AirCraftdataGridView, query);
+            this.dataManager.UpdateDataGrid(aircraftDataGridView, query);
         }
 
         private void SearchTextChanged(object sender, EventArgs e)
         {
             List<string> filters = new()
             {
-                AirCraftIdTextBoxPanel1.Text,
-                ModelTextBoxPnanel1.Text
+                aircraftIDTextBoxPanel1.Text,
+                modelTextBoxPanel1.Text
             };
             List<string> columnsIDs = new()
             {
                 "AirCraftID",
                 "Model"
             };
-            if (StatusComboBoxPanel1.SelectedItem != null)
+            if (statusComboBoxPanel1.SelectedItem != null)
             {
-                filters.Add(StatusComboBoxPanel1.SelectedItem.ToString());
+                filters.Add(statusComboBoxPanel1.SelectedItem.ToString());
                 columnsIDs.Add("Status");
             }
-            dataManager.ApplyFilters(filters, columnsIDs, AirCraftdataGridView);
+            dataManager.ApplyFilters(filters, columnsIDs, aircraftDataGridView);
         }
 
         private void AirCraftdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow selectedRow = AirCraftdataGridView.Rows[e.RowIndex];
-                this.AircraftIdTextBox.Text = selectedRow.Cells["AirCraftID"].Value.ToString();
-                this.ModelTextBox.Text = selectedRow.Cells["Model"].Value.ToString();
-                this.ManufactureTextBox.Text = selectedRow.Cells["ManufactureYear"].Value.ToString();
-                this.ManufacturerTextBox.Text = selectedRow.Cells["Manufacturer"].Value.ToString();
-                this.CapacityTextBox.Text = selectedRow.Cells["Capacity"].Value.ToString();
-                this.StatusComboBox.Text = selectedRow.Cells["Status"].Value.ToString();
-                this.AirCraftTextBox.Text = selectedRow.Cells["AirCraftType"].Value.ToString();
+                DataGridViewRow selectedRow = aircraftDataGridView.Rows[e.RowIndex];
+                this.aircraftIDTextBoxPanel2.Text = selectedRow.Cells["AirCraftID"].Value.ToString();
+                this.modelTextBoxPanel2.Text = selectedRow.Cells["Model"].Value.ToString();
+                this.manufactureTextBoxPanel2.Text = selectedRow.Cells["ManufactureYear"].Value.ToString();
+                this.manufactureTextBox.Text = selectedRow.Cells["Manufacturer"].Value.ToString();
+                this.capacityTextBox.Text = selectedRow.Cells["Capacity"].Value.ToString();
+                this.statusComboBoxPanel2.Text = selectedRow.Cells["Status"].Value.ToString();
+                this.aircrafTypeTextBoxPanel2.Text = selectedRow.Cells["AirCraftType"].Value.ToString();
             }
         }
 
         private void confirmButton_Click(object sender, EventArgs e)
         {
-            string capacity = this.CapacityTextBox.Text;
-            if (!ValidateCapacity(capacity))
-            {
-                errorProvider.SetError(CapacityTextBox, "Invalid capacity. Please enter a valid capacity.");
-                this.CapacityTextBox.Focus();
-                return;
-            }
-
-            string manufactureYear = this.ManufactureTextBox.Text;
-            if (!ValidateManufactureYear(manufactureYear))
-            {
-                errorProvider.SetError(ManufactureTextBox, "Invalid manufacture year. Please enter a valid manufacture year.");
-                this.ManufactureTextBox.Focus();
-                return;
-            }
-
-            string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Capacity = @Capacity, Status = @Status where AirCraftID = @AirCraftID;";
+            string capacity = this.capacityTextBox.Text;
+            string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Status = @Status where AircraftID = @AircraftID;";
             dataManager.ExcuteDataQuery(query);
             UpdateAirCraft_Load(sender, e);
             MessageBox.Show("Changes are Confirmed!");
@@ -103,15 +73,6 @@ namespace FlightReservationSystem
             }
         }
 
-        private bool ValidateCapacity(string capacity)
-        {
-            //Regular expression pattern for capacity.
-            string pattern = @"^[0-9]+$";
-            Regex regex = new(pattern);
-            bool isValid = regex.IsMatch(capacity);
-            return isValid;
-        }
-
         private bool ValidateManufactureYear(string capacity)
         {
             //Regular expression pattern for Manufacture Year.
@@ -125,17 +86,16 @@ namespace FlightReservationSystem
         {
             if (queryType == QueryType.Update)
             {
-                command.Parameters.AddWithValue("@Model", this.ModelTextBox.Text);
-                command.Parameters.AddWithValue("@Manufacturer", this.ManufacturerTextBox.Text);
-                command.Parameters.AddWithValue("@AircraftType", this.AirCraftTextBox.Text);
-                command.Parameters.AddWithValue("@ManufactureYear", int.Parse(this.ManufactureTextBox.Text));
-                command.Parameters.AddWithValue("@Capacity", int.Parse(this.CapacityTextBox.Text));
-                command.Parameters.AddWithValue("@Status", this.StatusComboBox.Text);
-                command.Parameters.AddWithValue("@AirCraftID", int.Parse(this.AircraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@Model", this.modelTextBoxPanel2.Text);
+                command.Parameters.AddWithValue("@Manufacturer", this.manufactureTextBox.Text);
+                command.Parameters.AddWithValue("@AircraftType", this.aircrafTypeTextBoxPanel2.Text);
+                command.Parameters.AddWithValue("@ManufactureYear", int.Parse(this.manufactureTextBoxPanel2.Text));
+                command.Parameters.AddWithValue("@Status", this.statusComboBoxPanel2.Text);
+                command.Parameters.AddWithValue("@AircraftID", int.Parse(this.aircraftIDTextBoxPanel2.Text));
             }
             else if (queryType == QueryType.Delete)
             {
-                command.Parameters.AddWithValue("@RecordId", int.Parse(AircraftIdTextBox.Text));
+                command.Parameters.AddWithValue("@RecordId", int.Parse(aircraftIDTextBoxPanel2.Text));
             }
         }
     }
