@@ -17,6 +17,8 @@ namespace FlightReservationSystem
 {
     public partial class MainMenu : Form
     {
+        private readonly ErrorProvider errorProvider;  
+        protected DataAuthenticator dataAuthenticator;
         protected static bool IsUserLoggedIn { get; set; } = false;
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
@@ -49,6 +51,15 @@ namespace FlightReservationSystem
                 this.contentSplitContainer.Panel1.Controls.Add(this.signInButton);
                 this.contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
             }
+            errorProvider = new ErrorProvider
+            {
+                BlinkStyle = ErrorBlinkStyle.NeverBlink
+            };
+        }
+        protected void SetAuthenticatorError(string error, Guna2TextBox textBox)
+        {
+            errorProvider.SetError(textBox, error);
+            textBox.Focus();
         }
         protected void fillComboBox(string query, ComboBox comboBox)
         {

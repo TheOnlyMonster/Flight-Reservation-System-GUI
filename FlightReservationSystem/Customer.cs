@@ -1,18 +1,15 @@
-﻿using System;
-using System.Xml.Linq;
-
-namespace FlightReservationSystem
+﻿namespace FlightReservationSystem
 {
     internal class Customer
     {
-        private static Customer instance;
-        private string Fname;
-        private string Lname;
-        private string password;
-        private string identifier;
-        private string email;
-        private string phoneNumber;
-        private string id;
+        private static Customer? instance;
+        private string? firstName;
+        private string? lastName;
+        private string? password;
+        private string? identifier;
+        private string? email;
+        private string? phoneNumber;
+        private string? id;
 
 
         private Customer()
@@ -23,49 +20,46 @@ namespace FlightReservationSystem
         {
             get
             {
-                if (instance == null)
-                {
-                    instance = new Customer();
-                }
+                instance ??= new Customer();
                 return instance;
             }
         }
 
-        public string fname
+        public string? Fname
         {
-            get { return Fname; }
-            set { Fname = value; }
+            get { return firstName; }
+            set { firstName = value; }
         }
-        public string Id
+        public string? Id
         {
             get { return id; }
             set { id = value; }
         }
 
-        public string Password
+        public string? Password
         {
             get { return password; }
             set { password = value; }
         }
-        public string lname
+        public string? Lname
         {
-            get { return Lname; }
-            set { Lname = value; }
+            get { return lastName; }
+            set { lastName = value; }
         }
 
-        public string Identifier
+        public string? Identifier
         {
             get { return identifier; }
             set { identifier = value; }
         }
 
-        public string Email
+        public string? Email
         {
             get { return email; }
             set { email = value; }
         }
 
-        public string PhoneNumber
+        public string? PhoneNumber
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }

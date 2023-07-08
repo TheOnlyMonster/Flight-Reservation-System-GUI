@@ -13,7 +13,7 @@ namespace FlightReservationSystem
 
         private void UpdateReservation_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM BookingDetails;";
+            string query = "SELECT BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Rank, Status, FirstName, LastName, PassportNumber, PassportEXPDate FROM BookingDetails;";
             dataManager.UpdateDataGrid(updateReservationDataGridView, query);
         }
 
@@ -23,7 +23,6 @@ namespace FlightReservationSystem
             {
                 this.panel3.Dock = DockStyle.None;
                 updateReservationDataGridView.Size = new Size(867, 687);
-
                 DataGridViewRow selectedRow = updateReservationDataGridView.Rows[e.RowIndex];
                 this.customerIdTextBoxPanel2.Text = selectedRow.Cells["CustomerID"].Value.ToString();
                 this.flightNoTextBoxPanel2.Text = selectedRow.Cells["FlightNo"].Value.ToString();
@@ -33,6 +32,10 @@ namespace FlightReservationSystem
                 this.ticketPriceTextBox.Text = selectedRow.Cells["TicketPrice"].Value.ToString();
                 this.statusComboBox.Text = selectedRow.Cells["Status"].Value.ToString();
                 this.rankComboBox.Text = selectedRow.Cells["Rank"].Value.ToString();
+                this.firstNameTextBox.Text = selectedRow.Cells["Fname"].Value.ToString();
+                this.lastNameTextBox.Text = selectedRow.Cells["Lname"].Value.ToString();
+                this.passportNumTextBox.Text = selectedRow.Cells["PassportNumber"].Value.ToString();
+                this.passportExpDateTextBox.Text = selectedRow.Cells["PassportExpDate"].Value.ToString();
             }
         }
 
@@ -40,7 +43,7 @@ namespace FlightReservationSystem
         {
             if (seatAssignmentTextBox.Text == "")
             {
-                MessageBox.Show("Error, please try again.");
+                SetAuthenticatorError("Invalid Seat Assignment. Please choose seat and try again!", seatAssignmentTextBox);
                 return;
             }
             string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , Rank = @Rank ,Status = @Status where BookingID = @BookingID";
@@ -80,46 +83,13 @@ namespace FlightReservationSystem
         {
             this.panel3.Dock = DockStyle.Right;
             updateReservationDataGridView.Size = new Size(589, 687);
-            tableLayoutPanel1.Controls.Clear();
-
-            using SqlConnection connection = new(databaseConnection);
-            connection.Open();
-            string rank;
-            if (this.rankComboBox.Text == "A Class")
-            {
-                rank = "RankASeats";
-            }
-            else if (this.rankComboBox.Text == "B Class")
-            {
-                rank = "RankBSeats";
-            }
-            else
-            {
-                rank = "RankCSeats";
-            }
-            string query = $"select {rank} from Aircraft where AircraftID = (select AircraftID from Flight where FlightNo=@FlightNo);";
-            SqlCommand command = new(query, connection);
-            command.Parameters.AddWithValue("@FlightNo", this.flightNoTextBoxPanel2.Text);
-            int availableSeats = Convert.ToInt32(command.ExecuteScalar());
-            int rows = (int)Math.Ceiling((decimal)availableSeats / 6);
-            tableLayoutPanel1.RowCount = rows;
-            tableLayoutPanel1.ColumnCount = 6;
-            tableLayoutPanel1.RowStyles.Clear();
-            tableLayoutPanel1.ColumnStyles.Clear();
-            float rowHeight = 100f / rows;
-            for (int i = 0; i < rows; i++)
-            {
-                tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, rowHeight));
-            }
-            float colWidth = 100f / 6;
-            for (int j = 0; j < 6; j++)
-            {
-                tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, colWidth));
-            }
-
-            query = "select COUNT(*) from BookingDetails where Rank=@Rank and FlightNo=@FlightNo and SeatAssignment=@Seat";
+            int availableSeats = dataManager.NormalizeSeatsDataGrid(seatsTableLayoutPanel, rankComboBox, flightNoTextBoxPanel2);
+            string query = "select COUNT(*) from BookingDetails where Rank=@Rank and FlightNo=@FlightNo and SeatAssignment=@Seat";
             int row = -1;
             bool isUserInRank = false;
+            SqlConnection connection = new(databaseConnection);
+            SqlCommand command;
+            connection.Open();
             for (int i = 0; i < availableSeats; i++)
             {
                 bool isBooked = false;
@@ -170,13 +140,12 @@ namespace FlightReservationSystem
                         obj.Click += Seat_Click;
                     }
                 }
-
-                tableLayoutPanel1.Controls.Add(obj, col, row);
+                seatsTableLayoutPanel.Controls.Add(obj, col, row);
             }
             connection.Close();
             if (!isUserInRank)
             {
-                foreach (Control control in tableLayoutPanel1.Controls)
+                foreach (Control control in seatsTableLayoutPanel.Controls)
                 {
                     if (control is Guna2Button button && button.Enabled == true)
                     {
@@ -190,20 +159,7 @@ namespace FlightReservationSystem
 
         private void Seat_Click(object sender, EventArgs e)
         {
-            foreach (Control control in tableLayoutPanel1.Controls)
-            {
-                if (control is Guna2Button button && button.Tag != null && button.Tag.ToString() == this.seatAssignmentTextBox.Text)
-                {
-                    button.Image = seat.Image;
-                    button.HoverState.Image = seat.HoverState.Image;
-                    break;
-                }
-            }
-            if (sender is Guna2Button clickedButton)
-            {
-                clickedButton.Image = seat.HoverState.Image;
-                this.seatAssignmentTextBox.Text = (string)clickedButton.Tag;
-            }
+            dataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
         }
     }
 }

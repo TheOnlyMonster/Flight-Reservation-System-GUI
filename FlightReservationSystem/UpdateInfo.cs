@@ -1,5 +1,4 @@
 ﻿using System.Data.SqlClient;
-using System.Text.RegularExpressions;
 
 namespace FlightReservationSystem
 {
@@ -9,13 +8,15 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             dataManager = new(databaseConnection, this);
+            dataAuthenticator = new();
             ChangeButton(UpdateInfo);
+
         }
 
         private void UpdateInfo_Load(object sender, EventArgs e)
         {
-            textBoxFirstName.Text = Customer.Instance.fname;
-            textBoxLastName.Text = Customer.Instance.lname;
+            textBoxFirstName.Text = Customer.Instance.Fname;
+            textBoxLastName.Text = Customer.Instance.Lname;
             textBoxPhone.Text = Customer.Instance.PhoneNumber;
             textBoxEmail.Text = Customer.Instance.Email;
             textBoxPassword.Text = Customer.Instance.Password;
@@ -26,26 +27,22 @@ namespace FlightReservationSystem
             if (string.IsNullOrEmpty(textBoxFirstName.Text) || string.IsNullOrEmpty(textBoxLastName.Text)
                 || string.IsNullOrEmpty(textBoxPhone.Text) || string.IsNullOrEmpty(textBoxPassword.Text))
             {
-                MessageBox.Show("Please Fill All Fields And Try Again!");
+                MessageBox.Show("Please fill all fields and try again!");
                 return;
             }
-
-            if (!int.TryParse(textBoxPhone.Text, out _))
+            if (!dataAuthenticator.ValidatePhoneNumber(this.textBoxPhone.Text))
             {
-                MessageBox.Show("Phone number must be a valid integer. Please try again.");
+                SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
                 return;
             }
-
-            string firstName = textBoxFirstName.Text;
-            string lastName = textBoxLastName.Text;
-
-            if (!IsValidEnglishName(firstName) || !IsValidEnglishName(lastName))
+            if (!dataAuthenticator.ValidateName(this.textBoxFirstName.Text) || !dataAuthenticator.ValidateName(this.textBoxLastName.Text))
             {
-                MessageBox.Show("First name and last name can only contain English alphabetic characters. Please try again.");
+                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
+                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
                 return;
             }
-            Customer.Instance.fname = textBoxFirstName.Text;
-            Customer.Instance.lname = textBoxLastName.Text;
+            Customer.Instance.Fname = textBoxFirstName.Text;
+            Customer.Instance.Lname = textBoxLastName.Text;
             Customer.Instance.PhoneNumber = textBoxPhone.Text;
             Customer.Instance.Password = textBoxPassword.Text;
             string userQuery = "UPDATE UserTable SET Fname = @Fname, Lname = @Lname, Password = @Password where UserID = @UserID";
@@ -68,11 +65,6 @@ namespace FlightReservationSystem
             command.Parameters.AddWithValue("@UserID", Customer.Instance.Id);
             command.Parameters.AddWithValue("@PhoneNumber", textBoxPhone.Text);
             command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
-        }
-        private bool IsValidEnglishName(string name)
-        {
-            string pattern = @"^[a-zA-Z]+$";
-            return Regex.IsMatch(name, pattern);
         }
     }
 }

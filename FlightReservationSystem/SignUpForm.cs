@@ -1,124 +1,80 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Text.RegularExpressions;
+﻿using System.Data.SqlClient;
 
 namespace FlightReservationSystem
 {
-    
     public partial class SignUpForm : MainMenu
     {
-        private ErrorProvider errorProvider;
         public SignUpForm()
         {
             InitializeComponent();
-            errorProvider = new ErrorProvider();
-            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            dataAuthenticator = new();
         }
-
-        private void submitButton_Click(object sender, EventArgs e)
+        private void SubmitButton_Click(object sender, EventArgs e)
         {
-            //Email regex validation.
-
-            string email = this.textBoxEmail.Text;
-            if (!ValidateEmail(email))
+            if (!dataAuthenticator.ValidateEmail(this.textBoxEmail.Text))
             {
-                errorProvider.SetError(textBoxEmail, "Invalid Card number. Please enter a valid Card number.");
-                this.textBoxEmail.Focus();
+                SetAuthenticatorError("Invalid Email Address. Please enter a valid email address.", textBoxEmail);
                 return;
             }
-
-
-            //Phone number validation.
-
-            string phoneNumber = this.textBoxPhone.Text;
-            if (!ValidatePhoneNumber(phoneNumber))
+            if (!dataAuthenticator.ValidatePhoneNumber(this.textBoxPhone.Text))
             {
-                errorProvider.SetError(textBoxPhone, "Invalid Phone number. Please enter a valid Phone number.");
-                this.textBoxPhone.Focus();
+                SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
                 return;
             }
-
-
-
+            if (!dataAuthenticator.ValidateName(this.textBoxFirstName.Text) || !dataAuthenticator.ValidateName(this.textBoxLastName.Text))
+            {
+                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
+                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
+                return;
+            }
             if (textBoxEmail.Text == "" || textBoxFirstName.Text == "" || textBoxLastName.Text == "" || textBoxPassword.Text == "" || textBoxPhone.Text == "")
             {
-                MessageBox.Show("Null values aren't valid!");
+                MessageBox.Show("Please fill all fields and try again!");
                 return;
             }
-            using (SqlConnection connection = new SqlConnection(databaseConnection))
+            using SqlConnection connection = new(databaseConnection);
+            connection.Open();
+            string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
+            using (SqlCommand command = new(checkingQuery, connection))
             {
-                connection.Open();
-                string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
-                using (SqlCommand command = new SqlCommand(checkingQuery, connection))
+                command.Parameters.AddWithValue("@email", textBoxEmail.Text);
+                int filterKey = Convert.ToInt32(command.ExecuteScalar());
+                if (filterKey == 1)
                 {
-                    command.Parameters.AddWithValue("@email", textBoxEmail.Text);
-                    int filterKey = Convert.ToInt32(command.ExecuteScalar());
-                    if (filterKey == 1)
-                    {
-                        MessageBox.Show("Email already taken!");
-                        connection.Close();
-                        return;
-                    }
+                    MessageBox.Show("Email already taken!");
+                    connection.Close();
+                    return;
                 }
-                string parentInsertQuery = "INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier) VALUES (@email, @fname, @lname, @password, @identifier); SELECT SCOPE_IDENTITY();";
-                using (SqlCommand parentCmd = new SqlCommand(parentInsertQuery, connection))
-                {
-                    parentCmd.Parameters.AddWithValue("@email", textBoxEmail.Text);
-                    parentCmd.Parameters.AddWithValue("@fname", textBoxFirstName.Text);
-                    parentCmd.Parameters.AddWithValue("@lname", textBoxLastName.Text);
-                    parentCmd.Parameters.AddWithValue("@password", textBoxPassword.Text);
-                    parentCmd.Parameters.AddWithValue("@identifier", "C");
-                    int parentID = Convert.ToInt32(parentCmd.ExecuteScalar());
-                    string childInsertQuery = "INSERT INTO CustomerTable (CustomerID,PhoneNumber) VALUES (@cid, @phone);";
-                    using (SqlCommand childCmd = new SqlCommand(childInsertQuery, connection))
-                    {
-                        childCmd.Parameters.AddWithValue("@cid", parentID);
-                        childCmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
-                        int rowsAffected = childCmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Data Added Successfully");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Failed To Add Data");
-                        }
-                    }
-                }
-                connection.Close();
             }
+            string parentInsertQuery = "INSERT INTO UserTable (Email, Fname, Lname, Password, Identifier) VALUES (@email, @fname, @lname, @password, @identifier); SELECT SCOPE_IDENTITY();";
+            using (SqlCommand parentCmd = new(parentInsertQuery, connection))
+            {
+                parentCmd.Parameters.AddWithValue("@email", textBoxEmail.Text);
+                parentCmd.Parameters.AddWithValue("@fname", textBoxFirstName.Text);
+                parentCmd.Parameters.AddWithValue("@lname", textBoxLastName.Text);
+                parentCmd.Parameters.AddWithValue("@password", textBoxPassword.Text);
+                parentCmd.Parameters.AddWithValue("@identifier", "C");
+                int parentID = Convert.ToInt32(parentCmd.ExecuteScalar());
+                string childInsertQuery = "INSERT INTO CustomerTable (CustomerID,PhoneNumber) VALUES (@cid, @phone);";
+                using SqlCommand childCmd = new(childInsertQuery, connection);
+                childCmd.Parameters.AddWithValue("@cid", parentID);
+                childCmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
+                int rowsAffected = childCmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Data Added Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Failed To Add Data");
+                }
+            }
+            connection.Close();
 
         }
-        
-        private bool ValidateEmail(string email)
-        {
-            // Define the regex pattern for email validation
-            string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
-            bool isValid = Regex.IsMatch(email, pattern);
-            return isValid;
-        }
-
-        private bool ValidatePhoneNumber(string phoneNumber)
-        {
-            // Regular expression pattern for a numeric phone number with 11 digits
-            string pattern = @"^\d{11}$";
-            Regex regex = new Regex(pattern);
-            bool isValid = regex.IsMatch(phoneNumber);
-            return isValid;
-        }
-
-        private void passwordShow_CheckedChanged(object sender, EventArgs e)
+        private void PasswordShow_CheckedChanged(object sender, EventArgs e)
         {
             this.textBoxPassword.UseSystemPasswordChar = !textBoxPassword.UseSystemPasswordChar;
         }
     }
-
 }

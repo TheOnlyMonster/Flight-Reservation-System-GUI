@@ -9,7 +9,6 @@ create table UserTable (
 
 CREATE TABLE CustomerTable (
     CustomerID INT PRIMARY KEY REFERENCES UserTable(UserID),
-    PassportNumber VARCHAR(20),
     PhoneNumber varchar(20) NOT NULL,
 );
 
@@ -41,8 +40,8 @@ create table AircraftDispatchControl (
 CREATE TABLE Flight (
     FlightNo INT PRIMARY KEY IDENTITY(1,1),
     AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) ON DELETE SET NULL,
-    DeptDate Date NOT NULL,
-    ExpectedArrival Date NOT NULL,
+    DeptDate VARCHAR(50) NOT NULL,
+    ExpectedArrival VARCHAR(50) NOT NULL,
     ArrivalCountry VARCHAR(50) NOT NULL,
     DeptCountry VARCHAR(50) NOT NULL,
     AvailableSeats SMALLINT,
@@ -71,7 +70,6 @@ CREATE TABLE BookingDetails (
     Rank VARCHAR(15) NOT NULL,
     Status VARCHAR(50) NOT NULL,
     CONSTRAINT CHK_BookingDetails_SeatAssignment CHECK (SeatAssignment > 0),
-    CONSTRAINT CHK_BookingDetails_PassportNumber CHECK (DATALENGTH(PassportNumber) >= 14),
     PRIMARY KEY (BookingID,CustomerID,FlightNo)
 );
 
@@ -90,15 +88,15 @@ VALUES
     ('jennifer@example.com', 'Jennifer', 'Lee', 'password10', 'C');
 
 -- Insert sample records into CustomerTable
-INSERT INTO CustomerTable (CustomerID, PassportNumber, PhoneNumber)
+INSERT INTO CustomerTable (CustomerID, PhoneNumber)
 VALUES
-    (4, 'GH901234', '+5556667778'),
-    (5, 'IJ567890', '+9998887776'),
-    (6, 'KL234567', '+3332221110'),
-    (7, 'MN890123', '+4445556662'),
-    (8, 'OP456789', '+7778889994'),
-    (9, 'QR012345', '+1234567890'),
-    (10, 'ST678901', '+2223334446');
+    (4, '+5556667778'),
+    (5, '+9998887776'),
+    (6, '+3332221110'),
+    (7, '+4445556662'),
+    (8, '+7778889994'),
+    (9, '+1234567890'),
+    (10,'+2223334446');
 
 -- Insert sample records into AdminTable
 INSERT INTO AdminTable (AdminID, Salary)
@@ -124,13 +122,8 @@ VALUES
 -- Insert sample records into Flight table
 INSERT INTO Flight (AircraftID, DeptDate, ExpectedArrival, ArrivalCountry, DeptCountry, AvailableSeats, Rank1Price, Rank2Price, Rank3Price)
 VALUES
-    (1, '2023-07-10', '2023-07-11', 'USA', 'UK', 150, 500.00, 300.00, 200.00),
-    (2, '2023-07-12', '2023-07-13', 'France', 'Germany', 100, 400.00, 250.00, 150.00),
-    (3, '2023-07-15', '2023-07-16', 'Spain', 'Italy', 200, 450.00, 280.00, 180.00),
-    (4, '2023-07-18', '2023-07-19', 'Canada', 'Mexico', 120, 550.00, 350.00, 220.00),
-    (5, '2023-07-20', '2023-07-21', 'Japan', 'China', 180, 600.00, 400.00, 250.00),
-    (6, '2023-07-23', '2023-07-24', 'Australia', 'New Zealand', 90, 380.00, 220.00, 150.00),
-    (7, '2023-07-25', '2023-07-26', 'Brazil', 'Argentina', 140, 420.00, 260.00, 160.00),
-    (8, '2023-07-28', '2023-07-29', 'India', 'Sri Lanka', 170, 470.00, 300.00, 190.00),
-    (9, '2023-07-31', '2023-08-01', 'Russia', 'Turkey', 110, 520.00, 330.00, 210.00),
-    (10, '2023-08-03', '2023-08-04', 'Egypt', 'Greece', 200, 400.00, 250.00, 150.00);
+    (1, '09/29/2023 9:50 AM', '05/29/2015 5:50 AM', 'USA', 'UK', 150, 500.00, 300.00, 200.00),
+    (2, '10/29/2023 10:50 AM', '10/30/2023 5:50 AM', 'France', 'Germany', 100, 400.00, 250.00, 150.00),
+    (3, '11/25/2015 5:50 AM', '11/26/2015 5:50 AM', 'Spain', 'Italy', 200, 450.00, 280.00, 180.00),
+    (4, '12/03/2015 5:50 AM', '12/05/2015 5:50 AM', 'Canada', 'Mexico', 120, 550.00, 350.00, 220.00),
+    (5, '07/28/2015 5:50 AM', '07/29/2015 5:50 AM', 'Japan', 'China', 180, 600.00, 400.00, 250.00)

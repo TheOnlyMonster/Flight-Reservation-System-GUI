@@ -41,6 +41,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -54,424 +55,439 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            this.signUpPanel = new System.Windows.Forms.Panel();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.textBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBoxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBoxLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBoxPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.submitButton = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
-            this.contentSplitContainer.Panel1.SuspendLayout();
-            this.contentSplitContainer.Panel2.SuspendLayout();
-            this.contentSplitContainer.SuspendLayout();
-            this.signUpPanel.SuspendLayout();
-            this.SuspendLayout();
+            signUpPanel = new Panel();
+            guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            textBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            textBoxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            textBoxLastName = new Guna.UI2.WinForms.Guna2TextBox();
+            textBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            textBoxPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            submitButton = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
+            contentSplitContainer.Panel1.SuspendLayout();
+            contentSplitContainer.Panel2.SuspendLayout();
+            contentSplitContainer.SuspendLayout();
+            signUpPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // contentSplitContainer
             // 
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.Controls.Add(this.signUpPanel);
-            this.contentSplitContainer.Size = new System.Drawing.Size(1477, 756);
-            this.contentSplitContainer.SplitterDistance = 285;
+            contentSplitContainer.Panel2.Controls.Add(signUpPanel);
+            contentSplitContainer.Size = new Size(1477, 756);
+            contentSplitContainer.SplitterDistance = 285;
             // 
             // signInButton
             // 
-            this.signInButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signInButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signInButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signInButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signInButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signInButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.signInButton.ShadowDecoration.BorderRadius = 20;
-            this.signInButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signInButton.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            this.signInButton.Size = new System.Drawing.Size(285, 50);
+            signInButton.DialogResult = DialogResult.None;
+            signInButton.DisabledState.BorderColor = Color.DarkGray;
+            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            signInButton.ShadowDecoration.BorderRadius = 20;
+            signInButton.ShadowDecoration.Color = Color.Transparent;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            signInButton.Size = new Size(285, 50);
             // 
             // signUpButton
             // 
-            this.signUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.signUpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signUpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signUpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.signUpButton.ShadowDecoration.BorderRadius = 20;
-            this.signUpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            this.signUpButton.Size = new System.Drawing.Size(285, 50);
+            signUpButton.DialogResult = DialogResult.None;
+            signUpButton.DisabledState.BorderColor = Color.DarkGray;
+            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            signUpButton.ShadowDecoration.BorderRadius = 20;
+            signUpButton.ShadowDecoration.Color = Color.Transparent;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            signUpButton.Size = new Size(285, 50);
             // 
             // exploreFlightsButton
             // 
-            this.exploreFlightsButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exploreFlightsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exploreFlightsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exploreFlightsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exploreFlightsButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exploreFlightsButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exploreFlightsButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            this.exploreFlightsButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            this.exploreFlightsButton.Size = new System.Drawing.Size(285, 50);
+            exploreFlightsButton.DialogResult = DialogResult.None;
+            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            exploreFlightsButton.Size = new Size(285, 50);
             // 
             // helpButton
             // 
-            this.helpButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.helpButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.helpButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.helpButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.helpButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.helpButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.helpButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.helpButton.Location = new System.Drawing.Point(0, 693);
-            this.helpButton.ShadowDecoration.BorderRadius = 20;
-            this.helpButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.helpButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.helpButton.Size = new System.Drawing.Size(285, 63);
+            helpButton.DialogResult = DialogResult.None;
+            helpButton.DisabledState.BorderColor = Color.DarkGray;
+            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            helpButton.Location = new Point(0, 693);
+            helpButton.ShadowDecoration.BorderRadius = 20;
+            helpButton.ShadowDecoration.Color = Color.Transparent;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            helpButton.Size = new Size(285, 63);
             // 
             // SignOutButton
             // 
-            this.SignOutButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.SignOutButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SignOutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SignOutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SignOutButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SignOutButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SignOutButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            this.SignOutButton.ShadowDecoration.BorderRadius = 20;
-            this.SignOutButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            SignOutButton.DialogResult = DialogResult.None;
+            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            SignOutButton.ShadowDecoration.BorderRadius = 20;
+            SignOutButton.ShadowDecoration.Color = Color.Transparent;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges17;
             // 
             // UpdateAircraft
             // 
-            this.UpdateAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            this.UpdateAircraft.ShadowDecoration.BorderRadius = 20;
-            this.UpdateAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            UpdateAircraft.DialogResult = DialogResult.None;
+            UpdateAircraft.DisabledState.BorderColor = Color.DarkGray;
+            UpdateAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
+            UpdateAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            UpdateAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            UpdateAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
+            UpdateAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
+            UpdateAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image6");
+            UpdateAircraft.ShadowDecoration.BorderRadius = 20;
+            UpdateAircraft.ShadowDecoration.Color = Color.Transparent;
+            UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges18;
             // 
             // UpdateFlight
             // 
-            this.UpdateFlight.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            this.UpdateFlight.ShadowDecoration.BorderRadius = 20;
-            this.UpdateFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            UpdateFlight.DialogResult = DialogResult.None;
+            UpdateFlight.DisabledState.BorderColor = Color.DarkGray;
+            UpdateFlight.DisabledState.CustomBorderColor = Color.DarkGray;
+            UpdateFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            UpdateFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            UpdateFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
+            UpdateFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
+            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image7");
+            UpdateFlight.ShadowDecoration.BorderRadius = 20;
+            UpdateFlight.ShadowDecoration.Color = Color.Transparent;
+            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges19;
             // 
             // UpdateReservation
             // 
-            this.UpdateReservation.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateReservation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateReservation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateReservation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateReservation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateReservation.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateReservation.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateReservation.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
-            this.UpdateReservation.ShadowDecoration.BorderRadius = 20;
-            this.UpdateReservation.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            UpdateReservation.DialogResult = DialogResult.None;
+            UpdateReservation.DisabledState.BorderColor = Color.DarkGray;
+            UpdateReservation.DisabledState.CustomBorderColor = Color.DarkGray;
+            UpdateReservation.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            UpdateReservation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            UpdateReservation.HoverState.FillColor = SystemColors.ButtonHighlight;
+            UpdateReservation.HoverState.ForeColor = SystemColors.MenuHighlight;
+            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image8");
+            UpdateReservation.ShadowDecoration.BorderRadius = 20;
+            UpdateReservation.ShadowDecoration.Color = Color.Transparent;
+            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges20;
             // 
             // UpdateInfo
             // 
-            this.UpdateInfo.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateInfo.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateInfo.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
-            this.UpdateInfo.ShadowDecoration.BorderRadius = 20;
-            this.UpdateInfo.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            UpdateInfo.DialogResult = DialogResult.None;
+            UpdateInfo.DisabledState.BorderColor = Color.DarkGray;
+            UpdateInfo.DisabledState.CustomBorderColor = Color.DarkGray;
+            UpdateInfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            UpdateInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            UpdateInfo.HoverState.FillColor = SystemColors.ButtonHighlight;
+            UpdateInfo.HoverState.ForeColor = SystemColors.MenuHighlight;
+            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image9");
+            UpdateInfo.ShadowDecoration.BorderRadius = 20;
+            UpdateInfo.ShadowDecoration.Color = Color.Transparent;
+            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges21;
             // 
             // AddAircraft
             // 
-            this.AddAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
-            this.AddAircraft.ShadowDecoration.BorderRadius = 20;
-            this.AddAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            AddAircraft.DialogResult = DialogResult.None;
+            AddAircraft.DisabledState.BorderColor = Color.DarkGray;
+            AddAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
+            AddAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            AddAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            AddAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
+            AddAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
+            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image10");
+            AddAircraft.ShadowDecoration.BorderRadius = 20;
+            AddAircraft.ShadowDecoration.Color = Color.Transparent;
+            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges22;
             // 
             // AddFlight
             // 
-            this.AddFlight.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
-            this.AddFlight.ShadowDecoration.BorderRadius = 20;
-            this.AddFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            AddFlight.DialogResult = DialogResult.None;
+            AddFlight.DisabledState.BorderColor = Color.DarkGray;
+            AddFlight.DisabledState.CustomBorderColor = Color.DarkGray;
+            AddFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            AddFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            AddFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
+            AddFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
+            AddFlight.HoverState.Image = (Image)resources.GetObject("resource.Image11");
+            AddFlight.ShadowDecoration.BorderRadius = 20;
+            AddFlight.ShadowDecoration.Color = Color.Transparent;
+            AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges23;
             // 
             // bookFlightButton
             // 
-            this.bookFlightButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bookFlightButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bookFlightButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bookFlightButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bookFlightButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bookFlightButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookFlightButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
-            this.bookFlightButton.ShadowDecoration.BorderRadius = 20;
-            this.bookFlightButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            bookFlightButton.DialogResult = DialogResult.None;
+            bookFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            bookFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            bookFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            bookFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
+            bookFlightButton.ShadowDecoration.BorderRadius = 20;
+            bookFlightButton.ShadowDecoration.Color = Color.Transparent;
+            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges24;
             // 
             // generateReport
             // 
-            this.generateReport.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
-            this.generateReport.ShadowDecoration.BorderRadius = 20;
-            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            generateReport.DialogResult = DialogResult.None;
+            generateReport.DisabledState.BorderColor = Color.DarkGray;
+            generateReport.DisabledState.CustomBorderColor = Color.DarkGray;
+            generateReport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            generateReport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            generateReport.HoverState.FillColor = SystemColors.ButtonHighlight;
+            generateReport.HoverState.ForeColor = SystemColors.MenuHighlight;
+            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image13");
+            generateReport.ShadowDecoration.BorderRadius = 20;
+            generateReport.ShadowDecoration.Color = Color.Transparent;
+            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            // 
+            // customerReservations
+            // 
+            customerReservations.DialogResult = DialogResult.None;
+            customerReservations.DisabledState.BorderColor = Color.DarkGray;
+            customerReservations.DisabledState.CustomBorderColor = Color.DarkGray;
+            customerReservations.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            customerReservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            customerReservations.HoverState.FillColor = SystemColors.ButtonHighlight;
+            customerReservations.HoverState.ForeColor = SystemColors.MenuHighlight;
+            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image14");
+            customerReservations.ShadowDecoration.BorderRadius = 20;
+            customerReservations.ShadowDecoration.Color = Color.Transparent;
+            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges26;
             // 
             // signUpPanel
             // 
-            this.signUpPanel.BackColor = System.Drawing.Color.White;
-            this.signUpPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signUpPanel.BackgroundImage")));
-            this.signUpPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.signUpPanel.Controls.Add(this.guna2CheckBox1);
-            this.signUpPanel.Controls.Add(this.textBoxEmail);
-            this.signUpPanel.Controls.Add(this.textBoxFirstName);
-            this.signUpPanel.Controls.Add(this.textBoxLastName);
-            this.signUpPanel.Controls.Add(this.textBoxPassword);
-            this.signUpPanel.Controls.Add(this.textBoxPhone);
-            this.signUpPanel.Controls.Add(this.submitButton);
-            this.signUpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signUpPanel.Location = new System.Drawing.Point(0, 0);
-            this.signUpPanel.Name = "signUpPanel";
-            this.signUpPanel.Size = new System.Drawing.Size(1188, 756);
-            this.signUpPanel.TabIndex = 0;
+            signUpPanel.BackColor = Color.White;
+            signUpPanel.BackgroundImage = (Image)resources.GetObject("signUpPanel.BackgroundImage");
+            signUpPanel.BackgroundImageLayout = ImageLayout.Stretch;
+            signUpPanel.Controls.Add(guna2CheckBox1);
+            signUpPanel.Controls.Add(textBoxEmail);
+            signUpPanel.Controls.Add(textBoxFirstName);
+            signUpPanel.Controls.Add(textBoxLastName);
+            signUpPanel.Controls.Add(textBoxPassword);
+            signUpPanel.Controls.Add(textBoxPhone);
+            signUpPanel.Controls.Add(submitButton);
+            signUpPanel.Dock = DockStyle.Fill;
+            signUpPanel.Location = new Point(0, 0);
+            signUpPanel.Name = "signUpPanel";
+            signUpPanel.Size = new Size(1188, 756);
+            signUpPanel.TabIndex = 0;
             // 
             // guna2CheckBox1
             // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(161, 445);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(108, 19);
-            this.guna2CheckBox1.TabIndex = 17;
-            this.guna2CheckBox1.Text = "Show Password";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UseVisualStyleBackColor = false;
-            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.passwordShow_CheckedChanged);
+            guna2CheckBox1.AutoSize = true;
+            guna2CheckBox1.BackColor = Color.Transparent;
+            guna2CheckBox1.CheckedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2CheckBox1.CheckedState.BorderRadius = 0;
+            guna2CheckBox1.CheckedState.BorderThickness = 0;
+            guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
+            guna2CheckBox1.Location = new Point(161, 445);
+            guna2CheckBox1.Name = "guna2CheckBox1";
+            guna2CheckBox1.Size = new Size(108, 19);
+            guna2CheckBox1.TabIndex = 17;
+            guna2CheckBox1.Text = "Show Password";
+            guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            guna2CheckBox1.UncheckedState.BorderRadius = 0;
+            guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            guna2CheckBox1.UseVisualStyleBackColor = false;
+            guna2CheckBox1.CheckedChanged += PasswordShow_CheckedChanged;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxEmail.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxEmail.BorderRadius = 20;
-            this.textBoxEmail.CustomizableEdges = customizableEdges1;
-            this.textBoxEmail.DefaultText = "";
-            this.textBoxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxEmail.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxEmail.Location = new System.Drawing.Point(128, 335);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.PasswordChar = '\0';
-            this.textBoxEmail.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxEmail.PlaceholderText = "Enter Your Email Address";
-            this.textBoxEmail.SelectedText = "";
-            this.textBoxEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.textBoxEmail.Size = new System.Drawing.Size(200, 36);
-            this.textBoxEmail.TabIndex = 11;
+            textBoxEmail.BackColor = Color.Transparent;
+            textBoxEmail.BorderColor = SystemColors.MenuHighlight;
+            textBoxEmail.BorderRadius = 20;
+            textBoxEmail.CustomizableEdges = customizableEdges1;
+            textBoxEmail.DefaultText = "";
+            textBoxEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxEmail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxEmail.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            textBoxEmail.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxEmail.Location = new Point(128, 335);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.PasswordChar = '\0';
+            textBoxEmail.PlaceholderForeColor = Color.Gray;
+            textBoxEmail.PlaceholderText = "Enter Your Email Address";
+            textBoxEmail.SelectedText = "";
+            textBoxEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            textBoxEmail.Size = new Size(200, 36);
+            textBoxEmail.TabIndex = 11;
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxFirstName.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxFirstName.BorderRadius = 20;
-            this.textBoxFirstName.CustomizableEdges = customizableEdges3;
-            this.textBoxFirstName.DefaultText = "";
-            this.textBoxFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxFirstName.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxFirstName.Location = new System.Drawing.Point(128, 131);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.PasswordChar = '\0';
-            this.textBoxFirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxFirstName.PlaceholderText = "Enter Your First Name";
-            this.textBoxFirstName.SelectedText = "";
-            this.textBoxFirstName.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.textBoxFirstName.Size = new System.Drawing.Size(200, 36);
-            this.textBoxFirstName.TabIndex = 14;
+            textBoxFirstName.BackColor = Color.Transparent;
+            textBoxFirstName.BorderColor = SystemColors.MenuHighlight;
+            textBoxFirstName.BorderRadius = 20;
+            textBoxFirstName.CustomizableEdges = customizableEdges3;
+            textBoxFirstName.DefaultText = "";
+            textBoxFirstName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxFirstName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxFirstName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxFirstName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxFirstName.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            textBoxFirstName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxFirstName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxFirstName.Location = new Point(128, 131);
+            textBoxFirstName.Name = "textBoxFirstName";
+            textBoxFirstName.PasswordChar = '\0';
+            textBoxFirstName.PlaceholderForeColor = Color.Gray;
+            textBoxFirstName.PlaceholderText = "Enter Your First Name";
+            textBoxFirstName.SelectedText = "";
+            textBoxFirstName.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            textBoxFirstName.Size = new Size(200, 36);
+            textBoxFirstName.TabIndex = 14;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxLastName.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxLastName.BorderRadius = 20;
-            this.textBoxLastName.CustomizableEdges = customizableEdges5;
-            this.textBoxLastName.DefaultText = "";
-            this.textBoxLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxLastName.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxLastName.Location = new System.Drawing.Point(128, 198);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.PasswordChar = '\0';
-            this.textBoxLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxLastName.PlaceholderText = "Enter Your Last Name";
-            this.textBoxLastName.SelectedText = "";
-            this.textBoxLastName.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            this.textBoxLastName.Size = new System.Drawing.Size(200, 36);
-            this.textBoxLastName.TabIndex = 15;
+            textBoxLastName.BackColor = Color.Transparent;
+            textBoxLastName.BorderColor = SystemColors.MenuHighlight;
+            textBoxLastName.BorderRadius = 20;
+            textBoxLastName.CustomizableEdges = customizableEdges5;
+            textBoxLastName.DefaultText = "";
+            textBoxLastName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxLastName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxLastName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxLastName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxLastName.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            textBoxLastName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxLastName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxLastName.Location = new Point(128, 198);
+            textBoxLastName.Name = "textBoxLastName";
+            textBoxLastName.PasswordChar = '\0';
+            textBoxLastName.PlaceholderForeColor = Color.Gray;
+            textBoxLastName.PlaceholderText = "Enter Your Last Name";
+            textBoxLastName.SelectedText = "";
+            textBoxLastName.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            textBoxLastName.Size = new Size(200, 36);
+            textBoxLastName.TabIndex = 15;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxPassword.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxPassword.BorderRadius = 20;
-            this.textBoxPassword.CustomizableEdges = customizableEdges7;
-            this.textBoxPassword.DefaultText = "";
-            this.textBoxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxPassword.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(128, 403);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxPassword.PlaceholderText = "Enter Your Password";
-            this.textBoxPassword.SelectedText = "";
-            this.textBoxPassword.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.textBoxPassword.Size = new System.Drawing.Size(200, 36);
-            this.textBoxPassword.TabIndex = 12;
-            this.textBoxPassword.UseSystemPasswordChar = true;
+            textBoxPassword.BackColor = Color.Transparent;
+            textBoxPassword.BorderColor = SystemColors.MenuHighlight;
+            textBoxPassword.BorderRadius = 20;
+            textBoxPassword.CustomizableEdges = customizableEdges7;
+            textBoxPassword.DefaultText = "";
+            textBoxPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPassword.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            textBoxPassword.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxPassword.Location = new Point(128, 403);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '●';
+            textBoxPassword.PlaceholderForeColor = Color.Gray;
+            textBoxPassword.PlaceholderText = "Enter Your Password";
+            textBoxPassword.SelectedText = "";
+            textBoxPassword.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            textBoxPassword.Size = new Size(200, 36);
+            textBoxPassword.TabIndex = 12;
+            textBoxPassword.UseSystemPasswordChar = true;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxPhone.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxPhone.BorderRadius = 20;
-            this.textBoxPhone.CustomizableEdges = customizableEdges9;
-            this.textBoxPhone.DefaultText = "";
-            this.textBoxPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxPhone.FocusedState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBoxPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxPhone.Location = new System.Drawing.Point(128, 265);
-            this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.PasswordChar = '\0';
-            this.textBoxPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxPhone.PlaceholderText = "Enter Your Phone";
-            this.textBoxPhone.SelectedText = "";
-            this.textBoxPhone.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.textBoxPhone.Size = new System.Drawing.Size(200, 36);
-            this.textBoxPhone.TabIndex = 16;
+            textBoxPhone.BackColor = Color.Transparent;
+            textBoxPhone.BorderColor = SystemColors.MenuHighlight;
+            textBoxPhone.BorderRadius = 20;
+            textBoxPhone.CustomizableEdges = customizableEdges9;
+            textBoxPhone.DefaultText = "";
+            textBoxPhone.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxPhone.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxPhone.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPhone.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPhone.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            textBoxPhone.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPhone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxPhone.Location = new Point(128, 265);
+            textBoxPhone.Name = "textBoxPhone";
+            textBoxPhone.PasswordChar = '\0';
+            textBoxPhone.PlaceholderForeColor = Color.Gray;
+            textBoxPhone.PlaceholderText = "Enter Your Phone";
+            textBoxPhone.SelectedText = "";
+            textBoxPhone.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            textBoxPhone.Size = new Size(200, 36);
+            textBoxPhone.TabIndex = 16;
             // 
             // submitButton
             // 
-            this.submitButton.Animated = true;
-            this.submitButton.BackColor = System.Drawing.Color.Transparent;
-            this.submitButton.BorderColor = System.Drawing.Color.Transparent;
-            this.submitButton.BorderRadius = 20;
-            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.submitButton.CustomizableEdges = customizableEdges11;
-            this.submitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.submitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.submitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.submitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.submitButton.FillColor = System.Drawing.Color.Transparent;
-            this.submitButton.FocusedColor = System.Drawing.Color.Transparent;
-            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.submitButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.submitButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.submitButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.submitButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            //this.submitButton.Image = global::FlightReservationSystem.Properties.Resources.FlightBlack;
-            this.submitButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.submitButton.Location = new System.Drawing.Point(150, 504);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.Padding = new System.Windows.Forms.Padding(5);
-            this.submitButton.PressedColor = System.Drawing.Color.White;
-            this.submitButton.ShadowDecoration.BorderRadius = 20;
-            this.submitButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.submitButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.submitButton.Size = new System.Drawing.Size(144, 37);
-            this.submitButton.TabIndex = 13;
-            this.submitButton.Text = "Submit";
-            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            submitButton.Animated = true;
+            submitButton.BackColor = Color.Transparent;
+            submitButton.BorderColor = Color.Transparent;
+            submitButton.BorderRadius = 20;
+            submitButton.Cursor = Cursors.Hand;
+            submitButton.CustomizableEdges = customizableEdges11;
+            submitButton.DisabledState.BorderColor = Color.DarkGray;
+            submitButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            submitButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            submitButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            submitButton.FillColor = Color.WhiteSmoke;
+            submitButton.FocusedColor = Color.Transparent;
+            submitButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            submitButton.ForeColor = SystemColors.ControlText;
+            submitButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            submitButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            submitButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            submitButton.Image = Properties.Resources.FlightBlack;
+            submitButton.ImageAlign = HorizontalAlignment.Left;
+            submitButton.Location = new Point(150, 498);
+            submitButton.Name = "submitButton";
+            submitButton.Padding = new Padding(5);
+            submitButton.PressedColor = Color.White;
+            submitButton.ShadowDecoration.BorderRadius = 20;
+            submitButton.ShadowDecoration.Color = Color.Transparent;
+            submitButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            submitButton.Size = new Size(144, 37);
+            submitButton.TabIndex = 13;
+            submitButton.Text = "Submit";
+            submitButton.Click += SubmitButton_Click;
             // 
             // SignUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1477, 756);
-            this.Name = "SignUpForm";
-            this.Text = "SignUpForm";
-            this.contentSplitContainer.Panel1.ResumeLayout(false);
-            this.contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
-            this.contentSplitContainer.ResumeLayout(false);
-            this.signUpPanel.ResumeLayout(false);
-            this.signUpPanel.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1477, 756);
+            Name = "SignUpForm";
+            Text = "Sign Up";
+            contentSplitContainer.Panel1.ResumeLayout(false);
+            contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
+            contentSplitContainer.ResumeLayout(false);
+            signUpPanel.ResumeLayout(false);
+            signUpPanel.PerformLayout();
+            ResumeLayout(false);
         }
+
         private Panel signUpPanel;
         #endregion
 
