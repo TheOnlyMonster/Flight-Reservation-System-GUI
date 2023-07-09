@@ -10,6 +10,13 @@ namespace FlightReservationSystem
         }
         private void SubmitButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBoxEmail.Text)|| string.IsNullOrEmpty(textBoxFirstName.Text) || 
+                string.IsNullOrEmpty(textBoxLastName.Text) || string.IsNullOrEmpty(textBoxPassword.Text) 
+                || string.IsNullOrEmpty(textBoxPhone.Text))
+            {
+                SetAuthenticatorError("Error. Please fill all fields.", textBoxEmail);
+                return;
+            }
             if (!DataAuthenticator.Instance.ValidateEmail(this.textBoxEmail.Text))
             {
                 SetAuthenticatorError("Invalid Email Address. Please enter a valid email address.", textBoxEmail);
@@ -24,11 +31,6 @@ namespace FlightReservationSystem
             {
                 SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
                 SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
-                return;
-            }
-            if (textBoxEmail.Text == "" || textBoxFirstName.Text == "" || textBoxLastName.Text == "" || textBoxPassword.Text == "" || textBoxPhone.Text == "")
-            {
-                MessageBox.Show("Please fill all fields and try again!");
                 return;
             }
             using SqlConnection connection = new(databaseConnection);

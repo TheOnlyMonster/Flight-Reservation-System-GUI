@@ -7,9 +7,8 @@ namespace FlightReservationSystem
         public SignInForm()
         {
             InitializeComponent();
-            this.ChangeButton(this.signInButton);
+            ChangeButton(this.signInButton);
         }
-
         private void SignInPanelButton_Click(object sender, EventArgs e)
         {
             string email = usernameSignInTextBox.Text;

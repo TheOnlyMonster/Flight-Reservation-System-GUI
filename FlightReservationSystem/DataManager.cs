@@ -6,9 +6,9 @@ namespace FlightReservationSystem
 {
     public class DataManager
     {
-        private IProcessQuery _processQuery;
-        private IProcessDataGrid _processDataGrid;
-        private SqlConnection sqlConnection;
+        private readonly IProcessQuery? _processQuery;
+        private readonly IProcessDataGrid? _processDataGrid;
+        private readonly SqlConnection sqlConnection;
         public DataManager(string connection)
         {
             sqlConnection = new SqlConnection(connection);
@@ -68,7 +68,7 @@ namespace FlightReservationSystem
             }
             return availableSeats;
         }
-        public void ApplyFilters(List<string> textBoxes,List<string> columnsIDs, DataGridView dataGridView)
+        public static void ApplyFilters(List<string> textBoxes, List<string> columnsIDs, DataGridView dataGridView)
         {
             foreach (DataGridViewRow row in dataGridView.Rows)
             {
@@ -116,19 +116,28 @@ namespace FlightReservationSystem
             sqlConnection.Open();
             SqlCommand command = new(query, sqlConnection);
             SqlDataAdapter adapter = new(command);
-            if(_processDataGrid != null)
-            {
-                _processDataGrid.SetDataGridCommandParams(command);
-            }
+            _processDataGrid?.SetDataGridCommandParams(command);
             adapter.Fill(dataTable);
             sqlConnection.Close();
             foreach (DataRow row in dataTable.Rows)
             {
-                object[] rowData = row.ItemArray;
+                object?[] rowData = row.ItemArray;
                 dataGrid.Rows.Add(rowData);
             }
         }
-        public void ToggleSeatButton(TableLayoutPanel seatsTableLayoutPanel, Guna2TextBox seatAssignmentTextBox, Guna2Button seat, object sender)
+        public void FillComboBox(string query, ComboBox comboBox)
+        {
+            comboBox.Items.Clear();
+            sqlConnection.Open();
+            SqlCommand command = new(query, sqlConnection);
+            SqlDataReader sqlDataReader = command.ExecuteReader();
+            while (sqlDataReader.Read())
+            {
+                comboBox.Items.Add(sqlDataReader.GetString(0));
+            }
+            sqlConnection.Close();
+        }
+        public static void ToggleSeatButton(TableLayoutPanel seatsTableLayoutPanel, Guna2TextBox seatAssignmentTextBox, Guna2Button seat, object sender)
         {
             foreach (Control control in seatsTableLayoutPanel.Controls)
             {

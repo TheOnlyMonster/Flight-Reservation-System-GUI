@@ -119,7 +119,7 @@
             helpButton.ShadowDecoration.Color = Color.Transparent;
             helpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
             helpButton.TextAlign = HorizontalAlignment.Left;
-            helpButton.Click += helpButton_Click;
+            helpButton.Click += HelpButton_Click;
             // 
             // exploreFlightsButton
             // 
@@ -147,7 +147,7 @@
             exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
             exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
             exploreFlightsButton.TextAlign = HorizontalAlignment.Left;
-            exploreFlightsButton.Click += exploreFlightsButton_Click;
+            exploreFlightsButton.Click += ExploreFlightsButton_Click;
             // 
             // customerReservations
             // 
@@ -175,7 +175,7 @@
             customerReservations.ShadowDecoration.Color = Color.Transparent;
             customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges6;
             customerReservations.TextAlign = HorizontalAlignment.Left;
-            customerReservations.Click += customerReservations_Click;
+            customerReservations.Click += CustomerReservations_Click;
             // 
             // generateReport
             // 
@@ -203,7 +203,7 @@
             generateReport.ShadowDecoration.Color = Color.Transparent;
             generateReport.ShadowDecoration.CustomizableEdges = customizableEdges8;
             generateReport.TextAlign = HorizontalAlignment.Left;
-            generateReport.Click += generateReport_Click;
+            generateReport.Click += GenerateReport_Click;
             // 
             // bookFlightButton
             // 
@@ -231,7 +231,7 @@
             bookFlightButton.ShadowDecoration.Color = Color.Transparent;
             bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
             bookFlightButton.TextAlign = HorizontalAlignment.Left;
-            bookFlightButton.Click += bookFlightButton_Click;
+            bookFlightButton.Click += BookFlightButton_Click;
             // 
             // signInButton
             // 
@@ -259,7 +259,7 @@
             signInButton.ShadowDecoration.Color = Color.Transparent;
             signInButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
             signInButton.TextAlign = HorizontalAlignment.Left;
-            signInButton.Click += signInButton_Click;
+            signInButton.Click += SignInButton_Click;
             // 
             // signUpButton
             // 
@@ -287,7 +287,7 @@
             signUpButton.ShadowDecoration.Color = Color.Transparent;
             signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
             signUpButton.TextAlign = HorizontalAlignment.Left;
-            signUpButton.Click += signUpButton_Click;
+            signUpButton.Click += SignUpButton_Click;
             // 
             // UpdateAircraft
             // 
@@ -488,7 +488,7 @@
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(contentSplitContainer);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             HelpButton = true;
             Name = "MainMenu";
             contentSplitContainer.Panel1.ResumeLayout(false);

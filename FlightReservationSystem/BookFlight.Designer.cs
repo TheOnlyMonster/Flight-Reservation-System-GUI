@@ -30,76 +30,84 @@ namespace FlightReservationSystem
         /// </summary>
         private new void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookFlight));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
-            panel3 = new Panel();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges75 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges76 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges77 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges78 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges79 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges80 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges81 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges82 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges83 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges84 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges85 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges86 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges87 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges88 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges89 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges90 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges91 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges92 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges93 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges94 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges97 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges98 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges99 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges100 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges101 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges102 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges103 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges104 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges105 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges106 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges107 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges108 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges109 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges110 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges135 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges136 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges111 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges112 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges133 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges134 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges113 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges114 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges115 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges116 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges117 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges118 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges119 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges120 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges121 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges122 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges123 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges124 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges125 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges126 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges127 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges128 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges129 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges130 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges131 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges132 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges137 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges138 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges139 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges140 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges141 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges142 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges143 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges144 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges145 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges146 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges147 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges148 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             totalPriceLabel = new Label();
             totalPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             confirmButton = new Guna.UI2.WinForms.Guna2Button();
@@ -122,26 +130,27 @@ namespace FlightReservationSystem
             flightNoTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             flightNoLabel = new Label();
             bookingFlightLabel = new Label();
-            panel2 = new Panel();
             seatAssignmentPanel = new Guna.UI2.WinForms.Guna2Panel();
-            lastNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            lastNameLabel = new Label();
-            firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            firstNameLabel = new Label();
-            seat = new Guna.UI2.WinForms.Guna2Button();
-            seatLabel = new Label();
-            seatAssignmentTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            nextSeatButton = new Guna.UI2.WinForms.Guna2Button();
-            cancelReservationButton = new Guna.UI2.WinForms.Guna2Button();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             seatsTableLayoutPanel = new TableLayoutPanel();
-            rankComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            rankLabel = new Label();
-            rankPriceLabel = new Label();
-            passportNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            seat = new Guna.UI2.WinForms.Guna2Button();
             rankPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             passportNumberLabel = new Label();
+            firstNameLabel = new Label();
             passportExpiryDateLabel = new Label();
+            lastNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            cancelReservationButton = new Guna.UI2.WinForms.Guna2Button();
+            firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             passportExpiryDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            nextSeatButton = new Guna.UI2.WinForms.Guna2Button();
+            rankComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            seatLabel = new Label();
+            rankLabel = new Label();
+            passportNumberTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            seatAssignmentTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            lastNameLabel = new Label();
+            rankPriceLabel = new Label();
             flightDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             FlightNo = new DataGridViewTextBoxColumn();
             deptDate = new DataGridViewTextBoxColumn();
@@ -156,19 +165,28 @@ namespace FlightReservationSystem
             arrivalCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             deptCountryLabel = new Label();
             deptCountriesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deptDateLabel = new Label();
+            deptDatePanel1Label = new Label();
             deptDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             textBox1 = new TextBox();
+            rightPanel = new Panel();
+            panel5 = new Panel();
+            guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            topPanel = new Guna.UI2.WinForms.Guna2Panel();
+            deptDatePanel2Label = new Label();
+            departureDateTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)seatsNoNumericUpDown).BeginInit();
-            panel2.SuspendLayout();
             seatAssignmentPanel.SuspendLayout();
+            guna2Panel2.SuspendLayout();
+            guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)flightDataGrid).BeginInit();
+            rightPanel.SuspendLayout();
+            panel5.SuspendLayout();
+            guna2Panel4.SuspendLayout();
+            topPanel.SuspendLayout();
             SuspendLayout();
             // 
             // contentSplitContainer
@@ -176,7 +194,8 @@ namespace FlightReservationSystem
             // 
             // contentSplitContainer.Panel2
             // 
-            contentSplitContainer.Panel2.Controls.Add(panel1);
+            contentSplitContainer.Panel2.Controls.Add(panel5);
+            contentSplitContainer.Panel2.Controls.Add(rightPanel);
             contentSplitContainer.Size = new Size(1477, 756);
             contentSplitContainer.SplitterDistance = 285;
             // 
@@ -189,10 +208,10 @@ namespace FlightReservationSystem
             signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
             signInButton.ShadowDecoration.BorderRadius = 20;
             signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges51;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges75;
             signInButton.Size = new Size(285, 50);
             // 
             // signUpButton
@@ -207,7 +226,7 @@ namespace FlightReservationSystem
             signUpButton.HoverState.Image = Properties.Resources.SignUpBlue;
             signUpButton.ShadowDecoration.BorderRadius = 20;
             signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges76;
             signUpButton.Size = new Size(285, 50);
             // 
             // exploreFlightsButton
@@ -219,10 +238,10 @@ namespace FlightReservationSystem
             exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
             exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges53;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges77;
             exploreFlightsButton.Size = new Size(285, 50);
             // 
             // helpButton
@@ -238,7 +257,7 @@ namespace FlightReservationSystem
             helpButton.Location = new Point(0, 693);
             helpButton.ShadowDecoration.BorderRadius = 20;
             helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges78;
             helpButton.Size = new Size(285, 63);
             // 
             // SignOutButton
@@ -250,10 +269,10 @@ namespace FlightReservationSystem
             SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
             SignOutButton.ShadowDecoration.BorderRadius = 20;
             SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges55;
+            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges79;
             // 
             // UpdateAircraft
             // 
@@ -264,10 +283,10 @@ namespace FlightReservationSystem
             UpdateAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             UpdateAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
             UpdateAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            UpdateAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image3");
             UpdateAircraft.ShadowDecoration.BorderRadius = 20;
             UpdateAircraft.ShadowDecoration.Color = Color.Transparent;
-            UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges80;
             // 
             // UpdateFlight
             // 
@@ -278,10 +297,10 @@ namespace FlightReservationSystem
             UpdateFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             UpdateFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
             UpdateFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image6");
+            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image4");
             UpdateFlight.ShadowDecoration.BorderRadius = 20;
             UpdateFlight.ShadowDecoration.Color = Color.Transparent;
-            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges57;
+            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges81;
             // 
             // UpdateReservation
             // 
@@ -292,10 +311,10 @@ namespace FlightReservationSystem
             UpdateReservation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             UpdateReservation.HoverState.FillColor = SystemColors.ButtonHighlight;
             UpdateReservation.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image7");
+            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image5");
             UpdateReservation.ShadowDecoration.BorderRadius = 20;
             UpdateReservation.ShadowDecoration.Color = Color.Transparent;
-            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges82;
             // 
             // UpdateInfo
             // 
@@ -306,10 +325,10 @@ namespace FlightReservationSystem
             UpdateInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             UpdateInfo.HoverState.FillColor = SystemColors.ButtonHighlight;
             UpdateInfo.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image8");
+            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image6");
             UpdateInfo.ShadowDecoration.BorderRadius = 20;
             UpdateInfo.ShadowDecoration.Color = Color.Transparent;
-            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges59;
+            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges83;
             // 
             // AddAircraft
             // 
@@ -320,10 +339,10 @@ namespace FlightReservationSystem
             AddAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             AddAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
             AddAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image9");
+            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image7");
             AddAircraft.ShadowDecoration.BorderRadius = 20;
             AddAircraft.ShadowDecoration.Color = Color.Transparent;
-            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges84;
             // 
             // AddFlight
             // 
@@ -334,10 +353,10 @@ namespace FlightReservationSystem
             AddFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             AddFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
             AddFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddFlight.HoverState.Image = (Image)resources.GetObject("resource.Image10");
+            AddFlight.HoverState.Image = (Image)resources.GetObject("resource.Image8");
             AddFlight.ShadowDecoration.BorderRadius = 20;
             AddFlight.ShadowDecoration.Color = Color.Transparent;
-            AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges61;
+            AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges85;
             // 
             // bookFlightButton
             // 
@@ -348,10 +367,10 @@ namespace FlightReservationSystem
             bookFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image11");
+            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image9");
             bookFlightButton.ShadowDecoration.BorderRadius = 20;
             bookFlightButton.ShadowDecoration.Color = Color.Transparent;
-            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges86;
             // 
             // generateReport
             // 
@@ -362,10 +381,10 @@ namespace FlightReservationSystem
             generateReport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             generateReport.HoverState.FillColor = SystemColors.ButtonHighlight;
             generateReport.HoverState.ForeColor = SystemColors.MenuHighlight;
-            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image12");
+            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image10");
             generateReport.ShadowDecoration.BorderRadius = 20;
             generateReport.ShadowDecoration.Color = Color.Transparent;
-            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges63;
+            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges87;
             // 
             // customerReservations
             // 
@@ -376,55 +395,15 @@ namespace FlightReservationSystem
             customerReservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             customerReservations.HoverState.FillColor = SystemColors.ButtonHighlight;
             customerReservations.HoverState.ForeColor = SystemColors.MenuHighlight;
-            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image13");
+            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image11");
             customerReservations.ShadowDecoration.BorderRadius = 20;
             customerReservations.ShadowDecoration.Color = Color.Transparent;
-            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges64;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1188, 756);
-            panel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(totalPriceLabel);
-            panel3.Controls.Add(totalPriceTextBox);
-            panel3.Controls.Add(confirmButton);
-            panel3.Controls.Add(seatsNoNumericUpDown);
-            panel3.Controls.Add(seatsNoLabel);
-            panel3.Controls.Add(seatsAvailableTextBox);
-            panel3.Controls.Add(seatsAvailableLabel);
-            panel3.Controls.Add(cvvCreditCardTextBox);
-            panel3.Controls.Add(cvvCreditCardLabel);
-            panel3.Controls.Add(creditCardExpiryDateTextBox);
-            panel3.Controls.Add(creditCardExpiryDateLabel);
-            panel3.Controls.Add(creditCardTextBox);
-            panel3.Controls.Add(creditCardLabel);
-            panel3.Controls.Add(arrivalDateTextBox);
-            panel3.Controls.Add(arrivalDateLabel);
-            panel3.Controls.Add(arrivalCountryTextBox);
-            panel3.Controls.Add(arrivalCountryPanel2Label);
-            panel3.Controls.Add(deptCountryTextBox);
-            panel3.Controls.Add(deptCountryPanel2Label);
-            panel3.Controls.Add(flightNoTextBox);
-            panel3.Controls.Add(flightNoLabel);
-            panel3.Controls.Add(bookingFlightLabel);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(807, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(381, 756);
-            panel3.TabIndex = 1;
+            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges88;
             // 
             // totalPriceLabel
             // 
             totalPriceLabel.AutoSize = true;
-            totalPriceLabel.Location = new Point(51, 411);
+            totalPriceLabel.Location = new Point(49, 429);
             totalPriceLabel.Name = "totalPriceLabel";
             totalPriceLabel.Size = new Size(61, 15);
             totalPriceLabel.TabIndex = 45;
@@ -433,7 +412,7 @@ namespace FlightReservationSystem
             // totalPriceTextBox
             // 
             totalPriceTextBox.BorderRadius = 20;
-            totalPriceTextBox.CustomizableEdges = customizableEdges1;
+            totalPriceTextBox.CustomizableEdges = customizableEdges89;
             totalPriceTextBox.DefaultText = "";
             totalPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             totalPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -443,13 +422,13 @@ namespace FlightReservationSystem
             totalPriceTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             totalPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             totalPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            totalPriceTextBox.Location = new Point(123, 403);
+            totalPriceTextBox.Location = new Point(117, 421);
             totalPriceTextBox.Name = "totalPriceTextBox";
             totalPriceTextBox.PasswordChar = '\0';
             totalPriceTextBox.PlaceholderText = "";
             totalPriceTextBox.ReadOnly = true;
             totalPriceTextBox.SelectedText = "";
-            totalPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            totalPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges90;
             totalPriceTextBox.Size = new Size(221, 29);
             totalPriceTextBox.TabIndex = 54;
             // 
@@ -460,7 +439,7 @@ namespace FlightReservationSystem
             confirmButton.BorderColor = Color.Transparent;
             confirmButton.BorderRadius = 20;
             confirmButton.Cursor = Cursors.Hand;
-            confirmButton.CustomizableEdges = customizableEdges3;
+            confirmButton.CustomizableEdges = customizableEdges91;
             confirmButton.DisabledState.BorderColor = Color.DarkGray;
             confirmButton.DisabledState.CustomBorderColor = Color.DarkGray;
             confirmButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -471,16 +450,16 @@ namespace FlightReservationSystem
             confirmButton.ForeColor = SystemColors.ControlText;
             confirmButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             confirmButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            confirmButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            confirmButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
             confirmButton.Image = (Image)resources.GetObject("confirmButton.Image");
             confirmButton.ImageAlign = HorizontalAlignment.Left;
-            confirmButton.Location = new Point(125, 556);
+            confirmButton.Location = new Point(119, 574);
             confirmButton.Name = "confirmButton";
             confirmButton.Padding = new Padding(5);
             confirmButton.PressedColor = Color.White;
             confirmButton.ShadowDecoration.BorderRadius = 20;
             confirmButton.ShadowDecoration.Color = Color.Transparent;
-            confirmButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            confirmButton.ShadowDecoration.CustomizableEdges = customizableEdges92;
             confirmButton.Size = new Size(203, 37);
             confirmButton.TabIndex = 60;
             confirmButton.Text = "Seat Assignment";
@@ -490,22 +469,21 @@ namespace FlightReservationSystem
             // 
             seatsNoNumericUpDown.BackColor = Color.Transparent;
             seatsNoNumericUpDown.BorderRadius = 20;
-            seatsNoNumericUpDown.CustomizableEdges = customizableEdges5;
+            seatsNoNumericUpDown.CustomizableEdges = customizableEdges93;
             seatsNoNumericUpDown.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            seatsNoNumericUpDown.Location = new Point(216, 327);
+            seatsNoNumericUpDown.Location = new Point(210, 345);
             seatsNoNumericUpDown.Name = "seatsNoNumericUpDown";
-            seatsNoNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            seatsNoNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges94;
             seatsNoNumericUpDown.Size = new Size(141, 29);
             seatsNoNumericUpDown.TabIndex = 51;
             seatsNoNumericUpDown.UpDownButtonFillColor = SystemColors.MenuHighlight;
-            seatsNoNumericUpDown.UpDownButtonForeColor = Color.White;
             seatsNoNumericUpDown.Value = new decimal(new int[] { 1, 0, 0, 0 });
             seatsNoNumericUpDown.ValueChanged += SeatsNoNumericUpDown_UpButton;
             // 
             // seatsNoLabel
             // 
             seatsNoLabel.AutoSize = true;
-            seatsNoLabel.Location = new Point(246, 309);
+            seatsNoLabel.Location = new Point(240, 327);
             seatsNoLabel.Name = "seatsNoLabel";
             seatsNoLabel.Size = new Size(79, 15);
             seatsNoLabel.TabIndex = 36;
@@ -514,7 +492,7 @@ namespace FlightReservationSystem
             // seatsAvailableTextBox
             // 
             seatsAvailableTextBox.BorderRadius = 20;
-            seatsAvailableTextBox.CustomizableEdges = customizableEdges7;
+            seatsAvailableTextBox.CustomizableEdges = customizableEdges95;
             seatsAvailableTextBox.DefaultText = "";
             seatsAvailableTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             seatsAvailableTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -524,20 +502,20 @@ namespace FlightReservationSystem
             seatsAvailableTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             seatsAvailableTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             seatsAvailableTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            seatsAvailableTextBox.Location = new Point(32, 326);
+            seatsAvailableTextBox.Location = new Point(26, 344);
             seatsAvailableTextBox.Name = "seatsAvailableTextBox";
             seatsAvailableTextBox.PasswordChar = '\0';
             seatsAvailableTextBox.PlaceholderText = "";
             seatsAvailableTextBox.ReadOnly = true;
             seatsAvailableTextBox.SelectedText = "";
-            seatsAvailableTextBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            seatsAvailableTextBox.ShadowDecoration.CustomizableEdges = customizableEdges96;
             seatsAvailableTextBox.Size = new Size(141, 29);
             seatsAvailableTextBox.TabIndex = 50;
             // 
             // seatsAvailableLabel
             // 
             seatsAvailableLabel.AutoSize = true;
-            seatsAvailableLabel.Location = new Point(59, 308);
+            seatsAvailableLabel.Location = new Point(53, 326);
             seatsAvailableLabel.Name = "seatsAvailableLabel";
             seatsAvailableLabel.Size = new Size(85, 15);
             seatsAvailableLabel.TabIndex = 34;
@@ -546,7 +524,7 @@ namespace FlightReservationSystem
             // cvvCreditCardTextBox
             // 
             cvvCreditCardTextBox.BorderRadius = 20;
-            cvvCreditCardTextBox.CustomizableEdges = customizableEdges9;
+            cvvCreditCardTextBox.CustomizableEdges = customizableEdges97;
             cvvCreditCardTextBox.DefaultText = "";
             cvvCreditCardTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             cvvCreditCardTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -555,19 +533,19 @@ namespace FlightReservationSystem
             cvvCreditCardTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             cvvCreditCardTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cvvCreditCardTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            cvvCreditCardTextBox.Location = new Point(125, 508);
+            cvvCreditCardTextBox.Location = new Point(119, 526);
             cvvCreditCardTextBox.Name = "cvvCreditCardTextBox";
             cvvCreditCardTextBox.PasswordChar = '\0';
             cvvCreditCardTextBox.PlaceholderText = "";
             cvvCreditCardTextBox.SelectedText = "";
-            cvvCreditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cvvCreditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges98;
             cvvCreditCardTextBox.Size = new Size(219, 29);
             cvvCreditCardTextBox.TabIndex = 59;
             // 
             // cvvCreditCardLabel
             // 
             cvvCreditCardLabel.AutoSize = true;
-            cvvCreditCardLabel.Location = new Point(83, 513);
+            cvvCreditCardLabel.Location = new Point(77, 531);
             cvvCreditCardLabel.Name = "cvvCreditCardLabel";
             cvvCreditCardLabel.Size = new Size(29, 15);
             cvvCreditCardLabel.TabIndex = 32;
@@ -576,7 +554,7 @@ namespace FlightReservationSystem
             // creditCardExpiryDateTextBox
             // 
             creditCardExpiryDateTextBox.BorderRadius = 20;
-            creditCardExpiryDateTextBox.CustomizableEdges = customizableEdges11;
+            creditCardExpiryDateTextBox.CustomizableEdges = customizableEdges99;
             creditCardExpiryDateTextBox.DefaultText = "";
             creditCardExpiryDateTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             creditCardExpiryDateTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -585,19 +563,19 @@ namespace FlightReservationSystem
             creditCardExpiryDateTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             creditCardExpiryDateTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             creditCardExpiryDateTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            creditCardExpiryDateTextBox.Location = new Point(125, 473);
+            creditCardExpiryDateTextBox.Location = new Point(119, 491);
             creditCardExpiryDateTextBox.Name = "creditCardExpiryDateTextBox";
             creditCardExpiryDateTextBox.PasswordChar = '\0';
             creditCardExpiryDateTextBox.PlaceholderText = "";
             creditCardExpiryDateTextBox.SelectedText = "";
-            creditCardExpiryDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            creditCardExpiryDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges100;
             creditCardExpiryDateTextBox.Size = new Size(219, 29);
             creditCardExpiryDateTextBox.TabIndex = 58;
             // 
             // creditCardExpiryDateLabel
             // 
             creditCardExpiryDateLabel.AutoSize = true;
-            creditCardExpiryDateLabel.Location = new Point(51, 480);
+            creditCardExpiryDateLabel.Location = new Point(45, 498);
             creditCardExpiryDateLabel.Name = "creditCardExpiryDateLabel";
             creditCardExpiryDateLabel.Size = new Size(66, 15);
             creditCardExpiryDateLabel.TabIndex = 30;
@@ -606,7 +584,7 @@ namespace FlightReservationSystem
             // creditCardTextBox
             // 
             creditCardTextBox.BorderRadius = 20;
-            creditCardTextBox.CustomizableEdges = customizableEdges13;
+            creditCardTextBox.CustomizableEdges = customizableEdges101;
             creditCardTextBox.DefaultText = "";
             creditCardTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             creditCardTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -615,19 +593,19 @@ namespace FlightReservationSystem
             creditCardTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             creditCardTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             creditCardTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            creditCardTextBox.Location = new Point(125, 438);
+            creditCardTextBox.Location = new Point(119, 456);
             creditCardTextBox.Name = "creditCardTextBox";
             creditCardTextBox.PasswordChar = '\0';
             creditCardTextBox.PlaceholderText = "";
             creditCardTextBox.SelectedText = "";
-            creditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            creditCardTextBox.ShadowDecoration.CustomizableEdges = customizableEdges102;
             creditCardTextBox.Size = new Size(219, 29);
             creditCardTextBox.TabIndex = 57;
             // 
             // creditCardLabel
             // 
             creditCardLabel.AutoSize = true;
-            creditCardLabel.Location = new Point(5, 444);
+            creditCardLabel.Location = new Point(6, 463);
             creditCardLabel.Name = "creditCardLabel";
             creditCardLabel.Size = new Size(114, 15);
             creditCardLabel.TabIndex = 28;
@@ -636,7 +614,7 @@ namespace FlightReservationSystem
             // arrivalDateTextBox
             // 
             arrivalDateTextBox.BorderRadius = 20;
-            arrivalDateTextBox.CustomizableEdges = customizableEdges15;
+            arrivalDateTextBox.CustomizableEdges = customizableEdges103;
             arrivalDateTextBox.DefaultText = "";
             arrivalDateTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             arrivalDateTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -646,20 +624,20 @@ namespace FlightReservationSystem
             arrivalDateTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             arrivalDateTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             arrivalDateTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            arrivalDateTextBox.Location = new Point(216, 268);
+            arrivalDateTextBox.Location = new Point(210, 279);
             arrivalDateTextBox.Name = "arrivalDateTextBox";
             arrivalDateTextBox.PasswordChar = '\0';
             arrivalDateTextBox.PlaceholderText = "";
             arrivalDateTextBox.ReadOnly = true;
             arrivalDateTextBox.SelectedText = "";
-            arrivalDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            arrivalDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges104;
             arrivalDateTextBox.Size = new Size(141, 29);
             arrivalDateTextBox.TabIndex = 49;
             // 
             // arrivalDateLabel
             // 
             arrivalDateLabel.AutoSize = true;
-            arrivalDateLabel.Location = new Point(251, 250);
+            arrivalDateLabel.Location = new Point(245, 261);
             arrivalDateLabel.Name = "arrivalDateLabel";
             arrivalDateLabel.Size = new Size(68, 15);
             arrivalDateLabel.TabIndex = 11;
@@ -668,7 +646,7 @@ namespace FlightReservationSystem
             // arrivalCountryTextBox
             // 
             arrivalCountryTextBox.BorderRadius = 20;
-            arrivalCountryTextBox.CustomizableEdges = customizableEdges17;
+            arrivalCountryTextBox.CustomizableEdges = customizableEdges105;
             arrivalCountryTextBox.DefaultText = "";
             arrivalCountryTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             arrivalCountryTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -678,20 +656,20 @@ namespace FlightReservationSystem
             arrivalCountryTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             arrivalCountryTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             arrivalCountryTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            arrivalCountryTextBox.Location = new Point(32, 268);
+            arrivalCountryTextBox.Location = new Point(210, 216);
             arrivalCountryTextBox.Name = "arrivalCountryTextBox";
             arrivalCountryTextBox.PasswordChar = '\0';
             arrivalCountryTextBox.PlaceholderText = "";
             arrivalCountryTextBox.ReadOnly = true;
             arrivalCountryTextBox.SelectedText = "";
-            arrivalCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            arrivalCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges106;
             arrivalCountryTextBox.Size = new Size(141, 29);
             arrivalCountryTextBox.TabIndex = 48;
             // 
             // arrivalCountryPanel2Label
             // 
             arrivalCountryPanel2Label.AutoSize = true;
-            arrivalCountryPanel2Label.Location = new Point(59, 250);
+            arrivalCountryPanel2Label.Location = new Point(237, 198);
             arrivalCountryPanel2Label.Name = "arrivalCountryPanel2Label";
             arrivalCountryPanel2Label.Size = new Size(87, 15);
             arrivalCountryPanel2Label.TabIndex = 9;
@@ -700,7 +678,7 @@ namespace FlightReservationSystem
             // deptCountryTextBox
             // 
             deptCountryTextBox.BorderRadius = 20;
-            deptCountryTextBox.CustomizableEdges = customizableEdges19;
+            deptCountryTextBox.CustomizableEdges = customizableEdges107;
             deptCountryTextBox.DefaultText = "";
             deptCountryTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             deptCountryTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -710,20 +688,20 @@ namespace FlightReservationSystem
             deptCountryTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             deptCountryTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             deptCountryTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            deptCountryTextBox.Location = new Point(32, 205);
+            deptCountryTextBox.Location = new Point(26, 216);
             deptCountryTextBox.Name = "deptCountryTextBox";
             deptCountryTextBox.PasswordChar = '\0';
             deptCountryTextBox.PlaceholderText = "";
             deptCountryTextBox.ReadOnly = true;
             deptCountryTextBox.SelectedText = "";
-            deptCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            deptCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges108;
             deptCountryTextBox.Size = new Size(141, 29);
             deptCountryTextBox.TabIndex = 46;
             // 
             // deptCountryPanel2Label
             // 
             deptCountryPanel2Label.AutoSize = true;
-            deptCountryPanel2Label.Location = new Point(51, 187);
+            deptCountryPanel2Label.Location = new Point(45, 198);
             deptCountryPanel2Label.Name = "deptCountryPanel2Label";
             deptCountryPanel2Label.Size = new Size(105, 15);
             deptCountryPanel2Label.TabIndex = 7;
@@ -732,7 +710,7 @@ namespace FlightReservationSystem
             // flightNoTextBox
             // 
             flightNoTextBox.BorderRadius = 20;
-            flightNoTextBox.CustomizableEdges = customizableEdges21;
+            flightNoTextBox.CustomizableEdges = customizableEdges109;
             flightNoTextBox.DefaultText = "";
             flightNoTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             flightNoTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -742,20 +720,20 @@ namespace FlightReservationSystem
             flightNoTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             flightNoTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             flightNoTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            flightNoTextBox.Location = new Point(217, 205);
+            flightNoTextBox.Location = new Point(100, 141);
             flightNoTextBox.Name = "flightNoTextBox";
             flightNoTextBox.PasswordChar = '\0';
             flightNoTextBox.PlaceholderText = "";
             flightNoTextBox.ReadOnly = true;
             flightNoTextBox.SelectedText = "";
-            flightNoTextBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            flightNoTextBox.ShadowDecoration.CustomizableEdges = customizableEdges110;
             flightNoTextBox.Size = new Size(140, 29);
             flightNoTextBox.TabIndex = 47;
             // 
             // flightNoLabel
             // 
             flightNoLabel.AutoSize = true;
-            flightNoLabel.Location = new Point(241, 187);
+            flightNoLabel.Location = new Point(127, 123);
             flightNoLabel.Name = "flightNoLabel";
             flightNoLabel.Size = new Size(84, 15);
             flightNoLabel.TabIndex = 1;
@@ -765,121 +743,86 @@ namespace FlightReservationSystem
             // 
             bookingFlightLabel.AutoSize = true;
             bookingFlightLabel.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            bookingFlightLabel.Location = new Point(125, 19);
+            bookingFlightLabel.Location = new Point(101, 50);
             bookingFlightLabel.Name = "bookingFlightLabel";
             bookingFlightLabel.Size = new Size(136, 25);
             bookingFlightLabel.TabIndex = 0;
             bookingFlightLabel.Text = "Booking Flight";
             bookingFlightLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(seatAssignmentPanel);
-            panel2.Controls.Add(flightDataGrid);
-            panel2.Controls.Add(arrivalCountryLabel);
-            panel2.Controls.Add(arrivalCountriesComboBox);
-            panel2.Controls.Add(deptCountryLabel);
-            panel2.Controls.Add(deptCountriesComboBox);
-            panel2.Controls.Add(deptDateLabel);
-            panel2.Controls.Add(deptDateTimePicker);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(805, 756);
-            panel2.TabIndex = 0;
-            // 
             // seatAssignmentPanel
             // 
-            seatAssignmentPanel.Controls.Add(lastNameTextBox);
-            seatAssignmentPanel.Controls.Add(lastNameLabel);
-            seatAssignmentPanel.Controls.Add(firstNameTextBox);
-            seatAssignmentPanel.Controls.Add(firstNameLabel);
-            seatAssignmentPanel.Controls.Add(seat);
-            seatAssignmentPanel.Controls.Add(seatLabel);
-            seatAssignmentPanel.Controls.Add(seatAssignmentTextBox);
-            seatAssignmentPanel.Controls.Add(nextSeatButton);
-            seatAssignmentPanel.Controls.Add(cancelReservationButton);
-            seatAssignmentPanel.Controls.Add(seatsTableLayoutPanel);
-            seatAssignmentPanel.Controls.Add(rankComboBox);
-            seatAssignmentPanel.Controls.Add(rankLabel);
-            seatAssignmentPanel.Controls.Add(rankPriceLabel);
-            seatAssignmentPanel.Controls.Add(passportNumberTextBox);
-            seatAssignmentPanel.Controls.Add(rankPriceTextBox);
-            seatAssignmentPanel.Controls.Add(passportNumberLabel);
-            seatAssignmentPanel.Controls.Add(passportExpiryDateLabel);
-            seatAssignmentPanel.Controls.Add(passportExpiryDateTimePicker);
-            seatAssignmentPanel.CustomizableEdges = customizableEdges43;
-            seatAssignmentPanel.Dock = DockStyle.Left;
+            seatAssignmentPanel.Controls.Add(guna2Panel2);
+            seatAssignmentPanel.Controls.Add(guna2Panel1);
+            seatAssignmentPanel.CustomizableEdges = customizableEdges135;
+            seatAssignmentPanel.Dock = DockStyle.Fill;
             seatAssignmentPanel.Location = new Point(0, 0);
             seatAssignmentPanel.Name = "seatAssignmentPanel";
-            seatAssignmentPanel.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            seatAssignmentPanel.Size = new Size(806, 756);
+            seatAssignmentPanel.ShadowDecoration.CustomizableEdges = customizableEdges136;
+            seatAssignmentPanel.Size = new Size(832, 669);
             seatAssignmentPanel.TabIndex = 39;
             seatAssignmentPanel.Visible = false;
             // 
-            // lastNameTextBox
+            // guna2Panel2
             // 
-            lastNameTextBox.BorderRadius = 20;
-            lastNameTextBox.CustomizableEdges = customizableEdges23;
-            lastNameTextBox.DefaultText = "";
-            lastNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            lastNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            lastNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            lastNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            lastNameTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            lastNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lastNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            lastNameTextBox.Location = new Point(14, 382);
-            lastNameTextBox.Name = "lastNameTextBox";
-            lastNameTextBox.PasswordChar = '\0';
-            lastNameTextBox.PlaceholderText = "";
-            lastNameTextBox.SelectedText = "";
-            lastNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            lastNameTextBox.Size = new Size(185, 37);
-            lastNameTextBox.TabIndex = 76;
+            guna2Panel2.Controls.Add(seatsTableLayoutPanel);
+            guna2Panel2.CustomizableEdges = customizableEdges111;
+            guna2Panel2.Dock = DockStyle.Fill;
+            guna2Panel2.Location = new Point(204, 0);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges112;
+            guna2Panel2.Size = new Size(628, 669);
+            guna2Panel2.TabIndex = 59;
             // 
-            // lastNameLabel
+            // seatsTableLayoutPanel
             // 
-            lastNameLabel.AutoSize = true;
-            lastNameLabel.Location = new Point(72, 364);
-            lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new Size(63, 15);
-            lastNameLabel.TabIndex = 75;
-            lastNameLabel.Text = "Last Name";
+            seatsTableLayoutPanel.BackColor = Color.Gainsboro;
+            seatsTableLayoutPanel.ColumnCount = 6;
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666718F));
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
+            seatsTableLayoutPanel.Dock = DockStyle.Fill;
+            seatsTableLayoutPanel.Location = new Point(0, 0);
+            seatsTableLayoutPanel.Name = "seatsTableLayoutPanel";
+            seatsTableLayoutPanel.RowCount = 1;
+            seatsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            seatsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            seatsTableLayoutPanel.Size = new Size(628, 669);
+            seatsTableLayoutPanel.TabIndex = 57;
             // 
-            // firstNameTextBox
+            // guna2Panel1
             // 
-            firstNameTextBox.BorderRadius = 20;
-            firstNameTextBox.CustomizableEdges = customizableEdges25;
-            firstNameTextBox.DefaultText = "";
-            firstNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            firstNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            firstNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            firstNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            firstNameTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            firstNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            firstNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            firstNameTextBox.Location = new Point(14, 303);
-            firstNameTextBox.Name = "firstNameTextBox";
-            firstNameTextBox.PasswordChar = '\0';
-            firstNameTextBox.PlaceholderText = "";
-            firstNameTextBox.SelectedText = "";
-            firstNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            firstNameTextBox.Size = new Size(185, 37);
-            firstNameTextBox.TabIndex = 74;
-            // 
-            // firstNameLabel
-            // 
-            firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new Point(72, 285);
-            firstNameLabel.Name = "firstNameLabel";
-            firstNameLabel.Size = new Size(64, 15);
-            firstNameLabel.TabIndex = 73;
-            firstNameLabel.Text = "First Name";
+            guna2Panel1.Controls.Add(seat);
+            guna2Panel1.Controls.Add(rankPriceTextBox);
+            guna2Panel1.Controls.Add(passportNumberLabel);
+            guna2Panel1.Controls.Add(firstNameLabel);
+            guna2Panel1.Controls.Add(passportExpiryDateLabel);
+            guna2Panel1.Controls.Add(lastNameTextBox);
+            guna2Panel1.Controls.Add(cancelReservationButton);
+            guna2Panel1.Controls.Add(firstNameTextBox);
+            guna2Panel1.Controls.Add(passportExpiryDateTimePicker);
+            guna2Panel1.Controls.Add(nextSeatButton);
+            guna2Panel1.Controls.Add(rankComboBox);
+            guna2Panel1.Controls.Add(seatLabel);
+            guna2Panel1.Controls.Add(rankLabel);
+            guna2Panel1.Controls.Add(passportNumberTextBox);
+            guna2Panel1.Controls.Add(seatAssignmentTextBox);
+            guna2Panel1.Controls.Add(lastNameLabel);
+            guna2Panel1.Controls.Add(rankPriceLabel);
+            guna2Panel1.CustomizableEdges = customizableEdges133;
+            guna2Panel1.Dock = DockStyle.Left;
+            guna2Panel1.Location = new Point(0, 0);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges134;
+            guna2Panel1.Size = new Size(204, 669);
+            guna2Panel1.TabIndex = 58;
             // 
             // seat
             // 
-            seat.CustomizableEdges = customizableEdges27;
+            seat.CustomizableEdges = customizableEdges113;
             seat.DisabledState.BorderColor = Color.DarkGray;
             seat.DisabledState.CustomBorderColor = Color.DarkGray;
             seat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -892,75 +835,81 @@ namespace FlightReservationSystem
             seat.ImageSize = new Size(80, 80);
             seat.Location = new Point(58, 5);
             seat.Name = "seat";
-            seat.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            seat.ShadowDecoration.CustomizableEdges = customizableEdges114;
             seat.Size = new Size(93, 45);
             seat.TabIndex = 0;
             seat.Visible = false;
             // 
-            // seatLabel
+            // rankPriceTextBox
             // 
-            seatLabel.AutoSize = true;
-            seatLabel.Location = new Point(88, 82);
-            seatLabel.Name = "seatLabel";
-            seatLabel.Size = new Size(29, 15);
-            seatLabel.TabIndex = 72;
-            seatLabel.Text = "Seat";
+            rankPriceTextBox.BorderRadius = 20;
+            rankPriceTextBox.CustomizableEdges = customizableEdges115;
+            rankPriceTextBox.DefaultText = "";
+            rankPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankPriceTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankPriceTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankPriceTextBox.FillColor = Color.WhiteSmoke;
+            rankPriceTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankPriceTextBox.Location = new Point(16, 215);
+            rankPriceTextBox.Name = "rankPriceTextBox";
+            rankPriceTextBox.PasswordChar = '\0';
+            rankPriceTextBox.PlaceholderText = "";
+            rankPriceTextBox.ReadOnly = true;
+            rankPriceTextBox.SelectedText = "";
+            rankPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges116;
+            rankPriceTextBox.Size = new Size(185, 36);
+            rankPriceTextBox.TabIndex = 53;
             // 
-            // seatAssignmentTextBox
+            // passportNumberLabel
             // 
-            seatAssignmentTextBox.BorderRadius = 20;
-            seatAssignmentTextBox.CustomizableEdges = customizableEdges29;
-            seatAssignmentTextBox.DefaultText = "";
-            seatAssignmentTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            seatAssignmentTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            seatAssignmentTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            seatAssignmentTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            seatAssignmentTextBox.FillColor = Color.WhiteSmoke;
-            seatAssignmentTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            seatAssignmentTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            seatAssignmentTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            seatAssignmentTextBox.Location = new Point(14, 100);
-            seatAssignmentTextBox.Name = "seatAssignmentTextBox";
-            seatAssignmentTextBox.PasswordChar = '\0';
-            seatAssignmentTextBox.PlaceholderText = "";
-            seatAssignmentTextBox.ReadOnly = true;
-            seatAssignmentTextBox.SelectedText = "";
-            seatAssignmentTextBox.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            seatAssignmentTextBox.Size = new Size(185, 33);
-            seatAssignmentTextBox.TabIndex = 71;
+            passportNumberLabel.AutoSize = true;
+            passportNumberLabel.Location = new Point(54, 423);
+            passportNumberLabel.Name = "passportNumberLabel";
+            passportNumberLabel.Size = new Size(99, 15);
+            passportNumberLabel.TabIndex = 13;
+            passportNumberLabel.Text = "Passport Number";
             // 
-            // nextSeatButton
+            // firstNameLabel
             // 
-            nextSeatButton.Animated = true;
-            nextSeatButton.BackColor = Color.Transparent;
-            nextSeatButton.BorderColor = Color.Transparent;
-            nextSeatButton.BorderRadius = 20;
-            nextSeatButton.Cursor = Cursors.Hand;
-            nextSeatButton.CustomizableEdges = customizableEdges31;
-            nextSeatButton.DisabledState.BorderColor = Color.DarkGray;
-            nextSeatButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            nextSeatButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            nextSeatButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            nextSeatButton.FillColor = Color.Transparent;
-            nextSeatButton.FocusedColor = Color.Transparent;
-            nextSeatButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            nextSeatButton.ForeColor = SystemColors.ControlText;
-            nextSeatButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            nextSeatButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            nextSeatButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            nextSeatButton.Image = (Image)resources.GetObject("nextSeatButton.Image");
-            nextSeatButton.ImageAlign = HorizontalAlignment.Left;
-            nextSeatButton.Location = new Point(29, 585);
-            nextSeatButton.Name = "nextSeatButton";
-            nextSeatButton.Padding = new Padding(5);
-            nextSeatButton.PressedColor = Color.White;
-            nextSeatButton.ShadowDecoration.BorderRadius = 20;
-            nextSeatButton.ShadowDecoration.Color = Color.Transparent;
-            nextSeatButton.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            nextSeatButton.Size = new Size(152, 37);
-            nextSeatButton.TabIndex = 62;
-            nextSeatButton.Text = "Next Seat";
-            nextSeatButton.Click += NextSeatButton_Click;
+            firstNameLabel.AutoSize = true;
+            firstNameLabel.Location = new Point(74, 271);
+            firstNameLabel.Name = "firstNameLabel";
+            firstNameLabel.Size = new Size(64, 15);
+            firstNameLabel.TabIndex = 73;
+            firstNameLabel.Text = "First Name";
+            // 
+            // passportExpiryDateLabel
+            // 
+            passportExpiryDateLabel.AutoSize = true;
+            passportExpiryDateLabel.Location = new Point(45, 496);
+            passportExpiryDateLabel.Name = "passportExpiryDateLabel";
+            passportExpiryDateLabel.Size = new Size(114, 15);
+            passportExpiryDateLabel.TabIndex = 15;
+            passportExpiryDateLabel.Text = "Passport Expiry Date";
+            // 
+            // lastNameTextBox
+            // 
+            lastNameTextBox.BorderRadius = 20;
+            lastNameTextBox.CustomizableEdges = customizableEdges117;
+            lastNameTextBox.DefaultText = "";
+            lastNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            lastNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            lastNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            lastNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            lastNameTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            lastNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lastNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            lastNameTextBox.Location = new Point(16, 368);
+            lastNameTextBox.Name = "lastNameTextBox";
+            lastNameTextBox.PasswordChar = '\0';
+            lastNameTextBox.PlaceholderText = "";
+            lastNameTextBox.SelectedText = "";
+            lastNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges118;
+            lastNameTextBox.Size = new Size(185, 37);
+            lastNameTextBox.TabIndex = 76;
             // 
             // cancelReservationButton
             // 
@@ -969,7 +918,7 @@ namespace FlightReservationSystem
             cancelReservationButton.BorderColor = Color.Transparent;
             cancelReservationButton.BorderRadius = 20;
             cancelReservationButton.Cursor = Cursors.Hand;
-            cancelReservationButton.CustomizableEdges = customizableEdges33;
+            cancelReservationButton.CustomizableEdges = customizableEdges119;
             cancelReservationButton.DisabledState.BorderColor = Color.DarkGray;
             cancelReservationButton.DisabledState.CustomBorderColor = Color.DarkGray;
             cancelReservationButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -983,42 +932,96 @@ namespace FlightReservationSystem
             cancelReservationButton.HoverState.Image = Properties.Resources.FlightWhite;
             cancelReservationButton.Image = (Image)resources.GetObject("cancelReservationButton.Image");
             cancelReservationButton.ImageAlign = HorizontalAlignment.Left;
-            cancelReservationButton.Location = new Point(29, 628);
+            cancelReservationButton.Location = new Point(31, 620);
             cancelReservationButton.Name = "cancelReservationButton";
             cancelReservationButton.Padding = new Padding(5);
             cancelReservationButton.PressedColor = Color.White;
             cancelReservationButton.ShadowDecoration.BorderRadius = 20;
             cancelReservationButton.ShadowDecoration.Color = Color.Transparent;
-            cancelReservationButton.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            cancelReservationButton.ShadowDecoration.CustomizableEdges = customizableEdges120;
             cancelReservationButton.Size = new Size(152, 37);
             cancelReservationButton.TabIndex = 61;
             cancelReservationButton.Text = "Cancel";
             cancelReservationButton.Click += CancelReservationButton_Click;
             // 
-            // seatsTableLayoutPanel
+            // firstNameTextBox
             // 
-            seatsTableLayoutPanel.BackColor = Color.Gainsboro;
-            seatsTableLayoutPanel.ColumnCount = 6;
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666718F));
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            seatsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.6666679F));
-            seatsTableLayoutPanel.Dock = DockStyle.Right;
-            seatsTableLayoutPanel.Location = new Point(211, 0);
-            seatsTableLayoutPanel.Name = "tableLayoutPanel1";
-            seatsTableLayoutPanel.RowCount = 1;
-            seatsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            seatsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            seatsTableLayoutPanel.Size = new Size(595, 756);
-            seatsTableLayoutPanel.TabIndex = 57;
+            firstNameTextBox.BorderRadius = 20;
+            firstNameTextBox.CustomizableEdges = customizableEdges121;
+            firstNameTextBox.DefaultText = "";
+            firstNameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            firstNameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            firstNameTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            firstNameTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            firstNameTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            firstNameTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            firstNameTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            firstNameTextBox.Location = new Point(16, 289);
+            firstNameTextBox.Name = "firstNameTextBox";
+            firstNameTextBox.PasswordChar = '\0';
+            firstNameTextBox.PlaceholderText = "";
+            firstNameTextBox.SelectedText = "";
+            firstNameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges122;
+            firstNameTextBox.Size = new Size(185, 37);
+            firstNameTextBox.TabIndex = 74;
+            // 
+            // passportExpiryDateTimePicker
+            // 
+            passportExpiryDateTimePicker.BorderRadius = 20;
+            passportExpiryDateTimePicker.Checked = true;
+            passportExpiryDateTimePicker.CustomizableEdges = customizableEdges123;
+            passportExpiryDateTimePicker.FillColor = SystemColors.MenuHighlight;
+            passportExpiryDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            passportExpiryDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
+            passportExpiryDateTimePicker.Format = DateTimePickerFormat.Long;
+            passportExpiryDateTimePicker.Location = new Point(16, 523);
+            passportExpiryDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            passportExpiryDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            passportExpiryDateTimePicker.Name = "passportExpiryDateTimePicker";
+            passportExpiryDateTimePicker.Padding = new Padding(5);
+            passportExpiryDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges124;
+            passportExpiryDateTimePicker.Size = new Size(185, 36);
+            passportExpiryDateTimePicker.TabIndex = 56;
+            passportExpiryDateTimePicker.Value = new DateTime(2023, 5, 22, 17, 13, 9, 814);
+            // 
+            // nextSeatButton
+            // 
+            nextSeatButton.Animated = true;
+            nextSeatButton.BackColor = Color.Transparent;
+            nextSeatButton.BorderColor = Color.Transparent;
+            nextSeatButton.BorderRadius = 20;
+            nextSeatButton.Cursor = Cursors.Hand;
+            nextSeatButton.CustomizableEdges = customizableEdges125;
+            nextSeatButton.DisabledState.BorderColor = Color.DarkGray;
+            nextSeatButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            nextSeatButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            nextSeatButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            nextSeatButton.FillColor = Color.Transparent;
+            nextSeatButton.FocusedColor = Color.Transparent;
+            nextSeatButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            nextSeatButton.ForeColor = SystemColors.ControlText;
+            nextSeatButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            nextSeatButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            nextSeatButton.HoverState.Image = (Image)resources.GetObject("resource.Image13");
+            nextSeatButton.Image = (Image)resources.GetObject("nextSeatButton.Image");
+            nextSeatButton.ImageAlign = HorizontalAlignment.Left;
+            nextSeatButton.Location = new Point(31, 577);
+            nextSeatButton.Name = "nextSeatButton";
+            nextSeatButton.Padding = new Padding(5);
+            nextSeatButton.PressedColor = Color.White;
+            nextSeatButton.ShadowDecoration.BorderRadius = 20;
+            nextSeatButton.ShadowDecoration.Color = Color.Transparent;
+            nextSeatButton.ShadowDecoration.CustomizableEdges = customizableEdges126;
+            nextSeatButton.Size = new Size(152, 37);
+            nextSeatButton.TabIndex = 62;
+            nextSeatButton.Text = "Next Seat";
+            nextSeatButton.Click += NextSeatButton_Click;
             // 
             // rankComboBox
             // 
             rankComboBox.BackColor = Color.Transparent;
             rankComboBox.BorderRadius = 20;
-            rankComboBox.CustomizableEdges = customizableEdges35;
+            rankComboBox.CustomizableEdges = customizableEdges127;
             rankComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             rankComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             rankComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1028,36 +1031,36 @@ namespace FlightReservationSystem
             rankComboBox.FormattingEnabled = true;
             rankComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             rankComboBox.ItemHeight = 30;
-            rankComboBox.Location = new Point(14, 164);
+            rankComboBox.Location = new Point(16, 150);
             rankComboBox.Name = "rankComboBox";
-            rankComboBox.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            rankComboBox.ShadowDecoration.CustomizableEdges = customizableEdges128;
             rankComboBox.Size = new Size(185, 36);
             rankComboBox.TabIndex = 52;
             rankComboBox.TextAlign = HorizontalAlignment.Center;
             rankComboBox.SelectedValueChanged += RankComboBox_SelectedValueChanged;
             // 
+            // seatLabel
+            // 
+            seatLabel.AutoSize = true;
+            seatLabel.Location = new Point(90, 68);
+            seatLabel.Name = "seatLabel";
+            seatLabel.Size = new Size(29, 15);
+            seatLabel.TabIndex = 72;
+            seatLabel.Text = "Seat";
+            // 
             // rankLabel
             // 
             rankLabel.AutoSize = true;
-            rankLabel.Location = new Point(87, 146);
+            rankLabel.Location = new Point(89, 132);
             rankLabel.Name = "rankLabel";
             rankLabel.Size = new Size(33, 15);
             rankLabel.TabIndex = 41;
             rankLabel.Text = "Rank";
             // 
-            // rankPriceLabel
-            // 
-            rankPriceLabel.AutoSize = true;
-            rankPriceLabel.Location = new Point(72, 211);
-            rankPriceLabel.Name = "rankPriceLabel";
-            rankPriceLabel.Size = new Size(62, 15);
-            rankPriceLabel.TabIndex = 43;
-            rankPriceLabel.Text = "Rank Price";
-            // 
             // passportNumberTextBox
             // 
             passportNumberTextBox.BorderRadius = 20;
-            passportNumberTextBox.CustomizableEdges = customizableEdges37;
+            passportNumberTextBox.CustomizableEdges = customizableEdges129;
             passportNumberTextBox.DefaultText = "";
             passportNumberTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             passportNumberTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -1066,74 +1069,55 @@ namespace FlightReservationSystem
             passportNumberTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             passportNumberTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             passportNumberTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            passportNumberTextBox.Location = new Point(14, 458);
+            passportNumberTextBox.Location = new Point(16, 444);
             passportNumberTextBox.Name = "passportNumberTextBox";
             passportNumberTextBox.PasswordChar = '\0';
             passportNumberTextBox.PlaceholderText = "";
             passportNumberTextBox.SelectedText = "";
-            passportNumberTextBox.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            passportNumberTextBox.ShadowDecoration.CustomizableEdges = customizableEdges130;
             passportNumberTextBox.Size = new Size(185, 37);
             passportNumberTextBox.TabIndex = 55;
             // 
-            // rankPriceTextBox
+            // seatAssignmentTextBox
             // 
-            rankPriceTextBox.BorderRadius = 20;
-            rankPriceTextBox.CustomizableEdges = customizableEdges39;
-            rankPriceTextBox.DefaultText = "";
-            rankPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            rankPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            rankPriceTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            rankPriceTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            rankPriceTextBox.FillColor = Color.WhiteSmoke;
-            rankPriceTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            rankPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            rankPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            rankPriceTextBox.Location = new Point(14, 229);
-            rankPriceTextBox.Name = "rankPriceTextBox";
-            rankPriceTextBox.PasswordChar = '\0';
-            rankPriceTextBox.PlaceholderText = "";
-            rankPriceTextBox.ReadOnly = true;
-            rankPriceTextBox.SelectedText = "";
-            rankPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            rankPriceTextBox.Size = new Size(185, 36);
-            rankPriceTextBox.TabIndex = 53;
+            seatAssignmentTextBox.BorderRadius = 20;
+            seatAssignmentTextBox.CustomizableEdges = customizableEdges131;
+            seatAssignmentTextBox.DefaultText = "";
+            seatAssignmentTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            seatAssignmentTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            seatAssignmentTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            seatAssignmentTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            seatAssignmentTextBox.FillColor = Color.WhiteSmoke;
+            seatAssignmentTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            seatAssignmentTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            seatAssignmentTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            seatAssignmentTextBox.Location = new Point(16, 86);
+            seatAssignmentTextBox.Name = "seatAssignmentTextBox";
+            seatAssignmentTextBox.PasswordChar = '\0';
+            seatAssignmentTextBox.PlaceholderText = "";
+            seatAssignmentTextBox.ReadOnly = true;
+            seatAssignmentTextBox.SelectedText = "";
+            seatAssignmentTextBox.ShadowDecoration.CustomizableEdges = customizableEdges132;
+            seatAssignmentTextBox.Size = new Size(185, 33);
+            seatAssignmentTextBox.TabIndex = 71;
             // 
-            // passportNumberLabel
+            // lastNameLabel
             // 
-            passportNumberLabel.AutoSize = true;
-            passportNumberLabel.Location = new Point(52, 437);
-            passportNumberLabel.Name = "passportNumberLabel";
-            passportNumberLabel.Size = new Size(99, 15);
-            passportNumberLabel.TabIndex = 13;
-            passportNumberLabel.Text = "Passport Number";
+            lastNameLabel.AutoSize = true;
+            lastNameLabel.Location = new Point(74, 350);
+            lastNameLabel.Name = "lastNameLabel";
+            lastNameLabel.Size = new Size(63, 15);
+            lastNameLabel.TabIndex = 75;
+            lastNameLabel.Text = "Last Name";
             // 
-            // passportExpiryDateLabel
+            // rankPriceLabel
             // 
-            passportExpiryDateLabel.AutoSize = true;
-            passportExpiryDateLabel.Location = new Point(43, 509);
-            passportExpiryDateLabel.Name = "passportExpiryDateLabel";
-            passportExpiryDateLabel.Size = new Size(114, 15);
-            passportExpiryDateLabel.TabIndex = 15;
-            passportExpiryDateLabel.Text = "Passport Expiry Date";
-            // 
-            // passportExpiryDateTimePicker
-            // 
-            passportExpiryDateTimePicker.BorderRadius = 20;
-            passportExpiryDateTimePicker.Checked = true;
-            passportExpiryDateTimePicker.CustomizableEdges = customizableEdges41;
-            passportExpiryDateTimePicker.FillColor = SystemColors.MenuHighlight;
-            passportExpiryDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            passportExpiryDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
-            passportExpiryDateTimePicker.Format = DateTimePickerFormat.Long;
-            passportExpiryDateTimePicker.Location = new Point(14, 527);
-            passportExpiryDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            passportExpiryDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            passportExpiryDateTimePicker.Name = "passportExpiryDateTimePicker";
-            passportExpiryDateTimePicker.Padding = new Padding(5);
-            passportExpiryDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            passportExpiryDateTimePicker.Size = new Size(185, 36);
-            passportExpiryDateTimePicker.TabIndex = 56;
-            passportExpiryDateTimePicker.Value = new DateTime(2023, 5, 22, 17, 13, 9, 814);
+            rankPriceLabel.AutoSize = true;
+            rankPriceLabel.Location = new Point(74, 197);
+            rankPriceLabel.Name = "rankPriceLabel";
+            rankPriceLabel.Size = new Size(62, 15);
+            rankPriceLabel.TabIndex = 43;
+            rankPriceLabel.Text = "Rank Price";
             // 
             // flightDataGrid
             // 
@@ -1141,29 +1125,30 @@ namespace FlightReservationSystem
             flightDataGrid.AllowUserToDeleteRows = false;
             flightDataGrid.AllowUserToResizeColumns = false;
             flightDataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(189, 223, 251);
-            flightDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(189, 223, 251);
+            flightDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             flightDataGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(33, 150, 242);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            flightDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(33, 150, 242);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            flightDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             flightDataGrid.ColumnHeadersHeight = 40;
             flightDataGrid.Columns.AddRange(new DataGridViewColumn[] { FlightNo, deptDate, deptCountry, arrivalCountry, expectedArrivalDate, AvailableSeats, Rank1Price, Rank2Price, Rank3Price });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(211, 233, 252);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(107, 185, 246);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            flightDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(211, 233, 252);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(107, 185, 246);
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            flightDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            flightDataGrid.Dock = DockStyle.Fill;
             flightDataGrid.GridColor = Color.FromArgb(187, 222, 251);
-            flightDataGrid.Location = new Point(0, 100);
+            flightDataGrid.Location = new Point(0, 0);
             flightDataGrid.Margin = new Padding(0);
             flightDataGrid.MultiSelect = false;
             flightDataGrid.Name = "flightDataGrid";
@@ -1171,7 +1156,7 @@ namespace FlightReservationSystem
             flightDataGrid.RowHeadersVisible = false;
             flightDataGrid.RowHeadersWidth = 50;
             flightDataGrid.RowTemplate.Height = 25;
-            flightDataGrid.Size = new Size(804, 656);
+            flightDataGrid.Size = new Size(832, 669);
             flightDataGrid.TabIndex = 32;
             flightDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             flightDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(189, 223, 251);
@@ -1257,7 +1242,7 @@ namespace FlightReservationSystem
             // arrivalCountryLabel
             // 
             arrivalCountryLabel.AutoSize = true;
-            arrivalCountryLabel.Location = new Point(324, 27);
+            arrivalCountryLabel.Location = new Point(208, 18);
             arrivalCountryLabel.Name = "arrivalCountryLabel";
             arrivalCountryLabel.Size = new Size(87, 15);
             arrivalCountryLabel.TabIndex = 31;
@@ -1267,7 +1252,7 @@ namespace FlightReservationSystem
             // 
             arrivalCountriesComboBox.BackColor = Color.Transparent;
             arrivalCountriesComboBox.BorderRadius = 20;
-            arrivalCountriesComboBox.CustomizableEdges = customizableEdges45;
+            arrivalCountriesComboBox.CustomizableEdges = customizableEdges137;
             arrivalCountriesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             arrivalCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             arrivalCountriesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1277,9 +1262,9 @@ namespace FlightReservationSystem
             arrivalCountriesComboBox.FormattingEnabled = true;
             arrivalCountriesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             arrivalCountriesComboBox.ItemHeight = 30;
-            arrivalCountriesComboBox.Location = new Point(298, 47);
+            arrivalCountriesComboBox.Location = new Point(182, 38);
             arrivalCountriesComboBox.Name = "arrivalCountriesComboBox";
-            arrivalCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            arrivalCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges138;
             arrivalCountriesComboBox.Size = new Size(141, 36);
             arrivalCountriesComboBox.TabIndex = 34;
             arrivalCountriesComboBox.TextAlign = HorizontalAlignment.Center;
@@ -1289,7 +1274,7 @@ namespace FlightReservationSystem
             // deptCountryLabel
             // 
             deptCountryLabel.AutoSize = true;
-            deptCountryLabel.Location = new Point(119, 25);
+            deptCountryLabel.Location = new Point(36, 16);
             deptCountryLabel.Name = "deptCountryLabel";
             deptCountryLabel.Size = new Size(105, 15);
             deptCountryLabel.TabIndex = 29;
@@ -1299,7 +1284,7 @@ namespace FlightReservationSystem
             // 
             deptCountriesComboBox.BackColor = Color.Transparent;
             deptCountriesComboBox.BorderRadius = 20;
-            deptCountriesComboBox.CustomizableEdges = customizableEdges47;
+            deptCountriesComboBox.CustomizableEdges = customizableEdges139;
             deptCountriesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             deptCountriesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             deptCountriesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1309,39 +1294,39 @@ namespace FlightReservationSystem
             deptCountriesComboBox.FormattingEnabled = true;
             deptCountriesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
             deptCountriesComboBox.ItemHeight = 30;
-            deptCountriesComboBox.Location = new Point(102, 47);
+            deptCountriesComboBox.Location = new Point(19, 38);
             deptCountriesComboBox.Name = "deptCountriesComboBox";
-            deptCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            deptCountriesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges140;
             deptCountriesComboBox.Size = new Size(133, 36);
             deptCountriesComboBox.TabIndex = 33;
             deptCountriesComboBox.TextAlign = HorizontalAlignment.Center;
             deptCountriesComboBox.DropDown += DeptCountriesComboBox_OnDropDown;
             deptCountriesComboBox.TextChanged += LoadGrid;
             // 
-            // deptDateLabel
+            // deptDatePanel1Label
             // 
-            deptDateLabel.AutoSize = true;
-            deptDateLabel.Location = new Point(542, 27);
-            deptDateLabel.Name = "deptDateLabel";
-            deptDateLabel.Size = new Size(86, 15);
-            deptDateLabel.TabIndex = 27;
-            deptDateLabel.Text = "Departure Date";
+            deptDatePanel1Label.AutoSize = true;
+            deptDatePanel1Label.Location = new Point(393, 18);
+            deptDatePanel1Label.Name = "deptDatePanel1Label";
+            deptDatePanel1Label.Size = new Size(86, 15);
+            deptDatePanel1Label.TabIndex = 27;
+            deptDatePanel1Label.Text = "Departure Date";
             // 
             // deptDateTimePicker
             // 
             deptDateTimePicker.BorderRadius = 20;
             deptDateTimePicker.Checked = true;
-            deptDateTimePicker.CustomizableEdges = customizableEdges49;
+            deptDateTimePicker.CustomizableEdges = customizableEdges141;
             deptDateTimePicker.FillColor = SystemColors.MenuHighlight;
             deptDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             deptDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
             deptDateTimePicker.Format = DateTimePickerFormat.Long;
-            deptDateTimePicker.Location = new Point(493, 47);
+            deptDateTimePicker.Location = new Point(344, 38);
             deptDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             deptDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             deptDateTimePicker.Name = "deptDateTimePicker";
             deptDateTimePicker.Padding = new Padding(5);
-            deptDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            deptDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges142;
             deptDateTimePicker.Size = new Size(190, 36);
             deptDateTimePicker.TabIndex = 38;
             deptDateTimePicker.Value = new DateTime(2023, 5, 22, 17, 13, 9, 814);
@@ -1354,6 +1339,108 @@ namespace FlightReservationSystem
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(131, 23);
             textBox1.TabIndex = 44;
+            // 
+            // rightPanel
+            // 
+            rightPanel.Controls.Add(deptDatePanel2Label);
+            rightPanel.Controls.Add(departureDateTextBox);
+            rightPanel.Controls.Add(bookingFlightLabel);
+            rightPanel.Controls.Add(totalPriceLabel);
+            rightPanel.Controls.Add(seatsAvailableTextBox);
+            rightPanel.Controls.Add(totalPriceTextBox);
+            rightPanel.Controls.Add(flightNoLabel);
+            rightPanel.Controls.Add(confirmButton);
+            rightPanel.Controls.Add(flightNoTextBox);
+            rightPanel.Controls.Add(seatsNoNumericUpDown);
+            rightPanel.Controls.Add(deptCountryPanel2Label);
+            rightPanel.Controls.Add(seatsNoLabel);
+            rightPanel.Controls.Add(deptCountryTextBox);
+            rightPanel.Controls.Add(arrivalCountryPanel2Label);
+            rightPanel.Controls.Add(seatsAvailableLabel);
+            rightPanel.Controls.Add(arrivalCountryTextBox);
+            rightPanel.Controls.Add(cvvCreditCardTextBox);
+            rightPanel.Controls.Add(arrivalDateLabel);
+            rightPanel.Controls.Add(cvvCreditCardLabel);
+            rightPanel.Controls.Add(arrivalDateTextBox);
+            rightPanel.Controls.Add(creditCardExpiryDateTextBox);
+            rightPanel.Controls.Add(creditCardLabel);
+            rightPanel.Controls.Add(creditCardExpiryDateLabel);
+            rightPanel.Controls.Add(creditCardTextBox);
+            rightPanel.Dock = DockStyle.Right;
+            rightPanel.Location = new Point(832, 0);
+            rightPanel.Name = "rightPanel";
+            rightPanel.Size = new Size(356, 756);
+            rightPanel.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(guna2Panel4);
+            panel5.Controls.Add(topPanel);
+            panel5.Dock = DockStyle.Fill;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(832, 756);
+            panel5.TabIndex = 1;
+            // 
+            // guna2Panel4
+            // 
+            guna2Panel4.Controls.Add(seatAssignmentPanel);
+            guna2Panel4.Controls.Add(flightDataGrid);
+            guna2Panel4.CustomizableEdges = customizableEdges143;
+            guna2Panel4.Dock = DockStyle.Fill;
+            guna2Panel4.Location = new Point(0, 87);
+            guna2Panel4.Name = "guna2Panel4";
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges144;
+            guna2Panel4.Size = new Size(832, 669);
+            guna2Panel4.TabIndex = 1;
+            // 
+            // topPanel
+            // 
+            topPanel.Controls.Add(deptCountriesComboBox);
+            topPanel.Controls.Add(deptCountryLabel);
+            topPanel.Controls.Add(arrivalCountriesComboBox);
+            topPanel.Controls.Add(arrivalCountryLabel);
+            topPanel.Controls.Add(deptDateTimePicker);
+            topPanel.Controls.Add(deptDatePanel1Label);
+            topPanel.CustomizableEdges = customizableEdges145;
+            topPanel.Dock = DockStyle.Top;
+            topPanel.Location = new Point(0, 0);
+            topPanel.Name = "topPanel";
+            topPanel.ShadowDecoration.CustomizableEdges = customizableEdges146;
+            topPanel.Size = new Size(832, 87);
+            topPanel.TabIndex = 0;
+            // 
+            // deptDatePanel2Label
+            // 
+            deptDatePanel2Label.AutoSize = true;
+            deptDatePanel2Label.Location = new Point(54, 259);
+            deptDatePanel2Label.Name = "deptDatePanel2Label";
+            deptDatePanel2Label.Size = new Size(86, 15);
+            deptDatePanel2Label.TabIndex = 61;
+            deptDatePanel2Label.Text = "Departure Date";
+            // 
+            // departureDateTextBox
+            // 
+            departureDateTextBox.BorderRadius = 20;
+            departureDateTextBox.CustomizableEdges = customizableEdges147;
+            departureDateTextBox.DefaultText = "";
+            departureDateTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            departureDateTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            departureDateTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            departureDateTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            departureDateTextBox.FillColor = Color.WhiteSmoke;
+            departureDateTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            departureDateTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            departureDateTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            departureDateTextBox.Location = new Point(28, 279);
+            departureDateTextBox.Name = "departureDateTextBox";
+            departureDateTextBox.PasswordChar = '\0';
+            departureDateTextBox.PlaceholderText = "";
+            departureDateTextBox.ReadOnly = true;
+            departureDateTextBox.SelectedText = "";
+            departureDateTextBox.ShadowDecoration.CustomizableEdges = customizableEdges148;
+            departureDateTextBox.Size = new Size(141, 29);
+            departureDateTextBox.TabIndex = 62;
             // 
             // BookFlight
             // 
@@ -1368,26 +1455,25 @@ namespace FlightReservationSystem
             contentSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
             contentSplitContainer.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)seatsNoNumericUpDown).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             seatAssignmentPanel.ResumeLayout(false);
-            seatAssignmentPanel.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)flightDataGrid).EndInit();
+            rightPanel.ResumeLayout(false);
+            rightPanel.PerformLayout();
+            panel5.ResumeLayout(false);
+            guna2Panel4.ResumeLayout(false);
+            topPanel.ResumeLayout(false);
+            topPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private Panel panel3;
-        private Panel panel2;
         private Label arrivalCountryLabel;
         private Label deptCountryLabel;
-        private Label deptDateLabel;
+        private Label deptDatePanel1Label;
         private Label bookingFlightLabel;
         private Label arrivalDateLabel;
         private TextBox textBox1;
@@ -1443,5 +1529,13 @@ namespace FlightReservationSystem
         private Label lastNameLabel;
         private Guna.UI2.WinForms.Guna2TextBox firstNameTextBox;
         private Label firstNameLabel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Panel panel5;
+        private Panel rightPanel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel topPanel;
+        private Label deptDatePanel2Label;
+        private Guna.UI2.WinForms.Guna2TextBox departureDateTextBox;
     }
 }

@@ -16,6 +16,7 @@ namespace FlightReservationSystem
             commands = new();
             tempBookedSeats = new();
             ChangeButton(bookFlightButton);
+            deptDateTimePicker.Value = DateTime.Now;
         }
         private void LoadGrid(object sender, EventArgs e)
         {
@@ -36,7 +37,7 @@ namespace FlightReservationSystem
             {
                 query += "WHERE deptCountry = @deptCountry AND arrivalCountry = @arrivalCountry AND CAST(deptDate AS DATE) = CAST(@deptDate AS DATE) AND AvailableSeats <> 0";
             }
-            dataManager.UpdateDataGrid(flightDataGrid, query);
+            dataManager?.UpdateDataGrid(flightDataGrid, query);
         }
         public void SetDataGridCommandParams(SqlCommand command)
         {
@@ -57,11 +58,11 @@ namespace FlightReservationSystem
         }
         private void DeptCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
-            fillComboBox($"Select DISTINCT deptCountry from Flight where AvailableSeats <> 0", deptCountriesComboBox);
+            dataManager?.FillComboBox($"Select DISTINCT deptCountry from Flight where AvailableSeats <> 0", deptCountriesComboBox);
         }
         private void ArrivalCountriesComboBox_OnDropDown(object sender, EventArgs e)
         {
-            fillComboBox($"Select DISTINCT arrivalCountry from Flight where AvailableSeats <> 0", arrivalCountriesComboBox);
+            dataManager?.FillComboBox($"Select DISTINCT arrivalCountry from Flight where AvailableSeats <> 0", arrivalCountriesComboBox);
         }
         private void FlightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -75,6 +76,7 @@ namespace FlightReservationSystem
                 this.arrivalCountryTextBox.Text = selectedRow.Cells["arrivalCountry"].Value.ToString();
                 this.arrivalDateTextBox.Text = selectedRow.Cells["expectedArrivalDate"].Value.ToString();
                 this.deptCountryTextBox.Text = selectedRow.Cells["deptCountry"].Value.ToString();
+                this.departureDateTextBox.Text = selectedRow.Cells["deptDate"].Value.ToString();
                 flightRanks.Add("A Class", Convert.ToDouble(selectedRow.Cells["Rank1Price"].Value));
                 flightRanks.Add("B Class", Convert.ToDouble(selectedRow.Cells["Rank2Price"].Value));
                 flightRanks.Add("C Class", Convert.ToDouble(selectedRow.Cells["Rank3Price"].Value));
@@ -104,6 +106,7 @@ namespace FlightReservationSystem
         {
             seatsNoNumericUpDown.Enabled = state;
             confirmButton.Enabled = state;
+            topPanel.Visible = state;
             creditCardTextBox.ReadOnly = !state;
             creditCardExpiryDateTextBox.ReadOnly = !state;
             cvvCreditCardTextBox.ReadOnly = !state;
@@ -124,14 +127,32 @@ namespace FlightReservationSystem
         }
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if (seatsNoNumericUpDown.Value == 0)
-            {
-                return;
-            }
             if (string.IsNullOrEmpty(flightNoTextBox.Text))
             {
                 SetAuthenticatorError("Please select flight and try again!", flightNoTextBox);
                 return;
+            }
+            if (seatsNoNumericUpDown.Value == 0)
+            {
+                return;
+            }
+            string[] deptDate = departureDateTextBox.Text.Split(" ");
+            string deptShortDate = deptDate[0];
+            string deptTime = deptDate[1];
+            string deptMidday = deptDate[2];
+            if (DateTime.Parse(DateTime.Now.ToShortDateString()) > DateTime.Parse(deptShortDate))
+            {
+                SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
+                return;
+            }
+            else if (DateTime.Parse(DateTime.Now.ToShortDateString()) == DateTime.Parse(deptShortDate))
+            {
+                TimeSpan deptTimeSpan = DateTime.Parse(deptTime + " " + deptMidday).TimeOfDay;
+                if (DateTime.Now.TimeOfDay > deptTimeSpan)
+                {
+                    SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
+                    return;
+                }
             }
             if (!DataAuthenticator.Instance.ValidateCardNumber(creditCardTextBox.Text))
             {
@@ -150,88 +171,6 @@ namespace FlightReservationSystem
             }
             ChangePanel2State(false);
             RankComboBox_SelectedValueChanged(sender, e);
-            //string ticketQuery = "INSERT INTO BookingDetails (CustomerID, FlightNo, BookingDate,PassportNumber,PassportEXPDate,SeatAssignment ,TicketPrice, Rank, Status) Values (@CustomerID, @FlightNo, @BookingDate,@PassportNumber,@PassportEXPDate, @SeatAssignment, @TicketPrice, @Rank, @Status);";
-            //string flightUpdateQuery = "Update Flight set AvailableSeats = @AvailableSeats where FlightNo = @FlightNo;";
-
-            //string cardNumber = this.creditCardTextBox.Text;
-            //if (!ValidateCardNumber(cardNumber))
-            //{
-            //    errorProvider.SetError(creditCardTextBox, "Invalid Card number. Please enter a valid Card number.");
-            //    this.creditCardTextBox.Focus();
-            //    return;
-            //}
-
-            //string expiryDate = this.creditCardExpiryDateTextBox.Text;
-            //if (!ValidateExpiryDate(expiryDate))
-            //{
-            //    errorProvider.SetError(creditCardExpiryDateTextBox, "Invalid Expiry Date address. Please enter a valid Expiry Date.");
-            //    this.creditCardExpiryDateTextBox.Focus();
-            //    return;
-            //}
-
-            //string cvv = this.cvvCreditCardTextBox.Text;
-            //if (!ValidateCVV(cvv))
-            //{
-            //    errorProvider.SetError(cvvCreditCardTextBox, "Invalid CVV address. Please enter a valid CVV.");
-            //    this.cvvCreditCardTextBox.Focus();
-            //    return;
-            //}
-
-
-
-            //if (string.IsNullOrEmpty(flightNoTextBox.Text) || string.IsNullOrEmpty(seatsAvailableTextBox.Text) || string.IsNullOrEmpty(arrivalCountryTextBox.Text) || string.IsNullOrEmpty(arrivalDateTextBox.Text) || string.IsNullOrEmpty(deptCountryTextBox.Text))
-            //{
-            //    MessageBox.Show("You must select a Flight first!");
-            //}
-            //else
-            //{
-
-            //    string flightUpdateQuery = "Update Flight set AvailableSeats = @AvailableSeats where FlightNo = @FlightNo;";                using (SqlConnection connection = new SqlConnection(databaseConnection))
-            //    {
-            //        connection.Open();
-            //        using (SqlCommand command = new SqlCommand(ticketQuery, connection))
-            //        {
-            //            command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
-            //            command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
-            //            command.Parameters.AddWithValue("@BookingDate", DateTime.Now);
-            //            command.Parameters.AddWithValue("@TicketPrice", Decimal.Parse(this.rankPriceTextBox.Text));
-            //            command.Parameters.AddWithValue("@Rank", this.rankComboBox.Text);
-            //            command.Parameters.AddWithValue("@Status", "Confirmed");
-
-            //            // Declare the SeatAssignment parameter outside the loop
-            //            SqlParameter seatAssignmentParam = command.Parameters.AddWithValue("@SeatAssignment", 0);
-
-            //            for (int i = 0; i < seatsNoNumericUpDown.Value; i++)
-            //            {
-            //                // Update the value of SeatAssignment parameter inside the loop
-            //                seatAssignmentParam.Value = RandomIntGenerator(int.Parse(this.flightNoTextBox.Text));
-            //                command.ExecuteNonQuery();
-            //            }
-            //        }
-            //        using (SqlCommand command = new SqlCommand(flightUpdateQuery, connection))
-            //        {
-            //            command.Parameters.AddWithValue("@AvailableSeats", int.Parse(this.seatsAvailableTextBox.Text) - seatsNoNumericUpDown.Value);
-            //            command.Parameters.AddWithValue("@FlightNo", int.Parse(this.flightNoTextBox.Text));
-            //            command.ExecuteNonQuery();
-            //        }
-            //        using (SqlCommand command = new SqlCommand(updatePassportDetails, connection))
-            //        {
-            //            command.Parameters.AddWithValue("@PassportNumber", this.passportNumberTextBox.Text);
-
-            //            // Convert the date to the desired format
-            //            //
-            //            command.Parameters.AddWithValue("@PassportExpirationDate", DateTime.ParseExact(this.deptDateTimePicker.Text, "dddd, MMMM d, yyyy", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
-            //            command.Parameters.AddWithValue("@CardNum", this.creditCardTextBox.Text);
-            //            command.Parameters.AddWithValue("@CVV", int.Parse(this.cvvCreditCardTextBox.Text));
-            //            command.Parameters.AddWithValue("@ExpiryDate", this.creditCardExpiryDateTextBox.Text);
-            //            command.Parameters.AddWithValue("@CustomerID", Customer.Instance.Id);
-            //            MessageBox.Show("The Flight has been Confirmed!");
-            //            errorProvider.Clear();
-            //            connection.Close();
-            //        }
-            //        LoadGrid(sender, e);
-            //    }
-            //}
         }
         private void RankComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -240,7 +179,7 @@ namespace FlightReservationSystem
             {
                 return;
             }
-            int availableSeats = dataManager.NormalizeSeatsDataGrid(seatsTableLayoutPanel, rankComboBox, flightNoTextBox);
+            int? availableSeats = dataManager?.NormalizeSeatsDataGrid(seatsTableLayoutPanel, rankComboBox, flightNoTextBox);
             string query = "select COUNT(*) from BookingDetails where Rank=@Rank and FlightNo=@FlightNo and SeatAssignment=@Seat";
             int row = -1;
             SqlConnection connection = new(databaseConnection);
@@ -296,10 +235,11 @@ namespace FlightReservationSystem
         }
         private void Seat_Click(object sender, EventArgs e)
         {
-            dataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
+            DataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
         }
         private void CancelReservationButton_Click(object sender, EventArgs e)
         {
+            totalPriceTextBox.Text = string.Empty;
             tempBookedSeats.Clear();
             commands.Clear();
             ChangePanel2State(true);
@@ -338,11 +278,18 @@ namespace FlightReservationSystem
             sqlCommand.Parameters.AddWithValue("@PassportEXPDate", DateTime.Parse(passportExpiryDateTimePicker.Text).ToShortDateString());
             tempBookedSeats.Add(rankComboBox.Text + seatAssignmentTextBox.Text);
             commands.Add(sqlCommand);
-            this.passportNumberTextBox.Text = "";
-            this.firstNameTextBox.Text = "";
-            this.lastNameTextBox.Text = "";
+            double totalPrice = Convert.ToDouble(totalPriceTextBox.Text) + Convert.ToDouble(rankPriceTextBox.Text);
+            totalPriceTextBox.Text = totalPrice.ToString();
+            this.passportNumberTextBox.Text = string.Empty;
+            this.firstNameTextBox.Text = string.Empty;
+            this.lastNameTextBox.Text = string.Empty;
             if (commands.Count == Convert.ToInt32(seatsNoNumericUpDown.Value))
             {
+                DialogResult result = MessageBox.Show($"Are you sure you want to book {this.seatsNoNumericUpDown.Value} ticket/s? this will cost you {this.totalPriceTextBox.Text}.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(result == DialogResult.No) {
+                    CancelReservationButton_Click(sender, e);
+                    return;
+                }
                 SqlConnection connection = new(databaseConnection);
                 connection.Open();
                 foreach (var command in commands)

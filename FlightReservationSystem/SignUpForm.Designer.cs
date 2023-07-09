@@ -406,7 +406,6 @@
             textBoxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             textBoxPassword.Location = new Point(128, 403);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.PasswordChar = '●';
             textBoxPassword.PlaceholderForeColor = Color.Gray;
             textBoxPassword.PlaceholderText = "Enter Your Password";
             textBoxPassword.SelectedText = "";
@@ -477,6 +476,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1477, 756);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "SignUpForm";
             Text = "Sign Up";
             contentSplitContainer.Panel1.ResumeLayout(false);

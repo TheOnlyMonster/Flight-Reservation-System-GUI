@@ -27,9 +27,10 @@ namespace FlightReservationSystem
 
         public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
         {
-            if(queryType == QueryType.Insert)
+            if (queryType == QueryType.Insert)
             {
-                command.Parameters.AddWithValue("@AirCraftID", int.Parse(AirCraftIdTextBox.Text));
+                AircaftIDComboBox
+                command.Parameters.AddWithValue("@AirCraftID", int.Parse(AircaftIDComboBox));
                 command.Parameters.AddWithValue("@DeptDate", DateTime.ParseExact(DepartureDateTimePicker3.Text, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@ExpectedArrival", DateTime.ParseExact(ExpectedDateTimePicker4.Text, "yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture).ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@ArrivalCountry", ArrivalTextBox.Text);
@@ -38,13 +39,13 @@ namespace FlightReservationSystem
                 command.Parameters.AddWithValue("@Rank1Price", Double.Parse(RankATextBox.Text));
                 command.Parameters.AddWithValue("@Rank2Price", Double.Parse(RankBTextBox.Text));
                 command.Parameters.AddWithValue("@Rank3Price", Double.Parse(RankCTextBox.Text));
-            } 
+            }
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(AirCraftIdTextBox.Text) || string.IsNullOrEmpty(DepartureDateTimePicker3.Text) || string.IsNullOrEmpty(ExpectedDateTimePicker4.Text)
+            if (string.IsNullOrEmpty(AircaftIDComboBox.Text) || string.IsNullOrEmpty(DepartureDateTimePicker3.Text) || string.IsNullOrEmpty(ExpectedDateTimePicker4.Text)
              || string.IsNullOrEmpty(ArrivalTextBox.Text) || string.IsNullOrEmpty(SeatsNumericUpDown.Text) || string.IsNullOrEmpty(RankATextBox.Text)
              || string.IsNullOrEmpty(RankBTextBox.Text) || string.IsNullOrEmpty(RankCTextBox.Text) || string.IsNullOrEmpty(DepatureTextBox.Text))
             {

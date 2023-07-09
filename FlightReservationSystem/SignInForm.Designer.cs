@@ -347,7 +347,6 @@ namespace FlightReservationSystem
             passwordSignInTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             passwordSignInTextBox.Location = new Point(124, 310);
             passwordSignInTextBox.Name = "passwordSignInTextBox";
-            passwordSignInTextBox.PasswordChar = '●';
             passwordSignInTextBox.PlaceholderForeColor = Color.Gray;
             passwordSignInTextBox.PlaceholderText = "Enter Your Password";
             passwordSignInTextBox.SelectedText = "";

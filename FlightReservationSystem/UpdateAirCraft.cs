@@ -3,15 +3,15 @@
 namespace FlightReservationSystem
 {
 
-    public partial class UpdateAirCraft : MainMenu, IProcessQuery
+    public partial class UpdateAircraft : MainMenu, IProcessQuery
     {
-        public UpdateAirCraft()
+        public UpdateAircraft()
         {
             InitializeComponent();
             this.dataManager = new(databaseConnection, this);
         }
 
-        private void UpdateAirCraft_Load(object sender, EventArgs e)
+        private void UpdateAircraft_Load(object sender, EventArgs e)
         {
             string query = "SELECT * FROM AirCraft;";
             this.dataManager?.UpdateDataGrid(aircraftDataGridView, query);
@@ -34,10 +34,10 @@ namespace FlightReservationSystem
                 filters.Add(statusComboBoxPanel1.SelectedItem.ToString());
                 columnsIDs.Add("Status");
             }
-            dataManager.ApplyFilters(filters, columnsIDs, aircraftDataGridView);
+            DataManager.ApplyFilters(filters, columnsIDs, aircraftDataGridView);
         }
 
-        private void AirCraftdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void AircraftdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -50,38 +50,33 @@ namespace FlightReservationSystem
                 this.statusComboBoxPanel2.Text = selectedRow.Cells["Status"].Value.ToString();
                 this.aircrafTypeTextBox.Text = selectedRow.Cells["AircraftType"].Value.ToString();
                 this.rankASeatsTextBox.Text = selectedRow.Cells["RankASeats"].Value.ToString();
-                this.rankASeatsTextBox.Text = selectedRow.Cells["RankBSeats"].Value.ToString();
+                this.rankBSeatsTextBox.Text = selectedRow.Cells["RankBSeats"].Value.ToString();
                 this.rankCSeatsTextBox.Text = selectedRow.Cells["RankCSeats"].Value.ToString();
             }
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
+            if (!DataAuthenticator.Instance.ValidateManufactureYear(manufactureYearTextBox.Text))
+            {
+                SetAuthenticatorError("Invalid Manufacture Year Input. Please enter valid year and try again!", manufactureYearTextBox);
+                return;
+            }
             string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Status = @Status where AircraftID = @AircraftID;";
             dataManager?.ExcuteDataQuery(query);
-            UpdateAirCraft_Load(sender, e);
+            UpdateAircraft_Load(sender, e);
             MessageBox.Show("Changes are Confirmed!");
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            DialogResult result = MessageBox.Show("Are you sure you want to proceed? This operation will permanently delete the selected item and all associated data. This action cannot be undone.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question); if (result == DialogResult.Yes)
             {
                 string query = "DELETE FROM Aircraft WHERE AircraftID = @RecordId;";
                 dataManager?.ExcuteDataQuery(query);
-                UpdateAirCraft_Load(sender, e);
+                UpdateAircraft_Load(sender, e);
             }
         }
-
-        //private bool ValidateManufactureYear(string capacity)
-        //{
-        //    //Regular expression pattern for Manufacture Year.
-        //    string pattern = @"^(19|20)\d{2}$";
-        //    Regex regex = new(pattern);
-        //    bool isValid = regex.IsMatch(capacity);
-        //    return isValid;
-        //}
 
         public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
         {

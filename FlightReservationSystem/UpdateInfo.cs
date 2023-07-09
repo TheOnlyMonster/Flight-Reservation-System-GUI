@@ -25,7 +25,7 @@ namespace FlightReservationSystem
             if (string.IsNullOrEmpty(textBoxFirstName.Text) || string.IsNullOrEmpty(textBoxLastName.Text)
                 || string.IsNullOrEmpty(textBoxPhone.Text) || string.IsNullOrEmpty(textBoxPassword.Text))
             {
-                MessageBox.Show("Please fill all fields and try again!");
+                SetAuthenticatorError("Error. Please fill all fields and try again", textBoxFirstName);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidatePhoneNumber(this.textBoxPhone.Text))

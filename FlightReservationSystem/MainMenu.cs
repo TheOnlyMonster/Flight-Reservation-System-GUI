@@ -1,23 +1,13 @@
-﻿using Guna.UI2.AnimatorNS;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
+﻿using System.Data;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Excel = Microsoft.Office.Interop.Excel;
 using System.Data.SqlClient;
 using Guna.UI2.WinForms;
 
 namespace FlightReservationSystem
 {
     public partial class MainMenu : Form
-    {
-        private readonly ErrorProvider errorProvider;  
+    {      
+        private readonly ErrorProvider errorProvider;
         protected static bool IsUserLoggedIn { get; set; } = false;
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
@@ -55,80 +45,70 @@ namespace FlightReservationSystem
                 BlinkStyle = ErrorBlinkStyle.NeverBlink
             };
         }
-        protected void SetAuthenticatorError(string error, Guna2TextBox textBox)
+        protected void SetAuthenticatorError(string error, Control obj)
         {
-            errorProvider.SetError(textBox, error);
-            textBox.Focus();
+            errorProvider.SetError(obj, error);
+            obj.Focus();
         }
-        protected void fillComboBox(string query, ComboBox comboBox)
-        {
-            comboBox.Items.Clear();
-            using SqlConnection connection = new(databaseConnection);
-            connection.Open();
-            SqlCommand command = new(query, connection);
-            SqlDataReader sqlDataReader = command.ExecuteReader();
-            while (sqlDataReader.Read())
-            {
-                comboBox.Items.Add(sqlDataReader.GetString(0));
-            }
-            connection.Close();
-        }
-        private void openForm(MainMenu form)
+        
+        private void OpenForm(MainMenu form)
         {
             form.Show();
             this.Hide();
         }
-        protected void ChangeButton(Guna2Button button)
+        protected static void ChangeButton(Guna2Button button)
         {
             button.FillColor = button.HoverState.FillColor;
             button.Image = button.HoverState.Image;
             button.ForeColor = button.HoverState.ForeColor;
+
         }
-        private void exploreFlightsButton_Click(object sender, EventArgs e)
+        private void ExploreFlightsButton_Click(object sender, EventArgs e)
         {
-            openForm(new ExploreFlights());
+            OpenForm(new ExploreFlights());
+
         }
-        private void bookFlightButton_Click(object sender, EventArgs e)
+        private void BookFlightButton_Click(object sender, EventArgs e)
         {
-            openForm(new BookFlight());
+            OpenForm(new BookFlight());
         }
-        private void signUpButton_Click(object sender, EventArgs e)
+        private void SignUpButton_Click(object sender, EventArgs e)
         {
-            openForm(new SignUpForm());
+            OpenForm(new SignUpForm());
         }
 
-        private void signInButton_Click(object sender, EventArgs e)
+        private void SignInButton_Click(object sender, EventArgs e)
         {
-            openForm(new SignInForm());
+            OpenForm(new SignInForm());
         }
 
         private void UpdateInfo_Click(object sender, EventArgs e)
         {
-            openForm(new UpdateInfo());
+            OpenForm(new UpdateInfo());
         }
 
 
         private void AddAircraft_Click(object sender, EventArgs e)
         {
-            openForm(new AddAirCraft());
+            OpenForm(new AddAirCraft());
         }
 
         private void UpdateAircraft_Click(object sender, EventArgs e)
         {
-            openForm(new UpdateAirCraft());
+            OpenForm(new UpdateAircraft());
         }
         private void UpdateReservation_Click(object sender, EventArgs e)
         {
-            openForm(new UpdateReservation());
+            OpenForm(new UpdateReservation());
         }
         private void AddFlight_Click(object sender, EventArgs e)
         {
-            openForm(new AddFlight());
+            OpenForm(new AddFlight());
         }
 
         private void UpdateFlight_Click(object sender, EventArgs e)
         {
-            openForm(new UpdateFlight());
+            OpenForm(new UpdateFlight());
         }
 
         private void SignOutButton_Click(object sender, EventArgs e)
@@ -140,7 +120,7 @@ namespace FlightReservationSystem
             MainMenu.Show();
         }
 
-        private void generateReport_Click(object sender, EventArgs e)
+        private void GenerateReport_Click(object sender, EventArgs e)
         {
             DataTable dataTable = new();
             string query = "SELECT f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate, COUNT(B.CustomerID) AS Reservations, Count(TicketPrice) As TotalPrice FROM Flight f LEFT JOIN BookingDetails B ON f.FlightNo = B.FlightNo GROUP BY f.FlightNo, f.DeptCountry, f.ArrivalCountry, f.ExpectedArrival, f.DeptDate;";
@@ -158,7 +138,7 @@ namespace FlightReservationSystem
             MessageBox.Show("CSV file generated successfully.");
         }
 
-        private void GenerateCSVFile(DataTable dataTable, string filePath)
+        private static void GenerateCSVFile(DataTable dataTable, string filePath)
         {
             StringBuilder sb = new();
             IEnumerable<string> columnNames = dataTable.Columns.Cast<DataColumn>().Select(column => column.ColumnName);
@@ -171,14 +151,14 @@ namespace FlightReservationSystem
             File.WriteAllText(filePath, sb.ToString());
         }
 
-        private void helpButton_Click(object sender, EventArgs e)
+        private void HelpButton_Click(object sender, EventArgs e)
         {
-            openForm(new Help());
+            OpenForm(new Help());
         }
 
-        private void customerReservations_Click(object sender, EventArgs e)
+        private void CustomerReservations_Click(object sender, EventArgs e)
         {
-            openForm(new CustomerReservations());
+            OpenForm(new CustomerReservations());
         }
     }
 }

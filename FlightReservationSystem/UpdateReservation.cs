@@ -8,7 +8,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             dataManager = new(databaseConnection, this);
-            this.ChangeButton(this.UpdateReservation);
+            ChangeButton(this.UpdateReservation);
         }
 
         private void UpdateReservation_Load(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace FlightReservationSystem
                 return;
             }
             string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , Rank = @Rank ,Status = @Status where BookingID = @BookingID";
-            dataManager.ExcuteDataQuery(query);
+            dataManager?.ExcuteDataQuery(query);
             UpdateReservation_Load(sender, e);
             MessageBox.Show("Changes Made Successfully!");
         }
@@ -65,7 +65,7 @@ namespace FlightReservationSystem
                 "CustomerID",
                 "FlightNo"
             };
-            dataManager.ApplyFilters(filters, columnsIDs, updateReservationDataGridView);
+            DataManager.ApplyFilters(filters, columnsIDs, updateReservationDataGridView);
         }
 
         public void SetQueryCommandParams(SqlCommand command, QueryType queryType)
@@ -159,7 +159,7 @@ namespace FlightReservationSystem
 
         private void Seat_Click(object sender, EventArgs e)
         {
-            dataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
+            DataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
         }
     }
 }

@@ -14,7 +14,8 @@ namespace FlightReservationSystem
         private readonly string cardExpiryDatePattern = @"^(0[1-9]|1[0-2])\/(\d{2})$";
         private readonly string cardCVVPattern = @"^\d{3}$";
         private readonly string passportNumberPattern = @"^[a-zA-Z]\w{8}$";
-        private readonly string validateDoublePattern = @"^[0-9]+(\.[0-9]+)?$";
+        private readonly string doublePattern = @"^[0-9]+(\.[0-9]+)?$";
+        private readonly string manufactureYearPattern = @"^(19|20)\d{2}$";
 
         private DataAuthenticator() {}
 
@@ -25,7 +26,12 @@ namespace FlightReservationSystem
 
         public bool ValidateDouble(string doubleType)
         {
-            return Regex.IsMatch(doubleType, validateDoublePattern);
+            return Regex.IsMatch(doubleType, doublePattern);
+        }
+
+        public bool ValidateManufactureYear(string manufactureYear)
+        {
+            return Regex.IsMatch(manufactureYear, manufactureYearPattern);
         }
 
         public bool ValidateEmail(string email)

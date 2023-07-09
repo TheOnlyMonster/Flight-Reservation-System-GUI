@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Globalization;
-using System.Text.RegularExpressions;
+﻿using System.Data.SqlClient;
 
 namespace FlightReservationSystem
 {
@@ -38,7 +26,7 @@ namespace FlightReservationSystem
         private void AddButton_Click(object sender, EventArgs e)
         {
             string query = "INSERT INTO Aircraft VALUES(@Model,@Manufacturer,@AircraftType,@ManufactureYear,@Capacity,@Status)";
-            dataManager.ExcuteDataQuery(query);        
+            dataManager?.ExcuteDataQuery(query);        
             MessageBox.Show("Aircraft Added Successfully!");
         }
 
