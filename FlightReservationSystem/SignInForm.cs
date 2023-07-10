@@ -15,7 +15,15 @@ namespace FlightReservationSystem
             string password = passwordSignInTextBox.Text;
 
             using SqlConnection connection = new(databaseConnection);
-            connection.Open();
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Your IP is not authorized to access the database please contact the owner of the application!");
+                return;
+            }
 
             string userQuery = "SELECT * FROM UserTable WHERE Email = @Email AND Password = @Password";
 

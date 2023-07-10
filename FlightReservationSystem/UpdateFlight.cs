@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using Guna.UI2.WinForms;
+using System.Data.SqlClient;
 namespace FlightReservationSystem
 {
     public partial class UpdateFlight : MainMenu, IProcessQuery, IProcessDataGrid
@@ -8,6 +9,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             this.dataManager = new(databaseConnection, this, this);
+            ChangeButton(this.updateFlightButton);
         }
 
         private void UpdateFlightComboBox_Changed(object sender, EventArgs e)
@@ -45,23 +47,19 @@ namespace FlightReservationSystem
         private void UpdateFlight_Load(object sender, EventArgs e)
         {
             UpdateFlightComboBox_Changed(sender, e);
-            List<string> Hours = new();
-            for (int i = 1; i <= 12; i++)
+            List<Guna2ComboBox> hoursComboBoxes = new()
             {
-                Hours.Add(i.ToString());
-            }
-            List<string> Minutes = new();
-            for (int i = 1; i <= 60; i++)
+                deptHourComboBox, arrivalHourComboBox
+            };
+            List<Guna2ComboBox> minutesComboBoxes = new()
             {
-                Minutes.Add(i.ToString());
-            }
-            string[] MiddayStatus = { "AM", "PM" };
-            this.deptHourComboBox.DataSource = Hours.ToArray();
-            this.arrivalHourComboBox.DataSource = Hours.ToArray();
-            this.deptMinutesComboBox.DataSource = Minutes.ToArray();
-            this.arrivalMinutesComboBox.DataSource = Minutes.ToArray();
-            this.deptMiddayStatusComboBox.DataSource = MiddayStatus.ToArray();
-            this.arrivalMiddayStatusComboBox.DataSource = MiddayStatus.ToArray();
+                deptMinutesComboBox, arrivalMinutesComboBox
+            };
+            List<Guna2ComboBox> middayComboBoxes = new()
+            {
+                deptMiddayStatusComboBox, arrivalMiddayStatusComboBox
+            };
+            FillTimeComboBoxes(hoursComboBoxes, minutesComboBoxes, middayComboBoxes);
         }
 
         private void AdminFlightDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -82,28 +80,26 @@ namespace FlightReservationSystem
                 this.seatsAvailableTextBox.Text = SelectedRow.Cells["AvailableSeats"].Value.ToString();
                 string? currentDepartureDate = SelectedRow.Cells["deptDate"].Value.ToString();
                 string? currentArrivalDate = SelectedRow.Cells["expectedArrivalDate"].Value.ToString();
-
                 //spliting the date format to tokens.
-                string?[] currentDepartureDateTokens = currentDepartureDate.Split(' ');
-                string?[] currentArrivalDateTokens = currentArrivalDate.Split(' ');
-
-                //setting the depatrment Date and arrival date to the first token from each string.
-                this.deptDatePanel2TimePicker.Text = currentDepartureDateTokens[0];
-                this.arrivalDateTimePicker.Text = currentArrivalDateTokens[0];
-
-                //spliting the time token to two tokens the hours and minutes.
-                string?[] deptTime = currentDepartureDateTokens[1].Split(':');
-                string?[] arrivalTime = currentArrivalDateTokens[1].Split(':');
-
-                //assigning the hours  and minutes to both the dept and arrival.
-                this.deptHourComboBox.Text = deptTime[0];
-                this.deptMinutesComboBox.Text = deptTime[1];
-                this.arrivalHourComboBox.Text = arrivalTime[0];
-                this.arrivalMinutesComboBox.Text = arrivalTime[1];
-
-                // assigning the midday status to both the dept and arrival.
-                this.deptMiddayStatusComboBox.Text = currentDepartureDateTokens[2];
-                this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens[2];
+                if (currentDepartureDate != null && currentArrivalDate != null)
+                {
+                    string[]? currentDepartureDateTokens = currentDepartureDate.Split(' ');
+                    string[]? currentArrivalDateTokens = currentArrivalDate.Split(' ');
+                    //setting the depatrment Date and arrival date to the first token from each string.
+                    this.deptDatePanel2TimePicker.Text = currentDepartureDateTokens?[0];
+                    this.arrivalDateTimePicker.Text = currentArrivalDateTokens?[0];
+                    //spliting the time token to two tokens the hours and minutes.
+                    string[]? deptTime = currentDepartureDateTokens?[1].Split(':');
+                    string[]? arrivalTime = currentArrivalDateTokens?[1].Split(':');
+                    //assigning the hours  and minutes to both the dept and arrival.
+                    this.deptHourComboBox.Text = deptTime?[0];
+                    this.deptMinutesComboBox.Text = deptTime?[1];
+                    this.arrivalHourComboBox.Text = arrivalTime?[0];
+                    this.arrivalMinutesComboBox.Text = arrivalTime?[1];
+                    // assigning the midday status to both the dept and arrival.
+                    this.deptMiddayStatusComboBox.Text = currentDepartureDateTokens?[2];
+                    this.arrivalMiddayStatusComboBox.Text = currentArrivalDateTokens?[2];
+                }
 
             }
         }
@@ -112,54 +108,30 @@ namespace FlightReservationSystem
         {
             if (string.IsNullOrEmpty(flightNoTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Flight Number. Please choose flight to edit and try again!", flightNoTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Flight Number. Please choose flight to edit and try again!", flightNoTextBox);
                 return;
             }
-            if (DateTime.Parse(DateTime.Now.ToShortDateString()) > DateTime.Parse(deptDatePanel2TimePicker.Value.ToShortDateString())
-                || DateTime.Parse(DateTime.Now.ToShortDateString()) > DateTime.Parse(arrivalDateTimePicker.Value.ToShortDateString()))
+            string deptTime = $"{deptHourComboBox.Text}:{deptMinutesComboBox.Text} {deptMiddayStatusComboBox.Text}";
+            string arrivalTime = $"{arrivalHourComboBox.Text}:{arrivalMinutesComboBox.Text} {arrivalMiddayStatusComboBox.Text}";
+            if (!DataAuthenticator.Instance.ValidateTime(deptDatePanel2TimePicker, arrivalDateTimePicker, deptTime, arrivalTime))
             {
-                SetAuthenticatorError("Invalid Date. Please make sure that departure and arrival date is after the current date", deptDatePanel2TimePicker);
                 return;
-            }
-            else if (DateTime.Parse(DateTime.Now.ToShortDateString()) == DateTime.Parse(deptDatePanel2TimePicker.Value.ToShortDateString()))
-            {
-                TimeSpan deptTimeSpan = DateTime.Parse($"{deptHourComboBox.Text}:{deptMinutesComboBox.Text} {deptMiddayStatusComboBox.Text}").TimeOfDay;
-                if (DateTime.Now.TimeOfDay > deptTimeSpan)
-                {
-                    SetAuthenticatorError("Invalid Date. Please make sure that departure and arrival date is after the current date", deptHourComboBox);
-                    return;
-                }
-            }
-            if (deptDatePanel2TimePicker.Value > arrivalDateTimePicker.Value)
-            {
-                SetAuthenticatorError("Invalid Departure Date. Please make sure that the departure date is before the arrival date", deptDatePanel2TimePicker);
-                return;
-            }
-            else if (deptDatePanel2TimePicker.Value == arrivalDateTimePicker.Value)
-            {
-                TimeSpan deptTimeSpan = DateTime.Parse($"{deptHourComboBox.Text}:{deptMinutesComboBox.Text} {deptMiddayStatusComboBox.Text}").TimeOfDay;
-                TimeSpan arrivalTimeSpan = DateTime.Parse($"{arrivalHourComboBox.Text}:{arrivalMinutesComboBox.Text} {arrivalMiddayStatusComboBox.Text}").TimeOfDay;
-                if (deptTimeSpan > arrivalTimeSpan)
-                {
-                    SetAuthenticatorError("Invalid Departure Date. Please make sure that the departure date is before the arrival date", deptDatePanel2TimePicker);
-                    return;
-                }
             }
             if (!DataAuthenticator.Instance.ValidateDouble(rankATextBox.Text))
             {
-                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankATextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankATextBox);
                 return;
             }
 
             if (!DataAuthenticator.Instance.ValidateDouble(rankBTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankBTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankBTextBox);
                 return;
             }
 
             if (!DataAuthenticator.Instance.ValidateDouble(rankCTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankCTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Rank Price. Please enter valid rank price and try again!", rankCTextBox);
                 return;
             }
             string query = "UPDATE Flight Set DeptDate = @DeptDate, AircraftID = @AircraftID, ExpectedArrival = @ExpectedArrival, Rank1Price = @Rank1Price, Rank2Price = @Rank2Price, Rank3Price = @Rank3Price, AvailableSeats = @AvailableSeats Where FlightNo = @FlightNo;";
@@ -172,7 +144,7 @@ namespace FlightReservationSystem
         {
             if (string.IsNullOrEmpty(flightNoTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Flight Number. Please choose flight to edit and try again!", flightNoTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Flight Number. Please choose flight to edit and try again!", flightNoTextBox);
                 return;
             }
             DialogResult result = MessageBox.Show("Are you sure you want to delete the record?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

@@ -9,6 +9,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             this.dataManager = new(databaseConnection, this);
+            ChangeButton(this.updateAircraftButton);
         }
 
         private void UpdateAircraft_Load(object sender, EventArgs e)
@@ -19,7 +20,7 @@ namespace FlightReservationSystem
 
         private void SearchTextChanged(object sender, EventArgs e)
         {
-            List<string> filters = new()
+            List<string?> filters = new()
             {
                 aircraftIDTextBoxPanel1.Text,
                 modelTextBoxPanel1.Text
@@ -31,7 +32,7 @@ namespace FlightReservationSystem
             };
             if (statusComboBoxPanel1.SelectedItem != null)
             {
-                filters.Add(statusComboBoxPanel1.SelectedItem.ToString());
+                filters.Add(statusComboBoxPanel1.SelectedItem?.ToString());
                 columnsIDs.Add("Status");
             }
             DataManager.ApplyFilters(filters, columnsIDs, aircraftDataGridView);
@@ -59,7 +60,7 @@ namespace FlightReservationSystem
         {
             if (!DataAuthenticator.Instance.ValidateManufactureYear(manufactureYearTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Manufacture Year Input. Please enter valid year and try again!", manufactureYearTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Manufacture Year Input. Please enter valid year and try again!", manufactureYearTextBox);
                 return;
             }
             string query = "Update Aircraft Set Model = @Model, Manufacturer = @Manufacturer, AircraftType = @AircraftType, ManufactureYear = @ManufactureYear, Status = @Status where AircraftID = @AircraftID;";

@@ -41,155 +41,247 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
-            this.lblFlightReservationSystem = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).BeginInit();
-            this.contentSplitContainer.Panel1.SuspendLayout();
-            this.contentSplitContainer.Panel2.SuspendLayout();
-            this.contentSplitContainer.SuspendLayout();
-            this.SuspendLayout();
+            lblFlightReservationSystem = new Label();
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
+            contentSplitContainer.Panel1.SuspendLayout();
+            contentSplitContainer.Panel2.SuspendLayout();
+            contentSplitContainer.SuspendLayout();
+            SuspendLayout();
             // 
             // contentSplitContainer
             // 
             // 
             // contentSplitContainer.Panel2
             // 
-            this.contentSplitContainer.Panel2.AutoScroll = true;
-            this.contentSplitContainer.Panel2.Controls.Add(this.lblFlightReservationSystem);
+            contentSplitContainer.Panel2.AutoScroll = true;
+            contentSplitContainer.Panel2.Controls.Add(lblFlightReservationSystem);
+            contentSplitContainer.Size = new Size(1444, 767);
+            contentSplitContainer.SplitterDistance = 279;
             // 
-            // UpdateAircraft
+            // signInButton
             // 
-            this.UpdateAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            this.UpdateAircraft.ShadowDecoration.BorderRadius = 20;
-            this.UpdateAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            signInButton.DialogResult = DialogResult.None;
+            signInButton.DisabledState.BorderColor = Color.DarkGray;
+            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            signInButton.ShadowDecoration.BorderRadius = 20;
+            signInButton.ShadowDecoration.Color = Color.Transparent;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            signInButton.Size = new Size(279, 50);
             // 
-            // UpdateFlight
+            // signUpButton
             // 
-            this.UpdateFlight.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            this.UpdateFlight.ShadowDecoration.BorderRadius = 20;
-            this.UpdateFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            signUpButton.DialogResult = DialogResult.None;
+            signUpButton.DisabledState.BorderColor = Color.DarkGray;
+            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
+            signUpButton.ShadowDecoration.BorderRadius = 20;
+            signUpButton.ShadowDecoration.Color = Color.Transparent;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            signUpButton.Size = new Size(279, 50);
             // 
-            // UpdateReservation
+            // exploreFlightsButton
             // 
-            this.UpdateReservation.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateReservation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateReservation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateReservation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateReservation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateReservation.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateReservation.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateReservation.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            this.UpdateReservation.ShadowDecoration.BorderRadius = 20;
-            this.UpdateReservation.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            exploreFlightsButton.DialogResult = DialogResult.None;
+            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
+            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
+            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            exploreFlightsButton.Size = new Size(279, 50);
             // 
-            // UpdateInfo
+            // helpButton
             // 
-            this.UpdateInfo.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.UpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateInfo.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UpdateInfo.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.UpdateInfo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
-            this.UpdateInfo.ShadowDecoration.BorderRadius = 20;
-            this.UpdateInfo.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            helpButton.DialogResult = DialogResult.None;
+            helpButton.DisabledState.BorderColor = Color.DarkGray;
+            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            helpButton.Location = new Point(0, 704);
+            helpButton.ShadowDecoration.BorderRadius = 20;
+            helpButton.ShadowDecoration.Color = Color.Transparent;
+            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            helpButton.Size = new Size(279, 63);
             // 
-            // AddAircraft
+            // signOutButton
             // 
-            this.AddAircraft.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddAircraft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddAircraft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddAircraft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddAircraft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddAircraft.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddAircraft.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddAircraft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
-            this.AddAircraft.ShadowDecoration.BorderRadius = 20;
-            this.AddAircraft.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            signOutButton.DialogResult = DialogResult.None;
+            signOutButton.DisabledState.BorderColor = Color.DarkGray;
+            signOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            signOutButton.ShadowDecoration.BorderRadius = 20;
+            signOutButton.ShadowDecoration.Color = Color.Transparent;
+            signOutButton.ShadowDecoration.CustomizableEdges = customizableEdges5;
             // 
-            // AddFlight
+            // updateAircraftButton
             // 
-            this.AddFlight.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AddFlight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddFlight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddFlight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddFlight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddFlight.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddFlight.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.AddFlight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
-            this.AddFlight.ShadowDecoration.BorderRadius = 20;
-            this.AddFlight.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            updateAircraftButton.DialogResult = DialogResult.None;
+            updateAircraftButton.DisabledState.BorderColor = Color.DarkGray;
+            updateAircraftButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateAircraftButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateAircraftButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateAircraftButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateAircraftButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateAircraftButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            updateAircraftButton.ShadowDecoration.BorderRadius = 20;
+            updateAircraftButton.ShadowDecoration.Color = Color.Transparent;
+            updateAircraftButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            // 
+            // updateFlightButton
+            // 
+            updateFlightButton.DialogResult = DialogResult.None;
+            updateFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            updateFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image6");
+            updateFlightButton.ShadowDecoration.BorderRadius = 20;
+            updateFlightButton.ShadowDecoration.Color = Color.Transparent;
+            updateFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            // 
+            // updateReservationButton
+            // 
+            updateReservationButton.DialogResult = DialogResult.None;
+            updateReservationButton.DisabledState.BorderColor = Color.DarkGray;
+            updateReservationButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateReservationButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateReservationButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateReservationButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateReservationButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateReservationButton.HoverState.Image = (Image)resources.GetObject("resource.Image7");
+            updateReservationButton.ShadowDecoration.BorderRadius = 20;
+            updateReservationButton.ShadowDecoration.Color = Color.Transparent;
+            updateReservationButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            // 
+            // updateInfoButton
+            // 
+            updateInfoButton.DialogResult = DialogResult.None;
+            updateInfoButton.DisabledState.BorderColor = Color.DarkGray;
+            updateInfoButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateInfoButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateInfoButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateInfoButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateInfoButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateInfoButton.HoverState.Image = (Image)resources.GetObject("resource.Image8");
+            updateInfoButton.ShadowDecoration.BorderRadius = 20;
+            updateInfoButton.ShadowDecoration.Color = Color.Transparent;
+            updateInfoButton.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            // 
+            // addAircraftButton
+            // 
+            addAircraftButton.DialogResult = DialogResult.None;
+            addAircraftButton.DisabledState.BorderColor = Color.DarkGray;
+            addAircraftButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addAircraftButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addAircraftButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addAircraftButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            addAircraftButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            addAircraftButton.HoverState.Image = (Image)resources.GetObject("resource.Image9");
+            addAircraftButton.ShadowDecoration.BorderRadius = 20;
+            addAircraftButton.ShadowDecoration.Color = Color.Transparent;
+            addAircraftButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            // 
+            // addFlightButton
+            // 
+            addFlightButton.DialogResult = DialogResult.None;
+            addFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            addFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            addFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            addFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image10");
+            addFlightButton.ShadowDecoration.BorderRadius = 20;
+            addFlightButton.ShadowDecoration.Color = Color.Transparent;
+            addFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges11;
             // 
             // bookFlightButton
             // 
-            this.bookFlightButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bookFlightButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bookFlightButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bookFlightButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bookFlightButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bookFlightButton.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bookFlightButton.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bookFlightButton.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
-            this.bookFlightButton.ShadowDecoration.BorderRadius = 20;
-            this.bookFlightButton.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            bookFlightButton.DialogResult = DialogResult.None;
+            bookFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            bookFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            bookFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            bookFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image11");
+            bookFlightButton.ShadowDecoration.BorderRadius = 20;
+            bookFlightButton.ShadowDecoration.Color = Color.Transparent;
+            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
             // 
-            // generateReport
+            // generateReportButton
             // 
-            this.generateReport.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.generateReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.generateReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.generateReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.generateReport.HoverState.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.generateReport.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.generateReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
-            this.generateReport.ShadowDecoration.BorderRadius = 20;
-            this.generateReport.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.generateReport.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            generateReportButton.DialogResult = DialogResult.None;
+            generateReportButton.DisabledState.BorderColor = Color.DarkGray;
+            generateReportButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            generateReportButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            generateReportButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            generateReportButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            generateReportButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            generateReportButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
+            generateReportButton.ShadowDecoration.BorderRadius = 20;
+            generateReportButton.ShadowDecoration.Color = Color.Transparent;
+            generateReportButton.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            // 
+            // customerReservationsButton
+            // 
+            customerReservationsButton.DialogResult = DialogResult.None;
+            customerReservationsButton.DisabledState.BorderColor = Color.DarkGray;
+            customerReservationsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            customerReservationsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            customerReservationsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            customerReservationsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            customerReservationsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            customerReservationsButton.HoverState.Image = (Image)resources.GetObject("resource.Image13");
+            customerReservationsButton.ShadowDecoration.BorderRadius = 20;
+            customerReservationsButton.ShadowDecoration.Color = Color.Transparent;
+            customerReservationsButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
             // 
             // lblFlightReservationSystem
             // 
-            this.lblFlightReservationSystem.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFlightReservationSystem.Location = new System.Drawing.Point(26, 9);
-            this.lblFlightReservationSystem.Name = "lblFlightReservationSystem";
-            this.lblFlightReservationSystem.Size = new System.Drawing.Size(1018, 1409);
-            this.lblFlightReservationSystem.TabIndex = 0;
-            this.lblFlightReservationSystem.Text = resources.GetString("lblFlightReservationSystem.Text");
+            lblFlightReservationSystem.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFlightReservationSystem.Location = new Point(26, 9);
+            lblFlightReservationSystem.Name = "lblFlightReservationSystem";
+            lblFlightReservationSystem.Size = new Size(1096, 1409);
+            lblFlightReservationSystem.TabIndex = 0;
+            lblFlightReservationSystem.Text = resources.GetString("lblFlightReservationSystem.Text");
             // 
             // Help
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Help";
-            this.Text = "Help";
-            this.contentSplitContainer.Panel1.ResumeLayout(false);
-            this.contentSplitContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.contentSplitContainer)).EndInit();
-            this.contentSplitContainer.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1444, 767);
+            Name = "Help";
+            Text = "Help";
+            contentSplitContainer.Panel1.ResumeLayout(false);
+            contentSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
+            contentSplitContainer.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

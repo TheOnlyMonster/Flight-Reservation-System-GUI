@@ -60,18 +60,18 @@
             contentSplitContainer = new SplitContainer();
             helpButton = new Guna.UI2.WinForms.Guna2Button();
             exploreFlightsButton = new Guna.UI2.WinForms.Guna2Button();
-            customerReservations = new Guna.UI2.WinForms.Guna2Button();
-            generateReport = new Guna.UI2.WinForms.Guna2Button();
             bookFlightButton = new Guna.UI2.WinForms.Guna2Button();
+            customerReservationsButton = new Guna.UI2.WinForms.Guna2Button();
+            updateInfoButton = new Guna.UI2.WinForms.Guna2Button();
+            signOutButton = new Guna.UI2.WinForms.Guna2Button();
+            updateAircraftButton = new Guna.UI2.WinForms.Guna2Button();
+            addAircraftButton = new Guna.UI2.WinForms.Guna2Button();
+            addFlightButton = new Guna.UI2.WinForms.Guna2Button();
+            updateFlightButton = new Guna.UI2.WinForms.Guna2Button();
+            updateReservationButton = new Guna.UI2.WinForms.Guna2Button();
+            generateReportButton = new Guna.UI2.WinForms.Guna2Button();
             signInButton = new Guna.UI2.WinForms.Guna2Button();
             signUpButton = new Guna.UI2.WinForms.Guna2Button();
-            UpdateAircraft = new Guna.UI2.WinForms.Guna2Button();
-            UpdateFlight = new Guna.UI2.WinForms.Guna2Button();
-            UpdateReservation = new Guna.UI2.WinForms.Guna2Button();
-            UpdateInfo = new Guna.UI2.WinForms.Guna2Button();
-            AddAircraft = new Guna.UI2.WinForms.Guna2Button();
-            AddFlight = new Guna.UI2.WinForms.Guna2Button();
-            SignOutButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.SuspendLayout();
@@ -149,62 +149,6 @@
             exploreFlightsButton.TextAlign = HorizontalAlignment.Left;
             exploreFlightsButton.Click += ExploreFlightsButton_Click;
             // 
-            // customerReservations
-            // 
-            resources.ApplyResources(customerReservations, "customerReservations");
-            customerReservations.Animated = true;
-            customerReservations.BackColor = Color.Transparent;
-            customerReservations.BorderColor = Color.Transparent;
-            customerReservations.Cursor = Cursors.Hand;
-            customerReservations.CustomizableEdges = customizableEdges5;
-            customerReservations.DisabledState.BorderColor = Color.DarkGray;
-            customerReservations.DisabledState.CustomBorderColor = Color.DarkGray;
-            customerReservations.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            customerReservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            customerReservations.FillColor = Color.Transparent;
-            customerReservations.FocusedColor = Color.Transparent;
-            customerReservations.ForeColor = SystemColors.HighlightText;
-            customerReservations.HoverState.FillColor = SystemColors.ButtonHighlight;
-            customerReservations.HoverState.ForeColor = SystemColors.MenuHighlight;
-            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            customerReservations.Image = (Image)resources.GetObject("customerReservations.Image");
-            customerReservations.ImageAlign = HorizontalAlignment.Left;
-            customerReservations.Name = "customerReservations";
-            customerReservations.PressedColor = Color.White;
-            customerReservations.ShadowDecoration.BorderRadius = 20;
-            customerReservations.ShadowDecoration.Color = Color.Transparent;
-            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            customerReservations.TextAlign = HorizontalAlignment.Left;
-            customerReservations.Click += CustomerReservations_Click;
-            // 
-            // generateReport
-            // 
-            resources.ApplyResources(generateReport, "generateReport");
-            generateReport.Animated = true;
-            generateReport.BackColor = Color.Transparent;
-            generateReport.BorderColor = Color.Transparent;
-            generateReport.Cursor = Cursors.Hand;
-            generateReport.CustomizableEdges = customizableEdges7;
-            generateReport.DisabledState.BorderColor = Color.DarkGray;
-            generateReport.DisabledState.CustomBorderColor = Color.DarkGray;
-            generateReport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            generateReport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            generateReport.FillColor = Color.Transparent;
-            generateReport.FocusedColor = Color.Transparent;
-            generateReport.ForeColor = SystemColors.HighlightText;
-            generateReport.HoverState.FillColor = SystemColors.ButtonHighlight;
-            generateReport.HoverState.ForeColor = SystemColors.MenuHighlight;
-            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            generateReport.Image = (Image)resources.GetObject("generateReport.Image");
-            generateReport.ImageAlign = HorizontalAlignment.Left;
-            generateReport.Name = "generateReport";
-            generateReport.PressedColor = Color.White;
-            generateReport.ShadowDecoration.BorderRadius = 20;
-            generateReport.ShadowDecoration.Color = Color.Transparent;
-            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            generateReport.TextAlign = HorizontalAlignment.Left;
-            generateReport.Click += GenerateReport_Click;
-            // 
             // bookFlightButton
             // 
             resources.ApplyResources(bookFlightButton, "bookFlightButton");
@@ -212,7 +156,7 @@
             bookFlightButton.BackColor = Color.Transparent;
             bookFlightButton.BorderColor = Color.Transparent;
             bookFlightButton.Cursor = Cursors.Hand;
-            bookFlightButton.CustomizableEdges = customizableEdges9;
+            bookFlightButton.CustomizableEdges = customizableEdges5;
             bookFlightButton.DisabledState.BorderColor = Color.DarkGray;
             bookFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
             bookFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -222,16 +166,268 @@
             bookFlightButton.ForeColor = SystemColors.HighlightText;
             bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
             bookFlightButton.Image = (Image)resources.GetObject("bookFlightButton.Image");
             bookFlightButton.ImageAlign = HorizontalAlignment.Left;
             bookFlightButton.Name = "bookFlightButton";
             bookFlightButton.PressedColor = Color.White;
             bookFlightButton.ShadowDecoration.BorderRadius = 20;
             bookFlightButton.ShadowDecoration.Color = Color.Transparent;
-            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
             bookFlightButton.TextAlign = HorizontalAlignment.Left;
             bookFlightButton.Click += BookFlightButton_Click;
+            // 
+            // customerReservationsButton
+            // 
+            resources.ApplyResources(customerReservationsButton, "customerReservationsButton");
+            customerReservationsButton.Animated = true;
+            customerReservationsButton.BackColor = Color.Transparent;
+            customerReservationsButton.BorderColor = Color.Transparent;
+            customerReservationsButton.Cursor = Cursors.Hand;
+            customerReservationsButton.CustomizableEdges = customizableEdges7;
+            customerReservationsButton.DisabledState.BorderColor = Color.DarkGray;
+            customerReservationsButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            customerReservationsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            customerReservationsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            customerReservationsButton.FillColor = Color.Transparent;
+            customerReservationsButton.FocusedColor = Color.Transparent;
+            customerReservationsButton.ForeColor = SystemColors.HighlightText;
+            customerReservationsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            customerReservationsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            customerReservationsButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
+            customerReservationsButton.Image = (Image)resources.GetObject("customerReservationsButton.Image");
+            customerReservationsButton.ImageAlign = HorizontalAlignment.Left;
+            customerReservationsButton.Name = "customerReservationsButton";
+            customerReservationsButton.PressedColor = Color.White;
+            customerReservationsButton.ShadowDecoration.BorderRadius = 20;
+            customerReservationsButton.ShadowDecoration.Color = Color.Transparent;
+            customerReservationsButton.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            customerReservationsButton.TextAlign = HorizontalAlignment.Left;
+            customerReservationsButton.Click += CustomerReservations_Click;
+            // 
+            // updateInfoButton
+            // 
+            resources.ApplyResources(updateInfoButton, "updateInfoButton");
+            updateInfoButton.Animated = true;
+            updateInfoButton.BackColor = Color.Transparent;
+            updateInfoButton.BorderColor = Color.Transparent;
+            updateInfoButton.Cursor = Cursors.Hand;
+            updateInfoButton.CustomizableEdges = customizableEdges9;
+            updateInfoButton.DisabledState.BorderColor = Color.DarkGray;
+            updateInfoButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateInfoButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateInfoButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateInfoButton.FillColor = Color.Transparent;
+            updateInfoButton.FocusedColor = Color.Transparent;
+            updateInfoButton.ForeColor = SystemColors.HighlightText;
+            updateInfoButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateInfoButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateInfoButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
+            updateInfoButton.Image = (Image)resources.GetObject("updateInfoButton.Image");
+            updateInfoButton.ImageAlign = HorizontalAlignment.Left;
+            updateInfoButton.Name = "updateInfoButton";
+            updateInfoButton.PressedColor = Color.White;
+            updateInfoButton.ShadowDecoration.BorderRadius = 20;
+            updateInfoButton.ShadowDecoration.Color = Color.Transparent;
+            updateInfoButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            updateInfoButton.TextAlign = HorizontalAlignment.Left;
+            updateInfoButton.Click += UpdateInfo_Click;
+            // 
+            // signOutButton
+            // 
+            resources.ApplyResources(signOutButton, "signOutButton");
+            signOutButton.Animated = true;
+            signOutButton.BackColor = Color.Transparent;
+            signOutButton.BorderColor = Color.Transparent;
+            signOutButton.Cursor = Cursors.Hand;
+            signOutButton.CustomizableEdges = customizableEdges11;
+            signOutButton.DisabledState.BorderColor = Color.DarkGray;
+            signOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            signOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            signOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            signOutButton.FillColor = Color.Transparent;
+            signOutButton.FocusedColor = Color.Transparent;
+            signOutButton.ForeColor = SystemColors.HighlightText;
+            signOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            signOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            signOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            signOutButton.Image = (Image)resources.GetObject("signOutButton.Image");
+            signOutButton.ImageAlign = HorizontalAlignment.Left;
+            signOutButton.Name = "signOutButton";
+            signOutButton.PressedColor = Color.White;
+            signOutButton.ShadowDecoration.BorderRadius = 20;
+            signOutButton.ShadowDecoration.Color = Color.Transparent;
+            signOutButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            signOutButton.TextAlign = HorizontalAlignment.Left;
+            signOutButton.Click += SignOutButton_Click;
+            // 
+            // updateAircraftButton
+            // 
+            resources.ApplyResources(updateAircraftButton, "updateAircraftButton");
+            updateAircraftButton.Animated = true;
+            updateAircraftButton.BackColor = Color.Transparent;
+            updateAircraftButton.BorderColor = Color.Transparent;
+            updateAircraftButton.Cursor = Cursors.Hand;
+            updateAircraftButton.CustomizableEdges = customizableEdges13;
+            updateAircraftButton.DisabledState.BorderColor = Color.DarkGray;
+            updateAircraftButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateAircraftButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateAircraftButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateAircraftButton.FillColor = Color.Transparent;
+            updateAircraftButton.FocusedColor = Color.Transparent;
+            updateAircraftButton.ForeColor = SystemColors.HighlightText;
+            updateAircraftButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateAircraftButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateAircraftButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            updateAircraftButton.Image = Properties.Resources.FlightWhite;
+            updateAircraftButton.ImageAlign = HorizontalAlignment.Left;
+            updateAircraftButton.Name = "updateAircraftButton";
+            updateAircraftButton.PressedColor = Color.White;
+            updateAircraftButton.ShadowDecoration.BorderRadius = 20;
+            updateAircraftButton.ShadowDecoration.Color = Color.Transparent;
+            updateAircraftButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            updateAircraftButton.TextAlign = HorizontalAlignment.Left;
+            updateAircraftButton.Click += UpdateAircraft_Click;
+            // 
+            // addAircraftButton
+            // 
+            resources.ApplyResources(addAircraftButton, "addAircraftButton");
+            addAircraftButton.Animated = true;
+            addAircraftButton.BackColor = Color.Transparent;
+            addAircraftButton.BorderColor = Color.Transparent;
+            addAircraftButton.Cursor = Cursors.Hand;
+            addAircraftButton.CustomizableEdges = customizableEdges15;
+            addAircraftButton.DisabledState.BorderColor = Color.DarkGray;
+            addAircraftButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addAircraftButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addAircraftButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addAircraftButton.FillColor = Color.Transparent;
+            addAircraftButton.FocusedColor = Color.Transparent;
+            addAircraftButton.ForeColor = SystemColors.HighlightText;
+            addAircraftButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            addAircraftButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            addAircraftButton.HoverState.Image = (Image)resources.GetObject("resource.Image6");
+            addAircraftButton.Image = (Image)resources.GetObject("addAircraftButton.Image");
+            addAircraftButton.ImageAlign = HorizontalAlignment.Left;
+            addAircraftButton.Name = "addAircraftButton";
+            addAircraftButton.PressedColor = Color.White;
+            addAircraftButton.ShadowDecoration.BorderRadius = 20;
+            addAircraftButton.ShadowDecoration.Color = Color.Transparent;
+            addAircraftButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            addAircraftButton.TextAlign = HorizontalAlignment.Left;
+            addAircraftButton.Click += AddAircraft_Click;
+            // 
+            // addFlightButton
+            // 
+            resources.ApplyResources(addFlightButton, "addFlightButton");
+            addFlightButton.Animated = true;
+            addFlightButton.BackColor = Color.Transparent;
+            addFlightButton.BorderColor = Color.Transparent;
+            addFlightButton.Cursor = Cursors.Hand;
+            addFlightButton.CustomizableEdges = customizableEdges17;
+            addFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            addFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addFlightButton.FillColor = Color.Transparent;
+            addFlightButton.FocusedColor = Color.Transparent;
+            addFlightButton.ForeColor = SystemColors.HighlightText;
+            addFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            addFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            addFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image7");
+            addFlightButton.Image = (Image)resources.GetObject("addFlightButton.Image");
+            addFlightButton.ImageAlign = HorizontalAlignment.Left;
+            addFlightButton.Name = "addFlightButton";
+            addFlightButton.PressedColor = Color.White;
+            addFlightButton.ShadowDecoration.BorderRadius = 20;
+            addFlightButton.ShadowDecoration.Color = Color.Transparent;
+            addFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            addFlightButton.TextAlign = HorizontalAlignment.Left;
+            addFlightButton.Click += AddFlight_Click;
+            // 
+            // updateFlightButton
+            // 
+            resources.ApplyResources(updateFlightButton, "updateFlightButton");
+            updateFlightButton.Animated = true;
+            updateFlightButton.BackColor = Color.Transparent;
+            updateFlightButton.BorderColor = Color.Transparent;
+            updateFlightButton.Cursor = Cursors.Hand;
+            updateFlightButton.CustomizableEdges = customizableEdges19;
+            updateFlightButton.DisabledState.BorderColor = Color.DarkGray;
+            updateFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateFlightButton.FillColor = Color.Transparent;
+            updateFlightButton.FocusedColor = Color.Transparent;
+            updateFlightButton.ForeColor = SystemColors.HighlightText;
+            updateFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image8");
+            updateFlightButton.Image = Properties.Resources.FlightWhite;
+            updateFlightButton.ImageAlign = HorizontalAlignment.Left;
+            updateFlightButton.Name = "updateFlightButton";
+            updateFlightButton.PressedColor = Color.White;
+            updateFlightButton.ShadowDecoration.BorderRadius = 20;
+            updateFlightButton.ShadowDecoration.Color = Color.Transparent;
+            updateFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            updateFlightButton.TextAlign = HorizontalAlignment.Left;
+            updateFlightButton.Click += UpdateFlight_Click;
+            // 
+            // updateReservationButton
+            // 
+            resources.ApplyResources(updateReservationButton, "updateReservationButton");
+            updateReservationButton.Animated = true;
+            updateReservationButton.BackColor = Color.Transparent;
+            updateReservationButton.BorderColor = Color.Transparent;
+            updateReservationButton.Cursor = Cursors.Hand;
+            updateReservationButton.CustomizableEdges = customizableEdges21;
+            updateReservationButton.DisabledState.BorderColor = Color.DarkGray;
+            updateReservationButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateReservationButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateReservationButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateReservationButton.FillColor = Color.Transparent;
+            updateReservationButton.FocusedColor = Color.Transparent;
+            updateReservationButton.ForeColor = SystemColors.HighlightText;
+            updateReservationButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            updateReservationButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            updateReservationButton.HoverState.Image = (Image)resources.GetObject("resource.Image9");
+            updateReservationButton.Image = (Image)resources.GetObject("updateReservationButton.Image");
+            updateReservationButton.ImageAlign = HorizontalAlignment.Left;
+            updateReservationButton.Name = "updateReservationButton";
+            updateReservationButton.PressedColor = Color.White;
+            updateReservationButton.ShadowDecoration.BorderRadius = 20;
+            updateReservationButton.ShadowDecoration.Color = Color.Transparent;
+            updateReservationButton.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            updateReservationButton.TextAlign = HorizontalAlignment.Left;
+            updateReservationButton.Click += UpdateReservation_Click;
+            // 
+            // generateReportButton
+            // 
+            resources.ApplyResources(generateReportButton, "generateReportButton");
+            generateReportButton.Animated = true;
+            generateReportButton.BackColor = Color.Transparent;
+            generateReportButton.BorderColor = Color.Transparent;
+            generateReportButton.Cursor = Cursors.Hand;
+            generateReportButton.CustomizableEdges = customizableEdges23;
+            generateReportButton.DisabledState.BorderColor = Color.DarkGray;
+            generateReportButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            generateReportButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            generateReportButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            generateReportButton.FillColor = Color.Transparent;
+            generateReportButton.FocusedColor = Color.Transparent;
+            generateReportButton.ForeColor = SystemColors.HighlightText;
+            generateReportButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            generateReportButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            generateReportButton.HoverState.Image = (Image)resources.GetObject("resource.Image10");
+            generateReportButton.Image = (Image)resources.GetObject("generateReportButton.Image");
+            generateReportButton.ImageAlign = HorizontalAlignment.Left;
+            generateReportButton.Name = "generateReportButton";
+            generateReportButton.PressedColor = Color.White;
+            generateReportButton.ShadowDecoration.BorderRadius = 20;
+            generateReportButton.ShadowDecoration.Color = Color.Transparent;
+            generateReportButton.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            generateReportButton.TextAlign = HorizontalAlignment.Left;
+            generateReportButton.Click += GenerateReport_Click;
             // 
             // signInButton
             // 
@@ -240,7 +436,7 @@
             signInButton.BackColor = Color.Transparent;
             signInButton.BorderColor = Color.Transparent;
             signInButton.Cursor = Cursors.Hand;
-            signInButton.CustomizableEdges = customizableEdges11;
+            signInButton.CustomizableEdges = customizableEdges25;
             signInButton.DisabledState.BorderColor = Color.DarkGray;
             signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
             signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -250,14 +446,14 @@
             signInButton.ForeColor = SystemColors.HighlightText;
             signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
+            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image11");
             signInButton.Image = (Image)resources.GetObject("signInButton.Image");
             signInButton.ImageAlign = HorizontalAlignment.Left;
             signInButton.Name = "signInButton";
             signInButton.PressedColor = Color.White;
             signInButton.ShadowDecoration.BorderRadius = 20;
             signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
             signInButton.TextAlign = HorizontalAlignment.Left;
             signInButton.Click += SignInButton_Click;
             // 
@@ -268,7 +464,7 @@
             signUpButton.BackColor = Color.Transparent;
             signUpButton.BorderColor = Color.Transparent;
             signUpButton.Cursor = Cursors.Hand;
-            signUpButton.CustomizableEdges = customizableEdges13;
+            signUpButton.CustomizableEdges = customizableEdges27;
             signUpButton.DisabledState.BorderColor = Color.DarkGray;
             signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
             signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -278,210 +474,16 @@
             signUpButton.ForeColor = SystemColors.HighlightText;
             signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
             signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
+            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
             signUpButton.Image = (Image)resources.GetObject("signUpButton.Image");
             signUpButton.ImageAlign = HorizontalAlignment.Left;
             signUpButton.Name = "signUpButton";
             signUpButton.PressedColor = Color.White;
             signUpButton.ShadowDecoration.BorderRadius = 20;
             signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges28;
             signUpButton.TextAlign = HorizontalAlignment.Left;
             signUpButton.Click += SignUpButton_Click;
-            // 
-            // UpdateAircraft
-            // 
-            resources.ApplyResources(UpdateAircraft, "UpdateAircraft");
-            UpdateAircraft.Animated = true;
-            UpdateAircraft.BackColor = Color.Transparent;
-            UpdateAircraft.BorderColor = Color.Transparent;
-            UpdateAircraft.Cursor = Cursors.Hand;
-            UpdateAircraft.CustomizableEdges = customizableEdges15;
-            UpdateAircraft.DisabledState.BorderColor = Color.DarkGray;
-            UpdateAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateAircraft.FillColor = Color.Transparent;
-            UpdateAircraft.FocusedColor = Color.Transparent;
-            UpdateAircraft.ForeColor = SystemColors.HighlightText;
-            UpdateAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image6");
-            UpdateAircraft.ImageAlign = HorizontalAlignment.Left;
-            UpdateAircraft.Name = "UpdateAircraft";
-            UpdateAircraft.PressedColor = Color.White;
-            UpdateAircraft.ShadowDecoration.BorderRadius = 20;
-            UpdateAircraft.ShadowDecoration.Color = Color.Transparent;
-            UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            UpdateAircraft.TextAlign = HorizontalAlignment.Left;
-            UpdateAircraft.Click += UpdateAircraft_Click;
-            // 
-            // UpdateFlight
-            // 
-            resources.ApplyResources(UpdateFlight, "UpdateFlight");
-            UpdateFlight.Animated = true;
-            UpdateFlight.BackColor = Color.Transparent;
-            UpdateFlight.BorderColor = Color.Transparent;
-            UpdateFlight.Cursor = Cursors.Hand;
-            UpdateFlight.CustomizableEdges = customizableEdges17;
-            UpdateFlight.DisabledState.BorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateFlight.FillColor = Color.Transparent;
-            UpdateFlight.FocusedColor = Color.Transparent;
-            UpdateFlight.ForeColor = SystemColors.HighlightText;
-            UpdateFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image7");
-            UpdateFlight.ImageAlign = HorizontalAlignment.Left;
-            UpdateFlight.Name = "UpdateFlight";
-            UpdateFlight.PressedColor = Color.White;
-            UpdateFlight.ShadowDecoration.BorderRadius = 20;
-            UpdateFlight.ShadowDecoration.Color = Color.Transparent;
-            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            UpdateFlight.TextAlign = HorizontalAlignment.Left;
-            UpdateFlight.Click += UpdateFlight_Click;
-            // 
-            // UpdateReservation
-            // 
-            resources.ApplyResources(UpdateReservation, "UpdateReservation");
-            UpdateReservation.Animated = true;
-            UpdateReservation.BackColor = Color.Transparent;
-            UpdateReservation.BorderColor = Color.Transparent;
-            UpdateReservation.Cursor = Cursors.Hand;
-            UpdateReservation.CustomizableEdges = customizableEdges19;
-            UpdateReservation.DisabledState.BorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateReservation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateReservation.FillColor = Color.Transparent;
-            UpdateReservation.FocusedColor = Color.Transparent;
-            UpdateReservation.ForeColor = SystemColors.HighlightText;
-            UpdateReservation.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateReservation.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image8");
-            UpdateReservation.Image = (Image)resources.GetObject("UpdateReservation.Image");
-            UpdateReservation.ImageAlign = HorizontalAlignment.Left;
-            UpdateReservation.Name = "UpdateReservation";
-            UpdateReservation.PressedColor = Color.White;
-            UpdateReservation.ShadowDecoration.BorderRadius = 20;
-            UpdateReservation.ShadowDecoration.Color = Color.Transparent;
-            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            UpdateReservation.TextAlign = HorizontalAlignment.Left;
-            UpdateReservation.Click += UpdateReservation_Click;
-            // 
-            // UpdateInfo
-            // 
-            resources.ApplyResources(UpdateInfo, "UpdateInfo");
-            UpdateInfo.Animated = true;
-            UpdateInfo.BackColor = Color.Transparent;
-            UpdateInfo.BorderColor = Color.Transparent;
-            UpdateInfo.Cursor = Cursors.Hand;
-            UpdateInfo.CustomizableEdges = customizableEdges21;
-            UpdateInfo.DisabledState.BorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateInfo.FillColor = Color.Transparent;
-            UpdateInfo.FocusedColor = Color.Transparent;
-            UpdateInfo.ForeColor = SystemColors.HighlightText;
-            UpdateInfo.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateInfo.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image9");
-            UpdateInfo.Image = (Image)resources.GetObject("UpdateInfo.Image");
-            UpdateInfo.ImageAlign = HorizontalAlignment.Left;
-            UpdateInfo.Name = "UpdateInfo";
-            UpdateInfo.PressedColor = Color.White;
-            UpdateInfo.ShadowDecoration.BorderRadius = 20;
-            UpdateInfo.ShadowDecoration.Color = Color.Transparent;
-            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            UpdateInfo.TextAlign = HorizontalAlignment.Left;
-            UpdateInfo.Click += UpdateInfo_Click;
-            // 
-            // AddAircraft
-            // 
-            resources.ApplyResources(AddAircraft, "AddAircraft");
-            AddAircraft.Animated = true;
-            AddAircraft.BackColor = Color.Transparent;
-            AddAircraft.BorderColor = Color.Transparent;
-            AddAircraft.Cursor = Cursors.Hand;
-            AddAircraft.CustomizableEdges = customizableEdges23;
-            AddAircraft.DisabledState.BorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddAircraft.FillColor = Color.Transparent;
-            AddAircraft.FocusedColor = Color.Transparent;
-            AddAircraft.ForeColor = SystemColors.HighlightText;
-            AddAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image10");
-            AddAircraft.Image = (Image)resources.GetObject("AddAircraft.Image");
-            AddAircraft.ImageAlign = HorizontalAlignment.Left;
-            AddAircraft.Name = "AddAircraft";
-            AddAircraft.PressedColor = Color.White;
-            AddAircraft.ShadowDecoration.BorderRadius = 20;
-            AddAircraft.ShadowDecoration.Color = Color.Transparent;
-            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            AddAircraft.TextAlign = HorizontalAlignment.Left;
-            AddAircraft.Click += AddAircraft_Click;
-            // 
-            // AddFlight
-            // 
-            resources.ApplyResources(AddFlight, "AddFlight");
-            AddFlight.Animated = true;
-            AddFlight.BackColor = Color.Transparent;
-            AddFlight.BorderColor = Color.Transparent;
-            AddFlight.Cursor = Cursors.Hand;
-            AddFlight.CustomizableEdges = customizableEdges25;
-            AddFlight.DisabledState.BorderColor = Color.DarkGray;
-            AddFlight.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddFlight.FillColor = Color.Transparent;
-            AddFlight.FocusedColor = Color.Transparent;
-            AddFlight.ForeColor = SystemColors.HighlightText;
-            AddFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddFlight.HoverState.Image = (Image)resources.GetObject("resource.Image11");
-            AddFlight.Image = (Image)resources.GetObject("AddFlight.Image");
-            AddFlight.ImageAlign = HorizontalAlignment.Left;
-            AddFlight.Name = "AddFlight";
-            AddFlight.PressedColor = Color.White;
-            AddFlight.ShadowDecoration.BorderRadius = 20;
-            AddFlight.ShadowDecoration.Color = Color.Transparent;
-            AddFlight.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            AddFlight.TextAlign = HorizontalAlignment.Left;
-            AddFlight.Click += AddFlight_Click;
-            // 
-            // SignOutButton
-            // 
-            resources.ApplyResources(SignOutButton, "SignOutButton");
-            SignOutButton.Animated = true;
-            SignOutButton.BackColor = Color.Transparent;
-            SignOutButton.BorderColor = Color.Transparent;
-            SignOutButton.Cursor = Cursors.Hand;
-            SignOutButton.CustomizableEdges = customizableEdges27;
-            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            SignOutButton.FillColor = Color.Transparent;
-            SignOutButton.FocusedColor = Color.Transparent;
-            SignOutButton.ForeColor = SystemColors.HighlightText;
-            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image12");
-            SignOutButton.Image = (Image)resources.GetObject("SignOutButton.Image");
-            SignOutButton.ImageAlign = HorizontalAlignment.Left;
-            SignOutButton.Name = "SignOutButton";
-            SignOutButton.PressedColor = Color.White;
-            SignOutButton.ShadowDecoration.BorderRadius = 20;
-            SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            SignOutButton.TextAlign = HorizontalAlignment.Left;
-            SignOutButton.Click += SignOutButton_Click;
             // 
             // MainMenu
             // 
@@ -504,15 +506,15 @@
         protected Guna.UI2.WinForms.Guna2Button signUpButton;
         protected Guna.UI2.WinForms.Guna2Button exploreFlightsButton;
         protected Guna.UI2.WinForms.Guna2Button helpButton;
-        protected Guna.UI2.WinForms.Guna2Button SignOutButton;
-        protected Guna.UI2.WinForms.Guna2Button UpdateAircraft;
-        protected Guna.UI2.WinForms.Guna2Button UpdateFlight;
-        protected Guna.UI2.WinForms.Guna2Button UpdateReservation;
-        protected Guna.UI2.WinForms.Guna2Button UpdateInfo;
-        protected Guna.UI2.WinForms.Guna2Button AddAircraft;
-        protected Guna.UI2.WinForms.Guna2Button AddFlight;
+        protected Guna.UI2.WinForms.Guna2Button signOutButton;
+        protected Guna.UI2.WinForms.Guna2Button updateAircraftButton;
+        protected Guna.UI2.WinForms.Guna2Button updateFlightButton;
+        protected Guna.UI2.WinForms.Guna2Button updateReservationButton;
+        protected Guna.UI2.WinForms.Guna2Button updateInfoButton;
+        protected Guna.UI2.WinForms.Guna2Button addAircraftButton;
+        protected Guna.UI2.WinForms.Guna2Button addFlightButton;
         protected Guna.UI2.WinForms.Guna2Button bookFlightButton;
-        protected Guna.UI2.WinForms.Guna2Button generateReport;
-        protected Guna.UI2.WinForms.Guna2Button customerReservations;
+        protected Guna.UI2.WinForms.Guna2Button generateReportButton;
+        protected Guna.UI2.WinForms.Guna2Button customerReservationsButton;
     }
 }

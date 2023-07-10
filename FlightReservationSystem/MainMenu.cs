@@ -6,12 +6,11 @@ using Guna.UI2.WinForms;
 namespace FlightReservationSystem
 {
     public partial class MainMenu : Form
-    {      
-        private readonly ErrorProvider errorProvider;
+    {
         protected static bool IsUserLoggedIn { get; set; } = false;
         protected static bool IsAdminLoggedIn { get; set; } = false;
 
-        protected string databaseConnection = "Server = DESKTOP-FOQJ9FO\\ABDELRAHMANDB; Initial Catalog = FlightReservationSystem; Integrated Security = true; User ID = sa; Password = Admin#123";
+        protected string databaseConnection = "Server = 34.122.92.128;Initial Catalog=FlightReservationSystem;Persist Security Info=True;User ID=sqlserver;Password=Admin#123";
 
         protected DataManager? dataManager;
         public MainMenu()
@@ -20,40 +19,60 @@ namespace FlightReservationSystem
             if (IsUserLoggedIn)
             {
                 contentSplitContainer.Panel1.Controls.Add(this.bookFlightButton);
-                this.contentSplitContainer.Panel1.Controls.Add(this.customerReservations);
-                contentSplitContainer.Panel1.Controls.Add(this.UpdateInfo);
-                contentSplitContainer.Panel1.Controls.Add(SignOutButton);
+                contentSplitContainer.Panel1.Controls.Add(this.customerReservationsButton);
+                contentSplitContainer.Panel1.Controls.Add(this.updateInfoButton);
+                contentSplitContainer.Panel1.Controls.Add(this.signOutButton);
 
             }
             else if (IsAdminLoggedIn)
             {
-                contentSplitContainer.Panel1.Controls.Add(this.UpdateAircraft);
-                contentSplitContainer.Panel1.Controls.Add(this.AddAircraft);
-                contentSplitContainer.Panel1.Controls.Add(this.AddFlight);
-                contentSplitContainer.Panel1.Controls.Add(this.UpdateFlight);
-                contentSplitContainer.Panel1.Controls.Add(this.UpdateReservation);
-                contentSplitContainer.Panel1.Controls.Add(SignOutButton);
-                this.contentSplitContainer.Panel1.Controls.Add(this.generateReport);
+                contentSplitContainer.Panel1.Controls.Add(this.updateAircraftButton);
+                contentSplitContainer.Panel1.Controls.Add(this.addAircraftButton);
+                contentSplitContainer.Panel1.Controls.Add(this.addFlightButton);
+                contentSplitContainer.Panel1.Controls.Add(this.updateFlightButton);
+                contentSplitContainer.Panel1.Controls.Add(this.updateReservationButton);
+                contentSplitContainer.Panel1.Controls.Add(this.signOutButton);
+                contentSplitContainer.Panel1.Controls.Add(this.generateReportButton);
             }
             else
             {
-                this.contentSplitContainer.Panel1.Controls.Add(this.signInButton);
-                this.contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
+                contentSplitContainer.Panel1.Controls.Add(this.signInButton);
+                contentSplitContainer.Panel1.Controls.Add(this.signUpButton);
             }
-            errorProvider = new ErrorProvider
-            {
-                BlinkStyle = ErrorBlinkStyle.NeverBlink
-            };
+
         }
-        protected void SetAuthenticatorError(string error, Control obj)
+
+        protected static void FillTimeComboBoxes(List<Guna2ComboBox> hoursComboBoxes, List<Guna2ComboBox> minutesComboBoxes, List<Guna2ComboBox> middayComboBoxes)
         {
-            errorProvider.SetError(obj, error);
-            obj.Focus();
+            List<string> Hours = new();
+            for (int i = 1; i <= 12; i++)
+            {
+                Hours.Add(i.ToString());
+            }
+            List<string> Minutes = new();
+            for (int i = 1; i <= 60; i++)
+            {
+                Minutes.Add(i.ToString());
+            }
+            string[] middayStatus = { "AM", "PM" };
+            foreach (Guna2ComboBox hourComboBox in hoursComboBoxes)
+            {
+                hourComboBox.DataSource = Hours.ToArray();
+            }
+            foreach (Guna2ComboBox minutesComboBox in minutesComboBoxes)
+            {
+                minutesComboBox.DataSource = Minutes.ToArray();
+            }
+            foreach (Guna2ComboBox middayComboBox in middayComboBoxes)
+            {
+                middayComboBox.DataSource = middayStatus.ToArray();
+            }
         }
-        
+
         private void OpenForm(MainMenu form)
         {
             form.Show();
+            form.WindowState = this.WindowState;
             this.Hide();
         }
         protected static void ChangeButton(Guna2Button button)
@@ -113,6 +132,13 @@ namespace FlightReservationSystem
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
+            Customer.Instance.PhoneNumber = null;
+            Customer.Instance.Fname = null;
+            Customer.Instance.Lname = null;
+            Customer.Instance.Password = null;
+            Customer.Instance.Identifier = null;
+            Customer.Instance.Email = null;
+            Customer.Instance.Id = null;
             IsUserLoggedIn = false;
             IsAdminLoggedIn = false;
             this.Close();
@@ -145,7 +171,7 @@ namespace FlightReservationSystem
             sb.AppendLine(string.Join(",", columnNames));
             foreach (DataRow row in dataTable.Rows)
             {
-                IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());
+                IEnumerable<string?> fields = row.ItemArray.Select(field => field?.ToString());
                 sb.AppendLine(string.Join(",", fields));
             }
             File.WriteAllText(filePath, sb.ToString());

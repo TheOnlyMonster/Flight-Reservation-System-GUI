@@ -39,7 +39,7 @@ create table AircraftDispatchControl (
 
 CREATE TABLE Flight (
     FlightNo INT PRIMARY KEY IDENTITY(1,1),
-    AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) ON DELETE SET NULL,
+    AircraftID INT FOREIGN KEY REFERENCES Aircraft(AircraftID) ON DELETE cascade,
     DeptDate VARCHAR(50) NOT NULL,
     ExpectedArrival VARCHAR(50) NOT NULL,
     ArrivalCountry VARCHAR(50) NOT NULL,

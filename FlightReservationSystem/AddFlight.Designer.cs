@@ -31,57 +31,96 @@ namespace FlightReservationSystem
         private new void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFlight));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges65 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges66 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            addFlightLabel = new Label();
-            ArrivalTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            RankATextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            RankBTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            RankCTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            DepatureTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            SeatsNumericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            DepartureDateTimePicker3 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ExpectedDateTimePicker4 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            AddButton = new Guna.UI2.WinForms.Guna2Button();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            arrivalCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankAPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankBPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankCPriceTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            deptCountryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            availableSeatsLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            deptDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            deptDateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            arrivalDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            arrivalDateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            submitButton = new Guna.UI2.WinForms.Guna2Button();
+            aircaftIDComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            modelTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankASeatsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankBSeatsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            rankCSeatsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            availableSeatsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            arrivalMiddayStatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            arrivalMinutesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            arrivalHourComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            arrivalMinutesLabel = new Label();
+            arrivalHoursLabel = new Label();
+            deptMiddayStatusComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deptMinutesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deptHourComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deptMinutesLabel = new Label();
+            deptHoursLabel = new Label();
+            rankASeatsLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            rankBSeatsLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            rankCSeatsLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            aircraftIDLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            modelLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).BeginInit();
             contentSplitContainer.Panel1.SuspendLayout();
             contentSplitContainer.Panel2.SuspendLayout();
             contentSplitContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)SeatsNumericUpDown).BeginInit();
             SuspendLayout();
             // 
             // contentSplitContainer
@@ -92,485 +131,654 @@ namespace FlightReservationSystem
             // 
             contentSplitContainer.Panel2.BackgroundImage = (Image)resources.GetObject("contentSplitContainer.Panel2.BackgroundImage");
             contentSplitContainer.Panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            contentSplitContainer.Panel2.Controls.Add(this.AircaftIDComboBox);
-            contentSplitContainer.Panel2.Controls.Add(AddButton);
-            contentSplitContainer.Panel2.Controls.Add(guna2HtmlLabel3);
-            contentSplitContainer.Panel2.Controls.Add(guna2HtmlLabel2);
-            contentSplitContainer.Panel2.Controls.Add(guna2HtmlLabel1);
-            contentSplitContainer.Panel2.Controls.Add(ExpectedDateTimePicker4);
-            contentSplitContainer.Panel2.Controls.Add(DepartureDateTimePicker3);
-            contentSplitContainer.Panel2.Controls.Add(DepatureTextBox);
-            contentSplitContainer.Panel2.Controls.Add(RankCTextBox);
-            contentSplitContainer.Panel2.Controls.Add(RankBTextBox);
-            contentSplitContainer.Panel2.Controls.Add(RankATextBox);
-            contentSplitContainer.Panel2.Controls.Add(ArrivalTextBox);
-            contentSplitContainer.Panel2.Controls.Add(SeatsNumericUpDown);
-            contentSplitContainer.Panel2.Controls.Add(addFlightLabel);
-            contentSplitContainer.Size = new Size(1477, 756);
-            contentSplitContainer.SplitterDistance = 285;
+            contentSplitContainer.Panel2.Controls.Add(modelLabel);
+            contentSplitContainer.Panel2.Controls.Add(aircraftIDLabel);
+            contentSplitContainer.Panel2.Controls.Add(rankCSeatsLabel);
+            contentSplitContainer.Panel2.Controls.Add(rankBSeatsLabel);
+            contentSplitContainer.Panel2.Controls.Add(rankASeatsLabel);
+            contentSplitContainer.Panel2.Controls.Add(arrivalMiddayStatusComboBox);
+            contentSplitContainer.Panel2.Controls.Add(arrivalMinutesComboBox);
+            contentSplitContainer.Panel2.Controls.Add(arrivalHourComboBox);
+            contentSplitContainer.Panel2.Controls.Add(arrivalMinutesLabel);
+            contentSplitContainer.Panel2.Controls.Add(arrivalHoursLabel);
+            contentSplitContainer.Panel2.Controls.Add(deptMiddayStatusComboBox);
+            contentSplitContainer.Panel2.Controls.Add(deptMinutesComboBox);
+            contentSplitContainer.Panel2.Controls.Add(deptHourComboBox);
+            contentSplitContainer.Panel2.Controls.Add(deptMinutesLabel);
+            contentSplitContainer.Panel2.Controls.Add(deptHoursLabel);
+            contentSplitContainer.Panel2.Controls.Add(availableSeatsTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankCSeatsTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankBSeatsTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankASeatsTextBox);
+            contentSplitContainer.Panel2.Controls.Add(modelTextBox);
+            contentSplitContainer.Panel2.Controls.Add(aircaftIDComboBox);
+            contentSplitContainer.Panel2.Controls.Add(submitButton);
+            contentSplitContainer.Panel2.Controls.Add(arrivalDateLabel);
+            contentSplitContainer.Panel2.Controls.Add(deptDateLabel);
+            contentSplitContainer.Panel2.Controls.Add(availableSeatsLabel);
+            contentSplitContainer.Panel2.Controls.Add(arrivalDateTimePicker);
+            contentSplitContainer.Panel2.Controls.Add(deptDateTimePicker);
+            contentSplitContainer.Panel2.Controls.Add(deptCountryTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankCPriceTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankBPriceTextBox);
+            contentSplitContainer.Panel2.Controls.Add(rankAPriceTextBox);
+            contentSplitContainer.Panel2.Controls.Add(arrivalCountryTextBox);
             // 
-            // signInButton
+            // arrivalCountryTextBox
             // 
-            signInButton.DialogResult = DialogResult.None;
-            signInButton.DisabledState.BorderColor = Color.DarkGray;
-            signInButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signInButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signInButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signInButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signInButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signInButton.HoverState.Image = (Image)resources.GetObject("resource.Image1");
-            signInButton.ShadowDecoration.BorderRadius = 20;
-            signInButton.ShadowDecoration.Color = Color.Transparent;
-            signInButton.ShadowDecoration.CustomizableEdges = customizableEdges54;
-            signInButton.Size = new Size(285, 50);
+            arrivalCountryTextBox.BackColor = Color.Transparent;
+            arrivalCountryTextBox.BorderRadius = 20;
+            arrivalCountryTextBox.CustomizableEdges = customizableEdges39;
+            arrivalCountryTextBox.DefaultText = "";
+            arrivalCountryTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            arrivalCountryTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            arrivalCountryTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            arrivalCountryTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            arrivalCountryTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            arrivalCountryTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalCountryTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalCountryTextBox.Location = new Point(628, 193);
+            arrivalCountryTextBox.Margin = new Padding(3, 2, 3, 2);
+            arrivalCountryTextBox.Name = "arrivalCountryTextBox";
+            arrivalCountryTextBox.PasswordChar = '\0';
+            arrivalCountryTextBox.PlaceholderForeColor = Color.Gray;
+            arrivalCountryTextBox.PlaceholderText = "Arrival Country";
+            arrivalCountryTextBox.SelectedText = "";
+            arrivalCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            arrivalCountryTextBox.Size = new Size(200, 36);
+            arrivalCountryTextBox.TabIndex = 47;
             // 
-            // signUpButton
+            // rankAPriceTextBox
             // 
-            signUpButton.DialogResult = DialogResult.None;
-            signUpButton.DisabledState.BorderColor = Color.DarkGray;
-            signUpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            signUpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            signUpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            signUpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            signUpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            signUpButton.HoverState.Image = (Image)resources.GetObject("resource.Image2");
-            signUpButton.ShadowDecoration.BorderRadius = 20;
-            signUpButton.ShadowDecoration.Color = Color.Transparent;
-            signUpButton.ShadowDecoration.CustomizableEdges = customizableEdges55;
-            signUpButton.Size = new Size(285, 50);
+            rankAPriceTextBox.BackColor = Color.Transparent;
+            rankAPriceTextBox.BorderRadius = 20;
+            rankAPriceTextBox.CustomizableEdges = customizableEdges37;
+            rankAPriceTextBox.DefaultText = "";
+            rankAPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankAPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankAPriceTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankAPriceTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankAPriceTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankAPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankAPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankAPriceTextBox.Location = new Point(629, 427);
+            rankAPriceTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankAPriceTextBox.Name = "rankAPriceTextBox";
+            rankAPriceTextBox.PasswordChar = '\0';
+            rankAPriceTextBox.PlaceholderForeColor = Color.Gray;
+            rankAPriceTextBox.PlaceholderText = "Rank A Price";
+            rankAPriceTextBox.SelectedText = "";
+            rankAPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            rankAPriceTextBox.Size = new Size(200, 36);
+            rankAPriceTextBox.TabIndex = 49;
             // 
-            // exploreFlightsButton
+            // rankBPriceTextBox
             // 
-            exploreFlightsButton.DialogResult = DialogResult.None;
-            exploreFlightsButton.DisabledState.BorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            exploreFlightsButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            exploreFlightsButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            exploreFlightsButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            exploreFlightsButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            exploreFlightsButton.HoverState.Image = (Image)resources.GetObject("resource.Image3");
-            exploreFlightsButton.ShadowDecoration.BorderRadius = 20;
-            exploreFlightsButton.ShadowDecoration.Color = Color.Transparent;
-            exploreFlightsButton.ShadowDecoration.CustomizableEdges = customizableEdges56;
-            exploreFlightsButton.Size = new Size(285, 50);
+            rankBPriceTextBox.BackColor = Color.Transparent;
+            rankBPriceTextBox.BorderRadius = 20;
+            rankBPriceTextBox.CustomizableEdges = customizableEdges35;
+            rankBPriceTextBox.DefaultText = "";
+            rankBPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankBPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankBPriceTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankBPriceTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankBPriceTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankBPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankBPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankBPriceTextBox.Location = new Point(629, 484);
+            rankBPriceTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankBPriceTextBox.Name = "rankBPriceTextBox";
+            rankBPriceTextBox.PasswordChar = '\0';
+            rankBPriceTextBox.PlaceholderForeColor = Color.Gray;
+            rankBPriceTextBox.PlaceholderText = "Rank B Price";
+            rankBPriceTextBox.SelectedText = "";
+            rankBPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            rankBPriceTextBox.Size = new Size(200, 36);
+            rankBPriceTextBox.TabIndex = 50;
             // 
-            // helpButton
+            // rankCPriceTextBox
             // 
-            helpButton.DialogResult = DialogResult.None;
-            helpButton.DisabledState.BorderColor = Color.DarkGray;
-            helpButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            helpButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            helpButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            helpButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            helpButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            helpButton.HoverState.Image = (Image)resources.GetObject("resource.Image4");
-            helpButton.Location = new Point(0, 693);
-            helpButton.ShadowDecoration.BorderRadius = 20;
-            helpButton.ShadowDecoration.Color = Color.Transparent;
-            helpButton.ShadowDecoration.CustomizableEdges = customizableEdges57;
-            helpButton.Size = new Size(285, 63);
+            rankCPriceTextBox.BackColor = Color.Transparent;
+            rankCPriceTextBox.BorderRadius = 20;
+            rankCPriceTextBox.CustomizableEdges = customizableEdges33;
+            rankCPriceTextBox.DefaultText = "";
+            rankCPriceTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankCPriceTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankCPriceTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankCPriceTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankCPriceTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankCPriceTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankCPriceTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankCPriceTextBox.Location = new Point(629, 540);
+            rankCPriceTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankCPriceTextBox.Name = "rankCPriceTextBox";
+            rankCPriceTextBox.PasswordChar = '\0';
+            rankCPriceTextBox.PlaceholderForeColor = Color.Gray;
+            rankCPriceTextBox.PlaceholderText = "Rank C Price";
+            rankCPriceTextBox.SelectedText = "";
+            rankCPriceTextBox.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            rankCPriceTextBox.Size = new Size(200, 36);
+            rankCPriceTextBox.TabIndex = 51;
             // 
-            // SignOutButton
+            // deptCountryTextBox
             // 
-            SignOutButton.DialogResult = DialogResult.None;
-            SignOutButton.DisabledState.BorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            SignOutButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            SignOutButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            SignOutButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            SignOutButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            SignOutButton.HoverState.Image = (Image)resources.GetObject("resource.Image5");
-            SignOutButton.ShadowDecoration.BorderRadius = 20;
-            SignOutButton.ShadowDecoration.Color = Color.Transparent;
-            SignOutButton.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            deptCountryTextBox.BackColor = Color.Transparent;
+            deptCountryTextBox.BorderRadius = 20;
+            deptCountryTextBox.CustomizableEdges = customizableEdges31;
+            deptCountryTextBox.DefaultText = "";
+            deptCountryTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            deptCountryTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            deptCountryTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            deptCountryTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            deptCountryTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            deptCountryTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deptCountryTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptCountryTextBox.Location = new Point(399, 193);
+            deptCountryTextBox.Margin = new Padding(3, 2, 3, 2);
+            deptCountryTextBox.Name = "deptCountryTextBox";
+            deptCountryTextBox.PasswordChar = '\0';
+            deptCountryTextBox.PlaceholderForeColor = Color.Gray;
+            deptCountryTextBox.PlaceholderText = "Departure Country";
+            deptCountryTextBox.SelectedText = "";
+            deptCountryTextBox.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            deptCountryTextBox.Size = new Size(200, 36);
+            deptCountryTextBox.TabIndex = 52;
             // 
-            // UpdateAircraft
+            // availableSeatsLabel
             // 
-            UpdateAircraft.DialogResult = DialogResult.None;
-            UpdateAircraft.DisabledState.BorderColor = Color.DarkGray;
-            UpdateAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image6");
-            UpdateAircraft.ShadowDecoration.BorderRadius = 20;
-            UpdateAircraft.ShadowDecoration.Color = Color.Transparent;
-            UpdateAircraft.ShadowDecoration.CustomizableEdges = customizableEdges59;
+            availableSeatsLabel.BackColor = Color.Transparent;
+            availableSeatsLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            availableSeatsLabel.ForeColor = SystemColors.ButtonHighlight;
+            availableSeatsLabel.Location = new Point(741, 96);
+            availableSeatsLabel.Name = "availableSeatsLabel";
+            availableSeatsLabel.Size = new Size(108, 22);
+            availableSeatsLabel.TabIndex = 54;
+            availableSeatsLabel.Text = "Available Seats";
+            availableSeatsLabel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // UpdateFlight
+            // deptDateTimePicker
             // 
-            UpdateFlight.DialogResult = DialogResult.None;
-            UpdateFlight.DisabledState.BorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateFlight.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateFlight.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateFlight.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateFlight.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateFlight.HoverState.Image = (Image)resources.GetObject("resource.Image7");
-            UpdateFlight.ShadowDecoration.BorderRadius = 20;
-            UpdateFlight.ShadowDecoration.Color = Color.Transparent;
-            UpdateFlight.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            deptDateTimePicker.BackColor = Color.Transparent;
+            deptDateTimePicker.BorderRadius = 20;
+            deptDateTimePicker.Checked = true;
+            deptDateTimePicker.CustomizableEdges = customizableEdges29;
+            deptDateTimePicker.FillColor = SystemColors.MenuHighlight;
+            deptDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deptDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
+            deptDateTimePicker.Format = DateTimePickerFormat.Custom;
+            deptDateTimePicker.Location = new Point(367, 280);
+            deptDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            deptDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            deptDateTimePicker.Name = "deptDateTimePicker";
+            deptDateTimePicker.Padding = new Padding(5);
+            deptDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            deptDateTimePicker.Size = new Size(200, 36);
+            deptDateTimePicker.TabIndex = 55;
+            deptDateTimePicker.Value = new DateTime(2023, 5, 22, 0, 0, 0, 0);
             // 
-            // UpdateReservation
+            // deptDateLabel
             // 
-            UpdateReservation.DialogResult = DialogResult.None;
-            UpdateReservation.DisabledState.BorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateReservation.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateReservation.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateReservation.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateReservation.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateReservation.HoverState.Image = (Image)resources.GetObject("resource.Image8");
-            UpdateReservation.ShadowDecoration.BorderRadius = 20;
-            UpdateReservation.ShadowDecoration.Color = Color.Transparent;
-            UpdateReservation.ShadowDecoration.CustomizableEdges = customizableEdges61;
+            deptDateLabel.BackColor = Color.Transparent;
+            deptDateLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            deptDateLabel.ForeColor = SystemColors.ButtonHighlight;
+            deptDateLabel.Location = new Point(238, 286);
+            deptDateLabel.Name = "deptDateLabel";
+            deptDateLabel.Size = new Size(111, 22);
+            deptDateLabel.TabIndex = 56;
+            deptDateLabel.Text = "Departure Date";
+            deptDateLabel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // UpdateInfo
+            // arrivalDateTimePicker
             // 
-            UpdateInfo.DialogResult = DialogResult.None;
-            UpdateInfo.DisabledState.BorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.CustomBorderColor = Color.DarkGray;
-            UpdateInfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            UpdateInfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            UpdateInfo.HoverState.FillColor = SystemColors.ButtonHighlight;
-            UpdateInfo.HoverState.ForeColor = SystemColors.MenuHighlight;
-            UpdateInfo.HoverState.Image = (Image)resources.GetObject("resource.Image9");
-            UpdateInfo.ShadowDecoration.BorderRadius = 20;
-            UpdateInfo.ShadowDecoration.Color = Color.Transparent;
-            UpdateInfo.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            arrivalDateTimePicker.BackColor = Color.Transparent;
+            arrivalDateTimePicker.BorderRadius = 20;
+            arrivalDateTimePicker.Checked = true;
+            arrivalDateTimePicker.CustomizableEdges = customizableEdges27;
+            arrivalDateTimePicker.FillColor = SystemColors.MenuHighlight;
+            arrivalDateTimePicker.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalDateTimePicker.ForeColor = SystemColors.ButtonHighlight;
+            arrivalDateTimePicker.Format = DateTimePickerFormat.Custom;
+            arrivalDateTimePicker.Location = new Point(367, 347);
+            arrivalDateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            arrivalDateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            arrivalDateTimePicker.Name = "arrivalDateTimePicker";
+            arrivalDateTimePicker.Padding = new Padding(5);
+            arrivalDateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            arrivalDateTimePicker.Size = new Size(200, 36);
+            arrivalDateTimePicker.TabIndex = 57;
+            arrivalDateTimePicker.Value = new DateTime(2023, 5, 22, 0, 0, 0, 0);
             // 
-            // AddAircraft
+            // arrivalDateLabel
             // 
-            AddAircraft.DialogResult = DialogResult.None;
-            AddAircraft.DisabledState.BorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddAircraft.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddAircraft.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddAircraft.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddAircraft.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddAircraft.HoverState.Image = (Image)resources.GetObject("resource.Image10");
-            AddAircraft.ShadowDecoration.BorderRadius = 20;
-            AddAircraft.ShadowDecoration.Color = Color.Transparent;
-            AddAircraft.ShadowDecoration.CustomizableEdges = customizableEdges63;
+            arrivalDateLabel.BackColor = Color.Transparent;
+            arrivalDateLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            arrivalDateLabel.ForeColor = SystemColors.ButtonHighlight;
+            arrivalDateLabel.Location = new Point(262, 354);
+            arrivalDateLabel.Name = "arrivalDateLabel";
+            arrivalDateLabel.Size = new Size(87, 22);
+            arrivalDateLabel.TabIndex = 58;
+            arrivalDateLabel.Text = "Arrival Date";
+            arrivalDateLabel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // bookFlightButton
+            // submitButton
             // 
-            bookFlightButton.DialogResult = DialogResult.None;
-            bookFlightButton.DisabledState.BorderColor = Color.DarkGray;
-            bookFlightButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            bookFlightButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            bookFlightButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            bookFlightButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            bookFlightButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            bookFlightButton.HoverState.Image = (Image)resources.GetObject("resource.Image11");
-            bookFlightButton.ShadowDecoration.BorderRadius = 20;
-            bookFlightButton.ShadowDecoration.Color = Color.Transparent;
-            bookFlightButton.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            submitButton.Animated = true;
+            submitButton.BackColor = Color.Transparent;
+            submitButton.BorderColor = Color.Transparent;
+            submitButton.BorderRadius = 20;
+            submitButton.Cursor = Cursors.Hand;
+            submitButton.CustomizableEdges = customizableEdges25;
+            submitButton.DisabledState.BorderColor = Color.DarkGray;
+            submitButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            submitButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            submitButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            submitButton.FillColor = Color.Transparent;
+            submitButton.FocusedColor = Color.Transparent;
+            submitButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            submitButton.ForeColor = SystemColors.HighlightText;
+            submitButton.HoverState.FillColor = SystemColors.ButtonHighlight;
+            submitButton.HoverState.ForeColor = SystemColors.MenuHighlight;
+            submitButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
+            submitButton.Image = Properties.Resources.FlightWhite;
+            submitButton.ImageAlign = HorizontalAlignment.Left;
+            submitButton.Location = new Point(565, 620);
+            submitButton.Name = "submitButton";
+            submitButton.Padding = new Padding(5);
+            submitButton.PressedColor = Color.White;
+            submitButton.ShadowDecoration.BorderRadius = 20;
+            submitButton.ShadowDecoration.Color = Color.Transparent;
+            submitButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            submitButton.Size = new Size(161, 37);
+            submitButton.TabIndex = 59;
+            submitButton.Text = "Submit";
+            submitButton.Click += SubmitButton_Click;
             // 
-            // generateReport
+            // aircaftIDComboBox
             // 
-            generateReport.DialogResult = DialogResult.None;
-            generateReport.DisabledState.BorderColor = Color.DarkGray;
-            generateReport.DisabledState.CustomBorderColor = Color.DarkGray;
-            generateReport.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            generateReport.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            generateReport.HoverState.FillColor = SystemColors.ButtonHighlight;
-            generateReport.HoverState.ForeColor = SystemColors.MenuHighlight;
-            generateReport.HoverState.Image = (Image)resources.GetObject("resource.Image12");
-            generateReport.ShadowDecoration.BorderRadius = 20;
-            generateReport.ShadowDecoration.Color = Color.Transparent;
-            generateReport.ShadowDecoration.CustomizableEdges = customizableEdges65;
+            aircaftIDComboBox.BackColor = Color.Transparent;
+            aircaftIDComboBox.BorderRadius = 20;
+            aircaftIDComboBox.CustomizableEdges = customizableEdges23;
+            aircaftIDComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            aircaftIDComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            aircaftIDComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            aircaftIDComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            aircaftIDComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            aircaftIDComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            aircaftIDComboBox.FormattingEnabled = true;
+            aircaftIDComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            aircaftIDComboBox.ItemHeight = 30;
+            aircaftIDComboBox.Location = new Point(308, 127);
+            aircaftIDComboBox.Name = "aircaftIDComboBox";
+            aircaftIDComboBox.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            aircaftIDComboBox.Size = new Size(133, 36);
+            aircaftIDComboBox.TabIndex = 34;
+            aircaftIDComboBox.TextAlign = HorizontalAlignment.Center;
+            aircaftIDComboBox.DropDown += AircaftIDComboBox_DropDown;
+            aircaftIDComboBox.TextChanged += AircaftIDComboBox_TextChanged;
             // 
-            // customerReservations
+            // modelTextBox
             // 
-            customerReservations.DialogResult = DialogResult.None;
-            customerReservations.DisabledState.BorderColor = Color.DarkGray;
-            customerReservations.DisabledState.CustomBorderColor = Color.DarkGray;
-            customerReservations.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            customerReservations.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            customerReservations.HoverState.FillColor = SystemColors.ButtonHighlight;
-            customerReservations.HoverState.ForeColor = SystemColors.MenuHighlight;
-            customerReservations.HoverState.Image = (Image)resources.GetObject("resource.Image13");
-            customerReservations.ShadowDecoration.BorderRadius = 20;
-            customerReservations.ShadowDecoration.Color = Color.Transparent;
-            customerReservations.ShadowDecoration.CustomizableEdges = customizableEdges66;
+            modelTextBox.BackColor = Color.Transparent;
+            modelTextBox.BorderRadius = 20;
+            modelTextBox.CustomizableEdges = customizableEdges21;
+            modelTextBox.DefaultText = "";
+            modelTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            modelTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            modelTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            modelTextBox.FillColor = Color.WhiteSmoke;
+            modelTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            modelTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            modelTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            modelTextBox.Location = new Point(468, 127);
+            modelTextBox.Margin = new Padding(3, 2, 3, 2);
+            modelTextBox.Name = "modelTextBox";
+            modelTextBox.PasswordChar = '\0';
+            modelTextBox.PlaceholderForeColor = Color.Gray;
+            modelTextBox.PlaceholderText = "";
+            modelTextBox.ReadOnly = true;
+            modelTextBox.SelectedText = "";
+            modelTextBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            modelTextBox.Size = new Size(200, 36);
+            modelTextBox.TabIndex = 60;
             // 
-            // addFlightLabel
+            // rankASeatsTextBox
             // 
-            addFlightLabel.BackColor = Color.Transparent;
-            addFlightLabel.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            addFlightLabel.ForeColor = SystemColors.ButtonFace;
-            addFlightLabel.Location = new Point(498, 99);
-            addFlightLabel.Name = "addFlightLabel";
-            addFlightLabel.Size = new Size(153, 32);
-            addFlightLabel.TabIndex = 21;
-            addFlightLabel.Text = "Add Flight\r\n";
-            addFlightLabel.TextAlign = ContentAlignment.MiddleCenter;
+            rankASeatsTextBox.BackColor = Color.Transparent;
+            rankASeatsTextBox.BorderRadius = 20;
+            rankASeatsTextBox.CustomizableEdges = customizableEdges19;
+            rankASeatsTextBox.DefaultText = "";
+            rankASeatsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankASeatsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankASeatsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankASeatsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankASeatsTextBox.FillColor = Color.WhiteSmoke;
+            rankASeatsTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankASeatsTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankASeatsTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankASeatsTextBox.Location = new Point(405, 427);
+            rankASeatsTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankASeatsTextBox.Name = "rankASeatsTextBox";
+            rankASeatsTextBox.PasswordChar = '\0';
+            rankASeatsTextBox.PlaceholderForeColor = Color.Gray;
+            rankASeatsTextBox.PlaceholderText = "";
+            rankASeatsTextBox.ReadOnly = true;
+            rankASeatsTextBox.SelectedText = "";
+            rankASeatsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            rankASeatsTextBox.Size = new Size(200, 36);
+            rankASeatsTextBox.TabIndex = 61;
             // 
-            // ArrivalTextBox
+            // rankBSeatsTextBox
             // 
-            ArrivalTextBox.BackColor = Color.Transparent;
-            ArrivalTextBox.BorderRadius = 20;
-            ArrivalTextBox.CustomizableEdges = customizableEdges50;
-            ArrivalTextBox.DefaultText = "";
-            ArrivalTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ArrivalTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ArrivalTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ArrivalTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ArrivalTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            ArrivalTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ArrivalTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            ArrivalTextBox.Location = new Point(597, 243);
-            ArrivalTextBox.Margin = new Padding(3, 2, 3, 2);
-            ArrivalTextBox.Name = "ArrivalTextBox";
-            ArrivalTextBox.PasswordChar = '\0';
-            ArrivalTextBox.PlaceholderForeColor = Color.Gray;
-            ArrivalTextBox.PlaceholderText = "Arrival Country";
-            ArrivalTextBox.SelectedText = "";
-            ArrivalTextBox.ShadowDecoration.CustomizableEdges = customizableEdges51;
-            ArrivalTextBox.Size = new Size(200, 36);
-            ArrivalTextBox.TabIndex = 47;
+            rankBSeatsTextBox.BackColor = Color.Transparent;
+            rankBSeatsTextBox.BorderRadius = 20;
+            rankBSeatsTextBox.CustomizableEdges = customizableEdges17;
+            rankBSeatsTextBox.DefaultText = "";
+            rankBSeatsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankBSeatsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankBSeatsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankBSeatsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankBSeatsTextBox.FillColor = Color.WhiteSmoke;
+            rankBSeatsTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankBSeatsTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankBSeatsTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankBSeatsTextBox.Location = new Point(405, 484);
+            rankBSeatsTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankBSeatsTextBox.Name = "rankBSeatsTextBox";
+            rankBSeatsTextBox.PasswordChar = '\0';
+            rankBSeatsTextBox.PlaceholderForeColor = Color.Gray;
+            rankBSeatsTextBox.PlaceholderText = "";
+            rankBSeatsTextBox.ReadOnly = true;
+            rankBSeatsTextBox.SelectedText = "";
+            rankBSeatsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            rankBSeatsTextBox.Size = new Size(200, 36);
+            rankBSeatsTextBox.TabIndex = 62;
             // 
-            // RankATextBox
+            // rankCSeatsTextBox
             // 
-            RankATextBox.BackColor = Color.Transparent;
-            RankATextBox.BorderRadius = 20;
-            RankATextBox.CustomizableEdges = customizableEdges48;
-            RankATextBox.DefaultText = "";
-            RankATextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            RankATextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            RankATextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            RankATextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            RankATextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            RankATextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            RankATextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            RankATextBox.Location = new Point(271, 396);
-            RankATextBox.Margin = new Padding(3, 2, 3, 2);
-            RankATextBox.Name = "RankATextBox";
-            RankATextBox.PasswordChar = '\0';
-            RankATextBox.PlaceholderForeColor = Color.Gray;
-            RankATextBox.PlaceholderText = "Rank A Price";
-            RankATextBox.SelectedText = "";
-            RankATextBox.ShadowDecoration.CustomizableEdges = customizableEdges49;
-            RankATextBox.Size = new Size(200, 36);
-            RankATextBox.TabIndex = 49;
+            rankCSeatsTextBox.BackColor = Color.Transparent;
+            rankCSeatsTextBox.BorderRadius = 20;
+            rankCSeatsTextBox.CustomizableEdges = customizableEdges15;
+            rankCSeatsTextBox.DefaultText = "";
+            rankCSeatsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            rankCSeatsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            rankCSeatsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            rankCSeatsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            rankCSeatsTextBox.FillColor = Color.WhiteSmoke;
+            rankCSeatsTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            rankCSeatsTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            rankCSeatsTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            rankCSeatsTextBox.Location = new Point(405, 540);
+            rankCSeatsTextBox.Margin = new Padding(3, 2, 3, 2);
+            rankCSeatsTextBox.Name = "rankCSeatsTextBox";
+            rankCSeatsTextBox.PasswordChar = '\0';
+            rankCSeatsTextBox.PlaceholderForeColor = Color.Gray;
+            rankCSeatsTextBox.PlaceholderText = "";
+            rankCSeatsTextBox.ReadOnly = true;
+            rankCSeatsTextBox.SelectedText = "";
+            rankCSeatsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            rankCSeatsTextBox.Size = new Size(200, 36);
+            rankCSeatsTextBox.TabIndex = 63;
             // 
-            // RankBTextBox
+            // availableSeatsTextBox
             // 
-            RankBTextBox.BackColor = Color.Transparent;
-            RankBTextBox.BorderRadius = 20;
-            RankBTextBox.CustomizableEdges = customizableEdges46;
-            RankBTextBox.DefaultText = "";
-            RankBTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            RankBTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            RankBTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            RankBTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            RankBTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            RankBTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            RankBTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            RankBTextBox.Location = new Point(488, 396);
-            RankBTextBox.Margin = new Padding(3, 2, 3, 2);
-            RankBTextBox.Name = "RankBTextBox";
-            RankBTextBox.PasswordChar = '\0';
-            RankBTextBox.PlaceholderForeColor = Color.Gray;
-            RankBTextBox.PlaceholderText = "Rank B Price";
-            RankBTextBox.SelectedText = "";
-            RankBTextBox.ShadowDecoration.CustomizableEdges = customizableEdges47;
-            RankBTextBox.Size = new Size(200, 36);
-            RankBTextBox.TabIndex = 50;
+            availableSeatsTextBox.BackColor = Color.Transparent;
+            availableSeatsTextBox.BorderRadius = 20;
+            availableSeatsTextBox.CustomizableEdges = customizableEdges13;
+            availableSeatsTextBox.DefaultText = "";
+            availableSeatsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            availableSeatsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            availableSeatsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            availableSeatsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            availableSeatsTextBox.FillColor = Color.WhiteSmoke;
+            availableSeatsTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
+            availableSeatsTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            availableSeatsTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            availableSeatsTextBox.Location = new Point(695, 127);
+            availableSeatsTextBox.Margin = new Padding(3, 2, 3, 2);
+            availableSeatsTextBox.Name = "availableSeatsTextBox";
+            availableSeatsTextBox.PasswordChar = '\0';
+            availableSeatsTextBox.PlaceholderForeColor = Color.Gray;
+            availableSeatsTextBox.PlaceholderText = "";
+            availableSeatsTextBox.ReadOnly = true;
+            availableSeatsTextBox.SelectedText = "";
+            availableSeatsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            availableSeatsTextBox.Size = new Size(200, 36);
+            availableSeatsTextBox.TabIndex = 64;
             // 
-            // RankCTextBox
+            // arrivalMiddayStatusComboBox
             // 
-            RankCTextBox.BackColor = Color.Transparent;
-            RankCTextBox.BorderRadius = 20;
-            RankCTextBox.CustomizableEdges = customizableEdges44;
-            RankCTextBox.DefaultText = "";
-            RankCTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            RankCTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            RankCTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            RankCTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            RankCTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            RankCTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            RankCTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            RankCTextBox.Location = new Point(705, 395);
-            RankCTextBox.Margin = new Padding(3, 2, 3, 2);
-            RankCTextBox.Name = "RankCTextBox";
-            RankCTextBox.PasswordChar = '\0';
-            RankCTextBox.PlaceholderForeColor = Color.Gray;
-            RankCTextBox.PlaceholderText = "Rank C Price";
-            RankCTextBox.SelectedText = "";
-            RankCTextBox.ShadowDecoration.CustomizableEdges = customizableEdges45;
-            RankCTextBox.Size = new Size(200, 36);
-            RankCTextBox.TabIndex = 51;
+            arrivalMiddayStatusComboBox.BackColor = Color.Transparent;
+            arrivalMiddayStatusComboBox.BorderRadius = 20;
+            arrivalMiddayStatusComboBox.CustomizableEdges = customizableEdges1;
+            arrivalMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalMiddayStatusComboBox.FormattingEnabled = true;
+            arrivalMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalMiddayStatusComboBox.ItemHeight = 30;
+            arrivalMiddayStatusComboBox.Location = new Point(801, 348);
+            arrivalMiddayStatusComboBox.Name = "arrivalMiddayStatusComboBox";
+            arrivalMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            arrivalMiddayStatusComboBox.Size = new Size(86, 36);
+            arrivalMiddayStatusComboBox.TabIndex = 98;
+            arrivalMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // DepatureTextBox
+            // arrivalMinutesComboBox
             // 
-            DepatureTextBox.BackColor = Color.Transparent;
-            DepatureTextBox.BorderRadius = 20;
-            DepatureTextBox.CustomizableEdges = customizableEdges42;
-            DepatureTextBox.DefaultText = "";
-            DepatureTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            DepatureTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            DepatureTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            DepatureTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            DepatureTextBox.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            DepatureTextBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            DepatureTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            DepatureTextBox.Location = new Point(363, 243);
-            DepatureTextBox.Margin = new Padding(3, 2, 3, 2);
-            DepatureTextBox.Name = "DepatureTextBox";
-            DepatureTextBox.PasswordChar = '\0';
-            DepatureTextBox.PlaceholderForeColor = Color.Gray;
-            DepatureTextBox.PlaceholderText = "Departure Country";
-            DepatureTextBox.SelectedText = "";
-            DepatureTextBox.ShadowDecoration.CustomizableEdges = customizableEdges43;
-            DepatureTextBox.Size = new Size(200, 36);
-            DepatureTextBox.TabIndex = 52;
+            arrivalMinutesComboBox.BackColor = Color.Transparent;
+            arrivalMinutesComboBox.BorderRadius = 20;
+            arrivalMinutesComboBox.CustomizableEdges = customizableEdges3;
+            arrivalMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalMinutesComboBox.FormattingEnabled = true;
+            arrivalMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalMinutesComboBox.ItemHeight = 30;
+            arrivalMinutesComboBox.Location = new Point(696, 348);
+            arrivalMinutesComboBox.Name = "arrivalMinutesComboBox";
+            arrivalMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            arrivalMinutesComboBox.Size = new Size(99, 36);
+            arrivalMinutesComboBox.TabIndex = 97;
+            arrivalMinutesComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // SeatsNumericUpDown
+            // arrivalHourComboBox
             // 
-            SeatsNumericUpDown.BackColor = Color.Transparent;
-            SeatsNumericUpDown.BorderRadius = 20;
-            SeatsNumericUpDown.CustomizableEdges = customizableEdges52;
-            SeatsNumericUpDown.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            SeatsNumericUpDown.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            SeatsNumericUpDown.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            SeatsNumericUpDown.FocusedState.BorderColor = SystemColors.MenuHighlight;
-            SeatsNumericUpDown.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SeatsNumericUpDown.Location = new Point(492, 490);
-            SeatsNumericUpDown.Margin = new Padding(3, 2, 3, 2);
-            SeatsNumericUpDown.Name = "SeatsNumericUpDown";
-            SeatsNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges53;
-            SeatsNumericUpDown.Size = new Size(200, 29);
-            SeatsNumericUpDown.TabIndex = 53;
-            SeatsNumericUpDown.UpDownButtonFillColor = SystemColors.MenuHighlight;
-            SeatsNumericUpDown.UpDownButtonForeColor = Color.White;
+            arrivalHourComboBox.BackColor = Color.Transparent;
+            arrivalHourComboBox.BorderRadius = 20;
+            arrivalHourComboBox.CustomizableEdges = customizableEdges5;
+            arrivalHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            arrivalHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            arrivalHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            arrivalHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            arrivalHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            arrivalHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            arrivalHourComboBox.FormattingEnabled = true;
+            arrivalHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            arrivalHourComboBox.ItemHeight = 30;
+            arrivalHourComboBox.Location = new Point(596, 348);
+            arrivalHourComboBox.Name = "arrivalHourComboBox";
+            arrivalHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            arrivalHourComboBox.Size = new Size(94, 36);
+            arrivalHourComboBox.TabIndex = 96;
+            arrivalHourComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // guna2HtmlLabel1
+            // arrivalMinutesLabel
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel1.Location = new Point(534, 463);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(108, 22);
-            guna2HtmlLabel1.TabIndex = 54;
-            guna2HtmlLabel1.Text = "Available Seats";
-            guna2HtmlLabel1.TextAlignment = ContentAlignment.MiddleCenter;
+            arrivalMinutesLabel.AutoSize = true;
+            arrivalMinutesLabel.BackColor = Color.Transparent;
+            arrivalMinutesLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            arrivalMinutesLabel.ForeColor = Color.White;
+            arrivalMinutesLabel.Location = new Point(727, 323);
+            arrivalMinutesLabel.Name = "arrivalMinutesLabel";
+            arrivalMinutesLabel.Size = new Size(37, 20);
+            arrivalMinutesLabel.TabIndex = 95;
+            arrivalMinutesLabel.Text = "MM";
             // 
-            // DepartureDateTimePicker3
+            // arrivalHoursLabel
             // 
-            DepartureDateTimePicker3.BackColor = Color.Transparent;
-            DepartureDateTimePicker3.BorderRadius = 20;
-            DepartureDateTimePicker3.Checked = true;
-            DepartureDateTimePicker3.CustomizableEdges = customizableEdges40;
-            DepartureDateTimePicker3.FillColor = SystemColors.MenuHighlight;
-            DepartureDateTimePicker3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            DepartureDateTimePicker3.ForeColor = SystemColors.ButtonHighlight;
-            DepartureDateTimePicker3.Format = DateTimePickerFormat.Custom;
-            DepartureDateTimePicker3.Location = new Point(353, 324);
-            DepartureDateTimePicker3.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            DepartureDateTimePicker3.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            DepartureDateTimePicker3.Name = "DepartureDateTimePicker3";
-            DepartureDateTimePicker3.Padding = new Padding(5);
-            DepartureDateTimePicker3.ShadowDecoration.CustomizableEdges = customizableEdges41;
-            DepartureDateTimePicker3.Size = new Size(190, 36);
-            DepartureDateTimePicker3.TabIndex = 55;
-            DepartureDateTimePicker3.Value = new DateTime(2023, 5, 22, 0, 0, 0, 0);
+            arrivalHoursLabel.AutoSize = true;
+            arrivalHoursLabel.BackColor = Color.Transparent;
+            arrivalHoursLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            arrivalHoursLabel.ForeColor = Color.White;
+            arrivalHoursLabel.Location = new Point(628, 323);
+            arrivalHoursLabel.Name = "arrivalHoursLabel";
+            arrivalHoursLabel.Size = new Size(31, 20);
+            arrivalHoursLabel.TabIndex = 94;
+            arrivalHoursLabel.Text = "HH";
             // 
-            // guna2HtmlLabel2
+            // deptMiddayStatusComboBox
             // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel2.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel2.Location = new Point(387, 300);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(111, 22);
-            guna2HtmlLabel2.TabIndex = 56;
-            guna2HtmlLabel2.Text = "Departure Date";
-            guna2HtmlLabel2.TextAlignment = ContentAlignment.MiddleCenter;
+            deptMiddayStatusComboBox.BackColor = Color.Transparent;
+            deptMiddayStatusComboBox.BorderRadius = 20;
+            deptMiddayStatusComboBox.CustomizableEdges = customizableEdges7;
+            deptMiddayStatusComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptMiddayStatusComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptMiddayStatusComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptMiddayStatusComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptMiddayStatusComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptMiddayStatusComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptMiddayStatusComboBox.FormattingEnabled = true;
+            deptMiddayStatusComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptMiddayStatusComboBox.ItemHeight = 30;
+            deptMiddayStatusComboBox.Location = new Point(801, 280);
+            deptMiddayStatusComboBox.Name = "deptMiddayStatusComboBox";
+            deptMiddayStatusComboBox.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            deptMiddayStatusComboBox.Size = new Size(86, 36);
+            deptMiddayStatusComboBox.TabIndex = 93;
+            deptMiddayStatusComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // ExpectedDateTimePicker4
+            // deptMinutesComboBox
             // 
-            ExpectedDateTimePicker4.BackColor = Color.Transparent;
-            ExpectedDateTimePicker4.BorderRadius = 20;
-            ExpectedDateTimePicker4.Checked = true;
-            ExpectedDateTimePicker4.CustomizableEdges = customizableEdges38;
-            ExpectedDateTimePicker4.FillColor = SystemColors.MenuHighlight;
-            ExpectedDateTimePicker4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            ExpectedDateTimePicker4.ForeColor = SystemColors.ButtonHighlight;
-            ExpectedDateTimePicker4.Format = DateTimePickerFormat.Custom;
-            ExpectedDateTimePicker4.Location = new Point(607, 324);
-            ExpectedDateTimePicker4.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            ExpectedDateTimePicker4.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            ExpectedDateTimePicker4.Name = "ExpectedDateTimePicker4";
-            ExpectedDateTimePicker4.Padding = new Padding(5);
-            ExpectedDateTimePicker4.ShadowDecoration.CustomizableEdges = customizableEdges39;
-            ExpectedDateTimePicker4.Size = new Size(190, 36);
-            ExpectedDateTimePicker4.TabIndex = 57;
-            ExpectedDateTimePicker4.Value = new DateTime(2023, 5, 22, 0, 0, 0, 0);
+            deptMinutesComboBox.BackColor = Color.Transparent;
+            deptMinutesComboBox.BorderRadius = 20;
+            deptMinutesComboBox.CustomizableEdges = customizableEdges9;
+            deptMinutesComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptMinutesComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptMinutesComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptMinutesComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptMinutesComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptMinutesComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptMinutesComboBox.FormattingEnabled = true;
+            deptMinutesComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptMinutesComboBox.ItemHeight = 30;
+            deptMinutesComboBox.Location = new Point(695, 281);
+            deptMinutesComboBox.Name = "deptMinutesComboBox";
+            deptMinutesComboBox.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            deptMinutesComboBox.Size = new Size(100, 36);
+            deptMinutesComboBox.TabIndex = 92;
+            deptMinutesComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // guna2HtmlLabel3
+            // deptHourComboBox
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel3.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel3.Location = new Point(659, 300);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(87, 22);
-            guna2HtmlLabel3.TabIndex = 58;
-            guna2HtmlLabel3.Text = "Arrival Date";
-            guna2HtmlLabel3.TextAlignment = ContentAlignment.MiddleCenter;
+            deptHourComboBox.BackColor = Color.Transparent;
+            deptHourComboBox.BorderRadius = 20;
+            deptHourComboBox.CustomizableEdges = customizableEdges11;
+            deptHourComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deptHourComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deptHourComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deptHourComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deptHourComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            deptHourComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            deptHourComboBox.FormattingEnabled = true;
+            deptHourComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
+            deptHourComboBox.ItemHeight = 30;
+            deptHourComboBox.Location = new Point(596, 280);
+            deptHourComboBox.Name = "deptHourComboBox";
+            deptHourComboBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            deptHourComboBox.Size = new Size(94, 36);
+            deptHourComboBox.TabIndex = 91;
+            deptHourComboBox.TextAlign = HorizontalAlignment.Center;
             // 
-            // AddButton
+            // deptMinutesLabel
             // 
-            AddButton.Animated = true;
-            AddButton.BackColor = Color.Transparent;
-            AddButton.BorderColor = Color.Transparent;
-            AddButton.BorderRadius = 20;
-            AddButton.Cursor = Cursors.Hand;
-            AddButton.CustomizableEdges = customizableEdges36;
-            AddButton.DisabledState.BorderColor = Color.DarkGray;
-            AddButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            AddButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            AddButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            AddButton.FillColor = Color.Transparent;
-            AddButton.FocusedColor = Color.Transparent;
-            AddButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            AddButton.ForeColor = SystemColors.HighlightText;
-            AddButton.HoverState.FillColor = SystemColors.ButtonHighlight;
-            AddButton.HoverState.ForeColor = SystemColors.MenuHighlight;
-            AddButton.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            AddButton.Image = Properties.Resources.FlightWhite;
-            AddButton.ImageAlign = HorizontalAlignment.Left;
-            AddButton.Location = new Point(521, 552);
-            AddButton.Name = "AddButton";
-            AddButton.Padding = new Padding(5);
-            AddButton.PressedColor = Color.White;
-            AddButton.ShadowDecoration.BorderRadius = 20;
-            AddButton.ShadowDecoration.Color = Color.Transparent;
-            AddButton.ShadowDecoration.CustomizableEdges = customizableEdges37;
-            AddButton.Size = new Size(142, 37);
-            AddButton.TabIndex = 59;
-            AddButton.Text = "Submit";
-            AddButton.Click += AddButton_Click;
+            deptMinutesLabel.AutoSize = true;
+            deptMinutesLabel.BackColor = Color.Transparent;
+            deptMinutesLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            deptMinutesLabel.ForeColor = Color.White;
+            deptMinutesLabel.Location = new Point(727, 256);
+            deptMinutesLabel.Name = "deptMinutesLabel";
+            deptMinutesLabel.Size = new Size(37, 20);
+            deptMinutesLabel.TabIndex = 90;
+            deptMinutesLabel.Text = "MM";
             // 
-            // AircaftIDComboBox
+            // deptHoursLabel
             // 
-            this.AircaftIDComboBox.BackColor = Color.Transparent;
-            this.AircaftIDComboBox.BorderRadius = 20;
-            this.AircaftIDComboBox.CustomizableEdges = customizableEdges34;
-            this.AircaftIDComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            this.AircaftIDComboBox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            this.AircaftIDComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            this.AircaftIDComboBox.HoverState.BorderColor = SystemColors.MenuHighlight;
-            this.AircaftIDComboBox.Location = new Point(705, 167);
-            this.AircaftIDComboBox.Name = "AircaftIDComboBox";
-            this.AircaftIDComboBox.ShadowDecoration.CustomizableEdges = customizableEdges35;
-            this.AircaftIDComboBox.Size = new Size(132, 36);
-            this.AircaftIDComboBox.TabIndex = 60;
-            this.AircaftIDComboBox.TextAlign = HorizontalAlignment.Center;
+            deptHoursLabel.AutoSize = true;
+            deptHoursLabel.BackColor = Color.Transparent;
+            deptHoursLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            deptHoursLabel.ForeColor = Color.White;
+            deptHoursLabel.Location = new Point(629, 256);
+            deptHoursLabel.Name = "deptHoursLabel";
+            deptHoursLabel.Size = new Size(31, 20);
+            deptHoursLabel.TabIndex = 89;
+            deptHoursLabel.Text = "HH";
+            // 
+            // rankASeatsLabel
+            // 
+            rankASeatsLabel.BackColor = Color.Transparent;
+            rankASeatsLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            rankASeatsLabel.ForeColor = SystemColors.ButtonHighlight;
+            rankASeatsLabel.Location = new Point(297, 432);
+            rankASeatsLabel.Name = "rankASeatsLabel";
+            rankASeatsLabel.Size = new Size(94, 22);
+            rankASeatsLabel.TabIndex = 99;
+            rankASeatsLabel.Text = "Rank A Seats";
+            rankASeatsLabel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // rankBSeatsLabel
+            // 
+            rankBSeatsLabel.BackColor = Color.Transparent;
+            rankBSeatsLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            rankBSeatsLabel.ForeColor = SystemColors.ButtonHighlight;
+            rankBSeatsLabel.Location = new Point(297, 490);
+            rankBSeatsLabel.Name = "rankBSeatsLabel";
+            rankBSeatsLabel.Size = new Size(93, 22);
+            rankBSeatsLabel.TabIndex = 100;
+            rankBSeatsLabel.Text = "Rank B Seats";
+            rankBSeatsLabel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // rankCSeatsLabel
+            // 
+            rankCSeatsLabel.BackColor = Color.Transparent;
+            rankCSeatsLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            rankCSeatsLabel.ForeColor = SystemColors.ButtonHighlight;
+            rankCSeatsLabel.Location = new Point(297, 545);
+            rankCSeatsLabel.Name = "rankCSeatsLabel";
+            rankCSeatsLabel.Size = new Size(92, 22);
+            rankCSeatsLabel.TabIndex = 101;
+            rankCSeatsLabel.Text = "Rank C Seats";
+            rankCSeatsLabel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // aircraftIDLabel
+            // 
+            aircraftIDLabel.BackColor = Color.Transparent;
+            aircraftIDLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            aircraftIDLabel.ForeColor = SystemColors.ButtonHighlight;
+            aircraftIDLabel.Location = new Point(333, 96);
+            aircraftIDLabel.Name = "aircraftIDLabel";
+            aircraftIDLabel.Size = new Size(77, 22);
+            aircraftIDLabel.TabIndex = 102;
+            aircraftIDLabel.Text = "Aircraft ID";
+            aircraftIDLabel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // modelLabel
+            // 
+            modelLabel.BackColor = Color.Transparent;
+            modelLabel.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            modelLabel.ForeColor = SystemColors.ButtonHighlight;
+            modelLabel.Location = new Point(547, 97);
+            modelLabel.Name = "modelLabel";
+            modelLabel.Size = new Size(47, 22);
+            modelLabel.TabIndex = 103;
+            modelLabel.Text = "Model";
+            modelLabel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // AddFlight
             // 
@@ -579,30 +787,48 @@ namespace FlightReservationSystem
             ClientSize = new Size(1477, 756);
             Margin = new Padding(3, 4, 3, 4);
             Name = "AddFlight";
-            Text = "AddFlight";
+            Text = "Add Flight";
+            Load += AddFlight_Load;
             contentSplitContainer.Panel1.ResumeLayout(false);
             contentSplitContainer.Panel2.ResumeLayout(false);
             contentSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)contentSplitContainer).EndInit();
             contentSplitContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)SeatsNumericUpDown).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private Label addFlightLabel;
-        private Guna.UI2.WinForms.Guna2TextBox DepatureTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox RankCTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox RankBTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox RankATextBox;
-        private Guna.UI2.WinForms.Guna2TextBox ArrivalTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox AircaftIDComboBox;
-        private Guna.UI2.WinForms.Guna2NumericUpDown SeatsNumericUpDown;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DepartureDateTimePicker3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker ExpectedDateTimePicker4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        protected Guna.UI2.WinForms.Guna2Button AddButton;
+        private Guna.UI2.WinForms.Guna2TextBox deptCountryTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankCPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankBPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankAPriceTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox arrivalCountryTextBox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel availableSeatsLabel;
+        private Guna.UI2.WinForms.Guna2DateTimePicker deptDateTimePicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker arrivalDateTimePicker;
+        private Guna.UI2.WinForms.Guna2HtmlLabel deptDateLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel arrivalDateLabel;
+        protected Guna.UI2.WinForms.Guna2Button submitButton;
+        private Guna.UI2.WinForms.Guna2ComboBox aircaftIDComboBox;
+        private Guna.UI2.WinForms.Guna2TextBox modelTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox availableSeatsTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankCSeatsTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankBSeatsTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox rankASeatsTextBox;
+        private Guna.UI2.WinForms.Guna2ComboBox arrivalMiddayStatusComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox arrivalMinutesComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox arrivalHourComboBox;
+        private Label arrivalMinutesLabel;
+        private Label arrivalHoursLabel;
+        private Guna.UI2.WinForms.Guna2ComboBox deptMiddayStatusComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox deptMinutesComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox deptHourComboBox;
+        private Label deptMinutesLabel;
+        private Label deptHoursLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel rankCSeatsLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel rankBSeatsLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel rankASeatsLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel aircraftIDLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel modelLabel;
     }
 }

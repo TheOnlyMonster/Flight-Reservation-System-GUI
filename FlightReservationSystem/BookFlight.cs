@@ -15,8 +15,8 @@ namespace FlightReservationSystem
             flightRanks = new();
             commands = new();
             tempBookedSeats = new();
-            ChangeButton(bookFlightButton);
             deptDateTimePicker.Value = DateTime.Now;
+            ChangeButton(bookFlightButton);
         }
         private void LoadGrid(object sender, EventArgs e)
         {
@@ -129,7 +129,7 @@ namespace FlightReservationSystem
         {
             if (string.IsNullOrEmpty(flightNoTextBox.Text))
             {
-                SetAuthenticatorError("Please select flight and try again!", flightNoTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Please select flight and try again!", flightNoTextBox);
                 return;
             }
             if (seatsNoNumericUpDown.Value == 0)
@@ -142,7 +142,7 @@ namespace FlightReservationSystem
             string deptMidday = deptDate[2];
             if (DateTime.Parse(DateTime.Now.ToShortDateString()) > DateTime.Parse(deptShortDate))
             {
-                SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
                 return;
             }
             else if (DateTime.Parse(DateTime.Now.ToShortDateString()) == DateTime.Parse(deptShortDate))
@@ -150,23 +150,23 @@ namespace FlightReservationSystem
                 TimeSpan deptTimeSpan = DateTime.Parse(deptTime + " " + deptMidday).TimeOfDay;
                 if (DateTime.Now.TimeOfDay > deptTimeSpan)
                 {
-                    SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
+                    DataAuthenticator.Instance.SetAuthenticatorError("Invalid Departure Date. Please choose a future date for your flight.", deptDateTimePicker);
                     return;
                 }
             }
             if (!DataAuthenticator.Instance.ValidateCardNumber(creditCardTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Card Number. Please enter valid card number and try again!", creditCardTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Card Number. Please enter valid card number and try again!", creditCardTextBox);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidateCardExpiryDate(creditCardExpiryDateTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Card Expiry Date. Please enter valid card expiry date and try again!", creditCardExpiryDateTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Card Expiry Date. Please enter valid card expiry date and try again!", creditCardExpiryDateTextBox);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidateCardCVV(cvvCreditCardTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Card CVV. Please enter valid card cvv and try again!", cvvCreditCardTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Card CVV. Please enter valid card cvv and try again!", cvvCreditCardTextBox);
                 return;
             }
             ChangePanel2State(false);
@@ -233,7 +233,7 @@ namespace FlightReservationSystem
                 }
             }
         }
-        private void Seat_Click(object sender, EventArgs e)
+        private void Seat_Click(object? sender, EventArgs e)
         {
             DataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
         }
@@ -249,18 +249,18 @@ namespace FlightReservationSystem
         {
             if (string.IsNullOrEmpty(seatAssignmentTextBox.Text))
             {
-                SetAuthenticatorError("Please choose seat and try again!", seatAssignmentTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Please choose seat and try again!", seatAssignmentTextBox);
                 return;
             }
             if (string.IsNullOrEmpty(passportNumberTextBox.Text) || !DataAuthenticator.Instance.ValidatePassportNumber(passportNumberTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Passport Number. Please enter a valid passport number and try again!", passportNumberTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Passport Number. Please enter a valid passport number and try again!", passportNumberTextBox);
                 return;
             }
             if (string.IsNullOrEmpty(firstNameTextBox.Text) || !DataAuthenticator.Instance.ValidateName(firstNameTextBox.Text) || string.IsNullOrEmpty(lastNameTextBox.Text) || !DataAuthenticator.Instance.ValidateName(lastNameTextBox.Text))
             {
-                SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", firstNameTextBox);
-                SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", lastNameTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", firstNameTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name and try again!", lastNameTextBox);
                 return;
             }
             string ticketQuery = "INSERT INTO BookingDetails (CustomerID, FlightNo, BookingDate,SeatAssignment ,TicketPrice, Rank, Status, FirstName, LastName, PassportNumber, PassportEXPDate) Values (@CustomerID, @FlightNo, @BookingDate, @SeatAssignment, @TicketPrice, @Rank, @Status, @FirstName, @LastName, @PassportNumber, @PassportEXPDate);";
@@ -278,7 +278,15 @@ namespace FlightReservationSystem
             sqlCommand.Parameters.AddWithValue("@PassportEXPDate", DateTime.Parse(passportExpiryDateTimePicker.Text).ToShortDateString());
             tempBookedSeats.Add(rankComboBox.Text + seatAssignmentTextBox.Text);
             commands.Add(sqlCommand);
-            double totalPrice = Convert.ToDouble(totalPriceTextBox.Text) + Convert.ToDouble(rankPriceTextBox.Text);
+            double totalPrice;
+            if (totalPriceTextBox.Text == "")
+            {
+                totalPrice = Convert.ToDouble(rankPriceTextBox.Text);
+            }
+            else
+            {
+            totalPrice = Convert.ToDouble(totalPriceTextBox.Text) + Convert.ToDouble(rankPriceTextBox.Text);
+            }
             totalPriceTextBox.Text = totalPrice.ToString();
             this.passportNumberTextBox.Text = string.Empty;
             this.firstNameTextBox.Text = string.Empty;
@@ -313,4 +321,3 @@ namespace FlightReservationSystem
         }
     }
 }
-

@@ -8,13 +8,13 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             dataManager = new(databaseConnection, this);
-            ChangeButton(this.UpdateReservation);
+            ChangeButton(this.updateReservationButton);
         }
 
         private void UpdateReservation_Load(object sender, EventArgs e)
         {
             string query = "SELECT BookingID, CustomerID, FlightNo, BookingDate, SeatAssignment, TicketPrice, Rank, Status, FirstName, LastName, PassportNumber, PassportEXPDate FROM BookingDetails;";
-            dataManager.UpdateDataGrid(updateReservationDataGridView, query);
+            dataManager?.UpdateDataGrid(updateReservationDataGridView, query);
         }
 
         private void UpdateReservationDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -43,7 +43,7 @@ namespace FlightReservationSystem
         {
             if (seatAssignmentTextBox.Text == "")
             {
-                SetAuthenticatorError("Invalid Seat Assignment. Please choose seat and try again!", seatAssignmentTextBox);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Seat Assignment. Please choose seat and try again!", seatAssignmentTextBox);
                 return;
             }
             string query = "UPDATE BookingDetails SET SeatAssignment = @SeatAssignment , Rank = @Rank ,Status = @Status where BookingID = @BookingID";
@@ -55,7 +55,7 @@ namespace FlightReservationSystem
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
 
-            List<string> filters = new()
+            List<string?> filters = new()
             {
                 customerIdTextBoxPanel1.Text,
                 flightNoTextBoxPanel1.Text
@@ -83,7 +83,7 @@ namespace FlightReservationSystem
         {
             this.panel3.Dock = DockStyle.Right;
             updateReservationDataGridView.Size = new Size(589, 687);
-            int availableSeats = dataManager.NormalizeSeatsDataGrid(seatsTableLayoutPanel, rankComboBox, flightNoTextBoxPanel2);
+            int? availableSeats = dataManager?.NormalizeSeatsDataGrid(seatsTableLayoutPanel, rankComboBox, flightNoTextBoxPanel2);
             string query = "select COUNT(*) from BookingDetails where Rank=@Rank and FlightNo=@FlightNo and SeatAssignment=@Seat";
             int row = -1;
             bool isUserInRank = false;
@@ -115,9 +115,9 @@ namespace FlightReservationSystem
                     ImageSize = seat.ImageSize,
                     Tag = (i + 1).ToString()
                 };
-                string myQuery = "select SeatAssignment from BookingDetails where CustomerID=@CustomerID and FlightNo=@FlightNo and Rank=@Rank;";
+                string myQuery = "select SeatAssignment from BookingDetails where BookingID=@BookingID and FlightNo=@FlightNo and Rank=@Rank;";
                 SqlCommand myCommand = new(myQuery, connection);
-                myCommand.Parameters.AddWithValue("@CustomerID", this.customerIdTextBoxPanel2.Text);
+                myCommand.Parameters.AddWithValue("@BookingID", this.bookingIdTextBox.Text);
                 myCommand.Parameters.AddWithValue("@FlightNo", this.flightNoTextBoxPanel2.Text);
                 myCommand.Parameters.AddWithValue("@Rank", this.rankComboBox.Text);
                 int myResult = Convert.ToInt32(myCommand.ExecuteScalar());
@@ -157,7 +157,7 @@ namespace FlightReservationSystem
             }
         }
 
-        private void Seat_Click(object sender, EventArgs e)
+        private void Seat_Click(object? sender, EventArgs e)
         {
             DataManager.ToggleSeatButton(seatsTableLayoutPanel, seatAssignmentTextBox, seat, sender);
         }

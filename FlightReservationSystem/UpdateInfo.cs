@@ -8,7 +8,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             dataManager = new(databaseConnection, this);
-            ChangeButton(UpdateInfo);
+            ChangeButton(updateInfoButton);
         }
 
         private void UpdateInfo_Load(object sender, EventArgs e)
@@ -25,18 +25,18 @@ namespace FlightReservationSystem
             if (string.IsNullOrEmpty(textBoxFirstName.Text) || string.IsNullOrEmpty(textBoxLastName.Text)
                 || string.IsNullOrEmpty(textBoxPhone.Text) || string.IsNullOrEmpty(textBoxPassword.Text))
             {
-                SetAuthenticatorError("Error. Please fill all fields and try again", textBoxFirstName);
+                DataAuthenticator.Instance.SetAuthenticatorError("Error. Please fill all fields and try again", textBoxFirstName);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidatePhoneNumber(this.textBoxPhone.Text))
             {
-                SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidateName(this.textBoxFirstName.Text) || !DataAuthenticator.Instance.ValidateName(this.textBoxLastName.Text))
             {
-                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
-                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
                 return;
             }
             Customer.Instance.Fname = textBoxFirstName.Text;
@@ -44,9 +44,9 @@ namespace FlightReservationSystem
             Customer.Instance.PhoneNumber = textBoxPhone.Text;
             Customer.Instance.Password = textBoxPassword.Text;
             string userQuery = "UPDATE UserTable SET Fname = @Fname, Lname = @Lname, Password = @Password where UserID = @UserID";
-            dataManager.ExcuteDataQuery(userQuery);
+            dataManager?.ExcuteDataQuery(userQuery);
             string customerQuery = "UPDATE CustomerTable SET PhoneNumber = @PhoneNumber where CustomerID = @CustomerID";
-            dataManager.ExcuteDataQuery(customerQuery);
+            dataManager?.ExcuteDataQuery(customerQuery);
             MessageBox.Show("Changes Made Successfully!");
             UpdateInfo_Load(sender, e);
         }

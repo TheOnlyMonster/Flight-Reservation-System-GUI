@@ -68,7 +68,7 @@ namespace FlightReservationSystem
             }
             return availableSeats;
         }
-        public static void ApplyFilters(List<string> textBoxes, List<string> columnsIDs, DataGridView dataGridView)
+        public static void ApplyFilters(List<string?> textBoxes, List<string> columnsIDs, DataGridView dataGridView)
         {
             foreach (DataGridViewRow row in dataGridView.Rows)
             {
@@ -79,7 +79,7 @@ namespace FlightReservationSystem
                     if (!string.IsNullOrEmpty(textBoxes[i]))
                     {
                         string? resultRow = row.Cells[columnsIDs[i]].Value?.ToString();
-                        if (resultRow == null || !resultRow.Contains(textBoxes[i]))
+                        if (resultRow is null || !resultRow.Contains(textBoxes[i] ?? ""))
                         {
                             showRow = false;
                         }
@@ -113,7 +113,15 @@ namespace FlightReservationSystem
         {
             dataGrid.Rows.Clear();
             DataTable dataTable = new();
-            sqlConnection.Open();
+            try
+            {
+                sqlConnection.Open();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Your IP is not authorized to access the database please contact the owner of the application!");
+                return;
+            }
             SqlCommand command = new(query, sqlConnection);
             SqlDataAdapter adapter = new(command);
             _processDataGrid?.SetDataGridCommandParams(command);
@@ -133,11 +141,17 @@ namespace FlightReservationSystem
             SqlDataReader sqlDataReader = command.ExecuteReader();
             while (sqlDataReader.Read())
             {
-                comboBox.Items.Add(sqlDataReader.GetString(0));
+                if (typeof(ComboBox).IsAssignableFrom(typeof(string))) {
+                    comboBox.Items.Add(sqlDataReader.GetString(0));
+                }
+                else
+                {
+                    comboBox.Items.Add(sqlDataReader[0]);
+                }
             }
             sqlConnection.Close();
         }
-        public static void ToggleSeatButton(TableLayoutPanel seatsTableLayoutPanel, Guna2TextBox seatAssignmentTextBox, Guna2Button seat, object sender)
+        public static void ToggleSeatButton(TableLayoutPanel seatsTableLayoutPanel, Guna2TextBox seatAssignmentTextBox, Guna2Button seat, object? sender)
         {
             foreach (Control control in seatsTableLayoutPanel.Controls)
             {

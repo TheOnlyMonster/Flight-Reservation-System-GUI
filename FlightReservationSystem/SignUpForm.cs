@@ -7,34 +7,42 @@ namespace FlightReservationSystem
         public SignUpForm()
         {
             InitializeComponent();
+            ChangeButton(signUpButton);
         }
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxEmail.Text)|| string.IsNullOrEmpty(textBoxFirstName.Text) || 
-                string.IsNullOrEmpty(textBoxLastName.Text) || string.IsNullOrEmpty(textBoxPassword.Text) 
+            if (string.IsNullOrEmpty(textBoxEmail.Text) || string.IsNullOrEmpty(textBoxFirstName.Text) ||
+                string.IsNullOrEmpty(textBoxLastName.Text) || string.IsNullOrEmpty(textBoxPassword.Text)
                 || string.IsNullOrEmpty(textBoxPhone.Text))
             {
-                SetAuthenticatorError("Error. Please fill all fields.", textBoxEmail);
+                DataAuthenticator.Instance.SetAuthenticatorError("Error. Please fill all fields.", textBoxEmail);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidateEmail(this.textBoxEmail.Text))
             {
-                SetAuthenticatorError("Invalid Email Address. Please enter a valid email address.", textBoxEmail);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Email Address. Please enter a valid email address.", textBoxEmail);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidatePhoneNumber(this.textBoxPhone.Text))
             {
-                SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Phone number. Please enter a valid phone number.", textBoxPhone);
                 return;
             }
             if (!DataAuthenticator.Instance.ValidateName(this.textBoxFirstName.Text) || !DataAuthenticator.Instance.ValidateName(this.textBoxLastName.Text))
             {
-                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
-                SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxFirstName);
+                DataAuthenticator.Instance.SetAuthenticatorError("Invalid Name. Please enter a valid name.", textBoxLastName);
                 return;
             }
             using SqlConnection connection = new(databaseConnection);
-            connection.Open();
+            try
+            {
+                connection.Open();  
+            }catch (Exception)
+            {
+                MessageBox.Show("Your IP is not authorized to access the database please contact the owner of the application!");
+                return;
+            }
             string checkingQuery = "SELECT Count(Email) from UserTable where Email = @email";
             using (SqlCommand command = new(checkingQuery, connection))
             {

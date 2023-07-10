@@ -8,6 +8,7 @@ namespace FlightReservationSystem
         {
             InitializeComponent();
             this.dataManager = new(databaseConnection, this);
+            ChangeButton(customerReservationsButton);
         }
 
         public void SetDataGridCommandParams(SqlCommand command)
@@ -18,7 +19,7 @@ namespace FlightReservationSystem
         private void CustomerReservations_Load(object sender, EventArgs e)
         {
             string query = "SELECT  b.BookingID , f.DeptCountry , f.ArrivalCountry , b.BookingDate , b.SeatAssignment , b.TicketPrice , b.Rank , b.Status  FROM BookingDetails b INNER JOIN FLight f  ON b.FlightNo=f.FLightNo  WHERE CustomerID=@CustomerID;";
-            this.dataManager.UpdateDataGrid(reservationsDataGrid, query);
+            this.dataManager?.UpdateDataGrid(reservationsDataGrid, query);
         }
     }
 }
